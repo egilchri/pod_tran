@@ -6,20 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>USApodden - Master Workflow</title>
         <style>
-            body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f0f2f5; }
+            body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f2f5; }
             header { background: #004a99; color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
             .episode-card { background: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 6px solid #ffc107; }
             h2 { margin: 0 0 10px 0; font-size: 1.3em; }
             .summary { color: #444; font-size: 0.95em; margin-bottom: 20px; line-height: 1.5; }
-            .btn-group { display: flex; gap: 10px; border-top: 1px solid #eee; padding-top: 15px; }
-            .btn { padding: 12px 20px; border-radius: 8px; font-weight: bold; text-decoration: none; cursor: pointer; border: none; font-size: 0.95em; }
+            .btn-group { display: flex; gap: 8px; border-top: 1px solid #eee; padding-top: 15px; flex-wrap: wrap; }
+            .btn { padding: 10px 15px; border-radius: 6px; font-weight: bold; text-decoration: none; cursor: pointer; border: none; font-size: 0.85em; display: inline-block; }
             .btn-run { background: #ffc107; color: black; }
+            .btn-view { background: #28a745; color: white; }
             .btn-listen { background: #e9ecef; color: #004a99; border: 1px solid #004a99; }
             .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px 30px; border-radius: 50px; display: none; z-index: 1000; }
         </style>
         <script>
             function copyMasterCommand(mp3Url, feedname, date, title) {
-                // This command now triggers the Master Workflow script
                 const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}"`;
                 navigator.clipboard.writeText(cmd).then(() => {
                     const t = document.getElementById('toast');
@@ -32,7 +32,7 @@
     <body>
         <header>
             <h1>USApodden</h1>
-            <p>Select an episode to process and sync to GitHub.</p>
+            <p>Master Workflow Dashboard</p>
         </header>
         <div id="toast" class="toast">✅ Master Command Copied!</div>
     
@@ -42,9 +42,10 @@
             <div class="summary"><p>Trumps utrikesminister låter mildare än JD Vance men säger egentligen samma sak.</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>När USA:s utrikesminister Marco Rubio talade på säkerhetskonferensen i München var det en&nbsp;mjukare ton än när vicepresident JD Vance talade i fjol. Men innehållet var i stort sett detsamma.</p><p>Ginna är på plats i delstaten Georgia inför det rafflande fyllnadsvalet efter Marjorie Taylor Greene som lämnade kongressen i januari. Ett litet val som säger mycket om statusen på MAGA-rörelsen.</p><p>Vi pratar också om Stephen Colbert som hävdar att CBS stoppat en intervju med en demokrat av rädsla för Trump-administrationen och om Donald Trumps stora intresse för att sätta sitt namn på byggnader och monument.</p><p>Medverkande: Ginna Lindberg, Sveriges Radios USA-korrespondent, Katarina von Arndt, Sveriges Radios Tysklandskorrespondent och Roger Wilson, programledare P1 Kultur och tidigare USA-korrespondent.</p><p>Programledare: Sara Stenholm</p><p>Producent: Viktor Mattsson</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10081970.mp3', 'usapodden', '260218', 'Rubio dissade EU-toppen och reste till Ungern')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10081970.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.260218.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10081970.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -54,9 +55,10 @@
             <div class="summary"><p>Kritiken från egna partiet blev för hård.</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>En video som föreställer paret Obama som apor, rivaliserande pausunderhållning i Superbowl, Ice-protester under OS och nya avslöjanden om utredningen av dödskjutningen av Renee Good i Minneapolis – vi har saker att prata om i det här avsnittet. Inspelat live under USA-poddens turnéfinal i självaste Umeå!<br /><br />Medverkande: Ginna Lindberg, Simon Isaksson, Sveriges Radios USA-korrespondenter och Roger Wilson, programledare P1 Kultur.</p><p>Programledare: Sara Stenholm.</p><p>Producent: Anna Roxvall.</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10073191.mp3', 'usapodden', '260211', 'Trump tvingas backa från rasistisk video')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10073191.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.260211.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10073191.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -66,9 +68,10 @@
             <div class="summary"><p>Live från Göteborgs stadsteater.</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>För tio år sedan diskuterade vi om det ens var möjligt för en tv-stjärna att bli president i USA. I dag verkar allt fler ta farväl av världsordningen som vi kände den. Och det som började som ett experiment inför primärvalet 2016, är i dag Sveriges i särklass största politikpodd. USApodden firar tio år och blickar tillbaka på ett omvälvande decennium i amerikansk politik. Vilka brytpunkter går att se, vilka sanningar har omprövats och vart är vi på väg? Live från Göteborgs stadsteater.</p><p>Medverkande: Ginna Lindberg, Sveriges Radios USA.korrespondent, Roger Wilson, programledare P1 Kultur, Britt-Marie Mattsson, författare och journalist och Linda Zachrison, konstnärlig chef, Göteborgs stadsteater.</p><p>Programledare: Sara Stenholm.</p><p>Producent: Anna Roxvall.</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10065985.mp3', 'usapodden', '260204', 'Ett decennium på steroider – USApodden 10 år!')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10065985.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.260204.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10065985.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -78,9 +81,10 @@
             <div class="summary"><p>Två personer har skjutits ihjäl av federal polis på bara ett par veckor.</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>Donald Trumps regering är under allt hårdare press efter att federal polis skjutit ihjäl ännu en amerikansk medborgare i Minneapolis, inför rullande kameror. Gränspolischefen Gregory Bovino har kallats hem och ersatts av Trumps egen ”gräns-tsar” Thom Homan. Men vad betyder det rent praktiskt? Hur löst sitter ministern för inrikes säkerhet, Kristi Noem, efter att ha ertappats med offentliga lögner och är det en liten uppmjukning från Trumps sida som vi ser? Sveriges Radios korrespondent Ginna Lindberg är på plats i ett iskallt Minneapolis.<br />Vi tar också tempen på snöstormen som dragit in över stora delar av USA – för nu riktas blickarna mot den kraftigt neddragna&nbsp;katastrofmyndigheten FEMA – och New Yorks borgmästare Zohran Mamdani, som har ställts inför sin första utmaning.<br /><br />Medverkande: Ginna Lindberg, Sveriges Radios USA-korrespondent och Roger Wilson, programledare P1 Kultur.</p><p>Programledare: Sara Stenholm.</p><p>Producent: Anna Roxvall.</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10058652.mp3', 'usapodden', '260128', 'Trumpadministrationen pressas efter ännu en dödsskjutning i Minneapolis')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10058652.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.260128.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10058652.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -90,9 +94,10 @@
             <div class="summary"><p>Men den vackra isbiten ska bli amerikansk, hävdar presidenten.</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>Nato och de europeiska länderna är otacksamma – USA ska ha Grönland, även om man inte tänker ta ön med våld. Ungefär så löd budskapet från Donald Trump när han läxade upp näringslivstoppar och världsledare i Davos under onsdagen. Kan Grönland, Danmark och EU och dra en lättnadens suck nu, eller fortsätter mobbningen?</p><p>Hör också om inbjudningarna till Trumps så kallade ”fredsråd” som har börjat dimpa ner i brevlådorna. Vem vågar tacka nej och är detta USA:s slutgiltiga försök att likvidera FN? <br /><br />Vi återbesöker också Minneapolis, där åklagare hoppar av åt höger och vänster, efter att det står klart att alla utom den ICE-agent som sköt ihjäl en 37-årig kvinna ska utredas för brott.&nbsp;</p><p>Medverkande: Ginna Lindberg, Simon Isaksson och Knut Kainz Rognerud.</p><p>Programledare: Sara Stenholm.</p><p>Producent: Anna Roxvall.</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10051521.mp3', 'usapodden', '260121', 'Trump: Kommer inte ta Grönland med våld')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10051521.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.260121.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10051521.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -102,9 +107,10 @@
             <div class="summary"><p>Amerikanske presidenten uppmanar till fortsatta protester mot regimen.</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>De dödliga protesterna i Iran fortsätter och retoriken blir allt hårdare från så väl regimen som Donald Trump. Men vad betyder det amerikanska löftet om att ”hjälp är på väg”, varför är vicepresident JD Vance emot en attack mot Iran, vad innebär det att USA samtalar med den döde shahens son och stämmer det att Irans regim står inför sin största utmaning på decennier?<br /><br />Hör också om det stundande mötet mellan USA, Danmark och Grönland, där tonläget också skruvats upp, efter att Trump meddelat att USA kan ta över Grönland på det ”lätta” eller ”svåra” viset.<br />Och så pratar vi naturligtvis om brottsutredningen mot Fed-chefen, tillika Trump-hatobjektet, Jerome Powell. Vad handlar det där om?<br /><br />Medverkande: Ginna Lindberg, Sveriges Radios USA-korrespondent, Cecilia Uddén, Sveriges Radios Mellanösternkorrespondent och Roger Wilson, programledare P1 Kultur.</p><p>Programledare: Sara Stenholm.</p><p>Producent: Anna Roxvall.</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10042092.mp3', 'usapodden', '260114', 'Trump till iranierna: ”hjälp är på väg”')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10042092.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.260114.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10042092.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -114,9 +120,10 @@
             <div class="summary"><p>Trump utesluter inte att ta ön med våld.</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>Efter USA:s attack mot Venezuela riktas blickarna mot Grönland. Vita huset verkar inte utesluta att använda sig av militära medel och de senaste dagarna har man återkommande upprepat att området ligger i USA:s intressesfär – och att man behöver Grönland. Vad, mer än säkerhet, får USA att kasta lystna blickar mot Nuuk? Vad har omvärlden att sätta emot och vore ett amerikanskt övertagande – som Danmark hävdar -– slutet för Nato?<br /><br />Vi följer naturligtvis också upp attacken mot Venezuela och bortförandet av landets president, som nu ställts inför rätta i en domstol i New York. Vem är det egentligen som styr Venezuela, på vilka sätt bryter USA:s agerande mot internationell rätt och är folkrätten död nu?</p><p>Medverkande: Simon Isaksson och Ginna Lindberg, Sveriges Radios USA-korrespondenter, Roger Wilson, programledare P1 Kultur samt Pål Wrange, professor i folkrätt vid Stockholms universitet. </p><p>Programledare: Sara Stenholm.</p><p>Producent: Anna Roxvall.</p><p></p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10034371.mp3', 'usapodden', '260107', 'USA vill ta Grönland')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10034371.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.260107.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10034371.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -126,9 +133,10 @@
             <div class="summary"><p>EXTRAPODD: USA har attackerat Venezuela och fört bort presidenten.</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>Natten till lördag attackerade amerikansk militär Venezuelas huvudstad Caracas och andra platser i landet. President Nicolás Maduro och hans fru greps och fördes bort. Enligt Donald Trump ska Maduro ställas inför rätta i USA, bland annat för drogrelaterad brottslighet. Den amerikanske presidenten hävdar att USA ska styra Venezuela i väntan på att makten kan lämnas över, men mycket är oklart – inte minst huruvida agerandet skett i enlighet med den amerikanska konstitutionen eller internationell rätt. Hör om spelet bakom USA:s intervention i Venezuela, vad som händer nu och om reaktionerna i USA och omvärlden.<br /><br />Medverkande: Simon Isaksson och Ginna Lindberg, Sveriges Radios USA-korrespondenter och Lotten Collin, Sveriges Radios Latinamerikakorrespondent.</p><p>Programledare: Sara Stenholm.</p><p>Producent: Anna Roxvall.</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10031141.mp3', 'usapodden', '260103', 'Trump: USA ska styra Venezuela')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10031141.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.260103.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10031141.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -138,9 +146,10 @@
             <div class="summary"><p>Krigshot och fredsförhandlingar följer Trump in i 2026.</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>Medan möten mellan Trump och Ukrainas och Israels ledare avlöste varandra i mellandagarna, framkom att USA attackerat mål inne i Venezuela. Trumps första år i Vita huset har varit intensivt och inget tyder på att 2026 skulle bli något annat heller. I det här avsnittet tittar vi på vallöftena som Trump försökt uppfylla under sitt första år i Vita huset och blickar framåt på de frågor som han kommer att få tampas med 2026.</p><p>Medverkande: Simon Isaksson, Sveriges Radios USA-korrespondent, Roger Wilson, programledare P1 Kultur och Karin Henriksson, journalist och författare.</p><p>Programledare: Esmeralda Egerup.</p><p>Producent: Anna Roxvall.</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10028333.mp3', 'usapodden', '251231', 'USA har attackerat mål inne i Venezuela')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10028333.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.251231.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10028333.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -150,9 +159,10 @@
             <div class="summary"><p>USApodden svarar på lyssnarnas frågor.</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>Har Trump det yttersta ansvaret för attackerna på så kallade knarkbåtar, vad får amerikanerna för sina skattepengar, hur hamnade Epsteindokumenten i representanthuset och hade pepparkaks-vita-huset någon flygel åt öster? I det här julavsnittet av USApodden svarar Sveriges Radios USA-korrespondenter på några av alla de lyssnarfrågor som kommit in under året. Dessutom får vi ett julkort från Kitty Hawk.</p><p>Medverkande: Ginna Lindberg och Simon Isaksson, Sveriges Radios USA-korrespondenter.</p><p>Programledare: Sara Stenholm</p><p>Producent: Anna Roxvall</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10022452.mp3', 'usapodden', '251224', 'Därför finns Epsteindokumenten i representanthuset')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10022452.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.251224.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10022452.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -162,9 +172,10 @@
             <div class="summary"><p>Kallar mördad regissör störd. </p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>Hatiska uttalanden på nätet som kan få stora konsekvenser, inte minst om den som skriver dem är president. I helgen mördades regissören Rob Reiner och hans fru, men istället för deltagande, gjorde Donald Trump ett inlägg på sociala medier där han föreföll lägga skulden på Reiner själv. Inlägget har fått massiv kritik – även i Maga-led. Har presidenten till sist gått för långt även för sina egna? Det pratar vi om idag.&nbsp;<br />Hör också om Erika Kirk, Charlie Kirks änka, som har tagit över hans rörelse och Trumps miljardstämning mot BBC. <br /><br />Medverkande: Ginna Lindberg, Simon Isaksson och Roger Wilson. Programledare: Sara Stenholm.</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10015459.mp3', 'usapodden', '251217', 'Trumps hatiska inlägg kan slå tillbaka')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10015459.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.251217.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10015459.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -174,9 +185,10 @@
             <div class="summary"><p>Trump trappar upp mot Venezuela</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>Efter attackerna mot misstänkta narkotikasmugglare utanför Venezuelas kust, har nu den amerikanska militären beslagtagit en venezolansk oljetanker. ”Sjöröveri”, säger den venezolanska regimen, legitim aktion mot sanktionerad råolja, säger Trumpadministrationen.</p><p>Hör också om nya inreseregler för turister där de amerikanska myndigheterna bl a kräver att få granska alla resenärers sociala medier fem år tillbaka. Det föreslås gälla ett 40-tal länder, bl a Sverige. Plus: vilka ministrar är det som gör ”pull ups” på en flygplats inför pressen? Svaret finns i dagens avsnitt!</p><p>Medverkande: Ginna Lindberg och Simon Isaksson, USA-korrespondenter &nbsp;</p><p>Programledare: Roger Wilson</p><p>Producent: Anna Pandolfi</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10010620.mp3', 'usapodden', '251212', 'USA:s militär beslagtar oljetanker')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10010620.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.251212.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10010620.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -186,9 +198,10 @@
             <div class="summary"><p>Nya säkerhetsstrategin pekar ut Europa som svagt och hotat inifrån.</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>USA har fått en ny säkerhetsstrategi, där alla ska få utforma sin politik i fred – så länge de inte är ett land i Europa. Ska Trump börja påverka europeiska val nu, varför får USA så lite mothugg från europeiska ledare, hur mycket jublar Putin och vad menas med en Trumpversion av Monroedoktrinen? Det pratar vi om i det här avsnittet.</p><p>Hör också en rapport från Minneapolis, där Ginna Lindberg träffat människor ur den stora somaliska diasporan. Hur påverkar det ett samhälle när dess invånare liknas vid sopor av landets president på bästa sändningstid? &nbsp; &nbsp; &nbsp;&nbsp;</p><p>Medverkande: Ginna Lindberg, Sveriges Radios USA-korrespondent, Roger Wilson, programledare P1 Kultur och Anna Wieslander, Nordeuropachef på Atlantic Council. &nbsp;</p><p>Programledare: Sara Stenholm.</p><p>Producent: Anna Roxvall.</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10007754.mp3', 'usapodden', '251210', 'USA varnar för Europas sammanbrott')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10007754.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.251210.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10007754.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -198,9 +211,10 @@
             <div class="summary"><p>Överlevare från en amerikansk båtattack dödades i ett andra anfall.</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>En Washington Post-granskning av den första amerikanska attacken mot en påstådd knarkbåt i Karibien har lett till att Trumpadministrationen anklagas för krigsbrott – även av vissa republikaner. Har Trump någon juridisk grund när han hävdar att USA har rätt att sänka båtarna, eftersom man är i krig med knarkterrorister? Varför är det så viktigt huruvida det var en eller två attacker mot samma båt, hur ska det gå för krigsminister Pete Hegseth – och vilka lagar är det egentligen som USA anklagas för att bryta mot? Det pratar vi om i det här avsnittet.</p><p>Hör också om ett omfattande välfärdsbedrägeri i Minnesota som får jorden att skaka under fötterna på den somaliska diasporan när Trumpadministrationen gör en historisk omställning av amerikansk invandringspolitik.</p><p>Medverkande: Ginna Lindberg och Simon Isaksson, Sveriges Radios USA-korrespondenter och Said Mahmoudi, professor i internationell rätt. </p><p>Programledare: Sara Stenholm.</p><p>Producent: Anna Roxvall</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10000120.mp3', 'usapodden', '251203', 'Trumpadministrationen anklagas för krigsbrott')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10000120.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.251203.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10000120.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         
@@ -210,9 +224,10 @@
             <div class="summary"><p>Tillsättningen av Lindsey Halligan var olaglig, slår domare fast.</p><p> <a href="https://sverigesradio.se/play/program/4923?utm_source=thirdparty&amp;utm_medium=rss&amp;utm_campaign=episode_usapodden">Lyssna på alla avsnitt i Sveriges Radios app.</a></p> <p>Ukrainske presidenten Volodymyr Zelenskyj fick en amerikansk fredsplan presenterad för sig medan Donald Trump gjorde ilskna utfall mot honom på sociala medier. Hur nära är vi en vapenvila i Ukraina, varför verkar amerikanerna ha så bråttom, vad säger ryssarna om planen och hur djup är sprickan mellan USA och Europa efter det här? Det pratar vi om i det här avsnittet.</p><p>Hör också om åtalen mot Trumps fiender James Comey och Laetitia James, som avvisats med hänvisning till att Trumps handplockade åklagare tillsatts i strid med lagen. Och så försöker vi hinna med Maga-mamman Marjorie Taylor Greenes avhopp och sprickan mellan henne och Trump. Bedömarna kliar sig i huvudena – ett styrketecken för presidenten, eller en Maga-rörelse i kris?</p><p>Dessutom: Ginna Lindberg avslöjar allt om sin uppmärksammade selfie med Bruce Springsteen!</p><p>Medverkande: Ginna Lindberg och Simon Isaksson, Sveriges Radios USA-korrespondenter och Lubna El-Shanti, Sveriges Radios Ukrainakorrespondent. </p><p>Programledare: Sara Stenholm.&nbsp;</p></div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/9992360.mp3', 'usapodden', '251126', 'Bakslag för Trumpadministrationen när handplockad åklagare stoppas')">
-                    ⚡ Run Master Workflow
+                    ⚡ TransViewer (Cmd)
                 </button>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/9992360.mp3" target="_blank" class="btn btn-listen">Preview MP3</a>
+                <a href="https://egilchri.github.io/pod_tran/Podcasts/usapodden.251126.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/9992360.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
             </div>
         </div>
         </body></html>
