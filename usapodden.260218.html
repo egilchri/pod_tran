@@ -1,0 +1,50 @@
+
+    <!DOCTYPE html>
+    <html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rubio dissade EU-toppen och reste till Ungern</title>
+        <style>
+            body { font-family: system-ui, sans-serif; max-width: 1000px; margin: 0 auto; padding: 30px; background: #f8f9fa; }
+            .header-box { background: white; padding: 30px; border-radius: 12px; margin-bottom: 25px; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+            .row { display: flex; gap: 20px; padding: 12px; border-bottom: 1px solid #eee; cursor: pointer; transition: 0.2s; }
+            .row:hover { background: #f0f0f0; }
+            .row.highlight { background: #fff9c4; border-left: 6px solid #fbc02d; font-weight: bold; }
+            .sv, .en { flex: 1; font-size: 1.1em; }
+        </style>
+    </head>
+    <body>
+        <div class="header-box">
+            <small style="text-transform:uppercase; color:#666;">usapodden | 260218</small>
+            <h1>Rubio dissade EU-toppen och reste till Ungern</h1>
+            <audio id="audio" controls src="usapodden.260218.mp3" style="width:100%; margin-top:15px;"></audio>
+        </div>
+        <div id="transcript"></div>
+        <script>
+            const audio = document.getElementById('audio');
+            const container = document.getElementById('transcript');
+            let data = [];
+
+            fetch('transcript.usapodden.260218.json').then(r => r.json()).then(json => {
+                data = json;
+                data.forEach((item, i) => {
+                    const row = document.createElement('div');
+                    row.className = 'row'; row.id = 'row-' + i;
+                    row.innerHTML = `<div class="sv">${item.sv}</div><div class="en">${item.en}</div>`;
+                    row.onclick = () => audio.currentTime = item.start;
+                    container.appendChild(row);
+                });
+            });
+
+            audio.addEventListener('timeupdate', () => {
+                data.forEach((item, i) => {
+                    const el = document.getElementById('row-' + i);
+                    if (audio.currentTime >= item.start && audio.currentTime <= item.end) {
+                        el.classList.add('highlight');
+                        if (!el.dataset.seen) { el.scrollIntoView({behavior:'smooth', block:'center'}); el.dataset.seen='1'; }
+                    } else { el.classList.remove('highlight'); delete el.dataset.seen; }
+                });
+            });
+        </script>
+    </body></html>
+    
