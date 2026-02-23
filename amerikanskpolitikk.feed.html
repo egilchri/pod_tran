@@ -1,0 +1,233 @@
+
+    <!DOCTYPE html>
+    <html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amerikansk politikk - Master Workflow</title>
+        <style>
+            body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f2f5; }
+            header { background: #004a99; color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
+            .episode-card { background: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 6px solid #ffc107; }
+            h2 { margin: 0 0 10px 0; font-size: 1.3em; }
+            .summary { color: #444; font-size: 0.95em; margin-bottom: 20px; line-height: 1.5; }
+            .btn-group { display: flex; gap: 8px; border-top: 1px solid #eee; padding-top: 15px; flex-wrap: wrap; }
+            .btn { padding: 10px 15px; border-radius: 6px; font-weight: bold; text-decoration: none; cursor: pointer; border: none; font-size: 0.85em; display: inline-block; }
+            .btn-run { background: #ffc107; color: black; }
+            .btn-view { background: #28a745; color: white; }
+            .btn-listen { background: #e9ecef; color: #004a99; border: 1px solid #004a99; }
+            .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px 30px; border-radius: 50px; display: none; z-index: 1000; }
+        </style>
+        <script>
+            function copyMasterCommand(mp3Url, feedname, date, title) {
+                const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}"`;
+                navigator.clipboard.writeText(cmd).then(() => {
+                    const t = document.getElementById('toast');
+                    t.style.display = 'block';
+                    setTimeout(() => { t.style.display = 'none'; }, 3000);
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Amerikansk politikk</h1>
+            <p>Master Workflow Dashboard</p>
+        </header>
+        <div id="toast" class="toast">✅ Master Command Copied!</div>
+    
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">February 17, 2026</small>
+            <h2>Trumps løpegutter i München: Rubio, Vance og hva vi kan ha i vente i 2028</h2>
+            <div class="summary">Vi tar for oss Marco Rubios diplomatiske "sjarmoffensiv" i München, og sammenligner den med talen JD Vance holdt samme sted i fjor. Vi tar også for oss Pam Bondi, "The Seditious Six", den delvise nedstengningen av de føderale myndighetene og hva Lindsey Graham egentlig tenker om eierskapet av Grønland.</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/aa64865d-93a8-4a19-91e1-b3f3014ed7d2/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '260217', 'Trumps løpegutter i München: Rubio, Vance og hva vi kan ha i vente i 2028')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.260217.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/aa64865d-93a8-4a19-91e1-b3f3014ed7d2/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">February 10, 2026</small>
+            <h2>Mellomvalget: Slik tar demokratene flertallet i Senatet</h2>
+            <div class="summary">Alt du trenger å vite om det kommende mellomvalget i USA. I tillegg til en diskusjon om Trumps ønske om å "nasjonalisere" valgene og demokratenes effektive "Epstein class"-angrep.</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/811bf655-343a-439d-b6ea-b3ec0141edf7/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '260210', 'Mellomvalget: Slik tar demokratene flertallet i Senatet')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.260210.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/811bf655-343a-439d-b6ea-b3ec0141edf7/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">January 27, 2026</small>
+            <h2>Mordet i Minneapolis: Innser selv Trump at ICE har gått for langt?</h2>
+            <div class="summary">Det var ikke naivt å fortsatt ha litt is i magen, som vi snakket om i forrige episode. Hvorfor "feiget" Trump ut overfor Grønland? Og hva skjer videre i Minneapolis, der Trump-administrasjonen nok en gang har bedt folk om ikke å tro sine egne øyne? Demonstrasjonene er et stadig større politisk problem for Donald Trump.</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/d810cbce-cf25-4e83-a84b-b3de013d5d60/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '260127', 'Mordet i Minneapolis: Innser selv Trump at ICE har gått for langt?')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.260127.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/d810cbce-cf25-4e83-a84b-b3de013d5d60/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">January 20, 2026</small>
+            <h2>Trumps nye trusler: Fra Nuuk til Minneapolis</h2>
+            <div class="summary">Den siste uken har det knapt gått en dag uten at det har kommet nye trusler fra Donald Trump, både mot allierte og mot hans egne landsmenn. Er det naivt å fortsatt ha litt is i magen?</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/e4cea3db-0927-45a5-a38f-b3d70155138e/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '260120', 'Trumps nye trusler: Fra Nuuk til Minneapolis')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.260120.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/e4cea3db-0927-45a5-a38f-b3d70155138e/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">January 13, 2026</small>
+            <h2>Trump vil ha Grønland og ICE skyter en demonstrant</h2>
+            <div class="summary">Etter en vill nyhetsuke setter Henrik og Sigrid seg ned for å diskutere om Trump er villig til å invadere Grønland, samt hva som egentlig skjedde da immigrasjonsmyndigheten ICE tok livet av en kvinne i Minneapolis.</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/5b6d19f2-c6f4-460a-926d-b3d0017060c8/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '260113', 'Trump vil ha Grønland og ICE skyter en demonstrant')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.260113.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/5b6d19f2-c6f4-460a-926d-b3d0017060c8/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">January 06, 2026</small>
+            <h2>Donroe-doktrinen: Trump kidnappet Maduro</h2>
+            <div class="summary">Gjengen diskuterer de politiske konsekvensene at Trumps Venezuela-angrep, samt hva Trump gjør videre.</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/3e114aff-4d65-4df7-9679-b3c9016477de/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '260106', 'Donroe-doktrinen: Trump kidnappet Maduro')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.260106.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/3e114aff-4d65-4df7-9679-b3c9016477de/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">December 09, 2025</small>
+            <h2>Trumps førjulsgave til demokratene</h2>
+            <div class="summary">"Affordability" har gått fra å være et sentralt element i Trumps 2024-kampanje til en "demokratisk bløff" ifølge den ferske vinneren av FIFAs fredspris. Og hvordan går det med Pete Hegseth?</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/8a3612da-9503-4b74-8502-b3ad01772afc/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '251209', 'Trumps førjulsgave til demokratene')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.251209.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/8a3612da-9503-4b74-8502-b3ad01772afc/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">December 02, 2025</small>
+            <h2>"Kill them all" – Bakholdsangrep, krigsforbrytelser og kalkun-debatt</h2>
+            <div class="summary">Overlever Pete Hegseth også denne avsløringen? Og hva med J.D. Vance sine 2028-sjanser etter den kalkun-uttalelsen?</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/1f70eedf-a47b-453a-b834-b3a601865d32/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '251202', '\"Kill them all\" – Bakholdsangrep, krigsforbrytelser og kalkun-debatt')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.251202.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/1f70eedf-a47b-453a-b834-b3a601865d32/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">November 25, 2025</small>
+            <h2>Trump sjokkerer, men hva med Marjorie Taylor Greene i 2028?</h2>
+            <div class="summary">Donald Trump har langt mer enn 28 problemer, men er Marjorie Taylor Greene en av dem? Og hvorfor er han plutselig fan av Zohran Mamdani?</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/e2c515e3-a7d8-4057-9b7a-b39f0145e677/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '251125', 'Trump sjokkerer, men hva med Marjorie Taylor Greene i 2028?')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.251125.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/e2c515e3-a7d8-4057-9b7a-b39f0145e677/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">November 18, 2025</small>
+            <h2>Epstein-epostene og Trump begynner å miste kontrollen på partiet</h2>
+            <div class="summary">Donald Trump har snudd om Epstein-dokumentene. Han møter også heftig kritikk fra egne rekker, og tar det med akkurat så mye stil som man kunne forvente.</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/4f28ceb4-6c58-4e10-8527-b3980161cb97/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '251118', 'Epstein-epostene og Trump begynner å miste kontrollen på partiet')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.251118.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/4f28ceb4-6c58-4e10-8527-b3980161cb97/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">November 11, 2025</small>
+            <h2>Shutdown er over og Zohran er borgermester, med Christina Pletten</h2>
+            <div class="summary"><p><strong>&Aring;tte demokrater har stemt for &aring; &aring;pne opp statsapparatet &ndash; hva har de f&aring;tt igjen for det? Og hvorfor har New York s&aring; elendige politikere? Det lurer Sigrid p&aring;.&nbsp;</strong></p> <p>Amerikansk politikk er en podkast fra AmerikanskPolitikk.no.</p> <p>Med: Sigrid Rege G&aring;rdsvoll (V&aring;rt Land), Henrik Heldahl (Nettavisen) og Christina Pletten (Aftenposten).<br />Musikk: <a href="https://open.spotify.com/artist/4rDDy4hN7Tbrv0ntOvVKPz?si=DTtpnFxITO69M8xCn5oS_Q">Ol' Burger Beats</a>.<br />Produsent: Are T&aring;gvold Flaten.</p> <p>Liker du podkasten og vil ha tilgang til reklamefritt innhold?<strong> </strong>St&oslash;tt oss via <strong><a href="https://www.patreon.com/ampol">Patreon.com/ampol</a></strong>. <a href="https://www.amerikanskpolitikk.no/eksklusivt-innhold/">Les mer her</a>.</p><p>See <a href="https://omnystudio.com/listener">omnystudio.com/listener</a> for privacy information.</p></div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/625aac15-db02-4963-9f51-b391014706e0/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '251111', 'Shutdown er over og Zohran er borgermester, med Christina Pletten')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.251111.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/625aac15-db02-4963-9f51-b391014706e0/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">November 04, 2025</small>
+            <h2>Valgdag 2025: Hvem vinner i New York City, California, Virginia og New Jersey?</h2>
+            <div class="summary">Det er valgdag i USA og vi gir deg en gjennomgang av noen av de viktigste valgene.</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/f45e3f28-4d63-4d16-80cd-b38a016f8564/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '251104', 'Valgdag 2025: Hvem vinner i New York City, California, Virginia og New Jersey?')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.251104.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/f45e3f28-4d63-4d16-80cd-b38a016f8564/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">October 28, 2025</small>
+            <h2>Trump river østfløyen, Reagan snakker fra graven og østersfiskeren fra Maine sliter</h2>
+            <div class="summary">Vi tar for oss Donald Trumps riving av østfløyen i Det hvite hus og den kanadiske Reagan-reklamen som har fått presidenten til å se rødt. Vi snakker litt om to mulige demokratiske 2028-kandidater – Kamala Harris og Gavin Newsom – før vi tar turen til Maine, der det meste handler om senatskandidaten Graham Platner.</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/8022db43-0a99-41fa-a810-b383017b2134/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '251028', 'Trump river østfløyen, Reagan snakker fra graven og østersfiskeren fra Maine sliter')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.251028.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/8022db43-0a99-41fa-a810-b383017b2134/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">October 21, 2025</small>
+            <h2>– Noen av de mest uærlige reklamene jeg har sett noen gang</h2>
+            <div class="summary">Vi oppsummerer No Kings-demonstrasjonene i USA og tar en nærmere titt på valgene i Virginia, New Jersey og ikke minst New York City.</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/b35c5f27-398b-4643-88a4-b37c015580c3/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '251021', '– Noen av de mest uærlige reklamene jeg har sett noen gang')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.251021.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/b35c5f27-398b-4643-88a4-b37c015580c3/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">October 14, 2025</small>
+            <h2>Trumps krig mot demokratene</h2>
+            <div class="summary">Donald Trump ble hyllet som en fredspresident i Knesset, men i ukas episode bruker vi mer tid mobiliseringen av nasjonalgarden og den rettslige forfølgelsen av "fiendene" hans hjemme i USA.</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/af8789f3-25f9-4dc2-82c0-b37501499daa/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0', 'amerikanskpolitikk', '251014', 'Trumps krig mot demokratene')">
+                    ⚡ TransViewer (Cmd)
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.251014.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/d79bdbb3-8eae-4ad2-b1f6-b0bc00cd1540/b167dad4-e83e-4446-aa26-b149016d7f92/af8789f3-25f9-4dc2-82c0-b37501499daa/audio.mp3?utm_source=Podcast&in_playlist=e41751c2-d548-4976-844b-b149016d7fa0" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        </body></html>
