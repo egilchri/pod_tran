@@ -1,0 +1,62 @@
+
+    <!DOCTYPE html>
+    <html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Trumpadministrationen pressas efter ännu en dödsskjutning i Minneapolis</title>
+        <style>
+            :root {
+                --primary-bg: #f8f9fa;
+                --header-bg: #ffffff;
+                --highlight-bg: #fff9c4;
+                --highlight-border: #fbc02d;
+                --sv-color: #1a237e;
+                --en-color: #455a64;
+            }
+            body { font-family: -apple-system, system-ui, sans-serif; margin: 0; padding: 0; background: var(--primary-bg); }
+            .header-box { position: sticky; top: 0; background: var(--header-bg); padding: 15px 20px; border-bottom: 2px solid #ddd; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+            h1 { font-size: 1.25rem; margin: 10px 0; color: #333; }
+            audio { width: 100%; height: 50px; }
+            .transcript { padding: 10px; max-width: 1000px; margin: 0 auto; }
+            .row { display: flex; gap: 15px; padding: 15px; margin-bottom: 8px; border-radius: 8px; background: #fff; border: 1px solid #eee; cursor: pointer; }
+            .row.highlight { background: var(--highlight-bg); border-left: 6px solid var(--highlight-border); font-weight: 500; }
+            .sv, .en { flex: 1; font-size: 1.05rem; }
+            .sv { color: var(--sv-color); font-weight: 600; }
+            .en { color: var(--en-color); font-style: italic; }
+            @media (max-width: 600px) { .row { flex-direction: column; gap: 5px; } }
+        </style>
+    </head>
+    <body>
+        <div class="header-box">
+            <small>usapodden | 260128</small>
+            <h1>Trumpadministrationen pressas efter ännu en dödsskjutning i Minneapolis</h1>
+            <audio id="audio" controls src="usapodden.260128.mp3"></audio>
+        </div>
+        <div id="transcript" class="transcript"></div>
+        <script>
+            const audio = document.getElementById('audio');
+            const container = document.getElementById('transcript');
+            let data = [];
+            fetch('transcript.usapodden.260128.json').then(r => r.json()).then(json => {
+                data = json;
+                data.forEach((item, i) => {
+                    const row = document.createElement('div');
+                    row.className = 'row'; row.id = 'row-' + i;
+                    row.innerHTML = `<div class="sv">${item.sv}</div><div class="en">${item.en}</div>`;
+                    row.onclick = () => { audio.currentTime = item.start; audio.play(); };
+                    container.appendChild(row);
+                });
+            });
+            audio.addEventListener('timeupdate', () => {
+                data.forEach((item, i) => {
+                    const el = document.getElementById('row-' + i);
+                    if (audio.currentTime >= item.start && audio.currentTime <= item.end) {
+                        el.classList.add('highlight');
+                        if (!el.dataset.seen) { el.scrollIntoView({behavior:'smooth', block:'center'}); el.dataset.seen='1'; }
+                    } else { el.classList.remove('highlight'); delete el.dataset.seen; }
+                });
+            });
+        </script>
+    </body></html>
+    
