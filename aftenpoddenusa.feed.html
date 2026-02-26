@@ -20,7 +20,7 @@
         </style>
         <script>
             function copyMasterCommand(mp3Url, feedname, date, title) {
-                const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}"`;
+                const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}" --lang "${lang}"`;
                 navigator.clipboard.writeText(cmd).then(() => {
                     const t = document.getElementById('toast');
                     t.style.display = 'block';
