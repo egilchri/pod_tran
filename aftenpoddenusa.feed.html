@@ -20,7 +20,12 @@
         </style>
         <script>
             function copyMasterCommand(mp3Url, feedname, date, title) {
+                // Correctly grab lang from the HTML tag
+                const lang = document.documentElement.lang || 'en'; 
+                
+                // Backticks for JS template literals must be escaped or inside double braces
                 const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}" --lang "${lang}"`;
+                
                 navigator.clipboard.writeText(cmd).then(() => {
                     const t = document.getElementById('toast');
                     t.style.display = 'block';
