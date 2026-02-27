@@ -9,8 +9,9 @@
             :root { --primary: #004a99; --accent: #ffc107; --bg: #f0f2f5; }
             body { font-family: system-ui, sans-serif; margin: 0; background: var(--bg); }
             .header-box { position: sticky; top: 0; background: white; padding: 15px; border-bottom: 3px solid var(--primary); z-index: 100; }
-            .controls { display: flex; gap: 10px; align-items: center; margin-top: 10px; }
-            audio { flex-grow: 1; }
+            .controls { display: flex; gap: 15px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+            audio { flex-grow: 1; min-width: 300px; }
+            .speed-control { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: bold; color: var(--primary); }
             .btn { background: var(--primary); color: white; border: none; padding: 10px; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 0.8rem; }
             .btn.active { background: var(--accent); color: black; }
             .transcript { padding: 20px; max-width: 900px; margin: 0 auto; }
@@ -26,6 +27,13 @@
             <h1>Trump fick bråket han ville ha</h1>
             <div class="controls">
                 <audio id="audio" controls src="usapodden.260225.mp3"></audio>
+                
+                <div class="speed-control">
+                    <label for="speedSlider">Speed:</label>
+                    <input type="range" id="speedSlider" min="0.5" max="2.0" step="0.1" value="1.0">
+                    <span id="speedVal">1.0x</span>
+                </div>
+
                 <button id="modeBtn" class="btn" onclick="toggleMode()">🔊 Play Interleaved Track</button>
             </div>
         </div>
@@ -33,15 +41,26 @@
         <script>
             const audio = document.getElementById('audio');
             const modeBtn = document.getElementById('modeBtn');
+            const speedSlider = document.getElementById('speedSlider');
+            const speedVal = document.getElementById('speedVal');
             const container = document.getElementById('transcript');
             const sources = { orig: "usapodden.260225.mp3", bilingual: "usapodden.260225.bilingual.mp3" };
             let mode = 'orig';
             let data = [];
 
+            // Speed Control Logic
+            speedSlider.addEventListener('input', () => {
+                const val = speedSlider.value;
+                audio.playbackRate = val;
+                speedVal.innerText = val + 'x';
+            });
+
             function toggleMode() {
                 const isPlaying = !audio.paused;
+                const currentSpeed = audio.playbackRate; // Preserve speed when switching tracks
                 mode = (mode === 'orig') ? 'bilingual' : 'orig';
                 audio.src = sources[mode];
+                audio.playbackRate = currentSpeed; 
                 if (isPlaying) audio.play();
                 modeBtn.innerText = mode === 'orig' ? '🔊 Play Interleaved Track' : '🌍 Play Original Podcast';
                 modeBtn.classList.toggle('active');
@@ -59,7 +78,7 @@
             });
 
             audio.addEventListener('timeupdate', () => {
-                if (mode !== 'orig') return; // Sync only works for original podcast timing
+                if (mode !== 'orig') return;
                 const now = audio.currentTime;
                 data.forEach((item, i) => {
                     const el = document.getElementById('row-' + i);
