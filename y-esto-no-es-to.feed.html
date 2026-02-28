@@ -21,7 +21,7 @@
         <script>
             function copyMasterCommand(mp3Url, feedname, date, title, lang) {
                 // Simplified command: only requires URL as logic is now automated
-                const cmd = `python3 ./run_workflow_feed.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}" --lang "${lang}"`;
+                const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}" --lang "${lang}"`;
                 navigator.clipboard.writeText(cmd).then(() => {
                     const t = document.getElementById('toast');
                     t.style.display = 'block';
