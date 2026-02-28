@@ -1,0 +1,234 @@
+
+    <!DOCTYPE html>
+    <html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contrapoder | CNN Portugal - Feed Dashboard</title>
+        <style>
+            body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f2f5; }
+            header { background: #004a99; color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
+            .episode-card { background: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 6px solid #ffc107; }
+            h2 { margin: 0 0 10px 0; font-size: 1.3em; }
+            .summary { color: #444; font-size: 0.95em; margin-bottom: 20px; line-height: 1.5; }
+            .btn-group { display: flex; gap: 8px; border-top: 1px solid #eee; padding-top: 15px; flex-wrap: wrap; }
+            .btn { padding: 10px 15px; border-radius: 6px; font-weight: bold; text-decoration: none; cursor: pointer; border: none; font-size: 0.85em; display: inline-block; }
+            .btn-run { background: #ffc107; color: black; }
+            .btn-view { background: #28a745; color: white; }
+            .btn-listen { background: #e9ecef; color: #004a99; border: 1px solid #004a99; }
+            .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px 30px; border-radius: 50px; display: none; z-index: 1000; }
+        </style>
+        <script>
+            function copyMasterCommand(mp3Url, feedname, date, title, lang) {
+                // Simplified command: only requires URL as logic is now automated
+                const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}" --lang "${lang}"`;
+                navigator.clipboard.writeText(cmd).then(() => {
+                    const t = document.getElementById('toast');
+                    t.style.display = 'block';
+                    setTimeout(() => { t.style.display = 'none'; }, 3000);
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Contrapoder | CNN Portugal</h1>
+            <p>Language Detected: <strong>pt</strong> | Feed ID: <strong>contrapoder-cnn</strong></p>
+        </header>
+        <div id="toast" class="toast">✅ Workflow Command Copied!</div>
+    
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">February 28, 2026</small>
+            <h2>D. Sebastião da direita voltou em dia de tempestade</h2>
+            <div class="summary">Com S&eacute;rgio Sousa Pinto e Jo&atilde;o Marques de Almeida. Modera&ccedil;&atilde;o de Anselmo Crespo.See omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/02c96b01-a379-4c6d-b50f-b3ff001300be/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '260228', 'D. Sebastião da direita voltou em dia de tempestade', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.260228.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/02c96b01-a379-4c6d-b50f-b3ff001300be/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">February 14, 2026</small>
+            <h2>O vento, a chuva e a inação</h2>
+            <div class="summary">Esta semana com Jo&atilde;o Marques de Almeida, S&eacute;rgio Sousa Pinto e Henrique Gouveia e Melo. Modera&ccedil;&atilde;o de Anselmo Crespo.See omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/e150e723-4d28-428d-92df-b3f1008c3d5e/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '260214', 'O vento, a chuva e a inação', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.260214.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/e150e723-4d28-428d-92df-b3f1008c3d5e/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">February 07, 2026</small>
+            <h2>As presidenciais onde tudo o vento levou</h2>
+            <div class="summary">Esta semana com Miguel Relvas, Miguel Pinheiro e S&eacute;rgio Sousa Pinto. Modera&ccedil;&atilde;o de Anselmo Crespo.See omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/6abe7234-4e45-4593-8ad6-b3ea001102e7/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '260207', 'As presidenciais onde tudo o vento levou', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.260207.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/6abe7234-4e45-4593-8ad6-b3ea001102e7/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">January 31, 2026</small>
+            <h2>Tempestade presidencial</h2>
+            <div class="summary">com Anselmo CrespoSee omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/968383af-adc8-4e6b-b571-b3e30094d898/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '260131', 'Tempestade presidencial', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.260131.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/968383af-adc8-4e6b-b571-b3e30094d898/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">January 24, 2026</small>
+            <h2>Leilão presidencial: quem dá mais?</h2>
+            <div class="summary">com Anselmo CrespoSee omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/659f6d03-2534-47d7-8a08-b3dc00c24621/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '260124', 'Leilão presidencial: quem dá mais?', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.260124.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/659f6d03-2534-47d7-8a08-b3dc00c24621/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">January 17, 2026</small>
+            <h2>Terá sido a campanha mais estranha de sempre?</h2>
+            <div class="summary">Antes das elei&ccedil;&otilde;es presidenciais, Anselmo Crespo recebe os habituais S&eacute;rgio Sousa Pinto e Jo&atilde;o Marques de Almeida, mas tamb&eacute;m Alexandre Picoto e Ant&oacute;nio Cunha Vaz.See omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/c70392ab-7075-4dab-b838-b3d50009a56d/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '260117', 'Terá sido a campanha mais estranha de sempre?', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.260117.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/c70392ab-7075-4dab-b838-b3d50009a56d/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">January 10, 2026</small>
+            <h2>As eleições da roleta russa</h2>
+            <div class="summary">Com S&eacute;rgio Sousa Pinto, Helena Matos, Jo&atilde;o Marques de Almeida e Miguel Pinheiro. Modera&ccedil;&atilde;o de Anselmo Crespo.See omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/5a16d10b-cfde-436f-a43b-b3ce008d3943/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '260110', 'As eleições da roleta russa', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.260110.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/5a16d10b-cfde-436f-a43b-b3ce008d3943/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">January 03, 2026</small>
+            <h2>Presidenciais: let the games begin</h2>
+            <div class="summary">Com S&eacute;rgio Sousa Pinto, Pedro Tadeu e Jo&atilde;o Marques de Almeida. Modera&ccedil;&atilde;o de Anselmo Crespo.See omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/cc28c2bc-f482-4b1a-b682-b3c700923856/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '260103', 'Presidenciais: let the games begin', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.260103.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/cc28c2bc-f482-4b1a-b682-b3c700923856/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">December 20, 2025</small>
+            <h2>Espelho meu, espelho meu, haverá alguém mais transparente do que eu?</h2>
+            <div class="summary">Com S&eacute;rgio Sousa Pinto, Maria Castello Branco e Jo&atilde;o Marques de Almeida. Modera&ccedil;&atilde;o de Anselmo Crespo.See omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/8f93d70e-a0f6-459a-83f5-b3b9009b0060/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '251220', 'Espelho meu, espelho meu, haverá alguém mais transparente do que eu?', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.251220.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/8f93d70e-a0f6-459a-83f5-b3b9009b0060/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">December 13, 2025</small>
+            <h2>A greve geral na melhor economia do mundo</h2>
+            <div class="summary">Com S&eacute;rgio Sousa Pinto, Maria Castello Branco e Jo&atilde;o Marques de Almeida. Modera&ccedil;&atilde;o de Anselmo Crespo.See omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/a6211bfa-5f89-4874-98a6-b3b200919f9f/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '251213', 'A greve geral na melhor economia do mundo', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.251213.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/a6211bfa-5f89-4874-98a6-b3b200919f9f/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">November 29, 2025</small>
+            <h2>Sócrates contra todos, Sócrates só com um</h2>
+            <div class="summary">O antigo primeiro-ministro voltou a falar e n&atilde;o poupou ningu&eacute;m. Nem aqueles que pretende apoiar na corrida a Bel&eacute;mSee omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/2fd9f53c-06b9-46b8-87d2-b3a400925dc0/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '251129', 'Sócrates contra todos, Sócrates só com um', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.251129.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/2fd9f53c-06b9-46b8-87d2-b3a400925dc0/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">November 22, 2025</small>
+            <h2>O almirante quer ser a rainha de Inglaterra</h2>
+            <div class="summary">Com S&eacute;rgio Sousa Pinto, Maria Castello Branco e Jo&atilde;o Marques de Almeida. Modera&ccedil;&atilde;o de Pedro Benevides.See omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/a6da0d28-d4eb-4f5a-a209-b39d000ea06f/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '251122', 'O almirante quer ser a rainha de Inglaterra', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.251122.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/a6da0d28-d4eb-4f5a-a209-b39d000ea06f/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">November 15, 2025</small>
+            <h2>Portugal voltou a ser a Disneylândia dos visionários</h2>
+            <div class="summary">Com S&eacute;rgio Sousa Pinto, Maria Castello Branco e Jo&atilde;o Marques de Almeida. A modera&ccedil;&atilde;o &eacute; de Pedro Benevides.See omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/ec474d62-6344-46dd-8483-b39600d0c342/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '251115', 'Portugal voltou a ser a Disneylândia dos visionários', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.251115.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/ec474d62-6344-46dd-8483-b39600d0c342/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">November 08, 2025</small>
+            <h2>A saúde é uma doença e o país não tem cura</h2>
+            <div class="summary">Com S&eacute;rgio Sousa Pinto, Maria Castello Branco e, esta semana, Eduardo Barroso. A modera&ccedil;&atilde;o &eacute; de Anselmo CrespoSee omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/04762484-dd52-4b7a-8480-b38f00eb01b0/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '251108', 'A saúde é uma doença e o país não tem cura', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.251108.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/04762484-dd52-4b7a-8480-b38f00eb01b0/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        
+        <div class="episode-card">
+            <small style="color:#666; font-weight:bold;">November 01, 2025</small>
+            <h2>A Saúde ainda pode ser salva?</h2>
+            <div class="summary">Com S&eacute;rgio Sousa Pinto, Maria Castello Branco e Jo&atilde;o Marques de Almeida. Modera&ccedil;&atilde;o de Anselmo Crespo.See omnystudio.com/listener for privacy information....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/ca83efed-bff8-401d-bd05-b3880024d2e8/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a', 'contrapoder-cnn', '251101', 'A Saúde ainda pode ser salva?', 'pt')">
+                    ⚡ Copy Process Command
+                </button>
+                <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.251101.html" target="_blank" class="btn btn-view">🌐 View Live</a>
+                <a href="https://traffic.omny.fm/d/clips/a5afba10-ff2d-4550-adff-add50110b76b/e6a29981-0f54-46a8-8a46-ae940109168e/ca83efed-bff8-401d-bd05-b3880024d2e8/audio.mp3?utm_source=Podcast&in_playlist=68a19809-a0fb-49e6-91a5-ae940109cf5a" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+            </div>
+        </div>
+        </body></html>
