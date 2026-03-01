@@ -1,234 +1,166 @@
 
     <!DOCTYPE html>
-    <html lang="sv">
+    <html lang="sv" data-is-override="false" data-rss-url="https://api.sr.se/api/rss/pod/22712">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>USApodden - Feed Dashboard</title>
         <style>
             body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f2f5; }
+            .nav-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+            .btn-back { background: #6c757d; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; border: none; cursor: pointer; }
+            .btn-sync { background: #ffc107; color: black; padding: 8px 16px; border-radius: 6px; font-weight: bold; border: none; cursor: pointer; display: none; animation: pulse 2s infinite; }
+            @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
             header { background: #004a99; color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
             .episode-card { background: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 6px solid #ffc107; }
-            h2 { margin: 0 0 10px 0; font-size: 1.3em; }
-            .summary { color: #444; font-size: 0.95em; margin-bottom: 20px; line-height: 1.5; }
-            .btn-group { display: flex; gap: 8px; border-top: 1px solid #eee; padding-top: 15px; flex-wrap: wrap; }
-            .btn { padding: 10px 15px; border-radius: 6px; font-weight: bold; text-decoration: none; cursor: pointer; border: none; font-size: 0.85em; display: inline-block; }
-            .btn-run { background: #ffc107; color: black; }
-            .btn-view { background: #28a745; color: white; }
-            .btn-listen { background: #e9ecef; color: #004a99; border: 1px solid #004a99; }
-            .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px 30px; border-radius: 50px; display: none; z-index: 1000; }
+            .btn-run { background: #ffc107; color: black; padding: 10px 15px; border-radius: 6px; font-weight: bold; cursor: pointer; border: none; }
         </style>
         <script>
+            function triggerUpdate() {
+                const cmd = `python3 run_workflow_feed.py --url "https://api.sr.se/api/rss/pod/22712"` + ("None" ? ` --lang None` : "");
+                navigator.clipboard.writeText(cmd);
+                alert("Update command copied! Run it in your terminal.");
+            }
             function copyMasterCommand(mp3Url, feedname, date, title, lang) {
-                // Simplified command: only requires URL as logic is now automated
                 const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}" --lang "${lang}"`;
-                navigator.clipboard.writeText(cmd).then(() => {
-                    const t = document.getElementById('toast');
-                    t.style.display = 'block';
-                    setTimeout(() => { t.style.display = 'none'; }, 3000);
-                });
+                navigator.clipboard.writeText(cmd);
             }
         </script>
     </head>
-    <body>
+    <body data-latest="1772049600.0" data-generated="1772385078.343036">
+        <div class="nav-header">
+            <button class="btn-back" onclick="window.history.back()">← Back to Index</button>
+            <button id="syncBtn" class="btn-sync" onclick="triggerUpdate()">⚠ Update Available</button>
+        </div>
         <header>
             <h1>USApodden</h1>
-            <p>Language Detected: <strong>sv</strong> | Feed ID: <strong>usapodden</strong></p>
+            <p>Language: <strong>sv</strong> </p>
         </header>
-        <div id="toast" class="toast">✅ Workflow Command Copied!</div>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                if (parseFloat(document.body.dataset.latest) > parseFloat(document.body.dataset.generated)) {
+                    document.getElementById('syncBtn').style.display = 'block';
+                }
+            });
+        </script>
     
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">February 25, 2026</small>
+            <small>February 25, 2026</small>
             <h2>Trump fick bråket han ville ha</h2>
-            <div class="summary">Vi är trötta på att vinna hela tiden. Presidenten självsäker i sitt State of the union-tal. Lyssna på alla avsnitt i Sveriges Radios app. Under drygt 1 timme och 45 minuter hyllade Donald Trump sina egna framgångar, attackerade sin politiska motståndare och gav en tydlig känga åt Högsta domstolen so...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10089151.mp3', 'usapodden', '260225', 'Trump fick bråket han ville ha', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.260225.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10089151.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10089151.mp3', 'usapodden', '260225', 'Trump fick bråket han ville ha', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.260225.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">February 18, 2026</small>
+            <small>February 18, 2026</small>
             <h2>Rubio dissade EU-toppen och reste till Ungern</h2>
-            <div class="summary">Trumps utrikesminister låter mildare än JD Vance men säger egentligen samma sak. Lyssna på alla avsnitt i Sveriges Radios app. När USA:s utrikesminister Marco Rubio talade på säkerhetskonferensen i München var det en&nbsp;mjukare ton än när vicepresident JD Vance talade i fjol. Men innehållet var i ...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10081970.mp3', 'usapodden', '260218', 'Rubio dissade EU-toppen och reste till Ungern', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.260218.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10081970.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10081970.mp3', 'usapodden', '260218', 'Rubio dissade EU-toppen och reste till Ungern', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.260218.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">February 11, 2026</small>
+            <small>February 11, 2026</small>
             <h2>Trump tvingas backa från rasistisk video</h2>
-            <div class="summary">Kritiken från egna partiet blev för hård. Lyssna på alla avsnitt i Sveriges Radios app. En video som föreställer paret Obama som apor, rivaliserande pausunderhållning i Superbowl, Ice-protester under OS och nya avslöjanden om utredningen av dödskjutningen av Renee Good i Minneapolis – vi har saker a...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10073191.mp3', 'usapodden', '260211', 'Trump tvingas backa från rasistisk video', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.260211.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10073191.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10073191.mp3', 'usapodden', '260211', 'Trump tvingas backa från rasistisk video', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.260211.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">February 04, 2026</small>
+            <small>February 04, 2026</small>
             <h2>Ett decennium på steroider – USApodden 10 år!</h2>
-            <div class="summary">Live från Göteborgs stadsteater. Lyssna på alla avsnitt i Sveriges Radios app. För tio år sedan diskuterade vi om det ens var möjligt för en tv-stjärna att bli president i USA. I dag verkar allt fler ta farväl av världsordningen som vi kände den. Och det som började som ett experiment inför primärva...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10065985.mp3', 'usapodden', '260204', 'Ett decennium på steroider – USApodden 10 år!', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.260204.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10065985.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10065985.mp3', 'usapodden', '260204', 'Ett decennium på steroider – USApodden 10 år!', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.260204.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">January 28, 2026</small>
+            <small>January 28, 2026</small>
             <h2>Trumpadministrationen pressas efter ännu en dödsskjutning i Minneapolis</h2>
-            <div class="summary">Två personer har skjutits ihjäl av federal polis på bara ett par veckor. Lyssna på alla avsnitt i Sveriges Radios app. Donald Trumps regering är under allt hårdare press efter att federal polis skjutit ihjäl ännu en amerikansk medborgare i Minneapolis, inför rullande kameror. Gränspolischefen Gregor...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10058652.mp3', 'usapodden', '260128', 'Trumpadministrationen pressas efter ännu en dödsskjutning i Minneapolis', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.260128.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10058652.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10058652.mp3', 'usapodden', '260128', 'Trumpadministrationen pressas efter ännu en dödsskjutning i Minneapolis', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.260128.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">January 21, 2026</small>
+            <small>January 21, 2026</small>
             <h2>Trump: Kommer inte ta Grönland med våld</h2>
-            <div class="summary">Men den vackra isbiten ska bli amerikansk, hävdar presidenten. Lyssna på alla avsnitt i Sveriges Radios app. Nato och de europeiska länderna är otacksamma – USA ska ha Grönland, även om man inte tänker ta ön med våld. Ungefär så löd budskapet från Donald Trump när han läxade upp näringslivstoppar oc...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10051521.mp3', 'usapodden', '260121', 'Trump: Kommer inte ta Grönland med våld', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.260121.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10051521.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10051521.mp3', 'usapodden', '260121', 'Trump: Kommer inte ta Grönland med våld', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.260121.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">January 14, 2026</small>
+            <small>January 14, 2026</small>
             <h2>Trump till iranierna: ”hjälp är på väg”</h2>
-            <div class="summary">Amerikanske presidenten uppmanar till fortsatta protester mot regimen. Lyssna på alla avsnitt i Sveriges Radios app. De dödliga protesterna i Iran fortsätter och retoriken blir allt hårdare från så väl regimen som Donald Trump. Men vad betyder det amerikanska löftet om att ”hjälp är på väg”, varför ...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10042092.mp3', 'usapodden', '260114', 'Trump till iranierna: ”hjälp är på väg”', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.260114.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10042092.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10042092.mp3', 'usapodden', '260114', 'Trump till iranierna: ”hjälp är på väg”', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.260114.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">January 07, 2026</small>
+            <small>January 07, 2026</small>
             <h2>USA vill ta Grönland</h2>
-            <div class="summary">Trump utesluter inte att ta ön med våld. Lyssna på alla avsnitt i Sveriges Radios app. Efter USA:s attack mot Venezuela riktas blickarna mot Grönland. Vita huset verkar inte utesluta att använda sig av militära medel och de senaste dagarna har man återkommande upprepat att området ligger i USA:s int...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10034371.mp3', 'usapodden', '260107', 'USA vill ta Grönland', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.260107.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10034371.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10034371.mp3', 'usapodden', '260107', 'USA vill ta Grönland', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.260107.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">January 03, 2026</small>
+            <small>January 03, 2026</small>
             <h2>Trump: USA ska styra Venezuela</h2>
-            <div class="summary">EXTRAPODD: USA har attackerat Venezuela och fört bort presidenten. Lyssna på alla avsnitt i Sveriges Radios app. Natten till lördag attackerade amerikansk militär Venezuelas huvudstad Caracas och andra platser i landet. President Nicolás Maduro och hans fru greps och fördes bort. Enligt Donald Trump...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10031141.mp3', 'usapodden', '260103', 'Trump: USA ska styra Venezuela', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.260103.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10031141.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10031141.mp3', 'usapodden', '260103', 'Trump: USA ska styra Venezuela', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.260103.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">December 31, 2025</small>
-            <h2>USA har attackerat mål inne i Venezuela</h2>
-            <div class="summary">Krigshot och fredsförhandlingar följer Trump in i 2026. Lyssna på alla avsnitt i Sveriges Radios app. Medan möten mellan Trump och Ukrainas och Israels ledare avlöste varandra i mellandagarna, framkom att USA attackerat mål inne i Venezuela. Trumps första år i Vita huset har varit intensivt och inge...</div>
+            <small>December 31, 2025</small>
+            <h2>USA har attackerat mål inne i Venezuela</h2>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10028333.mp3', 'usapodden', '251231', 'USA har attackerat mål inne i Venezuela', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.251231.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10028333.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10028333.mp3', 'usapodden', '251231', 'USA har attackerat mål inne i Venezuela', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.251231.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">December 24, 2025</small>
-            <h2>Därför finns Epsteindokumenten i representanthuset</h2>
-            <div class="summary">USApodden svarar på lyssnarnas frågor. Lyssna på alla avsnitt i Sveriges Radios app. Har Trump det yttersta ansvaret för attackerna på så kallade knarkbåtar, vad får amerikanerna för sina skattepengar, hur hamnade Epsteindokumenten i representanthuset och hade pepparkaks-vita-huset någon flygel åt ö...</div>
+            <small>December 24, 2025</small>
+            <h2>Därför finns Epsteindokumenten i representanthuset</h2>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10022452.mp3', 'usapodden', '251224', 'Därför finns Epsteindokumenten i representanthuset', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.251224.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10022452.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10022452.mp3', 'usapodden', '251224', 'Därför finns Epsteindokumenten i representanthuset', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.251224.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">December 17, 2025</small>
+            <small>December 17, 2025</small>
             <h2>Trumps hatiska inlägg kan slå tillbaka</h2>
-            <div class="summary">Kallar mördad regissör störd. Lyssna på alla avsnitt i Sveriges Radios app. Hatiska uttalanden på nätet som kan få stora konsekvenser, inte minst om den som skriver dem är president. I helgen mördades regissören Rob Reiner och hans fru, men istället för deltagande, gjorde Donald Trump ett inlägg på ...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10015459.mp3', 'usapodden', '251217', 'Trumps hatiska inlägg kan slå tillbaka', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.251217.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10015459.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10015459.mp3', 'usapodden', '251217', 'Trumps hatiska inlägg kan slå tillbaka', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.251217.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">December 12, 2025</small>
-            <h2>USA:s militär beslagtar oljetanker</h2>
-            <div class="summary">Trump trappar upp mot Venezuela Lyssna på alla avsnitt i Sveriges Radios app. Efter attackerna mot misstänkta narkotikasmugglare utanför Venezuelas kust, har nu den amerikanska militären beslagtagit en venezolansk oljetanker. ”Sjöröveri”, säger den venezolanska regimen, legitim aktion mot sanktioner...</div>
+            <small>December 12, 2025</small>
+            <h2>USA:s militär beslagtar oljetanker</h2>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10010620.mp3', 'usapodden', '251212', 'USA:s militär beslagtar oljetanker', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.251212.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10010620.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10010620.mp3', 'usapodden', '251212', 'USA:s militär beslagtar oljetanker', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.251212.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">December 10, 2025</small>
+            <small>December 10, 2025</small>
             <h2>USA varnar för Europas sammanbrott</h2>
-            <div class="summary">Nya säkerhetsstrategin pekar ut Europa som svagt och hotat inifrån. Lyssna på alla avsnitt i Sveriges Radios app. USA har fått en ny säkerhetsstrategi, där alla ska få utforma sin politik i fred – så länge de inte är ett land i Europa. Ska Trump börja påverka europeiska val nu, varför får USA så lit...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10007754.mp3', 'usapodden', '251210', 'USA varnar för Europas sammanbrott', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.251210.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10007754.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10007754.mp3', 'usapodden', '251210', 'USA varnar för Europas sammanbrott', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.251210.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
         </div>
-        
         <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">December 03, 2025</small>
+            <small>December 03, 2025</small>
             <h2>Trumpadministrationen anklagas för krigsbrott</h2>
-            <div class="summary">Överlevare från en amerikansk båtattack dödades i ett andra anfall. Lyssna på alla avsnitt i Sveriges Radios app. En Washington Post-granskning av den första amerikanska attacken mot en påstådd knarkbåt i Karibien har lett till att Trumpadministrationen anklagas för krigsbrott – även av vissa republ...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/itunes/10000120.mp3', 'usapodden', '251203', 'Trumpadministrationen anklagas för krigsbrott', 'sv')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/usapodden.251203.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://www.sverigesradio.se/topsy/ljudfil/itunes/10000120.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn-run" onclick="copyMasterCommand('https://www.sverigesradio.se/topsy/ljudfil/podrss/10000120.mp3', 'usapodden', '251203', 'Trumpadministrationen anklagas för krigsbrott', 'sv')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/usapodden.251203.html" class="btn-view" style="background:#28a745; color:white; padding:10px 15px; border-radius:6px; text-decoration:none; font-weight:bold;">🌐 View Live</a>
             </div>
-        </div>
-        </body></html>
+        </div></body></html>
