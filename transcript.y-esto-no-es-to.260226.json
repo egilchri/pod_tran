@@ -1,0 +1,1418 @@
+[
+  {
+    "start": 0.0,
+    "end": 5.4,
+    "b_start": 0.0,
+    "b_end": 13.34,
+    "orig": "Este podcast se presenta gracias al programa de apoyo al periodismo independiente del Grupo",
+    "en": "This podcast is presented thanks to the Group's independent journalism support program"
+  },
+  {
+    "start": 5.4,
+    "end": 10.0,
+    "b_start": 14.34,
+    "b_end": 25.11,
+    "orig": "Ban Colombia, porque una sociedad mejor informada está más protegida.",
+    "en": "Ban Colombia, because a better informed society is more protected."
+  },
+  {
+    "start": 10.0,
+    "end": 26.4,
+    "b_start": 26.11,
+    "b_end": 40.7,
+    "orig": "La presidenta de México, Claudia Sheinbaum, enviará al Congreso su polémico proyecto",
+    "en": "The president of Mexico, Claudia Sheinbaum, will send her controversial project to Congress"
+  },
+  {
+    "start": 26.4,
+    "end": 29.76,
+    "b_start": 41.7,
+    "b_end": 49.76,
+    "orig": "de reforma electoral. Le dará en luz verde.",
+    "en": "of electoral reform. It will give you the green light."
+  },
+  {
+    "start": 29.76,
+    "end": 34.28,
+    "b_start": 50.76,
+    "b_end": 63.5,
+    "orig": "Inquiétude en Colombia por un decreto que obligaría a los fondos de pensiones a transferir",
+    "en": "Concern in Colombia over a decree that would force pension funds to transfer"
+  },
+  {
+    "start": 34.28,
+    "end": 38.84,
+    "b_start": 64.5,
+    "b_end": 74.02,
+    "orig": "al gobierno 6.800 millones de dólares. ¿Por qué?",
+    "en": "to the government 6.8 billion dollars. Because?"
+  },
+  {
+    "start": 38.84,
+    "end": 43.88,
+    "b_start": 75.02,
+    "b_end": 89.47,
+    "orig": "España desclasificó ayer los archivos del intento de golpe militar del 23 de febrero",
+    "en": "Yesterday Spain declassified the files of the attempted military coup of February 23"
+  },
+  {
+    "start": 43.88,
+    "end": 49.44,
+    "b_start": 90.47,
+    "b_end": 102.54,
+    "orig": "de 1981, el 23F. ¿Cuál es la principal revelación?",
+    "en": "1981, 23F. What is the main revelation?"
+  },
+  {
+    "start": 49.44,
+    "end": 58.08,
+    "b_start": 103.54,
+    "b_end": 115.17,
+    "orig": "Hola, bienvenidos a Y Esto No Es Todo, el podcast de Georgetown",
+    "en": "Hello, welcome to And This Is Not Everything, the Georgetown podcast"
+  },
+  {
+    "start": 58.08,
+    "end": 65.56,
+    "b_start": 116.17,
+    "b_end": 129.7,
+    "orig": "de la Universidad de Washington, D.C. Soy Juan Carlos Iragorri, desde Madrid.",
+    "en": "from the University of Washington, D.C. I am Juan Carlos Iragorri, from Madrid."
+  },
+  {
+    "start": 65.56,
+    "end": 68.28,
+    "b_start": 130.7,
+    "b_end": 138.96,
+    "orig": "Soy Paz Rodríguez Niel, desde Buenos Aires.",
+    "en": "I am Paz Rodríguez Niel, from Buenos Aires."
+  },
+  {
+    "start": 68.28,
+    "end": 71.28,
+    "b_start": 139.96,
+    "b_end": 148.33,
+    "orig": "Y yo soy Jorge Espinosa, y estoy en Bogotá.",
+    "en": "And I am Jorge Espinosa, and I am in Bogotá."
+  },
+  {
+    "start": 71.28,
+    "end": 75.84,
+    "b_start": 149.33,
+    "b_end": 161.71,
+    "orig": "Es jueves, 26 de febrero, y esto es todo lo que usted debería saber hoy.",
+    "en": "It's Thursday, February 26, and this is everything you should know today."
+  },
+  {
+    "start": 88.08,
+    "end": 93.32,
+    "b_start": 162.71,
+    "b_end": 177.87,
+    "orig": "En México, Claudia Sheinbaum decidió ayer pisar el acelerador para sacar adelante su",
+    "en": "In Mexico, Claudia Sheinbaum decided yesterday to step on the accelerator to move forward with her"
+  },
+  {
+    "start": 93.32,
+    "end": 99.0,
+    "b_start": 178.87,
+    "b_end": 192.98,
+    "orig": "controvertido proyecto de reforma electoral. La presidenta dejó claro que el lunes enviará",
+    "en": "controversial electoral reform project. The president made it clear that on Monday she will send"
+  },
+  {
+    "start": 99.0,
+    "end": 103.36,
+    "b_start": 193.98,
+    "b_end": 203.24,
+    "orig": "el texto al Congreso con la idea de que le dé luz verde.",
+    "en": "the text to Congress with the idea of giving it the green light."
+  },
+  {
+    "start": 103.36,
+    "end": 108.92,
+    "b_start": 204.24,
+    "b_end": 220.1,
+    "orig": "El proyecto consta de 10 puntos. Entre ellos está el de reducir en un 25% la financiación",
+    "en": "The project consists of 10 points. Among them is to reduce financing by 25%"
+  },
+  {
+    "start": 108.92,
+    "end": 114.4,
+    "b_start": 221.1,
+    "b_end": 234.94,
+    "orig": "estatal a los partidos políticos y el de prohibir los aportes en dinero efectivo. También",
+    "en": "state tax to political parties and prohibiting contributions in cash. Also"
+  },
+  {
+    "start": 114.4,
+    "end": 119.92,
+    "b_start": 235.94,
+    "b_end": 250.51,
+    "orig": "el de rebajar de 48 a 35 minutos diarios, el tiempo que cada partido tiene en radio",
+    "en": "to reduce the time each party has on the radio from 48 to 35 minutes a day"
+  },
+  {
+    "start": 119.92,
+    "end": 121.42,
+    "b_start": 251.51,
+    "b_end": 254.89,
+    "orig": "y televisión.",
+    "en": "and television."
+  },
+  {
+    "start": 121.42,
+    "end": 127.44,
+    "b_start": 255.89,
+    "b_end": 271.44,
+    "orig": "Un asunto central del proyecto es que el Senado tendría 96 escaños, 64 de mayoría",
+    "en": "A central issue of the project is that the Senate would have 96 seats, 64 majority"
+  },
+  {
+    "start": 127.44,
+    "end": 133.36,
+    "b_start": 272.44,
+    "b_end": 287.34,
+    "orig": "relativa y 32 de primera minoría. La Cámara de Diputados también cambiaría, según",
+    "en": "relative and 32 first minority. The Chamber of Deputies would also change, according to"
+  },
+  {
+    "start": 133.36,
+    "end": 138.08,
+    "b_start": 288.34,
+    "b_end": 303.14,
+    "orig": "explicó ayer Claudia Sheinbaum. El tema no es fácil de entender, pero esto dijo la",
+    "en": "Claudia Sheinbaum explained yesterday. The topic is not easy to understand, but this was said by the"
+  },
+  {
+    "start": 138.08,
+    "end": 139.08,
+    "b_start": 304.14,
+    "b_end": 306.9,
+    "orig": "presidenta.",
+    "en": "president."
+  },
+  {
+    "start": 140.08,
+    "end": 150.6,
+    "b_start": 307.9,
+    "b_end": 322.39,
+    "orig": "Se mantienen los 500 diputados y diputadas, federales. 300 que representan a cada distrito",
+    "en": "The 500 federal deputies remain. 300 representing each district"
+  },
+  {
+    "start": 150.6,
+    "end": 158.76,
+    "b_start": 323.39,
+    "b_end": 339.1,
+    "orig": "electoral como ahora. 200 que son, de acuerdo a la proporción de votos que tuvo cada partido,",
+    "en": "electoral like now. 200 which are, according to the proportion of votes that each party had,"
+  },
+  {
+    "start": 158.76,
+    "end": 165.76,
+    "b_start": 340.1,
+    "b_end": 355.24,
+    "orig": "como ahora. Ah, pero entonces cómo van a estar representados, lo que corresponde a la proporción",
+    "en": "like now. Ah, but then how are they going to be represented, what corresponds to the proportion"
+  },
+  {
+    "start": 165.76,
+    "end": 174.0,
+    "b_start": 356.24,
+    "b_end": 371.55,
+    "orig": "de cada partido. Bueno, la mitad más o menos como el que quedó en segundo, tercero o cuarto",
+    "en": "of each match. Well, half more or less like the one who came in second, third or fourth"
+  },
+  {
+    "start": 174.0,
+    "end": 184.32,
+    "b_start": 372.55,
+    "b_end": 386.71,
+    "orig": "lugar dependiendo del partido, pero fue a buscar su voto en sus distritos. Primer mejor",
+    "en": "place depending on the party, but went to seek their vote in their districts. First best"
+  },
+  {
+    "start": 184.32,
+    "end": 188.84,
+    "b_start": 387.71,
+    "b_end": 400.83,
+    "orig": "perdedor o segundo o tercero, de acuerdo al partido político que le corresponde con la",
+    "en": "loser or second or third, according to the political party that corresponds to the"
+  },
+  {
+    "start": 188.84,
+    "end": 197.6,
+    "b_start": 401.83,
+    "b_end": 414.84,
+    "orig": "fórmula. Y la otra mitad en una lista que se vota. Por cuántos puedo votar para que",
+    "en": "formula. And the other half on a list that is voted on. How many can I vote for?"
+  },
+  {
+    "start": 197.6,
+    "end": 206.44,
+    "b_start": 415.84,
+    "b_end": 430.78,
+    "orig": "no sea que lleven sus listas y todo eso? Solo por dos. Un hombre y una mujer. Ahora, en",
+    "en": "lest they carry their lists and all that? Just for two. A man and a woman. Now, in"
+  },
+  {
+    "start": 206.44,
+    "end": 214.12,
+    "b_start": 431.78,
+    "b_end": 447.6,
+    "orig": "esos 200 hay ocho que corresponden a la representación de los partidos, pero que solo son elegidos",
+    "en": "Of those 200, there are eight that correspond to the representation of the parties, but they are only elected"
+  },
+  {
+    "start": 214.12,
+    "end": 217.48,
+    "b_start": 448.6,
+    "b_end": 453.54,
+    "orig": "por los mexicanos en el exterior.",
+    "en": "by Mexicans abroad."
+  },
+  {
+    "start": 217.48,
+    "end": 224.28,
+    "b_start": 454.54,
+    "b_end": 472.46,
+    "orig": "En el proyecto figura a sí mismo una norma que elimina, a partir de 2030, la reelección para todos los cargos",
+    "en": "The project itself includes a rule that eliminates, starting in 2030, re-election for all positions"
+  },
+  {
+    "start": 224.28,
+    "end": 230.92,
+    "b_start": 473.46,
+    "b_end": 489.66,
+    "orig": "elegidos popularmente. Otro artículo, hecha abajo la duplicidad de cargos electorales. En México,",
+    "en": "popularly elected. Another article, down the duplicity of electoral positions. In Mexico,"
+  },
+  {
+    "start": 230.92,
+    "end": 235.32,
+    "b_start": 490.66,
+    "b_end": 502.2,
+    "orig": "hay funcionarios que trabajan en la misma área a escala estatal y federal.",
+    "en": "There are officials who work in the same area at the state and federal level."
+  },
+  {
+    "start": 235.32,
+    "end": 240.88,
+    "b_start": 503.2,
+    "b_end": 516.9,
+    "orig": "Un reto para el gobierno es conseguir en el Congreso el respaldo de dos agrupaciones políticas",
+    "en": "A challenge for the government is to obtain the support of two political groups in Congress"
+  },
+  {
+    "start": 240.88,
+    "end": 246.44,
+    "b_start": 517.9,
+    "b_end": 532.15,
+    "orig": "que lo han apoyado. El partido verde ecologista y el partido del trabajo. Está claro que el",
+    "en": "who have supported him. The green environmentalist party and the labor party. It is clear that the"
+  },
+  {
+    "start": 246.52,
+    "end": 249.64,
+    "b_start": 533.15,
+    "b_end": 541.47,
+    "orig": "partido de acción nacional, el pan votará en contra.",
+    "en": "national action party, the pan will vote against."
+  },
+  {
+    "start": 249.64,
+    "end": 255.08,
+    "b_start": 542.47,
+    "b_end": 556.75,
+    "orig": "¿Logrará Claudia Sheinbaum la mayoría necesaria en el poder legislativo para que le aprueben la",
+    "en": "Will Claudia Sheinbaum achieve the necessary majority in the legislative branch to approve the"
+  },
+  {
+    "start": 255.08,
+    "end": 261.76,
+    "b_start": 557.75,
+    "b_end": 575.79,
+    "orig": "reforma? Hablamos ayer con la politóloga Carolina Gilas, profesora de la Universidad Nacional Autónoma",
+    "en": "reform? We spoke yesterday with political scientist Carolina Gilas, professor at the National Autonomous University"
+  },
+  {
+    "start": 261.76,
+    "end": 262.92,
+    "b_start": 576.79,
+    "b_end": 581.83,
+    "orig": "de México, la UNAM.",
+    "en": "of Mexico, the UNAM."
+  },
+  {
+    "start": 264.76,
+    "end": 270.32,
+    "b_start": 582.83,
+    "b_end": 598.18,
+    "orig": "Juan Carlos, yo creo que sí. Yo creo que sí que la presidenta va a lograr que se apruebe la reforma",
+    "en": "Juan Carlos, I think so. I do believe that the president is going to get the reform approved"
+  },
+  {
+    "start": 270.4,
+    "end": 276.72,
+    "b_start": 599.18,
+    "b_end": 613.08,
+    "orig": "en alguna forma, en alguna medida, quizá no exactamente con todos los detalles que en este",
+    "en": "in some way, to some extent, perhaps not exactly with all the details that in this"
+  },
+  {
+    "start": 276.72,
+    "end": 283.36,
+    "b_start": 614.08,
+    "b_end": 627.7,
+    "orig": "momento está proponiendo al Congreso. Pero creo que sí que va a lograr generar consensos,",
+    "en": "is currently proposing to Congress. But I think it will be able to generate consensus,"
+  },
+  {
+    "start": 283.36,
+    "end": 290.64,
+    "b_start": 628.7,
+    "b_end": 643.12,
+    "orig": "al menos las mayorías necesarias por las buenas, por las malas, para impulsar la mayoría al menos",
+    "en": "at least the necessary majorities by hook or by crook, to boost the majority at least"
+  },
+  {
+    "start": 290.64,
+    "end": 297.36,
+    "b_start": 644.12,
+    "b_end": 659.74,
+    "orig": "de los cambios. Algunos cambios, trancamente, en uno seriamente, resultarían negativos para el",
+    "en": "of the changes. Some changes, calmly, in one seriously, would be negative for the"
+  },
+  {
+    "start": 297.44,
+    "end": 304.48,
+    "b_start": 660.74,
+    "b_end": 675.09,
+    "orig": "sistema electoral, desde mi perspectiva. Por ejemplo, la reducción de los minutos destinados",
+    "en": "electoral system, from my perspective. For example, reducing the minutes allocated"
+  },
+  {
+    "start": 304.48,
+    "end": 309.92,
+    "b_start": 676.09,
+    "b_end": 692.07,
+    "orig": "todos los días a los polls, de los partidos. No veo qué daño podría hacerla a nadie, al contrario.",
+    "en": "every day to the polls, from the parties. I don't see what harm it could do to anyone, on the contrary."
+  },
+  {
+    "start": 309.92,
+    "end": 317.52,
+    "b_start": 693.07,
+    "b_end": 708.19,
+    "orig": "Hay todavía, creo que, pues, muchas dudas por parte de quienes nos interesamos en estos temas,",
+    "en": "There are still, I think, many doubts on the part of those of us who are interested in these issues,"
+  },
+  {
+    "start": 317.52,
+    "end": 324.64,
+    "b_start": 709.19,
+    "b_end": 724.14,
+    "orig": "estudiamos estos temas porque lo que se presentó hoy en la mañana era, es un PowerPoint con ideas",
+    "en": "We study these topics because what was presented this morning was, it is a PowerPoint with ideas"
+  },
+  {
+    "start": 324.72,
+    "end": 330.88,
+    "b_start": 725.14,
+    "b_end": 739.96,
+    "orig": "generales, pero en muchos temas, por ejemplo, en la asignación de los escaños de representación",
+    "en": "general, but on many issues, for example, in the allocation of representation seats"
+  },
+  {
+    "start": 330.88,
+    "end": 338.84,
+    "b_start": 740.96,
+    "b_end": 754.23,
+    "orig": "proporcional, en cómo van a operar esas listas de votación directa, cómo va a operar esa",
+    "en": "proportional, in how those direct voting lists are going to operate, how that"
+  },
+  {
+    "start": 338.84,
+    "end": 347.84,
+    "b_start": 755.23,
+    "b_end": 771.62,
+    "orig": "eliminación de duplicidad de funciones electorales, son como frases muy generales y ahí es necesario",
+    "en": "elimination of duplication of electoral functions, they are like very general phrases and there it is necessary"
+  },
+  {
+    "start": 347.84,
+    "end": 355.56,
+    "b_start": 772.62,
+    "b_end": 786.73,
+    "orig": "mirar la letra chica. Vería cuál es la manera específica en la que se van a formular estas",
+    "en": "look at the fine print. I would see what is the specific way in which these are going to be formulated"
+  },
+  {
+    "start": 355.56,
+    "end": 361.36,
+    "b_start": 787.73,
+    "b_end": 803.44,
+    "orig": "nuevas reglas en la reforma electoral, que, pues, necesariamente, así como está planteada,",
+    "en": "new rules in the electoral reform, which, therefore, necessarily, as it is proposed,"
+  },
+  {
+    "start": 361.36,
+    "end": 369.28,
+    "b_start": 804.44,
+    "b_end": 818.24,
+    "orig": "tendría que pasar por una reforma constitucional. También creo que habrá bastantes debates",
+    "en": "would have to go through a constitutional reform. I also think there will be quite a few debates."
+  },
+  {
+    "start": 369.28,
+    "end": 373.92,
+    "b_start": 819.24,
+    "b_end": 832.8,
+    "orig": "acalorados sobre el tema de financia y reducción de financiamiento a los partidos políticos y,",
+    "en": "heated over the issue of funding and reducing funding for political parties and,"
+  },
+  {
+    "start": 374.0,
+    "end": 378.84,
+    "b_start": 833.8,
+    "b_end": 847.64,
+    "orig": "justo posiblemente, en el tema de integración de los congresos, aunque parece que ahí la",
+    "en": "possibly fair, on the issue of integration of congresses, although it seems that there the"
+  },
+  {
+    "start": 378.84,
+    "end": 385.96,
+    "b_start": 848.64,
+    "b_end": 865.22,
+    "orig": "presidenta ha cedido, digamos, en su propuesta en alguna medida al menos a las presiones o intereses",
+    "en": "president has given in, let's say, in her proposal to some extent at least to the pressures or interests"
+  },
+  {
+    "start": 385.96,
+    "end": 392.72,
+    "b_start": 866.22,
+    "b_end": 880.81,
+    "orig": "de los dos partidos coagulados. Entonces, yo creo que si algún consenso, algún acuerdo,",
+    "en": "of the two coagulated parties. So, I believe that if some consensus, some agreement,"
+  },
+  {
+    "start": 392.72,
+    "end": 396.52,
+    "b_start": 881.81,
+    "b_end": 889.82,
+    "orig": "definitivamente va a ser posible para esta reforma.",
+    "en": "It will definitely be possible for this reform."
+  },
+  {
+    "start": 404.08,
+    "end": 412.6,
+    "b_start": 890.82,
+    "b_end": 904.5,
+    "orig": "Ayer hubo inquietud aquí en Colombia cuando se conoció el borrador de un decreto del ministerio",
+    "en": "Yesterday there was concern here in Colombia when the draft of a ministry decree was known"
+  },
+  {
+    "start": 412.6,
+    "end": 418.44,
+    "b_start": 905.5,
+    "b_end": 920.54,
+    "orig": "del trabajo relacionado con el sistema pensional. Según el texto, el gobierno de Gustavo Petro",
+    "en": "of work related to the pension system. According to the text, the government of Gustavo Petro"
+  },
+  {
+    "start": 418.44,
+    "end": 422.96,
+    "b_start": 921.54,
+    "b_end": 932.7,
+    "orig": "podría dictarles una orden muy polémica a los fondos privados de pensiones.",
+    "en": "could issue a very controversial order to private pension funds."
+  },
+  {
+    "start": 422.96,
+    "end": 431.44,
+    "b_start": 933.7,
+    "b_end": 952.1,
+    "orig": "Los obligaría a transferir la cantidad de 25 billones de pesos, es decir, ojo, 6.800 millones",
+    "en": "It would force them to transfer the amount of 25 billion pesos, that is, be careful, 6.8 billion"
+  },
+  {
+    "start": 431.44,
+    "end": 437.52,
+    "b_start": 953.1,
+    "b_end": 968.46,
+    "orig": "de dólares a colpensiones, que es la entidad pública del sistema, y eso en apenas 15 días",
+    "en": "of dollars to colpensiones, which is the public entity of the system, and that in just 15 days"
+  },
+  {
+    "start": 437.52,
+    "end": 442.96,
+    "b_start": 969.46,
+    "b_end": 984.09,
+    "orig": "hábiles. Por eso, Andrés Velasco, presidente del gremio de los fondos privados, habló.",
+    "en": "skilled That is why Andrés Velasco, president of the private funds union, spoke."
+  },
+  {
+    "start": 444.24,
+    "end": 451.28,
+    "b_start": 985.09,
+    "b_end": 999.15,
+    "orig": "Este decreto que para a sus fondos no tiene ningún sustento legal, porque la ley es clarísima en",
+    "en": "This decree that stops your funds has no legal basis, because the law is very clear in"
+  },
+  {
+    "start": 451.28,
+    "end": 456.52,
+    "b_start": 1000.15,
+    "b_end": 1013.78,
+    "orig": "la vocación de ahorro de esos recursos, de ser expedido y de obligar a las administradas de",
+    "en": "the vocation to save these resources, to be issued and to oblige those administered"
+  },
+  {
+    "start": 456.52,
+    "end": 463.08,
+    "b_start": 1014.78,
+    "b_end": 1030.62,
+    "orig": "fondos de pensiones a trasladar más de 25 billones de pesos, inmediatamente libera recursos del",
+    "en": "pension funds to transfer more than 25 billion pesos, immediately frees resources from the"
+  },
+  {
+    "start": 463.08,
+    "end": 468.32,
+    "b_start": 1031.62,
+    "b_end": 1046.44,
+    "orig": "presupuesto general de la nación. Recordemos que las pensiones que pagan colpensiones las paga con",
+    "en": "general budget of the nation. Let us remember that the pensions paid by colpensiones are paid with"
+  },
+  {
+    "start": 468.32,
+    "end": 472.76,
+    "b_start": 1047.44,
+    "b_end": 1061.62,
+    "orig": "los recursos de las cotizaciones de los colombianos que nunca son suficientes para pagar las pensiones",
+    "en": "the resources from Colombian contributions that are never enough to pay pensions"
+  },
+  {
+    "start": 472.76,
+    "end": 479.2,
+    "b_start": 1062.62,
+    "b_end": 1078.29,
+    "orig": "y el gobierno nacional termina girando cerca de 35 billones de pesos siempre a colpensiones para",
+    "en": "and the national government ends up transferring nearly 35 billion pesos always to colpensions to"
+  },
+  {
+    "start": 479.2,
+    "end": 483.64,
+    "b_start": 1079.29,
+    "b_end": 1093.62,
+    "orig": "terminar de pagar esas pensiones. De esta forma, el gobierno nacional no tendría que girarle",
+    "en": "finish paying those pensions. In this way, the national government would not have to turn"
+  },
+  {
+    "start": 483.64,
+    "end": 489.44,
+    "b_start": 1094.62,
+    "b_end": 1110.74,
+    "orig": "esos recursos a colpensiones y se abriría espacio presupuestal para mayor gasto público de parte del",
+    "en": "those resources to colpensions and budgetary space would be opened for greater public spending on the part of the"
+  },
+  {
+    "start": 489.44,
+    "end": 495.76,
+    "b_start": 1111.74,
+    "b_end": 1126.42,
+    "orig": "gobierno nacional. Comviene anotar aquí que en los últimos años miles de colombianos que hacían",
+    "en": "national government. It is worth noting here that in recent years thousands of Colombians who did"
+  },
+  {
+    "start": 495.76,
+    "end": 501.64,
+    "b_start": 1127.42,
+    "b_end": 1142.4,
+    "orig": "aportes a los fondos privados se han trasladado poco a poco al régimen público de colpensiones.",
+    "en": "Contributions to private funds have been gradually transferred to the public colpensiones regime."
+  },
+  {
+    "start": 501.64,
+    "end": 507.36,
+    "b_start": 1143.4,
+    "b_end": 1156.04,
+    "orig": "En algunos momentos se presentaron numerosas demandas. La pregunta es si el decreto del",
+    "en": "At times numerous lawsuits were filed. The question is whether the decree of the"
+  },
+  {
+    "start": 507.36,
+    "end": 512.48,
+    "b_start": 1157.04,
+    "b_end": 1172.28,
+    "orig": "que hablamos, en caso de que entre en vigencia, sería ilegal como sostiene Andrés Velasco,",
+    "en": "that we are talking about, if it comes into force, it would be illegal as Andrés Velasco maintains,"
+  },
+  {
+    "start": 512.48,
+    "end": 518.4,
+    "b_start": 1173.28,
+    "b_end": 1189.18,
+    "orig": "para saberlo llamamos ayer a un especialista, el abogado Kevin Hartman, profesor de la Universidad",
+    "en": "To find out, we called a specialist yesterday, lawyer Kevin Hartman, a professor at the University"
+  },
+  {
+    "start": 518.4,
+    "end": 527.52,
+    "b_start": 1190.18,
+    "b_end": 1209.16,
+    "orig": "de La Vaina. Ese decreto sería ilegal porque contradice el artículo 76 de la ley 2381,",
+    "en": "from La Vaina. This decree would be illegal because it contradicts article 76 of law 2381,"
+  },
+  {
+    "start": 527.52,
+    "end": 535.04,
+    "b_start": 1210.16,
+    "b_end": 1225.26,
+    "orig": "es decir de la reforma pensional. Hay que aclarar que la reforma está suspendida y aún se encuentra",
+    "en": "that is, the pension reform. It must be clarified that the reform is suspended and is still"
+  },
+  {
+    "start": 535.04,
+    "end": 540.44,
+    "b_start": 1226.26,
+    "b_end": 1239.52,
+    "orig": "en estudio por la Corte Constitucional. Sin embargo, en esa decisión de suspensión,",
+    "en": "under study by the Constitutional Court. However, in that suspension decision,"
+  },
+  {
+    "start": 540.44,
+    "end": 547.56,
+    "b_start": 1240.52,
+    "b_end": 1253.72,
+    "orig": "la Corte explícitamente mantuvo la vigencia de este artículo en particular. Por lo tanto,",
+    "en": "The Court explicitly maintained the validity of this particular article. Therefore,"
+  },
+  {
+    "start": 547.56,
+    "end": 555.92,
+    "b_start": 1254.72,
+    "b_end": 1272.36,
+    "orig": "el artículo 76 ya entró en vigor y produce efectos hoy. Para entender el contenido de ese famoso",
+    "en": "Article 76 has already entered into force and takes effect today. To understand the content of that famous"
+  },
+  {
+    "start": 555.92,
+    "end": 561.72,
+    "b_start": 1273.36,
+    "b_end": 1290.03,
+    "orig": "artículo hay que recordar que en Colombia coexisten dos regímenes pensionales, el público de reparto",
+    "en": "article it is necessary to remember that in Colombia two pension regimes coexist, the public pay-as-you-go"
+  },
+  {
+    "start": 561.72,
+    "end": 567.64,
+    "b_start": 1291.03,
+    "b_end": 1304.37,
+    "orig": "y el privado de ahorro individual. Los afiliados pueden escoger entre ellos y trasladarse hasta",
+    "en": "and private individual savings. Members can choose between them and travel to"
+  },
+  {
+    "start": 567.64,
+    "end": 574.72,
+    "b_start": 1305.37,
+    "b_end": 1320.1,
+    "orig": "10 años antes de cumplir con la edad de pensión. Durante muchos años, muchas personas no se trasladaron",
+    "en": "10 years before reaching pension age. For many years, many people did not move"
+  },
+  {
+    "start": 574.72,
+    "end": 580.44,
+    "b_start": 1321.1,
+    "b_end": 1336.36,
+    "orig": "a tiempo o lo hicieron sin información suficiente. Eso generó miles de demandas y una fuertísima",
+    "en": "on time or they did it without sufficient information. That generated thousands of lawsuits and a very strong"
+  },
+  {
+    "start": 580.44,
+    "end": 586.68,
+    "b_start": 1337.36,
+    "b_end": 1353.92,
+    "orig": "congestión judicial. Frente a esa situación, la reforma pensional creó una oportunidad excepcional",
+    "en": "judicial congestion. Faced with this situation, the pension reform created an exceptional opportunity"
+  },
+  {
+    "start": 586.68,
+    "end": 593.12,
+    "b_start": 1354.92,
+    "b_end": 1370.23,
+    "orig": "en el artículo 76 que le permite el traslado a esas personas sin necesidad de acudir a un juez.",
+    "en": "in article 76 that allows the transfer of these people without having to go to a judge."
+  },
+  {
+    "start": 593.6,
+    "end": 599.76,
+    "b_start": 1371.23,
+    "b_end": 1386.42,
+    "orig": "Hasta ahora se han beneficiado esa ventana aproximadamente 125.000 colombianos.",
+    "en": "Until now, approximately 125,000 Colombians have benefited from this window."
+  },
+  {
+    "start": 600.76,
+    "end": 606.96,
+    "b_start": 1387.42,
+    "b_end": 1402.22,
+    "orig": "Ahora bien, ese mismo artículo establece quién tiene la responsabilidad de administrar los recursos",
+    "en": "Now, that same article establishes who has the responsibility of managing the resources"
+  },
+  {
+    "start": 606.96,
+    "end": 614.28,
+    "b_start": 1403.22,
+    "b_end": 1416.7,
+    "orig": "de las personas que se trasladan extemporáneamente. Es explícito en decir que debe permanecer en",
+    "en": "of people who move untimely. It is explicit in saying that it must remain in"
+  },
+  {
+    "start": 614.28,
+    "end": 619.72,
+    "b_start": 1417.7,
+    "b_end": 1429.2,
+    "orig": "sus cuentas individuales el dinero ahorrado hasta que ellos cumplan los requisitos para",
+    "en": "their individual accounts with the money saved until they qualify for"
+  },
+  {
+    "start": 619.72,
+    "end": 625.56,
+    "b_start": 1430.2,
+    "b_end": 1445.1,
+    "orig": "pensionarse en el régimen público. Solo en ese momento los recursos se trasladarían del régimen",
+    "en": "retire in the public system. Only at that time would the resources be transferred from the regime"
+  },
+  {
+    "start": 625.56,
+    "end": 631.24,
+    "b_start": 1446.1,
+    "b_end": 1461.4,
+    "orig": "privado al régimen público, que es lo que pretende hacer el decreto. Esencialmente obligar a trasladar",
+    "en": "private to the public regime, which is what the decree intends to do. Essentially forcing to move"
+  },
+  {
+    "start": 631.24,
+    "end": 639.84,
+    "b_start": 1462.4,
+    "b_end": 1478.53,
+    "orig": "los recursos desde 125.000 personas ya no en esa cadencia establecido por la ley, sino en un",
+    "en": "resources from 125,000 people no longer at that cadence established by law, but at a"
+  },
+  {
+    "start": 639.84,
+    "end": 646.04,
+    "b_start": 1479.53,
+    "b_end": 1497.33,
+    "orig": "plazo de 15 días. Es decir, pretende contradecir directamente la norma del artículo 76 que es",
+    "en": "period of 15 days. That is, it seeks to directly contradict the rule of article 76, which is"
+  },
+  {
+    "start": 646.04,
+    "end": 651.08,
+    "b_start": 1498.33,
+    "b_end": 1512.54,
+    "orig": "parte de la reforma pensionaria que el mismo gobierno hizo aprobar en el Congreso. Sin embargo,",
+    "en": "part of the pension reform that the same government had approved in Congress. However,"
+  },
+  {
+    "start": 651.08,
+    "end": 656.8,
+    "b_start": 1513.54,
+    "b_end": 1528.05,
+    "orig": "por el principio de jerarquía normativa, un decreto de esta naturaleza no podría modificar ni",
+    "en": "Due to the principle of normative hierarchy, a decree of this nature could not modify or"
+  },
+  {
+    "start": 656.8,
+    "end": 664.32,
+    "b_start": 1529.05,
+    "b_end": 1549.9,
+    "orig": "contradecir una ley como el artículo 76 de la ley 2381. Por esa razón, el decreto sería ilegal y",
+    "en": "contradict a law such as article 76 of law 2381. For that reason, the decree would be illegal and"
+  },
+  {
+    "start": 664.32,
+    "end": 667.12,
+    "b_start": 1550.9,
+    "b_end": 1557.38,
+    "orig": "estaría destinado a ser declarado nulo.",
+    "en": "would be destined to be declared void."
+  },
+  {
+    "start": 677.04,
+    "end": 683.28,
+    "b_start": 1558.38,
+    "b_end": 1574.55,
+    "orig": "Este podcast es presentado por Movistar Empresas, el aliado integral de los empresarios colombianos.",
+    "en": "This podcast is presented by Movistar Empresas, the integral ally of Colombian entrepreneurs."
+  },
+  {
+    "start": 683.28,
+    "end": 689.0,
+    "b_start": 1575.55,
+    "b_end": 1590.84,
+    "orig": "Te acompañamos en cada paso con soluciones que conectan, protegen y transforman tu negocio.",
+    "en": "We accompany you every step of the way with solutions that connect, protect and transform your business."
+  },
+  {
+    "start": 689.0,
+    "end": 695.6,
+    "b_start": 1591.84,
+    "b_end": 1606.83,
+    "orig": "Movistar Empresas, conecta con lo que te mueve. Y este podcast se presenta con el apoyo del",
+    "en": "Movistar Empresas, connect with what moves you. And this podcast is brought to you with the support of"
+  },
+  {
+    "start": 695.6,
+    "end": 701.68,
+    "b_start": 1607.83,
+    "b_end": 1622.92,
+    "orig": "grupo Tecnoglass, el poder de la calidad. Diseñamos, fabricamos y comercializamos vidrios,",
+    "en": "Tecnoglass group, the power of quality. We design, manufacture and market glass,"
+  },
+  {
+    "start": 701.68,
+    "end": 708.36,
+    "b_start": 1623.92,
+    "b_end": 1641.08,
+    "orig": "ventanas y fachadas de calidad mundial. Más información en www.tecnoglass.com.",
+    "en": "world-class windows and facades. More information at www.tecnoglass.com."
+  },
+  {
+    "start": 710.24,
+    "end": 715.28,
+    "b_start": 1642.08,
+    "b_end": 1655.32,
+    "orig": "España se despertó ayer expectante por la desclasificación de los documentos del golpe",
+    "en": "Spain woke up yesterday expectant for the declassification of the coup documents"
+  },
+  {
+    "start": 715.28,
+    "end": 723.04,
+    "b_start": 1656.32,
+    "b_end": 1674.99,
+    "orig": "de Estado fallido del 23 de febrero de 1981, el 23F. Esa acción se produjo cuando un grupo",
+    "en": "of failed State of February 23, 1981, 23F. This action occurred when a group"
+  },
+  {
+    "start": 723.04,
+    "end": 728.8,
+    "b_start": 1675.99,
+    "b_end": 1692.74,
+    "orig": "de militares, al mando del teniente coronel Antonio Tejero, irrumpió en el Congreso de los diputados.",
+    "en": "of soldiers, under the command of Lieutenant Colonel Antonio Tejero, broke into the Congress of Deputies."
+  },
+  {
+    "start": 729.28,
+    "end": 734.88,
+    "b_start": 1693.74,
+    "b_end": 1706.91,
+    "orig": "En ese momento se afianzaba la democracia. Seis años antes había muerto el dictador",
+    "en": "At that time democracy was taking hold. Six years earlier the dictator had died"
+  },
+  {
+    "start": 734.88,
+    "end": 740.84,
+    "b_start": 1707.91,
+    "b_end": 1724.47,
+    "orig": "Francisco Franco y había sido proclamado rey Juan Carlos I de Borbón. Y tres años antes,",
+    "en": "Francisco Franco and Juan Carlos I of Borbón had been proclaimed king. And three years before,"
+  },
+  {
+    "start": 740.84,
+    "end": 745.92,
+    "b_start": 1725.47,
+    "b_end": 1737.68,
+    "orig": "los ciudadanos le habían dado luz verde en un referéndum a la primera Constitución",
+    "en": "The citizens had given the green light in a referendum to the first Constitution"
+  },
+  {
+    "start": 745.92,
+    "end": 752.32,
+    "b_start": 1738.68,
+    "b_end": 1756.2,
+    "orig": "Democrática Española. Aquella tarde noche del 23F, en medio del temor de que volviera la dictadura,",
+    "en": "Spanish Democratic. That late night of February 23, in the midst of fear that the dictatorship would return,"
+  },
+  {
+    "start": 752.32,
+    "end": 756.96,
+    "b_start": 1757.2,
+    "b_end": 1770.56,
+    "orig": "la gente debió esperar seis largas horas el discurso televisado del rey Juan Carlos,",
+    "en": "People had to wait six long hours for King Juan Carlos's televised speech,"
+  },
+  {
+    "start": 756.96,
+    "end": 763.12,
+    "b_start": 1771.56,
+    "b_end": 1785.64,
+    "orig": "donde el monarca desautorizó a los insurrectos. Por eso algunos llegaron a decir que el rey",
+    "en": "where the monarch disavowed the insurgents. That is why some went so far as to say that the king"
+  },
+  {
+    "start": 763.12,
+    "end": 769.92,
+    "b_start": 1786.64,
+    "b_end": 1803.51,
+    "orig": "había apoyado secretamente el golpe. Hace tres días, en el 45 aniversario del 23F,",
+    "en": "had secretly supported the coup. Three days ago, on the 45th anniversary of 23F,"
+  },
+  {
+    "start": 769.92,
+    "end": 775.44,
+    "b_start": 1804.51,
+    "b_end": 1818.98,
+    "orig": "y antes de la desclasificación ayer de los archivos, el expresidente socialista Felipe",
+    "en": "and before yesterday's declassification of the archives, former socialist president Felipe"
+  },
+  {
+    "start": 775.44,
+    "end": 781.12,
+    "b_start": 1819.98,
+    "b_end": 1834.52,
+    "orig": "González habló en el Senado aquí en Madrid. Allí estaba el rey Felipe VI, hijo de Juan",
+    "en": "González spoke in the Senate here in Madrid. There was King Felipe VI, son of Juan"
+  },
+  {
+    "start": 781.12,
+    "end": 788.4,
+    "b_start": 1835.52,
+    "b_end": 1849.58,
+    "orig": "Carlos I y distintas personalidades. A mí me gustaría que se conociera todo el proceso",
+    "en": "Carlos I and different personalities. I would like the entire process to be known"
+  },
+  {
+    "start": 788.4,
+    "end": 797.24,
+    "b_start": 1850.58,
+    "b_end": 1865.96,
+    "orig": "del 23F, sobre todo para comprender el papel, comprender de verdad el papel del rey Juan",
+    "en": "of 23F, especially to understand the role, truly understand the role of King Juan"
+  },
+  {
+    "start": 797.24,
+    "end": 806.76,
+    "b_start": 1866.96,
+    "b_end": 1881.19,
+    "orig": "Carlos. Tardó mucho en reaccionar, pero quiénes son los bogos que de verdad no saben lo que es la",
+    "en": "Charles. It took him a long time to react, but who are the bogos who really don't know what"
+  },
+  {
+    "start": 806.76,
+    "end": 812.6,
+    "b_start": 1882.19,
+    "b_end": 1896.01,
+    "orig": "política. Los que son incapaces de comprender que tenía que expulsar cuál era la situación de",
+    "en": "policy. Those who are unable to understand who had to expel what the situation of"
+  },
+  {
+    "start": 812.6,
+    "end": 821.56,
+    "b_start": 1897.01,
+    "b_end": 1914.02,
+    "orig": "todos. Había alguna tentación de otra naturaleza, no pudo haber trampas y engaños, pero tentación de",
+    "en": "everyone. There was some temptation of another nature, there could be traps and deceptions, but temptation of"
+  },
+  {
+    "start": 821.56,
+    "end": 827.4,
+    "b_start": 1915.02,
+    "b_end": 1929.01,
+    "orig": "otra naturaleza, lo lógico es hacer justicia a los comportamientos de los seres humanos,",
+    "en": "other nature, the logical thing is to do justice to the behaviors of human beings,"
+  },
+  {
+    "start": 827.4,
+    "end": 834.76,
+    "b_start": 1930.01,
+    "b_end": 1945.63,
+    "orig": "incluso cuando son reyes. Y del 23F, la actuación de Juan Carlos I fue,",
+    "en": "even when they are kings. And on 23F, the performance of Juan Carlos I was,"
+  },
+  {
+    "start": 835.76,
+    "end": 843.56,
+    "b_start": 1946.63,
+    "b_end": 1961.58,
+    "orig": "no digo que fue ejemplar, fue algo más decisiva. En ningún momento de ese intento de golpe de",
+    "en": "I'm not saying it was exemplary, it was something more decisive. At no time during that coup attempt"
+  },
+  {
+    "start": 843.56,
+    "end": 850.72,
+    "b_start": 1962.58,
+    "b_end": 1977.02,
+    "orig": "estado, España se quedó sin las libertades garantizadas en la Constitución. Por tanto,",
+    "en": "state, Spain was left without the freedoms guaranteed in the Constitution. Therefore,"
+  },
+  {
+    "start": 850.72,
+    "end": 855.6,
+    "b_start": 1978.02,
+    "b_end": 1988.31,
+    "orig": "el papel de rey Juan Carlos fue un papel absolutamente determinante.",
+    "en": "The role of King Juan Carlos was an absolutely decisive role."
+  },
+  {
+    "start": 856.92,
+    "end": 863.56,
+    "b_start": 1989.31,
+    "b_end": 2005.17,
+    "orig": "Un dato casi increíble es que ayer, día de la desclasificación de los archivos del 23F,",
+    "en": "An almost incredible fact is that yesterday, the day of the declassification of the 23F files,"
+  },
+  {
+    "start": 863.56,
+    "end": 870.36,
+    "b_start": 2006.17,
+    "b_end": 2020.47,
+    "orig": "murió Antonio Tejero. Pero lo que mucha gente se preguntaba era cuál fue la principal revelación",
+    "en": "Antonio Tejero died. But what many people were wondering was what was the main revelation"
+  },
+  {
+    "start": 870.36,
+    "end": 876.12,
+    "b_start": 2021.47,
+    "b_end": 2036.95,
+    "orig": "de los documentos. Llamamos a Madrid a Álvaro González, periodista de la revista Hotdown.",
+    "en": "of the documents. We called Álvaro González, journalist from Hotdown magazine, to Madrid."
+  },
+  {
+    "start": 878.16,
+    "end": 885.52,
+    "b_start": 2037.95,
+    "b_end": 2053.38,
+    "orig": "Pues lo más relevante es que paradójicamente no hay nada muy relevante. El abismo están todos",
+    "en": "Well, the most relevant thing is that paradoxically there is nothing very relevant. The abyss is all"
+  },
+  {
+    "start": 885.52,
+    "end": 890.84,
+    "b_start": 2054.38,
+    "b_end": 2069.06,
+    "orig": "los periódicos en España abriendo con la nota manuscrita de los golpistas en la que caen en su",
+    "en": "the newspapers in Spain opening with the handwritten note of the coup plotters in which they fall into their"
+  },
+  {
+    "start": 890.84,
+    "end": 896.68,
+    "b_start": 2070.06,
+    "b_end": 2084.91,
+    "orig": "error de que se equivocaron al dejar libertad de acción al rey esa noche. Y es un hecho conocido.",
+    "en": "mistake that they were wrong to give the king freedom of action that night. And it is a known fact."
+  },
+  {
+    "start": 896.68,
+    "end": 903.84,
+    "b_start": 2085.91,
+    "b_end": 2102.47,
+    "orig": "Ya está en los libros de historia, ya está investigado y se sabe que el 23F marcó un antes",
+    "en": "It is already in the history books, it has already been investigated and it is known that 23F marked a turning point"
+  },
+  {
+    "start": 903.84,
+    "end": 909.12,
+    "b_start": 2103.47,
+    "b_end": 2118.82,
+    "orig": "y un después en el tono o la orientación de las conspiraciones militares. Ya no pretendían actuar",
+    "en": "and a later in the tone or orientation of military conspiracies. They no longer intended to act"
+  },
+  {
+    "start": 909.12,
+    "end": 915.6,
+    "b_start": 2119.82,
+    "b_end": 2134.56,
+    "orig": "con el rey al margen o para imponerle unos hechos consumados, sino que a partir de entonces tendrían",
+    "en": "with the king on the sidelines or to impose fait accompli on him, but from then on they would have"
+  },
+  {
+    "start": 915.6,
+    "end": 923.16,
+    "b_start": 2135.56,
+    "b_end": 2152.5,
+    "orig": "como principal objetivo al rey. De hecho esto está confirmado. Está constatado porque en el 85 hubo",
+    "en": "the king as its main objective. In fact this is confirmed. It is proven because in '85 there were"
+  },
+  {
+    "start": 923.16,
+    "end": 929.04,
+    "b_start": 2153.5,
+    "b_end": 2167.17,
+    "orig": "un intento de atentado en la coruña que pretendían volar al rey por los aires y al presidente del",
+    "en": "an attempted attack in La Coruña that intended to blow up the king and the president of the"
+  },
+  {
+    "start": 929.04,
+    "end": 936.16,
+    "b_start": 2168.17,
+    "b_end": 2184.68,
+    "orig": "gobierno entonces Felipe González. Por lo tanto, si lo más importante, ya está publicado en libros",
+    "en": "then Felipe González government. Therefore, if most importantly, it is already published in books"
+  },
+  {
+    "start": 936.16,
+    "end": 942.6,
+    "b_start": 2185.68,
+    "b_end": 2200.77,
+    "orig": "de historia, no estamos ante la desclasificación del siglo. El principal problema sigue siendo el",
+    "en": "of history, we are not facing the declassification of the century. The main problem remains"
+  },
+  {
+    "start": 942.64,
+    "end": 949.36,
+    "b_start": 2201.77,
+    "b_end": 2218.11,
+    "orig": "sumario. El sumario del juicio son 6.000 páginas y está custodiado por el Tribunal Supremo. No",
+    "en": "summary. The trial summary is 6,000 pages long and is guarded by the Supreme Court. No"
+  },
+  {
+    "start": 949.36,
+    "end": 956.24,
+    "b_start": 2219.11,
+    "b_end": 2234.92,
+    "orig": "permite el libre acceso. Yo creo que es una verdadera desclasificación e incluiría este texto en el",
+    "en": "allows free access. I believe that it is a true declassification and I would include this text in the"
+  },
+  {
+    "start": 956.24,
+    "end": 962.08,
+    "b_start": 2235.92,
+    "b_end": 2248.81,
+    "orig": "cual los historiadores profesionales pueden ver todas las contradicciones que hay en los testimonios",
+    "en": "which professional historians can see all the contradictions in the testimonies"
+  },
+  {
+    "start": 962.08,
+    "end": 967.48,
+    "b_start": 2249.81,
+    "b_end": 2262.67,
+    "orig": "que se recogieron sobre aquella noche. Esto sí que permitiría que diferentes personas acreditadas",
+    "en": "that were collected about that night. This would allow different accredited people"
+  },
+  {
+    "start": 967.48,
+    "end": 973.32,
+    "b_start": 2263.67,
+    "b_end": 2277.25,
+    "orig": "pudiesen llegar a consensos sobre qué pasó realmente. Que está bastante claro, puesto que el golpe",
+    "en": "could reach consensus on what really happened. Which is quite clear, since the blow"
+  },
+  {
+    "start": 973.32,
+    "end": 978.2,
+    "b_start": 2278.25,
+    "b_end": 2293.65,
+    "orig": "fracasó y todo siguió igual, no se interrumpió ningún procedimiento democrático en España ni se",
+    "en": "failed and everything remained the same, no democratic procedure was interrupted in Spain nor was"
+  },
+  {
+    "start": 978.2,
+    "end": 987.28,
+    "b_start": 2294.65,
+    "b_end": 2310.46,
+    "orig": "alteró significativamente y sólo queda destilar responsabilidades. Pero en este fenómeno, la",
+    "en": "altered significantly and all that remains is to distill responsibilities. But in this phenomenon, the"
+  },
+  {
+    "start": 987.28,
+    "end": 993.56,
+    "b_start": 2311.46,
+    "b_end": 2327.25,
+    "orig": "extrema derecha durante 40 años intentó decir que dieron el golpe de Estado porque se lo ordenó el",
+    "en": "extreme right for 40 years tried to say that they carried out the coup d'état because the government ordered it"
+  },
+  {
+    "start": 993.56,
+    "end": 998.76,
+    "b_start": 2328.25,
+    "b_end": 2341.04,
+    "orig": "rey. Esa fue su línea de defensa y han intoxicado durante muchísimo tiempo cualquier tipo de",
+    "en": "king That was their line of defense and they have poisoned any type of"
+  },
+  {
+    "start": 998.76,
+    "end": 1004.4,
+    "b_start": 2342.04,
+    "b_end": 2356.15,
+    "orig": "investigación sobre este hecho. Y para mayor gravedad, el dependentismo y la extrema izquierda",
+    "en": "investigation into this fact. And to make matters worse, dependency and the extreme left"
+  },
+  {
+    "start": 1004.4,
+    "end": 1009.72,
+    "b_start": 2357.15,
+    "b_end": 2372.22,
+    "orig": "han seguido por la misma línea, con lo cual hay muchísima intoxicación y muchísima confusión",
+    "en": "They have continued along the same line, with which there is a lot of intoxication and a lot of confusion"
+  },
+  {
+    "start": 1009.72,
+    "end": 1020.88,
+    "b_start": 2373.22,
+    "b_end": 2384.95,
+    "orig": "en tornar este episodio. Y estas son otras cosas que usted también debería saber hoy.",
+    "en": "in turning this episode. And these are other things you should know today too."
+  },
+  {
+    "start": 1021.2,
+    "end": 1026.88,
+    "b_start": 2385.95,
+    "b_end": 2401.18,
+    "orig": "El diario The New York Times afirmó ayer que en los archivos publicados sobre el pedrasta Jeffrey",
+    "en": "The newspaper The New York Times stated yesterday that in the files published about the pedophile Jeffrey"
+  },
+  {
+    "start": 1026.88,
+    "end": 1033.16,
+    "b_start": 2402.18,
+    "b_end": 2418.6,
+    "orig": "Epstein faltan documentos referentes a Donald Trump. Según el Times, se trata de testimonios de una",
+    "en": "Epstein documents relating to Donald Trump are missing. According to the Times, these are testimonies from a"
+  },
+  {
+    "start": 1033.16,
+    "end": 1039.8,
+    "b_start": 2419.6,
+    "b_end": 2436.66,
+    "orig": "mujer al FBI en julio de 2019, donde ella contó cómo en los años 80, cuando era menor de edad.",
+    "en": "woman to the FBI in July 2019, where she told how in the 80s, when she was a minor."
+  },
+  {
+    "start": 1039.8,
+    "end": 1045.96,
+    "b_start": 2437.66,
+    "b_end": 2452.63,
+    "orig": "Tanto el actual presidente como Epstein, la agredieron sexualmente. El FBI elaboró cuatro",
+    "en": "Both the current president and Epstein sexually assaulted her. The FBI developed four"
+  },
+  {
+    "start": 1045.96,
+    "end": 1050.8,
+    "b_start": 2453.63,
+    "b_end": 2466.27,
+    "orig": "legajos sobre las entrevistas, pero el Departamento de Justicia solo ha publicado uno.",
+    "en": "files on the interviews, but the Justice Department has only released one."
+  },
+  {
+    "start": 1050.8,
+    "end": 1056.84,
+    "b_start": 2467.27,
+    "b_end": 2482.65,
+    "orig": "En Venezuela se produjo ayer una renuncia casi impensable antes de la captura el 3 de enero,",
+    "en": "In Venezuela there was an almost unthinkable resignation yesterday before the capture on January 3,"
+  },
+  {
+    "start": 1056.84,
+    "end": 1061.72,
+    "b_start": 2483.65,
+    "b_end": 2497.21,
+    "orig": "por parte de Estados Unidos del presidente Nicolás Maduro, la del Fiscal General,",
+    "en": "on the part of the United States of President Nicolás Maduro, that of the Attorney General,"
+  },
+  {
+    "start": 1061.72,
+    "end": 1066.8,
+    "b_start": 2498.21,
+    "b_end": 2509.6,
+    "orig": "Tarek Williamsab. La dimisión tuvo lugar luego de que en los últimos días,",
+    "en": "Tarek Williamsab. The resignation took place after in recent days,"
+  },
+  {
+    "start": 1066.8,
+    "end": 1071.56,
+    "b_start": 2510.6,
+    "b_end": 2522.38,
+    "orig": "la Asamblea Nacional expidiera una ley de amnistía para los presos políticos.",
+    "en": "The National Assembly issued an amnesty law for political prisoners."
+  },
+  {
+    "start": 1071.8,
+    "end": 1076.28,
+    "b_start": 2523.38,
+    "b_end": 2535.57,
+    "orig": "El nuevo fiscal será Larry DeVoe, próximo a la presidenta provisional,",
+    "en": "The new prosecutor will be Larry DeVoe, close to the provisional president,"
+  },
+  {
+    "start": 1076.28,
+    "end": 1082.0,
+    "b_start": 2536.57,
+    "b_end": 2552.29,
+    "orig": "Delsi Rodríguez, que sigue las instrucciones del secretario de Estado estadounidense, Marco Rubio.",
+    "en": "Delsi Rodríguez, who follows the instructions of the US Secretary of State, Marco Rubio."
+  },
+  {
+    "start": 1082.0,
+    "end": 1087.08,
+    "b_start": 2553.29,
+    "b_end": 2569.1,
+    "orig": "La cantante colombiana Shakira fue nominada ayer al rock and roll Hall of Fame junto a otros",
+    "en": "The Colombian singer Shakira was nominated yesterday for the Rock and Roll Hall of Fame along with others"
+  },
+  {
+    "start": 1087.08,
+    "end": 1093.52,
+    "b_start": 2570.1,
+    "b_end": 2588.43,
+    "orig": "16 artistas. En el listado están igualmente Phil Collins como solista, Mariah Carey y Iron Maiden,",
+    "en": "16 artists. Also on the list are Phil Collins as a soloist, Mariah Carey and Iron Maiden,"
+  },
+  {
+    "start": 1093.52,
+    "end": 1100.44,
+    "b_start": 2589.43,
+    "b_end": 2606.97,
+    "orig": "así como Billy Idol, Oasis y Zade. También figuran Pink, Melissa Etheridge y Luther Banderos,",
+    "en": "as well as Billy Idol, Oasis and Zade. Also featuring are Pink, Melissa Etheridge and Luther Banderos,"
+  },
+  {
+    "start": 1100.44,
+    "end": 1107.08,
+    "b_start": 2607.97,
+    "b_end": 2625.15,
+    "orig": "junto a Inexess, The Black Crow y Jeff Buckley. La lista la completa en Joy Division, New Order,",
+    "en": "alongside Inexess, The Black Crow and Jeff Buckley. The list is completed by Joy Division, New Order,"
+  },
+  {
+    "start": 1107.08,
+    "end": 1112.56,
+    "b_start": 2626.15,
+    "b_end": 2640.0,
+    "orig": "WTN Clan, New Edition y Lauryn Hill. Los ganadores se anunciarán en abril.",
+    "en": "WTN Clan, New Edition and Lauryn Hill. Winners will be announced in April."
+  },
+  {
+    "start": 1112.56,
+    "end": 1119.28,
+    "b_start": 2641.0,
+    "b_end": 2657.98,
+    "orig": "Y aquí termina y esto no es todo, donde siempre habrá más. En la producción estuvo John F. Burnett.",
+    "en": "And here it ends and this is not all, where there will always be more. John F. Burnett was in the production."
+  },
+  {
+    "start": 1119.68,
+    "end": 1125.6,
+    "b_start": 2658.98,
+    "b_end": 2674.63,
+    "orig": "Pueden suscribirse a este podcast en nuestro sitio web y esto no es todo.jorgetown.edu.",
+    "en": "You can subscribe to this podcast on our website and this is not all.jorgetown.edu."
+  },
+  {
+    "start": 1125.6,
+    "end": 1131.8,
+    "b_start": 2675.63,
+    "b_end": 2689.83,
+    "orig": "Seguirnos en nuestras cuentas de X y de Instagram a Rova y esto no es todo y buscarnos en nuestro",
+    "en": "Follow us on our X and Instagram accounts at Rova and this is not all and look for us on our"
+  },
+  {
+    "start": 1131.8,
+    "end": 1135.6,
+    "b_start": 2690.83,
+    "b_end": 2702.4,
+    "orig": "canal de YouTube. Gracias por oírnos. Chao. Hasta la próxima.",
+    "en": "YouTube channel. Thanks for listening to us. Bye. Until next time."
+  }
+]
