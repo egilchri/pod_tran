@@ -2,1105 +2,1473 @@
   {
     "start": 0.0,
     "end": 3.28,
+    "b_start": 0.0,
+    "b_end": 8.64,
     "orig": "Este podcast es presentado por Movistar Empresas,",
     "en": "This podcast is presented by Movistar Empresas,"
   },
   {
     "start": 3.28,
     "end": 5.88,
+    "b_start": 9.64,
+    "b_end": 17.29,
     "orig": "el aliado integral de los empresarios colombianos.",
     "en": "the integral ally of Colombian businessmen."
   },
   {
     "start": 5.88,
     "end": 9.28,
+    "b_start": 18.29,
+    "b_end": 27.79,
     "orig": "Te acompañamos en cada paso con soluciones que conectan,",
     "en": "We accompany you every step of the way with solutions that connect,"
   },
   {
     "start": 9.28,
     "end": 11.54,
+    "b_start": 28.79,
+    "b_end": 34.98,
     "orig": "protegen y transforman tu negocio.",
     "en": "protect and transform your business."
   },
   {
     "start": 11.54,
     "end": 14.48,
+    "b_start": 35.98,
+    "b_end": 43.96,
     "orig": "Movistar Empresas, conecta con lo que te mueve.",
     "en": "Movistar Empresas, connect with what moves you."
   },
   {
     "start": 25.6,
     "end": 29.2,
+    "b_start": 44.96,
+    "b_end": 54.39,
     "orig": "El presidente ecuatoriano Daniel Novoa aumentó ayer,",
     "en": "The Ecuadorian president Daniel Novoa increased yesterday,"
   },
   {
     "start": 29.2,
     "end": 34.16,
+    "b_start": 55.39,
+    "b_end": 66.55,
     "orig": "esta vez hasta el 50% los aranceles a los productos colombianos.",
     "en": "This time up to 50% tariffs on Colombian products."
   },
   {
     "start": 34.16,
     "end": 35.52,
+    "b_start": 67.55,
+    "b_end": 70.95,
     "orig": "¿Cómo entenderlo?",
     "en": "How to understand it?"
   },
   {
     "start": 35.52,
     "end": 37.84,
+    "b_start": 71.95,
+    "b_end": 78.52,
     "orig": "El alcalde de Nueva York, Soran Mandani,",
     "en": "New York Mayor Soran Mandani"
   },
   {
     "start": 37.84,
     "end": 43.36,
+    "b_start": 79.52,
+    "b_end": 93.22,
     "orig": "ha presentado un proyecto de presupuesto enorme de 127.000 millones de dólares.",
     "en": "has presented a huge budget proposal of 127 billion dollars."
   },
   {
     "start": 43.36,
     "end": 44.72,
+    "b_start": 94.22,
+    "b_end": 97.53,
     "orig": "¿Se lo aprobarán?",
     "en": "Will they approve it?"
   },
   {
     "start": 44.72,
     "end": 49.08,
+    "b_start": 98.53,
+    "b_end": 112.57,
     "orig": "En Colombia, una encuesta reciente dice que Iván Cepeda y Abelardo de la Espriella",
     "en": "In Colombia, a recent survey says that Iván Cepeda and Abelardo de la Espriella"
   },
   {
     "start": 49.08,
     "end": 51.32,
+    "b_start": 113.57,
+    "b_end": 118.96,
     "orig": "se disputarán la presidencia.",
     "en": "They will compete for the presidency."
   },
   {
     "start": 51.32,
     "end": 53.08,
+    "b_start": 119.96,
+    "b_end": 124.74,
     "orig": "¿Es correcta esa conclusión?",
     "en": "Is that conclusion correct?"
   },
   {
     "start": 53.08,
     "end": 63.08,
+    "b_start": 125.74,
+    "b_end": 140.76,
     "orig": "Hola, bienvenidos a Y Esto No Es Todo, el podcast del Georgetown Americas Institute,",
     "en": "Hello, welcome to And This Is Not Everything, the podcast of the Georgetown Americas Institute,"
   },
   {
     "start": 63.08,
     "end": 66.28,
+    "b_start": 141.76,
+    "b_end": 150.15,
     "orig": "de la Universidad de Georgetown en Washington, D.C.",
     "en": "from Georgetown University in Washington, D.C."
   },
   {
     "start": 66.28,
     "end": 68.92,
+    "b_start": 151.15,
+    "b_end": 158.49,
     "orig": "Soy Juan Carlos Iragorri, desde Madrid.",
     "en": "I am Juan Carlos Iragorri, from Madrid."
   },
   {
     "start": 68.92,
     "end": 72.04,
+    "b_start": 159.49,
+    "b_end": 167.74,
     "orig": "Soy Paz Rodríguez Niel, desde Buenos Aires.",
     "en": "I am Paz Rodríguez Niel, from Buenos Aires."
   },
   {
     "start": 72.04,
     "end": 74.84,
+    "b_start": 168.74,
+    "b_end": 176.73,
     "orig": "Y yo soy Jorge Espinoza y estoy en Bogotá.",
     "en": "And I am Jorge Espinoza and I am in Bogotá."
   },
   {
     "start": 74.84,
     "end": 80.04,
+    "b_start": 177.73,
+    "b_end": 190.35,
     "orig": "Es viernes, 27 de febrero, y esto es todo lo que usted debería saber hoy.",
     "en": "It's Friday, February 27, and this is everything you should know today."
   },
   {
     "start": 83.08,
     "end": 97.32,
+    "b_start": 191.35,
+    "b_end": 205.48,
     "orig": "La guerra comercial entre Ecuador y Colombia, que empezó a finales del mes pasado, se agravó",
     "en": "The trade war between Ecuador and Colombia, which began at the end of last month, worsened"
   },
   {
     "start": 97.32,
     "end": 102.24,
+    "b_start": 206.48,
+    "b_end": 221.24,
     "orig": "aún más ayer cuando el gobierno del presidente ecuatoriano, Daniel Loboa, anunció que a",
     "en": "even more so yesterday when the government of the Ecuadorian president, Daniel Loboa, announced that"
   },
   {
     "start": 102.24,
     "end": 109.64,
+    "b_start": 222.24,
+    "b_end": 237.57,
     "orig": "partir de este domingo subirá los aranceles a los productos colombianos del 30 al 50%.",
     "en": "Starting this Sunday, tariffs on Colombian products will increase from 30 to 50%."
   },
   {
     "start": 109.64,
     "end": 133.48,
+    "b_start": 238.57,
+    "b_end": 252.63,
     "orig": "El año pasado las exportaciones no-petroleras de la Colombia fueron por 865 millones de",
     "en": "Last year Colombia's non-oil exports were 865 million"
   },
   {
     "start": 133.48,
     "end": 138.76,
+    "b_start": 253.63,
+    "b_end": 266.76,
     "orig": "dólares y las colombianas al Ecuador por 1.846 millones.",
     "en": "dollars and the Colombian ones to Ecuador for 1,846 million."
   },
   {
     "start": 138.76,
     "end": 144.16,
+    "b_start": 267.76,
+    "b_end": 282.73,
     "orig": "Ayer en Bogotá, Javier Díaz, presidente de la Asociación Nacional de Comercio Exterior,",
     "en": "Yesterday in Bogotá, Javier Díaz, president of the National Foreign Trade Association,"
   },
   {
     "start": 144.16,
     "end": 147.56,
+    "b_start": 283.73,
+    "b_end": 288.43,
     "orig": "Analdex, se pronunció.",
     "en": "Analdex, he spoke."
   },
   {
     "start": 147.56,
     "end": 156.84,
+    "b_start": 289.43,
+    "b_end": 304.33,
     "orig": "Esta medida que ha anunciado ecuador de incrementar al 50% la tasa de seguridad que le cobra",
     "en": "This measure that Ecuador has announced to increase the security rate it charges to 50%"
   },
   {
     "start": 156.84,
     "end": 163.72,
+    "b_start": 305.33,
+    "b_end": 318.12,
     "orig": "a los productos de exportación de Colombia al vecino país, creo que hace inviable el",
     "en": "to Colombia's export products to the neighboring country, I believe that it makes the"
   },
   {
     "start": 163.72,
     "end": 166.6,
+    "b_start": 319.12,
+    "b_end": 324.82,
     "orig": "comercio entre las dos naciones.",
     "en": "trade between the two nations."
   },
   {
     "start": 166.6,
     "end": 171.84,
+    "b_start": 325.82,
+    "b_end": 339.16,
     "orig": "La preocupación nuestra es total porque el presidente del ecuador no ha dicho específicamente",
     "en": "Our concern is total because the president of Ecuador has not specifically said"
   },
   {
     "start": 171.84,
     "end": 174.84,
+    "b_start": 340.16,
+    "b_end": 345.44,
     "orig": "qué es lo que espera de Colombia.",
     "en": "What do you expect from Colombia?"
   },
   {
     "start": 174.84,
     "end": 180.1,
+    "b_start": 346.44,
+    "b_end": 360.96,
     "orig": "Javier Díaz agregó que el presidente ecuatoriano no ha acudido a reuniones para intentar resolver",
     "en": "Javier Díaz added that the Ecuadorian president has not attended meetings to try to resolve"
   },
   {
     "start": 180.1,
     "end": 185.64,
+    "b_start": 361.96,
+    "b_end": 375.03,
     "orig": "el problema y que las autoridades colombianas aseguran haber mejorado la seguridad fronteriza",
     "en": "the problem and that Colombian authorities claim to have improved border security"
   },
   {
     "start": 185.64,
     "end": 188.72,
+    "b_start": 376.03,
+    "b_end": 382.96,
     "orig": "para evitar el narcotráfico y el contrabando.",
     "en": "to prevent drug trafficking and smuggling."
   },
   {
     "start": 188.72,
     "end": 193.96,
+    "b_start": 383.96,
+    "b_end": 399.18,
     "orig": "Fue el propio Daniel Loboa el que decretó los primeros aranceles el 21 de enero y multiplicó",
     "en": "It was Daniel Loboa himself who decreed the first tariffs on January 21 and multiplied"
   },
   {
     "start": 193.96,
     "end": 196.48,
+    "b_start": 400.18,
+    "b_end": 405.84,
     "orig": "por 10 hasta los 30 dólares.",
     "en": "for 10 up to 30 dollars."
   },
   {
     "start": 196.48,
     "end": 201.52,
+    "b_start": 406.84,
+    "b_end": 421.71,
     "orig": "La tasa de transporte del petróleo colombiano por un oleoducto, su colega colombiano Gustavo",
     "en": "The rate of transportation of Colombian oil through a pipeline, his Colombian colleague Gustavo"
   },
   {
     "start": 201.52,
     "end": 206.72,
+    "b_start": 422.71,
+    "b_end": 434.56,
     "orig": "Petro, reaccionó y suspendió el envío de energía eléctrica al ecuador.",
     "en": "Petro reacted and suspended the shipment of electrical energy to Ecuador."
   },
   {
     "start": 206.72,
     "end": 211.96,
+    "b_start": 435.56,
+    "b_end": 452.19,
     "orig": "Ecuador le exporta a Colombia petróleo, mariscos, arroz y madera, entre otros, y Colombia",
     "en": "Ecuador exports oil, seafood, rice and wood, among others, to Colombia, and Colombia"
   },
   {
     "start": 211.96,
     "end": 215.96,
+    "b_start": 453.19,
+    "b_end": 462.33,
     "orig": "al ecuador energía eléctrica, automóviles y azúcar.",
     "en": "to Ecuador electric energy, automobiles and sugar."
   },
   {
     "start": 215.96,
     "end": 220.16,
+    "b_start": 463.33,
+    "b_end": 472.26,
     "orig": "Pero ¿cómo entender que Novoa haya aumentado los aranceles?",
     "en": "But how to understand that Novoa has increased tariffs?"
   },
   {
     "start": 220.16,
     "end": 224.32,
+    "b_start": 473.26,
+    "b_end": 486.64,
     "orig": "Vamos ayer en Guayaquil con Walter Esporrié, director de análisis semanal.",
     "en": "We went yesterday in Guayaquil with Walter Esporrié, director of weekly analysis."
   },
   {
     "start": 224.32,
     "end": 233.56,
+    "b_start": 487.64,
+    "b_end": 500.31,
     "orig": "Para entender el incremento de la tasa de seguridad que le impone al gobierno ecuatoriano",
     "en": "To understand the increase in the security rate imposed on the Ecuadorian government"
   },
   {
     "start": 233.56,
     "end": 241.4,
+    "b_start": 501.31,
+    "b_end": 517.77,
     "orig": "a los productos que ingresan de Colombia del 30% al 50%, hay que entender tres cosas.",
     "en": "to the products that enter from Colombia from 30% to 50%, three things must be understood."
   },
   {
     "start": 241.4,
     "end": 246.6,
+    "b_start": 518.77,
+    "b_end": 528.61,
     "orig": "En primer lugar es una táctica cuyo pionero es Donald Trump.",
     "en": "First of all, it is a tactic pioneered by Donald Trump."
   },
   {
     "start": 246.76,
     "end": 252.96,
+    "b_start": 529.61,
+    "b_end": 546.09,
     "orig": "Donald Trump le puso un arancel del 25% a México en protesta porque México no controlaba",
     "en": "Donald Trump imposed a 25% tariff on Mexico in protest because Mexico did not control"
   },
   {
     "start": 252.96,
     "end": 254.92,
+    "b_start": 547.09,
+    "b_end": 551.24,
     "orig": "el tráfico de fetanilo.",
     "en": "fetanyl trafficking."
   },
   {
     "start": 254.92,
     "end": 261.36,
+    "b_start": 552.24,
+    "b_end": 565.75,
     "orig": "Además, cada vez que un país le contestaba a los Estados Unidos a su vez elevando el",
     "en": "Furthermore, every time a country responded to the United States in turn by raising the"
   },
   {
     "start": 261.36,
     "end": 267.52,
+    "b_start": 566.75,
+    "b_end": 581.48,
     "orig": "arancel en discusión en pelea entre los dos países porque imponía más arancel al otro,",
     "en": "tariff under discussion in a fight between the two countries because it imposed more tariffs on the other,"
   },
   {
     "start": 267.52,
     "end": 270.4,
+    "b_start": 582.48,
+    "b_end": 590.54,
     "orig": "entonces Trump aumentaba el arancel a ese país.",
     "en": "then Trump increased the tariff on that country."
   },
   {
     "start": 270.4,
     "end": 271.4,
+    "b_start": 591.54,
+    "b_end": 595.69,
     "orig": "Eso sucedió con China.",
     "en": "That happened with China."
   },
   {
     "start": 271.4,
     "end": 274.36,
+    "b_start": 596.69,
+    "b_end": 602.85,
     "orig": "Entonces, esa es la misma táctica.",
     "en": "So, that's the same tactic."
   },
   {
     "start": 274.44,
     "end": 276.88,
+    "b_start": 603.85,
+    "b_end": 610.14,
     "orig": "La segunda es el tema de la seguridad.",
     "en": "The second is the issue of security."
   },
   {
     "start": 276.88,
     "end": 284.0,
+    "b_start": 611.14,
+    "b_end": 625.56,
     "orig": "En ecuadoras del convencimiento que el presidente Petro ha comprado la paz en las urbes colombianas,",
     "en": "In Ecuador, the conviction that President Petro has bought peace in Colombian cities,"
   },
   {
     "start": 284.0,
     "end": 288.2,
+    "b_start": 626.56,
+    "b_end": 635.38,
     "orig": "cediendoles a los darcos traficantes el control de las fronteras.",
     "en": "ceding control of the borders to traffickers."
   },
   {
     "start": 288.2,
     "end": 296.2,
+    "b_start": 636.38,
+    "b_end": 649.48,
     "orig": "En nuestro caso, en el sur de Colombia, están creciendo los cultivos de coca que el presidente",
     "en": "In our case, in the south of Colombia, the coca crops that the president"
   },
   {
     "start": 296.2,
     "end": 302.6,
+    "b_start": 650.48,
+    "b_end": 661.16,
     "orig": "llama cultivos ancestrales y que se rehusa fumigarlos con misufato.",
     "en": "calls ancestral crops and refuses to fumigate them with misufate."
   },
   {
     "start": 302.68,
     "end": 311.68,
+    "b_start": 662.16,
+    "b_end": 676.96,
     "orig": "Y las guerrillas e integrantes de la FARC, ex paramilitares, operan, cruzan la frontera,",
     "en": "And the guerrillas and members of the FARC, former paramilitaries, operate, cross the border,"
   },
   {
     "start": 311.68,
     "end": 318.36,
+    "b_start": 677.96,
+    "b_end": 696.63,
     "orig": "pasan a la doctoría, hacen desplanes, matan, roban, minería ilegal, meten droga y luego",
     "en": "They go on to become doctors, they make mistakes, they kill, they steal, they illegally mine, they put drugs and then"
   },
   {
     "start": 318.36,
     "end": 324.28,
+    "b_start": 697.63,
+    "b_end": 710.83,
     "orig": "si se enfrenta con las fuerzas armadas, huyen a su país donde están protegidos porque",
     "en": "If they confront the armed forces, they flee to their country where they are protected because"
   },
   {
     "start": 324.28,
     "end": 329.52,
+    "b_start": 711.83,
+    "b_end": 721.4,
     "orig": "las fuerzas armadas no intervienen contra los narcotraficantes.",
     "en": "The armed forces do not intervene against drug traffickers."
   },
   {
     "start": 329.6,
     "end": 332.88,
+    "b_start": 722.4,
+    "b_end": 730.75,
     "orig": "Solamente si tratan de adentrarse al país se los impiden.",
     "en": "Only if they try to enter the country are they prevented."
   },
   {
     "start": 332.88,
     "end": 337.76,
+    "b_start": 731.75,
+    "b_end": 745.69,
     "orig": "Deficencialmente le dicen que es cultiven en el putumayo y saquen la droga por el ecuador",
     "en": "Inadequately they tell him that they should grow it in Putumayo and take the drugs through the equator."
   },
   {
     "start": 337.76,
     "end": 339.04,
+    "b_start": 746.69,
+    "b_end": 750.93,
     "orig": "doluaron por Colombia.",
     "en": "They mourned for Colombia."
   },
   {
     "start": 339.04,
     "end": 344.24,
+    "b_start": 751.93,
+    "b_end": 765.73,
     "orig": "Entonces ha estado exportando la violencia del ecuador y eso es muy importante en el ecuador.",
     "en": "So it has been exporting violence from Ecuador and that is very important in Ecuador."
   },
   {
     "start": 344.24,
     "end": 350.12,
+    "b_start": 766.73,
+    "b_end": 778.94,
     "orig": "Pero van a decir que la diferencia es que Trump tiene la capacidad de manejar las cosas",
     "en": "But they will say that the difference is that Trump has the ability to handle things"
   },
   {
     "start": 350.12,
     "end": 354.76,
+    "b_start": 779.94,
+    "b_end": 793.38,
     "orig": "en México como le da la gana y el ecuador no tiene ni remotamente esa posibilidad de",
     "en": "in Mexico as he pleases and Ecuador does not even remotely have that possibility of"
   },
   {
     "start": 354.76,
     "end": 355.76,
+    "b_start": 794.38,
+    "b_end": 798.21,
     "orig": "hacerlo con Colombia.",
     "en": "do it with Colombia."
   },
   {
     "start": 356.16,
     "end": 361.84,
+    "b_start": 799.21,
+    "b_end": 812.65,
     "orig": "Pero lo que se espera es que, o bien Petro se dé cuenta que no puede hacer esto permanentemente",
     "en": "But what is expected is that either Petro realizes that he cannot do this permanently"
   },
   {
     "start": 361.84,
     "end": 368.32,
+    "b_start": 813.65,
+    "b_end": 828.88,
     "orig": "o en su defecto que Estados Unidos comprenda que si quiere impedir, quiere reducir el tráfico",
     "en": "or failing that, that the United States understands that if it wants to prevent, it wants to reduce trafficking."
   },
   {
     "start": 368.32,
     "end": 374.12,
+    "b_start": 829.88,
+    "b_end": 842.05,
     "orig": "de drogas colombianas a los Estados Unidos tiene que ayudar al ecuador para cerrar la",
     "en": "of Colombian drugs to the United States has to help Ecuador to close the"
   },
   {
     "start": 374.12,
     "end": 378.76,
+    "b_start": 843.05,
+    "b_end": 854.32,
     "orig": "frontera con Colombia y que presione entonces al presidente Petro para hacerlo.",
     "en": "border with Colombia and then pressure President Petro to do so."
   },
   {
     "start": 385.76,
     "end": 395.28,
+    "b_start": 855.32,
+    "b_end": 869.24,
     "orig": "Desde el pasado primero de enero, hace menos de dos meses, Soran Mamdani es el alcalde",
     "en": "Since January 1st, less than two months ago, Soran Mamdani has been the mayor"
   },
   {
     "start": 395.28,
     "end": 396.68,
+    "b_start": 870.24,
+    "b_end": 873.33,
     "orig": "de Nueva York.",
     "en": "from New York."
   },
   {
     "start": 396.68,
     "end": 401.56,
+    "b_start": 874.33,
+    "b_end": 887.53,
     "orig": "Con apenas 34 años este hombre nacido en Uganda se convirtió aquel día en el primer",
     "en": "At just 34 years old, this man born in Uganda became the first"
   },
   {
     "start": 401.56,
     "end": 406.68,
+    "b_start": 888.53,
+    "b_end": 900.31,
     "orig": "musulman en dirigir los destinos de la que algunos llaman la capital del mundo.",
     "en": "Muslims in directing the destinies of what some call the capital of the world."
   },
   {
     "start": 406.68,
     "end": 412.72,
+    "b_start": 901.31,
+    "b_end": 916.59,
     "orig": "En campaña Mamdani prometió autobuses municipales gratuitos, guardería 5 costos para los niños",
     "en": "In campaign Mamdani promised free municipal buses, daycare 5 costs for children"
   },
   {
     "start": 412.72,
     "end": 418.12,
+    "b_start": 917.59,
+    "b_end": 930.72,
     "orig": "de entre mes y medio y cinco años de edad y congelar buena parte de los arrendamientos.",
     "en": "between a month and a half and five years old and freeze a good part of the leases."
   },
   {
     "start": 418.12,
     "end": 423.2,
+    "b_start": 931.72,
+    "b_end": 942.51,
     "orig": "Nueva York es hoy una ciudad de 8 millones y medio de habitantes.",
     "en": "Today New York is a city of 8 and a half million inhabitants."
   },
   {
     "start": 423.2,
     "end": 428.84,
+    "b_start": 943.51,
+    "b_end": 957.45,
     "orig": "Al posesionarse Mamdani dijo atenderemos a todos los New Yorkinos, no a algún multimillonario",
     "en": "When Mamdani took office he said we will serve all New Yorkers, not some billionaire"
   },
   {
     "start": 428.84,
     "end": 434.36,
+    "b_start": 958.45,
+    "b_end": 972.63,
     "orig": "oligarca que cree poder comprar nuestra democracia y agregó, fue elegido como un socialista",
     "en": "oligarch who believes he can buy our democracy and added, he was elected as a socialist"
   },
   {
     "start": 434.36,
     "end": 438.0,
+    "b_start": 973.63,
+    "b_end": 982.27,
     "orig": "demócrata y gobernaré como un demócrata socialista.",
     "en": "democrat and I will govern as a democrat socialist."
   },
   {
-    "start": 443.68,
-    "end": 446.52,
-    "orig": "Pero cuando aún no ha transcurrido 60 días",
-    "en": "But when 60 days have not yet passed"
+    "start": 443.56,
+    "end": 449.36,
+    "b_start": 983.27,
+    "b_end": 998.0,
+    "orig": "Pero cuando aun no han transcurrido 60 días de su posesión ¿surgen algunos nezeitigs ne marque",
+    "en": "But when 60 days have not passed since its possession, do some nezeitigs ne marque arise?"
   },
   {
-    "start": 446.8,
-    "end": 452.32,
-    "orig": "de su posesión, surgen algunos new barrones sobre Mamdani, a serนนque a dijo que se",
-    "en": "of his possession, some new rumors arise about Mamdani, except that he said that he"
+    "start": 449.36,
+    "end": 449.96,
+    "b_start": 999.0,
+    "b_end": 1001.88,
+    "orig": "aー Mamdani?",
+    "en": "aー Mamdani?"
   },
   {
-    "start": 452.32,
-    "end": 456.68,
-    "orig": "lleva en unazam porAnother World team, pero también el y� al CWF.",
-    "en": "He carries in unazam by Another World team, but also the and the CWF."
+    "start": 450.72,
+    "end": 456.66,
+    "b_start": 1002.88,
+    "b_end": 1015.66,
+    "orig": "events los que herman, no solo son fixedes, son deviationes de ese letztidoeh",
+    "en": "events that brother, are not only fixed, they are deviations of that letztidoeh"
   },
   {
-    "start": 456.68,
-    "end": 460.4,
-    "orig": "Y todo lo que pareció su meltsath fue un plugged instructor, estas pacientes muy",
-    "en": "And all that seemed like their meltsath was a plugged instructor, these very patients"
+    "start": 456.66,
+    "end": 460.68,
+    "b_start": 1016.66,
+    "b_end": 1025.64,
+    "orig": "que nosotros pertenec Kensingtonia cuatro personas Sounds,",
+    "en": "that we belong Kensingtonia four people Sounds,"
   },
   {
-    "start": 460.6,
-    "end": 464.04,
-    "orig": "experiences impac Stoppers del Chando con С turretip Pero esto entonces es es y",
-    "en": "experiences imac Stoppers del Chando with С turretip But this then is is and"
+    "start": 460.68,
+    "end": 463.4,
+    "b_start": 1026.64,
+    "b_end": 1036.52,
+    "orig": "tenéis ella en elolphino de que enteredas, estas facturas.",
+    "en": "You have it in elolphino that you enteredas, these invoices."
   },
   {
-    "start": 465.32,
-    "end": 466.12,
-    "orig": "en semifinales que más Uns课",
-    "en": "in the semi-finals that more Uns课"
+    "start": 463.4,
+    "end": 467.92,
+    "b_start": 1037.52,
+    "b_end": 1049.56,
+    "orig": "director del delante es su API de comp requiringking without DIRE youtube….",
+    "en": "front director is your comp API requiringking without DIRE youtube…."
   },
   {
-    "start": 466.12,
-    "end": 471.6,
-    "orig": "cuando aún no han transcurrido 60 días de suposición, surgen algunos nubarrones sobre",
-    "en": "When 60 days of assumption have not yet passed, some dark clouds arise over"
+    "start": 467.92,
+    "end": 473.84,
+    "b_start": 1050.56,
+    "b_end": 1064.77,
+    "orig": "días de su posesión surgen algunos nobarrones sobre Mamdani. Hace una semana, por ejemplo,",
+    "en": "days of his possession some rumors arise about Mamdani. A week ago, for example,"
   },
   {
-    "start": 471.6,
-    "end": 477.2,
-    "orig": "Mamdani. Hace una semana, por ejemplo, el célebre periodista de la CNN Farid Zakaria",
-    "en": "Mamdani. A week ago, for example, the famous CNN journalist Farid Zakaria"
+    "start": 473.84,
+    "end": 479.44,
+    "b_start": 1065.77,
+    "b_end": 1079.37,
+    "orig": "el célebre periodista de la CNN Farid Zakaria afirmó que el proyecto de presupuesto del",
+    "en": "The famous CNN journalist Farid Zakaria stated that the draft budget of the"
   },
   {
-    "start": 477.2,
-    "end": 483.36,
-    "orig": "afirmó que el proyecto de presupuesto del Alcalde de 127 mil millones de dólares es",
-    "en": "stated that the Mayor's proposed budget of 127 billion dollars is"
+    "start": 479.44,
+    "end": 487.28,
+    "b_start": 1080.37,
+    "b_end": 1097.62,
+    "orig": "alcalde de 127 mil millones de dólares es una utopía. Según Zakaria, esa suma casi duplica",
+    "en": "mayor of 127 billion dollars is a utopia. According to Zakaria, that sum almost doubles"
   },
   {
-    "start": 483.36,
-    "end": 484.76,
-    "orig": "una utopía.",
-    "en": "a utopia"
+    "start": 487.28,
+    "end": 493.36,
+    "b_start": 1098.62,
+    "b_end": 1116.19,
+    "orig": "la del presupuesto de 2014 y es similar a la del presupuesto de Grecia. Además, implicaría impuestos",
+    "en": "that of the 2014 budget and is similar to that of the Greek budget. Furthermore, it would involve taxes"
   },
   {
-    "start": 484.76,
-    "end": 490.24,
-    "orig": "Según Zakaria, esa suma casi duplica la del presupuesto de 2014 y es similar a la del",
-    "en": "According to Zakaria, this sum almost doubles that of the 2014 budget and is similar to that of the"
+    "start": 493.36,
+    "end": 500.88,
+    "b_start": 1117.19,
+    "b_end": 1134.87,
+    "orig": "del 55% para ciertos segmentos sociales. Zakaria concluyó, Mamdani quiere una ciudad asequible",
+    "en": "55% for certain social segments. Zakaria concluded, Mamdani wants an affordable city"
   },
   {
-    "start": 490.24,
-    "end": 497.4,
-    "orig": "presupuesto de Grecia. Además, implicaría impuestos del 55% para ciertos segmentos sociales.",
-    "en": "Greece budget. In addition, it would imply taxes of 55% for certain social segments."
+    "start": 500.88,
+    "end": 506.68,
+    "b_start": 1135.87,
+    "b_end": 1150.44,
+    "orig": "con un presupuesto inasequible. ¿Cómo siente todo esto, alguien que vive en Nueva York? ¿Cómo se",
+    "en": "with an unaffordable budget. How does all this feel, someone who lives in New York? How do you"
   },
   {
-    "start": 497.4,
-    "end": 503.36,
-    "orig": "Zakaria concluyó, Mamdani quiere una ciudad asequible con un presupuesto inasequible.",
-    "en": "Zakaria concluded, Mamdani wants an affordable city with an unaffordable budget."
+    "start": 506.68,
+    "end": 512.0,
+    "b_start": 1151.44,
+    "b_end": 1164.87,
+    "orig": "entiende lo que está pasando con el alcalde Søren Mamdani? Llamamos ayer a esa ciudad al",
+    "en": "Do you understand what is happening with Mayor Søren Mamdani? We called that city yesterday"
   },
   {
-    "start": 503.36,
-    "end": 507.4,
-    "orig": "¿Cómo siente todo esto, alguien que vive en Nueva York? ¿Cómo se entiende lo que",
-    "en": "How does all this feel, someone who lives in New York? How do you understand what"
+    "start": 512.0,
+    "end": 519.92,
+    "b_start": 1165.87,
+    "b_end": 1181.95,
+    "orig": "consultor y columnista del diario madrileño El País Juan Esteban Ordús. Yo vió en Nueva York",
+    "en": "consultant and columnist for the Madrid newspaper El País Juan Esteban Ordús. I saw in New York"
   },
   {
-    "start": 507.4,
-    "end": 512.76,
-    "orig": "está pasando con el Alcalde Søran Mamdani? ¿Llamamos ayer a esa ciudad al consultor y",
-    "en": "is happening with Mayor Søran Mamdani? Did we call the consultant to that city yesterday and"
+    "start": 519.92,
+    "end": 524.2,
+    "b_start": 1182.95,
+    "b_end": 1200.87,
+    "orig": "hace 23 años que es más de la mitad de mi vida adulta. Aquí nació mi hijo, aquí creció, aquí",
+    "en": "It's been 23 years, which is more than half of my adult life. My son was born here, he grew up here, here"
   },
   {
-    "start": 512.76,
-    "end": 516.48,
-    "orig": "columnista del Diario Madrileño el país Juan Esteban Ordús?",
-    "en": "columnist of the Diario Madrileño the country Juan Esteban Ordús?"
+    "start": 524.2,
+    "end": 529.0,
+    "b_start": 1201.87,
+    "b_end": 1216.56,
+    "orig": "vive, aquí trabaja. De manera que para efectos prácticos está mi casa. Cuando uno vive aquí,",
+    "en": "lives, works here. So for all practical purposes this is my house. When you live here,"
   },
   {
-    "start": 516.48,
-    "end": 522.84,
-    "orig": "Yo vió en Nueva York hace 23 años que es más de la mitad de mi vida adulta. Aquí",
-    "en": "I lived in New York 23 years ago, which is more than half of my adult life. Here"
+    "start": 529.0,
+    "end": 532.64,
+    "b_start": 1217.56,
+    "b_end": 1230.92,
+    "orig": "se da cuenta que esta es una ciudad de contrastes, de paradojas y de superlativos.",
+    "en": "You realize that this is a city of contrasts, paradoxes and superlatives."
   },
   {
-    "start": 522.84,
-    "end": 526.24,
-    "orig": "nació mi hijo, aquí creció, aquí vive, aquí trabaja, de manera a lo que para efectos",
-    "en": "My son was born, he grew up here, he lives here, he works here, so for the purposes of"
+    "start": 532.64,
+    "end": 538.56,
+    "b_start": 1231.92,
+    "b_end": 1247.68,
+    "orig": "Miremos, por ejemplo, cómo le ha dado a Nueva York en las crisis del último siglo. La mal llamada",
+    "en": "Let's look, for example, at how New York has fared in the crises of the last century. The bad call"
   },
   {
-    "start": 526.24,
-    "end": 530.4,
-    "orig": "prácticos está en mi casa. Cuando uno vive aquí se da cuenta que esta es una ciudad de",
-    "en": "practical is in my house. When you live here you realize that this is a city of"
+    "start": 538.56,
+    "end": 543.96,
+    "b_start": 1248.68,
+    "b_end": 1264.95,
+    "orig": "gripa española principios del siglo XX, la ciudad más gocta de Nueva York, la gran depresión del",
+    "en": "Spanish flu at the beginning of the 20th century, the worst city in New York, the great depression of the"
   },
   {
-    "start": 530.4,
-    "end": 535.28,
-    "orig": "contrastes, de paradojas y de superlativos. Miremos, por ejemplo, cómo le doy a Nueva",
-    "en": "contrasts, paradoxes and superlatives. Let's look, for example, at how I give New"
+    "start": 543.96,
+    "end": 551.68,
+    "b_start": 1265.95,
+    "b_end": 1285.94,
+    "orig": "29, lo mismo. La crisis financiera del 2008, igual la pandemia del COVID-2020, la misma cosa.",
+    "en": "29, the same. The 2008 financial crisis, the same as the COVID-2020 pandemic, the same thing."
   },
   {
-    "start": 535.28,
-    "end": 540.0,
-    "orig": "York en las crisis del último siglo. La mal llamada gripa española a principios del",
-    "en": "York in the crises of the last century. The so-called Spanish flu at the beginning of the"
+    "start": 551.68,
+    "end": 560.52,
+    "b_start": 1286.94,
+    "b_end": 1305.22,
+    "orig": "A la vez, desde la pandemia del 2021-2022 para acá, en el área cultural las instituciones",
+    "en": "At the same time, since the 2021-2022 pandemic until now, in the cultural area the institutions"
   },
   {
-    "start": 540.0,
-    "end": 545.96,
-    "orig": "siglo XX, la ciudad más gocta de Nueva York, la gran depresión del XXIX, lo mismo, la",
-    "en": "20th century, the coolest city in New York, the great depression of the 29th, the same thing, the"
+    "start": 560.52,
+    "end": 566.76,
+    "b_start": 1306.22,
+    "b_end": 1324.08,
+    "orig": "culturales han crecido alrededor del 20% para ubicarse más de 5.500, pero simultáneamente,",
+    "en": "cultural activities have grown around 20% to reach more than 5,500, but simultaneously,"
   },
   {
-    "start": 545.96,
-    "end": 554.28,
-    "orig": "crisis financiera del 2008, igual la pandemia del COVID-2020, la misma cosa. A la vez,",
-    "en": "financial crisis of 2008, the same as the COVID-2020 pandemic, the same thing. At the same time,"
+    "start": 566.76,
+    "end": 571.64,
+    "b_start": 1325.08,
+    "b_end": 1337.7,
+    "orig": "las personas que están dispuestas o sobre todo en capacidad de venirse a trabajar a Nueva York",
+    "en": "people who are willing or, above all, able to come to work in New York"
   },
   {
-    "start": 554.28,
-    "end": 560.56,
-    "orig": "desde la pandemia del 2020, o sea, del 2021-2022 para acá, en el área cultural, las instituciones",
-    "en": "Since the 2020 pandemic, that is, from 2021-2022 to here, in the cultural area, the institutions"
+    "start": 571.64,
+    "end": 577.16,
+    "b_start": 1338.7,
+    "b_end": 1356.36,
+    "orig": "en esa área se han reducido por encima del 4%. ¿Qué quiere decir eso? Que la ciudad si es muy costosa",
+    "en": "in that area they have been reduced by more than 4%. What does that mean? That the city is very expensive"
   },
   {
-    "start": 560.56,
-    "end": 567.44,
-    "orig": "culturales han crecido alrededor del 20% para ubicarse más de 5.500, pero simultáneamente",
-    "en": "cultural have grown around 20% to reach more than 5,500, but simultaneously"
+    "start": 577.16,
+    "end": 580.8,
+    "b_start": 1357.36,
+    "b_end": 1370.91,
+    "orig": "para vivir, si uno no está establecido profesionalmente y no tiene un ingreso estable.",
+    "en": "to live, if one is not established professionally and does not have a stable income."
   },
   {
-    "start": 567.44,
-    "end": 571.24,
-    "orig": "las personas que están dispuestas o sobre todo en capacidad de venirse a trabajar a",
-    "en": "people who are willing or, above all, able to come to work"
+    "start": 580.8,
+    "end": 586.28,
+    "b_start": 1371.91,
+    "b_end": 1386.69,
+    "orig": "Mamdanen eso tiene razón, eso no se puede discutir y la ciudad es muy costosa para mucha gente.",
+    "en": "Mamdanen is right, that cannot be argued and the city is very expensive for many people."
   },
   {
-    "start": 571.24,
-    "end": 575.56,
-    "orig": "Nueva York en esa área se ha reducido por el símbolo 4%. ¿Qué quiere decir eso? Que",
-    "en": "New York in that area is down by about 4%. What does that mean? what"
+    "start": 586.28,
+    "end": 591.84,
+    "b_start": 1387.69,
+    "b_end": 1402.28,
+    "orig": "Lo que pasa es que las audiciones que propone no es tan claro que sean viables. Por ejemplo,",
+    "en": "What happens is that the auditions he proposes are not so clear that they are viable. For example,"
   },
   {
-    "start": 575.64,
-    "end": 580.0,
-    "orig": "la ciudad sí es muy costosa para vivir si uno no está establecido profesionalmente y no tiene",
-    "en": "The city is very expensive to live in if one is not professionally established and does not have"
+    "start": 591.84,
+    "end": 597.52,
+    "b_start": 1403.28,
+    "b_end": 1417.2,
+    "orig": "el aumento de impuestos para las personas y para las corporaciones. El 1% de los mayores",
+    "en": "increasing taxes for individuals and corporations. 1% of the elderly"
   },
   {
-    "start": 580.0,
-    "end": 585.32,
-    "orig": "un ingreso estable. Mamdani en eso tiene razón, eso no se puede discutir y la ciudad es muy",
-    "en": "a stable income. Mamdani is right about that, that cannot be argued and the city is very"
+    "start": 597.52,
+    "end": 603.68,
+    "b_start": 1418.2,
+    "b_end": 1436.5,
+    "orig": "contribuyentes paga casi el 50% de los impuestos de la ciudad. A la vez, el 50% de los que menos",
+    "en": "Taxpayers pay almost 50% of city taxes. At the same time, 50% of those who least"
   },
   {
-    "start": 585.32,
-    "end": 590.72,
-    "orig": "costosa para mucha gente. Lo que pasa es que las audiciones que propone no es tan claro",
-    "en": "expensive for many people. What happens is that the auditions he proposes are not so clear"
+    "start": 603.68,
+    "end": 610.16,
+    "b_start": 1437.5,
+    "b_end": 1455.26,
+    "orig": "ganan pagan solo el 0.2%. Si les suben los impuestos a los que más ganan y los que más tributan,",
+    "en": "they earn pay only 0.2%. If they raise taxes on those who earn the most and those who pay the most,"
   },
   {
-    "start": 590.72,
-    "end": 595.72,
-    "orig": "que sean viables. Por ejemplo, el aumento de impuestos para las personas y para las corporaciones.",
-    "en": "that are viable. For example, increasing taxes for individuals and corporations."
+    "start": 610.16,
+    "end": 616.76,
+    "b_start": 1456.26,
+    "b_end": 1469.74,
+    "orig": "siendo ya los impuestos más altos del país, lo que va a hacer es espantarlos y la carga",
+    "en": "being the highest taxes in the country, what it is going to do is scare them away and the burden"
   },
   {
-    "start": 595.72,
-    "end": 602.12,
-    "orig": "El 1% de los mayores contribuyentes paga casi el 50% de los impuestos de la ciudad. A la vez,",
-    "en": "The top 1% of taxpayers pay almost 50% of city taxes. At the same time,"
+    "start": 616.76,
+    "end": 621.28,
+    "b_start": 1470.74,
+    "b_end": 1485.04,
+    "orig": "se va a hacer distribuir también o mucho más entre las clases medias y las clases trabajadoras.",
+    "en": "It will be distributed also or much more among the middle classes and the working classes."
   },
   {
-    "start": 602.2,
-    "end": 608.92,
-    "orig": "el 50% de los que menos ganan pagan solo entre el 0.2%. Si les sube los impuestos a los que",
-    "en": "The 50% of those who earn the least pay only 0.2%. If you raise taxes on those"
+    "start": 621.28,
+    "end": 626.36,
+    "b_start": 1486.04,
+    "b_end": 1500.13,
+    "orig": "Si a eso le suma uno, que quiera aumentar el impuesto predial, pero simultánea y cogera",
+    "en": "If you add one to that, who wants to increase the property tax, but simultaneously and take"
   },
   {
-    "start": 608.92,
-    "end": 614.0,
-    "orig": "más ganan y los que más tributan, siendo ya los impuestos más altos del país, lo que va a hacer",
-    "en": "the more they earn and those who pay the most, with the taxes already being the highest in the country, what is going to do"
+    "start": 626.36,
+    "end": 634.2,
+    "b_start": 1501.13,
+    "b_end": 1515.93,
+    "orig": "los arriendos, pero simultáneamente pretende que haya desarrollos de vivienda inensamente grandes,",
+    "en": "rents, but simultaneously wants there to be immensely large housing developments,"
   },
   {
-    "start": 614.0,
-    "end": 620.4,
-    "orig": "es espantarlos y la carga se va a hacer distribuir también o mucho más entre las clases medias y",
-    "en": "is to scare them away and the burden is going to be distributed also or much more among the middle classes and"
+    "start": 634.2,
+    "end": 638.48,
+    "b_start": 1516.93,
+    "b_end": 1531.14,
+    "orig": "pues las corporaciones y las compañías que hacen esos desarrollos se van a ir de la ciudad y no",
+    "en": "because the corporations and companies that make these developments are going to leave the city and not"
   },
   {
-    "start": 620.4,
-    "end": 625.2,
-    "orig": "las clases trabajadoras. Si a eso le suma uno que quiera aumentar el impuesto previal, pero",
-    "en": "the working classes. If you add to that someone who wants to increase the prior tax, but"
+    "start": 638.48,
+    "end": 644.04,
+    "b_start": 1532.14,
+    "b_end": 1546.7,
+    "orig": "van a querer hacerlo porque les hubieron los impuestos y no los dejan, digamos, obtener el",
+    "en": "They are going to want to do it because they had taxes and they are not allowed, let's say, to obtain the"
   },
   {
-    "start": 625.2,
-    "end": 630.52,
-    "orig": "simultáneamente y cogerá los arriendos, pero simultáneamente pretende que haya desarrollos",
-    "en": "simultaneously and will take the leases, but simultaneously it intends for there to be developments"
+    "start": 644.04,
+    "end": 651.72,
+    "b_start": 1547.7,
+    "b_end": 1561.83,
+    "orig": "retorno que se quisiera de esos proyectos. Lo bueno que tiene esto es que a pesar de que son",
+    "en": "return that would be desired from those projects. The good thing about this is that even though they are"
   },
   {
-    "start": 630.68,
-    "end": 636.32,
-    "orig": "de vivienda inmensamente grandes, pues las corporaciones y las compañías que hacen",
-    "en": "immensely large housing projects, since the corporations and companies that make"
+    "start": 651.76,
+    "end": 657.04,
+    "b_start": 1562.83,
+    "b_end": 1577.11,
+    "orig": "propuestas populistas que suenan bien y que a los jóvenes les encantan, él no las puede tomar solo",
+    "en": "populist proposals that sound good and that young people love, he cannot take them alone"
   },
   {
-    "start": 636.32,
-    "end": 640.4,
-    "orig": "esos desarrollos se van a ir de la ciudad y no van a querer hacerlo porque les hubieron los impuestos",
-    "en": "Those developments are going to leave the city and they are not going to want to do so because they had to pay taxes."
+    "start": 657.04,
+    "end": 662.48,
+    "b_start": 1578.11,
+    "b_end": 1592.67,
+    "orig": "la mayor parte. Le quiere meter una carga financiera inmensa con los jardines infantiles gratis,",
+    "en": "most of it. He wants to put an immense financial burden on you with free kindergartens,"
   },
   {
-    "start": 640.4,
-    "end": 649.6,
-    "orig": "y no los dejan obtener el retorno que se quisiera de esos proyectos. Lo bueno que tiene esto es que,",
-    "en": "and they do not let them obtain the return that they would like from those projects. The good thing about this is that,"
+    "start": 662.48,
+    "end": 667.16,
+    "b_start": 1593.67,
+    "b_end": 1608.02,
+    "orig": "con los buses gratis y con la congelación de arriendos, como decíamos antes, pero esas decisiones",
+    "en": "with free buses and with the freezing of rents, as we said before, but those decisions"
   },
   {
-    "start": 649.6,
-    "end": 655.36,
-    "orig": "a pesar de que son propuestas populistas que suenan bien y que a los jóvenes les encantan,",
-    "en": "Even though they are populist proposals that sound good and that young people love,"
+    "start": 667.16,
+    "end": 672.16,
+    "b_start": 1609.02,
+    "b_end": 1622.41,
+    "orig": "de su mayor parte las toma, tiene que tomar el consejo de la ciudad como el caso predial o la",
+    "en": "Most of them take them, they have to take the city council like the property case or the"
   },
   {
-    "start": 655.36,
-    "end": 660.24,
-    "orig": "él no las puede tomar solo la mayor parte. Le quiere meter una carga financiera inmensa,",
-    "en": "he cannot take most of them alone. He wants to put an immense financial burden on you,"
+    "start": 672.16,
+    "end": 677.12,
+    "b_start": 1623.41,
+    "b_end": 1637.54,
+    "orig": "tiene que tomar el Congreso del Estado en la capital que es Albany para efectos de los impuestos y",
+    "en": "has to take the State Congress in the capital, which is Albany, for the purposes of taxes and"
   },
   {
-    "start": 660.24,
-    "end": 665.44,
-    "orig": "con los jardines infantiles gratis, con los buses gratis y con la conveniación de arriendos,",
-    "en": "with free kindergartens, with free buses and with rental agreements,"
+    "start": 677.16,
+    "end": 683.24,
+    "b_start": 1638.54,
+    "b_end": 1654.09,
+    "orig": "para efecto de la transporte público. Mandane cintués inteligentes, carismáticos, manejaban",
+    "en": "for the purpose of public transportation. Mandane intelligent, charismatic Cintués, they drove"
   },
   {
-    "start": 665.44,
-    "end": 669.32,
-    "orig": "como decíamos antes, pero esas decisiones de su mayor parte las toman, tiene que tomar el consejo",
-    "en": "As we said before, but for the most part they make those decisions, they have to take the advice"
+    "start": 683.24,
+    "end": 687.68,
+    "b_start": 1655.09,
+    "b_end": 1669.15,
+    "orig": "las redes sociales, les hablaban a los jóvenes y seguramente bien intencionado, pero Mandane",
+    "en": "social networks, they spoke to young people and surely well-intentioned, but Mandane"
   },
   {
-    "start": 669.32,
-    "end": 675.2,
-    "orig": "de la ciudad como el caso previal o la tiene que tomar el Congreso del Estado en la capital que",
-    "en": "of the city as the previous case or the State Congress has to take it in the capital that"
+    "start": 687.68,
+    "end": 693.16,
+    "b_start": 1670.15,
+    "b_end": 1684.21,
+    "orig": "nunca amistraron nada y ha prometido cosas que no puede cumplir, por lo cual a medida que avance su",
+    "en": "never promised anything and has promised things that he cannot fulfill, so as his"
   },
   {
-    "start": 675.2,
-    "end": 681.44,
-    "orig": "es Albani para efectos los impuestos y para efecto de transporte público. Mandan es",
-    "en": "It is Albani for tax purposes and for public transportation purposes. Mandan is"
+    "start": 693.16,
+    "end": 699.64,
+    "b_start": 1685.21,
+    "b_end": 1701.19,
+    "orig": "administración seguramente va a resignar dosis de realidad para la cual hablar bien y ser influencer",
+    "en": "administration is surely going to resign a dose of reality for which to speak well and be an influencer"
   },
   {
-    "start": 681.44,
-    "end": 685.36,
-    "orig": "indúes inteligentes, carismáticos, manejaban las redes sociales, les hablaban a los jóvenes y",
-    "en": "intelligent, charismatic Indians, they managed social networks, they spoke to young people and"
-  },
-  {
-    "start": 685.36,
-    "end": 690.04,
-    "orig": "seguramente bien intencionado, pero Mandani nunca amistraron nada y ha prometido cosas que",
-    "en": "surely well-intentioned, but Mandani never promised anything and has promised things that"
-  },
-  {
-    "start": 690.04,
-    "end": 694.84,
-    "orig": "no puede cumplir, por lo cual, a medida que avance su administración, seguramente ha",
-    "en": "cannot comply, which is why, as his administration progresses, he has surely"
-  },
-  {
-    "start": 694.84,
+    "start": 699.64,
     "end": 702.12,
-    "orig": "resignado sus de realidad para la cual hablar bien y ser influencer y simpático no va a ser suficiente.",
-    "en": "resigned to reality for which speaking well and being influential and friendly is not going to be enough."
+    "b_start": 1702.19,
+    "b_end": 1708.45,
+    "orig": "y simpático no va a ser suficiente.",
+    "en": "and friendly is not going to be enough."
   },
   {
-    "start": 713.52,
-    "end": 718.48,
-    "orig": "Este podcast se presenta con el apoyo del Grupo Tecnoglass, El Poder de la Calidad.",
-    "en": "This podcast is presented with the support of the Tecnoglass Group, The Power of Quality."
+    "start": 707.12,
+    "end": 718.52,
+    "b_start": 1709.45,
+    "b_end": 1723.0,
+    "orig": "Este podcast se presenta con el apoyo del grupo Tecnoglass, el poder de la calidad.",
+    "en": "This podcast is presented with the support of the Tecnoglass group, the power of quality."
   },
   {
-    "start": 718.48,
+    "start": 718.52,
     "end": 723.88,
+    "b_start": 1724.0,
+    "b_end": 1738.9,
     "orig": "Diseñamos, fabricamos y comercializamos vidrios, ventanas y fachadas de calidad mundial.",
     "en": "We design, manufacture and market world-class glass, windows and facades."
   },
   {
     "start": 723.88,
     "end": 727.72,
+    "b_start": 1739.9,
+    "b_end": 1751.11,
     "orig": "Más información en www.tecnoglass.com.",
     "en": "More information at www.tecnoglass.com."
   },
   {
     "start": 729.72,
-    "end": 735.0,
-    "orig": "A tres meses de las elecciones presidenciales, el miércoles tarde se conoció en Colombia una",
-    "en": "Three months before the presidential elections, on Wednesday afternoon a"
+    "end": 734.8,
+    "b_start": 1752.11,
+    "b_end": 1765.9,
+    "orig": "A tres meses de las elecciones presidenciales, el miércoles tarde se conoció en Colombia",
+    "en": "Three months before the presidential elections, it was announced in Colombia on Wednesday afternoon"
   },
   {
-    "start": 735.0,
-    "end": 741.36,
-    "orig": "interesante encuesta de la firma Invamer para Noticias Caracol. Para empezar, el sondeo dice que la",
-    "en": "interesting survey by the firm Invamer for Noticias Caracol. To begin with, the survey says that the"
+    "start": 734.8,
+    "end": 741.08,
+    "b_start": 1766.9,
+    "b_end": 1782.21,
+    "orig": "una interesante encuesta de la firma Invamer para Noticias Caracol. Para empezar, el sondeo dice",
+    "en": "an interesting survey by the firm Invamer for Noticias Caracol. To start, the survey says"
   },
   {
-    "start": 741.36,
-    "end": 748.36,
-    "orig": "aprobación del presidente Gustavo Petro es del 49,1% y su desaprobación del 46%.",
-    "en": "President Gustavo Petro's approval is 49.1% and his disapproval is 46%."
+    "start": 741.08,
+    "end": 748.96,
+    "b_start": 1783.21,
+    "b_end": 1803.58,
+    "orig": "que la aprobación del presidente Gustavo Petro es del 49,1% y su desaprobación del 46,1%.",
+    "en": "that President Gustavo Petro's approval is 49.1% and his disapproval is 46.1%."
   },
   {
-    "start": 749.24,
-    "end": 755.16,
-    "orig": "La encuesta señala, además, que en las elecciones el senador oficialista de izquierdas Iván Cepeda",
-    "en": "The survey also indicates that in the elections the left-wing official senator Iván Cepeda"
+    "start": 748.96,
+    "end": 753.84,
+    "b_start": 1804.58,
+    "b_end": 1816.08,
+    "orig": "La encuesta señala además que en las elecciones el senador oficialista de",
+    "en": "The survey also indicates that in the elections the official senator of"
   },
   {
-    "start": 755.16,
-    "end": 761.84,
-    "orig": "lograría la primera votación con el 37,1%, seguido por el outsider abogado derechista",
-    "en": "would achieve the first vote with 37.1%, followed by the outsider right-wing lawyer"
+    "start": 753.84,
+    "end": 759.16,
+    "b_start": 1817.08,
+    "b_end": 1831.26,
+    "orig": "izquierdas Iván Cepeda lograría la primera votación con el 37,1%,",
+    "en": "leftist Iván Cepeda would achieve the first vote with 37.1%,"
   },
   {
-    "start": 761.84,
-    "end": 768.76,
-    "orig": "Abelardo de la Aspriella, con el 18,9%. El tercer puesto sería para la centrista exalcaldesa de",
-    "en": "Abelardo de la Aspriella, with 18.9%. Third place would go to the centrist former mayor of"
+    "start": 759.16,
+    "end": 764.84,
+    "b_start": 1832.26,
+    "b_end": 1848.14,
+    "orig": "seguido por el outsider abogado derechista Abelardo de la Aspriella con el 18,9%.",
+    "en": "followed by the outsider right-wing lawyer Abelardo de la Aspriella with 18.9%."
   },
   {
-    "start": 768.76,
-    "end": 776.16,
-    "orig": "Bogotá, Claudia López, con el 11,7%. Además, el 8 de marzo se celebrarán consultas o elecciones",
-    "en": "Bogotá, Claudia López, with 11.7%. In addition, consultations or elections will be held on March 8"
+    "start": 764.84,
+    "end": 771.72,
+    "b_start": 1849.14,
+    "b_end": 1867.04,
+    "orig": "El tercer puesto sería para la centrista exalcaldesa de Bogotá, Claudia López, con el 11,7%.",
+    "en": "Third place would go to the centrist former mayor of Bogotá, Claudia López, with 11.7%."
   },
   {
-    "start": 776.16,
-    "end": 781.8,
-    "orig": "primarias, de donde saldrán más candidatos. Según la encuesta, Claudia López ganará la",
-    "en": "primaries, from which more candidates will emerge. According to the survey, Claudia López will win the"
+    "start": 771.72,
+    "end": 778.88,
+    "b_start": 1868.04,
+    "b_end": 1885.41,
+    "orig": "Además, el 8 de marzo se celebrarán consultas o elecciones primarias de donde saldrán más candidatos.",
+    "en": "In addition, on March 8 consultations or primary elections will be held from which more candidates will emerge."
   },
   {
-    "start": 781.8,
-    "end": 787.68,
-    "orig": "de Centro izquierda, la senadora uribista Paloma Valencia la de Centro derecha y el exalcalde de",
-    "en": "from the Center left, the Uribe senator Paloma Valencia from the Center right and the former mayor of"
+    "start": 778.88,
+    "end": 784.6,
+    "b_start": 1886.41,
+    "b_end": 1901.62,
+    "orig": "Según la encuesta, Claudia López ganará la de Centro izquierda, la senadora orivista Paloma",
+    "en": "According to the survey, Claudia López will win the Center Left, the Orivista senator Paloma"
   },
   {
-    "start": 787.68,
-    "end": 793.4,
-    "orig": "Medellín, Daniel Quintero, la de izquierda. Con la encuesta de Invamer en la mano, podría",
-    "en": "Medellín, Daniel Quintero, the one on the left. With the Invamer survey in hand, you could"
+    "start": 784.6,
+    "end": 790.24,
+    "b_start": 1902.62,
+    "b_end": 1918.03,
+    "orig": "Valencia, la de Centro derecha y el exalcalde de Medellín, Daniel Guintero, la de izquierda.",
+    "en": "Valencia, the center right and the former mayor of Medellín, Daniel Guintero, the left."
   },
   {
-    "start": 793.4,
-    "end": 798.4,
-    "orig": "afirmarse entonces que la segunda vuelta presidencial en Colombia, el 21 de junio,",
-    "en": "It can then be stated that the second presidential round in Colombia, on June 21,"
+    "start": 790.24,
+    "end": 795.76,
+    "b_start": 1919.03,
+    "b_end": 1931.12,
+    "orig": "Con la encuesta de Invamer en la mano podría afirmarse entonces que la segunda vuelta",
+    "en": "With the Invamer survey in hand, it could then be stated that the second round"
   },
   {
-    "start": 798.4,
-    "end": 804.28,
-    "orig": "la disputarán entonces Iván Cepeda y Abelardo de la Aspriella. Hablamos ayer en Bogotá con",
-    "en": "Iván Cepeda and Abelardo de la Aspriella will then compete. We spoke yesterday in Bogotá with"
+    "start": 795.76,
+    "end": 801.8,
+    "b_start": 1932.12,
+    "b_end": 1947.84,
+    "orig": "presidencial en Colombia, el 21 de junio, la disputarán entonces Iván Cepeda y Abelardo de",
+    "en": "presidential election in Colombia, on June 21, Iván Cepeda and Abelardo de"
   },
   {
-    "start": 804.28,
-    "end": 812.16,
-    "orig": "el consultor y analista político Camilo Granada. Juan Carlos, nada está cantado, como dicen en",
-    "en": "the consultant and political analyst Camilo Granada. Juan Carlos, nothing is sung, as they say in"
+    "start": 801.8,
+    "end": 806.92,
+    "b_start": 1948.84,
+    "b_end": 1964.98,
+    "orig": "la Aspriella. Hablamos ayer en Bogotá con el consultor y analista político Camilo Granada.",
+    "en": "the Aspriella. We spoke yesterday in Bogotá with the consultant and political analyst Camilo Granada."
   },
   {
-    "start": 812.16,
-    "end": 819.48,
-    "orig": "Tauromaquia, hasta que el rabo pase todo estoro. Si bien Cepeda y de la Aspriella han venido",
-    "en": "Bullfighting, until the tail passes all this. Although Cepeda and de la Aspriella have come"
+    "start": 806.92,
+    "end": 815.4,
+    "b_start": 1965.98,
+    "b_end": 1981.48,
+    "orig": "Juan Carlos, nada está cantado, como dicen en Tauromaquia, hasta que el rabo pase todo estoro.",
+    "en": "Juan Carlos, nothing is sung, as they say in Bullfighting, until the tail passes all this."
   },
   {
-    "start": 819.48,
-    "end": 824.52,
-    "orig": "de ir liderando las encuestas en los últimos meses y esta última encuesta de Invamer,",
-    "en": "to be leading the polls in recent months and this latest Invamer survey,"
+    "start": 815.4,
+    "end": 823.52,
+    "b_start": 1982.48,
+    "b_end": 1997.5,
+    "orig": "Si bien Cepeda y de la Aspriella han venido liderando las encuestas en los últimos meses y esta última",
+    "en": "Although Cepeda and de la Aspriella have been leading the polls in recent months and this last"
   },
   {
-    "start": 824.52,
-    "end": 832.36,
-    "orig": "Caracol, Los confirma como punteros, pues todavía faltan tres meses prácticamente antes de la primera",
-    "en": "Caracol, confirms them as leaders, since there are still three months left practically before the first"
+    "start": 823.52,
+    "end": 831.44,
+    "b_start": 1998.5,
+    "b_end": 2015.78,
+    "orig": "encuesta de Invamer, Caracol, Los Confirma como punteros, pues todavía faltan tres meses prácticamente",
+    "en": "survey by Invamer, Caracol, Confirms them as leaders, since there are still three months left practically"
   },
   {
-    "start": 832.36,
-    "end": 840.44,
-    "orig": "vuelta presidencial que se desarrollará el 31 de mayo de este año. Y además falta un momento",
-    "en": "presidential round that will take place on May 31 of this year. And also there is a moment left"
+    "start": 831.44,
+    "end": 838.96,
+    "b_start": 2016.78,
+    "b_end": 2031.32,
+    "orig": "antes de la primera vuelta presidencial que se desarrollará el 31 de mayo de este año y además",
+    "en": "before the first presidential round that will take place on May 31 of this year and also"
   },
   {
-    "start": 840.44,
-    "end": 848.2,
-    "orig": "importantísimo y es que el 8 de marzo se van a correr las consultas tanto del Centro derecha",
-    "en": "very important and that is that on March 8 the consultations will take place both from the Center right"
+    "start": 838.96,
+    "end": 846.76,
+    "b_start": 2032.32,
+    "b_end": 2047.63,
+    "orig": "falta un momento importantísimo y es que el 8 de marzo se van a correr las consultas tanto del",
+    "en": "There is a very important moment missing and that is that on March 8 the consultations will be held for both the"
   },
   {
-    "start": 848.2,
-    "end": 855.6,
-    "orig": "como del Centro y de la izquierda para escoger candidatos presidenciales. Y en esta encuesta",
-    "en": "as from the Center and the left to choose presidential candidates. And in this survey"
+    "start": 846.76,
+    "end": 855.24,
+    "b_start": 2048.63,
+    "b_end": 2062.52,
+    "orig": "centro derecha como del centro y de la izquierda para escoger candidatos presidenciales y en esta",
+    "en": "center right as well as the center and the left to choose presidential candidates and in this"
   },
   {
-    "start": 855.6,
-    "end": 861.16,
-    "orig": "lo que queda claro es que tanto en el espectro de la derecha, Paloma Valencia tiene un liderazgo",
-    "en": "What is clear is that both on the right-wing spectrum, Paloma Valencia has a leadership"
+    "start": 855.24,
+    "end": 860.6,
+    "b_start": 2063.52,
+    "b_end": 2077.39,
+    "orig": "encuesta lo que queda claro es que tanto en el espectro de la derecha, Paloma Valencia tiene",
+    "en": "survey, what is clear is that both on the right-wing spectrum, Paloma Valencia has"
   },
   {
-    "start": 861.16,
-    "end": 866.76,
-    "orig": "importante que la va a hacer salir fortalecida el 8, después de las elecciones del 8 de marzo,",
-    "en": "important thing that will make it emerge stronger on the 8th, after the elections on March 8,"
+    "start": 860.6,
+    "end": 866.44,
+    "b_start": 2078.39,
+    "b_end": 2092.59,
+    "orig": "un liderazgo importante que la va a hacer salir fortalecida el 8 después de las elecciones del 8",
+    "en": "an important leadership that will make it emerge stronger on the 8th after the elections on the 8th"
   },
   {
-    "start": 866.76,
-    "end": 872.52,
-    "orig": "como el surgimiento o el resurgimiento de una candidata de Centro izquierda como Claudia López,",
-    "en": "such as the emergence or resurgence of a center-left candidate like Claudia López,"
+    "start": 866.44,
+    "end": 872.16,
+    "b_start": 2093.59,
+    "b_end": 2107.1,
+    "orig": "de marzo como el surgimiento o el resurgimiento de una candidata de centro izquierda como Claudia",
+    "en": "March as the emergence or resurgence of a center-left candidate like Claudia"
   },
   {
-    "start": 872.52,
+    "start": 872.16,
     "end": 877.84,
-    "orig": "que había venido cayendo en las encuestas y que ahora aparece de nuevo con fuerza. Y por",
-    "en": "that had been falling in the polls and that now appears strongly again. and for"
+    "b_start": 2108.1,
+    "b_end": 2121.18,
+    "orig": "López que había venido cayendo en las encuestas y que ahora aparece de nuevo con fuerza y por",
+    "en": "López, who had been falling in the polls and who now appears again with strength and"
   },
   {
     "start": 877.84,
     "end": 884.96,
+    "b_start": 2122.18,
+    "b_end": 2135.83,
     "orig": "lo tanto todo esto va a cambiar el tablero electoral y va a hacer que la carrera, la etapa",
     "en": "Therefore, all this is going to change the electoral table and will make the race, the stage"
   },
   {
     "start": 884.96,
-    "end": 890.76,
-    "orig": "final de la competencia para la primera vuelta, va a arrancar el 9 de marzo, una vez se hayan definido,",
-    "en": "final of the competition for the first round, will start on March 9, once they have been defined,"
+    "end": 891.16,
+    "b_start": 2136.83,
+    "b_end": 2150.89,
+    "orig": "final de la competencia para la primera vuelta va a arrancar el 9 de marzo una vez hayan definido",
+    "en": "final of the competition for the first round will start on March 9 once they have defined"
   },
   {
-    "start": 890.76,
-    "end": 896.36,
-    "orig": "las consultas que le acabo de mencionar. Entonces si bien es cierto que Cepeda y de la",
-    "en": "the queries I just mentioned. So while it is true that Cepeda and the"
+    "start": 891.16,
+    "end": 896.8,
+    "b_start": 2151.89,
+    "b_end": 2164.72,
+    "orig": "las consultas que le acabo de mencionar. Entonces si bien es cierto que se pede y de la estrella",
+    "en": "the queries I just mentioned. So while it is true that he farts and the star"
   },
   {
-    "start": 896.36,
+    "start": 896.8,
     "end": 904.92,
-    "orig": "Espella mantienen un adelanto importante pues ellos van a tener, Cepeda un candidato de izquierda o",
-    "en": "Espella maintains an important advance because they are going to have, Cepeda a candidate from the left or"
+    "b_start": 2165.72,
+    "b_end": 2179.14,
+    "orig": "mantienen un adelanto importante pues ellos van a tener se pede a un candidato de izquierda o",
+    "en": "They maintain an important advance because they are going to have a candidate from the left or"
   },
   {
     "start": 904.92,
-    "end": 911.32,
-    "orig": "varios candidatos de izquierda quitando el votos y por otro lado de la Espella va a tener a Paloma",
-    "en": "several left-wing candidates taking away the votes and on the other hand, Espella will have Paloma"
+    "end": 911.36,
+    "b_start": 2180.14,
+    "b_end": 2193.96,
+    "orig": "varios candidatos de izquierda quitando el votos y por otro lado de la estrella va a tener a Paloma",
+    "en": "several leftist candidates taking away the votes and on the other hand the star will have Paloma"
   },
   {
-    "start": 911.32,
-    "end": 916.36,
-    "orig": "Valencia haciéndole competencia. Entonces va a hacer una campaña en la cual vamos a tener por lo",
-    "en": "Valencia competing with him. Then he is going to do a campaign in which we are going to have at least"
+    "start": 911.36,
+    "end": 916.4,
+    "b_start": 2194.96,
+    "b_end": 2208.54,
+    "orig": "Valencia haciéndole competencia. Entonces va a ser una campaña en la cual vamos a tener por lo",
+    "en": "Valencia competing with him. So it will be a campaign in which we will have at least"
   },
   {
-    "start": 916.36,
+    "start": 916.4,
     "end": 923.52,
-    "orig": "menos seis candidatos más o menos viables, dos de derecha, Paloma y Abelardo, dos de Centro,",
-    "en": "least six more or less viable candidates, two from the right, Paloma and Abelardo, two from the Center,"
+    "b_start": 2209.54,
+    "b_end": 2226.24,
+    "orig": "menos seis candidatos más o menos viables dos de derecha, Paloma y Abelardo, dos de centro,",
+    "en": "least six more or less viable candidates, two from the right, Paloma and Abelardo, two from the center,"
   },
   {
     "start": 923.52,
     "end": 933.4,
-    "orig": "Fajardo y Claudia López y dos de izquierda, el ganador de la consulta de Roy y Quintero y Cepeda.",
-    "en": "Fajardo and Claudia López and two from the left, the winner of the Roy and Quintero and Cepeda consultation."
+    "b_start": 2227.24,
+    "b_end": 2243.36,
+    "orig": "Fajardo y Claudia López y dos de izquierda el ganador de la consulta de Roy y Quintero y se peda.",
+    "en": "Fajardo and Claudia López and two from the left, the winner of the Roy and Quintero consultation and asked."
   },
   {
-    "start": 940.08,
-    "end": 946.12,
+    "start": 933.4,
+    "end": 946.16,
+    "b_start": 2244.36,
+    "b_end": 2258.66,
     "orig": "Y estas son otras cosas que usted también debería saber hoy. En Estados Unidos hubo ayer noticia de",
     "en": "And these are other things you should know today too. Yesterday in the United States there was news of"
   },
   {
-    "start": 946.12,
-    "end": 951.68,
-    "orig": "un negocio multimillonario, cuando se supo que la compañía Paramount Skydance mejoró la oferta",
-    "en": "a multimillion-dollar business, when it was learned that the Paramount Skydance company improved the offer"
+    "start": 946.16,
+    "end": 951.72,
+    "b_start": 2259.66,
+    "b_end": 2274.68,
+    "orig": "un negocio multimillonario cuando se supo que la compañía Paramount Skydance mejoró la oferta",
+    "en": "a multimillion-dollar business when it was learned that the Paramount Skydance company improved the offer"
   },
   {
-    "start": 951.68,
-    "end": 957.76,
-    "orig": "que por 111 mil millones de dólares había hecho Netflix para comprar Warner Bros Discovery. De ese",
-    "en": "that for 111 billion dollars Netflix had made to buy Warner Bros Discovery. of that"
+    "start": 951.72,
+    "end": 957.78,
+    "b_start": 2275.68,
+    "b_end": 2290.65,
+    "orig": "que por 111 mil millones de dólares había hecho Netflix para comprar Warner Bros Discovery de ese",
+    "en": "that for 111 billion dollars Netflix had made to buy Warner Bros Discovery of that"
   },
   {
-    "start": 957.76,
-    "end": 963.84,
-    "orig": "modo la empresa propiedad de Larry Ellison, dueño de Oracle y su hijo David, pasará a controlar",
-    "en": "So the company owned by Larry Ellison, owner of Oracle, and his son David, will come to control"
+    "start": 957.78,
+    "end": 963.94,
+    "b_start": 2291.65,
+    "b_end": 2306.58,
+    "orig": "modo la empresa propiedad de Larry Ellison, dueño de Oracle y su hijo David pasará a controlar un",
+    "en": "So the company owned by Larry Ellison, owner of Oracle, and his son David will control a"
   },
   {
-    "start": 963.84,
-    "end": 971.48,
-    "orig": "un imperio mediático donde están HBO y la CNN, CBS News y 60 Minutes. Un dato importante es que los",
-    "en": "a media empire where HBO and CNN, CBS News and 60 Minutes are located. An important fact is that the"
+    "start": 963.94,
+    "end": 971.46,
+    "b_start": 2307.58,
+    "b_end": 2327.32,
+    "orig": "imperio mediático donde están HBO y la CNN, CBS News y 60 Minutes. Un dato importante es que los",
+    "en": "media empire where HBO and CNN, CBS News and 60 Minutes are located. An important fact is that the"
   },
   {
-    "start": 971.48,
-    "end": 978.04,
+    "start": 971.46,
+    "end": 978.06,
+    "b_start": 2328.32,
+    "b_end": 2342.77,
     "orig": "Ellison son cercanos al presidente Donald Trump. En Italia se acaba de conocer la noticia de que el",
     "en": "Ellison are close to President Donald Trump. In Italy the news has just been announced that the"
   },
   {
-    "start": 978.04,
-    "end": 984.68,
-    "orig": "año pasado un juez reconoció una compensación económica para una mujer que, en 2023, se fracturó",
-    "en": "Last year a judge recognized financial compensation for a woman who, in 2023, suffered a fracture"
+    "start": 978.06,
+    "end": 984.7,
+    "b_start": 2343.77,
+    "b_end": 2360.11,
+    "orig": "año pasado un juez reconoció una compensación económica para una mujer que en 2023 se fracturó",
+    "en": "Last year a judge recognized financial compensation for a woman who suffered a fracture in 2023"
   },
   {
-    "start": 984.68,
-    "end": 990.44,
+    "start": 984.7,
+    "end": 990.18,
+    "b_start": 2361.11,
+    "b_end": 2375.43,
     "orig": "el tobillo al levantarse por un documento mientras participaba desde su casa en una reunión de trabajo",
     "en": "ankle when getting up for a document while participating in a work meeting from home"
   },
   {
-    "start": 990.44,
-    "end": 996.68,
+    "start": 990.18,
+    "end": 996.66,
+    "b_start": 2376.43,
+    "b_end": 2391.16,
     "orig": "por Zoom. Fue el juez Mauricio Pascali, el que condenó al Instituto Nacional para los Seguros",
     "en": "by Zoom. It was Judge Mauricio Pascali, who condemned the National Insurance Institute"
   },
   {
-    "start": 996.68,
-    "end": 1003.04,
-    "orig": "contra los accidentes laborales, el Inahil, a indemnizar a la mujer que es empleada del departamento",
-    "en": "against work accidents, the Inahil, to compensate the woman who is an employee of the department"
+    "start": 996.66,
+    "end": 1002.22,
+    "b_start": 2392.16,
+    "b_end": 2406.13,
+    "orig": "Contra los Accidentes Laborales, el Inahil, a indemnizar a la mujer que es empleada del",
+    "en": "Against Workplace Accidents, the Inahil, to compensate the woman who is an employee of the"
   },
   {
-    "start": 1003.04,
-    "end": 1009.88,
-    "orig": "legal de la universidad de Padua. Un fallo con pocos antecedentes. Hoy sale a la venta el más",
-    "en": "legal from the University of Padua. A ruling with little precedent. Today the most"
+    "start": 1002.22,
+    "end": 1007.74,
+    "b_start": 2407.13,
+    "b_end": 2419.63,
+    "orig": "Departamento Legal de la Universidad de Padua. Un fallo con pocos antecedentes.",
+    "en": "Legal Department of the University of Padua. A ruling with little precedent."
   },
   {
-    "start": 1009.88,
-    "end": 1015.88,
-    "orig": "reciente álbum de Bruno Mars, se titula The Romantic, y según el artista, una de las canciones más",
-    "en": "Bruno Mars' recent album is titled The Romantic, and according to the artist, one of the most"
+    "start": 1007.74,
+    "end": 1014.1,
+    "b_start": 2420.63,
+    "b_end": 2435.43,
+    "orig": "Hoy sale a la venta el más reciente álbum de Bruno Mars, se titula de Romantic y según el",
+    "en": "Today Bruno Mars' most recent album goes on sale, it is titled Romantic and according to the"
   },
   {
-    "start": 1015.88,
-    "end": 1020.96,
-    "orig": "fuertes que trae es I Just Might, que entró directamente al primer lugar en la lista de los",
-    "en": "strong that it brings is I Just Might, which went directly to first place on the list of"
+    "start": 1014.1,
+    "end": 1019.46,
+    "b_start": 2436.43,
+    "b_end": 2450.92,
+    "orig": "artista, una de las canciones más fuertes que trae es I Just Might, que entró directamente al",
+    "en": "artist, one of the strongest songs he brings is I Just Might, which entered directly into the"
   },
   {
-    "start": 1020.96,
-    "end": 1028.76,
-    "orig": "Billboard Hot 100, Mars de 40 años, no publicaba un álbum desde 24K Magic en 2016. En los últimos",
-    "en": "Billboard Hot 100, 40-year-old Mars had not released an album since 24K Magic in 2016. In recent"
+    "start": 1019.46,
+    "end": 1025.26,
+    "b_start": 2451.92,
+    "b_end": 2466.7,
+    "orig": "primer lugar en la lista de los Billboard Hot 100, Mars de 40 años, no publicaba un álbum",
+    "en": "first place on the Billboard Hot 100 list, Mars, 40, did not release an album"
   },
   {
-    "start": 1028.76,
-    "end": 1034.84,
-    "orig": "días había alcanzado un éxito más en su carrera. Su tema, en colaboración con Lady Gaga, Die",
-    "en": "days he had achieved one more success in his career. His song, in collaboration with Lady Gaga, Die"
+    "start": 1025.26,
+    "end": 1031.54,
+    "b_start": 2467.7,
+    "b_end": 2485.72,
+    "orig": "desde 24K Magic en 2016. En los últimos días había alcanzado un éxito más en su carrera,",
+    "en": "since 24K Magic in 2016. In recent days he had achieved one more success in his career,"
   },
   {
-    "start": 1034.84,
-    "end": 1039.76,
-    "orig": "with a Smile, estuvo 18 semanas en las listas y obtuvo un premio Grammy.",
-    "en": "with a Smile, spent 18 weeks on the charts and won a Grammy Award."
+    "start": 1031.54,
+    "end": 1039.02,
+    "b_start": 2486.72,
+    "b_end": 2504.38,
+    "orig": "su tema en colaboración con Lady Gaga, Die With a Smile. Estuvo 18 semanas en las listas y obtuvo un",
+    "en": "his song in collaboration with Lady Gaga, Die With a Smile. It spent 18 weeks on the charts and obtained a"
   },
   {
-    "start": 1050.96,
-    "end": 1062.16,
-    "orig": "Gracias por oírnos. Chau. Hasta la próxima.",
-    "en": "Thanks for listening to us. Bye. Until next time."
+    "start": 1039.98,
+    "end": 1046.1,
+    "b_start": 2505.38,
+    "b_end": 2521.77,
+    "orig": "y aquí termina y esto no es todo donde siempre habrá más. En la producción estuvo John F. Burnett.",
+    "en": "and here it ends and this is not all where there will always be more. John F. Burnett was in the production."
+  },
+  {
+    "start": 1046.1,
+    "end": 1052.5,
+    "b_start": 2522.77,
+    "b_end": 2538.82,
+    "orig": "Pueden suscribirse a este podcast en nuestro sitio web y esto no es todo. George Town.edu.",
+    "en": "You can subscribe to this podcast on our website and that's not all. GeorgeTown.edu."
+  },
+  {
+    "start": 1052.5,
+    "end": 1058.78,
+    "b_start": 2539.82,
+    "b_end": 2554.65,
+    "orig": "Seguirnos en nuestras cuentas de X y de Instagram. Arroba y esto no es todo y buscarnos en nuestro",
+    "en": "Follow us on our X and Instagram accounts. Arroba and this is not all and look for us in our"
+  },
+  {
+    "start": 1058.78,
+    "end": 1062.14,
+    "b_start": 2555.65,
+    "b_end": 2567.22,
+    "orig": "canal de YouTube. Gracias por oírnos. Chau. Hasta la próxima.",
+    "en": "YouTube channel. Thanks for listening to us. Bye. Until next time."
   }
 ]
