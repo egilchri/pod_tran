@@ -5,12 +5,12 @@
         <title>Verified Politics Feeds Index</title>
         <style>
             body { font-family: system-ui, -apple-system, sans-serif; margin: 40px; background: #f4f4f9; color: #333; line-height: 1.5; }
-            .container { max-width: 1000px; margin: 0 auto; }
-            h1 { color: #004a99; border-bottom: 3px solid #004a99; padding-bottom: 10px; }
-            table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 15px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; margin-top: 20px; }
-            th, td { padding: 18px; border-bottom: 1px solid #ddd; text-align: left; }
-            th { background-color: #004a99; color: white; text-transform: uppercase; font-size: 0.85em; letter-spacing: 1px; }
-            tr:hover { background-color: #f9f9f9; }
+            .container { max-width: 1100px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+            h1 { color: #004a99; border-bottom: 3px solid #004a99; padding-bottom: 10px; margin-top: 0; }
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+            th { background-color: #004a99; color: white; text-align: left; padding: 15px; text-transform: uppercase; font-size: 0.8em; letter-spacing: 1px; }
+            td { padding: 15px; border-bottom: 1px solid #eee; }
+            tr:hover { background-color: #fcfcfc; }
             footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc; font-size: 0.85em; color: #666; }
             .disclaimer { background: #eee; padding: 15px; border-radius: 8px; margin-top: 10px; font-style: italic; }
         </style>
@@ -21,94 +21,66 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Podcast Title</th>
-                        <th>Language</th>
-                        <th>Action & Source</th>
+                        <th>Podcast</th>
+                        <th>Lang</th>
+                        <th>Sync Mode</th>
+                        <th>Source</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    
             <tr>
                 <td><strong>Aftenpodden USA</strong></td>
-                <td>
-                    <code style="background:#eee; padding:2px 5px; border-radius:3px;">NO</code>
-                    
-                </td>
-                <td>
-                    <a href="https://egilchri.github.io/pod_tran/aftenpoddenusa.feed.html" style="color: #004a99; text-decoration: none; font-weight: bold; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px; display: inline-block; margin-bottom: 5px;">View Dashboard</a>
-                    <br><a href="#" target="_blank" style="font-size:0.75em; color:#666; text-decoration:none;">🔗 Source RSS Feed</a>
-                </td>
+                <td><code style="background:#eee; padding:2px 5px; border-radius:3px;">NO</code></td>
+                <td><span style="color:gray; font-size:0.8em;">AUTO</span></td>
+                <td><a href="#" target="_blank" style="text-decoration:none; font-size:0.9em;">🔗 RSS Source</a></td>
+                <td><a href="https://egilchri.github.io/pod_tran/aftenpoddenusa.feed.html" style="color: #004a99; font-weight: bold; text-decoration: none; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px;">View Dashboard</a></td>
             </tr>
             <tr>
                 <td><strong>Amerikansk politikk</strong></td>
-                <td>
-                    <code style="background:#eee; padding:2px 5px; border-radius:3px;">SV</code>
-                    
-                </td>
-                <td>
-                    <a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.feed.html" style="color: #004a99; text-decoration: none; font-weight: bold; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px; display: inline-block; margin-bottom: 5px;">View Dashboard</a>
-                    <br><a href="#" target="_blank" style="font-size:0.75em; color:#666; text-decoration:none;">🔗 Source RSS Feed</a>
-                </td>
+                <td><code style="background:#eee; padding:2px 5px; border-radius:3px;">SV</code></td>
+                <td><span style="color:gray; font-size:0.8em;">AUTO</span></td>
+                <td><a href="#" target="_blank" style="text-decoration:none; font-size:0.9em;">🔗 RSS Source</a></td>
+                <td><a href="https://egilchri.github.io/pod_tran/amerikanskpolitikk.feed.html" style="color: #004a99; font-weight: bold; text-decoration: none; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px;">View Dashboard</a></td>
             </tr>
             <tr>
                 <td><strong>C'est ça l'Amérique</strong></td>
-                <td>
-                    <code style="background:#eee; padding:2px 5px; border-radius:3px;">FR</code>
-                    
-                </td>
-                <td>
-                    <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.feed.html" style="color: #004a99; text-decoration: none; font-weight: bold; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px; display: inline-block; margin-bottom: 5px;">View Dashboard</a>
-                    <br><a href="#" target="_blank" style="font-size:0.75em; color:#666; text-decoration:none;">🔗 Source RSS Feed</a>
-                </td>
+                <td><code style="background:#eee; padding:2px 5px; border-radius:3px;">FR</code></td>
+                <td><span style="color:gray; font-size:0.8em;">AUTO</span></td>
+                <td><a href="#" target="_blank" style="text-decoration:none; font-size:0.9em;">🔗 RSS Source</a></td>
+                <td><a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.feed.html" style="color: #004a99; font-weight: bold; text-decoration: none; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px;">View Dashboard</a></td>
             </tr>
             <tr>
                 <td><strong>Contrapoder | CNN Portugal</strong></td>
-                <td>
-                    <code style="background:#eee; padding:2px 5px; border-radius:3px;">PT</code>
-                    
-                </td>
-                <td>
-                    <a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.feed.html" style="color: #004a99; text-decoration: none; font-weight: bold; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px; display: inline-block; margin-bottom: 5px;">View Dashboard</a>
-                    <br><a href="#" target="_blank" style="font-size:0.75em; color:#666; text-decoration:none;">🔗 Source RSS Feed</a>
-                </td>
+                <td><code style="background:#eee; padding:2px 5px; border-radius:3px;">PT</code></td>
+                <td><span style="color:gray; font-size:0.8em;">AUTO</span></td>
+                <td><a href="#" target="_blank" style="text-decoration:none; font-size:0.9em;">🔗 RSS Source</a></td>
+                <td><a href="https://egilchri.github.io/pod_tran/contrapoder-cnn.feed.html" style="color: #004a99; font-weight: bold; text-decoration: none; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px;">View Dashboard</a></td>
             </tr>
             <tr>
                 <td><strong>Stjerner og striber</strong></td>
-                <td>
-                    <code style="background:#eee; padding:2px 5px; border-radius:3px;">DA</code>
-                    
-                </td>
-                <td>
-                    <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.feed.html" style="color: #004a99; text-decoration: none; font-weight: bold; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px; display: inline-block; margin-bottom: 5px;">View Dashboard</a>
-                    <br><a href="#" target="_blank" style="font-size:0.75em; color:#666; text-decoration:none;">🔗 Source RSS Feed</a>
-                </td>
+                <td><code style="background:#eee; padding:2px 5px; border-radius:3px;">DA</code></td>
+                <td><span style="color:gray; font-size:0.8em;">AUTO</span></td>
+                <td><a href="#" target="_blank" style="text-decoration:none; font-size:0.9em;">🔗 RSS Source</a></td>
+                <td><a href="https://egilchri.github.io/pod_tran/stjerner-og-str.feed.html" style="color: #004a99; font-weight: bold; text-decoration: none; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px;">View Dashboard</a></td>
             </tr>
             <tr>
                 <td><strong>USApodden</strong></td>
-                <td>
-                    <code style="background:#eee; padding:2px 5px; border-radius:3px;">SV" DATA-IS-OVERRIDE="FALSE" DATA-RSS-URL="HTTPS://API.SR.SE/API/RSS/POD/22712</code>
-                    
-                </td>
-                <td>
-                    <a href="https://egilchri.github.io/pod_tran/usapodden.feed.html" style="color: #004a99; text-decoration: none; font-weight: bold; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px; display: inline-block; margin-bottom: 5px;">View Dashboard</a>
-                    <br><a href="https://api.sr.se/api/rss/pod/22712" target="_blank" style="font-size:0.75em; color:#666; text-decoration:none;">🔗 Source RSS Feed</a>
-                </td>
+                <td><code style="background:#eee; padding:2px 5px; border-radius:3px;">SV</code></td>
+                <td><span style="color:gray; font-size:0.8em;">AUTO</span></td>
+                <td><a href="https://api.sr.se/api/rss/pod/22712" target="_blank" style="text-decoration:none; font-size:0.9em;">🔗 RSS Source</a></td>
+                <td><a href="https://egilchri.github.io/pod_tran/usapodden.feed.html" style="color: #004a99; font-weight: bold; text-decoration: none; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px;">View Dashboard</a></td>
             </tr>
             <tr>
                 <td><strong>'Y esto no es todo'</strong></td>
-                <td>
-                    <code style="background:#eee; padding:2px 5px; border-radius:3px;">ES" DATA-IS-OVERRIDE="TRUE*</code>
-                    <br><small style="color:orange; font-size:0.7em;">Manual Override</small>
-                </td>
-                <td>
-                    <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.feed.html" style="color: #004a99; text-decoration: none; font-weight: bold; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px; display: inline-block; margin-bottom: 5px;">View Dashboard</a>
-                    <br><a href="#" target="_blank" style="font-size:0.75em; color:#666; text-decoration:none;">🔗 Source RSS Feed</a>
-                </td>
-            </tr>
-                </tbody>
+                <td><code style="background:#eee; padding:2px 5px; border-radius:3px;">ES</code></td>
+                <td><span style="color:orange; font-weight:bold; font-size:0.8em;">MANUAL OVERRIDE</span></td>
+                <td><a href="#" target="_blank" style="text-decoration:none; font-size:0.9em;">🔗 RSS Source</a></td>
+                <td><a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.feed.html" style="color: #004a99; font-weight: bold; text-decoration: none; border: 1px solid #004a99; padding: 5px 10px; border-radius: 4px;">View Dashboard</a></td>
+            </tr></tbody>
             </table>
             <footer>
-                <p><strong>Generated on:</strong> Sun Mar  1 12:35:52 EST 2026</p>
+                <p><strong>Generated on:</strong> Sun Mar  1 12:44:24 EST 2026</p>
                 <div class="disclaimer">
                     <strong>Legal Notice & Fair Use Disclaimer:</strong><br>
                     This repository is a personal research and educational project. All audio content and original show metadata are the property of their respective copyright owners. Translations and dashboards are provided for personal study and accessibility purposes under fair use principles. No commercial use is intended.
