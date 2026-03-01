@@ -1,26 +1,37 @@
 
     <!DOCTYPE html>
-    <html lang="da">
+    <html lang="da" data-is-override="false" data-rss-url="https://api.dr.dk/podcasts/v1/feeds/stjerner-og-striber-podcast.xml?format=podcast">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Stjerner og striber - Feed Dashboard</title>
         <style>
             body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f2f5; }
+            .nav-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+            .btn-back { background: #6c757d; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; border: none; cursor: pointer; }
+            /* Sync Button: Hidden by default, pulses when update is needed */
+            .btn-sync { background: #ffc107; color: black; padding: 8px 16px; border-radius: 6px; font-weight: bold; border: none; cursor: pointer; display: none; animation: pulse 2s infinite; }
+            @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
             header { background: #004a99; color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
             .episode-card { background: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 6px solid #ffc107; }
-            h2 { margin: 0 0 10px 0; font-size: 1.3em; }
-            .summary { color: #444; font-size: 0.95em; margin-bottom: 20px; line-height: 1.5; }
-            .btn-group { display: flex; gap: 8px; border-top: 1px solid #eee; padding-top: 15px; flex-wrap: wrap; }
-            .btn { padding: 10px 15px; border-radius: 6px; font-weight: bold; text-decoration: none; cursor: pointer; border: none; font-size: 0.85em; display: inline-block; }
+            .btn-group { display: flex; gap: 8px; margin-top: 15px; flex-wrap: wrap; }
+            .btn { padding: 10px 15px; border-radius: 6px; font-weight: bold; text-decoration: none; cursor: pointer; border: none; font-size: 0.85em; }
             .btn-run { background: #ffc107; color: black; }
             .btn-view { background: #28a745; color: white; }
-            .btn-listen { background: #e9ecef; color: #004a99; border: 1px solid #004a99; }
             .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px 30px; border-radius: 50px; display: none; z-index: 1000; }
         </style>
         <script>
+            // Uses metadata to copy the exact update command to clipboard
+            function triggerUpdate() {
+                const rssUrl = document.documentElement.getAttribute('data-rss-url');
+                const langCode = null;
+                const langFlag = langCode ? ` --lang ${langCode}` : "";
+                const cmd = `python3 run_workflow_feed.py --url "${rssUrl}"${langFlag}`;
+                navigator.clipboard.writeText(cmd).then(() => {
+                    alert("Feed Update command copied! Run it in your terminal.");
+                });
+            }
             function copyMasterCommand(mp3Url, feedname, date, title, lang) {
-                // Simplified command: only requires URL as logic is now automated
                 const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}" --lang "${lang}"`;
                 navigator.clipboard.writeText(cmd).then(() => {
                     const t = document.getElementById('toast');
@@ -30,205 +41,175 @@
             }
         </script>
     </head>
-    <body>
+    <body data-latest="1772321400.0" data-generated="1772393732.878171">
+        <div class="nav-header">
+            <button class="btn-back" onclick="window.history.back()">← Back to Index</button>
+            <button id="syncBtn" class="btn-sync" onclick="triggerUpdate()">⚠ Update Available</button>
+        </div>
         <header>
             <h1>Stjerner og striber</h1>
-            <p>Language Detected: <strong>da</strong> | Feed ID: <strong>stjerner-og-str</strong></p>
+            <p>Language: <strong>da</strong> </p>
         </header>
-        <div id="toast" class="toast">✅ Workflow Command Copied!</div>
+        <div id="toast" class="toast">✅ Command Copied!</div>
+
+        <script>
+            // On load, compare timestamps to decide if update button should show
+            window.addEventListener('DOMContentLoaded', () => {
+                const latest = parseFloat(document.body.dataset.latest);
+                const generated = parseFloat(document.body.dataset.generated);
+                if (latest > generated) {
+                    document.getElementById('syncBtn').style.display = 'block';
+                }
+            });
+        </script>
     
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">February 28, 2026</small>
             <h2>SPECIAL: Trump angriber Iran</h2>
             <div class="summary">Vi er klar med gruppedebrief oven på en vild lørdag, hvor USA sammen med Israel er gået til angreb på Iran. Hvad betyder krigen for iranerne - for os i Europa - og for det amerikanske midtvejsvalg? Og hvad gør man som helt almindeligt menneske, der er ved at have fået NOK af bekymrende breaking news...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635066/dcbd2795ff9ff28790b77047bc36920ac3f4b0f71b6b237ec3a53402b177d037.mp3', 'stjerner-og-str', '260228', 'SPECIAL: Trump angriber Iran', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260228.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635066/dcbd2795ff9ff28790b77047bc36920ac3f4b0f71b6b237ec3a53402b177d037.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635066/dcbd2795ff9ff28790b77047bc36920ac3f4b0f71b6b237ec3a53402b177d037.mp3', 'stjerner-og-str', '260228', 'SPECIAL: Trump angriber Iran', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260228.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635066/dcbd2795ff9ff28790b77047bc36920ac3f4b0f71b6b237ec3a53402b177d037.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">February 27, 2026</small>
             <h2>Trump og Clinton i spotlyset</h2>
             <div class="summary">1 time og 48 minutter. Så længe talte Donald Trump i kongressen i denne uge, da han leverede den længste State of The Union-tale i moderne tid. Vi får en førstehåndsberetning fra Repræsentanternes Hus og vurderer, hvad der kom der ud af de 108 minutter. Hillary og Bill Clinton skal også i spotlyset,...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635008/336498ce5e38f363b9b6f78dfb7a076235edd6ec826e6d48fc213eb608301f60.mp3', 'stjerner-og-str', '260227', 'Trump og Clinton i spotlyset', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260227.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635008/336498ce5e38f363b9b6f78dfb7a076235edd6ec826e6d48fc213eb608301f60.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635008/336498ce5e38f363b9b6f78dfb7a076235edd6ec826e6d48fc213eb608301f60.mp3', 'stjerner-og-str', '260227', 'Trump og Clinton i spotlyset', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260227.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635008/336498ce5e38f363b9b6f78dfb7a076235edd6ec826e6d48fc213eb608301f60.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">February 24, 2026</small>
             <h2>Frankrigs Charlie Kirk-moment</h2>
             <div class="summary">Et voldsomt politisk drab i Frankrig har rystet landet, og nogle sammenligner det med sidste års drab på Charlie Kirk. Vi kigger på sagen, som både Italiens premierminister Georgia Meloni og den amerikanske ambassadør i Paris har blandet sig i. Deltagere: Udlandskorrespondent Stéphanie Surrugue og U...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635065/ec0be15edf3a34541bd4d1c30224abb8f690d2a55a86342efc70635fafdadbd6.mp3', 'stjerner-og-str', '260224', 'Frankrigs Charlie Kirk-moment', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260224.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635065/ec0be15edf3a34541bd4d1c30224abb8f690d2a55a86342efc70635fafdadbd6.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635065/ec0be15edf3a34541bd4d1c30224abb8f690d2a55a86342efc70635fafdadbd6.mp3', 'stjerner-og-str', '260224', 'Frankrigs Charlie Kirk-moment', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260224.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635065/ec0be15edf3a34541bd4d1c30224abb8f690d2a55a86342efc70635fafdadbd6.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">February 20, 2026</small>
             <h2>Tak for Nuuk</h2>
-            <div class="summary">Stjerner og striber sender igen i dag fra Grønland, hvor vi er på opdagelse i Donald Trumps imperiedrøm. Vi træder i både de danske kolonialisters og Don Jr.s fodspor ved Hans Egede-statuen, laver \'podcasti\' på avisen Sermitsiaq og spiser hvalkød i Katuaaq, hvor kong Frederik fyldte kulturhuset ti...</div>
+            <div class="summary">Stjerner og striber sender igen i dag fra Grønland, hvor vi er på opdagelse i Donald Trumps imperiedrøm. Vi træder i både de danske kolonialisters og Don Jr.s fodspor ved Hans Egede-statuen, laver 'podcasti' på avisen Sermitsiaq og spiser hvalkød i Katuaaq, hvor kong Frederik fyldte kulturhuset til ...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635007/ea69be295a7fbfdda19f318c178836384e4ab51e52b928eda7805967b603c717.mp3', 'stjerner-og-str', '260220', 'Tak for Nuuk', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260220.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635007/ea69be295a7fbfdda19f318c178836384e4ab51e52b928eda7805967b603c717.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635007/ea69be295a7fbfdda19f318c178836384e4ab51e52b928eda7805967b603c717.mp3', 'stjerner-og-str', '260220', 'Tak for Nuuk', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260220.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635007/ea69be295a7fbfdda19f318c178836384e4ab51e52b928eda7805967b603c717.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">February 18, 2026</small>
             <h2>Krudt, konge og kaffemik - live fra Nuuk!</h2>
             <div class="summary">Danmark har smidt et diplomatisk trumfkort i kampen om Grønlands fremtid - et tredages besøg fra kong Frederik, hvor der er både krudt, kugler, kram og kaffemik på programmet. Vi er taget til Nuuk og tager en dansk-grønlandsk gruppedebrief på dét geopolitiske trekantsdrama vi mellem Grønland, Danmar...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635070/7285a2213abba18c61e40b0378e50ae77ff9ea961ad538ebc8a83a85dcda80e4.mp3', 'stjerner-og-str', '260218', 'Krudt, konge og kaffemik - live fra Nuuk!', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260218.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635070/7285a2213abba18c61e40b0378e50ae77ff9ea961ad538ebc8a83a85dcda80e4.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635070/7285a2213abba18c61e40b0378e50ae77ff9ea961ad538ebc8a83a85dcda80e4.mp3', 'stjerner-og-str', '260218', 'Krudt, konge og kaffemik - live fra Nuuk!', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260218.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635070/7285a2213abba18c61e40b0378e50ae77ff9ea961ad538ebc8a83a85dcda80e4.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">February 17, 2026</small>
             <h2>Hotel Romantik i München</h2>
-            <div class="summary">USA\'s udenrigsminister Marco Rubio fejrede Valentinsdag på hotel Bayerischer Hof i München sammen med en perlerække af Europas stats- og regeringschefer, der var samlet til sikkerhedskonference. Her var der nye toner fra USA - de var i hvert fald ikke lige så hårdtslående, som da vicepræsident JD V...</div>
+            <div class="summary">USA's udenrigsminister Marco Rubio fejrede Valentinsdag på hotel Bayerischer Hof i München sammen med en perlerække af Europas stats- og regeringschefer, der var samlet til sikkerhedskonference. Her var der nye toner fra USA - de var i hvert fald ikke lige så hårdtslående, som da vicepræsident JD Va...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635064/e892f32a65b789fee872ef0779861b00625d3402e55429dbb740d08a1c958dba.mp3', 'stjerner-og-str', '260217', 'Hotel Romantik i München', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260217.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635064/e892f32a65b789fee872ef0779861b00625d3402e55429dbb740d08a1c958dba.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635064/e892f32a65b789fee872ef0779861b00625d3402e55429dbb740d08a1c958dba.mp3', 'stjerner-og-str', '260217', 'Hotel Romantik i München', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260217.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635064/e892f32a65b789fee872ef0779861b00625d3402e55429dbb740d08a1c958dba.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">February 13, 2026</small>
             <h2>Daddys dreng har gode nyheder</h2>
             <div class="summary">Stjerner og striber gransker sagen om hundredvis af FBI-beslaglagte kasser med gamle stemmesedler i Georgia, der umiskendeligt ligner en dramatisk opvarmning til midtvejsvalget 2026. Vi ser også nærmere på den nye NATO-indsats i Arktis, som skal holde både russere, kinesere og Trump væk fra Grønland...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635006/51a8124720ad6a67f3a85d0ba3f15ceb79c7d52123022eda3ac1845da683027b.mp3', 'stjerner-og-str', '260213', 'Daddys dreng har gode nyheder', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260213.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635006/51a8124720ad6a67f3a85d0ba3f15ceb79c7d52123022eda3ac1845da683027b.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635006/51a8124720ad6a67f3a85d0ba3f15ceb79c7d52123022eda3ac1845da683027b.mp3', 'stjerner-og-str', '260213', 'Daddys dreng har gode nyheder', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260213.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635006/51a8124720ad6a67f3a85d0ba3f15ceb79c7d52123022eda3ac1845da683027b.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">February 10, 2026</small>
             <h2>Hasta la vista, Bunny!</h2>
             <div class="summary">Millioner af amerikanere blev sendt i direkte kulturkrig, da MAGA og Super Bowl producerede hvert sit pauseshow i NFL-finalen. Valget stod mellem konservative værdier og latino fremtid, mellem Kid Rock og Bad Bunny - og Stjerner og striber leverer selvfølgelig en dobbeltanmeldelse. Vi ser også nærme...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635063/caaafbb9f3345d5be1f09be86c42be70f54609d2fb396709c6f6c1d353bfd0d3.mp3', 'stjerner-og-str', '260210', 'Hasta la vista, Bunny!', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260210.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635063/caaafbb9f3345d5be1f09be86c42be70f54609d2fb396709c6f6c1d353bfd0d3.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635063/caaafbb9f3345d5be1f09be86c42be70f54609d2fb396709c6f6c1d353bfd0d3.mp3', 'stjerner-og-str', '260210', 'Hasta la vista, Bunny!', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260210.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635063/caaafbb9f3345d5be1f09be86c42be70f54609d2fb396709c6f6c1d353bfd0d3.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">February 06, 2026</small>
             <h2>Blåt øje til Republikanerne</h2>
             <div class="summary">(Vælger)lussingerne sidder løst i Stjerner og striber, som nørder igennem på et lille lokalvalg i Texas, der kan få stor betydning for midtvejsvalget til november. Vi ser også nærmere på Donald Trumps helt eget fredsråd, der gerne vil være en international rival til FN. Og så tager vi til Rom, hvor ...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635005/16e6a58f52c8fa81e1e76b4642125fafcc2247ab129e63905f9e8638f3bfda07.mp3', 'stjerner-og-str', '260206', 'Blåt øje til Republikanerne', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260206.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635005/16e6a58f52c8fa81e1e76b4642125fafcc2247ab129e63905f9e8638f3bfda07.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635005/16e6a58f52c8fa81e1e76b4642125fafcc2247ab129e63905f9e8638f3bfda07.mp3', 'stjerner-og-str', '260206', 'Blåt øje til Republikanerne', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260206.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635005/16e6a58f52c8fa81e1e76b4642125fafcc2247ab129e63905f9e8638f3bfda07.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">February 03, 2026</small>
             <h2>EKSTRA: Epsteins ekko rammer Europas elite</h2>
             <div class="summary">Der ruller politiske hoveder i Europa efter offentliggørelsen af 3,5 millioner (yes!) nye Epstein-dokumenter. Vi nørder igennem på konsekvenserne, som lige nu er større i udlandet end i USA. Stjerner og striber tager også et smut til Grammys, der i år mindede mere om et demokratisk partikonvent, og ...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635062/ca7161bd50bdb871f670cb73b93baca8dcde57ad69c47de3805e2ec02bb0bbf9.mp3', 'stjerner-og-str', '260203', 'EKSTRA: Epsteins ekko rammer Europas elite', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260203.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635062/ca7161bd50bdb871f670cb73b93baca8dcde57ad69c47de3805e2ec02bb0bbf9.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635062/ca7161bd50bdb871f670cb73b93baca8dcde57ad69c47de3805e2ec02bb0bbf9.mp3', 'stjerner-og-str', '260203', 'EKSTRA: Epsteins ekko rammer Europas elite', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260203.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635062/ca7161bd50bdb871f670cb73b93baca8dcde57ad69c47de3805e2ec02bb0bbf9.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">January 30, 2026</small>
             <h2>Trumps nye sherif i Minnesota</h2>
-            <div class="summary">Beskrivelse: Den demokratiske politiker fra Minnesota, somalisk-amerikanske Ilhan Omar, blev i denne uge angrebet af en mand, der sprøjtede en ildelugtende væske på hende under et vælgermøde. Samtidig er Trumps nye \"grænse-zar\" Tom Homan ankommet til byen for at dæmpe gemytterne. Vi vender også Me...</div>
+            <div class="summary">Beskrivelse: Den demokratiske politiker fra Minnesota, somalisk-amerikanske Ilhan Omar, blev i denne uge angrebet af en mand, der sprøjtede en ildelugtende væske på hende under et vælgermøde. Samtidig er Trumps nye 'grænse-zar' Tom Homan ankommet til byen for at dæmpe gemytterne. Vi vender også Mela...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635004/2d72a350d3b08e32812fe77bf62255ede6e245f81776fbe5f30466485e3eb9e2.mp3', 'stjerner-og-str', '260130', 'Trumps nye sherif i Minnesota', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260130.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635004/2d72a350d3b08e32812fe77bf62255ede6e245f81776fbe5f30466485e3eb9e2.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635004/2d72a350d3b08e32812fe77bf62255ede6e245f81776fbe5f30466485e3eb9e2.mp3', 'stjerner-og-str', '260130', 'Trumps nye sherif i Minnesota', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260130.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635004/2d72a350d3b08e32812fe77bf62255ede6e245f81776fbe5f30466485e3eb9e2.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">January 27, 2026</small>
             <h2>EKSTRA: Presset stiger på Trump efter drab i Minneapolis</h2>
             <div class="summary">Raseriet stiger i USA i takt med at tilliden til ICE og Trumps immigrationspolitik falder efter den 37-årige Alex Pretti lørdag blev skudt og dræbt af en betjent fra grænsepolitiet i Minneapolis. Et drab som både Demokrater og Republikanere nu vil have undersøgt. Og så er en udtalelse fra Trump om N...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635061/d4b5e5806bc77557b568a50d0a58ab67c9ce400cd58742e9479532eb2fa5cc06.mp3', 'stjerner-og-str', '260127', 'EKSTRA: Presset stiger på Trump efter drab i Minneapolis', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260127.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635061/d4b5e5806bc77557b568a50d0a58ab67c9ce400cd58742e9479532eb2fa5cc06.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635061/d4b5e5806bc77557b568a50d0a58ab67c9ce400cd58742e9479532eb2fa5cc06.mp3', 'stjerner-og-str', '260127', 'EKSTRA: Presset stiger på Trump efter drab i Minneapolis', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260127.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635061/d4b5e5806bc77557b568a50d0a58ab67c9ce400cd58742e9479532eb2fa5cc06.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">January 23, 2026</small>
             <h2>Daddy-diplomatiet i Davos</h2>
             <div class="summary">Der blevet indgået en skitse til en ramme for en mulig aftale om Grønland, da Donald Trump mødtes med Nato-chef Mark Rutte til World Economic Forum-topmødet i Davos i denne uge. Hvad går den ud på, hvor stiller Trumps trusler EU-landende, hvem er Trump-hviskeren Rutte egentligt - og hvad foregik der...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635003/427b5dd31dbbe97508454b2c0af6ddbadf933632ef61c61e233926c6c51527b0.mp3', 'stjerner-og-str', '260123', 'Daddy-diplomatiet i Davos', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260123.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635003/427b5dd31dbbe97508454b2c0af6ddbadf933632ef61c61e233926c6c51527b0.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635003/427b5dd31dbbe97508454b2c0af6ddbadf933632ef61c61e233926c6c51527b0.mp3', 'stjerner-og-str', '260123', 'Daddy-diplomatiet i Davos', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260123.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635003/427b5dd31dbbe97508454b2c0af6ddbadf933632ef61c61e233926c6c51527b0.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">January 16, 2026</small>
             <h2>Røg og damp i D.C.</h2>
             <div class="summary">Stjerner og striber gennemgår - minut for minut - dagen, hvor udenrigsminister Lars Løkke Rasmussen og Grønlands minister for udenrigsanliggender Vivian Motzfeldt mødtes med JD Vance og Marco Rubio i Washington DC om Grønland. Et møde der er blevet kaldt det vigtigste udenrigspolitiske møde siden An...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635002/5698e55a59360355709d4e73cab0f512baf739bfb1fd9a258fa8ce85d7f8ef69.mp3', 'stjerner-og-str', '260116', 'Røg og damp i D.C.', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260116.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635002/5698e55a59360355709d4e73cab0f512baf739bfb1fd9a258fa8ce85d7f8ef69.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635002/5698e55a59360355709d4e73cab0f512baf739bfb1fd9a258fa8ce85d7f8ef69.mp3', 'stjerner-og-str', '260116', 'Røg og damp i D.C.', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260116.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635002/5698e55a59360355709d4e73cab0f512baf739bfb1fd9a258fa8ce85d7f8ef69.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
         </div>
-        
         <div class="episode-card">
             <small style="color:#666; font-weight:bold;">January 09, 2026</small>
             <h2>Is på, Trump!</h2>
             <div class="summary">Flere og flere i Det Republikanske Parti er ved at have fået NOK af Donald Trumps trusler mod Grønland. Stjerner og striber nørder igennem på præsidentens imperieplaner for den vestlige halvkugle, mens NATO vakler og Europa forsøger at holde sammen på stumperne. Og så tester vi et vaskeægte diktator...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635001/28ae25f84357236fbb0cd43888f955d65b9210a28b80d7cdb77f345cc1b8aee2.mp3', 'stjerner-og-str', '260109', 'Is på, Trump!', 'da')">
-                    ⚡ Copy Process Command
-                </button>
-                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260109.html" target="_blank" class="btn btn-view">🌐 View Live</a>
-                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635001/28ae25f84357236fbb0cd43888f955d65b9210a28b80d7cdb77f345cc1b8aee2.mp3" target="_blank" class="btn btn-listen">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635001/28ae25f84357236fbb0cd43888f955d65b9210a28b80d7cdb77f345cc1b8aee2.mp3', 'stjerner-og-str', '260109', 'Is på, Trump!', 'da')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/stjerner-og-str.260109.html" class="btn btn-view">🌐 View Live</a>
+                <a href="https://api.dr.dk/podcasts/v1/assets/urn:dr:podcast:item:11802635001/28ae25f84357236fbb0cd43888f955d65b9210a28b80d7cdb77f345cc1b8aee2.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-        </div>
-        </body></html>
+        </div></body></html>
