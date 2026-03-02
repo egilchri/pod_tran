@@ -19,7 +19,7 @@
             .speed-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
             .transcript { padding: 20px; max-width: 900px; margin: 0 auto; }
             .row { display: flex; gap: 20px; padding: 15px; margin-bottom: 12px; background: white; border-radius: 12px; border: 1px solid #ddd; cursor: pointer; }
-            .row.highlight { background: #fffde7; border-left: 8px solid var(--accent); }
+            .row.highlight { background: #fffde7; border-left: 8px solid var(--accent); transition: background 0.3s ease; }
             .orig { flex: 1; color: var(--primary); font-weight: 700; font-size: 1.1rem; }
             .en { flex: 1; color: #546e7a; font-style: italic; border-left: 1px solid #eee; padding-left: 15px; font-size: 1.1rem; }
             @media (max-width: 768px) { .row { flex-direction: column; gap: 10px; } .en { border-left: none; border-top: 1px solid #eee; padding-top: 10px; } }
@@ -32,7 +32,7 @@
             <div class="controls">
                 <div class="audio-row">
                     <audio id="audio" controls src="usapodden.260225.mp3"></audio>
-                    <button id="modeBtn" class="btn" onclick="toggleMode()">🔊 Interleaved</button>
+                    <button id="modeBtn" class="btn" onclick="toggleMode()">🌍 Interleaved</button>
                 </div>
                 <div class="speed-row">
                     <span style="font-size: 0.7rem; font-weight: bold; color: #555;">SPEED:</span>
@@ -52,6 +52,7 @@
             const sources = { orig: "usapodden.260225.mp3", bilingual: "usapodden.260225.bilingual.mp3" };
             let mode = 'orig';
             let data = [];
+            let lastIdx = -1;
 
             function setSpeed(rate) {
                 audio.playbackRate = rate;
@@ -67,8 +68,9 @@
                 mode = (mode === 'orig') ? 'bilingual' : 'orig';
                 audio.src = sources[mode];
                 audio.playbackRate = rate;
+                lastIdx = -1; // Force UI refresh on mode change
                 if (isPlaying) audio.play();
-                modeBtn.innerText = mode === 'orig' ? '🔊 Interleaved' : '🌍 Podcast';
+                modeBtn.innerText = mode === 'orig' ? '🌍 Interleaved' : '🎙️ Podcast';
                 modeBtn.classList.toggle('active');
             }
 
@@ -88,15 +90,26 @@
 
             audio.addEventListener('timeupdate', () => {
                 const now = audio.currentTime;
-                data.forEach((item, i) => {
-                    const el = document.getElementById('row-' + i);
+                const currentIdx = data.findIndex(item => {
                     const s = (mode === 'orig') ? item.start : item.b_start;
                     const e = (mode === 'orig') ? item.end : item.b_end;
-                    if (now >= s && now <= e) {
-                        el.classList.add('highlight');
-                        if (!el.dataset.seen) { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); el.dataset.seen = '1'; }
-                    } else { el.classList.remove('highlight'); delete el.dataset.seen; }
+                    return now >= s && now <= e;
                 });
+
+                if (currentIdx !== lastIdx) {
+                    if (lastIdx !== -1) {
+                        const oldEl = document.getElementById('row-' + lastIdx);
+                        if (oldEl) oldEl.classList.remove('highlight');
+                    }
+                    if (currentIdx !== -1) {
+                        const newEl = document.getElementById('row-' + currentIdx);
+                        if (newEl) {
+                            newEl.classList.add('highlight');
+                            newEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                    }
+                    lastIdx = currentIdx;
+                }
             });
         </script>
     </body>
