@@ -30,7 +30,7 @@
         <h1 style="margin: 5px 0; font-size: 1.2rem;">Trump fick bråket han ville ha</h1>
         <div class="controls">
             <div class="audio-row">
-                <audio id="audio" controls src="https://raw.githubusercontent.com/egilchri/literary-training-wheels/main/usapodden.260225.mp3"></audio>
+                <audio id="audio" controls src="usapodden.260225.mp3"></audio>
                 <button id="modeBtn" class="btn" onclick="toggleMode()">🌍 Interleaved</button>
             </div>
             <div class="speed-row">
@@ -49,10 +49,10 @@
         const modeBtn = document.getElementById('modeBtn');
         const container = document.getElementById('transcript');
         
-        // Updated sources with Absolute Raw URLs
+        // Restored to relative paths
         const sources = { 
-            orig: "https://raw.githubusercontent.com/egilchri/literary-training-wheels/main/usapodden.260225.mp3", 
-            bilingual: "https://raw.githubusercontent.com/egilchri/literary-training-wheels/main/usapodden.260225.bilingual.mp3" 
+            orig: "usapodden.260225.mp3", 
+            bilingual: "usapodden.260225.bilingual.mp3" 
         };
 
         let mode = 'orig';
@@ -79,7 +79,6 @@
             modeBtn.classList.toggle('active');
         }
 
-        // Note: 'transcript.usapodden.260225.json' still needs to be in the same local folder as this HTML file for the fetch to work.
         fetch('transcript.usapodden.260225.json').then(r => r.json()).then(json => {
             data = json;
             data.forEach((item, i) => {
