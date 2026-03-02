@@ -9,19 +9,25 @@
             body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f2f5; }
             .nav-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
             .btn-back { background: #6c757d; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; border: none; cursor: pointer; }
-            /* Sync Button: Hidden by default, pulses when update is needed */
             .btn-sync { background: #ffc107; color: black; padding: 8px 16px; border-radius: 6px; font-weight: bold; border: none; cursor: pointer; display: none; animation: pulse 2s infinite; }
             @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
             header { background: #004a99; color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
-            .episode-card { background: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 6px solid #ffc107; }
+            
+            .episode-card { background: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 6px solid #ccc; position: relative; }
+            .episode-card.is-live { border-left-color: #28a745; }
+            
+            .status-tag { position: absolute; top: 15px; right: 20px; font-size: 0.75rem; font-weight: bold; padding: 4px 8px; border-radius: 4px; text-transform: uppercase; }
+            .tag-live { background: #d4edda; color: #155724; }
+            .tag-pending { background: #fff3cd; color: #856404; }
+            .tag-checking { background: #e9ecef; color: #666; }
+            
             .btn-group { display: flex; gap: 8px; margin-top: 15px; flex-wrap: wrap; }
             .btn { padding: 10px 15px; border-radius: 6px; font-weight: bold; text-decoration: none; cursor: pointer; border: none; font-size: 0.85em; }
             .btn-run { background: #ffc107; color: black; }
-            .btn-view { background: #28a745; color: white; }
+            .btn-view { background: #28a745; color: white; display: none; }
             .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px 30px; border-radius: 50px; display: none; z-index: 1000; }
         </style>
         <script>
-            // Uses metadata to copy the exact update command to clipboard
             function triggerUpdate() {
                 const rssUrl = document.documentElement.getAttribute('data-rss-url');
                 const langCode = null;
@@ -39,9 +45,31 @@
                     setTimeout(() => { t.style.display = 'none'; }, 3000);
                 });
             }
+
+            async function checkLiveStatus(i, url) {
+                const status = document.getElementById(`status-${i}`);
+                const card = document.getElementById(`card-${i}`);
+                const viewBtn = document.getElementById(`view-${i}`);
+                
+                try {
+                    const response = await fetch(url, { method: 'HEAD' });
+                    if (response.ok) {
+                        status.innerText = "● Live";
+                        status.className = "status-tag tag-live";
+                        card.classList.add('is-live');
+                        viewBtn.style.display = 'inline-block';
+                    } else {
+                        status.innerText = "○ Pending";
+                        status.className = "status-tag tag-pending";
+                    }
+                } catch (e) {
+                    status.innerText = "○ Offline";
+                    status.className = "status-tag tag-pending";
+                }
+            }
         </script>
     </head>
-    <body data-latest="1768486327.0" data-generated="1772388546.8142998">
+    <body data-latest="1768486327.0" data-generated="1772491298.7941592">
         <div class="nav-header">
             <button class="btn-back" onclick="window.history.back()">← Back to Index</button>
             <button id="syncBtn" class="btn-sync" onclick="triggerUpdate()">⚠ Update Available</button>
@@ -50,10 +78,189 @@
             <h1>C'est ça l'Amérique</h1>
             <p>Language: <strong>fr</strong> </p>
         </header>
-        <div id="toast" class="toast">✅ Command Copied!</div>
-
+        <div id="toast" class="toast">✅ Command Courtesied to Clipboard!</div>
+    
+        <div class="episode-card" id="card-0">
+            <span id="status-0" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">January 15, 2026</small>
+            <h2>Vassalisation ou confrontation : le monde selon Donald Trump - avec Jean-Marc Coicaud</h2>
+            <div class="summary">Opposé aux campagnes militaires à l’étranger quand il était candidat en 2016 (mais aussi en 2020 et 2024), Donald Trump confirme son virage à 180 degrés avec la capture du président vénézuélien Nicolás Maduro, début janvier. Le président américain multiplie désormais les menaces d’interventions part...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/yJpwLIGx3dV6.mp3?t=1768466083', 'c-est-a-l-am-ri', '260115', 'Vassalisation ou confrontation : le monde selon Donald Trump - avec Jean-Marc Coicaud', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.260115.html" id="view-0" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/yJpwLIGx3dV6.mp3?t=1768466083" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(0, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.260115.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-1">
+            <span id="status-1" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">December 18, 2025</small>
+            <h2>Droits de douane : Donald Trump a-t-il réussi son pari ? - avec Bernard Salanié</h2>
+            <div class="summary">Un an après l’instauration des « droits de douane réciproques » par Donald Trump pour corriger les déséquilibres commerciaux, quel bilan ? Alexis Buisson, correspondant du journal La Croix à New York, interroge l’économiste Bernard Salanié, dans ce nouvel épisode du podcast C’est ça l’Amérique.2 avr...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/omjenTrPW1a5.mp3?t=1765984609', 'c-est-a-l-am-ri', '251218', 'Droits de douane : Donald Trump a-t-il réussi son pari ? - avec Bernard Salanié', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.251218.html" id="view-1" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/omjenTrPW1a5.mp3?t=1765984609" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(1, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.251218.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-2">
+            <span id="status-2" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">November 20, 2025</small>
+            <h2>Aux États-Unis de Donald Trump, la recherche scientifique fragilisée - avec Lex Van Geen</h2>
+            <div class="summary">Un an après la réélection de Donald Trump, où en est la communauté scientifique ? Qu’est-ce qui a changé pour elle au quotidien ? Alexis Buisson, correspondant de La Croix à New York, a cherché à en savoir plus auprès de Lex Van Geen, professeur et chercheur à l’université Columbia.Licenciements, ré...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/y8mOMSjPp837.mp3?t=1763545584', 'c-est-a-l-am-ri', '251120', 'Aux États-Unis de Donald Trump, la recherche scientifique fragilisée - avec Lex Van Geen', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.251120.html" id="view-2" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/y8mOMSjPp837.mp3?t=1763545584" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(2, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.251120.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-3">
+            <span id="status-3" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">October 16, 2025</small>
+            <h2>La constitution américaine à l’épreuve de Donald Trump - avec Michel Rosenfeld</h2>
+            <div class="summary">En près de 250 ans d’existence, la constitution américaine a surmonté bien des défis. Survivra-t-elle aux coups de menton de Donald Trump ? Pour en parler, Alexis Buisson, correspondant de La Croix à New York, s’est entretenu avec Michel Rosenfeld, constitutionnaliste à l’école de droit Cardozo, dan...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/BMO7ETgn9rep.mp3?t=1760602754', 'c-est-a-l-am-ri', '251016', 'La constitution américaine à l’épreuve de Donald Trump - avec Michel Rosenfeld', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.251016.html" id="view-3" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/BMO7ETgn9rep.mp3?t=1760602754" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(3, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.251016.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-4">
+            <span id="status-4" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">September 17, 2025</small>
+            <h2>Sécurité ou politique ? Quand Donald Trump déploie la garde nationale chez les démocrates - avec Ariane chebel d'Appollonia</h2>
+            <div class="summary">Los Angeles, Washington, Memphis... et bientôt Chicago ou New York ? Pour «lutter contre la criminalité», le président Donald Trump déploie la garde nationale dans de grandes villes américaines. La politologue Ariane Chebel d’Appollonia analyse cette stratégie sécuritaire et les réactions qu’elle pr...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/BDnD1TzQjqQ5.mp3?t=1758126620', 'c-est-a-l-am-ri', '250917', 'Sécurité ou politique ? Quand Donald Trump déploie la garde nationale chez les démocrates - avec Ariane chebel d'Appollonia', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250917.html" id="view-4" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/BDnD1TzQjqQ5.mp3?t=1758126620" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(4, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250917.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-5">
+            <span id="status-5" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">August 20, 2025</small>
+            <h2>Donald Trump et la presse : l'art de la guerre - avec Sonia Dridi</h2>
+            <div class="summary">Le second mandat de Donald Trump marque une escalade dans les tensions entre le président américain et les grands médias traditionnels. Comment le vit-on quand on est journaliste accréditée à la Maison-Blanche, au plus près du sulfureux locataire ? Pour comprendre les relations que Donald Trump entr...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/oK3PvSRYKP8Z.mp3?t=1755701699', 'c-est-a-l-am-ri', '250820', 'Donald Trump et la presse : l'art de la guerre - avec Sonia Dridi', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250820.html" id="view-5" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/oK3PvSRYKP8Z.mp3?t=1755701699" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(5, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250820.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-6">
+            <span id="status-6" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">July 23, 2025</small>
+            <h2>Peut-on encore rêver des États-Unis en 2025, à l’ère de Donald Trump ? - avec Pierre Laffont</h2>
+            <div class="summary">À l’ère de Donald Trump, l’imaginaire autour des Etats-Unis évolue. Que reste-t-il du rêve américain ? Alexis Buisson, correspondant de La Croix à New York, aborde cette question avec le photographe Jean-Pierre Laffont, établi aux Etats-Unis depuis les années 1960.Jean-Pierre Laffont est certainemen...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/yJpwLIjJ6qpZ.mp3?t=1752248859', 'c-est-a-l-am-ri', '250723', 'Peut-on encore rêver des États-Unis en 2025, à l’ère de Donald Trump ? - avec Pierre Laffont', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250723.html" id="view-6" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/yJpwLIjJ6qpZ.mp3?t=1752248859" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(6, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250723.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-7">
+            <span id="status-7" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">June 18, 2025</small>
+            <h2>Immigration : Donald Trump a-t-il tenu ses promesses ? - avec Fanny Lauby</h2>
+            <div class="summary">Candidat, Donald Trump avait fait une promesse radicale : expulser tous les sans-papiers du territoire américain. Où en est-il dans la mise en œuvre de sa mesure phare ? Le point avec Fanny Lauby, spécialiste des questions migratoires, interrogée par Alexis Buisson, notre correspondant à New York. C...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/yvdnZI8OkqpQ.mp3?t=1750259366', 'c-est-a-l-am-ri', '250618', 'Immigration : Donald Trump a-t-il tenu ses promesses ? - avec Fanny Lauby', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250618.html" id="view-7" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/yvdnZI8OkqpQ.mp3?t=1750259366" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(7, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250618.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-8">
+            <span id="status-8" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">May 21, 2025</small>
+            <h2>Donald Trump a-t-il tué toute forme d’opposition ? - avec Tristan Cabello</h2>
+            <div class="summary">Minoritaire au Congrès, le parti démocrate semble bien impuissant face à Donald Trump. Mais d’autres formes d’opposition émergent. L’historien Tristan Cabello en parle dans notre podcast « C’est ça l’Amérique ».Au lendemain de l’élection présidentielle, le mouvement d’opposition à Donald Trump, surn...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/bWEJkUr8r4E9.mp3?t=1747928325', 'c-est-a-l-am-ri', '250521', 'Donald Trump a-t-il tué toute forme d’opposition ? - avec Tristan Cabello', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250521.html" id="view-8" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/bWEJkUr8r4E9.mp3?t=1747928325" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(8, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250521.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-9">
+            <span id="status-9" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">April 29, 2025</small>
+            <h2>100 jours de Donald Trump, le président de la rupture - avec François Furstenberg</h2>
+            <div class="summary">Difficile de croire que cela ne fait que cent jours que Donald Trump est de retour au pouvoir. Depuis son investiture le 20 janvier 2025, le président républicain impose un rythme soutenu en multipliant les décrets pour réformer l’État fédéral et « rendre à l’Amérique sa grandeur » (« Make America G...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/b5jw6Tk5n2p4.mp3?t=1745947614', 'c-est-a-l-am-ri', '250429', '100 jours de Donald Trump, le président de la rupture - avec François Furstenberg', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250429.html" id="view-9" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/b5jw6Tk5n2p4.mp3?t=1745947614" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(9, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250429.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-10">
+            <span id="status-10" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">January 16, 2025</small>
+            <h2>Investiture de Donald Trump : un président tout-puissant ?</h2>
+            <div class="summary">C’est ça l’Amérique, saison 3Avec une majorité républicaine au Sénat et à la Chambre des représentants, Donald Trump revient-il à la Maison-Blanche avec les pleins pouvoirs ? Pour ce dernier épisode bonus de 'C’est ça l’Amérique', Alexis Buisson, correspondant de 'La Croix' à New York, explore le su...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/yJpwLImRd5jA.mp3?t=1736936751', 'c-est-a-l-am-ri', '250116', 'Investiture de Donald Trump : un président tout-puissant ?', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250116.html" id="view-10" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/yJpwLImRd5jA.mp3?t=1736936751" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(10, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250116.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-11">
+            <span id="status-11" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">January 09, 2025</small>
+            <h2>Investiture de Donald Trump : vers un nouveau bras de fer entre les États-Unis et l’Europe ?</h2>
+            <div class="summary">C’est ça l’Amérique, saison 3À l’approche de l’investiture de Donald Trump le 20 janvier 2025, Alexis Buisson, correspondant de 'La Croix' à New York, s’entretient avec Rama Yade, directrice Afrique du think tank 'Atlantic Council', pour explorer les tensions entre les États-Unis et l’Europe.Épisode...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/oZJ0NUG9a798.mp3?t=1736345986', 'c-est-a-l-am-ri', '250109', 'Investiture de Donald Trump : vers un nouveau bras de fer entre les États-Unis et l’Europe ?', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250109.html" id="view-11" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/oZJ0NUG9a798.mp3?t=1736345986" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(11, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250109.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-12">
+            <span id="status-12" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">January 02, 2025</small>
+            <h2>Investiture de Donald Trump : Elon Musk, l’influenceur en chef des États-Unis ?</h2>
+            <div class="summary">C’est ça l’Amérique, saison 3Alors que Donald Trump sera investi président le 20 janvier 2025, Alexis Buisson, correspondant de La Croix à New York, décrypte les défis posés par ce retour au pouvoir. Pour son second mandat, il aura à ses côtés l’homme le plus riche du monde, Elon Musk, dont le rôle ...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/owdwxIGGem70.mp3?t=1735815572', 'c-est-a-l-am-ri', '250102', 'Investiture de Donald Trump : Elon Musk, l’influenceur en chef des États-Unis ?', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250102.html" id="view-12" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/owdwxIGGem70.mp3?t=1735815572" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(12, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250102.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-13">
+            <span id="status-13" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">October 31, 2024</small>
+            <h2>Présidentielle américaine 2024 : dernière élection d’une démocratie en danger ? - avec Olivier Zunz</h2>
+            <div class="summary">C’est ça l’Amérique, saison 3Dans quelques jours, les États-Unis et le monde connaîtront l’identité du nouveau locataire de la Maison-Blanche. Le vainqueur, Donald Trump ou Kamala Harris, héritera d’un pays à la santé démocratique chancelante. Épisode 8/8 :Défiance envers les institutions, polarisat...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/b7kY5f0A8x5Y.mp3?t=1730710006', 'c-est-a-l-am-ri', '241031', 'Présidentielle américaine 2024 : dernière élection d’une démocratie en danger ? - avec Olivier Zunz', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.241031.html" id="view-13" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/b7kY5f0A8x5Y.mp3?t=1730710006" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(13, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.241031.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-14">
+            <span id="status-14" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">October 23, 2024</small>
+            <h2>Chine, Iran, Russie : la campagne Trump-Harris est-elle sous influence étrangère ? - avec Romuald Sciora</h2>
+            <div class="summary">C’est ça l’Amérique, saison 3Les élections américaines s’annoncent serrées. De quoi donner des idées aux puissances étrangères. Cette année, la Russie, l’Iran et la Chine mènent des campagnes d’influence pour peser sur le cours du scrutin du 5 novembre. Épisode 7/8 :Images et sons générés par intell...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/o9VAJTYK2XlZ.mp3?t=1729706299', 'c-est-a-l-am-ri', '241023', 'Chine, Iran, Russie : la campagne Trump-Harris est-elle sous influence étrangère ? - avec Romuald Sciora', 'fr')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.241023.html" id="view-14" class="btn btn-view">🌐 View Live</a>
+                <a href="https://audio.ausha.co/o9VAJTYK2XlZ.mp3?t=1729706299" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(14, "https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.241023.mp3");</script>
+        </div>
         <script>
-            // On load, compare timestamps to decide if update button should show
             window.addEventListener('DOMContentLoaded', () => {
                 const latest = parseFloat(document.body.dataset.latest);
                 const generated = parseFloat(document.body.dataset.generated);
@@ -62,154 +269,4 @@
                 }
             });
         </script>
-    
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">January 15, 2026</small>
-            <h2>Vassalisation ou confrontation : le monde selon Donald Trump - avec Jean-Marc Coicaud</h2>
-            <div class="summary">Opposé aux campagnes militaires à l’étranger quand il était candidat en 2016 (mais aussi en 2020 et 2024), Donald Trump confirme son virage à 180 degrés avec la capture du président vénézuélien Nicolás Maduro, début janvier. Le président américain multiplie désormais les menaces d’interventions part...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/yJpwLIGx3dV6.mp3?t=1768466083', 'c-est-a-l-am-ri', '260115', 'Vassalisation ou confrontation : le monde selon Donald Trump - avec Jean-Marc Coicaud', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.260115.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/yJpwLIGx3dV6.mp3?t=1768466083" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">December 18, 2025</small>
-            <h2>Droits de douane : Donald Trump a-t-il réussi son pari ? - avec Bernard Salanié</h2>
-            <div class="summary">Un an après l’instauration des « droits de douane réciproques » par Donald Trump pour corriger les déséquilibres commerciaux, quel bilan ? Alexis Buisson, correspondant du journal La Croix à New York, interroge l’économiste Bernard Salanié, dans ce nouvel épisode du podcast C’est ça l’Amérique.2 avr...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/omjenTrPW1a5.mp3?t=1765984609', 'c-est-a-l-am-ri', '251218', 'Droits de douane : Donald Trump a-t-il réussi son pari ? - avec Bernard Salanié', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.251218.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/omjenTrPW1a5.mp3?t=1765984609" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">November 20, 2025</small>
-            <h2>Aux États-Unis de Donald Trump, la recherche scientifique fragilisée - avec Lex Van Geen</h2>
-            <div class="summary">Un an après la réélection de Donald Trump, où en est la communauté scientifique ? Qu’est-ce qui a changé pour elle au quotidien ? Alexis Buisson, correspondant de La Croix à New York, a cherché à en savoir plus auprès de Lex Van Geen, professeur et chercheur à l’université Columbia.Licenciements, ré...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/y8mOMSjPp837.mp3?t=1763545584', 'c-est-a-l-am-ri', '251120', 'Aux États-Unis de Donald Trump, la recherche scientifique fragilisée - avec Lex Van Geen', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.251120.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/y8mOMSjPp837.mp3?t=1763545584" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">October 16, 2025</small>
-            <h2>La constitution américaine à l’épreuve de Donald Trump - avec Michel Rosenfeld</h2>
-            <div class="summary">En près de 250 ans d’existence, la constitution américaine a surmonté bien des défis. Survivra-t-elle aux coups de menton de Donald Trump ? Pour en parler, Alexis Buisson, correspondant de La Croix à New York, s’est entretenu avec Michel Rosenfeld, constitutionnaliste à l’école de droit Cardozo, dan...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/BMO7ETgn9rep.mp3?t=1760602754', 'c-est-a-l-am-ri', '251016', 'La constitution américaine à l’épreuve de Donald Trump - avec Michel Rosenfeld', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.251016.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/BMO7ETgn9rep.mp3?t=1760602754" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">September 17, 2025</small>
-            <h2>Sécurité ou politique ? Quand Donald Trump déploie la garde nationale chez les démocrates - avec Ariane chebel d'Appollonia</h2>
-            <div class="summary">Los Angeles, Washington, Memphis... et bientôt Chicago ou New York ? Pour «lutter contre la criminalité», le président Donald Trump déploie la garde nationale dans de grandes villes américaines. La politologue Ariane Chebel d’Appollonia analyse cette stratégie sécuritaire et les réactions qu’elle pr...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/BDnD1TzQjqQ5.mp3?t=1758126620', 'c-est-a-l-am-ri', '250917', 'Sécurité ou politique ? Quand Donald Trump déploie la garde nationale chez les démocrates - avec Ariane chebel d'Appollonia', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250917.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/BDnD1TzQjqQ5.mp3?t=1758126620" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">August 20, 2025</small>
-            <h2>Donald Trump et la presse : l'art de la guerre - avec Sonia Dridi</h2>
-            <div class="summary">Le second mandat de Donald Trump marque une escalade dans les tensions entre le président américain et les grands médias traditionnels. Comment le vit-on quand on est journaliste accréditée à la Maison-Blanche, au plus près du sulfureux locataire ? Pour comprendre les relations que Donald Trump entr...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/oK3PvSRYKP8Z.mp3?t=1755701699', 'c-est-a-l-am-ri', '250820', 'Donald Trump et la presse : l'art de la guerre - avec Sonia Dridi', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250820.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/oK3PvSRYKP8Z.mp3?t=1755701699" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">July 23, 2025</small>
-            <h2>Peut-on encore rêver des États-Unis en 2025, à l’ère de Donald Trump ? - avec Pierre Laffont</h2>
-            <div class="summary">À l’ère de Donald Trump, l’imaginaire autour des Etats-Unis évolue. Que reste-t-il du rêve américain ? Alexis Buisson, correspondant de La Croix à New York, aborde cette question avec le photographe Jean-Pierre Laffont, établi aux Etats-Unis depuis les années 1960.Jean-Pierre Laffont est certainemen...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/yJpwLIjJ6qpZ.mp3?t=1752248859', 'c-est-a-l-am-ri', '250723', 'Peut-on encore rêver des États-Unis en 2025, à l’ère de Donald Trump ? - avec Pierre Laffont', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250723.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/yJpwLIjJ6qpZ.mp3?t=1752248859" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">June 18, 2025</small>
-            <h2>Immigration : Donald Trump a-t-il tenu ses promesses ? - avec Fanny Lauby</h2>
-            <div class="summary">Candidat, Donald Trump avait fait une promesse radicale : expulser tous les sans-papiers du territoire américain. Où en est-il dans la mise en œuvre de sa mesure phare ? Le point avec Fanny Lauby, spécialiste des questions migratoires, interrogée par Alexis Buisson, notre correspondant à New York. C...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/yvdnZI8OkqpQ.mp3?t=1750259366', 'c-est-a-l-am-ri', '250618', 'Immigration : Donald Trump a-t-il tenu ses promesses ? - avec Fanny Lauby', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250618.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/yvdnZI8OkqpQ.mp3?t=1750259366" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">May 21, 2025</small>
-            <h2>Donald Trump a-t-il tué toute forme d’opposition ? - avec Tristan Cabello</h2>
-            <div class="summary">Minoritaire au Congrès, le parti démocrate semble bien impuissant face à Donald Trump. Mais d’autres formes d’opposition émergent. L’historien Tristan Cabello en parle dans notre podcast « C’est ça l’Amérique ».Au lendemain de l’élection présidentielle, le mouvement d’opposition à Donald Trump, surn...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/bWEJkUr8r4E9.mp3?t=1747928325', 'c-est-a-l-am-ri', '250521', 'Donald Trump a-t-il tué toute forme d’opposition ? - avec Tristan Cabello', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250521.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/bWEJkUr8r4E9.mp3?t=1747928325" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">April 29, 2025</small>
-            <h2>100 jours de Donald Trump, le président de la rupture - avec François Furstenberg</h2>
-            <div class="summary">Difficile de croire que cela ne fait que cent jours que Donald Trump est de retour au pouvoir. Depuis son investiture le 20 janvier 2025, le président républicain impose un rythme soutenu en multipliant les décrets pour réformer l’État fédéral et « rendre à l’Amérique sa grandeur » (« Make America G...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/b5jw6Tk5n2p4.mp3?t=1745947614', 'c-est-a-l-am-ri', '250429', '100 jours de Donald Trump, le président de la rupture - avec François Furstenberg', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250429.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/b5jw6Tk5n2p4.mp3?t=1745947614" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">January 16, 2025</small>
-            <h2>Investiture de Donald Trump : un président tout-puissant ?</h2>
-            <div class="summary">C’est ça l’Amérique, saison 3Avec une majorité républicaine au Sénat et à la Chambre des représentants, Donald Trump revient-il à la Maison-Blanche avec les pleins pouvoirs ? Pour ce dernier épisode bonus de 'C’est ça l’Amérique', Alexis Buisson, correspondant de 'La Croix' à New York, explore le su...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/yJpwLImRd5jA.mp3?t=1736936751', 'c-est-a-l-am-ri', '250116', 'Investiture de Donald Trump : un président tout-puissant ?', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250116.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/yJpwLImRd5jA.mp3?t=1736936751" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">January 09, 2025</small>
-            <h2>Investiture de Donald Trump : vers un nouveau bras de fer entre les États-Unis et l’Europe ?</h2>
-            <div class="summary">C’est ça l’Amérique, saison 3À l’approche de l’investiture de Donald Trump le 20 janvier 2025, Alexis Buisson, correspondant de 'La Croix' à New York, s’entretient avec Rama Yade, directrice Afrique du think tank 'Atlantic Council', pour explorer les tensions entre les États-Unis et l’Europe.Épisode...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/oZJ0NUG9a798.mp3?t=1736345986', 'c-est-a-l-am-ri', '250109', 'Investiture de Donald Trump : vers un nouveau bras de fer entre les États-Unis et l’Europe ?', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250109.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/oZJ0NUG9a798.mp3?t=1736345986" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">January 02, 2025</small>
-            <h2>Investiture de Donald Trump : Elon Musk, l’influenceur en chef des États-Unis ?</h2>
-            <div class="summary">C’est ça l’Amérique, saison 3Alors que Donald Trump sera investi président le 20 janvier 2025, Alexis Buisson, correspondant de La Croix à New York, décrypte les défis posés par ce retour au pouvoir. Pour son second mandat, il aura à ses côtés l’homme le plus riche du monde, Elon Musk, dont le rôle ...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/owdwxIGGem70.mp3?t=1735815572', 'c-est-a-l-am-ri', '250102', 'Investiture de Donald Trump : Elon Musk, l’influenceur en chef des États-Unis ?', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.250102.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/owdwxIGGem70.mp3?t=1735815572" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">October 31, 2024</small>
-            <h2>Présidentielle américaine 2024 : dernière élection d’une démocratie en danger ? - avec Olivier Zunz</h2>
-            <div class="summary">C’est ça l’Amérique, saison 3Dans quelques jours, les États-Unis et le monde connaîtront l’identité du nouveau locataire de la Maison-Blanche. Le vainqueur, Donald Trump ou Kamala Harris, héritera d’un pays à la santé démocratique chancelante. Épisode 8/8 :Défiance envers les institutions, polarisat...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/b7kY5f0A8x5Y.mp3?t=1730710006', 'c-est-a-l-am-ri', '241031', 'Présidentielle américaine 2024 : dernière élection d’une démocratie en danger ? - avec Olivier Zunz', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.241031.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/b7kY5f0A8x5Y.mp3?t=1730710006" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div>
-        <div class="episode-card">
-            <small style="color:#666; font-weight:bold;">October 23, 2024</small>
-            <h2>Chine, Iran, Russie : la campagne Trump-Harris est-elle sous influence étrangère ? - avec Romuald Sciora</h2>
-            <div class="summary">C’est ça l’Amérique, saison 3Les élections américaines s’annoncent serrées. De quoi donner des idées aux puissances étrangères. Cette année, la Russie, l’Iran et la Chine mènent des campagnes d’influence pour peser sur le cours du scrutin du 5 novembre. Épisode 7/8 :Images et sons générés par intell...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://audio.ausha.co/o9VAJTYK2XlZ.mp3?t=1729706299', 'c-est-a-l-am-ri', '241023', 'Chine, Iran, Russie : la campagne Trump-Harris est-elle sous influence étrangère ? - avec Romuald Sciora', 'fr')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/c-est-a-l-am-ri.241023.html" class="btn btn-view">🌐 View Live</a>
-                <a href="https://audio.ausha.co/o9VAJTYK2XlZ.mp3?t=1729706299" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-        </div></body></html>
+        </body></html>
