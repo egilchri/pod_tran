@@ -1,0 +1,16 @@
+{
+  "short_name": "USApodden",
+  "name": "USApodden Dashboard",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/egilchri/pod_tran/main/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/pod_tran/usapodden.feed.html",
+  "background_color": "#004a99",
+  "display": "standalone",
+  "scope": "/pod_tran/",
+  "theme_color": "#004a99"
+}
