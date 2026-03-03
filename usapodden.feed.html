@@ -5,6 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>USApodden - Feed Dashboard</title>
+        
+        
+        <link rel="manifest" href="manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="theme-color" content="#004a99">
+        
+
         <style>
             body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f2f5; }
             .nav-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
@@ -25,6 +33,19 @@
             .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px 30px; border-radius: 50px; display: none; z-index: 1000; }
         </style>
         <script>
+            
+            // Register Service Worker for PWA
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('sw.js').then(reg => {
+                        console.log('USApodden SW registered');
+                    }).catch(err => {
+                        console.log('SW registration failed:', err);
+                    });
+                });
+            }
+        
+
             function triggerUpdate() {
                 const rssUrl = document.documentElement.getAttribute('data-rss-url');
                 const langCode = 'sv';
@@ -64,7 +85,7 @@
             }
         </script>
     </head>
-    <body data-latest="1772310000.0" data-generated="1772504994.191663">
+    <body data-latest="1772310000.0" data-generated="1772582273.5621178">
         <div class="nav-header">
             <button class="btn-back" onclick="window.history.back()">← Back to Index</button>
             <button id="syncBtn" class="btn-sync" onclick="triggerUpdate()">⚠ Update Available</button>
