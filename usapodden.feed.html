@@ -12,15 +12,12 @@
             .btn-sync { background: #ffc107; color: black; padding: 8px 16px; border-radius: 6px; font-weight: bold; border: none; cursor: pointer; display: none; animation: pulse 2s infinite; }
             @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
             header { background: #004a99; color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
-            
             .episode-card { background: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 6px solid #ccc; position: relative; }
             .episode-card.is-live { border-left-color: #28a745; }
-            
             .status-tag { position: absolute; top: 15px; right: 20px; font-size: 0.75rem; font-weight: bold; padding: 4px 8px; border-radius: 4px; text-transform: uppercase; }
             .tag-live { background: #d4edda; color: #155724; }
             .tag-pending { background: #fff3cd; color: #856404; }
             .tag-checking { background: #e9ecef; color: #666; }
-            
             .btn-group { display: flex; gap: 8px; margin-top: 15px; flex-wrap: wrap; }
             .btn { padding: 10px 15px; border-radius: 6px; font-weight: bold; text-decoration: none; cursor: pointer; border: none; font-size: 0.85em; }
             .btn-run { background: #ffc107; color: black; }
@@ -45,12 +42,10 @@
                     setTimeout(() => { t.style.display = 'none'; }, 3000);
                 });
             }
-
             async function checkLiveStatus(i, url) {
                 const status = document.getElementById(`status-${i}`);
                 const card = document.getElementById(`card-${i}`);
                 const viewBtn = document.getElementById(`view-${i}`);
-                
                 try {
                     const response = await fetch(url, { method: 'HEAD' });
                     if (response.ok) {
@@ -69,7 +64,7 @@
             }
         </script>
     </head>
-    <body data-latest="1772049600.0" data-generated="1772504635.706923">
+    <body data-latest="1772049600.0" data-generated="1772504774.846721">
         <div class="nav-header">
             <button class="btn-back" onclick="window.history.back()">← Back to Index</button>
             <button id="syncBtn" class="btn-sync" onclick="triggerUpdate()">⚠ Update Available</button>
