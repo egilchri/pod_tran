@@ -3,15 +3,13 @@
     <html lang="sv" data-is-override="true" data-rss-url="https://podcast.tamperd.net/sr/usapodden">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>USApodden - Feed Dashboard</title>
-        
         
         <link rel="manifest" href="manifest.json">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="theme-color" content="#004a99">
-        
 
         <style>
             body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f2f5; }
@@ -31,20 +29,28 @@
             .btn-run { background: #ffc107; color: black; }
             .btn-view { background: #28a745; color: white; display: none; }
             .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px 30px; border-radius: 50px; display: none; z-index: 1000; }
+            .summary { color: #444; font-size: 0.95em; line-height: 1.4; margin-top: 10px; }
+
+            /* --- MOBILE APP OVERRIDES --- */
+            @media (display-mode: standalone) {
+                .btn-back, .btn-run { display: none !important; }
+                .nav-header { justify-content: flex-end; }
+            }
+            @media (max-width: 600px) {
+                .btn-run { display: none !important; }
+            }
         </style>
         <script>
-            
             // Register Service Worker for PWA
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', () => {
                     navigator.serviceWorker.register('sw.js').then(reg => {
-                        console.log('USApodden SW registered');
+                        console.log('SW registered');
                     }).catch(err => {
                         console.log('SW registration failed:', err);
                     });
                 });
             }
-        
 
             function triggerUpdate() {
                 const rssUrl = document.documentElement.getAttribute('data-rss-url');
@@ -85,7 +91,7 @@
             }
         </script>
     </head>
-    <body data-latest="1772310000.0" data-generated="1772582273.5621178">
+    <body data-latest="1772310000.0" data-generated="1772628370.923625">
         <div class="nav-header">
             <button class="btn-back" onclick="window.history.back()">← Back to Index</button>
             <button id="syncBtn" class="btn-sync" onclick="triggerUpdate()">⚠ Update Available</button>
