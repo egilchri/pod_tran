@@ -3,10 +3,13 @@
     <html lang="de" data-is-override="false" data-rss-url="https://feeds.simplecast.com/yPsdBcxP">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>OK, America? - Feed Dashboard</title>
         
-        
+        <link rel="manifest" href="manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="theme-color" content="#004a99">
 
         <style>
             body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f2f5; }
@@ -14,7 +17,8 @@
             .btn-back { background: #6c757d; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; border: none; cursor: pointer; }
             .btn-sync { background: #ffc107; color: black; padding: 8px 16px; border-radius: 6px; font-weight: bold; border: none; cursor: pointer; display: none; animation: pulse 2s infinite; }
             @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
-            header { background: #004a99; color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
+            header { background: #004a99; color: white; padding: 25px; border-radius: 12px; margin-bottom: 15px; }
+            .disclaimer-box { background: #e2e8f0; padding: 15px; border-radius: 10px; margin-bottom: 30px; font-size: 0.85em; color: #475569; line-height: 1.4; border-left: 5px solid #94a3b8; }
             .episode-card { background: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 6px solid #ccc; position: relative; }
             .episode-card.is-live { border-left-color: #28a745; }
             .status-tag { position: absolute; top: 15px; right: 20px; font-size: 0.75rem; font-weight: bold; padding: 4px 8px; border-radius: 4px; text-transform: uppercase; }
@@ -26,9 +30,23 @@
             .btn-run { background: #ffc107; color: black; }
             .btn-view { background: #28a745; color: white; display: none; }
             .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px 30px; border-radius: 50px; display: none; z-index: 1000; }
+            .summary { color: #444; font-size: 0.95em; line-height: 1.4; margin-top: 10px; }
+
+            /* --- MOBILE APP OVERRIDES --- */
+            @media (display-mode: standalone) {
+                .btn-back, .btn-run { display: none !important; }
+                .nav-header { justify-content: flex-end; }
+            }
+            @media (max-width: 600px) {
+                .btn-run { display: none !important; }
+            }
         </style>
         <script>
-            
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('sw.js');
+                });
+            }
 
             function triggerUpdate() {
                 const rssUrl = document.documentElement.getAttribute('data-rss-url');
@@ -64,12 +82,11 @@
                     }
                 } catch (e) {
                     status.innerText = "○ Offline";
-                    status.className = "status-tag tag-pending";
                 }
             }
         </script>
     </head>
-    <body data-latest="1772382417.0" data-generated="1772582077.4000828">
+    <body data-latest="1772732561.0" data-generated="1772802626.582164">
         <div class="nav-header">
             <button class="btn-back" onclick="window.history.back()">← Back to Index</button>
             <button id="syncBtn" class="btn-sync" onclick="triggerUpdate()">⚠ Update Available</button>
@@ -78,43 +95,51 @@
             <h1>OK, America?</h1>
             <p>Language: <strong>de</strong> </p>
         </header>
+        
+        
+    <div class="disclaimer-box">
+        <strong>Legal Notice & Fair Use Disclaimer:</strong><br>
+        This dashboard is a personal research and educational project. All audio content and original show metadata are the property of their respective copyright owners. Translations are provided for personal study and accessibility purposes under fair use principles. No commercial use is intended.
+    </div>
+    
+
         <div id="toast" class="toast">✅ Command Courtesied to Clipboard!</div>
     
         <div class="episode-card" id="card-0">
             <span id="status-0" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">March 05, 2026</small>
+            <h2>Trumps Krieg ohne Ziel</h2>
+            <div class="summary">Der US-Präsident findet viele Begründungen für den Krieg im Iran, doch selbst seine Basis beruhigt das nicht. Wird das ein Problem bei den Midterms? Und: Bundeskanzler Friedrich Merz im Oval Office....</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/002ba7b9-a139-4d3d-812f-41d330b0be10/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=002ba7b9-a139-4d3d-812f-41d330b0be10&feed=yPsdBcxP', 'ok-america', '260305', 'Trumps Krieg ohne Ziel', 'de')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/ok-america.260305.html" id="view-0" class="btn btn-view">🌐 View Live</a>
+                <a href="https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/002ba7b9-a139-4d3d-812f-41d330b0be10/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=002ba7b9-a139-4d3d-812f-41d330b0be10&feed=yPsdBcxP" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(0, "https://egilchri.github.io/pod_tran/ok-america.260305.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-1">
+            <span id="status-1" class="status-tag tag-checking">Checking...</span>
             <small style="color:#666; font-weight:bold;">March 01, 2026</small>
             <h2>'Epischer Zorn' und 'Brüllender Löwe' – Trumps nächster Krieg</h2>
             <div class="summary">Bomben auf Teheran, Gegenangriffe vom Iran, Ajatollah Ali Chamenei getötet, Donald Trumps Kriegsziele unklar: Wir diskutieren über den US-israelischen Krieg gegen Iran....</div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/a8e89bbd-a2ff-413e-bc9d-4ddec31dfffa/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=a8e89bbd-a2ff-413e-bc9d-4ddec31dfffa&feed=yPsdBcxP', 'ok-america', '260301', ''Epischer Zorn' und 'Brüllender Löwe' – Trumps nächster Krieg', 'de')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/ok-america.260301.html" id="view-0" class="btn btn-view">🌐 View Live</a>
+                <a href="https://egilchri.github.io/pod_tran/ok-america.260301.html" id="view-1" class="btn btn-view">🌐 View Live</a>
                 <a href="https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/a8e89bbd-a2ff-413e-bc9d-4ddec31dfffa/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=a8e89bbd-a2ff-413e-bc9d-4ddec31dfffa&feed=yPsdBcxP" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-            <script>checkLiveStatus(0, "https://egilchri.github.io/pod_tran/ok-america.260301.mp3");</script>
+            <script>checkLiveStatus(1, "https://egilchri.github.io/pod_tran/ok-america.260301.mp3");</script>
         </div>
-        <div class="episode-card" id="card-1">
-            <span id="status-1" class="status-tag tag-checking">Checking...</span>
+        <div class="episode-card" id="card-2">
+            <span id="status-2" class="status-tag tag-checking">Checking...</span>
             <small style="color:#666; font-weight:bold;">February 26, 2026</small>
             <h2>Lang, länger: Trumps State of the Union</h2>
             <div class="summary">Welche Erkenntnisse lassen sich aus Donald Trumps Rede vor dem Kongress ziehen? Außerdem: das Zollurteil des Supreme Court und seine Folgen sowie die Lage zwischen den USA und dem Iran...</div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/4da6faa3-b000-4f37-a2f5-e090fb431650/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=4da6faa3-b000-4f37-a2f5-e090fb431650&feed=yPsdBcxP', 'ok-america', '260226', 'Lang, länger: Trumps State of the Union', 'de')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/ok-america.260226.html" id="view-1" class="btn btn-view">🌐 View Live</a>
+                <a href="https://egilchri.github.io/pod_tran/ok-america.260226.html" id="view-2" class="btn btn-view">🌐 View Live</a>
                 <a href="https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/4da6faa3-b000-4f37-a2f5-e090fb431650/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=4da6faa3-b000-4f37-a2f5-e090fb431650&feed=yPsdBcxP" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-            <script>checkLiveStatus(1, "https://egilchri.github.io/pod_tran/ok-america.260226.mp3");</script>
-        </div>
-        <div class="episode-card" id="card-2">
-            <span id="status-2" class="status-tag tag-checking">Checking...</span>
-            <small style="color:#666; font-weight:bold;">February 19, 2026</small>
-            <h2>Das System Epstein</h2>
-            <div class="summary">In der Aufarbeitung der Epstein-Files geht es auch um Eliten, Machtmissbrauch, Schweigen. Außerdem: ein Gespräch mit Kaliforniens Gouverneur Gavin Newsom über Donald Trump, die Schwächen der Demokraten und seine Präsidentschaftsambitionen...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/ff3e2f99-ae0e-4b2f-9581-242e74b37375/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=ff3e2f99-ae0e-4b2f-9581-242e74b37375&feed=yPsdBcxP', 'ok-america', '260219', 'Das System Epstein', 'de')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/ok-america.260219.html" id="view-2" class="btn btn-view">🌐 View Live</a>
-                <a href="https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/ff3e2f99-ae0e-4b2f-9581-242e74b37375/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=ff3e2f99-ae0e-4b2f-9581-242e74b37375&feed=yPsdBcxP" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-            <script>checkLiveStatus(2, "https://egilchri.github.io/pod_tran/ok-america.260219.mp3");</script>
+            <script>checkLiveStatus(2, "https://egilchri.github.io/pod_tran/ok-america.260226.mp3");</script>
         </div>
         <div class="episode-card" id="card-3">
             <span id="status-3" class="status-tag tag-checking">Checking...</span>
