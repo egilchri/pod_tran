@@ -3,31 +3,51 @@
     <html lang="es" data-is-override="true" data-rss-url="https://americas.georgetown.edu/series/y-esto-no-es-todo-podcast/feed.rss">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>'Y esto no es todo' - Feed Dashboard</title>
+        
+        <link rel="manifest" href="manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="theme-color" content="#004a99">
+
         <style>
             body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: #f0f2f5; }
             .nav-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
             .btn-back { background: #6c757d; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; border: none; cursor: pointer; }
             .btn-sync { background: #ffc107; color: black; padding: 8px 16px; border-radius: 6px; font-weight: bold; border: none; cursor: pointer; display: none; animation: pulse 2s infinite; }
             @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
-            header { background: #004a99; color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
-            
+            header { background: #004a99; color: white; padding: 25px; border-radius: 12px; margin-bottom: 15px; }
+            .disclaimer-box { background: #e2e8f0; padding: 15px; border-radius: 10px; margin-bottom: 30px; font-size: 0.85em; color: #475569; line-height: 1.4; border-left: 5px solid #94a3b8; }
             .episode-card { background: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 6px solid #ccc; position: relative; }
             .episode-card.is-live { border-left-color: #28a745; }
-            
             .status-tag { position: absolute; top: 15px; right: 20px; font-size: 0.75rem; font-weight: bold; padding: 4px 8px; border-radius: 4px; text-transform: uppercase; }
             .tag-live { background: #d4edda; color: #155724; }
             .tag-pending { background: #fff3cd; color: #856404; }
             .tag-checking { background: #e9ecef; color: #666; }
-            
             .btn-group { display: flex; gap: 8px; margin-top: 15px; flex-wrap: wrap; }
             .btn { padding: 10px 15px; border-radius: 6px; font-weight: bold; text-decoration: none; cursor: pointer; border: none; font-size: 0.85em; }
             .btn-run { background: #ffc107; color: black; }
             .btn-view { background: #28a745; color: white; display: none; }
             .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 15px 30px; border-radius: 50px; display: none; z-index: 1000; }
+            .summary { color: #444; font-size: 0.95em; line-height: 1.4; margin-top: 10px; }
+
+            /* --- MOBILE APP OVERRIDES --- */
+            @media (display-mode: standalone) {
+                .btn-back, .btn-run { display: none !important; }
+                .nav-header { justify-content: flex-end; }
+            }
+            @media (max-width: 600px) {
+                .btn-run { display: none !important; }
+            }
         </style>
         <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('sw.js');
+                });
+            }
+
             function triggerUpdate() {
                 const rssUrl = document.documentElement.getAttribute('data-rss-url');
                 const langCode = 'es';
@@ -45,12 +65,10 @@
                     setTimeout(() => { t.style.display = 'none'; }, 3000);
                 });
             }
-
             async function checkLiveStatus(i, url) {
                 const status = document.getElementById(`status-${i}`);
                 const card = document.getElementById(`card-${i}`);
                 const viewBtn = document.getElementById(`view-${i}`);
-                
                 try {
                     const response = await fetch(url, { method: 'HEAD' });
                     if (response.ok) {
@@ -64,12 +82,11 @@
                     }
                 } catch (e) {
                     status.innerText = "○ Offline";
-                    status.className = "status-tag tag-pending";
                 }
             }
         </script>
     </head>
-    <body data-latest="1772186400.0" data-generated="1772494680.917484">
+    <body data-latest="1772791200.0" data-generated="1772802621.511783">
         <div class="nav-header">
             <button class="btn-back" onclick="window.history.back()">← Back to Index</button>
             <button id="syncBtn" class="btn-sync" onclick="triggerUpdate()">⚠ Update Available</button>
@@ -78,187 +95,195 @@
             <h1>'Y esto no es todo'</h1>
             <p>Language: <strong>es</strong> (Manual Override)</p>
         </header>
+        
+        
+    <div class="disclaimer-box">
+        <strong>Legal Notice & Fair Use Disclaimer:</strong><br>
+        This dashboard is a personal research and educational project. All audio content and original show metadata are the property of their respective copyright owners. Translations are provided for personal study and accessibility purposes under fair use principles. No commercial use is intended.
+    </div>
+    
+
         <div id="toast" class="toast">✅ Command Courtesied to Clipboard!</div>
     
         <div class="episode-card" id="card-0">
             <span id="status-0" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">March 06, 2026</small>
+            <h2>Trump vs. Pedro Sánchez. Elecciones en Colombia. El libro de Juan Gabriel Vásquez</h2>
+            <div class="summary">Hablamos en Madrid con José Manuel Calvo, periodista de 'The Objective'; en Bogotá con Gabriel Cifuentes, columnista de 'El Tiempo', y en la capital española con el escritor Juan Gabriel Vásquez y el ex director de 'El País' Javier Moreno...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4247/030626%20VIERNES_01.mp3', 'y-esto-no-es-to', '260306', 'Trump vs. Pedro Sánchez. Elecciones en Colombia. El libro de Juan Gabriel Vásquez', 'es')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260306.html" id="view-0" class="btn btn-view">🌐 View Live</a>
+                <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4247/030626%20VIERNES_01.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(0, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260306.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-1">
+            <span id="status-1" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">March 05, 2026</small>
+            <h2>Los buques y el Estrecho de Ormuz. La guerra y América Latina. Operativos conjuntos EE. UU. - Ecuador</h2>
+            <div class="summary">Hablamos en la Universidad de Cádiz con el profesor Emilio Rodríguez-Díaz; en Washington con el ex ministro de Hacienda de Colombia Juan Carlos Echeverry, y en Guayaquil con el experto en seguridad Nelson Yepez...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4246/050326%20JUEVES_01.mp3', 'y-esto-no-es-to', '260305', 'Los buques y el Estrecho de Ormuz. La guerra y América Latina. Operativos conjuntos EE. UU. - Ecuador', 'es')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260305.html" id="view-1" class="btn btn-view">🌐 View Live</a>
+                <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4246/050326%20JUEVES_01.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(1, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260305.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-2">
+            <span id="status-2" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">March 04, 2026</small>
+            <h2>EE. UU. y la muerte de Alí Jamenei. Se alejan Kast y Boric. Donald Trump y España</h2>
+            <div class="summary">Hablamos en Ciudad de México con el especialista internacional Fausto Pretelin Muñoz de Cote; en Concepción con la profesora universitaria Paulina Astroza, y en Madrid con la directora de Estrategia Digital de 'Expansión', Amparo Polo...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4245/040326%20MIERCOLES_02.mp3', 'y-esto-no-es-to', '260304', 'EE. UU. y la muerte de Alí Jamenei. Se alejan Kast y Boric. Donald Trump y España', 'es')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260304.html" id="view-2" class="btn btn-view">🌐 View Live</a>
+                <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4245/040326%20MIERCOLES_02.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(2, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260304.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-3">
+            <span id="status-3" class="status-tag tag-checking">Checking...</span>
+            <small style="color:#666; font-weight:bold;">March 03, 2026</small>
+            <h2>Trump y el ataque a Irán. La oposición y el siguiente gobernante iraní. El discurso de Milei</h2>
+            <div class="summary">Hablamos en Washington D.C. con la periodista y analista política Dori Toribio; en Madrid con el profesor de la Universidad de Navarra Javier Gil Guerrero, y en Buenos Aires con la periodista Paz Rodríguez Niell...</div>
+            <div class="btn-group">
+                <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4244/030326%20MARTES_011.mp3', 'y-esto-no-es-to', '260303', 'Trump y el ataque a Irán. La oposición y el siguiente gobernante iraní. El discurso de Milei', 'es')">⚡ Copy Process Command</button>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260303.html" id="view-3" class="btn btn-view">🌐 View Live</a>
+                <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4244/030326%20MARTES_011.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+            </div>
+            <script>checkLiveStatus(3, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260303.mp3");</script>
+        </div>
+        <div class="episode-card" id="card-4">
+            <span id="status-4" class="status-tag tag-checking">Checking...</span>
             <small style="color:#666; font-weight:bold;">February 27, 2026</small>
             <h2>Aranceles, Ecuador y Colombia. El presupuesto de Mamdani. Las elecciones colombianas</h2>
             <div class="summary">Hablamos en Guayaquil con Walter Spurrier, director de 'Análisis semanal'; en Nueva York con el consultor y columnista de 'El País' Juan Esteban Orduz, y en Bogotá con el analista político Camilo Granada...</div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4243/270226%20VIERNES_01.mp3', 'y-esto-no-es-to', '260227', 'Aranceles, Ecuador y Colombia. El presupuesto de Mamdani. Las elecciones colombianas', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260227.html" id="view-0" class="btn btn-view">🌐 View Live</a>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260227.html" id="view-4" class="btn btn-view">🌐 View Live</a>
                 <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4243/270226%20VIERNES_01.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-            <script>checkLiveStatus(0, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260227.mp3");</script>
+            <script>checkLiveStatus(4, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260227.mp3");</script>
         </div>
-        <div class="episode-card" id="card-1">
-            <span id="status-1" class="status-tag tag-checking">Checking...</span>
+        <div class="episode-card" id="card-5">
+            <span id="status-5" class="status-tag tag-checking">Checking...</span>
             <small style="color:#666; font-weight:bold;">February 26, 2026</small>
             <h2>Sheinbaum y la reforma electoral. Los ahorros pensionales en Colombia. El rey Juan Carlos y el 23-F</h2>
             <div class="summary">Hablamos en Ciudad de México con la politóloga Karolina Gilas, profesora de la UNAM; en Bélgica con Kevin Hartmann, profesor de la Universidad de Lovaina, y en Madrid con Álvaro González, periodista de la revista 'Jot-Down'...</div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4242/260226%20JUEVES_02.mp3', 'y-esto-no-es-to', '260226', 'Sheinbaum y la reforma electoral. Los ahorros pensionales en Colombia. El rey Juan Carlos y el 23-F', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260226.html" id="view-1" class="btn btn-view">🌐 View Live</a>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260226.html" id="view-5" class="btn btn-view">🌐 View Live</a>
                 <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4242/260226%20JUEVES_02.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-            <script>checkLiveStatus(1, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260226.mp3");</script>
+            <script>checkLiveStatus(5, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260226.mp3");</script>
         </div>
-        <div class="episode-card" id="card-2">
-            <span id="status-2" class="status-tag tag-checking">Checking...</span>
+        <div class="episode-card" id="card-6">
+            <span id="status-6" class="status-tag tag-checking">Checking...</span>
             <small style="color:#666; font-weight:bold;">February 25, 2026</small>
             <h2>El Discurso del Estado de la Unión. España desclasifica los archivos del 23-F. Los 'therians'</h2>
             <div class="summary">Hablamos en Washington D.C. con la corresponsal Dori Toribio; en Madrid con el historiador Julián Casanova, y en Buenos Aires con la psicóloga Débora Pedace...</div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4241/250226%20MIERCOLES%20FINAL.mp3', 'y-esto-no-es-to', '260225', 'El Discurso del Estado de la Unión. España desclasifica los archivos del 23-F. Los 'therians'', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260225.html" id="view-2" class="btn btn-view">🌐 View Live</a>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260225.html" id="view-6" class="btn btn-view">🌐 View Live</a>
                 <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4241/250226%20MIERCOLES%20FINAL.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-            <script>checkLiveStatus(2, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260225.mp3");</script>
+            <script>checkLiveStatus(6, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260225.mp3");</script>
         </div>
-        <div class="episode-card" id="card-3">
-            <span id="status-3" class="status-tag tag-checking">Checking...</span>
+        <div class="episode-card" id="card-7">
+            <span id="status-7" class="status-tag tag-checking">Checking...</span>
             <small style="color:#666; font-weight:bold;">February 24, 2026</small>
             <h2>México tras la muerte de 'El Mencho'. Trump, la Corte y los aranceles. Willie Colón</h2>
             <div class="summary">Hablamos en Ciudad de México con el analista y columnista Carlos Bravo Regidor; en Washington D.C. con la periodista y corresponsal Dori Toribio, y en Miami con César Miguel Rondón, autor de 'El libro de la salsa'...</div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4240/240226%20MARTES_01.mp3', 'y-esto-no-es-to', '260224', 'México tras la muerte de 'El Mencho'. Trump, la Corte y los aranceles. Willie Colón', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260224.html" id="view-3" class="btn btn-view">🌐 View Live</a>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260224.html" id="view-7" class="btn btn-view">🌐 View Live</a>
                 <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4240/240226%20MARTES_01.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-            <script>checkLiveStatus(3, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260224.mp3");</script>
+            <script>checkLiveStatus(7, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260224.mp3");</script>
         </div>
-        <div class="episode-card" id="card-4">
-            <span id="status-4" class="status-tag tag-checking">Checking...</span>
+        <div class="episode-card" id="card-8">
+            <span id="status-8" class="status-tag tag-checking">Checking...</span>
             <small style="color:#666; font-weight:bold;">February 20, 2026</small>
             <h2>El pasado de José María Balcázar. Andrew Mountbatten-Windsor. La notoriedad de James Talarico</h2>
             <div class="summary">Hablamos en Lima con Paola Ugaz, corresponsal del 'ABC' de Madrid; en Londres con Celia Maza, corresponsal de 'El Confidencial', 'La Razón' y 'Onda Cero', y en Washington con María Molina, corresponsal de N+ Univisión y La FM de RCN...</div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4239/200226%20VIERNES_01.mp3', 'y-esto-no-es-to', '260220', 'El pasado de José María Balcázar. Andrew Mountbatten-Windsor. La notoriedad de James Talarico', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260220.html" id="view-4" class="btn btn-view">🌐 View Live</a>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260220.html" id="view-8" class="btn btn-view">🌐 View Live</a>
                 <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4239/200226%20VIERNES_01.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-            <script>checkLiveStatus(4, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260220.mp3");</script>
+            <script>checkLiveStatus(8, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260220.mp3");</script>
         </div>
-        <div class="episode-card" id="card-5">
-            <span id="status-5" class="status-tag tag-checking">Checking...</span>
+        <div class="episode-card" id="card-9">
+            <span id="status-9" class="status-tag tag-checking">Checking...</span>
             <small style="color:#666; font-weight:bold;">February 19, 2026</small>
             <h2>Por qué va bien la economía peruana. Isabel Díaz Ayuso y EE. UU. El racismo y Vinicius</h2>
             <div class="summary">Hablamos en Lima con el ex ministro de Finanzas y presidente del Consejo Privado de Competitividad. David Tuesta; en Madrid con Juan Diego Quesada, periodista de 'El País', y en la misma ciudad con Luis Nieto, director adjunto del 'Diario As'...</div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4238/190226%20JUEVES_01.mp3', 'y-esto-no-es-to', '260219', 'Por qué va bien la economía peruana. Isabel Díaz Ayuso y EE. UU. El racismo y Vinicius', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260219.html" id="view-5" class="btn btn-view">🌐 View Live</a>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260219.html" id="view-9" class="btn btn-view">🌐 View Live</a>
                 <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4238/190226%20JUEVES_01.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-            <script>checkLiveStatus(5, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260219.mp3");</script>
+            <script>checkLiveStatus(9, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260219.mp3");</script>
         </div>
-        <div class="episode-card" id="card-6">
-            <span id="status-6" class="status-tag tag-checking">Checking...</span>
+        <div class="episode-card" id="card-10">
+            <span id="status-10" class="status-tag tag-checking">Checking...</span>
             <small style="color:#666; font-weight:bold;">February 18, 2026</small>
             <h2>Destituido José Jerí en el Perú. La muerte de Kevin en Colombia. El 'shutdown' en EE. UU.</h2>
             <div class="summary">Hablamos en Lima con el politólogo peruano Alberto Vergara; en Popayán con Manuel Ordóñez Bastidas de la Liga Colombiana de Hemofílicos, y en Washington con la periodista y analista política Dori Toribio...</div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4236/180226%20MIERCOLES_01.mp3', 'y-esto-no-es-to', '260218', 'Destituido José Jerí en el Perú. La muerte de Kevin en Colombia. El 'shutdown' en EE. UU.', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260218.html" id="view-6" class="btn btn-view">🌐 View Live</a>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260218.html" id="view-10" class="btn btn-view">🌐 View Live</a>
                 <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4236/180226%20MIERCOLES_01.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-            <script>checkLiveStatus(6, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260218.mp3");</script>
+            <script>checkLiveStatus(10, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260218.mp3");</script>
         </div>
-        <div class="episode-card" id="card-7">
-            <span id="status-7" class="status-tag tag-checking">Checking...</span>
+        <div class="episode-card" id="card-11">
+            <span id="status-11" class="status-tag tag-checking">Checking...</span>
             <small style="color:#666; font-weight:bold;">February 17, 2026</small>
             <h2>El caso de Marx Arriaga en México. Marco Rubio en Múnich. Comisión para la pederastia en Bolivia</h2>
             <div class="summary">Hablamos en Ciudad de México con Karolina Gilas, profesora de la UNAM; en la misma ciudad con el especialista en asuntos internacionales Fausto Pretelin Muñoz de Cote, y en Santa Cruz de la Sierra con Juan Manuel Ijurko, editor web de 'El Deber'...</div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4235/170226%20MARTES_a01.mp3', 'y-esto-no-es-to', '260217', 'El caso de Marx Arriaga en México. Marco Rubio en Múnich. Comisión para la pederastia en Bolivia', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260217.html" id="view-7" class="btn btn-view">🌐 View Live</a>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260217.html" id="view-11" class="btn btn-view">🌐 View Live</a>
                 <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4235/170226%20MARTES_a01.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-            <script>checkLiveStatus(7, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260217.mp3");</script>
+            <script>checkLiveStatus(11, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260217.mp3");</script>
         </div>
-        <div class="episode-card" id="card-8">
-            <span id="status-8" class="status-tag tag-checking">Checking...</span>
+        <div class="episode-card" id="card-12">
+            <span id="status-12" class="status-tag tag-checking">Checking...</span>
             <small style="color:#666; font-weight:bold;">February 13, 2026</small>
             <h2>Avanza la reforma laboral de Milei. Las cifras de Sheinbaum. Una exposición de fotos en Miami</h2>
             <div class="summary">Hablamos en Buenos Aires con la periodista Paz Rodríguez Niell; en Ciudad de México con el periodista Carlos Loret de Mola, y en Miami con el fotógrafo Carlos Muñoz...</div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4234/130226%20VIERNES_02.mp3', 'y-esto-no-es-to', '260213', 'Avanza la reforma laboral de Milei. Las cifras de Sheinbaum. Una exposición de fotos en Miami', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260213.html" id="view-8" class="btn btn-view">🌐 View Live</a>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260213.html" id="view-12" class="btn btn-view">🌐 View Live</a>
                 <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4234/130226%20VIERNES_02.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-            <script>checkLiveStatus(8, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260213.mp3");</script>
+            <script>checkLiveStatus(12, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260213.mp3");</script>
         </div>
-        <div class="episode-card" id="card-9">
-            <span id="status-9" class="status-tag tag-checking">Checking...</span>
+        <div class="episode-card" id="card-13">
+            <span id="status-13" class="status-tag tag-checking">Checking...</span>
             <small style="color:#666; font-weight:bold;">February 12, 2026</small>
             <h2>Pam Bondi en la Cámara de EE. UU. El alcalde de Guayaquil. Un libro sobre el origen del cristianismo</h2>
             <div class="summary">Hablamos en Washington con la periodista y analista política Dori Toribio; en Guayaquil con la periodista María Mercedes Cuesta, y en Bogotá con el escritor Juan Esteban Constaín...</div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4233/120226%20JUEVES_01.mp3', 'y-esto-no-es-to', '260212', 'Pam Bondi en la Cámara de EE. UU. El alcalde de Guayaquil. Un libro sobre el origen del cristianismo', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260212.html" id="view-9" class="btn btn-view">🌐 View Live</a>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260212.html" id="view-13" class="btn btn-view">🌐 View Live</a>
                 <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4233/120226%20JUEVES_01.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-            <script>checkLiveStatus(9, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260212.mp3");</script>
+            <script>checkLiveStatus(13, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260212.mp3");</script>
         </div>
-        <div class="episode-card" id="card-10">
-            <span id="status-10" class="status-tag tag-checking">Checking...</span>
+        <div class="episode-card" id="card-14">
+            <span id="status-14" class="status-tag tag-checking">Checking...</span>
             <small style="color:#666; font-weight:bold;">February 11, 2026</small>
             <h2>La crisis económica en Cuba. 'The New York Times' y el cannabis. Un libro sobre Argentina</h2>
             <div class="summary">Hablamos en Barcelona con el periodista cubano Abraham Jiménez Enoa; en Washington con la corresponsal de N+ Univisión y La FM de RCN, María Molina, y en Madrid con Carlos Malamud del Real Instituto Elcano...</div>
             <div class="btn-group">
                 <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4232/110226%20MIERCOLES_01.mp3', 'y-esto-no-es-to', '260211', 'La crisis económica en Cuba. 'The New York Times' y el cannabis. Un libro sobre Argentina', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260211.html" id="view-10" class="btn btn-view">🌐 View Live</a>
+                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260211.html" id="view-14" class="btn btn-view">🌐 View Live</a>
                 <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4232/110226%20MIERCOLES_01.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
             </div>
-            <script>checkLiveStatus(10, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260211.mp3");</script>
-        </div>
-        <div class="episode-card" id="card-11">
-            <span id="status-11" class="status-tag tag-checking">Checking...</span>
-            <small style="color:#666; font-weight:bold;">February 10, 2026</small>
-            <h2>Bad Bunny en el Super Bowl. Las elecciones en Aragón. El círculo de poder en Nicaragua</h2>
-            <div class="summary">Hablamos en San Juan con la periodista Laura Pérez del pódcast La Brega; en Madrid con la presentadora del pódcast 'Pausa', Marta García Aller, y también con el director de 'Confidencial', el periodista Carlos Fernando Chamorro...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4230/100226%20MARTES%20v-02.mp3', 'y-esto-no-es-to', '260210', 'Bad Bunny en el Super Bowl. Las elecciones en Aragón. El círculo de poder en Nicaragua', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260210.html" id="view-11" class="btn btn-view">🌐 View Live</a>
-                <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4230/100226%20MARTES%20v-02.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-            <script>checkLiveStatus(11, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260210.mp3");</script>
-        </div>
-        <div class="episode-card" id="card-12">
-            <span id="status-12" class="status-tag tag-checking">Checking...</span>
-            <small style="color:#666; font-weight:bold;">February 06, 2026</small>
-            <h2>Delcy Rodríguez y Álex Saab. La izquierda y elecciones en Colombia. El sable corvo de San Martín</h2>
-            <div class="summary">Hablamos en Bogotá con Roberto Deniz, periodista de Armando.Info; en la misma ciudad con Tatiana Dangond, abogada y columnista, y en Buenos Aires con Beatriz Bragoni, autora de una biografía de José de San Martín...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4229/060226%20VIERNES_01.mp3', 'y-esto-no-es-to', '260206', 'Delcy Rodríguez y Álex Saab. La izquierda y elecciones en Colombia. El sable corvo de San Martín', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260206.html" id="view-12" class="btn btn-view">🌐 View Live</a>
-                <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4229/060226%20VIERNES_01.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-            <script>checkLiveStatus(12, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260206.mp3");</script>
-        </div>
-        <div class="episode-card" id="card-13">
-            <span id="status-13" class="status-tag tag-checking">Checking...</span>
-            <small style="color:#666; font-weight:bold;">February 05, 2026</small>
-            <h2>¿Extraordinaria la reunión Trump-Petro? Líos para Peter Mandelson. Despidos en 'The Washington Post'</h2>
-            <div class="summary">Hablamos en Bogotá con Michael Shifter, profesor de la Universidad de Georgetown; en Londres con la periodista María José Restrepo, y en Boston con Marty Baron, ex director de 'The Washington Post'...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4228/050226%20JUEVES%20v02.mp3', 'y-esto-no-es-to', '260205', '¿Extraordinaria la reunión Trump-Petro? Líos para Peter Mandelson. Despidos en 'The Washington Post'', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260205.html" id="view-13" class="btn btn-view">🌐 View Live</a>
-                <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4228/050226%20JUEVES%20v02.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-            <script>checkLiveStatus(13, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260205.mp3");</script>
-        </div>
-        <div class="episode-card" id="card-14">
-            <span id="status-14" class="status-tag tag-checking">Checking...</span>
-            <small style="color:#666; font-weight:bold;">February 04, 2026</small>
-            <h2>La reunión Trump-Petro. Venezuela y la reforma al sector petrolero. La clave del éxito de Bad Bunny</h2>
-            <div class="summary">Hablamos en Washington D.C. con la periodista Dori Toribio; en Houston con el director del Programa de Energía de América Latina del Baker Institute, Francisco Monaldi, y en San Juan con Pedro Reina, profesor de la Universidad de Puerto Rico...</div>
-            <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4221/040226%20MIERCOLES%20v02.mp3', 'y-esto-no-es-to', '260204', 'La reunión Trump-Petro. Venezuela y la reforma al sector petrolero. La clave del éxito de Bad Bunny', 'es')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/y-esto-no-es-to.260204.html" id="view-14" class="btn btn-view">🌐 View Live</a>
-                <a href="https://s3.amazonaws.com/global-db-public/global-db-public/podcast/audio/4221/040226%20MIERCOLES%20v02.mp3" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
-            </div>
-            <script>checkLiveStatus(14, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260204.mp3");</script>
+            <script>checkLiveStatus(14, "https://egilchri.github.io/pod_tran/y-esto-no-es-to.260211.mp3");</script>
         </div>
         <script>
             window.addEventListener('DOMContentLoaded', () => {
