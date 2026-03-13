@@ -1,0 +1,7606 @@
+{
+  "ADJ": [
+    {
+      "word": "afrikansk",
+      "translation": "African"
+    },
+    {
+      "word": "allierade",
+      "translation": "allies"
+    },
+    {
+      "word": "allihop",
+      "translation": "all of them"
+    },
+    {
+      "word": "allvarliga",
+      "translation": "serious"
+    },
+    {
+      "word": "alternativt",
+      "translation": "alternatively"
+    },
+    {
+      "word": "america",
+      "translation": "america"
+    },
+    {
+      "word": "amerikansk",
+      "translation": "American"
+    },
+    {
+      "word": "amerikanska",
+      "translation": "American"
+    },
+    {
+      "word": "amerikanskt",
+      "translation": "American"
+    },
+    {
+      "word": "andra",
+      "translation": "others"
+    },
+    {
+      "word": "annan",
+      "translation": "other"
+    },
+    {
+      "word": "annat",
+      "translation": "other"
+    },
+    {
+      "word": "anrikade",
+      "translation": "enriched"
+    },
+    {
+      "word": "använde",
+      "translation": "used"
+    },
+    {
+      "word": "apollos",
+      "translation": "Apollo"
+    },
+    {
+      "word": "avancerade",
+      "translation": "advanced"
+    },
+    {
+      "word": "balistiska",
+      "translation": "ballistic"
+    },
+    {
+      "word": "baserad",
+      "translation": "based"
+    },
+    {
+      "word": "beroende",
+      "translation": "dependent"
+    },
+    {
+      "word": "besatt",
+      "translation": "possessed"
+    },
+    {
+      "word": "bilberoende",
+      "translation": "car addiction"
+    },
+    {
+      "word": "billiga",
+      "translation": "cheap"
+    },
+    {
+      "word": "billigare",
+      "translation": "cheaper"
+    },
+    {
+      "word": "blandade",
+      "translation": "mixed"
+    },
+    {
+      "word": "blodtörstig",
+      "translation": "bloodthirsty"
+    },
+    {
+      "word": "bra",
+      "translation": "good"
+    },
+    {
+      "word": "båda",
+      "translation": "both"
+    },
+    {
+      "word": "chockade",
+      "translation": "shocked"
+    },
+    {
+      "word": "chockhjädat",
+      "translation": "shocked"
+    },
+    {
+      "word": "citat",
+      "translation": "quote"
+    },
+    {
+      "word": "civila",
+      "translation": "civilians"
+    },
+    {
+      "word": "demokratiska",
+      "translation": "democratic"
+    },
+    {
+      "word": "detaljerad",
+      "translation": "detailed"
+    },
+    {
+      "word": "direkt",
+      "translation": "directly"
+    },
+    {
+      "word": "donald",
+      "translation": "donald"
+    },
+    {
+      "word": "dramatiska",
+      "translation": "dramatic"
+    },
+    {
+      "word": "drastiska",
+      "translation": "drastic"
+    },
+    {
+      "word": "dubbla",
+      "translation": "double"
+    },
+    {
+      "word": "dyra",
+      "translation": "expensive"
+    },
+    {
+      "word": "dyrare",
+      "translation": "more expensive"
+    },
+    {
+      "word": "dyrt",
+      "translation": "expensive"
+    },
+    {
+      "word": "dåligt",
+      "translation": "bad"
+    },
+    {
+      "word": "effektivt",
+      "translation": "effectively"
+    },
+    {
+      "word": "egen",
+      "translation": "own"
+    },
+    {
+      "word": "egna",
+      "translation": "own"
+    },
+    {
+      "word": "ekonomisk",
+      "translation": "economic"
+    },
+    {
+      "word": "ekonomiska",
+      "translation": "economic"
+    },
+    {
+      "word": "ena",
+      "translation": "one"
+    },
+    {
+      "word": "enda",
+      "translation": "single"
+    },
+    {
+      "word": "enorma",
+      "translation": "enormous"
+    },
+    {
+      "word": "entusiastisk",
+      "translation": "enthusiastic"
+    },
+    {
+      "word": "exponerade",
+      "translation": "exposed"
+    },
+    {
+      "word": "extra",
+      "translation": "extra"
+    },
+    {
+      "word": "fantastisk",
+      "translation": "fantastic"
+    },
+    {
+      "word": "farlig",
+      "translation": "dangerous"
+    },
+    {
+      "word": "fed",
+      "translation": "fed"
+    },
+    {
+      "word": "fin",
+      "translation": "fine"
+    },
+    {
+      "word": "fint-",
+      "translation": "nice-"
+    },
+    {
+      "word": "fisklig",
+      "translation": "fishy"
+    },
+    {
+      "word": "flera",
+      "translation": "several"
+    },
+    {
+      "word": "flest",
+      "translation": "most"
+    },
+    {
+      "word": "flygs",
+      "translation": "is flown"
+    },
+    {
+      "word": "fortsatt",
+      "translation": "continued"
+    },
+    {
+      "word": "fossila",
+      "translation": "fossil"
+    },
+    {
+      "word": "framträdande",
+      "translation": "prominence"
+    },
+    {
+      "word": "främsta",
+      "translation": "foremost"
+    },
+    {
+      "word": "följtde",
+      "translation": "followed"
+    },
+    {
+      "word": "förra",
+      "translation": "last"
+    },
+    {
+      "word": "försiktigt",
+      "translation": "carefully"
+    },
+    {
+      "word": "första",
+      "translation": "first"
+    },
+    {
+      "word": "gemensam",
+      "translation": "common"
+    },
+    {
+      "word": "giftig",
+      "translation": "poisonous"
+    },
+    {
+      "word": "ginnar",
+      "translation": "gives"
+    },
+    {
+      "word": "grann",
+      "translation": "neighbor"
+    },
+    {
+      "word": "grön",
+      "translation": "green"
+    },
+    {
+      "word": "halv",
+      "translation": "half"
+    },
+    {
+      "word": "handlade",
+      "translation": "shopped"
+    },
+    {
+      "word": "hej",
+      "translation": "hello"
+    },
+    {
+      "word": "hel",
+      "translation": "whole"
+    },
+    {
+      "word": "hela",
+      "translation": "whole"
+    },
+    {
+      "word": "humanitärt",
+      "translation": "humanitarian"
+    },
+    {
+      "word": "här-",
+      "translation": "here-"
+    },
+    {
+      "word": "hårda",
+      "translation": "hard"
+    },
+    {
+      "word": "hög",
+      "translation": "high"
+    },
+    {
+      "word": "höga",
+      "translation": "high"
+    },
+    {
+      "word": "högre",
+      "translation": "higher"
+    },
+    {
+      "word": "högt",
+      "translation": "loud"
+    },
+    {
+      "word": "ifrågasatta",
+      "translation": "questioned"
+    },
+    {
+      "word": "ineffektivt",
+      "translation": "ineffective"
+    },
+    {
+      "word": "inre",
+      "translation": "inner"
+    },
+    {
+      "word": "inrikes",
+      "translation": "domestic"
+    },
+    {
+      "word": "internationell",
+      "translation": "international"
+    },
+    {
+      "word": "internationellt",
+      "translation": "international"
+    },
+    {
+      "word": "intressant",
+      "translation": "interesting"
+    },
+    {
+      "word": "introcklad",
+      "translation": "locked in"
+    },
+    {
+      "word": "iranska",
+      "translation": "Iranian"
+    },
+    {
+      "word": "jobbigt",
+      "translation": "troublesome"
+    },
+    {
+      "word": "jordiska",
+      "translation": "earthly"
+    },
+    {
+      "word": "jämfört",
+      "translation": "compared"
+    },
+    {
+      "word": "jättebra",
+      "translation": "great"
+    },
+    {
+      "word": "jättestor",
+      "translation": "huge"
+    },
+    {
+      "word": "jättesvårt",
+      "translation": "very difficult"
+    },
+    {
+      "word": "kallade",
+      "translation": "called"
+    },
+    {
+      "word": "kamala",
+      "translation": "horrible"
+    },
+    {
+      "word": "klar",
+      "translation": "ready"
+    },
+    {
+      "word": "klart",
+      "translation": "done"
+    },
+    {
+      "word": "klassisk",
+      "translation": "classic"
+    },
+    {
+      "word": "knepigt",
+      "translation": "tricky"
+    },
+    {
+      "word": "kompakt",
+      "translation": "compact"
+    },
+    {
+      "word": "konservativa",
+      "translation": "conservative"
+    },
+    {
+      "word": "konsistent",
+      "translation": "consistent"
+    },
+    {
+      "word": "kort",
+      "translation": "cards"
+    },
+    {
+      "word": "kostamt",
+      "translation": "customs"
+    },
+    {
+      "word": "kostsamt",
+      "translation": "costly"
+    },
+    {
+      "word": "kranekriget",
+      "translation": "the crane war"
+    },
+    {
+      "word": "kriga",
+      "translation": "war"
+    },
+    {
+      "word": "kritisk",
+      "translation": "critical"
+    },
+    {
+      "word": "kritiska",
+      "translation": "critical"
+    },
+    {
+      "word": "kronisk",
+      "translation": "chronic"
+    },
+    {
+      "word": "kvalificerade",
+      "translation": "qualified"
+    },
+    {
+      "word": "kännbara",
+      "translation": "perceptible"
+    },
+    {
+      "word": "kännbart",
+      "translation": "perceptible"
+    },
+    {
+      "word": "libertarianiska",
+      "translation": "libertarian"
+    },
+    {
+      "word": "lilla",
+      "translation": "small"
+    },
+    {
+      "word": "lindsey",
+      "translation": "lindsey"
+    },
+    {
+      "word": "lite",
+      "translation": "little"
+    },
+    {
+      "word": "lojal",
+      "translation": "loyal"
+    },
+    {
+      "word": "lovande",
+      "translation": "promising"
+    },
+    {
+      "word": "lägre",
+      "translation": "lower"
+    },
+    {
+      "word": "längre",
+      "translation": "longer"
+    },
+    {
+      "word": "lättare",
+      "translation": "easier"
+    },
+    {
+      "word": "låga",
+      "translation": "low"
+    },
+    {
+      "word": "lågt",
+      "translation": "low"
+    },
+    {
+      "word": "lånade",
+      "translation": "borrowed"
+    },
+    {
+      "word": "lång",
+      "translation": "long"
+    },
+    {
+      "word": "lördag",
+      "translation": "Saturday"
+    },
+    {
+      "word": "manipulerande",
+      "translation": "manipulative"
+    },
+    {
+      "word": "message",
+      "translation": "messages"
+    },
+    {
+      "word": "mesta",
+      "translation": "most"
+    },
+    {
+      "word": "migrande",
+      "translation": "migrating"
+    },
+    {
+      "word": "milda",
+      "translation": "gentle"
+    },
+    {
+      "word": "mildt",
+      "translation": "mildly"
+    },
+    {
+      "word": "militär",
+      "translation": "military"
+    },
+    {
+      "word": "militära",
+      "translation": "military"
+    },
+    {
+      "word": "militärt",
+      "translation": "military"
+    },
+    {
+      "word": "mindre",
+      "translation": "less"
+    },
+    {
+      "word": "missnöjdamaga",
+      "translation": "unhappy stomach"
+    },
+    {
+      "word": "mycket",
+      "translation": "a lot"
+    },
+    {
+      "word": "mätbar",
+      "translation": "measurable"
+    },
+    {
+      "word": "många",
+      "translation": "many"
+    },
+    {
+      "word": "mörka",
+      "translation": "dark"
+    },
+    {
+      "word": "nationellt",
+      "translation": "nationally"
+    },
+    {
+      "word": "norra",
+      "translation": "north"
+    },
+    {
+      "word": "nu-",
+      "translation": "now-"
+    },
+    {
+      "word": "ny",
+      "translation": "new"
+    },
+    {
+      "word": "nya",
+      "translation": "new"
+    },
+    {
+      "word": "nytt",
+      "translation": "new"
+    },
+    {
+      "word": "nästa",
+      "translation": "the next"
+    },
+    {
+      "word": "nöjda",
+      "translation": "satisfied"
+    },
+    {
+      "word": "oberoende",
+      "translation": "independent"
+    },
+    {
+      "word": "offentlig",
+      "translation": "public"
+    },
+    {
+      "word": "olika",
+      "translation": "different"
+    },
+    {
+      "word": "oljeproducerande",
+      "translation": "oil producing"
+    },
+    {
+      "word": "oljereserver",
+      "translation": "oil reserves"
+    },
+    {
+      "word": "oroad",
+      "translation": "concerned"
+    },
+    {
+      "word": "orolig",
+      "translation": "worried"
+    },
+    {
+      "word": "oroliga",
+      "translation": "worried"
+    },
+    {
+      "word": "osanolikt",
+      "translation": "unlikely"
+    },
+    {
+      "word": "otrolig",
+      "translation": "incredible"
+    },
+    {
+      "word": "otydligt",
+      "translation": "unclear"
+    },
+    {
+      "word": "pandemin",
+      "translation": "the pandemic"
+    },
+    {
+      "word": "pekat",
+      "translation": "pointed"
+    },
+    {
+      "word": "persiska",
+      "translation": "Persian"
+    },
+    {
+      "word": "personlig",
+      "translation": "personal"
+    },
+    {
+      "word": "personligt",
+      "translation": "personal"
+    },
+    {
+      "word": "pikade",
+      "translation": "pecked"
+    },
+    {
+      "word": "politisk",
+      "translation": "political"
+    },
+    {
+      "word": "politiska",
+      "translation": "political"
+    },
+    {
+      "word": "populär",
+      "translation": "popular"
+    },
+    {
+      "word": "pratat",
+      "translation": "talked"
+    },
+    {
+      "word": "påtagligt",
+      "translation": "tangible"
+    },
+    {
+      "word": "radio-",
+      "translation": "radio"
+    },
+    {
+      "word": "rasade",
+      "translation": "raged"
+    },
+    {
+      "word": "redovisade",
+      "translation": "reported"
+    },
+    {
+      "word": "republikansk",
+      "translation": "Republican"
+    },
+    {
+      "word": "republikanska",
+      "translation": "Republican"
+    },
+    {
+      "word": "republikant",
+      "translation": "republican"
+    },
+    {
+      "word": "resonerat",
+      "translation": "reasoned"
+    },
+    {
+      "word": "respekterade",
+      "translation": "respected"
+    },
+    {
+      "word": "rig",
+      "translation": "rig"
+    },
+    {
+      "word": "riktig",
+      "translation": "correct"
+    },
+    {
+      "word": "rädd",
+      "translation": "afraid"
+    },
+    {
+      "word": "sagt",
+      "translation": "said"
+    },
+    {
+      "word": "sara",
+      "translation": "sarah"
+    },
+    {
+      "word": "sean",
+      "translation": "Sean"
+    },
+    {
+      "word": "sen",
+      "translation": "since"
+    },
+    {
+      "word": "senaste",
+      "translation": "latest"
+    },
+    {
+      "word": "sett",
+      "translation": "seen"
+    },
+    {
+      "word": "sjuk",
+      "translation": "sick"
+    },
+    {
+      "word": "själva",
+      "translation": "themselves"
+    },
+    {
+      "word": "självförsörjande",
+      "translation": "self-sufficient"
+    },
+    {
+      "word": "skeptisk",
+      "translation": "skeptical"
+    },
+    {
+      "word": "skoningslösa",
+      "translation": "merciless"
+    },
+    {
+      "word": "slaviskt",
+      "translation": "Slavic"
+    },
+    {
+      "word": "slut",
+      "translation": "end"
+    },
+    {
+      "word": "slutande",
+      "translation": "closing"
+    },
+    {
+      "word": "smart",
+      "translation": "smart"
+    },
+    {
+      "word": "smärtåliga",
+      "translation": "pain tolerant"
+    },
+    {
+      "word": "små",
+      "translation": "small"
+    },
+    {
+      "word": "sociala",
+      "translation": "social"
+    },
+    {
+      "word": "soffan",
+      "translation": "the sofa"
+    },
+    {
+      "word": "sovmorgon",
+      "translation": "sleep morning"
+    },
+    {
+      "word": "specifikt",
+      "translation": "specifically"
+    },
+    {
+      "word": "stark",
+      "translation": "strong"
+    },
+    {
+      "word": "starka",
+      "translation": "strong"
+    },
+    {
+      "word": "startade",
+      "translation": "started"
+    },
+    {
+      "word": "stiga",
+      "translation": "rise"
+    },
+    {
+      "word": "stor",
+      "translation": "large"
+    },
+    {
+      "word": "stora",
+      "translation": "large"
+    },
+    {
+      "word": "stort",
+      "translation": "large"
+    },
+    {
+      "word": "ständiga",
+      "translation": "constant"
+    },
+    {
+      "word": "större",
+      "translation": "bigger"
+    },
+    {
+      "word": "största",
+      "translation": "largest"
+    },
+    {
+      "word": "svenska",
+      "translation": "Swedish"
+    },
+    {
+      "word": "svettigt",
+      "translation": "sweaty"
+    },
+    {
+      "word": "svåra",
+      "translation": "difficult"
+    },
+    {
+      "word": "svårt",
+      "translation": "difficult"
+    },
+    {
+      "word": "sån",
+      "translation": "like that"
+    },
+    {
+      "word": "sånt",
+      "translation": "that sort of thing"
+    },
+    {
+      "word": "tillfälliga",
+      "translation": "temporary"
+    },
+    {
+      "word": "tillfälligt",
+      "translation": "temporary"
+    },
+    {
+      "word": "tillkomma",
+      "translation": "to be added"
+    },
+    {
+      "word": "tolka",
+      "translation": "interpret"
+    },
+    {
+      "word": "tongivande",
+      "translation": "setting the tone"
+    },
+    {
+      "word": "troliga",
+      "translation": "probable"
+    },
+    {
+      "word": "trumpad",
+      "translation": "trumped up"
+    },
+    {
+      "word": "tydlig",
+      "translation": "clear"
+    },
+    {
+      "word": "tydligt",
+      "translation": "clearly"
+    },
+    {
+      "word": "ukrania",
+      "translation": "Ukraine"
+    },
+    {
+      "word": "unprovökt",
+      "translation": "untested"
+    },
+    {
+      "word": "uppenbart",
+      "translation": "obvious"
+    },
+    {
+      "word": "uppnågade",
+      "translation": "achieved"
+    },
+    {
+      "word": "usa's",
+      "translation": "usa's"
+    },
+    {
+      "word": "usa-s",
+      "translation": "usa-s"
+    },
+    {
+      "word": "usas",
+      "translation": "usa"
+    },
+    {
+      "word": "utländsk",
+      "translation": "foreign"
+    },
+    {
+      "word": "utländska",
+      "translation": "foreign"
+    },
+    {
+      "word": "utvalda",
+      "translation": "selected"
+    },
+    {
+      "word": "vance-",
+      "translation": "vance-"
+    },
+    {
+      "word": "vann",
+      "translation": "won"
+    },
+    {
+      "word": "varierat",
+      "translation": "varied"
+    },
+    {
+      "word": "verkliga",
+      "translation": "real"
+    },
+    {
+      "word": "vikande",
+      "translation": "receding"
+    },
+    {
+      "word": "viktig",
+      "translation": "important"
+    },
+    {
+      "word": "viktigaste",
+      "translation": "most important"
+    },
+    {
+      "word": "viktigt",
+      "translation": "important"
+    },
+    {
+      "word": "viss",
+      "translation": "certain"
+    },
+    {
+      "word": "vissa",
+      "translation": "some"
+    },
+    {
+      "word": "vita",
+      "translation": "white"
+    },
+    {
+      "word": "väldigt",
+      "translation": "very"
+    },
+    {
+      "word": "väljena",
+      "translation": "choose"
+    },
+    {
+      "word": "välkomna",
+      "translation": "welcome"
+    },
+    {
+      "word": "värre",
+      "translation": "worse"
+    },
+    {
+      "word": "wingtip",
+      "translation": "wing tip"
+    },
+    {
+      "word": "ytterligare",
+      "translation": "further"
+    },
+    {
+      "word": "älskade",
+      "translation": "beloved"
+    },
+    {
+      "word": "är-",
+      "translation": "is-"
+    },
+    {
+      "word": "öppen",
+      "translation": "open"
+    },
+    {
+      "word": "öppna",
+      "translation": "open"
+    },
+    {
+      "word": "övrigt",
+      "translation": "other"
+    }
+  ],
+  "ADP": [
+    {
+      "word": "av",
+      "translation": "off"
+    },
+    {
+      "word": "bakom",
+      "translation": "behind"
+    },
+    {
+      "word": "bland",
+      "translation": "among"
+    },
+    {
+      "word": "efter",
+      "translation": "after"
+    },
+    {
+      "word": "emot",
+      "translation": "against"
+    },
+    {
+      "word": "enligt",
+      "translation": "according to"
+    },
+    {
+      "word": "for",
+      "translation": "for"
+    },
+    {
+      "word": "framför",
+      "translation": "in front"
+    },
+    {
+      "word": "från",
+      "translation": "from"
+    },
+    {
+      "word": "för",
+      "translation": "for"
+    },
+    {
+      "word": "förutom",
+      "translation": "except"
+    },
+    {
+      "word": "genom",
+      "translation": "through"
+    },
+    {
+      "word": "hos",
+      "translation": "at"
+    },
+    {
+      "word": "i",
+      "translation": "i"
+    },
+    {
+      "word": "ifrån",
+      "translation": "from"
+    },
+    {
+      "word": "inom",
+      "translation": "within"
+    },
+    {
+      "word": "kring",
+      "translation": "around"
+    },
+    {
+      "word": "med",
+      "translation": "with"
+    },
+    {
+      "word": "mellan",
+      "translation": "between"
+    },
+    {
+      "word": "mot",
+      "translation": "against"
+    },
+    {
+      "word": "nära",
+      "translation": "near"
+    },
+    {
+      "word": "nån",
+      "translation": "somebody"
+    },
+    {
+      "word": "oavsett",
+      "translation": "regardless"
+    },
+    {
+      "word": "of",
+      "translation": "of"
+    },
+    {
+      "word": "om",
+      "translation": "if"
+    },
+    {
+      "word": "per",
+      "translation": "per"
+    },
+    {
+      "word": "på",
+      "translation": "on"
+    },
+    {
+      "word": "runt",
+      "translation": "around"
+    },
+    {
+      "word": "som",
+      "translation": "which"
+    },
+    {
+      "word": "till",
+      "translation": "to"
+    },
+    {
+      "word": "too",
+      "translation": "too"
+    },
+    {
+      "word": "trots",
+      "translation": "despite"
+    },
+    {
+      "word": "under",
+      "translation": "under"
+    },
+    {
+      "word": "ur",
+      "translation": "out"
+    },
+    {
+      "word": "utan",
+      "translation": "without"
+    },
+    {
+      "word": "vid",
+      "translation": "at"
+    },
+    {
+      "word": "we",
+      "translation": "we"
+    },
+    {
+      "word": "will",
+      "translation": "will"
+    },
+    {
+      "word": "än",
+      "translation": "than"
+    },
+    {
+      "word": "över",
+      "translation": "over"
+    }
+  ],
+  "ADV": [
+    {
+      "word": "a",
+      "translation": "a"
+    },
+    {
+      "word": "absolut",
+      "translation": "absolutely"
+    },
+    {
+      "word": "aldrig",
+      "translation": "never"
+    },
+    {
+      "word": "alldeles",
+      "translation": "absolutely"
+    },
+    {
+      "word": "alls",
+      "translation": "at all"
+    },
+    {
+      "word": "allt",
+      "translation": "everything"
+    },
+    {
+      "word": "alltid",
+      "translation": "always"
+    },
+    {
+      "word": "alltså",
+      "translation": "thus"
+    },
+    {
+      "word": "amerikans",
+      "translation": "American's"
+    },
+    {
+      "word": "angelägenheter-",
+      "translation": "affairs-"
+    },
+    {
+      "word": "annorlunda",
+      "translation": "differently"
+    },
+    {
+      "word": "bak",
+      "translation": "behind"
+    },
+    {
+      "word": "bara",
+      "translation": "just"
+    },
+    {
+      "word": "betydligt",
+      "translation": "significantly"
+    },
+    {
+      "word": "bort",
+      "translation": "away"
+    },
+    {
+      "word": "bra",
+      "translation": "good"
+    },
+    {
+      "word": "bättre",
+      "translation": "better"
+    },
+    {
+      "word": "cent",
+      "translation": "cents"
+    },
+    {
+      "word": "delvis",
+      "translation": "partially"
+    },
+    {
+      "word": "direkt",
+      "translation": "directly"
+    },
+    {
+      "word": "distriksoklagare",
+      "translation": "district attorney"
+    },
+    {
+      "word": "drygt",
+      "translation": "roughly"
+    },
+    {
+      "word": "där",
+      "translation": "there"
+    },
+    {
+      "word": "då",
+      "translation": "then"
+    },
+    {
+      "word": "dömer-",
+      "translation": "judge-"
+    },
+    {
+      "word": "efterhand",
+      "translation": "afterwards"
+    },
+    {
+      "word": "egentligen",
+      "translation": "actually"
+    },
+    {
+      "word": "ekonomiskt",
+      "translation": "financially"
+    },
+    {
+      "word": "emot",
+      "translation": "against"
+    },
+    {
+      "word": "enormt",
+      "translation": "enormously"
+    },
+    {
+      "word": "ens",
+      "translation": "even"
+    },
+    {
+      "word": "enslump",
+      "translation": "coincidence"
+    },
+    {
+      "word": "exakt",
+      "translation": "exactly"
+    },
+    {
+      "word": "faktiskt",
+      "translation": "actually"
+    },
+    {
+      "word": "fast",
+      "translation": "fixed"
+    },
+    {
+      "word": "fed",
+      "translation": "fed"
+    },
+    {
+      "word": "fel",
+      "translation": "wrong"
+    },
+    {
+      "word": "filosofiskt",
+      "translation": "philosophically"
+    },
+    {
+      "word": "fortfarande",
+      "translation": "still"
+    },
+    {
+      "word": "fram",
+      "translation": "forward"
+    },
+    {
+      "word": "framförallt",
+      "translation": "above all"
+    },
+    {
+      "word": "framöver",
+      "translation": "going forward"
+    },
+    {
+      "word": "fruktansvärt",
+      "translation": "terrible"
+    },
+    {
+      "word": "främst",
+      "translation": "mainly"
+    },
+    {
+      "word": "för",
+      "translation": "for"
+    },
+    {
+      "word": "förmodligen",
+      "translation": "probably"
+    },
+    {
+      "word": "först",
+      "translation": "first"
+    },
+    {
+      "word": "förstås",
+      "translation": "of course"
+    },
+    {
+      "word": "ganska",
+      "translation": "quite"
+    },
+    {
+      "word": "gott",
+      "translation": "good"
+    },
+    {
+      "word": "grej",
+      "translation": "thing"
+    },
+    {
+      "word": "gärna",
+      "translation": "gladly"
+    },
+    {
+      "word": "går",
+      "translation": "goes"
+    },
+    {
+      "word": "he",
+      "translation": "hey"
+    },
+    {
+      "word": "hej",
+      "translation": "hello"
+    },
+    {
+      "word": "heller",
+      "translation": "either"
+    },
+    {
+      "word": "helt",
+      "translation": "completely"
+    },
+    {
+      "word": "hem",
+      "translation": "home"
+    },
+    {
+      "word": "hemma",
+      "translation": "at home"
+    },
+    {
+      "word": "hit",
+      "translation": "here"
+    },
+    {
+      "word": "hur",
+      "translation": "how"
+    },
+    {
+      "word": "här",
+      "translation": "here"
+    },
+    {
+      "word": "hållet",
+      "translation": "held"
+    },
+    {
+      "word": "hårt",
+      "translation": "hard"
+    },
+    {
+      "word": "högt",
+      "translation": "loud"
+    },
+    {
+      "word": "idag",
+      "translation": "today"
+    },
+    {
+      "word": "igen",
+      "translation": "again"
+    },
+    {
+      "word": "ihåg",
+      "translation": "remember"
+    },
+    {
+      "word": "in",
+      "translation": "in"
+    },
+    {
+      "word": "inledningsvis",
+      "translation": "initially"
+    },
+    {
+      "word": "inne",
+      "translation": "inside"
+    },
+    {
+      "word": "iran's",
+      "translation": "iran's"
+    },
+    {
+      "word": "iran-krig",
+      "translation": "Iran war"
+    },
+    {
+      "word": "istället",
+      "translation": "instead"
+    },
+    {
+      "word": "ju",
+      "translation": "right"
+    },
+    {
+      "word": "just",
+      "translation": "exactly"
+    },
+    {
+      "word": "jätteobekvämt",
+      "translation": "very uncomfortable"
+    },
+    {
+      "word": "kanske",
+      "translation": "maybe"
+    },
+    {
+      "word": "knappast",
+      "translation": "hardly"
+    },
+    {
+      "word": "kompakt",
+      "translation": "compact"
+    },
+    {
+      "word": "konkret",
+      "translation": "concretely"
+    },
+    {
+      "word": "kraftigt",
+      "translation": "heavily"
+    },
+    {
+      "word": "kvar",
+      "translation": "left"
+    },
+    {
+      "word": "lika",
+      "translation": "equally"
+    },
+    {
+      "word": "lite",
+      "translation": "little"
+    },
+    {
+      "word": "länge",
+      "translation": "for a long time"
+    },
+    {
+      "word": "längre",
+      "translation": "longer"
+    },
+    {
+      "word": "lätt",
+      "translation": "easy"
+    },
+    {
+      "word": "lågt",
+      "translation": "low"
+    },
+    {
+      "word": "långt",
+      "translation": "far"
+    },
+    {
+      "word": "massvis",
+      "translation": "a lot"
+    },
+    {
+      "word": "med",
+      "translation": "with"
+    },
+    {
+      "word": "mer",
+      "translation": "more"
+    },
+    {
+      "word": "mest",
+      "translation": "most"
+    },
+    {
+      "word": "mindre",
+      "translation": "less"
+    },
+    {
+      "word": "minst",
+      "translation": "least"
+    },
+    {
+      "word": "mitt",
+      "translation": "mine"
+    },
+    {
+      "word": "motvilligt",
+      "translation": "reluctantly"
+    },
+    {
+      "word": "mycket",
+      "translation": "a lot"
+    },
+    {
+      "word": "mycket-",
+      "translation": "very-"
+    },
+    {
+      "word": "mänskligt",
+      "translation": "humanly"
+    },
+    {
+      "word": "märkbart",
+      "translation": "noticeable"
+    },
+    {
+      "word": "måndagsvareväl",
+      "translation": "Monday respectively"
+    },
+    {
+      "word": "ner",
+      "translation": "down"
+    },
+    {
+      "word": "nere",
+      "translation": "down"
+    },
+    {
+      "word": "nog",
+      "translation": "enough"
+    },
+    {
+      "word": "nu",
+      "translation": "now"
+    },
+    {
+      "word": "nämligen",
+      "translation": "namely"
+    },
+    {
+      "word": "när",
+      "translation": "when"
+    },
+    {
+      "word": "nästan",
+      "translation": "almost"
+    },
+    {
+      "word": "nödvändigtvis",
+      "translation": "necessarily"
+    },
+    {
+      "word": "oavsett",
+      "translation": "regardless"
+    },
+    {
+      "word": "också",
+      "translation": "too"
+    },
+    {
+      "word": "oftast",
+      "translation": "most often"
+    },
+    {
+      "word": "ohyggligt",
+      "translation": "horrible"
+    },
+    {
+      "word": "oljereserver",
+      "translation": "oil reserves"
+    },
+    {
+      "word": "om",
+      "translation": "if"
+    },
+    {
+      "word": "omöjlbart",
+      "translation": "impossible"
+    },
+    {
+      "word": "oproportionellt",
+      "translation": "disproportionately"
+    },
+    {
+      "word": "ovvisvis",
+      "translation": "obviously"
+    },
+    {
+      "word": "plötsligt",
+      "translation": "suddenly"
+    },
+    {
+      "word": "politiskt",
+      "translation": "political"
+    },
+    {
+      "word": "pratat",
+      "translation": "talked"
+    },
+    {
+      "word": "precis",
+      "translation": "exactly"
+    },
+    {
+      "word": "prices",
+      "translation": "prices"
+    },
+    {
+      "word": "på-",
+      "translation": "on-"
+    },
+    {
+      "word": "redan",
+      "translation": "already"
+    },
+    {
+      "word": "rent",
+      "translation": "clean"
+    },
+    {
+      "word": "riktigt",
+      "translation": "really"
+    },
+    {
+      "word": "rimligtvis",
+      "translation": "reasonably"
+    },
+    {
+      "word": "runt",
+      "translation": "around"
+    },
+    {
+      "word": "rätt",
+      "translation": "right"
+    },
+    {
+      "word": "saker-",
+      "translation": "things-"
+    },
+    {
+      "word": "samtidigt",
+      "translation": "at the same time"
+    },
+    {
+      "word": "sedan",
+      "translation": "ago"
+    },
+    {
+      "word": "sen",
+      "translation": "since"
+    },
+    {
+      "word": "senare",
+      "translation": "later"
+    },
+    {
+      "word": "senast",
+      "translation": "latest"
+    },
+    {
+      "word": "sist",
+      "translation": "last"
+    },
+    {
+      "word": "slut",
+      "translation": "end"
+    },
+    {
+      "word": "snarare",
+      "translation": "rather"
+    },
+    {
+      "word": "snart",
+      "translation": "soon"
+    },
+    {
+      "word": "som",
+      "translation": "which"
+    },
+    {
+      "word": "sonatom",
+      "translation": "sonata"
+    },
+    {
+      "word": "spana",
+      "translation": "scout"
+    },
+    {
+      "word": "speciellt",
+      "translation": "especially"
+    },
+    {
+      "word": "specifikt",
+      "translation": "specifically"
+    },
+    {
+      "word": "stort",
+      "translation": "large"
+    },
+    {
+      "word": "stängt",
+      "translation": "closed"
+    },
+    {
+      "word": "superbekvämare",
+      "translation": "super comfortable"
+    },
+    {
+      "word": "säkert",
+      "translation": "for sure"
+    },
+    {
+      "word": "särskilt",
+      "translation": "especially"
+    },
+    {
+      "word": "så",
+      "translation": "so"
+    },
+    {
+      "word": "the",
+      "translation": "the"
+    },
+    {
+      "word": "tidigare",
+      "translation": "earlier"
+    },
+    {
+      "word": "tillbaka",
+      "translation": "back"
+    },
+    {
+      "word": "tillsammans",
+      "translation": "together"
+    },
+    {
+      "word": "totalt",
+      "translation": "in total"
+    },
+    {
+      "word": "trump",
+      "translation": "trump"
+    },
+    {
+      "word": "ungefär",
+      "translation": "roughly"
+    },
+    {
+      "word": "upp",
+      "translation": "up"
+    },
+    {
+      "word": "uppe",
+      "translation": "up"
+    },
+    {
+      "word": "ut",
+      "translation": "out"
+    },
+    {
+      "word": "ute",
+      "translation": "out"
+    },
+    {
+      "word": "utomlands",
+      "translation": "abroad"
+    },
+    {
+      "word": "var",
+      "translation": "where"
+    },
+    {
+      "word": "varför",
+      "translation": "why"
+    },
+    {
+      "word": "varmt",
+      "translation": "hot"
+    },
+    {
+      "word": "varvisepresident",
+      "translation": "vice president"
+    },
+    {
+      "word": "verkligen",
+      "translation": "really"
+    },
+    {
+      "word": "vidare",
+      "translation": "further"
+    },
+    {
+      "word": "väl",
+      "translation": "well"
+    },
+    {
+      "word": "väldigt",
+      "translation": "very"
+    },
+    {
+      "word": "värmt",
+      "translation": "heated"
+    },
+    {
+      "word": "ytterligare",
+      "translation": "further"
+    },
+    {
+      "word": "ändå",
+      "translation": "nevertheless"
+    },
+    {
+      "word": "ännu",
+      "translation": "yet"
+    },
+    {
+      "word": "är-",
+      "translation": "is-"
+    },
+    {
+      "word": "även",
+      "translation": "also"
+    },
+    {
+      "word": "öppet",
+      "translation": "open"
+    },
+    {
+      "word": "över",
+      "translation": "over"
+    }
+  ],
+  "AUX": [
+    {
+      "word": "behöver",
+      "translation": "need"
+    },
+    {
+      "word": "blir",
+      "translation": "becomes"
+    },
+    {
+      "word": "borde",
+      "translation": "should"
+    },
+    {
+      "word": "fick",
+      "translation": "got"
+    },
+    {
+      "word": "fortsätter",
+      "translation": "continues"
+    },
+    {
+      "word": "fuller",
+      "translation": "fuller"
+    },
+    {
+      "word": "får",
+      "translation": "Sheep"
+    },
+    {
+      "word": "gjorde",
+      "translation": "did"
+    },
+    {
+      "word": "hade",
+      "translation": "had"
+    },
+    {
+      "word": "har",
+      "translation": "have"
+    },
+    {
+      "word": "kan",
+      "translation": "can"
+    },
+    {
+      "word": "kommer",
+      "translation": "is coming"
+    },
+    {
+      "word": "kunna",
+      "translation": "be able to"
+    },
+    {
+      "word": "kunnat",
+      "translation": "could"
+    },
+    {
+      "word": "lägga",
+      "translation": "put"
+    },
+    {
+      "word": "måste",
+      "translation": "must"
+    },
+    {
+      "word": "nog-",
+      "translation": "enough-"
+    },
+    {
+      "word": "ska",
+      "translation": "shall"
+    },
+    {
+      "word": "skulle",
+      "translation": "would"
+    },
+    {
+      "word": "ta",
+      "translation": "take"
+    },
+    {
+      "word": "var",
+      "translation": "where"
+    },
+    {
+      "word": "vara",
+      "translation": "be"
+    },
+    {
+      "word": "varit",
+      "translation": "been"
+    },
+    {
+      "word": "vill",
+      "translation": "want"
+    },
+    {
+      "word": "ville",
+      "translation": "wanted"
+    },
+    {
+      "word": "är",
+      "translation": "is"
+    }
+  ],
+  "CCONJ": [
+    {
+      "word": "både",
+      "translation": "both"
+    },
+    {
+      "word": "d.c.-",
+      "translation": "d.c.-"
+    },
+    {
+      "word": "dels",
+      "translation": "partly"
+    },
+    {
+      "word": "eller",
+      "translation": "or"
+    },
+    {
+      "word": "journal-",
+      "translation": "journal"
+    },
+    {
+      "word": "men",
+      "translation": "but"
+    },
+    {
+      "word": "och",
+      "translation": "and"
+    },
+    {
+      "word": "som",
+      "translation": "which"
+    },
+    {
+      "word": "så",
+      "translation": "so"
+    },
+    {
+      "word": "utan",
+      "translation": "without"
+    }
+  ],
+  "DET": [
+    {
+      "word": "alla",
+      "translation": "everyone"
+    },
+    {
+      "word": "allt",
+      "translation": "everything"
+    },
+    {
+      "word": "de",
+      "translation": "they"
+    },
+    {
+      "word": "den",
+      "translation": "it"
+    },
+    {
+      "word": "det",
+      "translation": "that"
+    },
+    {
+      "word": "detta",
+      "translation": "this"
+    },
+    {
+      "word": "en",
+      "translation": "one"
+    },
+    {
+      "word": "ett",
+      "translation": "one"
+    },
+    {
+      "word": "inga",
+      "translation": "none"
+    },
+    {
+      "word": "ingen",
+      "translation": "none"
+    },
+    {
+      "word": "inget",
+      "translation": "nothing"
+    },
+    {
+      "word": "någon",
+      "translation": "someone"
+    },
+    {
+      "word": "något",
+      "translation": "something"
+    },
+    {
+      "word": "några",
+      "translation": "some"
+    },
+    {
+      "word": "samma",
+      "translation": "the same"
+    },
+    {
+      "word": "vast",
+      "translation": "firm"
+    },
+    {
+      "word": "vilka",
+      "translation": "which ones"
+    },
+    {
+      "word": "vilken",
+      "translation": "which one"
+    },
+    {
+      "word": "you",
+      "translation": "you"
+    }
+  ],
+  "INTJ": [
+    {
+      "word": "ja",
+      "translation": "yes"
+    },
+    {
+      "word": "jo",
+      "translation": "yes"
+    },
+    {
+      "word": "nej",
+      "translation": "no"
+    }
+  ],
+  "NOUN": [
+    {
+      "word": "50-",
+      "translation": "50-"
+    },
+    {
+      "word": "abc",
+      "translation": "abc"
+    },
+    {
+      "word": "administrationen",
+      "translation": "the administration"
+    },
+    {
+      "word": "agenda",
+      "translation": "agenda"
+    },
+    {
+      "word": "aktiemarknaden",
+      "translation": "the stock market"
+    },
+    {
+      "word": "aktiemarktarna",
+      "translation": "the stock markets"
+    },
+    {
+      "word": "aktier",
+      "translation": "shares"
+    },
+    {
+      "word": "aktierna",
+      "translation": "the shares"
+    },
+    {
+      "word": "aktieägare",
+      "translation": "shareholders"
+    },
+    {
+      "word": "aktieägen",
+      "translation": "shareholder"
+    },
+    {
+      "word": "allihop-",
+      "translation": "everyone-"
+    },
+    {
+      "word": "amerikaner",
+      "translation": "Americans"
+    },
+    {
+      "word": "amerikanerna",
+      "translation": "the americans"
+    },
+    {
+      "word": "amerikanernas",
+      "translation": "of the Americans"
+    },
+    {
+      "word": "ammunition",
+      "translation": "ammunition"
+    },
+    {
+      "word": "analysrör",
+      "translation": "analysis tube"
+    },
+    {
+      "word": "analytiker",
+      "translation": "analyst"
+    },
+    {
+      "word": "andel",
+      "translation": "share"
+    },
+    {
+      "word": "anfall",
+      "translation": "seizure"
+    },
+    {
+      "word": "anfallet",
+      "translation": "the seizure"
+    },
+    {
+      "word": "anledningen",
+      "translation": "the reason"
+    },
+    {
+      "word": "anna-roxval",
+      "translation": "anna-roxval"
+    },
+    {
+      "word": "are",
+      "translation": "are"
+    },
+    {
+      "word": "arga",
+      "translation": "angry"
+    },
+    {
+      "word": "argument",
+      "translation": "arguments"
+    },
+    {
+      "word": "arktrupper",
+      "translation": "sheet troops"
+    },
+    {
+      "word": "arsenal",
+      "translation": "arsenal"
+    },
+    {
+      "word": "artikel-",
+      "translation": "article-"
+    },
+    {
+      "word": "arv",
+      "translation": "inheritance"
+    },
+    {
+      "word": "arvetagare",
+      "translation": "heir"
+    },
+    {
+      "word": "aspekter",
+      "translation": "aspects"
+    },
+    {
+      "word": "attack",
+      "translation": "attack"
+    },
+    {
+      "word": "attackarna",
+      "translation": "the attacks"
+    },
+    {
+      "word": "attacken",
+      "translation": "the attack"
+    },
+    {
+      "word": "attacker",
+      "translation": "attacks"
+    },
+    {
+      "word": "auton",
+      "translation": "the car"
+    },
+    {
+      "word": "avsnitt",
+      "translation": "section"
+    },
+    {
+      "word": "bakgrunden",
+      "translation": "the background"
+    },
+    {
+      "word": "balans",
+      "translation": "balance"
+    },
+    {
+      "word": "barn",
+      "translation": "child"
+    },
+    {
+      "word": "barn-",
+      "translation": "child-"
+    },
+    {
+      "word": "bedyrer",
+      "translation": "means"
+    },
+    {
+      "word": "beggehåll-",
+      "translation": "both ways-"
+    },
+    {
+      "word": "bensin",
+      "translation": "gasoline"
+    },
+    {
+      "word": "bensin-",
+      "translation": "gasoline"
+    },
+    {
+      "word": "bensinpriserna",
+      "translation": "petrol prices"
+    },
+    {
+      "word": "bensinpriset",
+      "translation": "the price of gasoline"
+    },
+    {
+      "word": "benzinpriser",
+      "translation": "gasoline prices"
+    },
+    {
+      "word": "benzinpriset",
+      "translation": "the price of gasoline"
+    },
+    {
+      "word": "ber",
+      "translation": "begging"
+    },
+    {
+      "word": "beröm",
+      "translation": "praise"
+    },
+    {
+      "word": "beskydd",
+      "translation": "patronage"
+    },
+    {
+      "word": "beslutet",
+      "translation": "the decision"
+    },
+    {
+      "word": "bete",
+      "translation": "bait"
+    },
+    {
+      "word": "betydelse",
+      "translation": "meaning"
+    },
+    {
+      "word": "betydelse-",
+      "translation": "meaning-"
+    },
+    {
+      "word": "biden",
+      "translation": "biden"
+    },
+    {
+      "word": "bieffekt",
+      "translation": "side effect"
+    },
+    {
+      "word": "bild",
+      "translation": "image"
+    },
+    {
+      "word": "bilförare",
+      "translation": "car driver"
+    },
+    {
+      "word": "biljetter",
+      "translation": "tickets"
+    },
+    {
+      "word": "biljettklasser",
+      "translation": "ticket classes"
+    },
+    {
+      "word": "biten",
+      "translation": "the bit"
+    },
+    {
+      "word": "bolagen",
+      "translation": "the companies"
+    },
+    {
+      "word": "bombningar",
+      "translation": "bombings"
+    },
+    {
+      "word": "boom",
+      "translation": "boom"
+    },
+    {
+      "word": "bostäder",
+      "translation": "housing"
+    },
+    {
+      "word": "botten",
+      "translation": "the bottom"
+    },
+    {
+      "word": "bryttpunkten",
+      "translation": "the breaking point"
+    },
+    {
+      "word": "bränslen",
+      "translation": "fuels"
+    },
+    {
+      "word": "bränslepriserna",
+      "translation": "fuel prices"
+    },
+    {
+      "word": "bränsleprisökningarna",
+      "translation": "the fuel price increases"
+    },
+    {
+      "word": "bränslet",
+      "translation": "the fuel"
+    },
+    {
+      "word": "budget",
+      "translation": "budget"
+    },
+    {
+      "word": "budgeten",
+      "translation": "the budget"
+    },
+    {
+      "word": "budskap",
+      "translation": "message"
+    },
+    {
+      "word": "budskapet",
+      "translation": "the message"
+    },
+    {
+      "word": "bygget",
+      "translation": "built"
+    },
+    {
+      "word": "bönder",
+      "translation": "farmers"
+    },
+    {
+      "word": "början",
+      "translation": "the beginning"
+    },
+    {
+      "word": "börsen",
+      "translation": "the stock exchange"
+    },
+    {
+      "word": "börsens",
+      "translation": "of the stock exchange"
+    },
+    {
+      "word": "börserna",
+      "translation": "the stock exchanges"
+    },
+    {
+      "word": "börskurserna",
+      "translation": "the stock exchange rates"
+    },
+    {
+      "word": "centralbanken",
+      "translation": "the central bank"
+    },
+    {
+      "word": "charlize's",
+      "translation": "charlize's"
+    },
+    {
+      "word": "chefsekonomtorsens",
+      "translation": "Chief Economist"
+    },
+    {
+      "word": "chosen",
+      "translation": "chosen"
+    },
+    {
+      "word": "chuck",
+      "translation": "chuck"
+    },
+    {
+      "word": "citat-",
+      "translation": "quote-"
+    },
+    {
+      "word": "clay",
+      "translation": "clay"
+    },
+    {
+      "word": "congressman",
+      "translation": "congressman"
+    },
+    {
+      "word": "dag",
+      "translation": "day"
+    },
+    {
+      "word": "dagar",
+      "translation": "days"
+    },
+    {
+      "word": "dagarna",
+      "translation": "the days"
+    },
+    {
+      "word": "dagen",
+      "translation": "the day"
+    },
+    {
+      "word": "dags",
+      "translation": "time of day"
+    },
+    {
+      "word": "danske",
+      "translation": "danish"
+    },
+    {
+      "word": "datorna",
+      "translation": "the computers"
+    },
+    {
+      "word": "del",
+      "translation": "part"
+    },
+    {
+      "word": "delstadsgränsen",
+      "translation": "the state border"
+    },
+    {
+      "word": "delstater",
+      "translation": "states"
+    },
+    {
+      "word": "deltagaren",
+      "translation": "the participant"
+    },
+    {
+      "word": "dem-",
+      "translation": "them-"
+    },
+    {
+      "word": "demokratens",
+      "translation": "Democrat's"
+    },
+    {
+      "word": "demokrater",
+      "translation": "democrats"
+    },
+    {
+      "word": "demokraterna",
+      "translation": "the democrats"
+    },
+    {
+      "word": "demokraternas",
+      "translation": "of the Democrats"
+    },
+    {
+      "word": "demokratledaren",
+      "translation": "the Democrat leader"
+    },
+    {
+      "word": "departementschefer",
+      "translation": "department heads"
+    },
+    {
+      "word": "devlet",
+      "translation": "state"
+    },
+    {
+      "word": "diskurs",
+      "translation": "discourse"
+    },
+    {
+      "word": "diskussion",
+      "translation": "discussion"
+    },
+    {
+      "word": "diskussionen",
+      "translation": "the discussion"
+    },
+    {
+      "word": "diss",
+      "translation": "diss"
+    },
+    {
+      "word": "distraktionen",
+      "translation": "the distraction"
+    },
+    {
+      "word": "distrikt",
+      "translation": "district"
+    },
+    {
+      "word": "distriktet",
+      "translation": "the district"
+    },
+    {
+      "word": "dokumenten",
+      "translation": "the documents"
+    },
+    {
+      "word": "dollar",
+      "translation": "dollars"
+    },
+    {
+      "word": "dollarn",
+      "translation": "the dollar"
+    },
+    {
+      "word": "dominoeffekter",
+      "translation": "domino effects"
+    },
+    {
+      "word": "donald",
+      "translation": "donald"
+    },
+    {
+      "word": "drönar",
+      "translation": "drones"
+    },
+    {
+      "word": "dubbel",
+      "translation": "double"
+    },
+    {
+      "word": "dygnet",
+      "translation": "the day"
+    },
+    {
+      "word": "då-",
+      "translation": "then-"
+    },
+    {
+      "word": "dö",
+      "translation": "die"
+    },
+    {
+      "word": "dömer",
+      "translation": "judges"
+    },
+    {
+      "word": "effekter",
+      "translation": "effects"
+    },
+    {
+      "word": "effekterna",
+      "translation": "the effects"
+    },
+    {
+      "word": "ekonomi",
+      "translation": "economy"
+    },
+    {
+      "word": "ekonomin",
+      "translation": "the economy"
+    },
+    {
+      "word": "elen",
+      "translation": "the electricity"
+    },
+    {
+      "word": "energi",
+      "translation": "energy"
+    },
+    {
+      "word": "energikostnader",
+      "translation": "energy costs"
+    },
+    {
+      "word": "energipriserna",
+      "translation": "energy prices"
+    },
+    {
+      "word": "erfarenhet",
+      "translation": "experience"
+    },
+    {
+      "word": "erfarenhet-",
+      "translation": "experience-"
+    },
+    {
+      "word": "erfarenheten",
+      "translation": "the experience"
+    },
+    {
+      "word": "everything",
+      "translation": "everything"
+    },
+    {
+      "word": "exakt",
+      "translation": "exactly"
+    },
+    {
+      "word": "exempel",
+      "translation": "example"
+    },
+    {
+      "word": "fajten",
+      "translation": "the fight"
+    },
+    {
+      "word": "faktor",
+      "translation": "factor"
+    },
+    {
+      "word": "faktorer",
+      "translation": "factors"
+    },
+    {
+      "word": "fall",
+      "translation": "cases"
+    },
+    {
+      "word": "fall-",
+      "translation": "case-"
+    },
+    {
+      "word": "fanlar",
+      "translation": "fanlars"
+    },
+    {
+      "word": "fatt",
+      "translation": "caught"
+    },
+    {
+      "word": "fattan",
+      "translation": "understood"
+    },
+    {
+      "word": "februari",
+      "translation": "February"
+    },
+    {
+      "word": "fed",
+      "translation": "fed"
+    },
+    {
+      "word": "feg",
+      "translation": "coward"
+    },
+    {
+      "word": "fegar",
+      "translation": "cowards"
+    },
+    {
+      "word": "figurena",
+      "translation": "the figures"
+    },
+    {
+      "word": "filosofi",
+      "translation": "philosophy"
+    },
+    {
+      "word": "finskor",
+      "translation": "Finnish shoes"
+    },
+    {
+      "word": "first-",
+      "translation": "first-"
+    },
+    {
+      "word": "first-politik",
+      "translation": "first policy"
+    },
+    {
+      "word": "fjol",
+      "translation": "last year"
+    },
+    {
+      "word": "fjärdedelare",
+      "translation": "quarterer"
+    },
+    {
+      "word": "flanken",
+      "translation": "the flank"
+    },
+    {
+      "word": "flottan",
+      "translation": "the fleet"
+    },
+    {
+      "word": "flygbolag",
+      "translation": "airlines"
+    },
+    {
+      "word": "flygbolagets",
+      "translation": "the airline's"
+    },
+    {
+      "word": "flygresorna",
+      "translation": "the flights"
+    },
+    {
+      "word": "flygtrafiken",
+      "translation": "air traffic"
+    },
+    {
+      "word": "flygvägar",
+      "translation": "flight paths"
+    },
+    {
+      "word": "folk",
+      "translation": "people"
+    },
+    {
+      "word": "folket",
+      "translation": "the people"
+    },
+    {
+      "word": "form",
+      "translation": "form"
+    },
+    {
+      "word": "frackingmetoden",
+      "translation": "the fracking method"
+    },
+    {
+      "word": "framgångarna",
+      "translation": "the successes"
+    },
+    {
+      "word": "framtorningen",
+      "translation": "the front tower"
+    },
+    {
+      "word": "fredag",
+      "translation": "friday"
+    },
+    {
+      "word": "fråga",
+      "translation": "question"
+    },
+    {
+      "word": "frågan",
+      "translation": "the question"
+    },
+    {
+      "word": "fuller",
+      "translation": "fuller"
+    },
+    {
+      "word": "förbundet",
+      "translation": "the union"
+    },
+    {
+      "word": "fördel",
+      "translation": "advantage"
+    },
+    {
+      "word": "fördelar",
+      "translation": "advantages"
+    },
+    {
+      "word": "företagen",
+      "translation": "the companies"
+    },
+    {
+      "word": "företagsbesök",
+      "translation": "company visit"
+    },
+    {
+      "word": "förklaring",
+      "translation": "explanation"
+    },
+    {
+      "word": "förlust",
+      "translation": "loss"
+    },
+    {
+      "word": "förlängningen",
+      "translation": "the extension"
+    },
+    {
+      "word": "förmåga",
+      "translation": "ability"
+    },
+    {
+      "word": "försvar",
+      "translation": "defense"
+    },
+    {
+      "word": "försvaret",
+      "translation": "the defense"
+    },
+    {
+      "word": "försvarsbudgeten",
+      "translation": "the defense budget"
+    },
+    {
+      "word": "förtroend",
+      "translation": "confidence"
+    },
+    {
+      "word": "förändringar",
+      "translation": "changes"
+    },
+    {
+      "word": "gallen",
+      "translation": "the gall"
+    },
+    {
+      "word": "galning",
+      "translation": "crazy"
+    },
+    {
+      "word": "gano-tidsplan",
+      "translation": "gano schedule"
+    },
+    {
+      "word": "gasanläggningar",
+      "translation": "gas facilities"
+    },
+    {
+      "word": "gemene",
+      "translation": "the lower case"
+    },
+    {
+      "word": "georgia-",
+      "translation": "georgia"
+    },
+    {
+      "word": "ginnar",
+      "translation": "gives"
+    },
+    {
+      "word": "gissa",
+      "translation": "guess"
+    },
+    {
+      "word": "gissar-",
+      "translation": "guess-"
+    },
+    {
+      "word": "gissningar",
+      "translation": "guesswork"
+    },
+    {
+      "word": "grad",
+      "translation": "degree"
+    },
+    {
+      "word": "grann",
+      "translation": "neighbor"
+    },
+    {
+      "word": "gratulerar-",
+      "translation": "congratulations-"
+    },
+    {
+      "word": "great",
+      "translation": "great"
+    },
+    {
+      "word": "grej",
+      "translation": "thing"
+    },
+    {
+      "word": "grottor",
+      "translation": "caves"
+    },
+    {
+      "word": "grund",
+      "translation": "basis"
+    },
+    {
+      "word": "grunden",
+      "translation": "the foundation"
+    },
+    {
+      "word": "grundsyn",
+      "translation": "basic view"
+    },
+    {
+      "word": "grupper",
+      "translation": "groups"
+    },
+    {
+      "word": "gång",
+      "translation": "once"
+    },
+    {
+      "word": "gången",
+      "translation": "the time"
+    },
+    {
+      "word": "gånger",
+      "translation": "times"
+    },
+    {
+      "word": "går-",
+      "translation": "go-"
+    },
+    {
+      "word": "hagseth",
+      "translation": "hagseth"
+    },
+    {
+      "word": "hallå",
+      "translation": "hello"
+    },
+    {
+      "word": "han-",
+      "translation": "he-"
+    },
+    {
+      "word": "hej",
+      "translation": "hello"
+    },
+    {
+      "word": "helgen",
+      "translation": "the weekend"
+    },
+    {
+      "word": "hemmaplan-",
+      "translation": "home ground-"
+    },
+    {
+      "word": "hjärnan",
+      "translation": "the brain"
+    },
+    {
+      "word": "honom-",
+      "translation": "him-"
+    },
+    {
+      "word": "hormussundet",
+      "translation": "strait of hormus"
+    },
+    {
+      "word": "hot",
+      "translation": "threats"
+    },
+    {
+      "word": "hotirörelsen",
+      "translation": "the threat movement"
+    },
+    {
+      "word": "huruvida",
+      "translation": "whether"
+    },
+    {
+      "word": "hus",
+      "translation": "house"
+    },
+    {
+      "word": "huset",
+      "translation": "the house"
+    },
+    {
+      "word": "hushåll",
+      "translation": "household"
+    },
+    {
+      "word": "hushållskostnader",
+      "translation": "household expenses"
+    },
+    {
+      "word": "husåldern",
+      "translation": "house age"
+    },
+    {
+      "word": "husåldsekonomi",
+      "translation": "household economy"
+    },
+    {
+      "word": "huvud",
+      "translation": "head"
+    },
+    {
+      "word": "huvudsälet",
+      "translation": "the main seal"
+    },
+    {
+      "word": "här-",
+      "translation": "here-"
+    },
+    {
+      "word": "häromdagen-",
+      "translation": "the other day-"
+    },
+    {
+      "word": "högerkanten",
+      "translation": "right edge"
+    },
+    {
+      "word": "högerkanten-",
+      "translation": "right edge-"
+    },
+    {
+      "word": "högerprofilerna",
+      "translation": "the right profiles"
+    },
+    {
+      "word": "höjden",
+      "translation": "the height"
+    },
+    {
+      "word": "höjning",
+      "translation": "increase"
+    },
+    {
+      "word": "höst",
+      "translation": "autumn"
+    },
+    {
+      "word": "illegal",
+      "translation": "illegal"
+    },
+    {
+      "word": "inblanding",
+      "translation": "interference"
+    },
+    {
+      "word": "inflation",
+      "translation": "inflation"
+    },
+    {
+      "word": "inflationen",
+      "translation": "inflation"
+    },
+    {
+      "word": "inflationsiffror",
+      "translation": "inflation figures"
+    },
+    {
+      "word": "inflationsiffrorna",
+      "translation": "the inflation figures"
+    },
+    {
+      "word": "inflationstrycket",
+      "translation": "inflationary pressure"
+    },
+    {
+      "word": "inflytande",
+      "translation": "influence"
+    },
+    {
+      "word": "inkomster",
+      "translation": "incomes"
+    },
+    {
+      "word": "inlägg-",
+      "translation": "post-"
+    },
+    {
+      "word": "insatser",
+      "translation": "stakes"
+    },
+    {
+      "word": "insikten-",
+      "translation": "the insight-"
+    },
+    {
+      "word": "inställningen",
+      "translation": "the setting"
+    },
+    {
+      "word": "intervention-",
+      "translation": "intervention"
+    },
+    {
+      "word": "intervju",
+      "translation": "interview"
+    },
+    {
+      "word": "intressen",
+      "translation": "interests"
+    },
+    {
+      "word": "intäkter",
+      "translation": "revenue"
+    },
+    {
+      "word": "investeringar",
+      "translation": "investments"
+    },
+    {
+      "word": "iran",
+      "translation": "Iran"
+    },
+    {
+      "word": "iran-kriget",
+      "translation": "the iran war"
+    },
+    {
+      "word": "iran-kriget-",
+      "translation": "iran war"
+    },
+    {
+      "word": "iran-kritik",
+      "translation": "Iran criticism"
+    },
+    {
+      "word": "iranens",
+      "translation": "Iran's"
+    },
+    {
+      "word": "iraner",
+      "translation": "Iranians"
+    },
+    {
+      "word": "israel-",
+      "translation": "Israeli"
+    },
+    {
+      "word": "israel-kritik",
+      "translation": "Israel criticism"
+    },
+    {
+      "word": "israel-kritiker",
+      "translation": "Israel critic"
+    },
+    {
+      "word": "januari",
+      "translation": "January"
+    },
+    {
+      "word": "jd",
+      "translation": "jd"
+    },
+    {
+      "word": "jobb",
+      "translation": "job"
+    },
+    {
+      "word": "jobbet",
+      "translation": "the job"
+    },
+    {
+      "word": "jättoftan",
+      "translation": "the giant"
+    },
+    {
+      "word": "jössuppriser",
+      "translation": "cheers"
+    },
+    {
+      "word": "kalasbyxor",
+      "translation": "party pants"
+    },
+    {
+      "word": "kampanj",
+      "translation": "campaign"
+    },
+    {
+      "word": "kampen",
+      "translation": "the fight"
+    },
+    {
+      "word": "kanal",
+      "translation": "channel"
+    },
+    {
+      "word": "kandidat",
+      "translation": "candidate"
+    },
+    {
+      "word": "kandidaten-",
+      "translation": "the candidate-"
+    },
+    {
+      "word": "kandidater",
+      "translation": "candidates"
+    },
+    {
+      "word": "kapitalförvaltaren",
+      "translation": "the asset manager"
+    },
+    {
+      "word": "kategori",
+      "translation": "category"
+    },
+    {
+      "word": "kemikalier",
+      "translation": "chemicals"
+    },
+    {
+      "word": "kentucky-",
+      "translation": "kentucky"
+    },
+    {
+      "word": "killarna",
+      "translation": "the guys"
+    },
+    {
+      "word": "klockan",
+      "translation": "the clock"
+    },
+    {
+      "word": "knut",
+      "translation": "knot"
+    },
+    {
+      "word": "kollektionskurs",
+      "translation": "collection course"
+    },
+    {
+      "word": "kombinationen",
+      "translation": "the combination"
+    },
+    {
+      "word": "kommentar",
+      "translation": "comment"
+    },
+    {
+      "word": "kommentator",
+      "translation": "commentator"
+    },
+    {
+      "word": "konfliktaområdena",
+      "translation": "the conflict areas"
+    },
+    {
+      "word": "kongressen",
+      "translation": "the congress"
+    },
+    {
+      "word": "kongressen-",
+      "translation": "congress-"
+    },
+    {
+      "word": "kongressledamot-",
+      "translation": "congressman"
+    },
+    {
+      "word": "konserver",
+      "translation": "preserves"
+    },
+    {
+      "word": "konsumenten",
+      "translation": "the consumer"
+    },
+    {
+      "word": "konsumenter",
+      "translation": "consumers"
+    },
+    {
+      "word": "konsumenterna",
+      "translation": "the consumers"
+    },
+    {
+      "word": "kontroll",
+      "translation": "control"
+    },
+    {
+      "word": "kontrollen",
+      "translation": "the control"
+    },
+    {
+      "word": "kopplingen",
+      "translation": "the coupling"
+    },
+    {
+      "word": "kostnader",
+      "translation": "costs"
+    },
+    {
+      "word": "kranekriget",
+      "translation": "the crane war"
+    },
+    {
+      "word": "krets",
+      "translation": "circuit"
+    },
+    {
+      "word": "krig",
+      "translation": "war"
+    },
+    {
+      "word": "krigar",
+      "translation": "wars"
+    },
+    {
+      "word": "kriget",
+      "translation": "the war"
+    },
+    {
+      "word": "kriget-",
+      "translation": "the war-"
+    },
+    {
+      "word": "krigets",
+      "translation": "of the war"
+    },
+    {
+      "word": "krigföringen",
+      "translation": "the warfare"
+    },
+    {
+      "word": "krigseffekterna",
+      "translation": "the effects of war"
+    },
+    {
+      "word": "krigssituation",
+      "translation": "war situation"
+    },
+    {
+      "word": "kring-",
+      "translation": "around"
+    },
+    {
+      "word": "kritik",
+      "translation": "criticism"
+    },
+    {
+      "word": "kritik-",
+      "translation": "criticism-"
+    },
+    {
+      "word": "kritiken",
+      "translation": "the criticism"
+    },
+    {
+      "word": "kritiken-",
+      "translation": "the criticism-"
+    },
+    {
+      "word": "kritiker",
+      "translation": "critic"
+    },
+    {
+      "word": "kritikerna",
+      "translation": "the critics"
+    },
+    {
+      "word": "kronor",
+      "translation": "crowns"
+    },
+    {
+      "word": "kurs",
+      "translation": "course"
+    },
+    {
+      "word": "kurserna",
+      "translation": "the courses"
+    },
+    {
+      "word": "kvinna",
+      "translation": "woman"
+    },
+    {
+      "word": "källa",
+      "translation": "source"
+    },
+    {
+      "word": "källor",
+      "translation": "sources"
+    },
+    {
+      "word": "känslor",
+      "translation": "emotions"
+    },
+    {
+      "word": "kärnvapen",
+      "translation": "nuclear weapons"
+    },
+    {
+      "word": "lager",
+      "translation": "stock"
+    },
+    {
+      "word": "laguna-",
+      "translation": "laguna-"
+    },
+    {
+      "word": "land",
+      "translation": "country"
+    },
+    {
+      "word": "landar",
+      "translation": "lands"
+    },
+    {
+      "word": "landet",
+      "translation": "the country"
+    },
+    {
+      "word": "last-politik",
+      "translation": "cargo policy"
+    },
+    {
+      "word": "ledamot",
+      "translation": "member"
+    },
+    {
+      "word": "ledare",
+      "translation": "leader"
+    },
+    {
+      "word": "let",
+      "translation": "let"
+    },
+    {
+      "word": "likadanas",
+      "translation": "likewise"
+    },
+    {
+      "word": "linje",
+      "translation": "line"
+    },
+    {
+      "word": "liv",
+      "translation": "life"
+    },
+    {
+      "word": "livsstil",
+      "translation": "lifestyle"
+    },
+    {
+      "word": "ljud",
+      "translation": "sound"
+    },
+    {
+      "word": "lo",
+      "translation": "lol"
+    },
+    {
+      "word": "luften",
+      "translation": "the air"
+    },
+    {
+      "word": "lyft",
+      "translation": "lift"
+    },
+    {
+      "word": "lyssnare",
+      "translation": "listener"
+    },
+    {
+      "word": "lyssnarna",
+      "translation": "the listeners"
+    },
+    {
+      "word": "läder-",
+      "translation": "leather-"
+    },
+    {
+      "word": "läget",
+      "translation": "the mode"
+    },
+    {
+      "word": "lägre-",
+      "translation": "lower-"
+    },
+    {
+      "word": "läkemedelspriser",
+      "translation": "drug prices"
+    },
+    {
+      "word": "länder",
+      "translation": "countries"
+    },
+    {
+      "word": "länders",
+      "translation": "of countries"
+    },
+    {
+      "word": "läsning",
+      "translation": "reading"
+    },
+    {
+      "word": "lågkonjunktur",
+      "translation": "recession"
+    },
+    {
+      "word": "låna",
+      "translation": "borrow"
+    },
+    {
+      "word": "maga-rörelsen",
+      "translation": "the stomach movement"
+    },
+    {
+      "word": "magaprofilen",
+      "translation": "stomach profile"
+    },
+    {
+      "word": "magarörelse",
+      "translation": "stomach movement"
+    },
+    {
+      "word": "magarörelsen",
+      "translation": "stomach movement"
+    },
+    {
+      "word": "magasupporter",
+      "translation": "stomach supporter"
+    },
+    {
+      "word": "majoritet",
+      "translation": "majority"
+    },
+    {
+      "word": "majoriteten",
+      "translation": "the majority"
+    },
+    {
+      "word": "manipulationer",
+      "translation": "manipulations"
+    },
+    {
+      "word": "mansioner",
+      "translation": "mansions"
+    },
+    {
+      "word": "mar-",
+      "translation": "mar-"
+    },
+    {
+      "word": "marinen",
+      "translation": "the navy"
+    },
+    {
+      "word": "marken",
+      "translation": "the ground"
+    },
+    {
+      "word": "marknaden",
+      "translation": "the market"
+    },
+    {
+      "word": "marknader",
+      "translation": "markets"
+    },
+    {
+      "word": "marknadsbudömmar",
+      "translation": "market bids"
+    },
+    {
+      "word": "marktropper",
+      "translation": "ground troops"
+    },
+    {
+      "word": "markörer",
+      "translation": "markers"
+    },
+    {
+      "word": "mars",
+      "translation": "March"
+    },
+    {
+      "word": "massa",
+      "translation": "mass"
+    },
+    {
+      "word": "massor",
+      "translation": "a lot"
+    },
+    {
+      "word": "maten",
+      "translation": "the food"
+    },
+    {
+      "word": "matpriser",
+      "translation": "food prices"
+    },
+    {
+      "word": "matvarorna",
+      "translation": "the foodstuffs"
+    },
+    {
+      "word": "medier",
+      "translation": "media"
+    },
+    {
+      "word": "medier-",
+      "translation": "media-"
+    },
+    {
+      "word": "medieuppgifter",
+      "translation": "media data"
+    },
+    {
+      "word": "mellanösten",
+      "translation": "the middle east"
+    },
+    {
+      "word": "menaren",
+      "translation": "the meaner"
+    },
+    {
+      "word": "messi",
+      "translation": "Messi"
+    },
+    {
+      "word": "metoderna",
+      "translation": "the methods"
+    },
+    {
+      "word": "mikrofonen",
+      "translation": "the microphone"
+    },
+    {
+      "word": "mikroplaster",
+      "translation": "microplastics"
+    },
+    {
+      "word": "militär",
+      "translation": "military"
+    },
+    {
+      "word": "militärveteran",
+      "translation": "military veteran"
+    },
+    {
+      "word": "miljarder",
+      "translation": "billions"
+    },
+    {
+      "word": "ministrar",
+      "translation": "ministers"
+    },
+    {
+      "word": "ministrar-",
+      "translation": "ministers-"
+    },
+    {
+      "word": "minor",
+      "translation": "minor"
+    },
+    {
+      "word": "minson",
+      "translation": "my son"
+    },
+    {
+      "word": "misiler",
+      "translation": "missiles"
+    },
+    {
+      "word": "missen",
+      "translation": "the miss"
+    },
+    {
+      "word": "missnöje",
+      "translation": "dissatisfaction"
+    },
+    {
+      "word": "misstag",
+      "translation": "mistake"
+    },
+    {
+      "word": "misstider",
+      "translation": "wrong times"
+    },
+    {
+      "word": "modell",
+      "translation": "model"
+    },
+    {
+      "word": "motiv",
+      "translation": "motive"
+    },
+    {
+      "word": "motstånd",
+      "translation": "resistance"
+    },
+    {
+      "word": "motståndaren",
+      "translation": "the opponent"
+    },
+    {
+      "word": "mun-",
+      "translation": "oral"
+    },
+    {
+      "word": "mynkymbruggeriet",
+      "translation": "mynkymbruggeriet"
+    },
+    {
+      "word": "mängder",
+      "translation": "quantities"
+    },
+    {
+      "word": "människor",
+      "translation": "people"
+    },
+    {
+      "word": "människor-",
+      "translation": "people-"
+    },
+    {
+      "word": "märke-",
+      "translation": "mark-"
+    },
+    {
+      "word": "mätare",
+      "translation": "meter"
+    },
+    {
+      "word": "mätningarna",
+      "translation": "the measurements"
+    },
+    {
+      "word": "mål",
+      "translation": "goal"
+    },
+    {
+      "word": "månad",
+      "translation": "month"
+    },
+    {
+      "word": "månader",
+      "translation": "months"
+    },
+    {
+      "word": "måndag",
+      "translation": "Monday"
+    },
+    {
+      "word": "måndags",
+      "translation": "Monday"
+    },
+    {
+      "word": "mångsverkningen",
+      "translation": "the multi-effect"
+    },
+    {
+      "word": "mörkret",
+      "translation": "the darkness"
+    },
+    {
+      "word": "mötesdeltagarnas",
+      "translation": "of the meeting participants"
+    },
+    {
+      "word": "natt",
+      "translation": "night"
+    },
+    {
+      "word": "nedgång",
+      "translation": "decline"
+    },
+    {
+      "word": "nivå",
+      "translation": "level"
+    },
+    {
+      "word": "nyheter",
+      "translation": "news"
+    },
+    {
+      "word": "närhet",
+      "translation": "proximity"
+    },
+    {
+      "word": "närtid",
+      "translation": "close time"
+    },
+    {
+      "word": "näsan",
+      "translation": "the nose"
+    },
+    {
+      "word": "nånstans",
+      "translation": "somewhere"
+    },
+    {
+      "word": "nånting",
+      "translation": "something"
+    },
+    {
+      "word": "nödvändighet",
+      "translation": "necessity"
+    },
+    {
+      "word": "nödvändigheten",
+      "translation": "the necessity"
+    },
+    {
+      "word": "nödvändigtvis-",
+      "translation": "necessarily-"
+    },
+    {
+      "word": "nöjd",
+      "translation": "satisfied"
+    },
+    {
+      "word": "också-",
+      "translation": "also-"
+    },
+    {
+      "word": "offentlig-",
+      "translation": "public"
+    },
+    {
+      "word": "okej",
+      "translation": "okay"
+    },
+    {
+      "word": "oklarheterna",
+      "translation": "the ambiguities"
+    },
+    {
+      "word": "olja",
+      "translation": "oil"
+    },
+    {
+      "word": "oljan",
+      "translation": "the oil"
+    },
+    {
+      "word": "oljbanker",
+      "translation": "oil banks"
+    },
+    {
+      "word": "oljbrunnor",
+      "translation": "oil wells"
+    },
+    {
+      "word": "oljeinvesteringarna",
+      "translation": "the oil investments"
+    },
+    {
+      "word": "oljepanna",
+      "translation": "oil boiler"
+    },
+    {
+      "word": "oljepolagen",
+      "translation": "the oil fields"
+    },
+    {
+      "word": "oljepriser",
+      "translation": "oil prices"
+    },
+    {
+      "word": "oljepriserna",
+      "translation": "oil prices"
+    },
+    {
+      "word": "oljepriset",
+      "translation": "the oil price"
+    },
+    {
+      "word": "oljeprisökningarna",
+      "translation": "the oil price increases"
+    },
+    {
+      "word": "oljeproduktion",
+      "translation": "oil production"
+    },
+    {
+      "word": "oljetanker",
+      "translation": "oil tanks"
+    },
+    {
+      "word": "oljibrunnar",
+      "translation": "oil wells"
+    },
+    {
+      "word": "om-",
+      "translation": "if-"
+    },
+    {
+      "word": "omgång",
+      "translation": "round"
+    },
+    {
+      "word": "områden",
+      "translation": "areas"
+    },
+    {
+      "word": "omröstning",
+      "translation": "vote"
+    },
+    {
+      "word": "onsdag",
+      "translation": "Wednesday"
+    },
+    {
+      "word": "opinionen",
+      "translation": "public opinion"
+    },
+    {
+      "word": "ord",
+      "translation": "words"
+    },
+    {
+      "word": "orden",
+      "translation": "the words"
+    },
+    {
+      "word": "ordet",
+      "translation": "the word"
+    },
+    {
+      "word": "ordon",
+      "translation": "the order"
+    },
+    {
+      "word": "ordrar",
+      "translation": "orders"
+    },
+    {
+      "word": "oro",
+      "translation": "worry"
+    },
+    {
+      "word": "orsaken",
+      "translation": "the reason"
+    },
+    {
+      "word": "oss-",
+      "translation": "us-"
+    },
+    {
+      "word": "ovalarummet",
+      "translation": "the oval room"
+    },
+    {
+      "word": "par",
+      "translation": "couple"
+    },
+    {
+      "word": "partiernas",
+      "translation": "of the parties"
+    },
+    {
+      "word": "partiet",
+      "translation": "the party"
+    },
+    {
+      "word": "partiet-",
+      "translation": "the party-"
+    },
+    {
+      "word": "paying",
+      "translation": "paying"
+    },
+    {
+      "word": "pengar",
+      "translation": "money"
+    },
+    {
+      "word": "pengarna",
+      "translation": "the money"
+    },
+    {
+      "word": "pennsylvania",
+      "translation": "pennsylvania"
+    },
+    {
+      "word": "pennsylvania-",
+      "translation": "pennsylvania"
+    },
+    {
+      "word": "pensioner",
+      "translation": "pensions"
+    },
+    {
+      "word": "period",
+      "translation": "period"
+    },
+    {
+      "word": "person",
+      "translation": "person"
+    },
+    {
+      "word": "pete",
+      "translation": "pete"
+    },
+    {
+      "word": "pig",
+      "translation": "pig"
+    },
+    {
+      "word": "plan",
+      "translation": "plan"
+    },
+    {
+      "word": "planer",
+      "translation": "plans"
+    },
+    {
+      "word": "platser",
+      "translation": "places"
+    },
+    {
+      "word": "plattformar",
+      "translation": "platforms"
+    },
+    {
+      "word": "plånböckerna",
+      "translation": "the wallets"
+    },
+    {
+      "word": "plötset",
+      "translation": "suddenly"
+    },
+    {
+      "word": "poddar",
+      "translation": "podcasts"
+    },
+    {
+      "word": "poddarna",
+      "translation": "the podcasts"
+    },
+    {
+      "word": "poddens",
+      "translation": "pod's"
+    },
+    {
+      "word": "poddfest",
+      "translation": "podcast party"
+    },
+    {
+      "word": "poddfest-",
+      "translation": "podcast party-"
+    },
+    {
+      "word": "poddfäster",
+      "translation": "podcast attachments"
+    },
+    {
+      "word": "polcirkeln",
+      "translation": "the polar circle"
+    },
+    {
+      "word": "politiken",
+      "translation": "the policy"
+    },
+    {
+      "word": "politiker",
+      "translation": "politician"
+    },
+    {
+      "word": "politikerna",
+      "translation": "the politicians"
+    },
+    {
+      "word": "precis",
+      "translation": "exactly"
+    },
+    {
+      "word": "presenter",
+      "translation": "presents"
+    },
+    {
+      "word": "president",
+      "translation": "president"
+    },
+    {
+      "word": "presidenten",
+      "translation": "the president"
+    },
+    {
+      "word": "presidentval",
+      "translation": "presidential election"
+    },
+    {
+      "word": "presidentvalet",
+      "translation": "the presidential election"
+    },
+    {
+      "word": "pressavdelning-",
+      "translation": "press department-"
+    },
+    {
+      "word": "pressen",
+      "translation": "the press"
+    },
+    {
+      "word": "presskonferens",
+      "translation": "press conference"
+    },
+    {
+      "word": "price",
+      "translation": "price"
+    },
+    {
+      "word": "princip",
+      "translation": "principle"
+    },
+    {
+      "word": "pris-",
+      "translation": "price-"
+    },
+    {
+      "word": "priser",
+      "translation": "prices"
+    },
+    {
+      "word": "priserna",
+      "translation": "the prices"
+    },
+    {
+      "word": "priset",
+      "translation": "the price"
+    },
+    {
+      "word": "prishöjningarna",
+      "translation": "the price increases"
+    },
+    {
+      "word": "pristränderna",
+      "translation": "the price trends"
+    },
+    {
+      "word": "prisuppgångarna",
+      "translation": "the price increases"
+    },
+    {
+      "word": "prisökning",
+      "translation": "price increase"
+    },
+    {
+      "word": "problem",
+      "translation": "problem"
+    },
+    {
+      "word": "problemet",
+      "translation": "the problem"
+    },
+    {
+      "word": "procent-",
+      "translation": "percent"
+    },
+    {
+      "word": "producent",
+      "translation": "producer"
+    },
+    {
+      "word": "profiler",
+      "translation": "profiles"
+    },
+    {
+      "word": "profilerna",
+      "translation": "the profiles"
+    },
+    {
+      "word": "profilernas",
+      "translation": "of the profiles"
+    },
+    {
+      "word": "prognosen",
+      "translation": "the forecast"
+    },
+    {
+      "word": "programledare",
+      "translation": "program manager"
+    },
+    {
+      "word": "publik",
+      "translation": "audience"
+    },
+    {
+      "word": "pumpar",
+      "translation": "pumps"
+    },
+    {
+      "word": "rad",
+      "translation": "row"
+    },
+    {
+      "word": "radio.se-",
+      "translation": "radio.se-"
+    },
+    {
+      "word": "raffinaderier",
+      "translation": "refineries"
+    },
+    {
+      "word": "raffnaderier",
+      "translation": "refineries"
+    },
+    {
+      "word": "rand",
+      "translation": "stripe"
+    },
+    {
+      "word": "rapporter",
+      "translation": "reports"
+    },
+    {
+      "word": "raser",
+      "translation": "breeds"
+    },
+    {
+      "word": "ratten",
+      "translation": "the steering wheel"
+    },
+    {
+      "word": "reaktioner",
+      "translation": "reactions"
+    },
+    {
+      "word": "reaktionerna",
+      "translation": "the reactions"
+    },
+    {
+      "word": "regeringen",
+      "translation": "the government"
+    },
+    {
+      "word": "rejält",
+      "translation": "seriously"
+    },
+    {
+      "word": "reklam",
+      "translation": "advertising"
+    },
+    {
+      "word": "reporter",
+      "translation": "reporter"
+    },
+    {
+      "word": "representanthuset",
+      "translation": "the House of Representatives"
+    },
+    {
+      "word": "republikan",
+      "translation": "republican"
+    },
+    {
+      "word": "republikanen",
+      "translation": "the republican"
+    },
+    {
+      "word": "republikaner",
+      "translation": "Republicans"
+    },
+    {
+      "word": "republikaner-",
+      "translation": "republican-"
+    },
+    {
+      "word": "republikanerna",
+      "translation": "the republicans"
+    },
+    {
+      "word": "republikanerna-",
+      "translation": "the republicans-"
+    },
+    {
+      "word": "republikans",
+      "translation": "Republican"
+    },
+    {
+      "word": "resa",
+      "translation": "journey"
+    },
+    {
+      "word": "resultat",
+      "translation": "results"
+    },
+    {
+      "word": "resultatet",
+      "translation": "the result"
+    },
+    {
+      "word": "resurser",
+      "translation": "resources"
+    },
+    {
+      "word": "revolutionen",
+      "translation": "the revolution"
+    },
+    {
+      "word": "riksbanken",
+      "translation": "the Riksbank"
+    },
+    {
+      "word": "risk",
+      "translation": "risk"
+    },
+    {
+      "word": "risken",
+      "translation": "the risk"
+    },
+    {
+      "word": "rognaruden",
+      "translation": "the roe window"
+    },
+    {
+      "word": "roller",
+      "translation": "roles"
+    },
+    {
+      "word": "run-off",
+      "translation": "run-off"
+    },
+    {
+      "word": "ryktet",
+      "translation": "the reputation"
+    },
+    {
+      "word": "rysslandssatakt",
+      "translation": "russia satakt"
+    },
+    {
+      "word": "räkter",
+      "translation": "dishes"
+    },
+    {
+      "word": "räntan",
+      "translation": "the interest rate"
+    },
+    {
+      "word": "räntenivåer",
+      "translation": "interest rates"
+    },
+    {
+      "word": "räntesänkningen",
+      "translation": "the interest rate cut"
+    },
+    {
+      "word": "räntor",
+      "translation": "interest rates"
+    },
+    {
+      "word": "råd",
+      "translation": "advice"
+    },
+    {
+      "word": "rådgivare",
+      "translation": "advisor"
+    },
+    {
+      "word": "rörelsen",
+      "translation": "the movement"
+    },
+    {
+      "word": "röresens",
+      "translation": "touch essence"
+    },
+    {
+      "word": "röst",
+      "translation": "voice"
+    },
+    {
+      "word": "rösten",
+      "translation": "the voice"
+    },
+    {
+      "word": "röster",
+      "translation": "voices"
+    },
+    {
+      "word": "rösterna-",
+      "translation": "the voices-"
+    },
+    {
+      "word": "s",
+      "translation": "pp"
+    },
+    {
+      "word": "sak",
+      "translation": "thing"
+    },
+    {
+      "word": "saker",
+      "translation": "things"
+    },
+    {
+      "word": "samband",
+      "translation": "connection"
+    },
+    {
+      "word": "samhället",
+      "translation": "society"
+    },
+    {
+      "word": "sammanhanget",
+      "translation": "the context"
+    },
+    {
+      "word": "sand",
+      "translation": "sand"
+    },
+    {
+      "word": "satskulden",
+      "translation": "sat debt"
+    },
+    {
+      "word": "satskulder",
+      "translation": "set shoulders"
+    },
+    {
+      "word": "scenario",
+      "translation": "scenario"
+    },
+    {
+      "word": "scenlödenen",
+      "translation": "the stage sounds"
+    },
+    {
+      "word": "sedan-",
+      "translation": "then-"
+    },
+    {
+      "word": "seger",
+      "translation": "victory"
+    },
+    {
+      "word": "senaten",
+      "translation": "the senate"
+    },
+    {
+      "word": "senator-",
+      "translation": "senator"
+    },
+    {
+      "word": "senatorer",
+      "translation": "senators"
+    },
+    {
+      "word": "senatorn",
+      "translation": "the senator"
+    },
+    {
+      "word": "september-attackerna",
+      "translation": "the September attacks"
+    },
+    {
+      "word": "series",
+      "translation": "series"
+    },
+    {
+      "word": "sida",
+      "translation": "side"
+    },
+    {
+      "word": "siffra",
+      "translation": "digit"
+    },
+    {
+      "word": "siffror",
+      "translation": "numbers"
+    },
+    {
+      "word": "siffrorna",
+      "translation": "the numbers"
+    },
+    {
+      "word": "sig-",
+      "translation": "sig-"
+    },
+    {
+      "word": "signalgruppshatten",
+      "translation": "the signal group hat"
+    },
+    {
+      "word": "sikt",
+      "translation": "term"
+    },
+    {
+      "word": "simon",
+      "translation": "simon"
+    },
+    {
+      "word": "situation",
+      "translation": "situation"
+    },
+    {
+      "word": "situationen",
+      "translation": "the situation"
+    },
+    {
+      "word": "sjukvård",
+      "translation": "healthcare"
+    },
+    {
+      "word": "själv-",
+      "translation": "self-"
+    },
+    {
+      "word": "skatten",
+      "translation": "the treasure"
+    },
+    {
+      "word": "skattepengar",
+      "translation": "tax money"
+    },
+    {
+      "word": "skatterlättningar",
+      "translation": "tax credits"
+    },
+    {
+      "word": "skiffrlagor",
+      "translation": "shale laws"
+    },
+    {
+      "word": "skillnad",
+      "translation": "difference"
+    },
+    {
+      "word": "skillnaden",
+      "translation": "the difference"
+    },
+    {
+      "word": "skofixeringen",
+      "translation": "the shoe fixation"
+    },
+    {
+      "word": "skointresse",
+      "translation": "shoe interest"
+    },
+    {
+      "word": "skokartonger",
+      "translation": "shoe boxes"
+    },
+    {
+      "word": "skokartonger-",
+      "translation": "shoe boxes"
+    },
+    {
+      "word": "skola",
+      "translation": "school"
+    },
+    {
+      "word": "skopreferenser",
+      "translation": "scope references"
+    },
+    {
+      "word": "skor",
+      "translation": "shoes"
+    },
+    {
+      "word": "skor-",
+      "translation": "shoes-"
+    },
+    {
+      "word": "skorna",
+      "translation": "the shoes"
+    },
+    {
+      "word": "skorna-",
+      "translation": "the shoes-"
+    },
+    {
+      "word": "skostoläk-",
+      "translation": "shoe chair medicine"
+    },
+    {
+      "word": "skrivbordet-",
+      "translation": "the desk-"
+    },
+    {
+      "word": "skyller",
+      "translation": "blames"
+    },
+    {
+      "word": "skyrocketing",
+      "translation": "skyrocketing"
+    },
+    {
+      "word": "skönt-",
+      "translation": "nice-"
+    },
+    {
+      "word": "sköt",
+      "translation": "shot"
+    },
+    {
+      "word": "slaget",
+      "translation": "the battle"
+    },
+    {
+      "word": "slips",
+      "translation": "tie"
+    },
+    {
+      "word": "slott",
+      "translation": "castle"
+    },
+    {
+      "word": "slut",
+      "translation": "end"
+    },
+    {
+      "word": "slutmålet",
+      "translation": "the end goal"
+    },
+    {
+      "word": "slutändan",
+      "translation": "the end"
+    },
+    {
+      "word": "smärta",
+      "translation": "pain"
+    },
+    {
+      "word": "snittet",
+      "translation": "the cut"
+    },
+    {
+      "word": "snittpriset",
+      "translation": "the average price"
+    },
+    {
+      "word": "sommar",
+      "translation": "summer"
+    },
+    {
+      "word": "sommaren",
+      "translation": "the summer"
+    },
+    {
+      "word": "sommartiden",
+      "translation": "summer time"
+    },
+    {
+      "word": "sorts",
+      "translation": "sort of"
+    },
+    {
+      "word": "specialstyrka-",
+      "translation": "special forces"
+    },
+    {
+      "word": "specifik",
+      "translation": "specific"
+    },
+    {
+      "word": "splittring",
+      "translation": "splitting"
+    },
+    {
+      "word": "spott",
+      "translation": "spit"
+    },
+    {
+      "word": "spär",
+      "translation": "rafter"
+    },
+    {
+      "word": "stacken-",
+      "translation": "the stack-"
+    },
+    {
+      "word": "stadsdeplikationen",
+      "translation": "the urban deplication"
+    },
+    {
+      "word": "stadsobligationen",
+      "translation": "the city bond"
+    },
+    {
+      "word": "stadsobligationer",
+      "translation": "municipal bonds"
+    },
+    {
+      "word": "stadspapper",
+      "translation": "city paper"
+    },
+    {
+      "word": "stat",
+      "translation": "state"
+    },
+    {
+      "word": "state",
+      "translation": "state"
+    },
+    {
+      "word": "steg",
+      "translation": "steps"
+    },
+    {
+      "word": "strategi",
+      "translation": "strategy"
+    },
+    {
+      "word": "strategi-",
+      "translation": "strategy"
+    },
+    {
+      "word": "street",
+      "translation": "street"
+    },
+    {
+      "word": "street-representanter",
+      "translation": "street representatives"
+    },
+    {
+      "word": "stressen",
+      "translation": "the stress"
+    },
+    {
+      "word": "styrande",
+      "translation": "governing"
+    },
+    {
+      "word": "ställen",
+      "translation": "places"
+    },
+    {
+      "word": "ställena",
+      "translation": "the places"
+    },
+    {
+      "word": "stället",
+      "translation": "the place"
+    },
+    {
+      "word": "stöd",
+      "translation": "support"
+    },
+    {
+      "word": "stöd-",
+      "translation": "support"
+    },
+    {
+      "word": "sugen",
+      "translation": "hungry"
+    },
+    {
+      "word": "sugnar",
+      "translation": "sucks"
+    },
+    {
+      "word": "sundet",
+      "translation": "the strait"
+    },
+    {
+      "word": "svara-",
+      "translation": "answer-"
+    },
+    {
+      "word": "svaret",
+      "translation": "the answer"
+    },
+    {
+      "word": "svart",
+      "translation": "black"
+    },
+    {
+      "word": "swing",
+      "translation": "swing"
+    },
+    {
+      "word": "syn",
+      "translation": "sight"
+    },
+    {
+      "word": "säljer",
+      "translation": "selling"
+    },
+    {
+      "word": "sänkning",
+      "translation": "reduction"
+    },
+    {
+      "word": "sänkningarna",
+      "translation": "the reductions"
+    },
+    {
+      "word": "sätt",
+      "translation": "manner"
+    },
+    {
+      "word": "sättet-",
+      "translation": "the way-"
+    },
+    {
+      "word": "sökning",
+      "translation": "search"
+    },
+    {
+      "word": "söndag",
+      "translation": "Sunday"
+    },
+    {
+      "word": "tack",
+      "translation": "thank you"
+    },
+    {
+      "word": "tacker",
+      "translation": "thanks"
+    },
+    {
+      "word": "tackers",
+      "translation": "thanks"
+    },
+    {
+      "word": "tak",
+      "translation": "ceiling"
+    },
+    {
+      "word": "takt",
+      "translation": "tact"
+    },
+    {
+      "word": "tal",
+      "translation": "numbers"
+    },
+    {
+      "word": "tankar",
+      "translation": "thoughts"
+    },
+    {
+      "word": "tanken",
+      "translation": "the thought"
+    },
+    {
+      "word": "tappade-",
+      "translation": "dropped-"
+    },
+    {
+      "word": "taylor",
+      "translation": "Taylor"
+    },
+    {
+      "word": "tehran",
+      "translation": "Tehran"
+    },
+    {
+      "word": "tid",
+      "translation": "time"
+    },
+    {
+      "word": "tiden",
+      "translation": "the time"
+    },
+    {
+      "word": "tidigare-",
+      "translation": "earlier-"
+    },
+    {
+      "word": "tidplan",
+      "translation": "timetable"
+    },
+    {
+      "word": "tidsram",
+      "translation": "timeframe"
+    },
+    {
+      "word": "tidsraven",
+      "translation": "the time raven"
+    },
+    {
+      "word": "tidtabell",
+      "translation": "timetable"
+    },
+    {
+      "word": "tidtabellan",
+      "translation": "the timetable"
+    },
+    {
+      "word": "tilltro",
+      "translation": "trust"
+    },
+    {
+      "word": "tilläckväl",
+      "translation": "quite well"
+    },
+    {
+      "word": "timmar",
+      "translation": "hours"
+    },
+    {
+      "word": "timmen",
+      "translation": "the hour"
+    },
+    {
+      "word": "ting",
+      "translation": "things"
+    },
+    {
+      "word": "tjänst",
+      "translation": "service"
+    },
+    {
+      "word": "to",
+      "translation": "two"
+    },
+    {
+      "word": "totalkostnaden",
+      "translation": "the total cost"
+    },
+    {
+      "word": "totten",
+      "translation": "the tot"
+    },
+    {
+      "word": "transport",
+      "translation": "transportation"
+    },
+    {
+      "word": "tried",
+      "translation": "tried"
+    },
+    {
+      "word": "trompe",
+      "translation": "trumpet"
+    },
+    {
+      "word": "trump",
+      "translation": "trump"
+    },
+    {
+      "word": "trump-",
+      "translation": "trump-"
+    },
+    {
+      "word": "trump-stödet",
+      "translation": "the trump support"
+    },
+    {
+      "word": "trumpadministrationen",
+      "translation": "the trump administration"
+    },
+    {
+      "word": "trumps",
+      "translation": "trumps"
+    },
+    {
+      "word": "tucker",
+      "translation": "tucker"
+    },
+    {
+      "word": "tullar",
+      "translation": "duties"
+    },
+    {
+      "word": "tur",
+      "translation": "turn"
+    },
+    {
+      "word": "turbulent",
+      "translation": "turbulent"
+    },
+    {
+      "word": "tvekan",
+      "translation": "hesitation"
+    },
+    {
+      "word": "tvers",
+      "translation": "across"
+    },
+    {
+      "word": "tvingar",
+      "translation": "forces"
+    },
+    {
+      "word": "typen",
+      "translation": "the type"
+    },
+    {
+      "word": "tåddelen",
+      "translation": "the toe part"
+    },
+    {
+      "word": "tåg",
+      "translation": "train"
+    },
+    {
+      "word": "unconditional",
+      "translation": "unconditional"
+    },
+    {
+      "word": "upp-",
+      "translation": "up-"
+    },
+    {
+      "word": "uppdrag",
+      "translation": "assignments"
+    },
+    {
+      "word": "uppenbarligen",
+      "translation": "obviously"
+    },
+    {
+      "word": "uppgiften",
+      "translation": "the task"
+    },
+    {
+      "word": "uppgifter",
+      "translation": "information"
+    },
+    {
+      "word": "uppgång",
+      "translation": "rise"
+    },
+    {
+      "word": "uppmärksamhet",
+      "translation": "attention"
+    },
+    {
+      "word": "uppståndelse",
+      "translation": "resurrection"
+    },
+    {
+      "word": "usa-",
+      "translation": "usa"
+    },
+    {
+      "word": "usa-påden",
+      "translation": "the usa"
+    },
+    {
+      "word": "usas",
+      "translation": "usa"
+    },
+    {
+      "word": "uttalande",
+      "translation": "statement"
+    },
+    {
+      "word": "uttalanden",
+      "translation": "statements"
+    },
+    {
+      "word": "uttalandet",
+      "translation": "the statement"
+    },
+    {
+      "word": "utvikt",
+      "translation": "unfolded"
+    },
+    {
+      "word": "val",
+      "translation": "choices"
+    },
+    {
+      "word": "valet",
+      "translation": "the choice"
+    },
+    {
+      "word": "valet-",
+      "translation": "the choice-"
+    },
+    {
+      "word": "valomgång",
+      "translation": "election round"
+    },
+    {
+      "word": "valpratsturnén-",
+      "translation": "puppy talk tour-"
+    },
+    {
+      "word": "valrörelsen",
+      "translation": "the electoral movement"
+    },
+    {
+      "word": "vana",
+      "translation": "habit"
+    },
+    {
+      "word": "vance",
+      "translation": "vance"
+    },
+    {
+      "word": "vance-",
+      "translation": "vance-"
+    },
+    {
+      "word": "vapen",
+      "translation": "weapons"
+    },
+    {
+      "word": "vapenföretag",
+      "translation": "arms company"
+    },
+    {
+      "word": "vapenindustrin",
+      "translation": "the arms industry"
+    },
+    {
+      "word": "vapenproducenterna",
+      "translation": "the arms manufacturers"
+    },
+    {
+      "word": "vapensystem",
+      "translation": "weapon system"
+    },
+    {
+      "word": "varnar",
+      "translation": "warns"
+    },
+    {
+      "word": "vatten",
+      "translation": "water"
+    },
+    {
+      "word": "vattnet",
+      "translation": "the water"
+    },
+    {
+      "word": "vd",
+      "translation": "CEO"
+    },
+    {
+      "word": "vecka",
+      "translation": "week"
+    },
+    {
+      "word": "veckan",
+      "translation": "the week"
+    },
+    {
+      "word": "veckor",
+      "translation": "weeks"
+    },
+    {
+      "word": "verklighet",
+      "translation": "reality"
+    },
+    {
+      "word": "vice-president",
+      "translation": "vice president"
+    },
+    {
+      "word": "viktigt-",
+      "translation": "important-"
+    },
+    {
+      "word": "vill-",
+      "translation": "want-"
+    },
+    {
+      "word": "villa",
+      "translation": "villa"
+    },
+    {
+      "word": "vingform",
+      "translation": "wing shape"
+    },
+    {
+      "word": "vippgäster",
+      "translation": "VIP guests"
+    },
+    {
+      "word": "visepräsident",
+      "translation": "vice president"
+    },
+    {
+      "word": "vita",
+      "translation": "white"
+    },
+    {
+      "word": "vunnit",
+      "translation": "won"
+    },
+    {
+      "word": "vägar",
+      "translation": "roads"
+    },
+    {
+      "word": "vägen",
+      "translation": "the road"
+    },
+    {
+      "word": "väljare",
+      "translation": "voters"
+    },
+    {
+      "word": "väljare-",
+      "translation": "voter-"
+    },
+    {
+      "word": "väljarna",
+      "translation": "the voters"
+    },
+    {
+      "word": "välkommen",
+      "translation": "welcome"
+    },
+    {
+      "word": "välkomna",
+      "translation": "welcome"
+    },
+    {
+      "word": "vän",
+      "translation": "friend"
+    },
+    {
+      "word": "värde",
+      "translation": "value"
+    },
+    {
+      "word": "värdepapper",
+      "translation": "securities"
+    },
+    {
+      "word": "värdepapperna",
+      "translation": "the securities"
+    },
+    {
+      "word": "värdering",
+      "translation": "valuation"
+    },
+    {
+      "word": "världen",
+      "translation": "the world"
+    },
+    {
+      "word": "världens",
+      "translation": "of the world"
+    },
+    {
+      "word": "världsekonomin",
+      "translation": "the world economy"
+    },
+    {
+      "word": "världskrigen",
+      "translation": "the world wars"
+    },
+    {
+      "word": "världsmarknadspriset",
+      "translation": "world market price"
+    },
+    {
+      "word": "världsrecession",
+      "translation": "world recession"
+    },
+    {
+      "word": "växts",
+      "translation": "grown"
+    },
+    {
+      "word": "vård",
+      "translation": "care"
+    },
+    {
+      "word": "våren",
+      "translation": "the spring"
+    },
+    {
+      "word": "wall",
+      "translation": "wall"
+    },
+    {
+      "word": "xett",
+      "translation": "xett"
+    },
+    {
+      "word": "yemen",
+      "translation": "Yemen"
+    },
+    {
+      "word": "you",
+      "translation": "you"
+    },
+    {
+      "word": "år",
+      "translation": "year"
+    },
+    {
+      "word": "året",
+      "translation": "the year"
+    },
+    {
+      "word": "åsmöten",
+      "translation": "ridge meetings"
+    },
+    {
+      "word": "återkommer",
+      "translation": "will return"
+    },
+    {
+      "word": "åtgärder",
+      "translation": "actions"
+    },
+    {
+      "word": "östenoljan",
+      "translation": "the eastern oil"
+    },
+    {
+      "word": "östern",
+      "translation": "the east"
+    },
+    {
+      "word": "österna",
+      "translation": "the east"
+    },
+    {
+      "word": "överskott",
+      "translation": "surplus"
+    }
+  ],
+  "PART": [
+    {
+      "word": "att",
+      "translation": "that"
+    },
+    {
+      "word": "inte",
+      "translation": "not"
+    },
+    {
+      "word": "radio-",
+      "translation": "radio"
+    }
+  ],
+  "PRON": [
+    {
+      "word": "alla",
+      "translation": "everyone"
+    },
+    {
+      "word": "allt",
+      "translation": "everything"
+    },
+    {
+      "word": "andra",
+      "translation": "others"
+    },
+    {
+      "word": "annat",
+      "translation": "other"
+    },
+    {
+      "word": "de",
+      "translation": "they"
+    },
+    {
+      "word": "dem",
+      "translation": "them"
+    },
+    {
+      "word": "den",
+      "translation": "it"
+    },
+    {
+      "word": "deras",
+      "translation": "theirs"
+    },
+    {
+      "word": "det",
+      "translation": "that"
+    },
+    {
+      "word": "detta",
+      "translation": "this"
+    },
+    {
+      "word": "din",
+      "translation": "yours"
+    },
+    {
+      "word": "du",
+      "translation": "you"
+    },
+    {
+      "word": "en",
+      "translation": "one"
+    },
+    {
+      "word": "fler",
+      "translation": "more"
+    },
+    {
+      "word": "han",
+      "translation": "he"
+    },
+    {
+      "word": "hans",
+      "translation": "his"
+    },
+    {
+      "word": "hennes",
+      "translation": "hers"
+    },
+    {
+      "word": "hon",
+      "translation": "she"
+    },
+    {
+      "word": "honom",
+      "translation": "him"
+    },
+    {
+      "word": "ingen",
+      "translation": "none"
+    },
+    {
+      "word": "jag",
+      "translation": "i"
+    },
+    {
+      "word": "man",
+      "translation": "man"
+    },
+    {
+      "word": "mig",
+      "translation": "me"
+    },
+    {
+      "word": "min",
+      "translation": "min"
+    },
+    {
+      "word": "mm",
+      "translation": "etc"
+    },
+    {
+      "word": "många",
+      "translation": "many"
+    },
+    {
+      "word": "ni",
+      "translation": "you"
+    },
+    {
+      "word": "något",
+      "translation": "something"
+    },
+    {
+      "word": "några",
+      "translation": "some"
+    },
+    {
+      "word": "nånting",
+      "translation": "something"
+    },
+    {
+      "word": "oss",
+      "translation": "us"
+    },
+    {
+      "word": "på-",
+      "translation": "on-"
+    },
+    {
+      "word": "sig",
+      "translation": "themselves"
+    },
+    {
+      "word": "sin",
+      "translation": "his"
+    },
+    {
+      "word": "sina",
+      "translation": "theirs"
+    },
+    {
+      "word": "sitt",
+      "translation": "sit"
+    },
+    {
+      "word": "som",
+      "translation": "which"
+    },
+    {
+      "word": "tramp",
+      "translation": "stomp"
+    },
+    {
+      "word": "trump",
+      "translation": "trump"
+    },
+    {
+      "word": "vad",
+      "translation": "what"
+    },
+    {
+      "word": "vance",
+      "translation": "vance"
+    },
+    {
+      "word": "var",
+      "translation": "where"
+    },
+    {
+      "word": "varandra",
+      "translation": "each other"
+    },
+    {
+      "word": "vem",
+      "translation": "who"
+    },
+    {
+      "word": "vi",
+      "translation": "we"
+    },
+    {
+      "word": "vilka",
+      "translation": "which ones"
+    },
+    {
+      "word": "vilket",
+      "translation": "which"
+    },
+    {
+      "word": "vår",
+      "translation": "spring"
+    },
+    {
+      "word": "våra",
+      "translation": "ours"
+    }
+  ],
+  "PROPN": [
+    {
+      "word": "anders",
+      "translation": "anders"
+    },
+    {
+      "word": "av-",
+      "translation": "of-"
+    },
+    {
+      "word": "begge",
+      "translation": "both of them"
+    },
+    {
+      "word": "biden",
+      "translation": "biden"
+    },
+    {
+      "word": "brent-oljan",
+      "translation": "Brent oil"
+    },
+    {
+      "word": "carlson",
+      "translation": "Carlson"
+    },
+    {
+      "word": "carlson-",
+      "translation": "carlson"
+    },
+    {
+      "word": "cbs",
+      "translation": "cbs"
+    },
+    {
+      "word": "clay",
+      "translation": "clay"
+    },
+    {
+      "word": "colton",
+      "translation": "colton"
+    },
+    {
+      "word": "department",
+      "translation": "department"
+    },
+    {
+      "word": "donald",
+      "translation": "donald"
+    },
+    {
+      "word": "ed",
+      "translation": "ed"
+    },
+    {
+      "word": "epstein",
+      "translation": "epstein"
+    },
+    {
+      "word": "estraselines",
+      "translation": "estracelines"
+    },
+    {
+      "word": "europa",
+      "translation": "Europe"
+    },
+    {
+      "word": "fortsätt",
+      "translation": "continue"
+    },
+    {
+      "word": "galrin",
+      "translation": "the gallery"
+    },
+    {
+      "word": "gaza",
+      "translation": "Gaza"
+    },
+    {
+      "word": "georgia",
+      "translation": "Georgia"
+    },
+    {
+      "word": "georgien",
+      "translation": "Georgia"
+    },
+    {
+      "word": "gina",
+      "translation": "gina"
+    },
+    {
+      "word": "graham",
+      "translation": "graham"
+    },
+    {
+      "word": "greene",
+      "translation": "greene"
+    },
+    {
+      "word": "greenland",
+      "translation": "Greenland"
+    },
+    {
+      "word": "hagseth",
+      "translation": "hagseth"
+    },
+    {
+      "word": "harris",
+      "translation": "harris"
+    },
+    {
+      "word": "hennedy",
+      "translation": "hendy"
+    },
+    {
+      "word": "hosanna",
+      "translation": "hosanna"
+    },
+    {
+      "word": "hushöts",
+      "translation": "head of household"
+    },
+    {
+      "word": "hörni",
+      "translation": "corner"
+    },
+    {
+      "word": "irak-",
+      "translation": "Iraq"
+    },
+    {
+      "word": "iran",
+      "translation": "Iran"
+    },
+    {
+      "word": "iran-",
+      "translation": "iran"
+    },
+    {
+      "word": "isaksson",
+      "translation": "Isaksson"
+    },
+    {
+      "word": "israel",
+      "translation": "Israel"
+    },
+    {
+      "word": "israels",
+      "translation": "Israeli"
+    },
+    {
+      "word": "jd",
+      "translation": "jd"
+    },
+    {
+      "word": "jeffrey",
+      "translation": "Jeffrey"
+    },
+    {
+      "word": "jena",
+      "translation": "those"
+    },
+    {
+      "word": "jina",
+      "translation": "jina"
+    },
+    {
+      "word": "john",
+      "translation": "john"
+    },
+    {
+      "word": "journal's",
+      "translation": "journal's"
+    },
+    {
+      "word": "journal-",
+      "translation": "journal"
+    },
+    {
+      "word": "kelly",
+      "translation": "kelly"
+    },
+    {
+      "word": "kentucky",
+      "translation": "Kentucky"
+    },
+    {
+      "word": "kentucky-",
+      "translation": "kentucky"
+    },
+    {
+      "word": "knut",
+      "translation": "knot"
+    },
+    {
+      "word": "kongressen",
+      "translation": "the congress"
+    },
+    {
+      "word": "krigförande-part",
+      "translation": "belligerent party"
+    },
+    {
+      "word": "lindberg",
+      "translation": "Lindbergh"
+    },
+    {
+      "word": "maga",
+      "translation": "stomach"
+    },
+    {
+      "word": "marco",
+      "translation": "marco"
+    },
+    {
+      "word": "marjorie",
+      "translation": "marjorie"
+    },
+    {
+      "word": "mark",
+      "translation": "ground"
+    },
+    {
+      "word": "markey",
+      "translation": "marquee"
+    },
+    {
+      "word": "meghan",
+      "translation": "Meghan"
+    },
+    {
+      "word": "moore",
+      "translation": "moore"
+    },
+    {
+      "word": "nordvästra",
+      "translation": "northwest"
+    },
+    {
+      "word": "nötsland",
+      "translation": "nut country"
+    },
+    {
+      "word": "o'ruby",
+      "translation": "o'ruby"
+    },
+    {
+      "word": "ohio",
+      "translation": "Ohio"
+    },
+    {
+      "word": "paul",
+      "translation": "Paul"
+    },
+    {
+      "word": "pentagon",
+      "translation": "pentagon"
+    },
+    {
+      "word": "rubio",
+      "translation": "Rubio"
+    },
+    {
+      "word": "schumer",
+      "translation": "Schumer"
+    },
+    {
+      "word": "simon",
+      "translation": "simon"
+    },
+    {
+      "word": "skollog",
+      "translation": "school log"
+    },
+    {
+      "word": "stenon",
+      "translation": "the stones"
+    },
+    {
+      "word": "stockholm",
+      "translation": "Stockholm"
+    },
+    {
+      "word": "street",
+      "translation": "street"
+    },
+    {
+      "word": "sverige",
+      "translation": "Sweden"
+    },
+    {
+      "word": "sveriges",
+      "translation": "sweden's"
+    },
+    {
+      "word": "tacka",
+      "translation": "thank"
+    },
+    {
+      "word": "tacker",
+      "translation": "thanks"
+    },
+    {
+      "word": "telegreen",
+      "translation": "telegreen"
+    },
+    {
+      "word": "thomas",
+      "translation": "Thomas"
+    },
+    {
+      "word": "treasury",
+      "translation": "treasury"
+    },
+    {
+      "word": "trump",
+      "translation": "trump"
+    },
+    {
+      "word": "trump-administrationen",
+      "translation": "the trump administration"
+    },
+    {
+      "word": "trump-väljare",
+      "translation": "Trump voters"
+    },
+    {
+      "word": "trumps",
+      "translation": "trumps"
+    },
+    {
+      "word": "ukraina",
+      "translation": "Ukraine"
+    },
+    {
+      "word": "ukraine",
+      "translation": "Ukraine"
+    },
+    {
+      "word": "united",
+      "translation": "united"
+    },
+    {
+      "word": "usa",
+      "translation": "usa"
+    },
+    {
+      "word": "vance",
+      "translation": "vance"
+    },
+    {
+      "word": "venezuela-",
+      "translation": "venezuela"
+    },
+    {
+      "word": "vita",
+      "translation": "white"
+    },
+    {
+      "word": "wall",
+      "translation": "wall"
+    },
+    {
+      "word": "war",
+      "translation": "was"
+    },
+    {
+      "word": "washington",
+      "translation": "washington"
+    },
+    {
+      "word": "west",
+      "translation": "west"
+    },
+    {
+      "word": "xium",
+      "translation": "xium"
+    },
+    {
+      "word": "åstin",
+      "translation": "ice cream"
+    }
+  ],
+  "PUNCT": [
+    {
+      "word": "-\"att",
+      "translation": "-\"that"
+    },
+    {
+      "word": "-titt",
+      "translation": "-look"
+    }
+  ],
+  "SCONJ": [
+    {
+      "word": "att",
+      "translation": "that"
+    },
+    {
+      "word": "eftersom",
+      "translation": "because"
+    },
+    {
+      "word": "innan",
+      "translation": "before"
+    },
+    {
+      "word": "medan",
+      "translation": "while"
+    },
+    {
+      "word": "när",
+      "translation": "when"
+    },
+    {
+      "word": "om",
+      "translation": "if"
+    },
+    {
+      "word": "som",
+      "translation": "which"
+    },
+    {
+      "word": "tills",
+      "translation": "until"
+    },
+    {
+      "word": "än",
+      "translation": "than"
+    }
+  ],
+  "VERB": [
+    {
+      "word": "-\"utfört",
+      "translation": "-\"done"
+    },
+    {
+      "word": "2028-",
+      "translation": "2028-"
+    },
+    {
+      "word": "annonserat",
+      "translation": "advertised"
+    },
+    {
+      "word": "attacker",
+      "translation": "attacks"
+    },
+    {
+      "word": "attarkera",
+      "translation": "attach"
+    },
+    {
+      "word": "avgöra",
+      "translation": "decide"
+    },
+    {
+      "word": "avslutar",
+      "translation": "finishes"
+    },
+    {
+      "word": "backade",
+      "translation": "backed up"
+    },
+    {
+      "word": "backat",
+      "translation": "backed up"
+    },
+    {
+      "word": "be",
+      "translation": "pray"
+    },
+    {
+      "word": "beads",
+      "translation": "beads"
+    },
+    {
+      "word": "begära",
+      "translation": "request"
+    },
+    {
+      "word": "behålla",
+      "translation": "retain"
+    },
+    {
+      "word": "beror",
+      "translation": "depends"
+    },
+    {
+      "word": "berättar",
+      "translation": "tells"
+    },
+    {
+      "word": "besegrats",
+      "translation": "defeated"
+    },
+    {
+      "word": "bestämma",
+      "translation": "decide"
+    },
+    {
+      "word": "bestämmer",
+      "translation": "decides"
+    },
+    {
+      "word": "besökte",
+      "translation": "visited"
+    },
+    {
+      "word": "betala",
+      "translation": "pay"
+    },
+    {
+      "word": "betyder",
+      "translation": "means"
+    },
+    {
+      "word": "blev",
+      "translation": "became"
+    },
+    {
+      "word": "bli",
+      "translation": "become"
+    },
+    {
+      "word": "blir",
+      "translation": "becomes"
+    },
+    {
+      "word": "blivit",
+      "translation": "become"
+    },
+    {
+      "word": "blås",
+      "translation": "blow"
+    },
+    {
+      "word": "bollar",
+      "translation": "balls"
+    },
+    {
+      "word": "bonds",
+      "translation": "bonds"
+    },
+    {
+      "word": "bor",
+      "translation": "lives"
+    },
+    {
+      "word": "brukar",
+      "translation": "usually"
+    },
+    {
+      "word": "bygga",
+      "translation": "build"
+    },
+    {
+      "word": "byttit",
+      "translation": "changed"
+    },
+    {
+      "word": "bär",
+      "translation": "berries"
+    },
+    {
+      "word": "börja",
+      "translation": "begin"
+    },
+    {
+      "word": "började",
+      "translation": "began"
+    },
+    {
+      "word": "börjar",
+      "translation": "begins"
+    },
+    {
+      "word": "börjat",
+      "translation": "started"
+    },
+    {
+      "word": "definierar",
+      "translation": "defines"
+    },
+    {
+      "word": "dela",
+      "translation": "share"
+    },
+    {
+      "word": "delat",
+      "translation": "shared"
+    },
+    {
+      "word": "dollar",
+      "translation": "dollars"
+    },
+    {
+      "word": "down",
+      "translation": "down"
+    },
+    {
+      "word": "dragit",
+      "translation": "drawn"
+    },
+    {
+      "word": "driver",
+      "translation": "drives"
+    },
+    {
+      "word": "duo",
+      "translation": "duo"
+    },
+    {
+      "word": "dyrat",
+      "translation": "expensive"
+    },
+    {
+      "word": "enas",
+      "translation": "agree"
+    },
+    {
+      "word": "endat",
+      "translation": "only"
+    },
+    {
+      "word": "ersätta",
+      "translation": "replace"
+    },
+    {
+      "word": "eskalerades",
+      "translation": "was escalated"
+    },
+    {
+      "word": "exporterar",
+      "translation": "exports"
+    },
+    {
+      "word": "fanns",
+      "translation": "existed"
+    },
+    {
+      "word": "fastnat",
+      "translation": "stuck"
+    },
+    {
+      "word": "fick",
+      "translation": "got"
+    },
+    {
+      "word": "finansiera",
+      "translation": "finance"
+    },
+    {
+      "word": "finnas",
+      "translation": "exist"
+    },
+    {
+      "word": "finns",
+      "translation": "exists"
+    },
+    {
+      "word": "flytts",
+      "translation": "moved"
+    },
+    {
+      "word": "fokus",
+      "translation": "focus"
+    },
+    {
+      "word": "fokusera",
+      "translation": "focus"
+    },
+    {
+      "word": "fortsätta",
+      "translation": "continue"
+    },
+    {
+      "word": "fortsätter",
+      "translation": "continues"
+    },
+    {
+      "word": "framgått",
+      "translation": "appeared"
+    },
+    {
+      "word": "framhöll",
+      "translation": "highlighted"
+    },
+    {
+      "word": "frågade",
+      "translation": "asked"
+    },
+    {
+      "word": "frågar",
+      "translation": "asks"
+    },
+    {
+      "word": "fuller",
+      "translation": "fuller"
+    },
+    {
+      "word": "funderar",
+      "translation": "pondering"
+    },
+    {
+      "word": "få",
+      "translation": "few"
+    },
+    {
+      "word": "får",
+      "translation": "Sheep"
+    },
+    {
+      "word": "fått",
+      "translation": "got"
+    },
+    {
+      "word": "föder",
+      "translation": "gives birth"
+    },
+    {
+      "word": "följa",
+      "translation": "follow"
+    },
+    {
+      "word": "följer",
+      "translation": "follows"
+    },
+    {
+      "word": "förlängs",
+      "translation": "is extended"
+    },
+    {
+      "word": "förstår",
+      "translation": "understand"
+    },
+    {
+      "word": "förstått",
+      "translation": "understood"
+    },
+    {
+      "word": "förstörts",
+      "translation": "destroyed"
+    },
+    {
+      "word": "försvagades",
+      "translation": "weakened"
+    },
+    {
+      "word": "försvinner",
+      "translation": "disappears"
+    },
+    {
+      "word": "försäkra",
+      "translation": "insure"
+    },
+    {
+      "word": "försöka",
+      "translation": "try"
+    },
+    {
+      "word": "försöker",
+      "translation": "trying"
+    },
+    {
+      "word": "förutsätter",
+      "translation": "presupposes"
+    },
+    {
+      "word": "förvara",
+      "translation": "store"
+    },
+    {
+      "word": "gav",
+      "translation": "gave"
+    },
+    {
+      "word": "ge",
+      "translation": "give"
+    },
+    {
+      "word": "ger",
+      "translation": "gives"
+    },
+    {
+      "word": "gett",
+      "translation": "given"
+    },
+    {
+      "word": "gick",
+      "translation": "went"
+    },
+    {
+      "word": "gillar",
+      "translation": "like"
+    },
+    {
+      "word": "ginnade",
+      "translation": "given"
+    },
+    {
+      "word": "ginnar",
+      "translation": "gives"
+    },
+    {
+      "word": "ginnna",
+      "translation": "become"
+    },
+    {
+      "word": "gissar",
+      "translation": "guesses"
+    },
+    {
+      "word": "gissat",
+      "translation": "guessed"
+    },
+    {
+      "word": "gjorde",
+      "translation": "did"
+    },
+    {
+      "word": "gjort",
+      "translation": "done"
+    },
+    {
+      "word": "glömma",
+      "translation": "forget"
+    },
+    {
+      "word": "glömt",
+      "translation": "forgotten"
+    },
+    {
+      "word": "googla",
+      "translation": "google"
+    },
+    {
+      "word": "grannar",
+      "translation": "neighbors"
+    },
+    {
+      "word": "gynna",
+      "translation": "benefit"
+    },
+    {
+      "word": "gynnar",
+      "translation": "benefits"
+    },
+    {
+      "word": "gynnat",
+      "translation": "favored"
+    },
+    {
+      "word": "gäller",
+      "translation": "applies"
+    },
+    {
+      "word": "gå",
+      "translation": "go"
+    },
+    {
+      "word": "går",
+      "translation": "goes"
+    },
+    {
+      "word": "gått",
+      "translation": "gone"
+    },
+    {
+      "word": "gömt",
+      "translation": "hidden"
+    },
+    {
+      "word": "gör",
+      "translation": "do"
+    },
+    {
+      "word": "göra",
+      "translation": "do"
+    },
+    {
+      "word": "ha",
+      "translation": "ha"
+    },
+    {
+      "word": "hade",
+      "translation": "had"
+    },
+    {
+      "word": "haft",
+      "translation": "had"
+    },
+    {
+      "word": "hamna",
+      "translation": "end up"
+    },
+    {
+      "word": "hamnar",
+      "translation": "end up"
+    },
+    {
+      "word": "hamnat",
+      "translation": "ended up"
+    },
+    {
+      "word": "handla",
+      "translation": "shop"
+    },
+    {
+      "word": "handlade",
+      "translation": "shopped"
+    },
+    {
+      "word": "handlar",
+      "translation": "trades"
+    },
+    {
+      "word": "har",
+      "translation": "have"
+    },
+    {
+      "word": "heter",
+      "translation": "called"
+    },
+    {
+      "word": "hitta",
+      "translation": "find"
+    },
+    {
+      "word": "hittar",
+      "translation": "finds"
+    },
+    {
+      "word": "hittat",
+      "translation": "found"
+    },
+    {
+      "word": "hoppats",
+      "translation": "hoped"
+    },
+    {
+      "word": "hända",
+      "translation": "happen"
+    },
+    {
+      "word": "händer",
+      "translation": "hands"
+    },
+    {
+      "word": "hängde",
+      "translation": "hung"
+    },
+    {
+      "word": "hävdar",
+      "translation": "claims"
+    },
+    {
+      "word": "hålla",
+      "translation": "keep"
+    },
+    {
+      "word": "håller",
+      "translation": "holds"
+    },
+    {
+      "word": "hör",
+      "translation": "hear"
+    },
+    {
+      "word": "höra",
+      "translation": "hear"
+    },
+    {
+      "word": "hörde",
+      "translation": "heard"
+    },
+    {
+      "word": "hörs",
+      "translation": "can be heard"
+    },
+    {
+      "word": "hört",
+      "translation": "heard"
+    },
+    {
+      "word": "igår",
+      "translation": "yesterday"
+    },
+    {
+      "word": "inkludera",
+      "translation": "include"
+    },
+    {
+      "word": "inneburit",
+      "translation": "implied"
+    },
+    {
+      "word": "innebär",
+      "translation": "implies"
+    },
+    {
+      "word": "insåg",
+      "translation": "realized"
+    },
+    {
+      "word": "investera",
+      "translation": "invest"
+    },
+    {
+      "word": "israel-",
+      "translation": "Israeli"
+    },
+    {
+      "word": "jättemånga",
+      "translation": "a great many"
+    },
+    {
+      "word": "kainns",
+      "translation": "Cain's"
+    },
+    {
+      "word": "kallade",
+      "translation": "called"
+    },
+    {
+      "word": "kallar",
+      "translation": "calls"
+    },
+    {
+      "word": "klarar",
+      "translation": "able to"
+    },
+    {
+      "word": "kliva",
+      "translation": "step"
+    },
+    {
+      "word": "kollade",
+      "translation": "checked"
+    },
+    {
+      "word": "kom",
+      "translation": "come on"
+    },
+    {
+      "word": "komma",
+      "translation": "come"
+    },
+    {
+      "word": "kommentera",
+      "translation": "comment"
+    },
+    {
+      "word": "kommer",
+      "translation": "is coming"
+    },
+    {
+      "word": "kommit",
+      "translation": "arrived"
+    },
+    {
+      "word": "kommunicerat",
+      "translation": "communicated"
+    },
+    {
+      "word": "kompensera",
+      "translation": "compensate"
+    },
+    {
+      "word": "kostar",
+      "translation": "costs"
+    },
+    {
+      "word": "kritisera",
+      "translation": "criticize"
+    },
+    {
+      "word": "kritiserar",
+      "translation": "criticizes"
+    },
+    {
+      "word": "kräver",
+      "translation": "requires"
+    },
+    {
+      "word": "känna",
+      "translation": "feel"
+    },
+    {
+      "word": "känner",
+      "translation": "feel"
+    },
+    {
+      "word": "köpa",
+      "translation": "buy"
+    },
+    {
+      "word": "köper",
+      "translation": "buys"
+    },
+    {
+      "word": "ligga",
+      "translation": "lie down"
+    },
+    {
+      "word": "ligger",
+      "translation": "lies"
+    },
+    {
+      "word": "litar",
+      "translation": "trusts"
+    },
+    {
+      "word": "lugna",
+      "translation": "calm down"
+    },
+    {
+      "word": "luta",
+      "translation": "tilt"
+    },
+    {
+      "word": "lyckades",
+      "translation": "succeeded"
+    },
+    {
+      "word": "lyckas",
+      "translation": "succeed"
+    },
+    {
+      "word": "lyssna",
+      "translation": "listen"
+    },
+    {
+      "word": "lyssnar",
+      "translation": "listening"
+    },
+    {
+      "word": "lägga",
+      "translation": "put"
+    },
+    {
+      "word": "lägger",
+      "translation": "puts"
+    },
+    {
+      "word": "lämna",
+      "translation": "leave"
+    },
+    {
+      "word": "lämnade",
+      "translation": "left"
+    },
+    {
+      "word": "lärt",
+      "translation": "learned"
+    },
+    {
+      "word": "läsa",
+      "translation": "read"
+    },
+    {
+      "word": "lånar",
+      "translation": "borrows"
+    },
+    {
+      "word": "lånat",
+      "translation": "borrowed"
+    },
+    {
+      "word": "låta",
+      "translation": "let"
+    },
+    {
+      "word": "låter",
+      "translation": "sounds"
+    },
+    {
+      "word": "manipulera",
+      "translation": "manipulate"
+    },
+    {
+      "word": "marktrupper",
+      "translation": "ground troops"
+    },
+    {
+      "word": "medvetat",
+      "translation": "consciously"
+    },
+    {
+      "word": "menade",
+      "translation": "meant"
+    },
+    {
+      "word": "menar",
+      "translation": "means"
+    },
+    {
+      "word": "mildra",
+      "translation": "mitigate"
+    },
+    {
+      "word": "märks",
+      "translation": "noticeable"
+    },
+    {
+      "word": "möta",
+      "translation": "meet"
+    },
+    {
+      "word": "never",
+      "translation": "never"
+    },
+    {
+      "word": "noterat",
+      "translation": "noted"
+    },
+    {
+      "word": "nå",
+      "translation": "now"
+    },
+    {
+      "word": "nåt",
+      "translation": "something"
+    },
+    {
+      "word": "offentliggöra",
+      "translation": "make public"
+    },
+    {
+      "word": "oljereserver",
+      "translation": "oil reserves"
+    },
+    {
+      "word": "omfördela",
+      "translation": "redistribute"
+    },
+    {
+      "word": "passar",
+      "translation": "fits"
+    },
+    {
+      "word": "pekat",
+      "translation": "pointed"
+    },
+    {
+      "word": "pendla",
+      "translation": "commute"
+    },
+    {
+      "word": "plocka",
+      "translation": "pick"
+    },
+    {
+      "word": "prata",
+      "translation": "talk"
+    },
+    {
+      "word": "pratar",
+      "translation": "talking"
+    },
+    {
+      "word": "pratas",
+      "translation": "is talked about"
+    },
+    {
+      "word": "pratat",
+      "translation": "talked"
+    },
+    {
+      "word": "pressat",
+      "translation": "pressed"
+    },
+    {
+      "word": "pyssa",
+      "translation": "tinker"
+    },
+    {
+      "word": "pågå",
+      "translation": "going on"
+    },
+    {
+      "word": "pågår",
+      "translation": "ongoing"
+    },
+    {
+      "word": "påverka",
+      "translation": "influence"
+    },
+    {
+      "word": "påverkar",
+      "translation": "affects"
+    },
+    {
+      "word": "påverkas",
+      "translation": "is affected"
+    },
+    {
+      "word": "radar",
+      "translation": "radar"
+    },
+    {
+      "word": "rasade",
+      "translation": "raged"
+    },
+    {
+      "word": "reagerar",
+      "translation": "reacts"
+    },
+    {
+      "word": "reglera",
+      "translation": "regulate"
+    },
+    {
+      "word": "reminerat",
+      "translation": "remined"
+    },
+    {
+      "word": "renare",
+      "translation": "cleaner"
+    },
+    {
+      "word": "reporter",
+      "translation": "reporter"
+    },
+    {
+      "word": "representeras",
+      "translation": "is represented"
+    },
+    {
+      "word": "reter",
+      "translation": "teasing"
+    },
+    {
+      "word": "riskerar",
+      "translation": "risks"
+    },
+    {
+      "word": "rysslands",
+      "translation": "of Russia"
+    },
+    {
+      "word": "räckte",
+      "translation": "was enough"
+    },
+    {
+      "word": "räknar",
+      "translation": "counting"
+    },
+    {
+      "word": "rådmolka",
+      "translation": "council milk"
+    },
+    {
+      "word": "råkade",
+      "translation": "happened"
+    },
+    {
+      "word": "röja",
+      "translation": "clear"
+    },
+    {
+      "word": "röstade",
+      "translation": "voted"
+    },
+    {
+      "word": "sa",
+      "translation": "said"
+    },
+    {
+      "word": "sagt",
+      "translation": "said"
+    },
+    {
+      "word": "satsa",
+      "translation": "bet"
+    },
+    {
+      "word": "satsar",
+      "translation": "bets"
+    },
+    {
+      "word": "satt",
+      "translation": "sat"
+    },
+    {
+      "word": "se",
+      "translation": "look"
+    },
+    {
+      "word": "ser",
+      "translation": "see"
+    },
+    {
+      "word": "sett",
+      "translation": "seen"
+    },
+    {
+      "word": "signalerar",
+      "translation": "signals"
+    },
+    {
+      "word": "sitter",
+      "translation": "sitting"
+    },
+    {
+      "word": "sjunkit",
+      "translation": "dropped"
+    },
+    {
+      "word": "ska",
+      "translation": "shall"
+    },
+    {
+      "word": "skaffa",
+      "translation": "get"
+    },
+    {
+      "word": "skakade",
+      "translation": "shook"
+    },
+    {
+      "word": "skapa",
+      "translation": "create"
+    },
+    {
+      "word": "ske",
+      "translation": "happen"
+    },
+    {
+      "word": "skedde",
+      "translation": "happened"
+    },
+    {
+      "word": "sker",
+      "translation": "happens"
+    },
+    {
+      "word": "skiljer",
+      "translation": "differs"
+    },
+    {
+      "word": "skjuta",
+      "translation": "shoot"
+    },
+    {
+      "word": "skjuter",
+      "translation": "shoots"
+    },
+    {
+      "word": "sko",
+      "translation": "shoe"
+    },
+    {
+      "word": "skrev",
+      "translation": "wrote"
+    },
+    {
+      "word": "skrivit",
+      "translation": "written"
+    },
+    {
+      "word": "skydda",
+      "translation": "protect"
+    },
+    {
+      "word": "skylde",
+      "translation": "owe"
+    },
+    {
+      "word": "skör",
+      "translation": "fragile"
+    },
+    {
+      "word": "slita",
+      "translation": "tear"
+    },
+    {
+      "word": "sluta",
+      "translation": "stop"
+    },
+    {
+      "word": "slutade",
+      "translation": "stopped"
+    },
+    {
+      "word": "sluter",
+      "translation": "closes"
+    },
+    {
+      "word": "släppa",
+      "translation": "let go"
+    },
+    {
+      "word": "släpper",
+      "translation": "lets go"
+    },
+    {
+      "word": "slå",
+      "translation": "hit"
+    },
+    {
+      "word": "slåss",
+      "translation": "fight"
+    },
+    {
+      "word": "sms-ade",
+      "translation": "texted"
+    },
+    {
+      "word": "snörat",
+      "translation": "laced"
+    },
+    {
+      "word": "spelar",
+      "translation": "plays"
+    },
+    {
+      "word": "spenderar",
+      "translation": "spends"
+    },
+    {
+      "word": "splittrade",
+      "translation": "split up"
+    },
+    {
+      "word": "stannar",
+      "translation": "stops"
+    },
+    {
+      "word": "stiga",
+      "translation": "rise"
+    },
+    {
+      "word": "stiger",
+      "translation": "rises"
+    },
+    {
+      "word": "stoppa",
+      "translation": "stop"
+    },
+    {
+      "word": "strategy",
+      "translation": "strategy"
+    },
+    {
+      "word": "stryk",
+      "translation": "stroke"
+    },
+    {
+      "word": "strå",
+      "translation": "straw"
+    },
+    {
+      "word": "ställa",
+      "translation": "ask"
+    },
+    {
+      "word": "ställde",
+      "translation": "posed"
+    },
+    {
+      "word": "stängs",
+      "translation": "closes"
+    },
+    {
+      "word": "stå",
+      "translation": "stand"
+    },
+    {
+      "word": "står",
+      "translation": "stands"
+    },
+    {
+      "word": "stört",
+      "translation": "disturbed"
+    },
+    {
+      "word": "stötta",
+      "translation": "support"
+    },
+    {
+      "word": "suttit",
+      "translation": "sat"
+    },
+    {
+      "word": "svarade",
+      "translation": "answered"
+    },
+    {
+      "word": "säga",
+      "translation": "say"
+    },
+    {
+      "word": "säger",
+      "translation": "says"
+    },
+    {
+      "word": "sälja",
+      "translation": "sell"
+    },
+    {
+      "word": "sänka",
+      "translation": "lower"
+    },
+    {
+      "word": "sätta",
+      "translation": "put"
+    },
+    {
+      "word": "sätter",
+      "translation": "sets"
+    },
+    {
+      "word": "sätts",
+      "translation": "is set"
+    },
+    {
+      "word": "såg",
+      "translation": "saw"
+    },
+    {
+      "word": "såna",
+      "translation": "such"
+    },
+    {
+      "word": "ta",
+      "translation": "take"
+    },
+    {
+      "word": "tackar",
+      "translation": "thanks"
+    },
+    {
+      "word": "tacker",
+      "translation": "thanks"
+    },
+    {
+      "word": "tala",
+      "translation": "speak"
+    },
+    {
+      "word": "talar",
+      "translation": "speaking"
+    },
+    {
+      "word": "talat",
+      "translation": "spoken"
+    },
+    {
+      "word": "tankar",
+      "translation": "thoughts"
+    },
+    {
+      "word": "tappla",
+      "translation": "dabble"
+    },
+    {
+      "word": "tar",
+      "translation": "takes"
+    },
+    {
+      "word": "tillgängliggöra",
+      "translation": "make available"
+    },
+    {
+      "word": "tillverka",
+      "translation": "manufacture"
+    },
+    {
+      "word": "tjänar",
+      "translation": "serves"
+    },
+    {
+      "word": "tolkade",
+      "translation": "interpreted"
+    },
+    {
+      "word": "tolkar",
+      "translation": "interpreters"
+    },
+    {
+      "word": "trivs",
+      "translation": "thrives"
+    },
+    {
+      "word": "trodde",
+      "translation": "thought"
+    },
+    {
+      "word": "tror",
+      "translation": "think"
+    },
+    {
+      "word": "trump",
+      "translation": "trump"
+    },
+    {
+      "word": "trump's",
+      "translation": "trump's"
+    },
+    {
+      "word": "träffa",
+      "translation": "meet"
+    },
+    {
+      "word": "tuffa",
+      "translation": "tough"
+    },
+    {
+      "word": "tycker",
+      "translation": "thinks"
+    },
+    {
+      "word": "tyckte",
+      "translation": "thought"
+    },
+    {
+      "word": "tyder",
+      "translation": "indicates"
+    },
+    {
+      "word": "tänka",
+      "translation": "think"
+    },
+    {
+      "word": "tänker",
+      "translation": "thinking"
+    },
+    {
+      "word": "tänkt",
+      "translation": "thought"
+    },
+    {
+      "word": "tänkte",
+      "translation": "thought"
+    },
+    {
+      "word": "tömmer",
+      "translation": "empties"
+    },
+    {
+      "word": "undrar",
+      "translation": "wondering"
+    },
+    {
+      "word": "uppfattade",
+      "translation": "perceived"
+    },
+    {
+      "word": "uppfattas",
+      "translation": "perceived"
+    },
+    {
+      "word": "upplever",
+      "translation": "experiences"
+    },
+    {
+      "word": "uppnått",
+      "translation": "achieved"
+    },
+    {
+      "word": "usas",
+      "translation": "usa"
+    },
+    {
+      "word": "utesluter",
+      "translation": "excludes"
+    },
+    {
+      "word": "utgjorde",
+      "translation": "constituted"
+    },
+    {
+      "word": "utgör",
+      "translation": "constitutes"
+    },
+    {
+      "word": "utmanar",
+      "translation": "challenges"
+    },
+    {
+      "word": "utnittat",
+      "translation": "exploited"
+    },
+    {
+      "word": "utsluter",
+      "translation": "excludes"
+    },
+    {
+      "word": "uttala",
+      "translation": "pronounce"
+    },
+    {
+      "word": "uttalar",
+      "translation": "pronounces"
+    },
+    {
+      "word": "uttalat",
+      "translation": "pronounced"
+    },
+    {
+      "word": "uttrycker",
+      "translation": "expresses"
+    },
+    {
+      "word": "uttryckt",
+      "translation": "expressed"
+    },
+    {
+      "word": "utvecklas",
+      "translation": "develop"
+    },
+    {
+      "word": "utvinner",
+      "translation": "extracting"
+    },
+    {
+      "word": "valt",
+      "translation": "selected"
+    },
+    {
+      "word": "var",
+      "translation": "where"
+    },
+    {
+      "word": "varierar",
+      "translation": "varies"
+    },
+    {
+      "word": "varit",
+      "translation": "been"
+    },
+    {
+      "word": "varnat",
+      "translation": "warned"
+    },
+    {
+      "word": "verkade",
+      "translation": "seemed"
+    },
+    {
+      "word": "verkar",
+      "translation": "seems"
+    },
+    {
+      "word": "vet",
+      "translation": "know"
+    },
+    {
+      "word": "veta",
+      "translation": "know"
+    },
+    {
+      "word": "vilja",
+      "translation": "will"
+    },
+    {
+      "word": "vill",
+      "translation": "want"
+    },
+    {
+      "word": "visar",
+      "translation": "shows"
+    },
+    {
+      "word": "vunnit",
+      "translation": "won"
+    },
+    {
+      "word": "väcker",
+      "translation": "wakes up"
+    },
+    {
+      "word": "väljer",
+      "translation": "chooses"
+    },
+    {
+      "word": "vänder",
+      "translation": "turns"
+    },
+    {
+      "word": "väntas",
+      "translation": "expected"
+    },
+    {
+      "word": "väntat",
+      "translation": "expected"
+    },
+    {
+      "word": "värma",
+      "translation": "heat"
+    },
+    {
+      "word": "war",
+      "translation": "was"
+    },
+    {
+      "word": "äger",
+      "translation": "owns"
+    },
+    {
+      "word": "älskar",
+      "translation": "love"
+    },
+    {
+      "word": "är",
+      "translation": "is"
+    },
+    {
+      "word": "äter",
+      "translation": "eats"
+    },
+    {
+      "word": "åka",
+      "translation": "ride"
+    },
+    {
+      "word": "åker",
+      "translation": "goes"
+    },
+    {
+      "word": "årenas",
+      "translation": "of the years"
+    },
+    {
+      "word": "öka",
+      "translation": "increase"
+    },
+    {
+      "word": "ökar",
+      "translation": "increases"
+    },
+    {
+      "word": "ökat",
+      "translation": "increased"
+    }
+  ]
+}
