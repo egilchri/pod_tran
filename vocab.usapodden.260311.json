@@ -1045,10 +1045,6 @@
       "translation": "choose"
     },
     {
-      "word": "välkomna",
-      "translation": "welcome"
-    },
-    {
       "word": "värre",
       "translation": "worse"
     },
@@ -1721,10 +1717,6 @@
       "translation": "disproportionately"
     },
     {
-      "word": "ovvisvis",
-      "translation": "obviously"
-    },
-    {
       "word": "plötsligt",
       "translation": "suddenly"
     },
@@ -1935,10 +1927,6 @@
     {
       "word": "väldigt",
       "translation": "very"
-    },
-    {
-      "word": "värmt",
-      "translation": "heated"
     },
     {
       "word": "ytterligare",
@@ -2423,10 +2411,6 @@
       "translation": "the decision"
     },
     {
-      "word": "bete",
-      "translation": "bait"
-    },
-    {
       "word": "betydelse",
       "translation": "meaning"
     },
@@ -2551,10 +2535,6 @@
       "translation": "the central bank"
     },
     {
-      "word": "charlize's",
-      "translation": "charlize's"
-    },
-    {
       "word": "chefsekonomtorsens",
       "translation": "Chief Economist"
     },
@@ -2649,10 +2629,6 @@
     {
       "word": "departementschefer",
       "translation": "department heads"
-    },
-    {
-      "word": "devlet",
-      "translation": "state"
     },
     {
       "word": "diskurs",
@@ -3813,10 +3789,6 @@
     {
       "word": "misiler",
       "translation": "missiles"
-    },
-    {
-      "word": "missen",
-      "translation": "the miss"
     },
     {
       "word": "missnöje",
@@ -5343,10 +5315,6 @@
       "translation": "welcome"
     },
     {
-      "word": "välkomna",
-      "translation": "welcome"
-    },
-    {
       "word": "vän",
       "translation": "friend"
     },
@@ -5765,10 +5733,6 @@
       "translation": "greene"
     },
     {
-      "word": "greenland",
-      "translation": "Greenland"
-    },
-    {
       "word": "hagseth",
       "translation": "hagseth"
     },
@@ -5819,10 +5783,6 @@
     {
       "word": "jd",
       "translation": "jd"
-    },
-    {
-      "word": "jeffrey",
-      "translation": "Jeffrey"
     },
     {
       "word": "jena",
@@ -6285,10 +6245,6 @@
     {
       "word": "enas",
       "translation": "agree"
-    },
-    {
-      "word": "endat",
-      "translation": "only"
     },
     {
       "word": "ersätta",
@@ -7311,10 +7267,6 @@
       "translation": "speaking"
     },
     {
-      "word": "talat",
-      "translation": "spoken"
-    },
-    {
       "word": "tankar",
       "translation": "thoughts"
     },
@@ -7541,6 +7493,10 @@
     {
       "word": "väljer",
       "translation": "chooses"
+    },
+    {
+      "word": "välkomna",
+      "translation": "welcome"
     },
     {
       "word": "vänder",
