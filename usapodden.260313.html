@@ -113,6 +113,12 @@
                 audio.src = sources[mode];
                 audio.playbackRate = rate;
                 lastIdx = -1;
+                if (startPattern !== null && data.length > 0) {
+                    const matchIdx = data.findIndex(item => item.orig.toLowerCase().includes(startPattern.toLowerCase()));
+                    const target = data[matchIdx !== -1 ? matchIdx : 0];
+                    seekTargetTime = (mode === 'orig') ? target.start : target.b_start;
+                    initialSeekDone = false;
+                }
                 checkAudioStatus();
                 if (isPlaying) audio.play();
                 modeLabel.innerText = mode === 'orig' ? 'Podcast' : 'Interleaved';
