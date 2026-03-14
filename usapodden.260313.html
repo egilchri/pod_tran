@@ -69,8 +69,12 @@
 
             function doInitialSeek() {
                 if (initialSeekDone || startPattern === null || data.length === 0) return;
-                audio.currentTime = (mode === 'orig') ? data[0].start : data[0].b_start;
+                const matchIdx = data.findIndex(item => item.orig.toLowerCase().includes(startPattern.toLowerCase()));
+                const target = data[matchIdx !== -1 ? matchIdx : 0];
+                audio.currentTime = (mode === 'orig') ? target.start : target.b_start;
                 initialSeekDone = true;
+                const targetRow = document.getElementById('row-' + (matchIdx !== -1 ? matchIdx : 0));
+                if (targetRow) targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
 
             audio.addEventListener('loadedmetadata', doInitialSeek);
@@ -147,8 +151,6 @@
                 });
                 if (startPattern !== null && data.length > 0) {
                     doInitialSeek();
-                    const firstRow = document.getElementById('row-0');
-                    if (firstRow) firstRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 }
             });
 
