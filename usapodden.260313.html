@@ -65,20 +65,17 @@
             let mode = 'orig';
             let data = [];
             let lastIdx = -1;
+            let seekTargetTime = null;
             let initialSeekDone = false;
 
-            function doInitialSeek() {
-                if (initialSeekDone || startPattern === null || data.length === 0) return;
-                const matchIdx = data.findIndex(item => item.orig.toLowerCase().includes(startPattern.toLowerCase()));
-                const target = data[matchIdx !== -1 ? matchIdx : 0];
-                audio.currentTime = (mode === 'orig') ? target.start : target.b_start;
+            function applySeek() {
+                if (initialSeekDone || seekTargetTime === null) return;
+                audio.currentTime = seekTargetTime;
                 initialSeekDone = true;
-                const targetRow = document.getElementById('row-' + (matchIdx !== -1 ? matchIdx : 0));
-                if (targetRow) targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
 
-            audio.addEventListener('loadedmetadata', doInitialSeek);
-            audio.addEventListener('canplay', doInitialSeek);
+            audio.addEventListener('loadedmetadata', applySeek);
+            audio.addEventListener('canplay', applySeek);
 
             async function checkAudioStatus() {
                 try {
@@ -150,7 +147,13 @@
                     container.appendChild(row);
                 });
                 if (startPattern !== null && data.length > 0) {
-                    doInitialSeek();
+                    const matchIdx = data.findIndex(item => item.orig.toLowerCase().includes(startPattern.toLowerCase()));
+                    const targetIdx = matchIdx !== -1 ? matchIdx : 0;
+                    const target = data[targetIdx];
+                    seekTargetTime = (mode === 'orig') ? target.start : target.b_start;
+                    const targetRow = document.getElementById('row-' + targetIdx);
+                    if (targetRow) targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    applySeek();
                 }
             });
 
