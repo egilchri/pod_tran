@@ -37,7 +37,7 @@
             </h1>
             <div class="controls">
                 <div class="audio-row">
-                    <audio id="audio" controls src="usapodden.260313.mp3"></audio>
+                    <audio id="audio" controls preload="metadata" src="usapodden.260313.mp3"></audio>
                     <button id="modeBtn" class="btn" onclick="toggleMode()">🌍 Interleaved</button>
                 </div>
                 <div class="speed-row">
@@ -69,12 +69,11 @@
 
             function doInitialSeek() {
                 if (initialSeekDone || startPattern === null || data.length === 0) return;
-                if (audio.seekable && audio.seekable.length > 0) {
-                    audio.currentTime = (mode === 'orig') ? data[0].start : data[0].b_start;
-                    initialSeekDone = true;
-                }
+                audio.currentTime = (mode === 'orig') ? data[0].start : data[0].b_start;
+                initialSeekDone = true;
             }
 
+            audio.addEventListener('loadedmetadata', doInitialSeek);
             audio.addEventListener('canplay', doInitialSeek);
 
             async function checkAudioStatus() {
