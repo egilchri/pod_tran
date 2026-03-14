@@ -17,10 +17,6 @@
       "translation": "serious"
     },
     {
-      "word": "alternativt",
-      "translation": "alternatively"
-    },
-    {
       "word": "america",
       "translation": "america"
     },
@@ -67,10 +63,6 @@
     {
       "word": "balistiska",
       "translation": "ballistic"
-    },
-    {
-      "word": "baserad",
-      "translation": "based"
     },
     {
       "word": "beroende",
@@ -135,10 +127,6 @@
     {
       "word": "direkt",
       "translation": "directly"
-    },
-    {
-      "word": "donald",
-      "translation": "donald"
     },
     {
       "word": "dramatiska",
@@ -227,10 +215,6 @@
     {
       "word": "fin",
       "translation": "fine"
-    },
-    {
-      "word": "fint-",
-      "translation": "nice-"
     },
     {
       "word": "fisklig",
@@ -347,10 +331,6 @@
     {
       "word": "högt",
       "translation": "loud"
-    },
-    {
-      "word": "ifrågasatta",
-      "translation": "questioned"
     },
     {
       "word": "ineffektivt",
@@ -489,7 +469,7 @@
       "translation": "perceptible"
     },
     {
-      "word": "libertarianiska",
+      "word": "libertarianska",
       "translation": "libertarian"
     },
     {
@@ -545,20 +525,16 @@
       "translation": "Saturday"
     },
     {
+      "word": "maga",
+      "translation": "stomach"
+    },
+    {
       "word": "manipulerande",
       "translation": "manipulative"
     },
     {
-      "word": "message",
-      "translation": "messages"
-    },
-    {
       "word": "mesta",
       "translation": "most"
-    },
-    {
-      "word": "migrande",
-      "translation": "migrating"
     },
     {
       "word": "milda",
@@ -607,10 +583,6 @@
     {
       "word": "nationellt",
       "translation": "nationally"
-    },
-    {
-      "word": "norra",
-      "translation": "north"
     },
     {
       "word": "nu-",
@@ -757,16 +729,16 @@
       "translation": "respected"
     },
     {
-      "word": "rig",
-      "translation": "rig"
-    },
-    {
       "word": "riktig",
       "translation": "correct"
     },
     {
       "word": "rädd",
       "translation": "afraid"
+    },
+    {
+      "word": "rådmolka",
+      "translation": "council milk"
     },
     {
       "word": "sagt",
@@ -809,10 +781,6 @@
       "translation": "skeptical"
     },
     {
-      "word": "skoningslösa",
-      "translation": "merciless"
-    },
-    {
       "word": "slaviskt",
       "translation": "Slavic"
     },
@@ -849,8 +817,8 @@
       "translation": "sleep morning"
     },
     {
-      "word": "specifikt",
-      "translation": "specifically"
+      "word": "splittrade",
+      "translation": "split up"
     },
     {
       "word": "stark",
@@ -957,6 +925,10 @@
       "translation": "Ukraine"
     },
     {
+      "word": "unconditional",
+      "translation": "unconditional"
+    },
+    {
       "word": "unprovökt",
       "translation": "untested"
     },
@@ -991,10 +963,6 @@
     {
       "word": "utvalda",
       "translation": "selected"
-    },
-    {
-      "word": "vance-",
-      "translation": "vance-"
     },
     {
       "word": "vann",
@@ -1041,10 +1009,6 @@
       "translation": "very"
     },
     {
-      "word": "väljena",
-      "translation": "choose"
-    },
-    {
       "word": "värre",
       "translation": "worse"
     },
@@ -1059,10 +1023,6 @@
     {
       "word": "älskade",
       "translation": "beloved"
-    },
-    {
-      "word": "är-",
-      "translation": "is-"
     },
     {
       "word": "öppen",
@@ -1167,10 +1127,6 @@
       "translation": "somebody"
     },
     {
-      "word": "oavsett",
-      "translation": "regardless"
-    },
-    {
       "word": "of",
       "translation": "of"
     },
@@ -1215,20 +1171,16 @@
       "translation": "out"
     },
     {
+      "word": "ut-",
+      "translation": "out-"
+    },
+    {
       "word": "utan",
       "translation": "without"
     },
     {
       "word": "vid",
       "translation": "at"
-    },
-    {
-      "word": "we",
-      "translation": "we"
-    },
-    {
-      "word": "will",
-      "translation": "will"
     },
     {
       "word": "än",
@@ -1240,10 +1192,6 @@
     }
   ],
   "ADV": [
-    {
-      "word": "a",
-      "translation": "a"
-    },
     {
       "word": "absolut",
       "translation": "absolutely"
@@ -1275,10 +1223,6 @@
     {
       "word": "amerikans",
       "translation": "American's"
-    },
-    {
-      "word": "angelägenheter-",
-      "translation": "affairs-"
     },
     {
       "word": "annorlunda",
@@ -1453,8 +1397,8 @@
       "translation": "goes"
     },
     {
-      "word": "he",
-      "translation": "hey"
+      "word": "ha-",
+      "translation": "ha-"
     },
     {
       "word": "hej",
@@ -1557,10 +1501,6 @@
       "translation": "hardly"
     },
     {
-      "word": "kompakt",
-      "translation": "compact"
-    },
-    {
       "word": "konkret",
       "translation": "concretely"
     },
@@ -1597,10 +1537,6 @@
       "translation": "low"
     },
     {
-      "word": "långt",
-      "translation": "far"
-    },
-    {
       "word": "massvis",
       "translation": "a lot"
     },
@@ -1635,10 +1571,6 @@
     {
       "word": "mycket",
       "translation": "a lot"
-    },
-    {
-      "word": "mycket-",
-      "translation": "very-"
     },
     {
       "word": "mänskligt",
@@ -1765,10 +1697,6 @@
       "translation": "right"
     },
     {
-      "word": "saker-",
-      "translation": "things-"
-    },
-    {
       "word": "samtidigt",
       "translation": "at the same time"
     },
@@ -1827,6 +1755,10 @@
     {
       "word": "stort",
       "translation": "large"
+    },
+    {
+      "word": "strategi",
+      "translation": "strategy"
     },
     {
       "word": "stängt",
@@ -1889,12 +1821,12 @@
       "translation": "out"
     },
     {
-      "word": "ute",
-      "translation": "out"
+      "word": "ut-",
+      "translation": "out-"
     },
     {
-      "word": "utomlands",
-      "translation": "abroad"
+      "word": "ute",
+      "translation": "out"
     },
     {
       "word": "var",
@@ -2023,20 +1955,12 @@
       "translation": "must"
     },
     {
-      "word": "nog-",
-      "translation": "enough-"
-    },
-    {
       "word": "ska",
       "translation": "shall"
     },
     {
       "word": "skulle",
       "translation": "would"
-    },
-    {
-      "word": "ta",
-      "translation": "take"
     },
     {
       "word": "var",
@@ -2055,10 +1979,6 @@
       "translation": "want"
     },
     {
-      "word": "ville",
-      "translation": "wanted"
-    },
-    {
       "word": "är",
       "translation": "is"
     }
@@ -2069,20 +1989,12 @@
       "translation": "both"
     },
     {
-      "word": "d.c.-",
-      "translation": "d.c.-"
-    },
-    {
       "word": "dels",
       "translation": "partly"
     },
     {
       "word": "eller",
       "translation": "or"
-    },
-    {
-      "word": "journal-",
-      "translation": "journal"
     },
     {
       "word": "men",
@@ -2167,10 +2079,6 @@
       "translation": "the same"
     },
     {
-      "word": "vast",
-      "translation": "firm"
-    },
-    {
       "word": "vilka",
       "translation": "which ones"
     },
@@ -2198,10 +2106,6 @@
     }
   ],
   "NOUN": [
-    {
-      "word": "50-",
-      "translation": "50-"
-    },
     {
       "word": "abc",
       "translation": "abc"
@@ -2239,8 +2143,8 @@
       "translation": "shareholder"
     },
     {
-      "word": "allihop-",
-      "translation": "everyone-"
+      "word": "alternativt-",
+      "translation": "alternatively-"
     },
     {
       "word": "amerikaner",
@@ -2279,12 +2183,16 @@
       "translation": "the seizure"
     },
     {
+      "word": "angelägenheter",
+      "translation": "affairs"
+    },
+    {
       "word": "anledningen",
       "translation": "the reason"
     },
     {
-      "word": "anna-roxval",
-      "translation": "anna-roxval"
+      "word": "anna-roxvald",
+      "translation": "anna-roxvald"
     },
     {
       "word": "are",
@@ -2307,8 +2215,8 @@
       "translation": "arsenal"
     },
     {
-      "word": "artikel-",
-      "translation": "article-"
+      "word": "artikel",
+      "translation": "article"
     },
     {
       "word": "arv",
@@ -2331,16 +2239,16 @@
       "translation": "the attacks"
     },
     {
-      "word": "attacken",
-      "translation": "the attack"
-    },
-    {
       "word": "attacker",
       "translation": "attacks"
     },
     {
-      "word": "auton",
-      "translation": "the car"
+      "word": "attackor",
+      "translation": "attacks"
+    },
+    {
+      "word": "avdelad",
+      "translation": "department"
     },
     {
       "word": "avsnitt",
@@ -2367,8 +2275,8 @@
       "translation": "means"
     },
     {
-      "word": "beggehåll-",
-      "translation": "both ways-"
+      "word": "beggehåll",
+      "translation": "both ways"
     },
     {
       "word": "bensin",
@@ -2435,16 +2343,16 @@
       "translation": "car driver"
     },
     {
-      "word": "biljetter",
-      "translation": "tickets"
-    },
-    {
       "word": "biljettklasser",
       "translation": "ticket classes"
     },
     {
       "word": "biten",
       "translation": "the bit"
+    },
+    {
+      "word": "bli-",
+      "translation": "be-"
     },
     {
       "word": "bolagen",
@@ -2507,6 +2415,10 @@
       "translation": "built"
     },
     {
+      "word": "byttet",
+      "translation": "the change"
+    },
+    {
       "word": "bönder",
       "translation": "farmers"
     },
@@ -2553,10 +2465,6 @@
     {
       "word": "clay",
       "translation": "clay"
-    },
-    {
-      "word": "congressman",
-      "translation": "congressman"
     },
     {
       "word": "dag",
@@ -2631,6 +2539,10 @@
       "translation": "department heads"
     },
     {
+      "word": "devans",
+      "translation": "theirs"
+    },
+    {
       "word": "diskurs",
       "translation": "discourse"
     },
@@ -2647,16 +2559,16 @@
       "translation": "diss"
     },
     {
-      "word": "distraktionen",
-      "translation": "the distraction"
-    },
-    {
       "word": "distrikt",
       "translation": "district"
     },
     {
       "word": "distriktet",
       "translation": "the district"
+    },
+    {
+      "word": "distriktorn",
+      "translation": "the district attorney"
     },
     {
       "word": "dokumenten",
@@ -2689,6 +2601,10 @@
     {
       "word": "dygnet",
       "translation": "the day"
+    },
+    {
+      "word": "där-",
+      "translation": "there-"
     },
     {
       "word": "då-",
@@ -2799,24 +2715,12 @@
       "translation": "fed"
     },
     {
-      "word": "feg",
-      "translation": "coward"
-    },
-    {
       "word": "fegar",
       "translation": "cowards"
     },
     {
-      "word": "figurena",
-      "translation": "the figures"
-    },
-    {
       "word": "filosofi",
       "translation": "philosophy"
-    },
-    {
-      "word": "finskor",
-      "translation": "Finnish shoes"
     },
     {
       "word": "first-",
@@ -2867,8 +2771,8 @@
       "translation": "people"
     },
     {
-      "word": "folket",
-      "translation": "the people"
+      "word": "folket-",
+      "translation": "the people-"
     },
     {
       "word": "form",
@@ -2901,10 +2805,6 @@
     {
       "word": "fuller",
       "translation": "fuller"
-    },
-    {
-      "word": "förbundet",
-      "translation": "the union"
     },
     {
       "word": "fördel",
@@ -2983,10 +2883,6 @@
       "translation": "georgia"
     },
     {
-      "word": "ginnar",
-      "translation": "gives"
-    },
-    {
       "word": "gissa",
       "translation": "guess"
     },
@@ -3005,14 +2901,6 @@
     {
       "word": "grann",
       "translation": "neighbor"
-    },
-    {
-      "word": "gratulerar-",
-      "translation": "congratulations-"
-    },
-    {
-      "word": "great",
-      "translation": "great"
     },
     {
       "word": "grej",
@@ -3051,10 +2939,6 @@
       "translation": "times"
     },
     {
-      "word": "går-",
-      "translation": "go-"
-    },
-    {
       "word": "hagseth",
       "translation": "hagseth"
     },
@@ -3075,8 +2959,8 @@
       "translation": "the weekend"
     },
     {
-      "word": "hemmaplan-",
-      "translation": "home ground-"
+      "word": "hemmaplan",
+      "translation": "home ground"
     },
     {
       "word": "hjärnan",
@@ -3111,6 +2995,10 @@
       "translation": "the house"
     },
     {
+      "word": "husets",
+      "translation": "of the house"
+    },
+    {
       "word": "hushåll",
       "translation": "household"
     },
@@ -3133,10 +3021,6 @@
     {
       "word": "huvudsälet",
       "translation": "the main seal"
-    },
-    {
-      "word": "här-",
-      "translation": "here-"
     },
     {
       "word": "häromdagen-",
@@ -3203,16 +3087,16 @@
       "translation": "incomes"
     },
     {
-      "word": "inlägg-",
-      "translation": "post-"
+      "word": "inlägg",
+      "translation": "posts"
     },
     {
       "word": "insatser",
       "translation": "stakes"
     },
     {
-      "word": "insikten-",
-      "translation": "the insight-"
+      "word": "insikten",
+      "translation": "the insight"
     },
     {
       "word": "inställningen",
@@ -3251,16 +3135,16 @@
       "translation": "iran war"
     },
     {
-      "word": "iran-kritik",
-      "translation": "Iran criticism"
-    },
-    {
       "word": "iranens",
       "translation": "Iran's"
     },
     {
       "word": "iraner",
       "translation": "Iranians"
+    },
+    {
+      "word": "is",
+      "translation": "ice"
     },
     {
       "word": "israel-",
@@ -3291,8 +3175,12 @@
       "translation": "the job"
     },
     {
-      "word": "jättoftan",
-      "translation": "the giant"
+      "word": "journal's",
+      "translation": "journal's"
+    },
+    {
+      "word": "journal-",
+      "translation": "journal"
     },
     {
       "word": "jössuppriser",
@@ -3301,10 +3189,6 @@
     {
       "word": "kalasbyxor",
       "translation": "party pants"
-    },
-    {
-      "word": "kampanj",
-      "translation": "campaign"
     },
     {
       "word": "kampen",
@@ -3323,8 +3207,12 @@
       "translation": "the candidate-"
     },
     {
-      "word": "kandidater",
-      "translation": "candidates"
+      "word": "kandidaterna",
+      "translation": "the candidates"
+    },
+    {
+      "word": "kandidatet",
+      "translation": "the candidate"
     },
     {
       "word": "kapitalförvaltaren",
@@ -3371,6 +3259,10 @@
       "translation": "commentator"
     },
     {
+      "word": "kompakt-",
+      "translation": "compact"
+    },
+    {
       "word": "konfliktaområdena",
       "translation": "the conflict areas"
     },
@@ -3383,7 +3275,11 @@
       "translation": "congress-"
     },
     {
-      "word": "kongressledamot-",
+      "word": "kongressledamot",
+      "translation": "congressman"
+    },
+    {
+      "word": "kongressman",
       "translation": "congressman"
     },
     {
@@ -3459,10 +3355,6 @@
       "translation": "war situation"
     },
     {
-      "word": "kring-",
-      "translation": "around"
-    },
-    {
       "word": "kritik",
       "translation": "criticism"
     },
@@ -3489,10 +3381,6 @@
     {
       "word": "kronor",
       "translation": "crowns"
-    },
-    {
-      "word": "kurs",
-      "translation": "course"
     },
     {
       "word": "kurserna",
@@ -3523,10 +3411,6 @@
       "translation": "stock"
     },
     {
-      "word": "laguna-",
-      "translation": "laguna-"
-    },
-    {
       "word": "land",
       "translation": "country"
     },
@@ -3549,10 +3433,6 @@
     {
       "word": "ledare",
       "translation": "leader"
-    },
-    {
-      "word": "let",
-      "translation": "let"
     },
     {
       "word": "likadanas",
@@ -3603,10 +3483,6 @@
       "translation": "the mode"
     },
     {
-      "word": "lägre-",
-      "translation": "lower-"
-    },
-    {
       "word": "läkemedelspriser",
       "translation": "drug prices"
     },
@@ -3615,8 +3491,8 @@
       "translation": "countries"
     },
     {
-      "word": "länders",
-      "translation": "of countries"
+      "word": "länders-",
+      "translation": "country's"
     },
     {
       "word": "läsning",
@@ -3647,10 +3523,6 @@
       "translation": "stomach movement"
     },
     {
-      "word": "magasupporter",
-      "translation": "stomach supporter"
-    },
-    {
       "word": "majoritet",
       "translation": "majority"
     },
@@ -3663,12 +3535,8 @@
       "translation": "manipulations"
     },
     {
-      "word": "mansioner",
-      "translation": "mansions"
-    },
-    {
-      "word": "mar-",
-      "translation": "mar-"
+      "word": "mar-a-lago",
+      "translation": "mar-a-lago"
     },
     {
       "word": "marinen",
@@ -3735,12 +3603,12 @@
       "translation": "media data"
     },
     {
-      "word": "mellanösten",
-      "translation": "the middle east"
+      "word": "mellanösten-",
+      "translation": "middle east"
     },
     {
-      "word": "menaren",
-      "translation": "the meaner"
+      "word": "messaget",
+      "translation": "the message"
     },
     {
       "word": "messi",
@@ -3823,8 +3691,8 @@
       "translation": "oral"
     },
     {
-      "word": "mynkymbruggeriet",
-      "translation": "mynkymbruggeriet"
+      "word": "mynkynbryggeriet",
+      "translation": "mynkyn brewery"
     },
     {
       "word": "mängder",
@@ -3871,10 +3739,6 @@
       "translation": "Monday"
     },
     {
-      "word": "mångsverkningen",
-      "translation": "the multi-effect"
-    },
-    {
       "word": "mörkret",
       "translation": "the darkness"
     },
@@ -3907,10 +3771,6 @@
       "translation": "close time"
     },
     {
-      "word": "näsan",
-      "translation": "the nose"
-    },
-    {
       "word": "nånstans",
       "translation": "somewhere"
     },
@@ -3935,8 +3795,8 @@
       "translation": "satisfied"
     },
     {
-      "word": "också-",
-      "translation": "also-"
+      "word": "o'rubbe",
+      "translation": "o'rubbe"
     },
     {
       "word": "offentlig-",
@@ -4032,7 +3892,7 @@
     },
     {
       "word": "ord",
-      "translation": "words"
+      "translation": "word"
     },
     {
       "word": "orden",
@@ -4115,12 +3975,12 @@
       "translation": "person"
     },
     {
-      "word": "pete",
-      "translation": "pete"
-    },
-    {
       "word": "pig",
       "translation": "pig"
+    },
+    {
+      "word": "piteg",
+      "translation": "piteg"
     },
     {
       "word": "plan",
@@ -4211,8 +4071,8 @@
       "translation": "the presidential election"
     },
     {
-      "word": "pressavdelning-",
-      "translation": "press department-"
+      "word": "pressavdelning",
+      "translation": "press department"
     },
     {
       "word": "pressen",
@@ -4271,7 +4131,7 @@
       "translation": "the problem"
     },
     {
-      "word": "procent-",
+      "word": "procent",
       "translation": "percent"
     },
     {
@@ -4311,10 +4171,6 @@
       "translation": "row"
     },
     {
-      "word": "radio.se-",
-      "translation": "radio.se-"
-    },
-    {
       "word": "raffinaderier",
       "translation": "refineries"
     },
@@ -4333,10 +4189,6 @@
     {
       "word": "raser",
       "translation": "breeds"
-    },
-    {
-      "word": "ratten",
-      "translation": "the steering wheel"
     },
     {
       "word": "reaktioner",
@@ -4361,6 +4213,10 @@
     {
       "word": "reporter",
       "translation": "reporter"
+    },
+    {
+      "word": "reporternäsan",
+      "translation": "the reporter's nose"
     },
     {
       "word": "representanthuset",
@@ -4391,7 +4247,11 @@
       "translation": "the republicans-"
     },
     {
-      "word": "republikans",
+      "word": "republikansdistrikt",
+      "translation": "republican district"
+    },
+    {
+      "word": "republikansk",
       "translation": "Republican"
     },
     {
@@ -4433,6 +4293,10 @@
     {
       "word": "roller",
       "translation": "roles"
+    },
+    {
+      "word": "rubio-",
+      "translation": "rubio-"
     },
     {
       "word": "run-off",
@@ -4499,10 +4363,6 @@
       "translation": "the voices-"
     },
     {
-      "word": "s",
-      "translation": "pp"
-    },
-    {
       "word": "sak",
       "translation": "thing"
     },
@@ -4559,20 +4419,12 @@
       "translation": "senator"
     },
     {
-      "word": "senatorer",
-      "translation": "senators"
-    },
-    {
-      "word": "senatorn",
-      "translation": "the senator"
+      "word": "senaturer",
+      "translation": "senates"
     },
     {
       "word": "september-attackerna",
       "translation": "the September attacks"
-    },
-    {
-      "word": "series",
-      "translation": "series"
     },
     {
       "word": "sida",
@@ -4589,10 +4441,6 @@
     {
       "word": "siffrorna",
       "translation": "the numbers"
-    },
-    {
-      "word": "sig-",
-      "translation": "sig-"
     },
     {
       "word": "signalgruppshatten",
@@ -4615,7 +4463,7 @@
       "translation": "the situation"
     },
     {
-      "word": "sjukvård",
+      "word": "sjukvård-",
       "translation": "healthcare"
     },
     {
@@ -4667,6 +4515,10 @@
       "translation": "school"
     },
     {
+      "word": "skoningslösa-",
+      "translation": "merciless-"
+    },
+    {
       "word": "skopreferenser",
       "translation": "scope references"
     },
@@ -4695,16 +4547,16 @@
       "translation": "the desk-"
     },
     {
+      "word": "skylda",
+      "translation": "owe"
+    },
+    {
       "word": "skyller",
       "translation": "blames"
     },
     {
       "word": "skyrocketing",
       "translation": "skyrocketing"
-    },
-    {
-      "word": "skönt-",
-      "translation": "nice-"
     },
     {
       "word": "sköt",
@@ -4717,10 +4569,6 @@
     {
       "word": "slips",
       "translation": "tie"
-    },
-    {
-      "word": "slott",
-      "translation": "castle"
     },
     {
       "word": "slut",
@@ -4759,6 +4607,10 @@
       "translation": "summer time"
     },
     {
+      "word": "somructor",
+      "translation": "somructor"
+    },
+    {
       "word": "sorts",
       "translation": "sort of"
     },
@@ -4767,8 +4619,8 @@
       "translation": "special forces"
     },
     {
-      "word": "specifik",
-      "translation": "specific"
+      "word": "specifikt",
+      "translation": "specifically"
     },
     {
       "word": "splittring",
@@ -4819,10 +4671,6 @@
       "translation": "strategy"
     },
     {
-      "word": "strategi-",
-      "translation": "strategy"
-    },
-    {
       "word": "street",
       "translation": "street"
     },
@@ -4855,10 +4703,6 @@
       "translation": "support"
     },
     {
-      "word": "stöd-",
-      "translation": "support"
-    },
-    {
       "word": "sugen",
       "translation": "hungry"
     },
@@ -4871,8 +4715,12 @@
       "translation": "the strait"
     },
     {
-      "word": "svara-",
-      "translation": "answer-"
+      "word": "supporter",
+      "translation": "supporter"
+    },
+    {
+      "word": "surrender",
+      "translation": "surrender"
     },
     {
       "word": "svaret",
@@ -4881,6 +4729,14 @@
     {
       "word": "svart",
       "translation": "black"
+    },
+    {
+      "word": "sverigesradio.se-",
+      "translation": "sverigesradio.se-"
+    },
+    {
+      "word": "swearna",
+      "translation": "swear"
     },
     {
       "word": "swing",
@@ -4909,6 +4765,10 @@
     {
       "word": "sättet-",
       "translation": "the way-"
+    },
+    {
+      "word": "så-",
+      "translation": "so-"
     },
     {
       "word": "sökning",
@@ -4963,16 +4823,16 @@
       "translation": "Tehran"
     },
     {
+      "word": "teller",
+      "translation": "counter"
+    },
+    {
       "word": "tid",
       "translation": "time"
     },
     {
       "word": "tiden",
       "translation": "the time"
-    },
-    {
-      "word": "tidigare-",
-      "translation": "earlier-"
     },
     {
       "word": "tidplan",
@@ -4997,10 +4857,6 @@
     {
       "word": "tilltro",
       "translation": "trust"
-    },
-    {
-      "word": "tilläckväl",
-      "translation": "quite well"
     },
     {
       "word": "timmar",
@@ -5033,10 +4889,6 @@
     {
       "word": "transport",
       "translation": "transportation"
-    },
-    {
-      "word": "tried",
-      "translation": "tried"
     },
     {
       "word": "trompe",
@@ -5151,6 +5003,10 @@
       "translation": "usa"
     },
     {
+      "word": "utomlands-",
+      "translation": "overseas"
+    },
+    {
       "word": "uttalande",
       "translation": "statement"
     },
@@ -5163,20 +5019,12 @@
       "translation": "the statement"
     },
     {
-      "word": "utvikt",
-      "translation": "unfolded"
-    },
-    {
       "word": "val",
       "translation": "choices"
     },
     {
       "word": "valet",
       "translation": "the choice"
-    },
-    {
-      "word": "valet-",
-      "translation": "the choice-"
     },
     {
       "word": "valomgång",
@@ -5197,10 +5045,6 @@
     {
       "word": "vance",
       "translation": "vance"
-    },
-    {
-      "word": "vance-",
-      "translation": "vance-"
     },
     {
       "word": "vapen",
@@ -5251,12 +5095,20 @@
       "translation": "weeks"
     },
     {
+      "word": "venezuela-attacken-",
+      "translation": "venezuela attack"
+    },
+    {
       "word": "verklighet",
       "translation": "reality"
     },
     {
       "word": "vice-president",
       "translation": "vice president"
+    },
+    {
+      "word": "vidare-",
+      "translation": "further-"
     },
     {
       "word": "viktigt-",
@@ -5279,8 +5131,8 @@
       "translation": "VIP guests"
     },
     {
-      "word": "visepräsident",
-      "translation": "vice president"
+      "word": "viset",
+      "translation": "wise"
     },
     {
       "word": "vita",
@@ -5289,6 +5141,10 @@
     {
       "word": "vunnit",
       "translation": "won"
+    },
+    {
+      "word": "vunnit-",
+      "translation": "won-"
     },
     {
       "word": "vägar",
@@ -5308,6 +5164,10 @@
     },
     {
       "word": "väljarna",
+      "translation": "the voters"
+    },
+    {
+      "word": "väljerna",
       "translation": "the voters"
     },
     {
@@ -5375,16 +5235,16 @@
       "translation": "wall"
     },
     {
-      "word": "xett",
-      "translation": "xett"
+      "word": "where",
+      "translation": "where"
+    },
+    {
+      "word": "xm",
+      "translation": "xm"
     },
     {
       "word": "yemen",
       "translation": "Yemen"
-    },
-    {
-      "word": "you",
-      "translation": "you"
     },
     {
       "word": "år",
@@ -5405,6 +5265,10 @@
     {
       "word": "åtgärder",
       "translation": "actions"
+    },
+    {
+      "word": "åtgärder-",
+      "translation": "measures-"
     },
     {
       "word": "östenoljan",
@@ -5479,6 +5343,10 @@
       "translation": "this"
     },
     {
+      "word": "dig",
+      "translation": "you"
+    },
+    {
       "word": "din",
       "translation": "yours"
     },
@@ -5497,6 +5365,10 @@
     {
       "word": "han",
       "translation": "he"
+    },
+    {
+      "word": "han-",
+      "translation": "he-"
     },
     {
       "word": "hans",
@@ -5523,6 +5395,10 @@
       "translation": "i"
     },
     {
+      "word": "jd",
+      "translation": "jd"
+    },
+    {
       "word": "man",
       "translation": "man"
     },
@@ -5533,6 +5409,10 @@
     {
       "word": "min",
       "translation": "min"
+    },
+    {
+      "word": "mitt",
+      "translation": "mine"
     },
     {
       "word": "mm",
@@ -5561,10 +5441,6 @@
     {
       "word": "oss",
       "translation": "us"
-    },
-    {
-      "word": "på-",
-      "translation": "on-"
     },
     {
       "word": "sig",
@@ -5611,6 +5487,10 @@
       "translation": "each other"
     },
     {
+      "word": "vast",
+      "translation": "firm"
+    },
+    {
       "word": "vem",
       "translation": "who"
     },
@@ -5625,10 +5505,6 @@
     {
       "word": "vilket",
       "translation": "which"
-    },
-    {
-      "word": "vår",
-      "translation": "spring"
     },
     {
       "word": "våra",
@@ -5651,6 +5527,10 @@
     {
       "word": "biden",
       "translation": "biden"
+    },
+    {
+      "word": "big",
+      "translation": "big"
     },
     {
       "word": "brent-oljan",
@@ -5677,6 +5557,10 @@
       "translation": "colton"
     },
     {
+      "word": "d.c.",
+      "translation": "d.c."
+    },
+    {
       "word": "department",
       "translation": "department"
     },
@@ -5693,16 +5577,16 @@
       "translation": "epstein"
     },
     {
-      "word": "estraselines",
-      "translation": "estracelines"
-    },
-    {
       "word": "europa",
       "translation": "Europe"
     },
     {
       "word": "fortsätt",
       "translation": "continue"
+    },
+    {
+      "word": "fuller-",
+      "translation": "fuller-"
     },
     {
       "word": "galrin",
@@ -5717,16 +5601,20 @@
       "translation": "Georgia"
     },
     {
-      "word": "georgien",
-      "translation": "Georgia"
-    },
-    {
       "word": "gina",
       "translation": "gina"
     },
     {
       "word": "graham",
       "translation": "graham"
+    },
+    {
+      "word": "graham-senatorn",
+      "translation": "the graham senator"
+    },
+    {
+      "word": "green",
+      "translation": "green"
     },
     {
       "word": "greene",
@@ -5737,20 +5625,20 @@
       "translation": "hagseth"
     },
     {
+      "word": "hannity",
+      "translation": "hannity"
+    },
+    {
       "word": "harris",
       "translation": "harris"
     },
     {
-      "word": "hennedy",
-      "translation": "hendy"
+      "word": "holorhus",
+      "translation": "whore house"
     },
     {
       "word": "hosanna",
       "translation": "hosanna"
-    },
-    {
-      "word": "hushöts",
-      "translation": "head of household"
     },
     {
       "word": "hörni",
@@ -5769,6 +5657,10 @@
       "translation": "iran"
     },
     {
+      "word": "isakson",
+      "translation": "ice cream"
+    },
+    {
       "word": "isaksson",
       "translation": "Isaksson"
     },
@@ -5777,28 +5669,32 @@
       "translation": "Israel"
     },
     {
+      "word": "israel-",
+      "translation": "Israeli"
+    },
+    {
       "word": "israels",
       "translation": "Israeli"
+    },
+    {
+      "word": "jay",
+      "translation": "yay"
     },
     {
       "word": "jd",
       "translation": "jd"
     },
     {
-      "word": "jena",
-      "translation": "those"
-    },
-    {
       "word": "jina",
       "translation": "jina"
     },
     {
-      "word": "john",
-      "translation": "john"
+      "word": "jinalin",
+      "translation": "Jinalin"
     },
     {
-      "word": "journal's",
-      "translation": "journal's"
+      "word": "john",
+      "translation": "john"
     },
     {
       "word": "journal-",
@@ -5833,6 +5729,10 @@
       "translation": "Lindbergh"
     },
     {
+      "word": "lindsey",
+      "translation": "lindsey"
+    },
+    {
       "word": "maga",
       "translation": "stomach"
     },
@@ -5861,16 +5761,16 @@
       "translation": "moore"
     },
     {
+      "word": "nord-west",
+      "translation": "north-west"
+    },
+    {
       "word": "nordvästra",
       "translation": "northwest"
     },
     {
       "word": "nötsland",
       "translation": "nut country"
-    },
-    {
-      "word": "o'ruby",
-      "translation": "o'ruby"
     },
     {
       "word": "ohio",
@@ -5885,12 +5785,20 @@
       "translation": "pentagon"
     },
     {
+      "word": "rig",
+      "translation": "rig"
+    },
+    {
       "word": "rubio",
       "translation": "Rubio"
     },
     {
       "word": "schumer",
       "translation": "Schumer"
+    },
+    {
+      "word": "serious",
+      "translation": "serious"
     },
     {
       "word": "simon",
@@ -5901,8 +5809,8 @@
       "translation": "school log"
     },
     {
-      "word": "stenon",
-      "translation": "the stones"
+      "word": "stenholm",
+      "translation": "Stenholm"
     },
     {
       "word": "stockholm",
@@ -5927,10 +5835,6 @@
     {
       "word": "tacker",
       "translation": "thanks"
-    },
-    {
-      "word": "telegreen",
-      "translation": "telegreen"
     },
     {
       "word": "thomas",
@@ -5977,8 +5881,12 @@
       "translation": "vance"
     },
     {
-      "word": "venezuela-",
-      "translation": "venezuela"
+      "word": "vansh",
+      "translation": "used to"
+    },
+    {
+      "word": "vansh-",
+      "translation": "vansh-"
     },
     {
       "word": "vita",
@@ -5997,12 +5905,12 @@
       "translation": "washington"
     },
     {
-      "word": "west",
-      "translation": "west"
-    },
-    {
       "word": "xium",
       "translation": "xium"
+    },
+    {
+      "word": "åsdyn",
+      "translation": "ridge dune"
     },
     {
       "word": "åstin",
@@ -6017,6 +5925,10 @@
     {
       "word": "-titt",
       "translation": "-look"
+    },
+    {
+      "word": "jd",
+      "translation": "jd"
     }
   ],
   "SCONJ": [
@@ -6095,20 +6007,16 @@
       "translation": "backed up"
     },
     {
-      "word": "be",
-      "translation": "pray"
-    },
-    {
-      "word": "beads",
-      "translation": "beads"
-    },
-    {
       "word": "begära",
       "translation": "request"
     },
     {
       "word": "behålla",
       "translation": "retain"
+    },
+    {
+      "word": "berger",
+      "translation": "mountains"
     },
     {
       "word": "beror",
@@ -6141,6 +6049,10 @@
     {
       "word": "betyder",
       "translation": "means"
+    },
+    {
+      "word": "billetter",
+      "translation": "tickets"
     },
     {
       "word": "blev",
@@ -6183,10 +6095,6 @@
       "translation": "build"
     },
     {
-      "word": "byttit",
-      "translation": "changed"
-    },
-    {
       "word": "bär",
       "translation": "berries"
     },
@@ -6221,10 +6129,6 @@
     {
       "word": "dollar",
       "translation": "dollars"
-    },
-    {
-      "word": "down",
-      "translation": "down"
     },
     {
       "word": "dragit",
@@ -6267,6 +6171,10 @@
       "translation": "stuck"
     },
     {
+      "word": "feg-",
+      "translation": "coward-"
+    },
+    {
       "word": "fick",
       "translation": "got"
     },
@@ -6283,8 +6191,8 @@
       "translation": "exists"
     },
     {
-      "word": "flytts",
-      "translation": "moved"
+      "word": "fint",
+      "translation": "nice"
     },
     {
       "word": "fokus",
@@ -6321,6 +6229,10 @@
     {
       "word": "fuller",
       "translation": "fuller"
+    },
+    {
+      "word": "fuller-",
+      "translation": "fuller-"
     },
     {
       "word": "funderar",
@@ -6463,6 +6375,10 @@
       "translation": "neighbors"
     },
     {
+      "word": "gratturerar",
+      "translation": "congratulates"
+    },
+    {
       "word": "gynna",
       "translation": "benefit"
     },
@@ -6515,28 +6431,20 @@
       "translation": "had"
     },
     {
-      "word": "hamna",
-      "translation": "end up"
-    },
-    {
       "word": "hamnar",
       "translation": "end up"
-    },
-    {
-      "word": "hamnat",
-      "translation": "ended up"
     },
     {
       "word": "handla",
       "translation": "shop"
     },
     {
-      "word": "handlade",
-      "translation": "shopped"
-    },
-    {
       "word": "handlar",
       "translation": "trades"
+    },
+    {
+      "word": "hanna",
+      "translation": "male"
     },
     {
       "word": "har",
@@ -6549,10 +6457,6 @@
     {
       "word": "hitta",
       "translation": "find"
-    },
-    {
-      "word": "hittar",
-      "translation": "finds"
     },
     {
       "word": "hittat",
@@ -6607,8 +6511,8 @@
       "translation": "heard"
     },
     {
-      "word": "igår",
-      "translation": "yesterday"
+      "word": "ifrågasatta",
+      "translation": "questioned"
     },
     {
       "word": "inkludera",
@@ -6637,6 +6541,10 @@
     {
       "word": "jättemånga",
       "translation": "a great many"
+    },
+    {
+      "word": "jättoförtan",
+      "translation": "great morning"
     },
     {
       "word": "kainns",
@@ -6721,6 +6629,10 @@
     {
       "word": "köper",
       "translation": "buys"
+    },
+    {
+      "word": "lagt",
+      "translation": "laid"
     },
     {
       "word": "ligga",
@@ -6831,10 +6743,6 @@
       "translation": "meet"
     },
     {
-      "word": "never",
-      "translation": "never"
-    },
-    {
       "word": "noterat",
       "translation": "noted"
     },
@@ -6943,10 +6851,6 @@
       "translation": "cleaner"
     },
     {
-      "word": "reporter",
-      "translation": "reporter"
-    },
-    {
       "word": "representeras",
       "translation": "is represented"
     },
@@ -6969,10 +6873,6 @@
     {
       "word": "räknar",
       "translation": "counting"
-    },
-    {
-      "word": "rådmolka",
-      "translation": "council milk"
     },
     {
       "word": "råkade",
@@ -7043,10 +6943,6 @@
       "translation": "shook"
     },
     {
-      "word": "skapa",
-      "translation": "create"
-    },
-    {
       "word": "ske",
       "translation": "happen"
     },
@@ -7079,16 +6975,16 @@
       "translation": "wrote"
     },
     {
+      "word": "skriva",
+      "translation": "write"
+    },
+    {
       "word": "skrivit",
       "translation": "written"
     },
     {
       "word": "skydda",
       "translation": "protect"
-    },
-    {
-      "word": "skylde",
-      "translation": "owe"
     },
     {
       "word": "skör",
@@ -7127,6 +7023,10 @@
       "translation": "fight"
     },
     {
+      "word": "slått",
+      "translation": "beaten"
+    },
+    {
       "word": "sms-ade",
       "translation": "texted"
     },
@@ -7141,10 +7041,6 @@
     {
       "word": "spenderar",
       "translation": "spends"
-    },
-    {
-      "word": "splittrade",
-      "translation": "split up"
     },
     {
       "word": "stannar",
@@ -7207,6 +7103,10 @@
       "translation": "sat"
     },
     {
+      "word": "svara",
+      "translation": "answer"
+    },
+    {
       "word": "svarade",
       "translation": "answered"
     },
@@ -7251,8 +7151,8 @@
       "translation": "take"
     },
     {
-      "word": "tackar",
-      "translation": "thanks"
+      "word": "tacka",
+      "translation": "thank"
     },
     {
       "word": "tacker",
@@ -7295,12 +7195,12 @@
       "translation": "interpreted"
     },
     {
-      "word": "tolkar",
-      "translation": "interpreters"
+      "word": "tolkas",
+      "translation": "interpreted"
     },
     {
-      "word": "trivs",
-      "translation": "thrives"
+      "word": "trivdes",
+      "translation": "enjoyed"
     },
     {
       "word": "trodde",
@@ -7455,10 +7355,6 @@
       "translation": "warned"
     },
     {
-      "word": "verkade",
-      "translation": "seemed"
-    },
-    {
       "word": "verkar",
       "translation": "seems"
     },
@@ -7489,6 +7385,10 @@
     {
       "word": "väcker",
       "translation": "wakes up"
+    },
+    {
+      "word": "väga",
+      "translation": "weigh"
     },
     {
       "word": "väljer",
