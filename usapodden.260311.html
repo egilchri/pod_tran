@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>Svagt stöd för Trump när kriget slår mot plånboken</title>
+        <title>...</title>
         <style>
             :root { --primary: #004a99; --accent: #ffc107; --bg: #f0f2f5; }
             body { font-family: -apple-system, system-ui, sans-serif; margin: 0; background: var(--bg); }
@@ -33,7 +33,7 @@
         <div class="header-box">
             <small style="font-weight:bold; color:#666;">USAPODDEN | 260311</small>
             <h1 style="margin: 5px 0; font-size: 1.2rem;">
-                Svagt stöd för Trump när kriget slår mot plånboken <span id="audio-status" class="status-badge"></span>
+                ... <span id="audio-status" class="status-badge"></span>
             </h1>
             <div class="controls">
                 <div class="audio-row">
@@ -61,6 +61,7 @@
             const statusEl = document.getElementById('audio-status');
             const container = document.getElementById('transcript');
             const sources = { orig: "usapodden.260311.mp3", bilingual: "usapodden.260311.bilingual.mp3" };
+            const startPattern = null;
             let mode = 'orig';
             let data = [];
             let lastIdx = -1;
@@ -95,7 +96,10 @@
                 mode = (mode === 'orig') ? 'bilingual' : 'orig';
                 audio.src = sources[mode];
                 audio.playbackRate = rate;
-                lastIdx = -1; 
+                lastIdx = -1;
+                if (startPattern !== null && data.length > 0) {
+                    audio.currentTime = (mode === 'orig') ? data[0].start : data[0].b_start;
+                }
                 checkAudioStatus();
                 if (isPlaying) audio.play();
                 modeBtn.innerText = mode === 'orig' ? '🌍 Interleaved' : '🎙️ Podcast';
@@ -128,12 +132,17 @@
                     const row = document.createElement('div');
                     row.className = 'row'; row.id = 'row-' + i;
                     row.innerHTML = `<div class="orig">${item.orig}</div><div class="en">${item.en}</div>`;
-                    row.onclick = () => { 
-                        audio.currentTime = (mode === 'orig') ? item.start : item.b_start; 
-                        audio.play(); 
+                    row.onclick = () => {
+                        audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
+                        audio.play();
                     };
                     container.appendChild(row);
                 });
+                if (startPattern !== null && data.length > 0) {
+                    audio.currentTime = (mode === 'orig') ? data[0].start : data[0].b_start;
+                    const firstRow = document.getElementById('row-0');
+                    if (firstRow) firstRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
             });
 
             audio.addEventListener('timeupdate', () => {
