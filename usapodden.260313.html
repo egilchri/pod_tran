@@ -61,6 +61,7 @@
             const statusEl = document.getElementById('audio-status');
             const container = document.getElementById('transcript');
             const sources = { orig: "usapodden.260313.mp3", bilingual: "usapodden.260313.bilingual.mp3" };
+            const startPattern = "avsnitt";
             let mode = 'orig';
             let data = [];
             let lastIdx = -1;
@@ -95,7 +96,10 @@
                 mode = (mode === 'orig') ? 'bilingual' : 'orig';
                 audio.src = sources[mode];
                 audio.playbackRate = rate;
-                lastIdx = -1; 
+                lastIdx = -1;
+                if (startPattern !== null && data.length > 0) {
+                    audio.currentTime = (mode === 'orig') ? data[0].start : data[0].b_start;
+                }
                 checkAudioStatus();
                 if (isPlaying) audio.play();
                 modeBtn.innerText = mode === 'orig' ? '🌍 Interleaved' : '🎙️ Podcast';
@@ -128,12 +132,17 @@
                     const row = document.createElement('div');
                     row.className = 'row'; row.id = 'row-' + i;
                     row.innerHTML = `<div class="orig">${item.orig}</div><div class="en">${item.en}</div>`;
-                    row.onclick = () => { 
-                        audio.currentTime = (mode === 'orig') ? item.start : item.b_start; 
-                        audio.play(); 
+                    row.onclick = () => {
+                        audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
+                        audio.play();
                     };
                     container.appendChild(row);
                 });
+                if (startPattern !== null && data.length > 0) {
+                    audio.currentTime = (mode === 'orig') ? data[0].start : data[0].b_start;
+                    const firstRow = document.getElementById('row-0');
+                    if (firstRow) firstRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
             });
 
             audio.addEventListener('timeupdate', () => {
