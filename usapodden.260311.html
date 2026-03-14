@@ -65,6 +65,14 @@
             let mode = 'orig';
             let data = [];
             let lastIdx = -1;
+            let pendingStartTime = null;
+
+            audio.addEventListener('loadedmetadata', () => {
+                if (pendingStartTime !== null) {
+                    audio.currentTime = pendingStartTime;
+                    pendingStartTime = null;
+                }
+            });
 
             async function checkAudioStatus() {
                 try {
@@ -97,9 +105,6 @@
                 audio.src = sources[mode];
                 audio.playbackRate = rate;
                 lastIdx = -1;
-                if (startPattern !== null && data.length > 0) {
-                    audio.currentTime = (mode === 'orig') ? data[0].start : data[0].b_start;
-                }
                 checkAudioStatus();
                 if (isPlaying) audio.play();
                 modeBtn.innerText = mode === 'orig' ? '🌍 Interleaved' : '🎙️ Podcast';
@@ -139,7 +144,12 @@
                     container.appendChild(row);
                 });
                 if (startPattern !== null && data.length > 0) {
-                    audio.currentTime = (mode === 'orig') ? data[0].start : data[0].b_start;
+                    const t = (mode === 'orig') ? data[0].start : data[0].b_start;
+                    if (audio.readyState >= 1) {
+                        audio.currentTime = t;
+                    } else {
+                        pendingStartTime = t;
+                    }
                     const firstRow = document.getElementById('row-0');
                     if (firstRow) firstRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 }
