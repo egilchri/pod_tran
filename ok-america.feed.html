@@ -34,11 +34,11 @@
 
             /* --- MOBILE APP OVERRIDES --- */
             @media (display-mode: standalone) {
-                .btn-back, .btn-run { display: none !important; }
+                .btn-back, .btn-run, #syncBtn { display: none !important; }
                 .nav-header { justify-content: flex-end; }
             }
             @media (max-width: 600px) {
-                .btn-run { display: none !important; }
+                .btn-run, #syncBtn { display: none !important; }
             }
         </style>
         <script>
@@ -58,7 +58,10 @@
                 });
             }
             function copyMasterCommand(mp3Url, feedname, date, title, lang) {
-                const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}" --lang "${lang}"`;
+                const startPattern = null;
+                const startPatternFlag = startPattern ? ` --start-pattern "${startPattern}"` : "";
+                const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}" --lang "${lang}"${startPatternFlag}`;
+
                 navigator.clipboard.writeText(cmd).then(() => {
                     const t = document.getElementById('toast');
                     t.style.display = 'block';
@@ -86,7 +89,7 @@
             }
         </script>
     </head>
-    <body data-latest="1773309300.0" data-generated="1773317826.4878778">
+    <body data-latest="1773309300.0" data-generated="1773861099.5944462">
         <div class="nav-header">
             <button class="btn-back" onclick="window.history.back()">← Back to Index</button>
             <button id="syncBtn" class="btn-sync" onclick="triggerUpdate()">⚠ Update Available</button>
@@ -111,9 +114,8 @@
             <h2>Der Kriegspräsident, der nicht von Krieg sprechen will</h2>
             <div class="summary">Donald Trump führt Krieg im Iran, doch seine Ziele bleiben vage. Wir diskutieren konkurrierende Thesen. Und: Gespräch mit Ex-Botschafterin Amy Gutmann...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/74aebd5d-590a-4c74-98c0-aeb528fe0705/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=74aebd5d-590a-4c74-98c0-aeb528fe0705&feed=yPsdBcxP', 'ok-america', '260312', 'Der Kriegspräsident, der nicht von Krieg sprechen will', 'de')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/ok-america.260312.html" id="view-0" class="btn btn-view">🌐 View Live</a>
-                <a href="https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/74aebd5d-590a-4c74-98c0-aeb528fe0705/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=74aebd5d-590a-4c74-98c0-aeb528fe0705&feed=yPsdBcxP" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/74aebd5d-590a-4c74-98c0-aeb528fe0705/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=74aebd5d-590a-4c74-98c0-aeb528fe0705&feed=yPsdBcxP', 'ok-america', '260312', 'Der Kriegspräsident, der nicht von Krieg sprechen will', 'de')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/ok-america.260312.html" id="view-0" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(0, "https://egilchri.github.io/pod_tran/ok-america.260312.mp3");</script>
         </div>
@@ -123,9 +125,8 @@
             <h2>Trumps Krieg ohne Ziel</h2>
             <div class="summary">Der US-Präsident findet viele Begründungen für den Krieg im Iran, doch selbst seine Basis beruhigt das nicht. Wird das ein Problem bei den Midterms? Und: Bundeskanzler Friedrich Merz im Oval Office....</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/002ba7b9-a139-4d3d-812f-41d330b0be10/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=002ba7b9-a139-4d3d-812f-41d330b0be10&feed=yPsdBcxP', 'ok-america', '260305', 'Trumps Krieg ohne Ziel', 'de')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/ok-america.260305.html" id="view-1" class="btn btn-view">🌐 View Live</a>
-                <a href="https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/002ba7b9-a139-4d3d-812f-41d330b0be10/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=002ba7b9-a139-4d3d-812f-41d330b0be10&feed=yPsdBcxP" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/002ba7b9-a139-4d3d-812f-41d330b0be10/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=002ba7b9-a139-4d3d-812f-41d330b0be10&feed=yPsdBcxP', 'ok-america', '260305', 'Trumps Krieg ohne Ziel', 'de')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/ok-america.260305.html" id="view-1" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(1, "https://egilchri.github.io/pod_tran/ok-america.260305.mp3");</script>
         </div>
@@ -135,9 +136,8 @@
             <h2>'Epischer Zorn' und 'Brüllender Löwe' – Trumps nächster Krieg</h2>
             <div class="summary">Bomben auf Teheran, Gegenangriffe vom Iran, Ajatollah Ali Chamenei getötet, Donald Trumps Kriegsziele unklar: Wir diskutieren über den US-israelischen Krieg gegen Iran....</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/a8e89bbd-a2ff-413e-bc9d-4ddec31dfffa/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=a8e89bbd-a2ff-413e-bc9d-4ddec31dfffa&feed=yPsdBcxP', 'ok-america', '260301', ''Epischer Zorn' und 'Brüllender Löwe' – Trumps nächster Krieg', 'de')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/ok-america.260301.html" id="view-2" class="btn btn-view">🌐 View Live</a>
-                <a href="https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/a8e89bbd-a2ff-413e-bc9d-4ddec31dfffa/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=a8e89bbd-a2ff-413e-bc9d-4ddec31dfffa&feed=yPsdBcxP" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/a8e89bbd-a2ff-413e-bc9d-4ddec31dfffa/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=a8e89bbd-a2ff-413e-bc9d-4ddec31dfffa&feed=yPsdBcxP', 'ok-america', '260301', ''Epischer Zorn' und 'Brüllender Löwe' – Trumps nächster Krieg', 'de')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/ok-america.260301.html" id="view-2" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(2, "https://egilchri.github.io/pod_tran/ok-america.260301.mp3");</script>
         </div>
@@ -147,9 +147,8 @@
             <h2>'Der Ostcast' trifft 'OK, America?'</h2>
             <div class="summary">'Ich allein kann es richten.' 'Wir werden niemandem erlauben, sich in unsere inneren Angelegenheiten einzumischen.' Wer hat's gesagt, Wladimir Putin oder Donald Trump? Im Podcast-Club der ZEIT spielen der Russland-Korrespondent Michael Thumann und die USA-Expertin Rieke Havertz mit dem Publikum ein ...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/400a308a-a768-4da3-ac00-db1fe39bf2b9/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=400a308a-a768-4da3-ac00-db1fe39bf2b9&feed=yPsdBcxP', 'ok-america', '251108', ''Der Ostcast' trifft 'OK, America?'', 'de')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/ok-america.251108.html" id="view-3" class="btn btn-view">🌐 View Live</a>
-                <a href="https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/400a308a-a768-4da3-ac00-db1fe39bf2b9/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=400a308a-a768-4da3-ac00-db1fe39bf2b9&feed=yPsdBcxP" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/400a308a-a768-4da3-ac00-db1fe39bf2b9/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=400a308a-a768-4da3-ac00-db1fe39bf2b9&feed=yPsdBcxP', 'ok-america', '251108', ''Der Ostcast' trifft 'OK, America?'', 'de')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/ok-america.251108.html" id="view-3" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(3, "https://egilchri.github.io/pod_tran/ok-america.251108.mp3");</script>
         </div>
@@ -159,9 +158,8 @@
             <h2>Ankündigung: Bonusfolgen und Archiv von 'OK, America?' mit Abo</h2>
             <div class="summary">Jeden Monat beantworten wir in Zukunft Ihre Fragen an uns. Hören können Sie die zusätzlichen Folgen mit einem Podcast- oder Digitalabo der ZEIT....</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/63ffe75c-0724-40a3-93d9-5773f621d6da/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=63ffe75c-0724-40a3-93d9-5773f621d6da&feed=yPsdBcxP', 'ok-america', '251010', 'Ankündigung: Bonusfolgen und Archiv von 'OK, America?' mit Abo', 'de')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/ok-america.251010.html" id="view-4" class="btn btn-view">🌐 View Live</a>
-                <a href="https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/63ffe75c-0724-40a3-93d9-5773f621d6da/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=63ffe75c-0724-40a3-93d9-5773f621d6da&feed=yPsdBcxP" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://zeitonline.simplecastaudio.com/fc02e323-077b-4b00-87bc-38d08934786a/episodes/63ffe75c-0724-40a3-93d9-5773f621d6da/audio/128/default.mp3?aid=rss_feed&awCollectionId=fc02e323-077b-4b00-87bc-38d08934786a&awEpisodeId=63ffe75c-0724-40a3-93d9-5773f621d6da&feed=yPsdBcxP', 'ok-america', '251010', 'Ankündigung: Bonusfolgen und Archiv von 'OK, America?' mit Abo', 'de')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/ok-america.251010.html" id="view-4" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(4, "https://egilchri.github.io/pod_tran/ok-america.251010.mp3");</script>
         </div>
