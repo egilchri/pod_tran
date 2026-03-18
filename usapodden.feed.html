@@ -1,6 +1,6 @@
 
     <!DOCTYPE html>
-    <html lang="sv" data-is-override="true" data-rss-url="https://podcast.tamperd.net/sr/usapodden" data-start-pattern="avsnitt">
+    <html lang="sv" data-is-override="true" data-rss-url="https://podcast.tamperd.net/sr/usapodden">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -58,7 +58,7 @@
                 });
             }
             function copyMasterCommand(mp3Url, feedname, date, title, lang) {
-                const startPattern = "avsnitt";
+                const startPattern = null;
                 const startPatternFlag = startPattern ? ` --start-pattern "${startPattern}"` : "";
                 const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}" --lang "${lang}"${startPatternFlag}`;
 
@@ -89,7 +89,7 @@
             }
         </script>
     </head>
-    <body data-latest="1773867600.0" data-generated="1773861082.836284">
+    <body data-latest="1773867600.0" data-generated="1773862241.11109">
         <div class="nav-header">
             <button class="btn-back" onclick="window.history.back()">← Back to Index</button>
             <button id="syncBtn" class="btn-sync" onclick="triggerUpdate()">⚠ Update Available</button>
