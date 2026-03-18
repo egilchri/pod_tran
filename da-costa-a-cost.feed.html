@@ -34,11 +34,11 @@
 
             /* --- MOBILE APP OVERRIDES --- */
             @media (display-mode: standalone) {
-                .btn-back, .btn-run { display: none !important; }
+                .btn-back, .btn-run, #syncBtn { display: none !important; }
                 .nav-header { justify-content: flex-end; }
             }
             @media (max-width: 600px) {
-                .btn-run { display: none !important; }
+                .btn-run, #syncBtn { display: none !important; }
             }
         </style>
         <script>
@@ -58,7 +58,10 @@
                 });
             }
             function copyMasterCommand(mp3Url, feedname, date, title, lang) {
-                const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}" --lang "${lang}"`;
+                const startPattern = null;
+                const startPatternFlag = startPattern ? ` --start-pattern "${startPattern}"` : "";
+                const cmd = `python3 ./run_workflow.py --url "${mp3Url}" --feedname "${feedname}" --date "${date}" --title "${title}" --lang "${lang}"${startPatternFlag}`;
+
                 navigator.clipboard.writeText(cmd).then(() => {
                     const t = document.getElementById('toast');
                     t.style.display = 'block';
@@ -86,7 +89,7 @@
             }
         </script>
     </head>
-    <body data-latest="1612000800.0" data-generated="1773317828.523205">
+    <body data-latest="1612000800.0" data-generated="1773861101.845943">
         <div class="nav-header">
             <button class="btn-back" onclick="window.history.back()">← Back to Index</button>
             <button id="syncBtn" class="btn-sync" onclick="triggerUpdate()">⚠ Update Available</button>
@@ -111,9 +114,8 @@
             <h2>Episodio speciale - Una nazione incompleta</h2>
             <div class="summary">Il 6 gennaio del 2021 il Congresso era riunito in seduta congiunta per ratificare il risultato delle elezioni presidenziali dello scorso novembre, cioè la vittoria di Joe Biden sul presidente uscente Donald Trump. Un passaggio burocratico, una formalità che di solito viene sbrigata in pochi minuti. ...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO7448559743.mp3?updated=1726571460', 'da-costa-a-cost', '210130', 'Episodio speciale - Una nazione incompleta', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.210130.html" id="view-0" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO7448559743.mp3?updated=1726571460" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO7448559743.mp3?updated=1726571460', 'da-costa-a-cost', '210130', 'Episodio speciale - Una nazione incompleta', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.210130.html" id="view-0" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(0, "https://egilchri.github.io/pod_tran/da-costa-a-cost.210130.mp3");</script>
         </div>
@@ -123,9 +125,8 @@
             <h2>S04E26. Tomorrow</h2>
             <div class="summary">Siamo alla fine di un anno che non dimenticheremo mai. Per quanto esistano fondate ragioni per sperare in un 2021 più semplice e allegro del 2020, niente di quello che è successo quest'anno sparirà: e serve un po' di coraggio per affidarsi alla speranza invece che al pessimismo. Su questo gli americ...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO8987673530.mp3?updated=1726571500', 'da-costa-a-cost', '201226', 'S04E26. Tomorrow', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201226.html" id="view-1" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO8987673530.mp3?updated=1726571500" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO8987673530.mp3?updated=1726571500', 'da-costa-a-cost', '201226', 'S04E26. Tomorrow', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201226.html" id="view-1" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(1, "https://egilchri.github.io/pod_tran/da-costa-a-cost.201226.mp3");</script>
         </div>
@@ -135,9 +136,8 @@
             <h2>S04E25. La politica americana si è rotta</h2>
             <div class="summary">Le elezioni americane del 2020 finiranno davvero soltanto nel 2021: il 5 gennaio si voterà in Georgia per i ballottaggi di due seggi al Senato che decideranno quale dei due partiti avrà la maggioranza, e mettono quindi in palio, di fatto, l'intera agenda politica e legislativa del presidente eletto ...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO8044941956.mp3?updated=1719675544', 'da-costa-a-cost', '201212', 'S04E25. La politica americana si è rotta', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201212.html" id="view-2" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO8044941956.mp3?updated=1719675544" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO8044941956.mp3?updated=1719675544', 'da-costa-a-cost', '201212', 'S04E25. La politica americana si è rotta', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201212.html" id="view-2" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(2, "https://egilchri.github.io/pod_tran/da-costa-a-cost.201212.mp3");</script>
         </div>
@@ -147,9 +147,8 @@
             <h2>S04E24. Latinos por Donald Trump</h2>
             <div class="summary">Com'è possibile che dal 2016 al 2020 il consenso di Donald Trump tra le persone di origini latinoamericane sia aumentato? Nonostante abbia perso le elezioni presidenziali, infatti, il politico che aveva lanciato la sua candidatura sostenendo che dal Messico arrivino 'solo criminali e stupratori', ch...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO7801576626.mp3?updated=1709763949', 'da-costa-a-cost', '201128', 'S04E24. Latinos por Donald Trump', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201128.html" id="view-3" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO7801576626.mp3?updated=1709763949" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO7801576626.mp3?updated=1709763949', 'da-costa-a-cost', '201128', 'S04E24. Latinos por Donald Trump', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201128.html" id="view-3" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(3, "https://egilchri.github.io/pod_tran/da-costa-a-cost.201128.mp3");</script>
         </div>
@@ -159,9 +158,8 @@
             <h2>S04E23. Farete i conti con Stacey Abrams</h2>
             <div class="summary">Joe Biden ha vinto le elezioni americane, e lo ha fatto, tra le altre cose, strappando a Donald Trump uno degli Stati in cui i Repubblicani sono più forti e radicati: la Georgia, nel profondo Sud. Per capire come è stato possibile bisogna conoscere la storia, e soprattutto le azioni, di una donna af...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO2908983495.mp3?updated=1709764004', 'da-costa-a-cost', '201114', 'S04E23. Farete i conti con Stacey Abrams', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201114.html" id="view-4" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO2908983495.mp3?updated=1709764004" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO2908983495.mp3?updated=1709764004', 'da-costa-a-cost', '201114', 'S04E23. Farete i conti con Stacey Abrams', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201114.html" id="view-4" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(4, "https://egilchri.github.io/pod_tran/da-costa-a-cost.201114.mp3");</script>
         </div>
@@ -171,9 +169,8 @@
             <h2>S04E22. 1876</h2>
             <div class="summary">Cosa succederebbe se il risultato finale delle elezioni americane fosse così equilibrato da rendere vani ricorsi e riconteggi? Cosa succederebbe se uno dei due candidati dovesse decidere di non accettare l'esito del voto? Cosa succederebbe se all'incertezza si accompagnassero una fortissima aggressi...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO3604517314.mp3?updated=1709764041', 'da-costa-a-cost', '201031', 'S04E22. 1876', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201031.html" id="view-5" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO3604517314.mp3?updated=1709764041" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO3604517314.mp3?updated=1709764041', 'da-costa-a-cost', '201031', 'S04E22. 1876', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201031.html" id="view-5" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(5, "https://egilchri.github.io/pod_tran/da-costa-a-cost.201031.mp3");</script>
         </div>
@@ -183,9 +180,8 @@
             <h2>S04E21. E quindi, questi quattro anni di Trump?</h2>
             <div class="summary">È normale che il bilancio di ogni presidente sia fatto di luci e ombre. Soprattutto quando si governa un Paese grande e complesso come gli Stati Uniti, nessuno può dire di aver fatto tutto bene o tutto male: si fanno degli errori, ci sono degli imprevisti, non tutto va sempre come pianificato. Tenen...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO7209889993.mp3?updated=1719755764', 'da-costa-a-cost', '201017', 'S04E21. E quindi, questi quattro anni di Trump?', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201017.html" id="view-6" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO7209889993.mp3?updated=1719755764" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO7209889993.mp3?updated=1719755764', 'da-costa-a-cost', '201017', 'S04E21. E quindi, questi quattro anni di Trump?', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201017.html" id="view-6" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(6, "https://egilchri.github.io/pod_tran/da-costa-a-cost.201017.mp3");</script>
         </div>
@@ -195,9 +191,8 @@
             <h2>S04E20. Come sono cambiati i partiti americani</h2>
             <div class="summary">Per decenni, nel Novecento, il partito americano più razzista è stato il Partito Democratico, che nel Sud ha approvato le più crudeli leggi di segregazione e discriminazione degli afroamericani. La schiavitù, invece, fu notoriamente abolita dal presidente Abraham Lincoln, che faceva parte del Partit...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO8604346368.mp3?updated=1726571525', 'da-costa-a-cost', '201003', 'S04E20. Come sono cambiati i partiti americani', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201003.html" id="view-7" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO8604346368.mp3?updated=1726571525" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO8604346368.mp3?updated=1726571525', 'da-costa-a-cost', '201003', 'S04E20. Come sono cambiati i partiti americani', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.201003.html" id="view-7" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(7, "https://egilchri.github.io/pod_tran/da-costa-a-cost.201003.mp3");</script>
         </div>
@@ -207,9 +202,8 @@
             <h2>S04E19. Io non l'ho interrotta</h2>
             <div class="summary">Ormai ci siamo. Tra poco Donald Trump e Joe Biden condivideranno lo stesso palco, e davanti a decine di milioni di americani – e centinaia di milioni di persone di tutto il mondo – cercheranno di spiegare cosa hanno in mente per il futuro degli Stati Uniti e di mostrarsi più efficaci, più forti, più...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO7672760887.mp3?updated=1708955869', 'da-costa-a-cost', '200919', 'S04E19. Io non l'ho interrotta', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200919.html" id="view-8" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO7672760887.mp3?updated=1708955869" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO7672760887.mp3?updated=1708955869', 'da-costa-a-cost', '200919', 'S04E19. Io non l'ho interrotta', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200919.html" id="view-8" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(8, "https://egilchri.github.io/pod_tran/da-costa-a-cost.200919.mp3");</script>
         </div>
@@ -219,9 +213,8 @@
             <h2>S04E18. Let’s roll!</h2>
             <div class="summary">Quando ripensiamo a quello che accadde negli Stati Uniti diciannove anni fa, l'11 settembre del 2001, l'immagine dalla quale è impossibile sfuggire è quella degli aerei di linea che si schiantarono dentro le torri del World Trade Center di New York. Tutti sapevano che qualcosa stava per cambiare per...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO7179633337.mp3?updated=1708955874', 'da-costa-a-cost', '200905', 'S04E18. Let’s roll!', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200905.html" id="view-9" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO7179633337.mp3?updated=1708955874" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO7179633337.mp3?updated=1708955874', 'da-costa-a-cost', '200905', 'S04E18. Let’s roll!', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200905.html" id="view-9" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(9, "https://egilchri.github.io/pod_tran/da-costa-a-cost.200905.mp3");</script>
         </div>
@@ -231,9 +224,8 @@
             <h2>S04E17. Kamala Harris somiglia all'America</h2>
             <div class="summary">Madre indiana, padre giamaicano, cultura ed esperienza di vita afroamericana in uno dei posti più bianchi degli Stati Uniti, ma frequentando le scuole per neri, i templi induisti e le chiese battiste. Procuratrice progressista, ma non si capisce se abbastanza o troppo poco. Candidata alle presidenzi...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO2153173173.mp3?updated=1726571910', 'da-costa-a-cost', '200822', 'S04E17. Kamala Harris somiglia all'America', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200822.html" id="view-10" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO2153173173.mp3?updated=1726571910" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO2153173173.mp3?updated=1726571910', 'da-costa-a-cost', '200822', 'S04E17. Kamala Harris somiglia all'America', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200822.html" id="view-10" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(10, "https://egilchri.github.io/pod_tran/da-costa-a-cost.200822.mp3");</script>
         </div>
@@ -243,9 +235,8 @@
             <h2>S04E16. Alle convention si vede il futuro</h2>
             <div class="summary">Ogni campagna elettorale americana è scandita da alcuni momenti – le candidature, le primarie, il Super Tuesday, i confronti televisivi – e uno dei più importanti e famosi arriva in estate: le convention. Decine di migliaia di persone riunite per quattro giorni in una grande baracconata di palloncin...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO8659041696.mp3?updated=1719674840', 'da-costa-a-cost', '200808', 'S04E16. Alle convention si vede il futuro', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200808.html" id="view-11" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO8659041696.mp3?updated=1719674840" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO8659041696.mp3?updated=1719674840', 'da-costa-a-cost', '200808', 'S04E16. Alle convention si vede il futuro', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200808.html" id="view-11" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(11, "https://egilchri.github.io/pod_tran/da-costa-a-cost.200808.mp3");</script>
         </div>
@@ -255,9 +246,8 @@
             <h2>S04E15. I approve this message</h2>
             <div class="summary">Da più di cinquant'anni, negli Stati Uniti gli spot televisivi sono l'architrave di qualsiasi campagna elettorale, e rappresentano sempre la principale voce di spesa di qualsiasi persona che si candidi alla presidenza. Fino a questo momento tutti i candidati alla presidenza nel 2020, primarie compre...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO7744411710.mp3?updated=1719755785', 'da-costa-a-cost', '200725', 'S04E15. I approve this message', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200725.html" id="view-12" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO7744411710.mp3?updated=1719755785" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO7744411710.mp3?updated=1719755785', 'da-costa-a-cost', '200725', 'S04E15. I approve this message', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200725.html" id="view-12" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(12, "https://egilchri.github.io/pod_tran/da-costa-a-cost.200725.mp3");</script>
         </div>
@@ -267,9 +257,8 @@
             <h2>S04E14. È stato Bill Gates</h2>
             <div class="summary">In questi mesi Bill Gates è diventato per molti l'uomo che ha creato il Coronavirus, oppure che vuole sfruttarlo per guadagnare un sacco di soldi, oppure che vuole approfittarne per mettere la popolazione mondiale sotto il suo controllo, oppure che ha già brevettato il vaccino, oppure che vuole inie...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO2308587180.mp3?updated=1708955873', 'da-costa-a-cost', '200711', 'S04E14. È stato Bill Gates', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200711.html" id="view-13" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO2308587180.mp3?updated=1708955873" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO2308587180.mp3?updated=1708955873', 'da-costa-a-cost', '200711', 'S04E14. È stato Bill Gates', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200711.html" id="view-13" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(13, "https://egilchri.github.io/pod_tran/da-costa-a-cost.200711.mp3");</script>
         </div>
@@ -279,9 +268,8 @@
             <h2>S04E13. Ancora più perfetta</h2>
             <div class="summary">Se è vero che il razzismo negli Stati Uniti va molto oltre i comportamenti individuali ed è il frutto di una storia secolare di oppressione dei neri con tutta la forza dello Stato – ed è vero – allora è vero anche che le persone che negli Stati Uniti dicono o pensano ancora cose razziste lo fanno pe...</div>
             <div class="btn-group">
-                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO5621797368.mp3?updated=1708955873', 'da-costa-a-cost', '200627', 'S04E13. Ancora più perfetta', 'it')">⚡ Copy Process Command</button>
-                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200627.html" id="view-14" class="btn btn-view">🌐 View Live</a>
-                <a href="https://traffic.megaphone.fm/PIANO5621797368.mp3?updated=1708955873" target="_blank" class="btn" style="background:#e9ecef; color:#004a99; border:1px solid #004a99;">🎧 Preview MP3</a>
+                <button class="btn btn-run" onclick="copyMasterCommand('https://traffic.megaphone.fm/PIANO5621797368.mp3?updated=1708955873', 'da-costa-a-cost', '200627', 'S04E13. Ancora più perfetta', 'it')">Developer CP</button>
+                <a href="https://egilchri.github.io/pod_tran/da-costa-a-cost.200627.html" id="view-14" class="btn btn-view">🌐 Goto Playback</a>
             </div>
             <script>checkLiveStatus(14, "https://egilchri.github.io/pod_tran/da-costa-a-cost.200627.mp3");</script>
         </div>
