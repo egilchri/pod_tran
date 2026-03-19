@@ -29,9 +29,9 @@
             .pos-btn { background: #e0e0e0; color: #333; border: none; padding: 3px 9px; border-radius: 10px; font-size: 0.68rem; cursor: pointer; }
             .pos-btn.active { background: var(--primary); color: white; }
             #vocab-info {
-                min-height: 52px; padding: 8px 10px; background: #f5f5f5;
+                min-height: 80px; padding: 8px 10px; background: #f5f5f5;
                 border-radius: 8px; margin-bottom: 6px; font-size: 0.82rem;
-                display: flex; flex-direction: column; justify-content: center; gap: 2px;
+                display: flex; flex-direction: column; justify-content: center; gap: 3px;
             }
             #vocab-info .info-cognate { font-size: 0.95rem; font-weight: bold; color: #1565c0; }
             #vocab-info .info-sub { color: #666; font-size: 0.75rem; }
@@ -53,10 +53,9 @@
             .vp-spacer { height: 68px; }
             .vp-item {
                 height: 34px; scroll-snap-align: center;
-                display: flex; align-items: center; padding: 0 10px; gap: 14px;
+                display: flex; align-items: center; padding: 0 10px;
             }
-            .vp-word { flex: 1; font-weight: 600; font-size: 0.85rem; color: #222; }
-            .vp-trans { flex: 1; color: #546e7a; font-style: italic; font-size: 0.8rem; }
+            .vp-word { font-weight: 600; font-size: 0.95rem; color: #222; }
             .vp-item.vp-active .vp-word { color: var(--primary); }
             @media (max-width: 768px) { .row { flex-direction: column; gap: 10px; } .en { border-left: none; border-top: 1px solid #eee; padding-top: 10px; } }
         </style>
@@ -173,13 +172,15 @@
             function updateVocabInfo(e) {
                 const info = document.getElementById('vocab-info');
                 if (!e) { info.innerHTML = '<span class="info-sub">scroll to explore words</span>'; return; }
+                let html = `<span class="info-cognate">${e.word}</span>`;
+                html += `<span class="info-sub">${e.translation} &middot; ${e.pos.toLowerCase()}</span>`;
                 if (e.cognate) {
-                    info.innerHTML = `<span class="info-cognate">cognate with English: <em>${e.cognate}</em></span><span class="info-sub">${e.word} &middot; ${e.pos.toLowerCase()} &middot; &ldquo;${e.translation}&rdquo;</span>`;
-                } else if (e.etymology) {
-                    info.innerHTML = `<span class="info-cognate">${e.word}</span><span class="info-sub">${e.etymology}</span>`;
-                } else {
-                    info.innerHTML = `<span class="info-cognate">${e.word}</span><span class="info-sub">${e.translation} &middot; ${e.pos.toLowerCase()}</span>`;
+                    html += `<span class="info-sub">cognate with English: <em>${e.cognate}</em></span>`;
                 }
+                if (e.etymology) {
+                    html += `<span class="info-sub" style="color:#999">${e.etymology}</span>`;
+                }
+                info.innerHTML = html;
             }
 
             function renderPicker(entries) {
@@ -189,7 +190,7 @@
                 vpItems = entries.map((e, i) => {
                     const item = document.createElement('div');
                     item.className = 'vp-item';
-                    item.innerHTML = `<span class="vp-word">${e.word}</span><span class="vp-trans">${e.translation}</span>`;
+                    item.innerHTML = `<span class="vp-word">${e.word}</span>`;
                     picker.appendChild(item);
                     return item;
                 });
