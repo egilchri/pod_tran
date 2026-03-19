@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>Trump vädjar till Europa om hjälp</title>
+        <title>Episode 724 - March 18 2026</title>
         <style>
             :root { --primary: #004a99; --accent: #ffc107; --bg: #f0f2f5; }
             body { font-family: -apple-system, system-ui, sans-serif; margin: 0; background: var(--bg); }
@@ -29,6 +29,15 @@
             #vocabPanel th { text-align: left; font-weight: bold; color: #555; padding: 2px 8px 2px 0; border-bottom: 2px solid #ccc; white-space: nowrap; }
             #vocabPanel td { padding: 2px 8px 2px 0; border-bottom: 1px solid #eee; vertical-align: top; white-space: nowrap; }
             #vocabPanel td:last-child { color: #888; font-style: italic; }
+            #vocabPanel td.has-etym { cursor: help; text-decoration: underline dotted #aaa; }
+            #etym-tooltip {
+                position: fixed; z-index: 9999; max-width: 320px;
+                background: #263238; color: #eceff1; font-size: 0.78rem;
+                line-height: 1.5; padding: 8px 12px; border-radius: 6px;
+                box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+                pointer-events: none; display: none;
+                font-style: italic;
+            }
             @media (max-width: 768px) { .row { flex-direction: column; gap: 10px; } .en { border-left: none; border-top: 1px solid #eee; padding-top: 10px; } }
         </style>
     </head>
@@ -38,7 +47,7 @@
                 <small style="font-weight:bold; color:#666;">USAPODDEN | 260318 &nbsp;·&nbsp; <em style="font-weight:normal;">Personal/educational use only. Audio © respective owners. Translations under fair use.</em></small>
                 <button id="modeBtn" class="btn" onclick="toggleMode()">Switch to Interleaved</button>
             </div>
-            <h1 style="margin: 5px 0; font-size: 1.2rem;">Trump vädjar till Europa om hjälp</h1>
+            <h1 style="margin: 5px 0; font-size: 1.2rem;">Episode 724 - March 18 2026</h1>
             <div style="margin: 4px 0 8px; font-size: 0.95rem; font-weight: bold; color: var(--primary);">
                 Mode: <span id="modeLabel">Podcast</span>
                 <span id="audio-status" class="status-badge"></span>
@@ -69,7 +78,7 @@
             const statusEl = document.getElementById('audio-status');
             const container = document.getElementById('transcript');
             const sources = { orig: "usapodden.260318.mp3", bilingual: "usapodden.260318.bilingual.mp3" };
-            const startPattern = "avsnitt";
+            const startPattern = null;
             let mode = 'orig';
             let data = [];
             let lastIdx = -1;
@@ -139,10 +148,34 @@
                 btn.innerText = open ? 'VOCAB ▾' : 'VOCAB ▴';
             }
 
+            // Shared etymology tooltip
+            const etymTooltip = document.createElement('div');
+            etymTooltip.id = 'etym-tooltip';
+            document.body.appendChild(etymTooltip);
+
+            function showEtym(el, text) {
+                etymTooltip.textContent = text;
+                etymTooltip.style.display = 'block';
+                positionEtym(el);
+            }
+            function hideEtym() {
+                etymTooltip.style.display = 'none';
+            }
+            function positionEtym(el) {
+                const r = el.getBoundingClientRect();
+                const tw = etymTooltip.offsetWidth, th = etymTooltip.offsetHeight;
+                let top = r.top - th - 8;
+                if (top < 8) top = r.bottom + 8;
+                let left = r.left;
+                if (left + tw > window.innerWidth - 8) left = window.innerWidth - tw - 8;
+                etymTooltip.style.top = top + 'px';
+                etymTooltip.style.left = left + 'px';
+            }
+
             fetch('vocab.usapodden.260318.json').then(r => r.json()).then(vocab => {
                 const entries = [];
                 Object.entries(vocab).forEach(([pos, words]) => {
-                    words.forEach(entry => entries.push({ word: entry.word, translation: entry.translation, pos }));
+                    words.forEach(entry => entries.push({ word: entry.word, translation: entry.translation, pos, etymology: entry.etymology || '' }));
                 });
                 entries.sort((a, b) => a.word.localeCompare(b.word));
                 const panel = document.getElementById('vocabPanel');
@@ -151,7 +184,24 @@
                 const tbody = document.createElement('tbody');
                 entries.forEach(e => {
                     const tr = document.createElement('tr');
-                    tr.innerHTML = `<td>${e.word}</td><td>${e.translation}</td><td>${e.pos}</td>`;
+                    const wordTd = document.createElement('td');
+                    wordTd.textContent = e.word;
+                    if (e.etymology) {
+                        wordTd.classList.add('has-etym');
+                        let pressTimer;
+                        wordTd.addEventListener('mouseenter', () => showEtym(wordTd, e.etymology));
+                        wordTd.addEventListener('mouseleave', hideEtym);
+                        wordTd.addEventListener('touchstart', ev => {
+                            pressTimer = setTimeout(() => { showEtym(wordTd, e.etymology); ev.preventDefault(); }, 500);
+                        }, { passive: true });
+                        wordTd.addEventListener('touchend', () => { clearTimeout(pressTimer); setTimeout(hideEtym, 1500); });
+                        wordTd.addEventListener('touchmove', () => clearTimeout(pressTimer));
+                    }
+                    const transTd = document.createElement('td');
+                    transTd.textContent = e.translation;
+                    const posTd = document.createElement('td');
+                    posTd.textContent = e.pos;
+                    tr.appendChild(wordTd); tr.appendChild(transTd); tr.appendChild(posTd);
                     tbody.appendChild(tr);
                 });
                 table.appendChild(tbody);
