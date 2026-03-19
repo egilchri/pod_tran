@@ -69,7 +69,7 @@
         "svårt"
       ],
       "cognate": "",
-      "etymology": "From svār, svāger, svor, from svárr, from *swēraz, from *swer-. Compare schwer."
+      "etymology": ""
     },
     {
       "word": "egen",
@@ -90,8 +90,8 @@
       "forms": [
         "olika"
       ],
-      "cognate": "",
-      "etymology": ""
+      "cognate": "unlike",
+      "etymology": "From úlíkr, from *ungalīkaz. lik. Compare unlike, ongelijk, ólíkur, ungleich, ulik."
     },
     {
       "word": "sen",
@@ -354,7 +354,7 @@
         "villiga"
       ],
       "cognate": "",
-      "etymology": "From vililiker, viliogher."
+      "etymology": ""
     },
     {
       "word": "antisemitisk",
@@ -1119,7 +1119,7 @@
         "hetsigt"
       ],
       "cognate": "",
-      "etymology": "From hitzig, from Hitze. Thus closely related to het and hetta, but despite superficial similarity not to hets and hetsa."
+      "etymology": ""
     },
     {
       "word": "himl",
@@ -1429,7 +1429,7 @@
         "menade"
       ],
       "cognate": "",
-      "etymology": "From mena, from mēnen, meinen (compare meina, mene), from mēnian, from *mainijaną, from *mein-."
+      "etymology": ""
     },
     {
       "word": "minska",
@@ -1619,7 +1619,7 @@
         "opartiska"
       ],
       "cognate": "",
-      "etymology": "partisk"
+      "etymology": ""
     },
     {
       "word": "opatriotisk",
@@ -1759,7 +1759,7 @@
         "riskfylld"
       ],
       "cognate": "",
-      "etymology": "fylld"
+      "etymology": ""
     },
     {
       "word": "röd",
@@ -1769,7 +1769,7 @@
         "röda"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From røþer, from rauðr, from *raudaz, from *h₁rowdʰós < *h₁rewdʰ-."
     },
     {
       "word": "sara",
@@ -2531,7 +2531,7 @@
         "som"
       ],
       "cognate": "",
-      "etymology": "From som or sum, in Runic inscriptions also ''sim'', same as sem, from sem. Also related to the prefix sam- and suffix -sam. Still in the Poetic Edda, the Icelandic ''sem'' is only used as a comparative particle, e.g. Há"
+      "etymology": ""
     },
     {
       "word": "under",
@@ -3078,7 +3078,7 @@
         "idag"
       ],
       "cognate": "",
-      "etymology": "i dag."
+      "etymology": ""
     },
     {
       "word": "inne",
@@ -3168,7 +3168,7 @@
         "som"
       ],
       "cognate": "",
-      "etymology": "From som or sum, in Runic inscriptions also ''sim'', same as sem, from sem. Also related to the prefix sam- and suffix -sam. Still in the Poetic Edda, the Icelandic ''sem'' is only used as a comparative particle, e.g. Há"
+      "etymology": ""
     },
     {
       "word": "tillbaka",
@@ -3198,7 +3198,7 @@
         "var"
       ],
       "cognate": "",
-      "etymology": "From hvar, from *hwar."
+      "etymology": ""
     },
     {
       "word": "a",
@@ -4089,7 +4089,7 @@
         "riktigt"
       ],
       "cognate": "",
-      "etymology": "From richtich or richtig. Compare rigtig."
+      "etymology": ""
     },
     {
       "word": "roosevelt",
@@ -4524,7 +4524,7 @@
         "var"
       ],
       "cognate": "",
-      "etymology": "From hvar, from *hwar."
+      "etymology": ""
     },
     {
       "word": "vattakärde",
@@ -4636,7 +4636,7 @@
         "som"
       ],
       "cognate": "",
-      "etymology": "From som or sum, in Runic inscriptions also ''sim'', same as sem, from sem. Also related to the prefix sam- and suffix -sam. Still in the Poetic Edda, the Icelandic ''sem'' is only used as a comparative particle, e.g. Há"
+      "etymology": ""
     },
     {
       "word": "vare",
@@ -5260,7 +5260,7 @@
         "steg"
       ],
       "cognate": "",
-      "etymology": "From stig. Cognate with steg, stig, stig."
+      "etymology": ""
     },
     {
       "word": "svar",
@@ -5362,7 +5362,7 @@
         "fartyget"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "tyg, like Fahrzeug, vaartuig"
     },
     {
       "word": "fox",
@@ -5506,7 +5506,7 @@
         "program-"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From πρόγραμμα."
     },
     {
       "word": "programledare",
@@ -5786,7 +5786,7 @@
         "folk"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From fōlk, from Runic Swedish fulk, from fólk, folk, from *fulką."
     },
     {
       "word": "fredag",
@@ -5907,7 +5907,7 @@
       "forms": [
         "huset"
       ],
-      "cognate": "",
+      "cognate": "house",
       "etymology": "From [[hus, from hús, from *hūsą."
     },
     {
@@ -6041,7 +6041,7 @@
         "marktrupper"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "trupp"
     },
     {
       "word": "morgon",
@@ -6341,7 +6341,7 @@
         "retoriken"
       ],
       "cognate": "",
-      "etymology": "From ῥήτωρ."
+      "etymology": ""
     },
     {
       "word": "risk",
@@ -7084,7 +7084,7 @@
         "början"
       ],
       "cognate": "",
-      "etymology": "an"
+      "etymology": ""
     },
     {
       "word": "car",
@@ -8414,7 +8414,7 @@
         "kanal-"
       ],
       "cognate": "",
-      "etymology": "From canalis"
+      "etymology": ""
     },
     {
       "word": "kansli",
@@ -8463,7 +8463,7 @@
       "forms": [
         "klockan"
       ],
-      "cognate": "",
+      "cognate": "bell",
       "etymology": "From klockæ, from klokka, from clocca, probably of - origin, from *klokkos (compare cloch, clog), from *klēg-, *klōg-."
     },
     {
@@ -8744,7 +8744,7 @@
         "kväll"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From quæld, qvælder, from kveld, from *kwildiz, from *gʷelH-."
     },
     {
       "word": "källan",
@@ -8804,7 +8804,7 @@
         "liknelsen"
       ],
       "cognate": "",
-      "etymology": "else"
+      "etymology": ""
     },
     {
       "word": "liljighed",
@@ -8833,7 +8833,7 @@
       "forms": [
         "linje"
       ],
-      "cognate": "",
+      "cognate": "flax",
       "etymology": "From linia, from linea, from līnum, from *līno-."
     },
     {
@@ -9043,7 +9043,7 @@
       "forms": [
         "maskulin"
       ],
-      "cognate": "",
+      "cognate": "masculine",
       "etymology": "From masculīnus."
     },
     {
@@ -9064,7 +9064,7 @@
         "medel"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "Known from midhel, middel, medhel, from middel, from middil, from *midlą. Same as German Mittel and English middle. The stand-alone adjective is archaic, but lives on as the superlative medelst, as a prefix medel- and ma"
     },
     {
       "word": "media",
@@ -9224,7 +9224,7 @@
         "mikropenis"
       ],
       "cognate": "",
-      "etymology": "penis"
+      "etymology": ""
     },
     {
       "word": "militäramaritimainsatser",
@@ -9393,8 +9393,8 @@
       "forms": [
         "månad"
       ],
-      "cognate": "",
-      "etymology": ""
+      "cognate": "month",
+      "etymology": "From mánaðr, from *mēnōþs, from a derivative of *mḗh₁n̥s. See also måne."
     },
     {
       "word": "möjlighet",
@@ -9534,7 +9534,7 @@
         "er"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "Since 1661, through sv of the 2nd plural verb suffix ''-(e)n'' and the older pronoun I (\"ye\"), e.g. ''visste'''n''' I'' > ''visste '''n'''i'' (“did you know”). Compare þér and þið which developed similarly. The i, ir der"
     },
     {
       "word": "nja",
@@ -10414,7 +10414,7 @@
         "sig-"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From sik, from *sek, from *se."
     },
     {
       "word": "signalen",
@@ -10564,7 +10564,7 @@
         "snöfall"
       ],
       "cognate": "",
-      "etymology": "fall"
+      "etymology": ""
     },
     {
       "word": "spannmål",
@@ -10694,7 +10694,7 @@
         "säkerhet"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From sikerhet, from sekerheit, akin to het."
     },
     {
       "word": "talkshow-hosten",
@@ -10864,7 +10864,7 @@
         "tillstånden"
       ],
       "cognate": "",
-      "etymology": "stånd"
+      "etymology": ""
     },
     {
       "word": "tillträdde",
@@ -10894,7 +10894,7 @@
         "titten"
       ],
       "cognate": "",
-      "etymology": "titta."
+      "etymology": ""
     },
     {
       "word": "tonadovarning",
@@ -10944,7 +10944,7 @@
         "trafik"
       ],
       "cognate": "",
-      "etymology": "From traffico via trafic or Trafik."
+      "etymology": ""
     },
     {
       "word": "trovärdighet",
@@ -11324,7 +11324,7 @@
         "verktyg"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "tyg, Werkzeug."
     },
     {
       "word": "vi",
@@ -11374,7 +11374,7 @@
         "vill-"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From villr, from *wilþijaz. Doublet of vild, which is influenced from Middle Low German."
     },
     {
       "word": "villkorslös",
@@ -11702,7 +11702,7 @@
         "som"
       ],
       "cognate": "",
-      "etymology": "From som or sum, in Runic inscriptions also ''sim'', same as sem, from sem. Also related to the prefix sam- and suffix -sam. Still in the Poetic Edda, the Icelandic ''sem'' is only used as a comparative particle, e.g. Há"
+      "etymology": ""
     },
     {
       "word": "man",
@@ -11740,7 +11740,7 @@
         "sitt"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From sik, from *sek, from *se."
     },
     {
       "word": "de",
@@ -11809,7 +11809,7 @@
         "ni"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "Since 1661, through sv of the 2nd plural verb suffix ''-(e)n'' and the older pronoun I (\"ye\"), e.g. ''visste'''n''' I'' > ''visste '''n'''i'' (“did you know”). Compare þér and þið which developed similarly. The i, ir der"
     },
     {
       "word": "all",
@@ -12577,7 +12577,7 @@
         "beges"
       ],
       "cognate": "",
-      "etymology": "begiva, equivalent to ge."
+      "etymology": ""
     },
     {
       "word": "brandon",
@@ -13409,7 +13409,7 @@
         "som"
       ],
       "cognate": "",
-      "etymology": "From som or sum, in Runic inscriptions also ''sim'', same as sem, from sem. Also related to the prefix sam- and suffix -sam. Still in the Poetic Edda, the Icelandic ''sem'' is only used as a comparative particle, e.g. Há"
+      "etymology": ""
     },
     {
       "word": "om",
@@ -13791,7 +13791,7 @@
         "låter"
       ],
       "cognate": "",
-      "etymology": "From lata, from láta, from *lētaną, from *leh₁d-. The sense “to sound” was also present in Old Norse and can be derived from the sense “to let (sound) go”."
+      "etymology": ""
     },
     {
       "word": "skicka",
@@ -13837,7 +13837,7 @@
         "menar"
       ],
       "cognate": "",
-      "etymology": "From mena, from mēnen, meinen (compare meina, mene), from mēnian, from *mainijaną, from *mein-."
+      "etymology": ""
     },
     {
       "word": "tala",
@@ -13873,7 +13873,7 @@
         "försökte"
       ],
       "cognate": "",
-      "etymology": "söka or a"
+      "etymology": ""
     },
     {
       "word": "gilla",
@@ -14371,7 +14371,7 @@
         "hoppas"
       ],
       "cognate": "",
-      "etymology": "From hōpen, from *hopon, from *hopōn."
+      "etymology": ""
     },
     {
       "word": "identifiera",
@@ -14506,8 +14506,8 @@
       "forms": [
         "stod"
       ],
-      "cognate": "stand",
-      "etymology": "From sta, possibly from an unattested eastern stá, or via early stān. Both ultimately from *stāną, from *steh₂-. Or from earlier stånda, from staanda, standa, stonda, from standa, from *stāną, from *steh₂-. In any case f"
+      "cognate": "",
+      "etymology": ""
     },
     {
       "word": "svara",
@@ -14539,7 +14539,7 @@
         "sänks"
       ],
       "cognate": "",
-      "etymology": "From sænkia, from sænkva, (Old West Norse søkkva) from *sankwijaną."
+      "etymology": ""
     },
     {
       "word": "tolka",
@@ -14763,7 +14763,7 @@
         "avstår"
       ],
       "cognate": "",
-      "etymology": "From stå."
+      "etymology": ""
     },
     {
       "word": "be",
@@ -14893,7 +14893,7 @@
         "bollar"
       ],
       "cognate": "",
-      "etymology": "a"
+      "etymology": ""
     },
     {
       "word": "bomba",
@@ -15103,7 +15103,7 @@
         "följer"
       ],
       "cognate": "",
-      "etymology": "From fylghia, from fylgja, from *fulgijaną."
+      "etymology": ""
     },
     {
       "word": "föra",
@@ -15773,7 +15773,7 @@
         "saknar"
       ],
       "cognate": "",
-      "etymology": "From sakna, from sakna."
+      "etymology": ""
     },
     {
       "word": "självcensur",
