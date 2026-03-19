@@ -90,8 +90,8 @@
       "forms": [
         "olika"
       ],
-      "cognate": "unlike",
-      "etymology": "From úlíkr, from *ungalīkaz. lik. Compare unlike, ongelijk, ólíkur, ungleich, ulik."
+      "cognate": "",
+      "etymology": ""
     },
     {
       "word": "sen",
@@ -241,7 +241,7 @@
         "vissa"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From viss, from *gawissaz. Cognate with viss."
     },
     {
       "word": "fler",
@@ -869,7 +869,7 @@
         "ena"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From ena. Cognate with ene, ene, eine, eina, einen. Equivalent to a."
     },
     {
       "word": "eus",
@@ -1769,7 +1769,7 @@
         "röda"
       ],
       "cognate": "",
-      "etymology": "From røþer, from rauðr, from *raudaz, from *h₁rowdʰós < *h₁rewdʰ-."
+      "etymology": ""
     },
     {
       "word": "sara",
@@ -2189,7 +2189,7 @@
         "ytterligare"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "lig"
     },
     {
       "word": "åsiktdrive",
@@ -2714,8 +2714,8 @@
       "forms": [
         "då"
       ],
-      "cognate": "",
-      "etymology": ""
+      "cognate": "then",
+      "etymology": "From þa, from þá, from *þan."
     },
     {
       "word": "nu",
@@ -2988,7 +2988,7 @@
         "faktiskt"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From faktisch. Equivalent to isk"
     },
     {
       "word": "heller",
@@ -3118,7 +3118,7 @@
         "nog"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From nóg, nógr, gnógr, from *ganōgaz. Ultimately from *h₂eh₂nóḱe, perfective of *h₂neḱ-."
     },
     {
       "word": "någonstans",
@@ -3789,7 +3789,7 @@
         "härligt"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From hêrlik. Cf. herrlich, heerlijk."
     },
     {
       "word": "hävdat",
@@ -3899,7 +3899,7 @@
         "kvar"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From kvirr, kyrr, from *kwerruz."
     },
     {
       "word": "likväl",
@@ -4329,7 +4329,7 @@
         "ytterligare"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "lig"
     },
     {
       "word": "ännu",
@@ -4454,7 +4454,7 @@
         "får"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From fār, from fár, from *fawaz."
     },
     {
       "word": "bli",
@@ -5011,7 +5011,7 @@
         "läget"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "Related to ligga and lägga, like German Lage."
     },
     {
       "word": "möte",
@@ -5132,7 +5132,7 @@
         "entusiasm-"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "Ultimately from ἐνθουσιασμός, from ἐν + θεός + οὐσία."
     },
     {
       "word": "fall",
@@ -5310,8 +5310,8 @@
       "forms": [
         "aptit"
       ],
-      "cognate": "",
-      "etymology": ""
+      "cognate": "appetite",
+      "etymology": "Appetit, from appétit, from appetītus, from -tus. Compare appetit, appetite."
     },
     {
       "word": "billett",
@@ -5362,7 +5362,7 @@
         "fartyget"
       ],
       "cognate": "",
-      "etymology": "tyg, like Fahrzeug, vaartuig"
+      "etymology": ""
     },
     {
       "word": "fox",
@@ -5506,7 +5506,7 @@
         "program-"
       ],
       "cognate": "",
-      "etymology": "From πρόγραμμα."
+      "etymology": ""
     },
     {
       "word": "programledare",
@@ -6041,7 +6041,7 @@
         "marktrupper"
       ],
       "cognate": "",
-      "etymology": "trupp"
+      "etymology": ""
     },
     {
       "word": "morgon",
@@ -8544,7 +8544,7 @@
         "kongressledamoten"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "ledamot."
     },
     {
       "word": "konsekv",
@@ -8744,7 +8744,7 @@
         "kväll"
       ],
       "cognate": "",
-      "etymology": "From quæld, qvælder, from kveld, from *kwildiz, from *gʷelH-."
+      "etymology": ""
     },
     {
       "word": "källan",
@@ -8968,13 +8968,13 @@
     },
     {
       "word": "mar",
-      "translation": "Mar",
+      "translation": "mar",
       "count": 1,
       "forms": [
         "mars-"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "mars."
     },
     {
       "word": "margar",
@@ -9064,7 +9064,7 @@
         "medel"
       ],
       "cognate": "",
-      "etymology": "Known from midhel, middel, medhel, from middel, from middil, from *midlą. Same as German Mittel and English middle. The stand-alone adjective is archaic, but lives on as the superlative medelst, as a prefix medel- and ma"
+      "etymology": ""
     },
     {
       "word": "media",
@@ -9393,8 +9393,8 @@
       "forms": [
         "månad"
       ],
-      "cognate": "month",
-      "etymology": "From mánaðr, from *mēnōþs, from a derivative of *mḗh₁n̥s. See also måne."
+      "cognate": "",
+      "etymology": ""
     },
     {
       "word": "möjlighet",
@@ -9534,7 +9534,7 @@
         "er"
       ],
       "cognate": "",
-      "etymology": "Since 1661, through sv of the 2nd plural verb suffix ''-(e)n'' and the older pronoun I (\"ye\"), e.g. ''visste'''n''' I'' > ''visste '''n'''i'' (“did you know”). Compare þér and þið which developed similarly. The i, ir der"
+      "etymology": ""
     },
     {
       "word": "nja",
@@ -9804,7 +9804,7 @@
         "pass"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From -, originally from passo."
     },
     {
       "word": "patriotic",
@@ -10084,7 +10084,7 @@
         "påtryckningsmedel"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "medel."
     },
     {
       "word": "påverkan",
@@ -10103,8 +10103,8 @@
       "forms": [
         "rad"
       ],
-      "cognate": "",
-      "etymology": ""
+      "cognate": "row",
+      "etymology": "From rǫð, from *radō."
     },
     {
       "word": "ramp",
@@ -10323,8 +10323,8 @@
       "forms": [
         "råger"
       ],
-      "cognate": "",
-      "etymology": ""
+      "cognate": "rye",
+      "etymology": "From rogher, from rugr, from *rugiz. Cognate with rug, rúgur, rogge, Roggen, and rye."
     },
     {
       "word": "rörelsen",
@@ -10414,7 +10414,7 @@
         "sig-"
       ],
       "cognate": "",
-      "etymology": "From sik, from *sek, from *se."
+      "etymology": ""
     },
     {
       "word": "signalen",
@@ -10694,7 +10694,7 @@
         "säkerhet"
       ],
       "cognate": "",
-      "etymology": "From sikerhet, from sekerheit, akin to het."
+      "etymology": ""
     },
     {
       "word": "talkshow-hosten",
@@ -11234,7 +11234,7 @@
         "utvecklingen"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "ing"
     },
     {
       "word": "vance",
@@ -11324,7 +11324,7 @@
         "verktyg"
       ],
       "cognate": "",
-      "etymology": "tyg, Werkzeug."
+      "etymology": ""
     },
     {
       "word": "vi",
@@ -11374,7 +11374,7 @@
         "vill-"
       ],
       "cognate": "",
-      "etymology": "From villr, from *wilþijaz. Doublet of vild, which is influenced from Middle Low German."
+      "etymology": ""
     },
     {
       "word": "villkorslös",
@@ -11740,7 +11740,7 @@
         "sitt"
       ],
       "cognate": "",
-      "etymology": "From sik, from *sek, from *se."
+      "etymology": ""
     },
     {
       "word": "de",
@@ -11809,7 +11809,7 @@
         "ni"
       ],
       "cognate": "",
-      "etymology": "Since 1661, through sv of the 2nd plural verb suffix ''-(e)n'' and the older pronoun I (\"ye\"), e.g. ''visste'''n''' I'' > ''visste '''n'''i'' (“did you know”). Compare þér and þið which developed similarly. The i, ir der"
+      "etymology": ""
     },
     {
       "word": "all",
@@ -13571,7 +13571,7 @@
         "fått"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From fār, from fár, from *fawaz."
     },
     {
       "word": "bli",
@@ -13684,7 +13684,7 @@
         "använt"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "Borrowed from anwenden. Compare anvende."
     },
     {
       "word": "handla",
@@ -14029,8 +14029,8 @@
         "skriva",
         "skriver"
       ],
-      "cognate": "",
-      "etymology": ""
+      "cognate": "shrive",
+      "etymology": "From skriva, from skrifa, from *skrībaną, a late borrowing from scrībō. Cognate with skrive, skriva, skrive, skrifa, skriuwe, shrive, schrieven, schrijven and schreiben."
     },
     {
       "word": "spela",
@@ -14149,7 +14149,7 @@
         "kallas"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From kalla, from kalla, from *kalzōną."
     },
     {
       "word": "kritisera",
@@ -14852,8 +14852,8 @@
       "forms": [
         "betalar"
       ],
-      "cognate": "",
-      "etymology": ""
+      "cognate": "betall",
+      "etymology": "From betala, bitala, bittala, from betalen, equivalent to tala.saob Cognate with betale, betale, betala, betale, betalen, betelje, bezahlen, betahlen and betall. Displaced native gälda."
     },
     {
       "word": "betona",
@@ -14943,7 +14943,7 @@
         "cirkulera"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "era"
     },
     {
       "word": "deca",
@@ -15123,7 +15123,7 @@
         "förankra"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "From verankern or verankeren, equivalent to ankra. Cognate with forankre, forankre and forankra, forankre."
     },
     {
       "word": "föredetta",
@@ -15333,7 +15333,7 @@
         "jobbade"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "Verbalization of jobb. Compare jobbe and jobba/jobbe."
     },
     {
       "word": "joe",
@@ -15432,8 +15432,8 @@
       "forms": [
         "köper"
       ],
-      "cognate": "",
-      "etymology": ""
+      "cognate": "cheap",
+      "etymology": "From køpa, from keypa, kaupa, from *kaupijaną, *kaupōną, from *kaupô, caupo, caupōnor. Cognate with købe, kjøpe, kaufen, kopen and cheap."
     },
     {
       "word": "köra",
@@ -15742,8 +15742,8 @@
       "forms": [
         "råger"
       ],
-      "cognate": "",
-      "etymology": ""
+      "cognate": "rye",
+      "etymology": "From rogher, from rugr, from *rugiz. Cognate with rug, rúgur, rogge, Roggen, and rye."
     },
     {
       "word": "råga",
@@ -15753,7 +15753,7 @@
         "råger"
       ],
       "cognate": "",
-      "etymology": ""
+      "etymology": "a"
     },
     {
       "word": "röra",
