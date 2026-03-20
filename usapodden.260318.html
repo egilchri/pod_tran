@@ -180,6 +180,7 @@
                 if (e.etymology) {
                     html += `<span class="info-sub" style="color:#999">${e.etymology}</span>`;
                 }
+                html += `<span class="info-sub"><a href="https://en.wiktionary.org/wiki/${encodeURIComponent(e.word)}" target="_blank" style="color:#1565c0">Wiktionary ↗</a></span>`;
                 info.innerHTML = html;
             }
 
