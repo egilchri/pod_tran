@@ -26,41 +26,6 @@
             .orig { flex: 1; color: var(--primary); font-weight: 700; font-size: 1.1rem; }
             .en { flex: 1; color: #546e7a; font-style: italic; border-left: 1px solid #eee; padding-left: 15px; font-size: 1.1rem; }
             .status-badge { font-size: 0.7rem; margin-left: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
-            .vocab-row { display: flex; align-items: center; gap: 8px; border-top: 1px solid #ccc; padding-top: 8px; }
-            #vocabPanel { display: none; margin-top: 8px; border-top: 1px solid #ccc; padding-top: 8px; }
-            .vocab-pos-filters { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 8px; }
-            .pos-btn { background: #e0e0e0; color: #333; border: none; padding: 3px 9px; border-radius: 10px; font-size: 0.68rem; cursor: pointer; }
-            .pos-btn.active { background: var(--primary); color: white; }
-            #vocab-info {
-                min-height: 80px; padding: 8px 10px; background: #f5f5f5;
-                border-radius: 8px; margin-bottom: 6px; font-size: 0.82rem;
-                display: flex; flex-direction: column; justify-content: center; gap: 3px;
-            }
-            #vocab-info .info-cognate { font-size: 0.95rem; font-weight: bold; color: #1565c0; }
-            #vocab-info .info-sub { color: #666; font-size: 0.75rem; }
-            .vocab-picker-wrap { position: relative; }
-            .vocab-picker-line {
-                position: absolute; top: 50%; transform: translateY(-50%);
-                left: 0; right: 0; height: 34px; pointer-events: none;
-                border-top: 1px solid rgba(0,74,153,0.35);
-                border-bottom: 1px solid rgba(0,74,153,0.35);
-                background: rgba(0,74,153,0.05);
-            }
-            #vocab-picker {
-                height: 170px; overflow-y: scroll; scroll-snap-type: y mandatory;
-                scrollbar-width: none;
-                -webkit-mask-image: linear-gradient(transparent 0%, black 22%, black 78%, transparent 100%);
-                mask-image: linear-gradient(transparent 0%, black 22%, black 78%, transparent 100%);
-            }
-            #vocab-picker::-webkit-scrollbar { display: none; }
-            .vp-spacer { height: 68px; }
-            .vp-item {
-                height: 34px; scroll-snap-align: center;
-                display: flex; align-items: center; padding: 0 10px; gap: 14px;
-            }
-            .vp-word { flex: 1; font-weight: 600; font-size: 0.85rem; color: #222; }
-            .vp-trans { flex: 1; color: #546e7a; font-style: italic; font-size: 0.8rem; }
-            .vp-item.vp-active .vp-word { color: var(--primary); }
             .sv-word { cursor: pointer; color: #1565c0; }
             #word-popup {
                 display: none; position: fixed; z-index: 999;
@@ -92,10 +57,7 @@
             <div class="header-controls">
                 <button id="modeBtn" class="btn" onclick="toggleMode()">Interleaved</button>
                 <span id="modeLabel" style="font-size:0.7rem;color:#666;">Podcast</span>
-                <span class="divider">|</span>
-                <button class="btn" onclick="toggleVocab()" id="vocabBtn">VOCAB ▾</button>
             </div>
-            <div id="vocabPanel"><em>Loading vocabulary...</em></div>
         </div>
         <div id="word-popup">
             <span class="wp-close" onclick="closePopup()">✕</span>
@@ -175,64 +137,7 @@
 
             checkAudioStatus();
 
-            function toggleVocab() {
-                const panel = document.getElementById('vocabPanel');
-                const btn = document.getElementById('vocabBtn');
-                const open = panel.style.display === 'block';
-                panel.style.display = open ? 'none' : 'block';
-                btn.innerText = open ? 'VOCAB ▾' : 'VOCAB ▴';
-            }
-
-            let vpAllEntries = [], vpFiltered = [], vpItems = [];
             let formToEntry = {};
-
-            function updateVocabInfo(e) {
-                const info = document.getElementById('vocab-info');
-                if (!e) { info.innerHTML = '<span class="info-sub">scroll to explore words</span>'; return; }
-                const wiktUrl = `https://en.m.wiktionary.org/wiki/${encodeURIComponent(e.word)}`;
-                const wordHtml = e.wiktionary
-                    ? `<a href="${wiktUrl}" target="_blank" class="info-cognate" style="text-decoration:none">${e.word} ↗</a>`
-                    : `<span class="info-cognate">${e.word}</span>`;
-                let html = wordHtml;
-                html += `<span class="info-sub">${e.translation} &middot; ${e.pos.toLowerCase()}</span>`;
-                if (e.cognate) {
-                    html += `<span class="info-sub">cognate with English: <em>${e.cognate}</em></span>`;
-                }
-                if (e.etymology) {
-                    html += `<span class="info-sub" style="color:#999">${e.etymology}</span>`;
-                }
-                info.innerHTML = html;
-            }
-
-            function renderPicker(entries) {
-                const picker = document.getElementById('vocab-picker');
-                picker.innerHTML = '';
-                picker.appendChild(Object.assign(document.createElement('div'), { className: 'vp-spacer' }));
-                vpItems = entries.map((e, i) => {
-                    const item = document.createElement('div');
-                    item.className = 'vp-item';
-                    item.innerHTML = `<span class="vp-word">${e.word}</span><span class="vp-trans">${e.translation}</span>`;
-                    picker.appendChild(item);
-                    return item;
-                });
-                picker.appendChild(Object.assign(document.createElement('div'), { className: 'vp-spacer' }));
-                let scrollTimer;
-                picker.onscroll = () => {
-                    clearTimeout(scrollTimer);
-                    scrollTimer = setTimeout(() => {
-                        const center = picker.scrollTop + picker.clientHeight / 2;
-                        let closest = 0, minDist = Infinity;
-                        vpItems.forEach((item, i) => {
-                            const dist = Math.abs((item.offsetTop + 17) - center);
-                            if (dist < minDist) { minDist = dist; closest = i; }
-                        });
-                        vpItems.forEach((item, i) => item.classList.toggle('vp-active', i === closest));
-                        updateVocabInfo(entries[closest]);
-                    }, 60);
-                };
-                updateVocabInfo(entries[0]);
-                if (vpItems[0]) vpItems[0].classList.add('vp-active');
-            }
 
             function tokenizeOrig(text) {
                 // Split into word/non-word tokens, wrap lookupable words in spans
@@ -299,52 +204,16 @@
                 });
             }
 
-            function buildVocabPicker(entries) {
-                const panel = document.getElementById('vocabPanel');
-                const posCounts = {};
-                entries.forEach(e => posCounts[e.pos] = (posCounts[e.pos] || 0) + 1);
-                panel.innerHTML = `
-                    <div class="vocab-pos-filters" id="posFilters"></div>
-                    <div id="vocab-info"><span class="info-sub">scroll to explore words</span></div>
-                    <div class="vocab-picker-wrap">
-                        <div class="vocab-picker-line"></div>
-                        <div id="vocab-picker"></div>
-                    </div>`;
-                const filtersDiv = document.getElementById('posFilters');
-                ['ALL', ...Object.keys(posCounts).sort()].forEach(pos => {
-                    const btn = document.createElement('button');
-                    btn.className = 'pos-btn' + (pos === 'ALL' ? ' active' : '');
-                    btn.textContent = pos === 'ALL' ? `ALL (${entries.length})` : `${pos} (${posCounts[pos]})`;
-                    btn.onclick = () => {
-                        document.querySelectorAll('.pos-btn').forEach(b => b.classList.remove('active'));
-                        btn.classList.add('active');
-                        renderPicker(pos === 'ALL' ? vpAllEntries : vpAllEntries.filter(e => e.pos === pos));
-                    };
-                    filtersDiv.appendChild(btn);
-                });
-                vpAllEntries = entries;
-                renderPicker(entries);
-            }
-
             fetch('vocab.usapodden.260318.json').then(r => r.json()).then(vocab => {
-                const entries = [];
                 Object.entries(vocab).forEach(([pos, words]) => {
                     words.forEach(e => {
                         const entry = { word: e.word, translation: e.translation, pos, cognate: e.cognate || '', etymology: e.etymology || '', wiktionary: e.wiktionary || false };
-                        entries.push(entry);
-                        // map lemma itself
                         formToEntry[e.word.toLowerCase()] = entry;
-                        // map all inflected forms
                         (e.forms || []).forEach(f => { formToEntry[f.toLowerCase()] = entry; });
                     });
                 });
-                entries.sort((a, b) => a.word.localeCompare(b.word));
-                buildVocabPicker(entries);
-                // re-render transcript rows now that lookup map is ready
                 rerenderTranscript();
-            }).catch(() => {
-                document.getElementById('vocabPanel').innerHTML = '<em>Vocabulary not available</em>';
-            });
+            }).catch(() => {});
 
             fetch('transcript.usapodden.260318.json').then(r => r.json()).then(json => {
                 data = json;
