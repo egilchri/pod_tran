@@ -53,9 +53,10 @@
             .vp-spacer { height: 68px; }
             .vp-item {
                 height: 34px; scroll-snap-align: center;
-                display: flex; align-items: center; padding: 0 10px;
+                display: flex; align-items: center; padding: 0 10px; gap: 14px;
             }
-            .vp-word { font-weight: 600; font-size: 0.95rem; color: #222; }
+            .vp-word { flex: 1; font-weight: 600; font-size: 0.85rem; color: #222; }
+            .vp-trans { flex: 1; color: #546e7a; font-style: italic; font-size: 0.8rem; }
             .vp-item.vp-active .vp-word { color: var(--primary); }
             @media (max-width: 768px) { .row { flex-direction: column; gap: 10px; } .en { border-left: none; border-top: 1px solid #eee; padding-top: 10px; } }
         </style>
@@ -193,7 +194,7 @@
                 vpItems = entries.map((e, i) => {
                     const item = document.createElement('div');
                     item.className = 'vp-item';
-                    item.innerHTML = `<span class="vp-word">${e.word}</span>`;
+                    item.innerHTML = `<span class="vp-word">${e.word}</span><span class="vp-trans">${e.translation}</span>`;
                     picker.appendChild(item);
                     return item;
                 });
