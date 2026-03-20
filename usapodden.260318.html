@@ -61,9 +61,7 @@
             .vp-word { flex: 1; font-weight: 600; font-size: 0.85rem; color: #222; }
             .vp-trans { flex: 1; color: #546e7a; font-style: italic; font-size: 0.8rem; }
             .vp-item.vp-active .vp-word { color: var(--primary); }
-            .sv-word { cursor: default; }
-            .sv-word.sv-lookup { color: #2e7d32; cursor: pointer; }
-            .sv-word.sv-cognate { color: #1565c0; cursor: pointer; }
+            .sv-word { cursor: pointer; color: #1565c0; }
             #word-popup {
                 display: none; position: fixed; z-index: 999;
                 background: white; border: 1px solid #ccc; border-radius: 10px;
@@ -243,9 +241,8 @@
                     const key = tok.toLowerCase().replace(/^[""''()\[\]–—-]+|[.,!?;:""''()\[\]–—-]+$/g, '');
                     const entry = key ? formToEntry[key] : null;
                     if (!entry) return tok.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-                    const cls = entry.cognate ? 'sv-word sv-cognate' : 'sv-word sv-lookup';
                     const safe = tok.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-                    return `<span class="${cls}" data-key="${key}">${safe}</span>`;
+                    return `<span class="sv-word" data-key="${key}">${safe}</span>`;
                 }).join('');
             }
 
