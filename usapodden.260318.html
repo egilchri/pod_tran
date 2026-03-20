@@ -172,7 +172,10 @@
             function updateVocabInfo(e) {
                 const info = document.getElementById('vocab-info');
                 if (!e) { info.innerHTML = '<span class="info-sub">scroll to explore words</span>'; return; }
-                let html = `<span class="info-cognate">${e.word}</span>`;
+                const wordHtml = e.wiktionary
+                    ? `<a href="https://en.wiktionary.org/wiki/${encodeURIComponent(e.word)}" target="_blank" class="info-cognate" style="text-decoration:none">${e.word} ↗</a>`
+                    : `<span class="info-cognate">${e.word}</span>`;
+                let html = wordHtml;
                 html += `<span class="info-sub">${e.translation} &middot; ${e.pos.toLowerCase()}</span>`;
                 if (e.cognate) {
                     html += `<span class="info-sub">cognate with English: <em>${e.cognate}</em></span>`;
@@ -180,7 +183,6 @@
                 if (e.etymology) {
                     html += `<span class="info-sub" style="color:#999">${e.etymology}</span>`;
                 }
-                html += `<span class="info-sub"><a href="https://en.wiktionary.org/wiki/${encodeURIComponent(e.word)}" target="_blank" style="color:#1565c0">Wiktionary ↗</a></span>`;
                 info.innerHTML = html;
             }
 
@@ -244,7 +246,7 @@
             fetch('vocab.usapodden.260318.json').then(r => r.json()).then(vocab => {
                 const entries = [];
                 Object.entries(vocab).forEach(([pos, words]) => {
-                    words.forEach(e => entries.push({ word: e.word, translation: e.translation, pos, cognate: e.cognate || '', etymology: e.etymology || '' }));
+                    words.forEach(e => entries.push({ word: e.word, translation: e.translation, pos, cognate: e.cognate || '', etymology: e.etymology || '', wiktionary: e.wiktionary || false }));
                 });
                 entries.sort((a, b) => a.word.localeCompare(b.word));
                 buildVocabPicker(entries);
