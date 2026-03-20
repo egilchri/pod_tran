@@ -173,8 +173,9 @@
             function updateVocabInfo(e) {
                 const info = document.getElementById('vocab-info');
                 if (!e) { info.innerHTML = '<span class="info-sub">scroll to explore words</span>'; return; }
+                const wiktUrl = `https://en.m.wiktionary.org/wiki/${encodeURIComponent(e.word)}`;
                 const wordHtml = e.wiktionary
-                    ? `<a href="https://en.wiktionary.org/wiki/${encodeURIComponent(e.word)}" target="_blank" class="info-cognate" style="text-decoration:none">${e.word} ↗</a>`
+                    ? `<a href="${wiktUrl}" target="_blank" class="info-cognate" style="text-decoration:none">${e.word} ↗</a>`
                     : `<span class="info-cognate">${e.word}</span>`;
                 let html = wordHtml;
                 html += `<span class="info-sub">${e.translation} &middot; ${e.pos.toLowerCase()}</span>`;
