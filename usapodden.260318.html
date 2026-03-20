@@ -61,6 +61,21 @@
             .vp-word { flex: 1; font-weight: 600; font-size: 0.85rem; color: #222; }
             .vp-trans { flex: 1; color: #546e7a; font-style: italic; font-size: 0.8rem; }
             .vp-item.vp-active .vp-word { color: var(--primary); }
+            .sv-word { cursor: default; }
+            .sv-word.sv-lookup { color: #2e7d32; cursor: pointer; }
+            .sv-word.sv-cognate { color: #1565c0; cursor: pointer; }
+            #word-popup {
+                display: none; position: fixed; z-index: 999;
+                background: white; border: 1px solid #ccc; border-radius: 10px;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.18); padding: 12px 15px;
+                max-width: 280px; font-size: 0.85rem; line-height: 1.5;
+            }
+            #word-popup .wp-lemma { font-size: 1rem; font-weight: bold; color: var(--primary); }
+            #word-popup .wp-trans { color: #546e7a; font-style: italic; margin-bottom: 4px; }
+            #word-popup .wp-cognate { color: #1565c0; font-weight: bold; }
+            #word-popup .wp-etym { color: #555; font-size: 0.78rem; margin-top: 4px; }
+            #word-popup .wp-link { display: inline-block; margin-top: 6px; font-size: 0.75rem; color: var(--primary); text-decoration: underline; }
+            #word-popup .wp-close { float: right; cursor: pointer; color: #999; font-size: 1rem; line-height: 1; margin-left: 8px; }
             @media (max-width: 768px) { .row { flex-direction: column; gap: 10px; } .en { border-left: none; border-top: 1px solid #eee; padding-top: 10px; } }
         </style>
     </head>
@@ -83,6 +98,14 @@
                 <button class="btn" onclick="toggleVocab()" id="vocabBtn">VOCAB ▾</button>
             </div>
             <div id="vocabPanel"><em>Loading vocabulary...</em></div>
+        </div>
+        <div id="word-popup">
+            <span class="wp-close" onclick="closePopup()">✕</span>
+            <div class="wp-lemma" id="wp-lemma"></div>
+            <div class="wp-trans" id="wp-trans"></div>
+            <div class="wp-cognate" id="wp-cognate"></div>
+            <div class="wp-etym" id="wp-etym"></div>
+            <a class="wp-link" id="wp-link" target="_blank" rel="noopener">Open in Wiktionary ↗</a>
         </div>
         <div id="transcript" class="transcript"></div>
         <script>
@@ -163,6 +186,7 @@
             }
 
             let vpAllEntries = [], vpFiltered = [], vpItems = [];
+            let formToEntry = {};
 
             function updateVocabInfo(e) {
                 const info = document.getElementById('vocab-info');
@@ -212,6 +236,72 @@
                 if (vpItems[0]) vpItems[0].classList.add('vp-active');
             }
 
+            function tokenizeOrig(text) {
+                // Split into word/non-word tokens, wrap lookupable words in spans
+                const tokens = text.split(/(\s+|[.,!?;:""''()\[\]–—-]+)/);
+                return tokens.map(tok => {
+                    const key = tok.toLowerCase().replace(/^[""''()\[\]–—-]+|[.,!?;:""''()\[\]–—-]+$/g, '');
+                    const entry = key ? formToEntry[key] : null;
+                    if (!entry) return tok.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+                    const cls = entry.cognate ? 'sv-word sv-cognate' : 'sv-word sv-lookup';
+                    const safe = tok.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+                    return `<span class="${cls}" data-key="${key}">${safe}</span>`;
+                }).join('');
+            }
+
+            function showWordPopup(key, anchorEl) {
+                const entry = formToEntry[key];
+                if (!entry) return;
+                const popup = document.getElementById('word-popup');
+                document.getElementById('wp-lemma').textContent = entry.word;
+                document.getElementById('wp-trans').textContent = entry.translation || '';
+                const cogEl = document.getElementById('wp-cognate');
+                cogEl.textContent = entry.cognate ? `cognate: ${entry.cognate}` : '';
+                cogEl.style.display = entry.cognate ? '' : 'none';
+                const etymEl = document.getElementById('wp-etym');
+                etymEl.textContent = entry.etymology || '';
+                etymEl.style.display = entry.etymology ? '' : 'none';
+                const linkEl = document.getElementById('wp-link');
+                if (entry.wiktionary) {
+                    linkEl.href = `https://en.m.wiktionary.org/wiki/${encodeURIComponent(entry.word)}`;
+                    linkEl.style.display = '';
+                } else {
+                    linkEl.style.display = 'none';
+                }
+                popup.style.display = 'block';
+                const rect = anchorEl.getBoundingClientRect();
+                let top = rect.bottom + window.scrollY + 6;
+                let left = rect.left + window.scrollX;
+                const pw = 280;
+                if (left + pw > window.innerWidth - 10) left = window.innerWidth - pw - 10;
+                if (left < 10) left = 10;
+                popup.style.top = top + 'px';
+                popup.style.left = left + 'px';
+            }
+
+            function closePopup() {
+                document.getElementById('word-popup').style.display = 'none';
+            }
+
+            document.addEventListener('click', e => {
+                const popup = document.getElementById('word-popup');
+                if (!popup.contains(e.target) && !e.target.classList.contains('sv-word')) {
+                    closePopup();
+                }
+            });
+
+            function makeRowHTML(item) {
+                const origHTML = Object.keys(formToEntry).length > 0 ? tokenizeOrig(item.orig) : item.orig.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+                return `<div class="orig">${origHTML}</div><div class="en">${item.en}</div>`;
+            }
+
+            function rerenderTranscript() {
+                data.forEach((item, i) => {
+                    const row = document.getElementById('row-' + i);
+                    if (row) row.innerHTML = makeRowHTML(item);
+                });
+            }
+
             function buildVocabPicker(entries) {
                 const panel = document.getElementById('vocabPanel');
                 const posCounts = {};
@@ -242,10 +332,19 @@
             fetch('vocab.usapodden.260318.json').then(r => r.json()).then(vocab => {
                 const entries = [];
                 Object.entries(vocab).forEach(([pos, words]) => {
-                    words.forEach(e => entries.push({ word: e.word, translation: e.translation, pos, cognate: e.cognate || '', etymology: e.etymology || '', wiktionary: e.wiktionary || false }));
+                    words.forEach(e => {
+                        const entry = { word: e.word, translation: e.translation, pos, cognate: e.cognate || '', etymology: e.etymology || '', wiktionary: e.wiktionary || false };
+                        entries.push(entry);
+                        // map lemma itself
+                        formToEntry[e.word.toLowerCase()] = entry;
+                        // map all inflected forms
+                        (e.forms || []).forEach(f => { formToEntry[f.toLowerCase()] = entry; });
+                    });
                 });
                 entries.sort((a, b) => a.word.localeCompare(b.word));
                 buildVocabPicker(entries);
+                // re-render transcript rows now that lookup map is ready
+                rerenderTranscript();
             }).catch(() => {
                 document.getElementById('vocabPanel').innerHTML = '<em>Vocabulary not available</em>';
             });
@@ -255,8 +354,14 @@
                 data.forEach((item, i) => {
                     const row = document.createElement('div');
                     row.className = 'row'; row.id = 'row-' + i;
-                    row.innerHTML = `<div class="orig">${item.orig}</div><div class="en">${item.en}</div>`;
-                    row.onclick = () => {
+                    row.innerHTML = makeRowHTML(item);
+                    row.onclick = e => {
+                        if (e.target.classList.contains('sv-word')) {
+                            e.stopPropagation();
+                            showWordPopup(e.target.dataset.key, e.target);
+                            return;
+                        }
+                        closePopup();
                         audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
                         audio.play();
                     };
