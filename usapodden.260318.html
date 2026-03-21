@@ -13,6 +13,22 @@
             .header-left { flex: 1; min-width: 0; }
             .header-title { margin: 2px 0; font-size: 1.1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
             .header-meta { font-size: 0.65rem; font-weight: bold; color: #666; }
+            .header-meta a { color: #1565c0; text-decoration: none; font-weight: bold; }
+            .changelog-overlay {
+                display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+                z-index: 1000; align-items: center; justify-content: center;
+            }
+            .changelog-overlay.open { display: flex; }
+            .changelog-box {
+                background: white; border-radius: 12px; padding: 20px 24px;
+                max-width: 420px; width: 90%; max-height: 80vh; overflow-y: auto;
+                box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            }
+            .changelog-box h2 { margin: 0 0 14px; font-size: 1rem; color: var(--primary); }
+            .changelog-box .cl-close { float: right; cursor: pointer; color: #999; font-size: 1.1rem; }
+            .cl-entry { margin-bottom: 14px; }
+            .cl-date { font-size: 0.7rem; font-weight: bold; color: #888; text-transform: uppercase; margin-bottom: 3px; }
+            .cl-items { margin: 0; padding-left: 16px; font-size: 0.85rem; color: #333; line-height: 1.6; }
             .header-right { flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
             audio { width: 220px; height: 36px; }
             .header-controls { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; margin-top: 6px; padding-top: 6px; border-top: 1px solid #e0e0e0; }
@@ -52,7 +68,7 @@
         <div class="header-box">
             <div class="header-top">
                 <div class="header-left">
-                    <div class="header-meta">USAPODDEN | 260318 &nbsp;·&nbsp; <em style="font-weight:normal;">Personal/educational use only.</em></div>
+                    <div class="header-meta">USAPODDEN | 260318 &nbsp;·&nbsp; <a href="#" onclick="event.preventDefault();document.getElementById('changelog').classList.add('open')">What's new</a> &nbsp;·&nbsp; <em style="font-weight:normal;">Personal/educational use only.</em></div>
                     <h1 class="header-title">Episode 724 - March 18 2026</h1>
                 </div>
                 <div class="header-right">
@@ -63,6 +79,37 @@
             <div class="header-controls">
                 <button id="modeBtn" class="btn" onclick="toggleMode()">Interleaved</button>
                 <span id="modeLabel" style="font-size:0.7rem;color:#666;">Podcast</span>
+            </div>
+        </div>
+        <div id="changelog" class="changelog-overlay" onclick="if(event.target===this)this.classList.remove('open')">
+            <div class="changelog-box">
+                <span class="cl-close" onclick="document.getElementById('changelog').classList.remove('open')">✕</span>
+                <h2>What's new</h2>
+                <div class="cl-entry">
+                    <div class="cl-date">March 21, 2026</div>
+                    <ul class="cl-items">
+                        <li>Tap any blue word in the transcript to see its English definition, and related English words</li>
+                        <li>Words with known English relatives are highlighted in the transcript</li>
+                        <li>Definitions link directly to the word's Wiktionary page when available</li>
+                    </ul>
+                </div>
+                <div class="cl-entry">
+                    <div class="cl-date">March 14, 2026</div>
+                    <ul class="cl-items">
+                        <li>Added vocabulary panel with words grouped by part of speech</li>
+                        <li>English cognates shown for Swedish words (e.g. <em>hus</em> → <em>house</em>)</li>
+                        <li>Etymology notes from Wiktionary</li>
+                    </ul>
+                </div>
+                <div class="cl-entry">
+                    <div class="cl-date">February 2026</div>
+                    <ul class="cl-items">
+                        <li>Bilingual interleaved audio mode — hear each segment in Swedish, then English</li>
+                        <li>Transcript scrolls and highlights in sync with playback</li>
+                        <li>Tap any transcript segment to jump to that point in the audio</li>
+                        <li>Works offline once loaded; installable as a home screen app</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div id="word-tip">
