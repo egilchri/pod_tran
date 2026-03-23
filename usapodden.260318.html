@@ -43,8 +43,14 @@
                 padding: 8px 12px; margin: 12px 20px 0; font-size: 0.8rem; color: #1a3a6e;
             }
             #word-tip-close { cursor: pointer; font-size: 1rem; color: #999; padding-left: 10px; }
-            .row { display: flex; gap: 20px; padding: 15px; margin-bottom: 12px; background: white; border-radius: 12px; border: 1px solid #ddd; cursor: pointer; }
+            .row { display: flex; gap: 20px; padding: 15px; margin-bottom: 12px; background: white; border-radius: 12px; border: 1px solid #ddd; }
             .row.highlight { background: #fffde7; border-left: 8px solid var(--accent); transition: background 0.3s ease; }
+            #play-btn {
+                display: none; position: fixed; left: 8px; z-index: 50;
+                background: var(--accent); border: none; border-radius: 50%;
+                width: 36px; height: 36px; font-size: 1rem; cursor: pointer;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.2); line-height: 36px; text-align: center;
+            }
             .orig { flex: 1; color: var(--primary); font-weight: 700; font-size: 1.1rem; }
             .en { flex: 1; color: #546e7a; font-style: italic; border-left: 1px solid #eee; padding-left: 15px; font-size: 1.1rem; }
             .status-badge { font-size: 0.7rem; margin-left: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
@@ -113,6 +119,7 @@
                 </div>
             </div>
         </div>
+        <button id="play-btn" onclick="togglePlayPause()">▶</button>
         <div id="word-tip">
             <span>Tap a <strong style="color:#1565c0;">blue word</strong> in the transcript to see its definition.</span>
             <span id="word-tip-close" onclick="dismissTip()">✕</span>
@@ -194,6 +201,21 @@
             }
 
             checkAudioStatus();
+
+            const playBtn = document.getElementById('play-btn');
+            function togglePlayPause() {
+                if (audio.paused) { audio.play(); } else { audio.pause(); }
+            }
+            audio.addEventListener('play', () => { playBtn.textContent = '⏸'; });
+            audio.addEventListener('pause', () => { playBtn.textContent = '▶'; });
+
+            function movePlayBtn(rowEl) {
+                if (!rowEl) { playBtn.style.display = 'none'; return; }
+                const rect = rowEl.getBoundingClientRect();
+                const btnTop = rect.top + rect.height / 2 - 18;
+                playBtn.style.top = btnTop + 'px';
+                playBtn.style.display = 'block';
+            }
 
             let formToEntry = {};
 
@@ -292,13 +314,10 @@
                     row.innerHTML = makeRowHTML(item);
                     row.onclick = e => {
                         if (e.target.classList.contains('sv-word')) {
-                            e.stopPropagation();
                             showWordPopup(e.target.dataset.key, e.target);
-                            return;
+                        } else {
+                            closePopup();
                         }
-                        closePopup();
-                        audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
-                        audio.play();
                     };
                     container.appendChild(row);
                 });
@@ -331,9 +350,14 @@
                         if (newEl) {
                             newEl.classList.add('highlight');
                             newEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            movePlayBtn(newEl);
                         }
+                    } else {
+                        movePlayBtn(null);
                     }
                     lastIdx = currentIdx;
+                } else if (currentIdx !== -1) {
+                    movePlayBtn(document.getElementById('row-' + currentIdx));
                 }
             });
         </script>
