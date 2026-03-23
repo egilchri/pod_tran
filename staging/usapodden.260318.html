@@ -219,6 +219,13 @@
             }
 
             let formToEntry = {};
+            let userScrolling = false;
+            let userScrollTimer = null;
+            window.addEventListener('scroll', () => {
+                userScrolling = true;
+                clearTimeout(userScrollTimer);
+                userScrollTimer = setTimeout(() => { userScrolling = false; }, 2000);
+            }, { passive: true });
 
             (function() {
                 const tip = document.getElementById('word-tip');
@@ -322,6 +329,7 @@
                             showWordPopup(e.target.dataset.key, e.target);
                         } else {
                             closePopup();
+                            userScrolling = false;
                             audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
                             audio.play();
                             movePlayBtn(row);
@@ -357,7 +365,7 @@
                         const newEl = document.getElementById('row-' + currentIdx);
                         if (newEl) {
                             newEl.classList.add('highlight');
-                            newEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            if (!userScrolling) newEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
                             movePlayBtn(newEl);
                         }
                     } else {
