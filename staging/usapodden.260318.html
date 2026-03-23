@@ -43,7 +43,7 @@
                 padding: 8px 12px; margin: 12px 20px 0; font-size: 0.8rem; color: #1a3a6e;
             }
             #word-tip-close { cursor: pointer; font-size: 1rem; color: #999; padding-left: 10px; }
-            .row { display: flex; gap: 20px; padding: 15px; margin-bottom: 12px; background: white; border-radius: 12px; border: 1px solid #ddd; }
+            .row { display: flex; flex-direction: column; padding: 12px 15px; margin-bottom: 8px; background: white; border-radius: 12px; border: 1px solid #ddd; }
             .row.highlight { background: #fffde7; border-left: 8px solid var(--accent); transition: background 0.3s ease; }
             #play-btn {
                 display: none; position: fixed; left: 8px; z-index: 50;
@@ -51,8 +51,9 @@
                 width: 36px; height: 36px; font-size: 1rem; cursor: pointer;
                 box-shadow: 0 2px 6px rgba(0,0,0,0.2); line-height: 36px; text-align: center;
             }
-            .orig { flex: 1; color: var(--primary); font-weight: 700; font-size: 1.1rem; }
-            .en { flex: 1; color: #546e7a; font-style: italic; border-left: 1px solid #eee; padding-left: 15px; font-size: 1.1rem; }
+            .orig { color: var(--primary); font-weight: 700; font-size: 1.1rem; }
+            .en { display: none; color: #546e7a; font-style: italic; font-size: 0.95rem; margin-top: 6px; padding-top: 6px; border-top: 1px solid #e8e8e8; }
+            .row.highlight .en { display: block; }
             .status-badge { font-size: 0.7rem; margin-left: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
             .sv-word { cursor: pointer; color: #1565c0; }
             .sv-word .wikt-arrow { font-size: 0.55em; vertical-align: super; opacity: 0.6; }
@@ -68,7 +69,7 @@
             #word-popup .wp-etym { color: #555; font-size: 0.78rem; margin-top: 4px; }
             #word-popup .wp-link { display: inline-block; margin-top: 6px; font-size: 0.75rem; color: #2e7d32; text-decoration: underline; }
             #word-popup .wp-close { float: right; cursor: pointer; color: #999; font-size: 1rem; line-height: 1; margin-left: 8px; }
-            @media (max-width: 768px) { .row { flex-direction: column; gap: 10px; } .en { border-left: none; border-top: 1px solid #eee; padding-top: 10px; } }
+            @media (max-width: 768px) { .row { padding: 10px 12px; } }
         </style>
     </head>
     <body>
