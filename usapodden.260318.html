@@ -317,6 +317,8 @@
                             showWordPopup(e.target.dataset.key, e.target);
                         } else {
                             closePopup();
+                            audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
+                            movePlayBtn(row);
                         }
                     };
                     container.appendChild(row);
