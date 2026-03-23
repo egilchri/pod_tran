@@ -49,6 +49,7 @@
             .en { flex: 1; color: #546e7a; font-style: italic; border-left: 1px solid #eee; padding-left: 15px; font-size: 1.1rem; }
             .status-badge { font-size: 0.7rem; margin-left: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
             .sv-word { cursor: pointer; color: #1565c0; }
+            .sv-word .wikt-arrow { font-size: 0.55em; vertical-align: super; opacity: 0.6; }
             #word-popup {
                 display: none; position: fixed; z-index: 999;
                 background: white; border: 1px solid #ccc; border-radius: 10px;
@@ -214,7 +215,8 @@
                     const entry = key ? formToEntry[key] : null;
                     if (!entry) return tok.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
                     const safe = tok.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-                    return `<span class="sv-word" data-key="${key}">${safe}</span>`;
+                    const arrow = entry.wiktionary ? '<span class="wikt-arrow">↗</span>' : '';
+                    return `<span class="sv-word" data-key="${key}">${safe}${arrow}</span>`;
                 }).join('');
             }
 
