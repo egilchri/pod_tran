@@ -33,6 +33,9 @@
             audio { width: 220px; height: 36px; }
             .header-controls { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; margin-top: 6px; padding-top: 6px; border-top: 1px solid #e0e0e0; }
             .header-controls .divider { color: #ccc; }
+            .speed-label { font-size: 0.65rem; font-weight: bold; color: #555; }
+            .speed-btn { background: #fff; color: #333; border: 1px solid #ccc; padding: 4px 10px; border-radius: 12px; font-size: 0.7rem; cursor: pointer; }
+            .speed-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
             .vocab-row { display: flex; align-items: center; gap: 8px; }
             .btn { background: var(--primary); color: white; border: none; padding: 8px 12px; border-radius: 20px; font-weight: bold; cursor: pointer; font-size: 0.75rem; }
             .btn.active { background: var(--accent); color: black; }
@@ -43,16 +46,32 @@
                 padding: 8px 12px; margin: 12px 20px 0; font-size: 0.8rem; color: #1a3a6e;
             }
             #word-tip-close { cursor: pointer; font-size: 1rem; color: #999; padding-left: 10px; }
-            .row { display: flex; gap: 20px; padding: 15px; margin-bottom: 12px; background: white; border-radius: 12px; border: 1px solid #ddd; }
-            .row.highlight { background: #fffde7; border-left: 8px solid var(--accent); transition: background 0.3s ease; }
+            .row { display: flex; flex-direction: row; margin-bottom: 8px; background: white; border-radius: 12px; border: 1px solid #ddd; overflow: hidden; }
+            .row.highlight { background: #fffde7; border-left: none; outline: 3px solid var(--accent); transition: outline 0.3s ease; }
+            .row-nav {
+                width: 32px; flex-shrink: 0; background: #e8f0fe;
+                display: flex; flex-direction: column; align-items: center;
+                justify-content: flex-start; padding-top: 8px; gap: 6px;
+                cursor: pointer; user-select: none; transition: background 0.15s;
+            }
+            .row.highlight .row-nav { background: #c5d8fb; }
+            .row-nav:active { background: var(--accent); }
+            @keyframes navFlash { 0%,100% { background: #e8f0fe; } 50% { background: var(--accent); } }
+            .row-nav.flash { animation: navFlash 0.35s ease-out; }
+            .row-nav.pinned { background: #fff3cd; }
+            .row.highlight .row-nav.pinned { background: #ffe082; }
+            .pin-btn { font-size: 0.75rem; opacity: 0.4; cursor: pointer; line-height: 1; }
+            .row-nav.pinned .pin-btn { opacity: 1; }
+            .row-content { flex: 1; padding: 12px 15px; display: flex; flex-direction: column; min-width: 0; }
             #play-btn {
                 display: none; position: fixed; left: 8px; z-index: 50;
                 background: var(--accent); border: none; border-radius: 50%;
                 width: 36px; height: 36px; font-size: 1rem; cursor: pointer;
                 box-shadow: 0 2px 6px rgba(0,0,0,0.2); line-height: 36px; text-align: center;
             }
-            .orig { flex: 1; color: var(--primary); font-weight: 700; font-size: 1.1rem; }
-            .en { flex: 1; color: #546e7a; font-style: italic; border-left: 1px solid #eee; padding-left: 15px; font-size: 1.1rem; }
+            .orig { color: var(--primary); font-weight: 700; font-size: 1.1rem; }
+            .en { display: none; color: #546e7a; font-style: italic; font-size: 0.95rem; margin-top: 6px; padding-top: 6px; border-top: 1px solid #e8e8e8; }
+            .row.highlight .en { display: block; }
             .status-badge { font-size: 0.7rem; margin-left: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
             .sv-word { cursor: pointer; color: #1565c0; }
             .sv-word .wikt-arrow { font-size: 0.55em; vertical-align: super; opacity: 0.6; }
@@ -68,7 +87,7 @@
             #word-popup .wp-etym { color: #555; font-size: 0.78rem; margin-top: 4px; }
             #word-popup .wp-link { display: inline-block; margin-top: 6px; font-size: 0.75rem; color: #2e7d32; text-decoration: underline; }
             #word-popup .wp-close { float: right; cursor: pointer; color: #999; font-size: 1rem; line-height: 1; margin-left: 8px; }
-            @media (max-width: 768px) { .row { flex-direction: column; gap: 10px; } .en { border-left: none; border-top: 1px solid #eee; padding-top: 10px; } }
+            @media (max-width: 768px) { .row { padding: 10px 12px; } }
         </style>
     </head>
     <body>
@@ -79,11 +98,18 @@
                     <h1 class="header-title">Trump tar sikte på Kuba</h1>
                 </div>
                 <div class="header-right">
-                    <audio id="audio" controls preload="metadata" src="usapodden.260313.mp3"></audio>
+                    <audio id="audio" preload="metadata" src="usapodden.260313.mp3"></audio>
                     <span id="audio-status" class="status-badge"></span>
                 </div>
             </div>
             <div class="header-controls">
+                <span class="speed-label">SPEED:</span>
+                <button class="speed-btn" onclick="setSpeed(0.5)">0.5x</button>
+                <button class="speed-btn" onclick="setSpeed(0.75)">0.75x</button>
+                <button class="speed-btn active" onclick="setSpeed(1.0)">1x</button>
+                <button class="speed-btn" onclick="setSpeed(1.25)">1.25x</button>
+                <button class="speed-btn" onclick="setSpeed(1.5)">1.5x</button>
+                <span class="divider">|</span>
                 <button id="modeBtn" class="btn" onclick="toggleMode()">Interleaved</button>
                 <span id="modeLabel" style="font-size:0.7rem;color:#666;">Podcast</span>
             </div>
@@ -92,6 +118,18 @@
             <div class="changelog-box">
                 <span class="cl-close" onclick="document.getElementById('changelog').classList.remove('open')">✕</span>
                 <h2>What's new</h2>
+                <div class="cl-entry">
+                    <div class="cl-date">March 23, 2026</div>
+                    <ul class="cl-items">
+                        <li>English translation now appears directly below the Swedish as it plays — easier to follow both at once</li>
+                        <li>Tap the left side of any row to jump to that line and start playing</li>
+                        <li>Tap 📌 on any row to loop that line — useful for practicing a phrase</li>
+                        <li>Tapping a word pauses playback; dismissing the definition resumes automatically</li>
+                        <li>Speed controls back in the header for quick access</li>
+                        <li>Scrolling the transcript no longer fights with auto-scroll during playback</li>
+                        <li>Definitions now link to Folkets lexikon, a Swedish-English learner dictionary</li>
+                    </ul>
+                </div>
                 <div class="cl-entry">
                     <div class="cl-date">March 21, 2026</div>
                     <ul class="cl-items">
@@ -175,8 +213,7 @@
             function setSpeed(rate) {
                 audio.playbackRate = rate;
                 document.querySelectorAll('.speed-btn').forEach(btn => {
-                    btn.classList.remove('active');
-                    if (parseFloat(btn.innerText) === rate) btn.classList.add('active');
+                    btn.classList.toggle('active', parseFloat(btn.textContent) === rate);
                 });
             }
 
@@ -218,6 +255,14 @@
             }
 
             let formToEntry = {};
+            let userScrolling = false;
+            let pinnedIdx = -1;
+            let userScrollTimer = null;
+            window.addEventListener('scroll', () => {
+                userScrolling = true;
+                clearTimeout(userScrollTimer);
+                userScrollTimer = setTimeout(() => { userScrolling = false; }, 2000);
+            }, { passive: true });
 
             (function() {
                 const tip = document.getElementById('word-tip');
@@ -242,9 +287,12 @@
                 }).join('');
             }
 
+            let pausedForPopup = false;
+
             function showWordPopup(key, anchorEl) {
                 const entry = formToEntry[key];
                 if (!entry) return;
+                if (!audio.paused) { audio.pause(); pausedForPopup = true; }
                 const popup = document.getElementById('word-popup');
                 document.getElementById('wp-lemma').textContent = entry.word;
                 document.getElementById('wp-trans').textContent = entry.translation || '';
@@ -274,6 +322,7 @@
 
             function closePopup() {
                 document.getElementById('word-popup').style.display = 'none';
+                if (pausedForPopup) { pausedForPopup = false; audio.play(); }
             }
 
             document.addEventListener('click', e => {
@@ -285,7 +334,7 @@
 
             function makeRowHTML(item) {
                 const origHTML = Object.keys(formToEntry).length > 0 ? tokenizeOrig(item.orig) : item.orig.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-                return `<div class="orig">${origHTML}</div><div class="en">${item.en}</div>`;
+                return `<div class="row-nav"><span class="pin-btn">📌</span></div><div class="row-content"><div class="orig">${origHTML}</div><div class="en">${item.en}</div></div>`;
             }
 
             function rerenderTranscript() {
@@ -315,8 +364,35 @@
                     row.onclick = e => {
                         if (e.target.classList.contains('sv-word')) {
                             showWordPopup(e.target.dataset.key, e.target);
+                        } else if (e.target.classList.contains('pin-btn') || (e.target.classList.contains('row-nav') && e.target.closest('.row') === row)) {
+                            // Pin toggle
+                            const nav = row.querySelector('.row-nav');
+                            if (pinnedIdx === i) {
+                                pinnedIdx = -1;
+                                nav.classList.remove('pinned');
+                            } else {
+                                if (pinnedIdx !== -1) {
+                                    const old = document.querySelector('.row-nav.pinned');
+                                    if (old) old.classList.remove('pinned');
+                                }
+                                pinnedIdx = i;
+                                nav.classList.add('pinned');
+                            }
+                            nav.classList.remove('flash');
+                            void nav.offsetWidth;
+                            nav.classList.add('flash');
+                            setTimeout(() => nav.classList.remove('flash'), 400);
+                            closePopup();
+                            userScrolling = false;
+                            audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
+                            audio.play();
+                            movePlayBtn(row);
                         } else {
                             closePopup();
+                            userScrolling = false;
+                            audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
+                            audio.play();
+                            movePlayBtn(row);
                         }
                     };
                     container.appendChild(row);
@@ -340,6 +416,19 @@
                     return now >= s && now <= e;
                 });
 
+                // Pin loop logic — cut off cleanly at the row's end time
+                if (pinnedIdx !== -1) {
+                    const pinEnd = (mode === 'orig') ? data[pinnedIdx].end : data[pinnedIdx].b_end;
+                    const pinStart = (mode === 'orig') ? data[pinnedIdx].start : data[pinnedIdx].b_start;
+                    if (now >= pinEnd) {
+                        audio.pause();
+                        setTimeout(() => {
+                            audio.currentTime = pinStart;
+                            audio.play();
+                        }, 600);
+                    }
+                }
+
                 if (currentIdx !== lastIdx) {
                     if (lastIdx !== -1) {
                         const oldEl = document.getElementById('row-' + lastIdx);
@@ -349,7 +438,7 @@
                         const newEl = document.getElementById('row-' + currentIdx);
                         if (newEl) {
                             newEl.classList.add('highlight');
-                            newEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            if (!userScrolling) newEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
                             movePlayBtn(newEl);
                         }
                     } else {
