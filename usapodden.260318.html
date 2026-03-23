@@ -98,7 +98,7 @@
                     <h1 class="header-title">Episode 724 - March 18 2026</h1>
                 </div>
                 <div class="header-right">
-                    <audio id="audio" preload="metadata" src="../usapodden.260318.mp3"></audio>
+                    <audio id="audio" preload="metadata" src="usapodden.260318.mp3"></audio>
                     <span id="audio-status" class="status-badge"></span>
                 </div>
             </div>
@@ -118,6 +118,18 @@
             <div class="changelog-box">
                 <span class="cl-close" onclick="document.getElementById('changelog').classList.remove('open')">✕</span>
                 <h2>What's new</h2>
+                <div class="cl-entry">
+                    <div class="cl-date">March 23, 2026</div>
+                    <ul class="cl-items">
+                        <li>English translation now appears directly below the Swedish as it plays — easier to follow both at once</li>
+                        <li>Tap the left side of any row to jump to that line and start playing</li>
+                        <li>Tap 📌 on any row to loop that line — useful for practicing a phrase</li>
+                        <li>Tapping a word pauses playback; dismissing the definition resumes automatically</li>
+                        <li>Speed controls back in the header for quick access</li>
+                        <li>Scrolling the transcript no longer fights with auto-scroll during playback</li>
+                        <li>Definitions now link to Folkets lexikon, a Swedish-English learner dictionary</li>
+                    </ul>
+                </div>
                 <div class="cl-entry">
                     <div class="cl-date">March 21, 2026</div>
                     <ul class="cl-items">
@@ -165,7 +177,7 @@
             const modeLabel = document.getElementById('modeLabel');
             const statusEl = document.getElementById('audio-status');
             const container = document.getElementById('transcript');
-            const sources = { orig: "../usapodden.260318.mp3", bilingual: "../usapodden.260318.bilingual.mp3" };
+            const sources = { orig: "usapodden.260318.mp3", bilingual: "usapodden.260318.bilingual.mp3" };
             const startPattern = "avsnitt";
             let mode = 'orig';
             let data = [];
@@ -332,7 +344,7 @@
                 });
             }
 
-            fetch('../vocab.usapodden.260318.json').then(r => r.json()).then(vocab => {
+            fetch('vocab.usapodden.260318.json').then(r => r.json()).then(vocab => {
                 Object.entries(vocab).forEach(([pos, words]) => {
                     words.forEach(e => {
                         const entry = { word: e.word, translation: e.translation, pos, cognate: e.cognate || '', etymology: e.etymology || '', folkets: e.folkets || false };
@@ -343,7 +355,7 @@
                 rerenderTranscript();
             }).catch(() => {});
 
-            fetch('../transcript.usapodden.260318.json').then(r => r.json()).then(json => {
+            fetch('transcript.usapodden.260318.json').then(r => r.json()).then(json => {
                 data = json;
                 data.forEach((item, i) => {
                     const row = document.createElement('div');
