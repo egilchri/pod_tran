@@ -243,9 +243,12 @@
                 }).join('');
             }
 
+            let pausedForPopup = false;
+
             function showWordPopup(key, anchorEl) {
                 const entry = formToEntry[key];
                 if (!entry) return;
+                if (!audio.paused) { audio.pause(); pausedForPopup = true; }
                 const popup = document.getElementById('word-popup');
                 document.getElementById('wp-lemma').textContent = entry.word;
                 document.getElementById('wp-trans').textContent = entry.translation || '';
@@ -275,6 +278,7 @@
 
             function closePopup() {
                 document.getElementById('word-popup').style.display = 'none';
+                if (pausedForPopup) { pausedForPopup = false; audio.play(); }
             }
 
             document.addEventListener('click', e => {
