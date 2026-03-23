@@ -323,6 +323,7 @@
                         } else {
                             closePopup();
                             audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
+                            audio.play();
                             movePlayBtn(row);
                         }
                     };
