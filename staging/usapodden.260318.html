@@ -245,7 +245,6 @@
             let formToEntry = {};
             let userScrolling = false;
             let pinnedIdx = -1;
-            let wasInPinnedRow = false;
             let userScrollTimer = null;
             window.addEventListener('scroll', () => {
                 userScrolling = true;
@@ -405,15 +404,14 @@
                     return now >= s && now <= e;
                 });
 
-                // Pin loop logic
+                // Pin loop logic — cut off cleanly at the row's end time
                 if (pinnedIdx !== -1) {
-                    if (currentIdx === pinnedIdx) {
-                        wasInPinnedRow = true;
-                    } else if (wasInPinnedRow) {
-                        wasInPinnedRow = false;
+                    const pinEnd = (mode === 'orig') ? data[pinnedIdx].end : data[pinnedIdx].b_end;
+                    const pinStart = (mode === 'orig') ? data[pinnedIdx].start : data[pinnedIdx].b_start;
+                    if (now >= pinEnd) {
                         audio.pause();
                         setTimeout(() => {
-                            audio.currentTime = (mode === 'orig') ? data[pinnedIdx].start : data[pinnedIdx].b_start;
+                            audio.currentTime = pinStart;
                             audio.play();
                         }, 600);
                     }
