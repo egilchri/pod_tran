@@ -60,7 +60,7 @@
             #word-popup .wp-trans { color: #546e7a; font-style: italic; margin-bottom: 4px; }
             #word-popup .wp-cognate { color: #1565c0; font-weight: bold; }
             #word-popup .wp-etym { color: #555; font-size: 0.78rem; margin-top: 4px; }
-            #word-popup .wp-link { display: inline-block; margin-top: 6px; font-size: 0.75rem; color: var(--primary); text-decoration: underline; }
+            #word-popup .wp-link { display: inline-block; margin-top: 6px; font-size: 0.75rem; color: #2e7d32; text-decoration: underline; }
             #word-popup .wp-close { float: right; cursor: pointer; color: #999; font-size: 1rem; line-height: 1; margin-left: 8px; }
             @media (max-width: 768px) { .row { flex-direction: column; gap: 10px; } .en { border-left: none; border-top: 1px solid #eee; padding-top: 10px; } }
         </style>
@@ -123,7 +123,7 @@
             <div class="wp-trans" id="wp-trans"></div>
             <div class="wp-cognate" id="wp-cognate"></div>
             <div class="wp-etym" id="wp-etym"></div>
-            <a class="wp-link" id="wp-link" target="_blank" rel="noopener">Open in Wiktionary ↗</a>
+            <a class="wp-link" id="wp-link" target="_blank" rel="noopener">Open in Folkets lexikon ↗</a>
         </div>
         <div id="transcript" class="transcript"></div>
         <script>
@@ -215,7 +215,7 @@
                     const entry = key ? formToEntry[key] : null;
                     if (!entry) return tok.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
                     const safe = tok.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-                    const arrow = entry.wiktionary ? '<span class="wikt-arrow">↗</span>' : '';
+                    const arrow = entry.folkets ? '<span class="wikt-arrow">↗</span>' : '';
                     return `<span class="sv-word" data-key="${key}">${safe}${arrow}</span>`;
                 }).join('');
             }
@@ -233,8 +233,8 @@
                 etymEl.textContent = entry.etymology || '';
                 etymEl.style.display = entry.etymology ? '' : 'none';
                 const linkEl = document.getElementById('wp-link');
-                if (entry.wiktionary) {
-                    linkEl.href = `https://en.m.wiktionary.org/wiki/${encodeURIComponent(entry.word)}`;
+                if (entry.folkets) {
+                    linkEl.href = `https://folkets-lexikon.csc.kth.se/folkets/folkets.en.html#lookup&${encodeURIComponent(entry.word)}`;
                     linkEl.style.display = '';
                 } else {
                     linkEl.style.display = 'none';
@@ -276,7 +276,7 @@
             fetch('vocab.usapodden.260318.json').then(r => r.json()).then(vocab => {
                 Object.entries(vocab).forEach(([pos, words]) => {
                     words.forEach(e => {
-                        const entry = { word: e.word, translation: e.translation, pos, cognate: e.cognate || '', etymology: e.etymology || '', wiktionary: e.wiktionary || false };
+                        const entry = { word: e.word, translation: e.translation, pos, cognate: e.cognate || '', etymology: e.etymology || '', folkets: e.folkets || false };
                         formToEntry[e.word.toLowerCase()] = entry;
                         (e.forms || []).forEach(f => { formToEntry[f.toLowerCase()] = entry; });
                     });
