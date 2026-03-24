@@ -192,8 +192,10 @@
 
             function applySeek() {
                 if (initialSeekDone || seekTargetTime === null) return;
-                audio.currentTime = seekTargetTime;
-                initialSeekDone = true;
+                if (audio.readyState >= 1) {
+                    audio.currentTime = seekTargetTime;
+                    initialSeekDone = true;
+                }
             }
 
             audio.addEventListener('loadedmetadata', applySeek);
