@@ -366,21 +366,25 @@
                     row.className = 'row'; row.id = 'row-' + i;
                     row.innerHTML = makeRowHTML(item);
                     row.onclick = e => {
-                        if (e.target.classList.contains('sv-word')) {
-                            showWordPopup(e.target.dataset.key, e.target);
-                        } else if (e.target.classList.contains('pin-btn') || (e.target.classList.contains('row-nav') && e.target.closest('.row') === row)) {
-                            // Pin toggle
+                        // Arrow on a word — treat as click on the word itself
+                        const wordEl = e.target.classList.contains('wikt-arrow') ? e.target.closest('.sv-word') : null;
+                        if (e.target.classList.contains('sv-word') || wordEl) {
+                            showWordPopup((wordEl || e.target).dataset.key, wordEl || e.target);
+                        } else if (e.target.classList.contains('pin-btn') || e.target.classList.contains('row-nav')) {
+                            // Nav cell: pin toggle on pin icon, jump-and-play on cell body
                             const nav = row.querySelector('.row-nav');
-                            if (pinnedIdx === i) {
-                                pinnedIdx = -1;
-                                nav.classList.remove('pinned');
-                            } else {
-                                if (pinnedIdx !== -1) {
-                                    const old = document.querySelector('.row-nav.pinned');
-                                    if (old) old.classList.remove('pinned');
+                            if (e.target.classList.contains('pin-btn')) {
+                                if (pinnedIdx === i) {
+                                    pinnedIdx = -1;
+                                    nav.classList.remove('pinned');
+                                } else {
+                                    if (pinnedIdx !== -1) {
+                                        const old = document.querySelector('.row-nav.pinned');
+                                        if (old) old.classList.remove('pinned');
+                                    }
+                                    pinnedIdx = i;
+                                    nav.classList.add('pinned');
                                 }
-                                pinnedIdx = i;
-                                nav.classList.add('pinned');
                             }
                             nav.classList.remove('flash');
                             void nav.offsetWidth;
@@ -391,13 +395,8 @@
                             audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
                             audio.play();
                             movePlayBtn(row);
-                        } else {
-                            closePopup();
-                            userScrolling = false;
-                            audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
-                            audio.play();
-                            movePlayBtn(row);
                         }
+                        // clicks on row-content area do nothing
                     };
                     container.appendChild(row);
                 });
