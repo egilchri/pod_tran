@@ -33,6 +33,9 @@
             audio { width: 220px; height: 36px; }
             .header-controls { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; margin-top: 6px; padding-top: 6px; border-top: 1px solid #e0e0e0; }
             .header-controls .divider { color: #ccc; }
+            .mode-toggle { display: flex; border: 1px solid var(--primary); border-radius: 20px; overflow: hidden; }
+            .mode-opt { background: white; color: var(--primary); border: none; padding: 5px 12px; font-size: 0.75rem; font-weight: bold; cursor: pointer; }
+            .mode-opt.active { background: var(--primary); color: white; }
             .speed-label { font-size: 0.65rem; font-weight: bold; color: #555; }
             .speed-btn { background: #fff; color: #333; border: 1px solid #ccc; padding: 4px 10px; border-radius: 12px; font-size: 0.7rem; cursor: pointer; }
             .speed-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
@@ -110,8 +113,10 @@
                 <button class="speed-btn" onclick="setSpeed(1.25)">1.25x</button>
                 <button class="speed-btn" onclick="setSpeed(1.5)">1.5x</button>
                 <span class="divider">|</span>
-                <button id="modeBtn" class="btn" onclick="toggleMode()">Interleaved</button>
-                <span id="modeLabel" style="font-size:0.7rem;color:#666;">Podcast</span>
+                <div class="mode-toggle">
+                    <button id="modePodcast" class="mode-opt active" onclick="if(mode!=='orig')toggleMode()">Podcast</button>
+                    <button id="modeInterleaved" class="mode-opt" onclick="if(mode!=='bilingual')toggleMode()">Interleaved</button>
+                </div>
             </div>
         </div>
         <div id="changelog" class="changelog-overlay" onclick="if(event.target===this)this.classList.remove('open')">
@@ -173,8 +178,8 @@
         <div id="transcript" class="transcript"></div>
         <script>
             const audio = document.getElementById('audio');
-            const modeBtn = document.getElementById('modeBtn');
-            const modeLabel = document.getElementById('modeLabel');
+            const modePodcast = document.getElementById('modePodcast');
+            const modeInterleaved = document.getElementById('modeInterleaved');
             const statusEl = document.getElementById('audio-status');
             const container = document.getElementById('transcript');
             const sources = { orig: "usapodden.260313.mp3", bilingual: "usapodden.260313.bilingual.mp3" };
@@ -187,8 +192,10 @@
 
             function applySeek() {
                 if (initialSeekDone || seekTargetTime === null) return;
-                audio.currentTime = seekTargetTime;
-                initialSeekDone = true;
+                if (audio.readyState >= 1) {
+                    audio.currentTime = seekTargetTime;
+                    initialSeekDone = true;
+                }
             }
 
             audio.addEventListener('loadedmetadata', applySeek);
@@ -225,16 +232,16 @@
                 audio.playbackRate = rate;
                 lastIdx = -1;
                 if (startPattern !== null && data.length > 0) {
-                    const matchIdx = data.findIndex(item => item.orig.toLowerCase().includes(startPattern.toLowerCase()));
+                    const normPat = startPattern.toLowerCase().replace(/\s+/g, '');
+                    const matchIdx = data.findIndex(item => item.orig.toLowerCase().replace(/\s+/g, '').includes(normPat));
                     const target = data[matchIdx !== -1 ? matchIdx : 0];
                     seekTargetTime = (mode === 'orig') ? target.start : target.b_start;
                     initialSeekDone = false;
                 }
                 checkAudioStatus();
                 if (isPlaying) audio.play();
-                modeLabel.innerText = mode === 'orig' ? 'Podcast' : 'Interleaved';
-                modeBtn.innerText = mode === 'orig' ? 'Switch to Interleaved' : 'Switch to Podcast';
-                modeBtn.classList.toggle('active');
+                modePodcast.classList.toggle('active', mode === 'orig');
+                modeInterleaved.classList.toggle('active', mode === 'bilingual');
             }
 
             checkAudioStatus();
@@ -362,21 +369,25 @@
                     row.className = 'row'; row.id = 'row-' + i;
                     row.innerHTML = makeRowHTML(item);
                     row.onclick = e => {
-                        if (e.target.classList.contains('sv-word')) {
-                            showWordPopup(e.target.dataset.key, e.target);
-                        } else if (e.target.classList.contains('pin-btn') || (e.target.classList.contains('row-nav') && e.target.closest('.row') === row)) {
-                            // Pin toggle
+                        // Arrow on a word — treat as click on the word itself
+                        const wordEl = e.target.classList.contains('wikt-arrow') ? e.target.closest('.sv-word') : null;
+                        if (e.target.classList.contains('sv-word') || wordEl) {
+                            showWordPopup((wordEl || e.target).dataset.key, wordEl || e.target);
+                        } else if (e.target.classList.contains('pin-btn') || e.target.classList.contains('row-nav')) {
+                            // Nav cell: pin toggle on pin icon, jump-and-play on cell body
                             const nav = row.querySelector('.row-nav');
-                            if (pinnedIdx === i) {
-                                pinnedIdx = -1;
-                                nav.classList.remove('pinned');
-                            } else {
-                                if (pinnedIdx !== -1) {
-                                    const old = document.querySelector('.row-nav.pinned');
-                                    if (old) old.classList.remove('pinned');
+                            if (e.target.classList.contains('pin-btn')) {
+                                if (pinnedIdx === i) {
+                                    pinnedIdx = -1;
+                                    nav.classList.remove('pinned');
+                                } else {
+                                    if (pinnedIdx !== -1) {
+                                        const old = document.querySelector('.row-nav.pinned');
+                                        if (old) old.classList.remove('pinned');
+                                    }
+                                    pinnedIdx = i;
+                                    nav.classList.add('pinned');
                                 }
-                                pinnedIdx = i;
-                                nav.classList.add('pinned');
                             }
                             nav.classList.remove('flash');
                             void nav.offsetWidth;
@@ -387,23 +398,24 @@
                             audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
                             audio.play();
                             movePlayBtn(row);
-                        } else {
-                            closePopup();
-                            userScrolling = false;
-                            audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
-                            audio.play();
-                            movePlayBtn(row);
                         }
+                        // clicks on row-content area do nothing
                     };
                     container.appendChild(row);
                 });
                 if (startPattern !== null && data.length > 0) {
-                    const matchIdx = data.findIndex(item => item.orig.toLowerCase().includes(startPattern.toLowerCase()));
+                    const normPat = startPattern.toLowerCase().replace(/\s+/g, '');
+                    const matchIdx = data.findIndex(item => item.orig.toLowerCase().replace(/\s+/g, '').includes(normPat));
                     const targetIdx = matchIdx !== -1 ? matchIdx : 0;
                     const target = data[targetIdx];
                     seekTargetTime = (mode === 'orig') ? target.start : target.b_start;
                     const targetRow = document.getElementById('row-' + targetIdx);
-                    if (targetRow) targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    if (targetRow) {
+                        requestAnimationFrame(() => {
+                            targetRow.scrollIntoView({ block: 'center' });
+                            movePlayBtn(targetRow);
+                        });
+                    }
                     applySeek();
                 }
             });
