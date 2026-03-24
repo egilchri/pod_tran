@@ -232,7 +232,8 @@
                 audio.playbackRate = rate;
                 lastIdx = -1;
                 if (startPattern !== null && data.length > 0) {
-                    const matchIdx = data.findIndex(item => item.orig.toLowerCase().includes(startPattern.toLowerCase()));
+                    const normPat = startPattern.toLowerCase().replace(/\s+/g, '');
+                    const matchIdx = data.findIndex(item => item.orig.toLowerCase().replace(/\s+/g, '').includes(normPat));
                     const target = data[matchIdx !== -1 ? matchIdx : 0];
                     seekTargetTime = (mode === 'orig') ? target.start : target.b_start;
                     initialSeekDone = false;
@@ -403,7 +404,8 @@
                     container.appendChild(row);
                 });
                 if (startPattern !== null && data.length > 0) {
-                    const matchIdx = data.findIndex(item => item.orig.toLowerCase().includes(startPattern.toLowerCase()));
+                    const normPat = startPattern.toLowerCase().replace(/\s+/g, '');
+                    const matchIdx = data.findIndex(item => item.orig.toLowerCase().replace(/\s+/g, '').includes(normPat));
                     const targetIdx = matchIdx !== -1 ? matchIdx : 0;
                     const target = data[targetIdx];
                     seekTargetTime = (mode === 'orig') ? target.start : target.b_start;
