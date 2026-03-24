@@ -409,8 +409,10 @@
                     seekTargetTime = (mode === 'orig') ? target.start : target.b_start;
                     const targetRow = document.getElementById('row-' + targetIdx);
                     if (targetRow) {
-                        targetRow.scrollIntoView({ behavior: 'instant', block: 'center' });
-                        movePlayBtn(targetRow);
+                        requestAnimationFrame(() => {
+                            targetRow.scrollIntoView({ block: 'center' });
+                            movePlayBtn(targetRow);
+                        });
                     }
                     applySeek();
                 }
