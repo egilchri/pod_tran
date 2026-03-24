@@ -408,7 +408,10 @@
                     const target = data[targetIdx];
                     seekTargetTime = (mode === 'orig') ? target.start : target.b_start;
                     const targetRow = document.getElementById('row-' + targetIdx);
-                    if (targetRow) targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    if (targetRow) {
+                        targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        movePlayBtn(targetRow);
+                    }
                     applySeek();
                 }
             });
