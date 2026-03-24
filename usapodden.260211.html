@@ -6,140 +6,460 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>Trump tvingas backa från rasistisk video</title>
         <style>
-            :root {
-                --primary-bg: #f8f9fa;
-                --header-bg: #ffffff;
-                --highlight-bg: #fff9c4;
-                --highlight-border: #fbc02d;
-                --sv-color: #1a237e;
-                --en-color: #455a64;
+            :root { --primary: #004a99; --accent: #ffc107; --bg: #f0f2f5; }
+            body { font-family: -apple-system, system-ui, sans-serif; margin: 0; background: var(--bg); }
+            .header-box { position: sticky; top: 0; background: rgba(255,255,255,0.98); padding: 10px 15px; border-bottom: 3px solid var(--primary); z-index: 100; backdrop-filter: blur(10px); }
+            .header-top { display: flex; align-items: center; gap: 12px; }
+            .header-left { flex: 1; min-width: 0; }
+            .header-title { margin: 2px 0; font-size: 1.1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+            .header-meta { font-size: 0.65rem; font-weight: bold; color: #666; }
+            .header-meta a { color: #1565c0; text-decoration: none; font-weight: bold; }
+            .changelog-overlay {
+                display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+                z-index: 1000; align-items: center; justify-content: center;
             }
-            
-            body { 
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-                margin: 0; 
-                padding: 0; 
-                background: var(--primary-bg); 
-                line-height: 1.6;
+            .changelog-overlay.open { display: flex; }
+            .changelog-box {
+                background: white; border-radius: 12px; padding: 20px 24px;
+                max-width: 420px; width: 90%; max-height: 80vh; overflow-y: auto;
+                box-shadow: 0 8px 32px rgba(0,0,0,0.2);
             }
-            
-            .header-box { 
-                position: sticky; 
-                top: 0; 
-                background: var(--header-bg); 
-                padding: 15px 20px; 
-                border-bottom: 2px solid #ddd; 
-                z-index: 100; 
-                box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            .changelog-box h2 { margin: 0 0 14px; font-size: 1rem; color: var(--primary); }
+            .changelog-box .cl-close { float: right; cursor: pointer; color: #999; font-size: 1.1rem; }
+            .cl-entry { margin-bottom: 14px; }
+            .cl-date { font-size: 0.7rem; font-weight: bold; color: #888; text-transform: uppercase; margin-bottom: 3px; }
+            .cl-items { margin: 0; padding-left: 16px; font-size: 0.85rem; color: #333; line-height: 1.6; }
+            .header-right { flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+            audio { width: 220px; height: 36px; }
+            .header-controls { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; margin-top: 6px; padding-top: 6px; border-top: 1px solid #e0e0e0; }
+            .header-controls .divider { color: #ccc; }
+            .mode-toggle { display: flex; border: 1px solid var(--primary); border-radius: 20px; overflow: hidden; }
+            .mode-opt { background: white; color: var(--primary); border: none; padding: 5px 12px; font-size: 0.75rem; font-weight: bold; cursor: pointer; }
+            .mode-opt.active { background: var(--primary); color: white; }
+            .speed-label { font-size: 0.65rem; font-weight: bold; color: #555; }
+            .speed-btn { background: #fff; color: #333; border: 1px solid #ccc; padding: 4px 10px; border-radius: 12px; font-size: 0.7rem; cursor: pointer; }
+            .speed-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+            .vocab-row { display: flex; align-items: center; gap: 8px; }
+            .btn { background: var(--primary); color: white; border: none; padding: 8px 12px; border-radius: 20px; font-weight: bold; cursor: pointer; font-size: 0.75rem; }
+            .btn.active { background: var(--accent); color: black; }
+            .transcript { padding: 20px; max-width: 900px; margin: 0 auto; }
+            #word-tip {
+                display: flex; align-items: center; justify-content: space-between;
+                background: #e8f0fe; border: 1px solid #c5d8fb; border-radius: 8px;
+                padding: 8px 12px; margin: 12px 20px 0; font-size: 0.8rem; color: #1a3a6e;
             }
-
-            h1 { 
-                font-size: 1.25rem; 
-                margin: 10px 0; 
-                color: #333;
+            #word-tip-close { cursor: pointer; font-size: 1rem; color: #999; padding-left: 10px; }
+            .row { display: flex; flex-direction: row; margin-bottom: 8px; background: white; border-radius: 12px; border: 1px solid #ddd; overflow: hidden; }
+            .row.highlight { background: #fffde7; border-left: none; outline: 3px solid var(--accent); transition: outline 0.3s ease; }
+            .row-nav {
+                width: 32px; flex-shrink: 0; background: #e8f0fe;
+                display: flex; flex-direction: column; align-items: center;
+                justify-content: flex-start; padding-top: 8px; gap: 6px;
+                cursor: pointer; user-select: none; transition: background 0.15s;
             }
-
-            small { 
-                text-transform: uppercase; 
-                color: #888; 
-                font-weight: bold; 
-                font-size: 0.75rem;
+            .row.highlight .row-nav { background: #c5d8fb; }
+            .row-nav:active { background: var(--accent); }
+            @keyframes navFlash { 0%,100% { background: #e8f0fe; } 50% { background: var(--accent); } }
+            .row-nav.flash { animation: navFlash 0.35s ease-out; }
+            .row-nav.pinned { background: #fff3cd; }
+            .row.highlight .row-nav.pinned { background: #ffe082; }
+            .pin-btn { font-size: 0.75rem; opacity: 0.4; cursor: pointer; line-height: 1; }
+            .row-nav.pinned .pin-btn { opacity: 1; }
+            .row-content { flex: 1; padding: 12px 15px; display: flex; flex-direction: column; min-width: 0; }
+            #play-btn {
+                display: none; position: fixed; left: 8px; z-index: 50;
+                background: var(--accent); border: none; border-radius: 50%;
+                width: 36px; height: 36px; font-size: 1rem; cursor: pointer;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.2); line-height: 36px; text-align: center;
             }
-            
-            /* Larger Audio Player for Mobile */
-            .player-wrapper {
-                margin-top: 10px;
+            .orig { color: var(--primary); font-weight: 700; font-size: 1.1rem; }
+            .en { display: none; color: #546e7a; font-style: italic; font-size: 0.95rem; margin-top: 6px; padding-top: 6px; border-top: 1px solid #e8e8e8; }
+            .row.highlight .en { display: block; }
+            .status-badge { font-size: 0.7rem; margin-left: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
+            .sv-word { cursor: pointer; color: #1565c0; }
+            .sv-word .wikt-arrow { font-size: 0.55em; vertical-align: super; opacity: 0.6; }
+            #word-popup {
+                display: none; position: fixed; z-index: 999;
+                background: white; border: 1px solid #ccc; border-radius: 10px;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.18); padding: 12px 15px;
+                max-width: 280px; font-size: 0.85rem; line-height: 1.5;
             }
-            
-            audio { 
-                width: 100%; 
-                height: 50px; /* Force a larger height for easier tapping */
-            }
-            
-            .transcript {
-                padding: 10px;
-                max-width: 1000px;
-                margin: 0 auto;
-            }
-
-            .row { 
-                display: flex; 
-                flex-direction: row; 
-                gap: 15px; 
-                padding: 15px; 
-                margin-bottom: 8px;
-                border-radius: 8px; 
-                background: #fff;
-                border: 1px solid #eee;
-                transition: background 0.2s; 
-                cursor: pointer; 
-                -webkit-tap-highlight-color: transparent;
-            }
-
-            .row.highlight { 
-                background: var(--highlight-bg); 
-                border-left: 6px solid var(--highlight-border); 
-                font-weight: 500; 
-            }
-            
-            .sv, .en { flex: 1; font-size: 1.05rem; }
-            .sv { color: var(--sv-color); font-weight: 600; }
-            .en { color: var(--en-color); font-style: italic; }
-
-            /* Mobile Stacked Layout */
-            @media (max-width: 600px) {
-                .row { flex-direction: column; gap: 5px; padding: 12px; }
-                h1 { font-size: 1.1rem; }
-                .sv, .en { font-size: 1rem; }
-            }
+            #word-popup .wp-lemma { font-size: 1rem; font-weight: bold; color: var(--primary); }
+            #word-popup .wp-trans { color: #546e7a; font-style: italic; margin-bottom: 4px; }
+            #word-popup .wp-cognate { color: #1565c0; font-weight: bold; }
+            #word-popup .wp-etym { color: #555; font-size: 0.78rem; margin-top: 4px; }
+            #word-popup .wp-link { display: inline-block; margin-top: 6px; font-size: 0.75rem; color: #2e7d32; text-decoration: underline; }
+            #word-popup .wp-close { float: right; cursor: pointer; color: #999; font-size: 1rem; line-height: 1; margin-left: 8px; }
+            @media (max-width: 768px) { .row { padding: 10px 12px; } }
         </style>
     </head>
     <body>
         <div class="header-box">
-            <small>usapodden | 260211</small>
-            <h1>Trump tvingas backa från rasistisk video</h1>
-            <div class="player-wrapper">
-                <audio id="audio" controls src="usapodden.260211.mp3"></audio>
+            <div class="header-top">
+                <div class="header-left">
+                    <div class="header-meta">Based on USApodden &nbsp;·&nbsp; February 11, 2026 &nbsp;·&nbsp; <a href="#" onclick="event.preventDefault();document.getElementById('changelog').classList.add('open')">What's new</a> &nbsp;·&nbsp; <em style="font-weight:normal;">Personal/educational use only.</em></div>
+                    <h1 class="header-title">Trump tvingas backa från rasistisk video</h1>
+                </div>
+                <div class="header-right">
+                    <audio id="audio" preload="metadata" src="usapodden.260211.mp3"></audio>
+                    <span id="audio-status" class="status-badge"></span>
+                </div>
+            </div>
+            <div class="header-controls">
+                <span class="speed-label">SPEED:</span>
+                <button class="speed-btn" onclick="setSpeed(0.5)">0.5x</button>
+                <button class="speed-btn" onclick="setSpeed(0.75)">0.75x</button>
+                <button class="speed-btn active" onclick="setSpeed(1.0)">1x</button>
+                <button class="speed-btn" onclick="setSpeed(1.25)">1.25x</button>
+                <button class="speed-btn" onclick="setSpeed(1.5)">1.5x</button>
+                <span class="divider">|</span>
+                <div class="mode-toggle">
+                    <button id="modePodcast" class="mode-opt active" onclick="if(mode!=='orig')toggleMode()">Podcast</button>
+                    <button id="modeInterleaved" class="mode-opt" onclick="if(mode!=='bilingual')toggleMode()">Interleaved</button>
+                </div>
             </div>
         </div>
-        
+        <div id="changelog" class="changelog-overlay" onclick="if(event.target===this)this.classList.remove('open')">
+            <div class="changelog-box">
+                <span class="cl-close" onclick="document.getElementById('changelog').classList.remove('open')">✕</span>
+                <h2>What's new</h2>
+                <div class="cl-entry">
+                    <div class="cl-date">March 23, 2026</div>
+                    <ul class="cl-items">
+                        <li>English translation now appears directly below the Swedish as it plays — easier to follow both at once</li>
+                        <li>Tap the left side of any row to jump to that line and start playing</li>
+                        <li>Tap 📌 on any row to loop that line — useful for practicing a phrase</li>
+                        <li>Tapping a word pauses playback; dismissing the definition resumes automatically</li>
+                        <li>Speed controls back in the header for quick access</li>
+                        <li>Scrolling the transcript no longer fights with auto-scroll during playback</li>
+                        <li>Definitions now link to Folkets lexikon, a Swedish-English learner dictionary</li>
+                    </ul>
+                </div>
+                <div class="cl-entry">
+                    <div class="cl-date">March 21, 2026</div>
+                    <ul class="cl-items">
+                        <li>Tap any blue word in the transcript to see its English definition, and related English words</li>
+                        <li>Words with known English relatives are highlighted in the transcript</li>
+                        <li>Definitions link directly to the word's Wiktionary page when available</li>
+                    </ul>
+                </div>
+                <div class="cl-entry">
+                    <div class="cl-date">March 14, 2026</div>
+                    <ul class="cl-items">
+                        <li>Added vocabulary panel with words grouped by part of speech</li>
+                        <li>English cognates shown for Swedish words (e.g. <em>hus</em> → <em>house</em>)</li>
+                        <li>Etymology notes from Wiktionary</li>
+                    </ul>
+                </div>
+                <div class="cl-entry">
+                    <div class="cl-date">February 2026</div>
+                    <ul class="cl-items">
+                        <li>Bilingual interleaved audio mode — hear each segment in Swedish, then English</li>
+                        <li>Transcript scrolls and highlights in sync with playback</li>
+                        <li>Tap any transcript segment to jump to that point in the audio</li>
+                        <li>Works offline once loaded; installable as a home screen app</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button id="play-btn" onclick="togglePlayPause()">▶</button>
+        <div id="word-tip">
+            <span>Tap a <strong style="color:#1565c0;">blue word</strong> in the transcript to see its definition.</span>
+            <span id="word-tip-close" onclick="dismissTip()">✕</span>
+        </div>
+        <div id="word-popup">
+            <span class="wp-close" onclick="closePopup()">✕</span>
+            <div class="wp-lemma" id="wp-lemma"></div>
+            <div class="wp-trans" id="wp-trans"></div>
+            <div class="wp-cognate" id="wp-cognate"></div>
+            <div class="wp-etym" id="wp-etym"></div>
+            <a class="wp-link" id="wp-link" target="_blank" rel="noopener">Open in Folkets lexikon ↗</a>
+        </div>
         <div id="transcript" class="transcript"></div>
-
         <script>
             const audio = document.getElementById('audio');
+            const modePodcast = document.getElementById('modePodcast');
+            const modeInterleaved = document.getElementById('modeInterleaved');
+            const statusEl = document.getElementById('audio-status');
             const container = document.getElementById('transcript');
+            const sources = { orig: "usapodden.260211.mp3", bilingual: "usapodden.260211.bilingual.mp3" };
+            const startPattern = "avsnitt";
+            let mode = 'orig';
             let data = [];
+            let lastIdx = -1;
+            let seekTargetTime = null;
+            let initialSeekDone = false;
+
+            function applySeek() {
+                if (initialSeekDone || seekTargetTime === null) return;
+                if (audio.readyState >= 1) {
+                    audio.currentTime = seekTargetTime;
+                    initialSeekDone = true;
+                }
+            }
+
+            audio.addEventListener('loadedmetadata', applySeek);
+            audio.addEventListener('canplay', applySeek);
+
+            async function checkAudioStatus() {
+                try {
+                    const response = await fetch(sources[mode], { method: 'HEAD' });
+                    if (response.ok) {
+                        statusEl.innerText = "● Live";
+                        statusEl.style.color = "green";
+                    } else {
+                        statusEl.innerText = "○ Missing";
+                        statusEl.style.color = "orange";
+                    }
+                } catch (e) {
+                    statusEl.innerText = "○ Offline";
+                    statusEl.style.color = "red";
+                }
+            }
+
+            function setSpeed(rate) {
+                audio.playbackRate = rate;
+                document.querySelectorAll('.speed-btn').forEach(btn => {
+                    btn.classList.toggle('active', parseFloat(btn.textContent) === rate);
+                });
+            }
+
+            function toggleMode() {
+                const isPlaying = !audio.paused;
+                const rate = audio.playbackRate;
+                mode = (mode === 'orig') ? 'bilingual' : 'orig';
+                audio.src = sources[mode];
+                audio.playbackRate = rate;
+                lastIdx = -1;
+                if (startPattern !== null && data.length > 0) {
+                    const normPat = startPattern.toLowerCase().replace(/\s+/g, '');
+                    const matchIdx = data.findIndex(item => item.orig.toLowerCase().replace(/\s+/g, '').includes(normPat));
+                    const target = data[matchIdx !== -1 ? matchIdx : 0];
+                    seekTargetTime = (mode === 'orig') ? target.start : target.b_start;
+                    initialSeekDone = false;
+                }
+                checkAudioStatus();
+                if (isPlaying) audio.play();
+                modePodcast.classList.toggle('active', mode === 'orig');
+                modeInterleaved.classList.toggle('active', mode === 'bilingual');
+            }
+
+            checkAudioStatus();
+
+            const playBtn = document.getElementById('play-btn');
+            function togglePlayPause() {
+                if (audio.paused) { audio.play(); } else { audio.pause(); }
+            }
+            audio.addEventListener('play', () => { playBtn.textContent = '⏸'; });
+            audio.addEventListener('pause', () => { playBtn.textContent = '▶'; });
+
+            function movePlayBtn(rowEl) {
+                if (!rowEl) { playBtn.style.display = 'none'; return; }
+                const rect = rowEl.getBoundingClientRect();
+                const btnTop = rect.top + rect.height / 2 - 18;
+                playBtn.style.top = btnTop + 'px';
+                playBtn.style.display = 'block';
+            }
+
+            let formToEntry = {};
+            let userScrolling = false;
+            let pinnedIdx = -1;
+            let userScrollTimer = null;
+            window.addEventListener('scroll', () => {
+                userScrolling = true;
+                clearTimeout(userScrollTimer);
+                userScrollTimer = setTimeout(() => { userScrolling = false; }, 2000);
+            }, { passive: true });
+
+            (function() {
+                const tip = document.getElementById('word-tip');
+                if (localStorage.getItem('wordTipDismissed')) tip.style.display = 'none';
+            })();
+
+            function dismissTip() {
+                document.getElementById('word-tip').style.display = 'none';
+                localStorage.setItem('wordTipDismissed', '1');
+            }
+
+            function tokenizeOrig(text) {
+                // Split into word/non-word tokens, wrap lookupable words in spans
+                const tokens = text.split(/(\s+|[.,!?;:""''()\[\]–—-]+)/);
+                return tokens.map(tok => {
+                    const key = tok.toLowerCase().replace(/^[""''()\[\]–—-]+|[.,!?;:""''()\[\]–—-]+$/g, '');
+                    const entry = key ? formToEntry[key] : null;
+                    if (!entry) return tok.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+                    const safe = tok.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+                    const arrow = entry.folkets ? '<span class="wikt-arrow">↗</span>' : '';
+                    return `<span class="sv-word" data-key="${key}">${safe}${arrow}</span>`;
+                }).join('');
+            }
+
+            let pausedForPopup = false;
+
+            function showWordPopup(key, anchorEl) {
+                const entry = formToEntry[key];
+                if (!entry) return;
+                if (!audio.paused) { audio.pause(); pausedForPopup = true; }
+                const popup = document.getElementById('word-popup');
+                document.getElementById('wp-lemma').textContent = entry.word;
+                document.getElementById('wp-trans').textContent = entry.translation || '';
+                const cogEl = document.getElementById('wp-cognate');
+                cogEl.textContent = entry.cognate ? `cognate: ${entry.cognate}` : '';
+                cogEl.style.display = entry.cognate ? '' : 'none';
+                const etymEl = document.getElementById('wp-etym');
+                etymEl.textContent = entry.etymology || '';
+                etymEl.style.display = entry.etymology ? '' : 'none';
+                const linkEl = document.getElementById('wp-link');
+                if (entry.folkets) {
+                    linkEl.href = `https://folkets-lexikon.csc.kth.se/folkets/folkets.en.html#lookup&${encodeURIComponent(entry.word)}`;
+                    linkEl.style.display = '';
+                } else {
+                    linkEl.style.display = 'none';
+                }
+                popup.style.display = 'block';
+                const rect = anchorEl.getBoundingClientRect();
+                let top = rect.bottom + 6;
+                let left = rect.left;
+                const pw = 280;
+                if (left + pw > window.innerWidth - 10) left = window.innerWidth - pw - 10;
+                if (left < 10) left = 10;
+                popup.style.top = top + 'px';
+                popup.style.left = left + 'px';
+            }
+
+            function closePopup() {
+                document.getElementById('word-popup').style.display = 'none';
+                if (pausedForPopup) { pausedForPopup = false; audio.play(); }
+            }
+
+            document.addEventListener('click', e => {
+                const popup = document.getElementById('word-popup');
+                if (!popup.contains(e.target) && !e.target.classList.contains('sv-word')) {
+                    closePopup();
+                }
+            });
+
+            function makeRowHTML(item) {
+                const origHTML = Object.keys(formToEntry).length > 0 ? tokenizeOrig(item.orig) : item.orig.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+                return `<div class="row-nav"><span class="pin-btn">📌</span></div><div class="row-content"><div class="orig">${origHTML}</div><div class="en">${item.en}</div></div>`;
+            }
+
+            function rerenderTranscript() {
+                data.forEach((item, i) => {
+                    const row = document.getElementById('row-' + i);
+                    if (row) row.innerHTML = makeRowHTML(item);
+                });
+            }
+
+            fetch('vocab.usapodden.260211.json').then(r => r.json()).then(vocab => {
+                Object.entries(vocab).forEach(([pos, words]) => {
+                    words.forEach(e => {
+                        const entry = { word: e.word, translation: e.translation, pos, cognate: e.cognate || '', etymology: e.etymology || '', folkets: e.folkets || false };
+                        formToEntry[e.word.toLowerCase()] = entry;
+                        (e.forms || []).forEach(f => { formToEntry[f.toLowerCase()] = entry; });
+                    });
+                });
+                rerenderTranscript();
+            }).catch(() => {});
 
             fetch('transcript.usapodden.260211.json').then(r => r.json()).then(json => {
                 data = json;
                 data.forEach((item, i) => {
                     const row = document.createElement('div');
-                    row.className = 'row'; 
-                    row.id = 'row-' + i;
-                    row.innerHTML = `<div class="sv">${item.sv}</div><div class="en">${item.en}</div>`;
-                    row.onclick = () => {
-                        audio.currentTime = item.start;
-                        audio.play();
+                    row.className = 'row'; row.id = 'row-' + i;
+                    row.innerHTML = makeRowHTML(item);
+                    row.onclick = e => {
+                        // Arrow on a word — treat as click on the word itself
+                        const wordEl = e.target.classList.contains('wikt-arrow') ? e.target.closest('.sv-word') : null;
+                        if (e.target.classList.contains('sv-word') || wordEl) {
+                            showWordPopup((wordEl || e.target).dataset.key, wordEl || e.target);
+                        } else if (e.target.classList.contains('pin-btn') || e.target.classList.contains('row-nav')) {
+                            // Nav cell: pin toggle on pin icon, jump-and-play on cell body
+                            const nav = row.querySelector('.row-nav');
+                            if (e.target.classList.contains('pin-btn')) {
+                                if (pinnedIdx === i) {
+                                    pinnedIdx = -1;
+                                    nav.classList.remove('pinned');
+                                } else {
+                                    if (pinnedIdx !== -1) {
+                                        const old = document.querySelector('.row-nav.pinned');
+                                        if (old) old.classList.remove('pinned');
+                                    }
+                                    pinnedIdx = i;
+                                    nav.classList.add('pinned');
+                                }
+                            }
+                            nav.classList.remove('flash');
+                            void nav.offsetWidth;
+                            nav.classList.add('flash');
+                            setTimeout(() => nav.classList.remove('flash'), 400);
+                            closePopup();
+                            userScrolling = false;
+                            audio.currentTime = (mode === 'orig') ? item.start : item.b_start;
+                            audio.play();
+                            movePlayBtn(row);
+                        }
+                        // clicks on row-content area do nothing
                     };
                     container.appendChild(row);
                 });
+                if (startPattern !== null && data.length > 0) {
+                    const normPat = startPattern.toLowerCase().replace(/\s+/g, '');
+                    const matchIdx = data.findIndex(item => item.orig.toLowerCase().replace(/\s+/g, '').includes(normPat));
+                    const targetIdx = matchIdx !== -1 ? matchIdx : 0;
+                    const target = data[targetIdx];
+                    seekTargetTime = (mode === 'orig') ? target.start : target.b_start;
+                    const targetRow = document.getElementById('row-' + targetIdx);
+                    if (targetRow) {
+                        requestAnimationFrame(() => {
+                            targetRow.scrollIntoView({ block: 'center' });
+                            movePlayBtn(targetRow);
+                        });
+                    }
+                    applySeek();
+                }
             });
 
             audio.addEventListener('timeupdate', () => {
                 const now = audio.currentTime;
-                data.forEach((item, i) => {
-                    const el = document.getElementById('row-' + i);
-                    if (now >= item.start && now <= item.end) {
-                        el.classList.add('highlight');
-                        if (!el.dataset.seen) { 
-                            el.scrollIntoView({ behavior: 'smooth', block: 'center' }); 
-                            el.dataset.seen = '1'; 
-                        }
-                    } else { 
-                        el.classList.remove('highlight'); 
-                        delete el.dataset.seen; 
-                    }
+                const currentIdx = data.findIndex(item => {
+                    const s = (mode === 'orig') ? item.start : item.b_start;
+                    const e = (mode === 'orig') ? item.end : item.b_end;
+                    return now >= s && now <= e;
                 });
+
+                // Pin loop logic — cut off cleanly at the row's end time
+                if (pinnedIdx !== -1) {
+                    const pinEnd = (mode === 'orig') ? data[pinnedIdx].end : data[pinnedIdx].b_end;
+                    const pinStart = (mode === 'orig') ? data[pinnedIdx].start : data[pinnedIdx].b_start;
+                    if (now >= pinEnd) {
+                        audio.pause();
+                        setTimeout(() => {
+                            audio.currentTime = pinStart;
+                            audio.play();
+                        }, 600);
+                    }
+                }
+
+                if (currentIdx !== lastIdx) {
+                    if (lastIdx !== -1) {
+                        const oldEl = document.getElementById('row-' + lastIdx);
+                        if (oldEl) oldEl.classList.remove('highlight');
+                    }
+                    if (currentIdx !== -1) {
+                        const newEl = document.getElementById('row-' + currentIdx);
+                        if (newEl) {
+                            newEl.classList.add('highlight');
+                            if (!userScrolling) newEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            movePlayBtn(newEl);
+                        }
+                    } else {
+                        movePlayBtn(null);
+                    }
+                    lastIdx = currentIdx;
+                } else if (currentIdx !== -1) {
+                    movePlayBtn(document.getElementById('row-' + currentIdx));
+                }
             });
         </script>
     </body>
