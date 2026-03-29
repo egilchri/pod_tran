@@ -43,8 +43,10 @@
             .header-controls { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; margin-top: 6px; padding-top: 6px; border-top: 1px solid #e0e0e0; }
             .header-controls .divider { color: #ccc; }
             .mode-toggle { display: flex; border: 1px solid var(--primary); border-radius: 20px; overflow: hidden; }
-            .mode-opt { background: white; color: var(--primary); border: none; padding: 5px 12px; font-size: 0.75rem; font-weight: bold; cursor: pointer; }
+            .mode-opt { background: white; color: var(--primary); border: none; padding: 5px 12px; font-size: 0.75rem; font-weight: bold; cursor: pointer; line-height: 1.2; }
             .mode-opt.active { background: var(--primary); color: white; }
+            .mode-prog { display: block; font-size: 0.6rem; font-weight: normal; opacity: 0.7; margin-top: 2px; }
+            .mode-prog:empty { display: none; }
             .speed-label { font-size: 0.65rem; font-weight: bold; color: #555; }
             .speed-btn { background: #fff; color: #333; border: 1px solid #ccc; padding: 4px 10px; border-radius: 12px; font-size: 0.7rem; cursor: pointer; }
             .speed-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
@@ -130,9 +132,9 @@
                 <button class="speed-btn" onclick="setSpeed(1.5)">1.5x</button>
                 <span class="divider">|</span>
                 <div class="mode-toggle">
-                    <button id="modePodcast" class="mode-opt active" onclick="setMode('orig')" title="Listen and follow along with the translated text">Podcast</button>
-                    <button id="modeInterleaved" class="mode-opt" onclick="setMode('bilingual')" title="Listen to alternating source and English audio">Interleaved</button>
-                    <button id="modeReading" class="mode-opt" onclick="setMode('reading')" title="Scroll through source and translation &#x2014; no audio">Reading</button>
+                    <button id="modePodcast" class="mode-opt active" onclick="setMode('orig')" title="Listen and follow along with the translated text">Podcast<span class="mode-prog" id="prog-orig"></span></button>
+                    <button id="modeInterleaved" class="mode-opt" onclick="setMode('bilingual')" title="Listen to alternating source and English audio">Interleaved<span class="mode-prog" id="prog-bilingual"></span></button>
+                    <button id="modeReading" class="mode-opt" onclick="setMode('reading')" title="Scroll through source and translation &#x2014; no audio">Reading<span class="mode-prog" id="prog-reading"></span></button>
                 </div>
                 <button id="jump-btn" class="jump-btn" style="display:none" onclick="jumpToLast()">&#x21A9; Resume</button>
             </div>
@@ -286,6 +288,15 @@
             }, { threshold: 0.3 });
 
             // --- Sticky position ---
+            function updateModeProgress() {
+                if (!epKey) return;
+                const audioPct = parseFloat(localStorage.getItem('audioPct_' + epKey) || '0');
+                const readPct  = parseFloat(localStorage.getItem('readPct_'  + epKey) || '0');
+                document.getElementById('prog-orig').textContent      = audioPct > 0 ? Math.round(audioPct) + '%' : '';
+                document.getElementById('prog-bilingual').textContent = audioPct > 0 ? Math.round(audioPct) + '%' : '';
+                document.getElementById('prog-reading').textContent   = readPct  > 0 ? Math.round(readPct)  + '%' : '';
+            }
+
             function updateJumpBtn() {
                 if (!epKey) return;
                 const saved = parseFloat(localStorage.getItem('audioPos_' + epKey) || '0');
@@ -309,6 +320,10 @@
             function saveAudioPos() {
                 if (epKey && mode !== 'reading' && audio.currentTime > 5) {
                     localStorage.setItem('audioPos_' + epKey, audio.currentTime.toString());
+                    if (audio.duration > 0) {
+                        localStorage.setItem('audioPct_' + epKey, (audio.currentTime / audio.duration * 100).toString());
+                    }
+                    updateModeProgress();
                 }
             }
             audio.addEventListener('pause', saveAudioPos);
@@ -346,6 +361,7 @@
 
             checkAudioStatus();
             updateJumpBtn();
+            updateModeProgress();
 
             const playBtn = document.getElementById('play-btn');
             function togglePlayPause() {
@@ -375,6 +391,11 @@
                     clearTimeout(readScrollTimer);
                     readScrollTimer = setTimeout(() => {
                         localStorage.setItem('readScroll_' + epKey, window.scrollY.toString());
+                        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+                        if (maxScroll > 0) {
+                            localStorage.setItem('readPct_' + epKey, (window.scrollY / maxScroll * 100).toString());
+                        }
+                        updateModeProgress();
                     }, 500);
                 }
             }, { passive: true });
