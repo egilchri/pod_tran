@@ -261,7 +261,7 @@
                     if (readingObserver) readingObserver.observe(row);
                 });
                 const saved = parseInt(localStorage.getItem('readScroll_' + epKey) || '0');
-                if (saved > 0) window.scrollTo({ top: saved, behavior: 'instant' });
+                if (saved > 0) requestAnimationFrame(() => window.scrollTo({ top: saved, behavior: 'instant' }));
             }
 
             function exitReadingMode() {
