@@ -316,13 +316,14 @@
                 audio.play();
             }
 
-            let audioSaveTimer = null;
+            let lastSaveWallTime = 0;
             function saveAudioPos() {
                 if (epKey && mode !== 'reading' && audio.currentTime > 5) {
                     localStorage.setItem('audioPos_' + epKey, audio.currentTime.toString());
                     if (audio.duration > 0) {
                         localStorage.setItem('audioPct_' + epKey, (audio.currentTime / audio.duration * 100).toString());
                     }
+                    lastSaveWallTime = Date.now();
                     updateModeProgress();
                 }
             }
@@ -576,8 +577,13 @@
 
             audio.addEventListener('timeupdate', () => {
                 const now = audio.currentTime;
-                clearTimeout(audioSaveTimer);
-                audioSaveTimer = setTimeout(saveAudioPos, 5000);
+                // Save to localStorage every 5s; update display every tick
+                if (Date.now() - lastSaveWallTime > 5000) saveAudioPos();
+                if (epKey && audio.duration > 0 && mode !== 'reading') {
+                    const pct = Math.round(now / audio.duration * 100);
+                    document.getElementById('prog-orig').textContent = pct > 0 ? pct + '%' : '';
+                    document.getElementById('prog-bilingual').textContent = pct > 0 ? pct + '%' : '';
+                }
 
                 const currentIdx = data.findIndex(item => {
                     const s = (mode === 'orig') ? item.start : item.b_start;
