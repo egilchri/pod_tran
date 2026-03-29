@@ -1,5 +1,4 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="sv">
     <head>
         <meta charset="UTF-8">
@@ -13,6 +12,7 @@
       gtag('js', new Date());
       gtag('config', 'G-1B0C3D6XSQ');
     </script>
+        
         <style>
             :root { --primary: #004a99; --accent: #ffc107; --bg: #f0f2f5; }
             body { font-family: -apple-system, system-ui, sans-serif; margin: 0; background: var(--bg); }
@@ -20,6 +20,7 @@
             .header-top { display: flex; align-items: center; gap: 12px; }
             .header-left { flex: 1; min-width: 0; }
             .header-title { margin: 2px 0; font-size: 1.1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+            .header-subtitle { font-size: 0.75rem; color: #555; margin-top: 2px; }
             .header-meta { font-size: 0.65rem; font-weight: bold; color: #666; }
             .header-meta a { color: #1565c0; text-decoration: none; font-weight: bold; }
             .changelog-overlay {
@@ -111,8 +112,9 @@
         <div class="header-box">
             <div class="header-top">
                 <div class="header-left">
-                    <div class="header-meta">Based on USApodden &nbsp;·&nbsp; March 27, 2026 &nbsp;·&nbsp; <a href="#" onclick="event.preventDefault();document.getElementById('changelog').classList.add('open')">What's new</a> &nbsp;·&nbsp; <em style="font-weight:normal;">Personal/educational use only.</em></div>
+                    <div class="header-meta"><em style="font-weight:normal;">Personal/educational use only.</em>&nbsp;&middot;&nbsp; <a href="#" onclick="event.preventDefault();document.getElementById('changelog').classList.add('open')">What's new</a></div>
                     <h1 class="header-title">Människorna som dyrkar Trump</h1>
+                    <div class="header-subtitle">Based on USApodden &nbsp;&middot;&nbsp; March 27, 2026</div>
                 </div>
                 <div class="header-right">
                     <audio id="audio" preload="metadata" src="../usapodden.260327.mp3"></audio>
@@ -129,76 +131,78 @@
                 <span class="divider">|</span>
                 <div class="mode-toggle">
                     <button id="modePodcast" class="mode-opt active" onclick="setMode('orig')" title="Listen and follow along with the translated text">Podcast</button>
-                    <button id="modeInterleaved" class="mode-opt" onclick="setMode('bilingual')" title="Listen to alternating Swedish and English audio">Interleaved</button>
-                    <button id="modeReading" class="mode-opt" onclick="setMode('reading')" title="Scroll through source and translation — no audio">Reading</button>
+                    <button id="modeInterleaved" class="mode-opt" onclick="setMode('bilingual')" title="Listen to alternating source and English audio">Interleaved</button>
+                    <button id="modeReading" class="mode-opt" onclick="setMode('reading')" title="Scroll through source and translation &#x2014; no audio">Reading</button>
                 </div>
-                <button id="jump-btn" class="jump-btn" style="display:none" onclick="jumpToLast()">↩ Resume</button>
+                <button id="jump-btn" class="jump-btn" style="display:none" onclick="jumpToLast()">&#x21A9; Resume</button>
             </div>
         </div>
+        
         <div id="changelog" class="changelog-overlay" onclick="if(event.target===this)this.classList.remove('open')">
             <div class="changelog-box">
-                <span class="cl-close" onclick="document.getElementById('changelog').classList.remove('open')">✕</span>
-                <h2>What's new</h2>
-                <div class="cl-entry">
-                    <div class="cl-date">March 29, 2026</div>
-                    <ul class="cl-items">
-                        <li>New <strong>Reading mode</strong> — scroll through the transcript and translations reveal as each line scrolls into view</li>
-                        <li>Sticky position — the app remembers where you left off in Podcast and Interleaved modes</li>
-                        <li>Reading mode also remembers your scroll position between visits</li>
-                        <li>New <strong>↩ Resume</strong> button in the header jumps back to the last played position</li>
-                    </ul>
-                </div>
-                <div class="cl-entry">
-                    <div class="cl-date">March 23, 2026</div>
-                    <ul class="cl-items">
-                        <li>English translation now appears directly below the Swedish as it plays — easier to follow both at once</li>
-                        <li>Tap the left side of any row to jump to that line and start playing</li>
-                        <li>Tap 📌 on any row to loop that line — useful for practicing a phrase</li>
-                        <li>Tapping a word pauses playback; dismissing the definition resumes automatically</li>
-                        <li>Speed controls back in the header for quick access</li>
-                        <li>Scrolling the transcript no longer fights with auto-scroll during playback</li>
-                        <li>Definitions now link to Folkets lexikon, a Swedish-English learner dictionary</li>
-                    </ul>
-                </div>
-                <div class="cl-entry">
-                    <div class="cl-date">March 21, 2026</div>
-                    <ul class="cl-items">
-                        <li>Tap any blue word in the transcript to see its English definition, and related English words</li>
-                        <li>Words with known English relatives are highlighted in the transcript</li>
-                        <li>Definitions link directly to the word's Wiktionary page when available</li>
-                    </ul>
-                </div>
-                <div class="cl-entry">
-                    <div class="cl-date">March 14, 2026</div>
-                    <ul class="cl-items">
-                        <li>Added vocabulary panel with words grouped by part of speech</li>
-                        <li>English cognates shown for Swedish words (e.g. <em>hus</em> → <em>house</em>)</li>
-                        <li>Etymology notes from Wiktionary</li>
-                    </ul>
-                </div>
-                <div class="cl-entry">
-                    <div class="cl-date">February 2026</div>
-                    <ul class="cl-items">
-                        <li>Bilingual interleaved audio mode — hear each segment in Swedish, then English</li>
-                        <li>Transcript scrolls and highlights in sync with playback</li>
-                        <li>Tap any transcript segment to jump to that point in the audio</li>
-                        <li>Works offline once loaded; installable as a home screen app</li>
-                    </ul>
-                </div>
+                <span class="cl-close" onclick="document.getElementById('changelog').classList.remove('open')">&#x2715;</span>
+                <h2>What&#x27;s new</h2>
+                
+        <div class="cl-entry">
+            <div class="cl-date">March 29, 2026</div>
+            <ul class="cl-items">
+                <li>New <strong>Reading mode</strong> &#x2014; scroll through the transcript and translations reveal as each line scrolls into view</li>
+                <li>Sticky position &#x2014; the app remembers where you left off in Podcast and Interleaved modes</li>
+                <li>Reading mode also remembers your scroll position between visits</li>
+                <li>New <strong>&#x21A9; Resume</strong> button in the header jumps back to the last played position</li>
+            </ul>
+        </div>
+        <div class="cl-entry">
+            <div class="cl-date">March 23, 2026</div>
+            <ul class="cl-items">
+                <li>English translation now appears directly below the Swedish as it plays &#x2014; easier to follow both at once</li>
+                <li>Tap the left side of any row to jump to that line and start playing</li>
+                <li>Tap &#x1F4CC; on any row to loop that line &#x2014; useful for practicing a phrase</li>
+                <li>Tapping a word pauses playback; dismissing the definition resumes automatically</li>
+                <li>Speed controls back in the header for quick access</li>
+                <li>Scrolling the transcript no longer fights with auto-scroll during playback</li>
+                <li>Definitions now link to Folkets lexikon, a Swedish-English learner dictionary</li>
+            </ul>
+        </div>
+        <div class="cl-entry">
+            <div class="cl-date">March 21, 2026</div>
+            <ul class="cl-items">
+                <li>Tap any blue word in the transcript to see its English definition, and related English words</li>
+                <li>Words with known English relatives are highlighted in the transcript</li>
+                <li>Definitions link directly to the word&#x27;s Wiktionary page when available</li>
+            </ul>
+        </div>
+        <div class="cl-entry">
+            <div class="cl-date">March 14, 2026</div>
+            <ul class="cl-items">
+                <li>Added vocabulary panel with words grouped by part of speech</li>
+                <li>English cognates shown for Swedish words (e.g. <em>hus</em> &#x2192; <em>house</em>)</li>
+                <li>Etymology notes from Wiktionary</li>
+            </ul>
+        </div>
+        <div class="cl-entry">
+            <div class="cl-date">February 2026</div>
+            <ul class="cl-items">
+                <li>Bilingual interleaved audio mode &#x2014; hear each segment in Swedish, then English</li>
+                <li>Transcript scrolls and highlights in sync with playback</li>
+                <li>Tap any transcript segment to jump to that point in the audio</li>
+                <li>Works offline once loaded; installable as a home screen app</li>
+            </ul>
+        </div>
             </div>
         </div>
-        <button id="play-btn" onclick="togglePlayPause()">▶</button>
+        <button id="play-btn" onclick="togglePlayPause()">&#x25B6;</button>
         <div id="word-tip">
             <span>Tap a <strong style="color:#1565c0;">blue word</strong> in the transcript to see its definition.</span>
-            <span id="word-tip-close" onclick="dismissTip()">✕</span>
+            <span id="word-tip-close" onclick="dismissTip()">&#x2715;</span>
         </div>
         <div id="word-popup">
-            <span class="wp-close" onclick="closePopup()">✕</span>
+            <span class="wp-close" onclick="closePopup()">&#x2715;</span>
             <div class="wp-lemma" id="wp-lemma"></div>
             <div class="wp-trans" id="wp-trans"></div>
             <div class="wp-cognate" id="wp-cognate"></div>
             <div class="wp-etym" id="wp-etym"></div>
-            <a class="wp-link" id="wp-link" target="_blank" rel="noopener">Open in Folkets lexikon ↗</a>
+            <a class="wp-link" id="wp-link" target="_blank" rel="noopener">Open in Folkets lexikon &#x2197;</a>
         </div>
         <div id="transcript" class="transcript"></div>
         <script>
@@ -230,7 +234,7 @@
 
             async function checkAudioStatus() {
                 try {
-                    const response = await fetch(sources[mode], { method: 'HEAD' });
+                    const response = await fetch(sources[mode] || sources['orig'], { method: 'HEAD' });
                     if (response.ok) {
                         statusEl.innerText = "● Live";
                         statusEl.style.color = "green";
@@ -260,8 +264,10 @@
                 document.querySelectorAll('.row').forEach(row => {
                     if (readingObserver) readingObserver.observe(row);
                 });
-                const saved = parseInt(localStorage.getItem('readScroll_' + epKey) || '0');
-                if (saved > 0) requestAnimationFrame(() => window.scrollTo({ top: saved, behavior: 'instant' }));
+                if (epKey) {
+                    const saved = parseInt(localStorage.getItem('readScroll_' + epKey) || '0');
+                    if (saved > 0) requestAnimationFrame(() => window.scrollTo({ top: saved, behavior: 'instant' }));
+                }
             }
 
             function exitReadingMode() {
@@ -281,12 +287,13 @@
 
             // --- Sticky position ---
             function updateJumpBtn() {
+                if (!epKey) return;
                 const saved = parseFloat(localStorage.getItem('audioPos_' + epKey) || '0');
                 document.getElementById('jump-btn').style.display = (mode !== 'reading' && saved > 5) ? '' : 'none';
             }
 
             function jumpToLast() {
-                if (mode === 'reading') return;
+                if (!epKey || mode === 'reading') return;
                 const saved = parseFloat(localStorage.getItem('audioPos_' + epKey) || '0');
                 if (!saved || !data.length) return;
                 audio.currentTime = saved;
@@ -300,7 +307,7 @@
 
             let audioSaveTimer = null;
             function saveAudioPos() {
-                if (mode !== 'reading' && audio.currentTime > 5) {
+                if (epKey && mode !== 'reading' && audio.currentTime > 5) {
                     localStorage.setItem('audioPos_' + epKey, audio.currentTime.toString());
                 }
             }
@@ -314,7 +321,7 @@
                 const isPlaying = !audio.paused;
                 const rate = audio.playbackRate;
                 mode = newMode;
-                localStorage.setItem('epMode_' + epKey, mode);
+                if (epKey) localStorage.setItem('epMode_' + epKey, mode);
                 modePodcast.classList.toggle('active', mode === 'orig');
                 modeInterleaved.classList.toggle('active', mode === 'bilingual');
                 modeReading.classList.toggle('active', mode === 'reading');
@@ -322,7 +329,7 @@
                     enterReadingMode();
                     return;
                 }
-                audio.src = sources[mode];
+                audio.src = sources[mode] || sources['orig'];
                 audio.playbackRate = rate;
                 lastIdx = -1;
                 if (startPattern !== null && data.length > 0) {
@@ -344,8 +351,8 @@
             function togglePlayPause() {
                 if (audio.paused) { audio.play(); } else { audio.pause(); }
             }
-            audio.addEventListener('play', () => { playBtn.textContent = '⏸'; });
-            audio.addEventListener('pause', () => { playBtn.textContent = '▶'; });
+            audio.addEventListener('play', () => { playBtn.innerHTML = '&#x23F8;'; });
+            audio.addEventListener('pause', () => { playBtn.innerHTML = '&#x25B6;'; });
 
             function movePlayBtn(rowEl) {
                 if (!rowEl) { playBtn.style.display = 'none'; return; }
@@ -364,7 +371,7 @@
                 userScrolling = true;
                 clearTimeout(userScrollTimer);
                 userScrollTimer = setTimeout(() => { userScrolling = false; }, 2000);
-                if (mode === 'reading') {
+                if (epKey && mode === 'reading') {
                     clearTimeout(readScrollTimer);
                     readScrollTimer = setTimeout(() => {
                         localStorage.setItem('readScroll_' + epKey, window.scrollY.toString());
@@ -383,14 +390,13 @@
             }
 
             function tokenizeOrig(text) {
-                // Split into word/non-word tokens, wrap lookupable words in spans
                 const tokens = text.split(/(\s+|[.,!?;:""''()\[\]–—-]+)/);
                 return tokens.map(tok => {
                     const key = tok.toLowerCase().replace(/^[""''()\[\]–—-]+|[.,!?;:""''()\[\]–—-]+$/g, '');
                     const entry = key ? formToEntry[key] : null;
                     if (!entry) return tok.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
                     const safe = tok.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-                    const arrow = entry.folkets ? '<span class="wikt-arrow">↗</span>' : '';
+                    const arrow = entry.folkets ? '<span class="wikt-arrow">&#x2197;</span>' : '';
                     return `<span class="sv-word" data-key="${key}">${safe}${arrow}</span>`;
                 }).join('');
             }
@@ -442,7 +448,7 @@
 
             function makeRowHTML(item) {
                 const origHTML = Object.keys(formToEntry).length > 0 ? tokenizeOrig(item.orig) : item.orig.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-                return `<div class="row-nav"><span class="pin-btn">📌</span></div><div class="row-content"><div class="orig">${origHTML}</div><div class="en">${item.en}</div></div>`;
+                return `<div class="row-nav"><span class="pin-btn">&#x1F4CC;</span></div><div class="row-content"><div class="orig">${origHTML}</div><div class="en">${item.en}</div></div>`;
             }
 
             function rerenderTranscript() {
@@ -452,7 +458,8 @@
                 });
             }
 
-            fetch('../vocab.usapodden.260327.json').then(r => r.json()).then(vocab => {
+            const _loadVocab = cb => window.__VOCAB_DATA__ ? Promise.resolve(window.__VOCAB_DATA__).then(cb) : fetch('../vocab.usapodden.260327.json').then(r => r.json()).then(cb).catch(() => {});
+            _loadVocab(vocab => {
                 Object.entries(vocab).forEach(([pos, words]) => {
                     words.forEach(e => {
                         const entry = { word: e.word, translation: e.translation, pos, cognate: e.cognate || '', etymology: e.etymology || '', folkets: e.folkets || false };
@@ -463,18 +470,21 @@
                 rerenderTranscript();
             }).catch(() => {});
 
-            fetch('../transcript.usapodden.260327.json').then(r => r.json()).then(json => {
+            const _loadTranscript = cb => window.__TRANSCRIPT_DATA__ ? Promise.resolve(window.__TRANSCRIPT_DATA__).then(cb) : fetch('../transcript.usapodden.260327.json').then(r => r.json()).then(cb);
+            _loadTranscript(json => {
                 data = json;
                 // Restore sticky mode
-                const savedMode = localStorage.getItem('epMode_' + epKey);
-                if (savedMode && savedMode !== mode) {
-                    mode = savedMode;
-                    modePodcast.classList.toggle('active', mode === 'orig');
-                    modeInterleaved.classList.toggle('active', mode === 'bilingual');
-                    modeReading.classList.toggle('active', mode === 'reading');
-                    if (mode !== 'reading') {
-                        audio.src = sources[mode] || sources['orig'];
-                        checkAudioStatus();
+                if (epKey) {
+                    const savedMode = localStorage.getItem('epMode_' + epKey);
+                    if (savedMode && savedMode !== mode) {
+                        mode = savedMode;
+                        modePodcast.classList.toggle('active', mode === 'orig');
+                        modeInterleaved.classList.toggle('active', mode === 'bilingual');
+                        modeReading.classList.toggle('active', mode === 'reading');
+                        if (mode !== 'reading') {
+                            audio.src = sources[mode] || sources['orig'];
+                            checkAudioStatus();
+                        }
                     }
                 }
                 data.forEach((item, i) => {
@@ -482,12 +492,10 @@
                     row.className = 'row'; row.id = 'row-' + i;
                     row.innerHTML = makeRowHTML(item);
                     row.onclick = e => {
-                        // Arrow on a word — treat as click on the word itself
                         const wordEl = e.target.classList.contains('wikt-arrow') ? e.target.closest('.sv-word') : null;
                         if (e.target.classList.contains('sv-word') || wordEl) {
                             showWordPopup((wordEl || e.target).dataset.key, wordEl || e.target);
                         } else if (e.target.classList.contains('pin-btn') || e.target.classList.contains('row-nav')) {
-                            // Nav cell: pin toggle on pin icon, jump-and-play on cell body
                             const nav = row.querySelector('.row-nav');
                             if (e.target.classList.contains('pin-btn')) {
                                 if (pinnedIdx === i) {
@@ -512,33 +520,34 @@
                             audio.play();
                             movePlayBtn(row);
                         }
-                        // clicks on row-content area do nothing
                     };
                     container.appendChild(row);
                 });
                 if (mode === 'reading') {
                     enterReadingMode();
-                } else {
-                    // Restore saved audio position, or fall back to startPattern
-                    const savedPos = parseFloat(localStorage.getItem('audioPos_' + epKey) || '0');
+                } else if (data.length > 0) {
+                    const savedPos = epKey ? parseFloat(localStorage.getItem('audioPos_' + epKey) || '0') : 0;
                     if (savedPos > 5) {
                         seekTargetTime = savedPos;
                         initialSeekDone = false;
                         applySeek();
-                    } else if (startPattern !== null && data.length > 0) {
-                        const normPat = startPattern.toLowerCase().replace(/\s+/g, '');
-                        const matchIdx = data.findIndex(item => item.orig.toLowerCase().replace(/\s+/g, '').includes(normPat));
-                        const targetIdx = matchIdx !== -1 ? matchIdx : 0;
+                    } else {
+                        let targetIdx = 0;
+                        if (startPattern !== null) {
+                            const normPat = startPattern.toLowerCase().replace(/\s+/g, '');
+                            const matchIdx = data.findIndex(item => item.orig.toLowerCase().replace(/\s+/g, '').includes(normPat));
+                            targetIdx = matchIdx !== -1 ? matchIdx : 0;
+                        }
                         const target = data[targetIdx];
                         seekTargetTime = (mode === 'orig') ? target.start : target.b_start;
                         const targetRow = document.getElementById('row-' + targetIdx);
                         if (targetRow) {
                             requestAnimationFrame(() => {
-                                targetRow.scrollIntoView({ block: 'center' });
+                                if (startPattern !== null) targetRow.scrollIntoView({ block: 'center' });
                                 movePlayBtn(targetRow);
                             });
                         }
-                        applySeek();
+                        if (startPattern !== null) applySeek();
                     }
                     updateJumpBtn();
                 }
@@ -548,13 +557,13 @@
                 const now = audio.currentTime;
                 clearTimeout(audioSaveTimer);
                 audioSaveTimer = setTimeout(saveAudioPos, 5000);
+
                 const currentIdx = data.findIndex(item => {
                     const s = (mode === 'orig') ? item.start : item.b_start;
                     const e = (mode === 'orig') ? item.end : item.b_end;
                     return now >= s && now <= e;
                 });
 
-                // Pin loop logic — cut off cleanly at the row's end time
                 if (pinnedIdx !== -1) {
                     const pinEnd = (mode === 'orig') ? data[pinnedIdx].end : data[pinnedIdx].b_end;
                     const pinStart = (mode === 'orig') ? data[pinnedIdx].start : data[pinnedIdx].b_start;
