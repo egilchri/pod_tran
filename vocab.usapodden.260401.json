@@ -1,9 +1,24 @@
 {
   "ADJ": [
     {
+      "word": "stor",
+      "translation": "large",
+      "count": 17,
+      "forms": [
+        "stor",
+        "stora",
+        "stort",
+        "större",
+        "största"
+      ],
+      "cognate": "big",
+      "etymology": "From stor, from stórr, from *stōraz, from *stāro-.",
+      "folkets": true
+    },
+    {
       "word": "annan",
       "translation": "other",
-      "count": 17,
+      "count": 16,
       "forms": [
         "andra",
         "annan",
@@ -16,27 +31,12 @@
     {
       "word": "olik",
       "translation": "different",
-      "count": 17,
+      "count": 16,
       "forms": [
         "olika"
       ],
       "cognate": "unlike",
       "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "stor",
-      "translation": "large",
-      "count": 15,
-      "forms": [
-        "stor",
-        "stora",
-        "stort",
-        "större",
-        "största"
-      ],
-      "cognate": "big",
-      "etymology": "From stor, from stórr, from *stōraz, from *stāro-.",
       "folkets": true
     },
     {
@@ -53,21 +53,9 @@
       "folkets": true
     },
     {
-      "word": "vit",
-      "translation": "white",
-      "count": 10,
-      "forms": [
-        "vit",
-        "vita"
-      ],
-      "cognate": "white",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "demokratisk",
       "translation": "democratic",
-      "count": 9,
+      "count": 10,
       "forms": [
         "demokratisk",
         "demokratiska"
@@ -79,11 +67,23 @@
     {
       "word": "många",
       "translation": "many",
-      "count": 9,
+      "count": 10,
       "forms": [
         "många"
       ],
       "cognate": "many",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "vit",
+      "translation": "white",
+      "count": 10,
+      "forms": [
+        "vit",
+        "vita"
+      ],
+      "cognate": "white",
       "etymology": "",
       "folkets": true
     },
@@ -112,10 +112,24 @@
       "folkets": true
     },
     {
+      "word": "politisk",
+      "translation": "political",
+      "count": 7,
+      "forms": [
+        "politisk",
+        "politiska",
+        "politiskt"
+      ],
+      "cognate": "political",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "sån",
       "translation": "like that",
       "count": 7,
       "forms": [
+        "sådant",
         "sån",
         "såna",
         "sånt"
@@ -136,15 +150,14 @@
       "folkets": true
     },
     {
-      "word": "politisk",
-      "translation": "political",
+      "word": "förra",
+      "translation": "last",
       "count": 6,
       "forms": [
-        "politisk",
-        "politiska"
+        "förra"
       ],
-      "cognate": "political",
-      "etymology": "",
+      "cognate": "",
+      "etymology": "From fyrre, from fyrri, from *furizô, comparative of *furi, *furai.",
       "folkets": true
     },
     {
@@ -167,17 +180,6 @@
       ],
       "cognate": "",
       "etymology": "From svār, svāger, svor, from svárr, from *swēraz, from *swer-. Compare schwer.",
-      "folkets": true
-    },
-    {
-      "word": "förra",
-      "translation": "last",
-      "count": 5,
-      "forms": [
-        "förra"
-      ],
-      "cognate": "",
-      "etymology": "From fyrre, from fyrri, from *furizô, comparative of *furi, *furai.",
       "folkets": true
     },
     {
@@ -215,28 +217,15 @@
       "folkets": true
     },
     {
-      "word": "själv",
-      "translation": "himself",
+      "word": "viss",
+      "translation": "certain",
       "count": 5,
       "forms": [
-        "själv",
-        "själva"
+        "viss",
+        "vissa"
       ],
       "cognate": "",
-      "etymology": "From sjalfr, from *selbaz, from *selbʰ-, from *s(w)e-.",
-      "folkets": true
-    },
-    {
-      "word": "tydlig",
-      "translation": "clear",
-      "count": 5,
-      "forms": [
-        "tydligare",
-        "tydligaste",
-        "tydligt"
-      ],
-      "cognate": "",
-      "etymology": "lig",
+      "etymology": "From viss, from *gawissaz. Cognate with viss.",
       "folkets": true
     },
     {
@@ -253,17 +242,6 @@
       "folkets": true
     },
     {
-      "word": "heterosexuell",
-      "translation": "heterosexual",
-      "count": 4,
-      "forms": [
-        "heterosexuell"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "mycket",
       "translation": "a lot",
       "count": 4,
@@ -275,26 +253,28 @@
       "folkets": true
     },
     {
-      "word": "redo",
-      "translation": "ready",
+      "word": "själv",
+      "translation": "himself",
       "count": 4,
       "forms": [
-        "redo"
+        "själv",
+        "själva"
       ],
       "cognate": "",
-      "etymology": "From rēþo, probably from rēde, reide. Cognate with rede, reiður.",
+      "etymology": "From sjalfr, from *selbaz, from *selbʰ-, from *s(w)e-.",
       "folkets": true
     },
     {
-      "word": "viss",
-      "translation": "certain",
+      "word": "tydlig",
+      "translation": "clear",
       "count": 4,
       "forms": [
-        "viss",
-        "vissa"
+        "tydligare",
+        "tydligaste",
+        "tydligt"
       ],
       "cognate": "",
-      "etymology": "From viss, from *gawissaz. Cognate with viss.",
+      "etymology": "lig",
       "folkets": true
     },
     {
@@ -349,8 +329,8 @@
       "forms": [
         "fler"
       ],
-      "cognate": "",
-      "etymology": "",
+      "cognate": "full",
+      "etymology": "From flere, flæster, from fleiri, from *flaizô, derived from *pleh₁-. Cognate, among others, with fleiri, flestr, plūs and πλέως, πλεῖστος.",
       "folkets": true
     },
     {
@@ -374,6 +354,17 @@
         "gammalt"
       ],
       "cognate": "old",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "heterosexuell",
+      "translation": "heterosexual",
+      "count": 3,
+      "forms": [
+        "heterosexuell"
+      ],
+      "cognate": "",
       "etymology": "",
       "folkets": true
     },
@@ -436,6 +427,17 @@
       "folkets": true
     },
     {
+      "word": "redo",
+      "translation": "ready",
+      "count": 3,
+      "forms": [
+        "redo"
+      ],
+      "cognate": "",
+      "etymology": "From rēþo, probably from rēde, reide. Cognate with rede, reiður.",
+      "folkets": true
+    },
+    {
       "word": "republikansk",
       "translation": "Republican",
       "count": 3,
@@ -468,6 +470,18 @@
       ],
       "cognate": "",
       "etymology": "From starker, from starkr, from *starkuz, from *sterg-.",
+      "folkets": true
+    },
+    {
+      "word": "tidig",
+      "translation": "early",
+      "count": 3,
+      "forms": [
+        "tidiga",
+        "tidigare"
+      ],
+      "cognate": "",
+      "etymology": "From tíðligr and tidelik, related to tid.",
       "folkets": true
     },
     {
@@ -517,6 +531,17 @@
       "folkets": true
     },
     {
+      "word": "enkel",
+      "translation": "simple",
+      "count": 2,
+      "forms": [
+        "enkelt"
+      ],
+      "cognate": "",
+      "etymology": "From enkil, from enkel, from *ainakulaz, equivalent to en + -el. Compare etymology of simple. Cognate with enkel, enkelt, enkel, ekkil, enkel and 𐌰𐌹𐌽𐌰𐌺𐌻𐍃. Compare also singulus with the same suffix. See also änka and änk",
+      "folkets": true
+    },
+    {
       "word": "farlig",
       "translation": "dangerous",
       "count": 2,
@@ -525,8 +550,19 @@
         "farligt"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From fārliker, from varlik. Equivalent to lig.",
       "folkets": true
+    },
+    {
+      "word": "född",
+      "translation": "born",
+      "count": 2,
+      "forms": [
+        "född"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "förkänva",
@@ -621,17 +657,6 @@
       "folkets": true
     },
     {
-      "word": "missnöj",
-      "translation": "dissatisfaction",
-      "count": 2,
-      "forms": [
-        "missnöj"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "nöjd",
       "translation": "satisfied",
       "count": 2,
@@ -662,6 +687,17 @@
       "forms": [
         "skakig",
         "skakigt"
+      ],
+      "cognate": "",
+      "etymology": "-ig",
+      "folkets": true
+    },
+    {
+      "word": "skild",
+      "translation": "divorced",
+      "count": 2,
+      "forms": [
+        "skilda"
       ],
       "cognate": "",
       "etymology": "",
@@ -712,17 +748,6 @@
       "folkets": true
     },
     {
-      "word": "tidig",
-      "translation": "early",
-      "count": 2,
-      "forms": [
-        "tidigare"
-      ],
-      "cognate": "",
-      "etymology": "From tíðligr and tidelik, related to tid.",
-      "folkets": true
-    },
-    {
       "word": "tre",
       "translation": "three",
       "count": 2,
@@ -730,7 +755,7 @@
         "tredje"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From þrir, þrī, from Runic Swedish þrīR, from þrír, from ᚦᚱᛁᛃᛟᛉ, from *þrīz, ultimately from *tréyes. Compare Norwegian and Danish tre, Icelandic þrír, Faroese tríggir.",
       "folkets": true
     },
     {
@@ -756,6 +781,17 @@
       "folkets": true
     },
     {
+      "word": "aktieos",
+      "translation": "shareholding",
+      "count": 1,
+      "forms": [
+        "aktieos"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "allmän",
       "translation": "general",
       "count": 1,
@@ -763,7 +799,7 @@
         "allmänt"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From almennr. män. Compare allmenn.",
       "folkets": true
     },
     {
@@ -818,7 +854,7 @@
         "bekräftat"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From bekreften or bekräften (rare, more often bekräftigen), from bekreften. Equivalent of -a. The synonym bekräftiga went out of use during the 17th century. Cognate with bekræfte, bekrefte and bekrefte, bekrefta.",
       "folkets": true
     },
     {
@@ -855,8 +891,8 @@
       "folkets": false
     },
     {
-      "word": "beväpnad",
-      "translation": "armed",
+      "word": "beväpna",
+      "translation": "arm",
       "count": 1,
       "forms": [
         "beväpnad"
@@ -932,22 +968,22 @@
       "folkets": true
     },
     {
-      "word": "enkel",
-      "translation": "simple",
-      "count": 1,
-      "forms": [
-        "enkelt"
-      ],
-      "cognate": "",
-      "etymology": "From enkil, from enkel, from *ainakulaz, equivalent to en + -el. Compare etymology of simple. Cognate with enkel, enkelt, enkel, ekkil, enkel and 𐌰𐌹𐌽𐌰𐌺𐌻𐍃. Compare also singulus with the same suffix. See also änka and änk",
-      "folkets": true
-    },
-    {
       "word": "enskildad",
       "translation": "individual",
       "count": 1,
       "forms": [
         "enskildad"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "entusjastisk",
+      "translation": "enthusiastic",
+      "count": 1,
+      "forms": [
+        "entusjastisk"
       ],
       "cognate": "",
       "etymology": "",
@@ -1031,17 +1067,6 @@
       "folkets": true
     },
     {
-      "word": "född",
-      "translation": "born",
-      "count": 1,
-      "forms": [
-        "född"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "förkrossa",
       "translation": "crush",
       "count": 1,
@@ -1051,6 +1076,17 @@
       "cognate": "",
       "etymology": "krossa",
       "folkets": false
+    },
+    {
+      "word": "förändra",
+      "translation": "change",
+      "count": 1,
+      "forms": [
+        "förändrat"
+      ],
+      "cognate": "",
+      "etymology": "verändern, equivalent to ändra. Compare forandre.",
+      "folkets": true
     },
     {
       "word": "ganska",
@@ -1108,6 +1144,17 @@
       "folkets": false
     },
     {
+      "word": "given",
+      "translation": "given",
+      "count": 1,
+      "forms": [
+        "given"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "god",
       "translation": "good",
       "count": 1,
@@ -1119,25 +1166,14 @@
       "folkets": true
     },
     {
-      "word": "gripmaynynsk",
-      "translation": "gripmaynyn",
-      "count": 1,
-      "forms": [
-        "gripmaynynska"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "hemlig",
       "translation": "secret",
       "count": 1,
       "forms": [
         "hemligt"
       ],
-      "cognate": "",
-      "etymology": "",
+      "cognate": "homely",
+      "etymology": "From hemeliker, from heimiligr, from heimelik, from *haimalīk, from *haimaz. Compare with homely.",
       "folkets": true
     },
     {
@@ -1152,15 +1188,15 @@
       "folkets": true
     },
     {
-      "word": "härlig",
-      "translation": "lovely",
+      "word": "horribiljös",
+      "translation": "horribiljos",
       "count": 1,
       "forms": [
-        "härligt"
+        "horribiljösa"
       ],
       "cognate": "",
-      "etymology": "From hêrlik. Cf. herrlich, heerlijk.",
-      "folkets": true
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "icke-hjälpsam",
@@ -1168,6 +1204,28 @@
       "count": 1,
       "forms": [
         "icke-hjälpsam"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "igen-",
+      "translation": "again-",
+      "count": 1,
+      "forms": [
+        "igen-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "impeachment",
+      "translation": "impeachment",
+      "count": 1,
+      "forms": [
+        "impeachment"
       ],
       "cognate": "",
       "etymology": "",
@@ -1200,7 +1258,7 @@
       "translation": "interesting",
       "count": 1,
       "forms": [
-        "intressanta"
+        "intressant"
       ],
       "cognate": "interesting",
       "etymology": "",
@@ -1216,6 +1274,17 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
+    },
+    {
+      "word": "jättebra",
+      "translation": "great",
+      "count": 1,
+      "forms": [
+        "jättebra"
+      ],
+      "cognate": "",
+      "etymology": "From bra.",
+      "folkets": true
     },
     {
       "word": "jättekonstig",
@@ -1247,18 +1316,7 @@
         "jättestora"
       ],
       "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "kamal",
-      "translation": "terrible",
-      "count": 1,
-      "forms": [
-        "kamala"
-      ],
-      "cognate": "",
-      "etymology": "",
+      "etymology": "stor",
       "folkets": false
     },
     {
@@ -1324,12 +1382,12 @@
         "kvinnlig"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From qvinliker, qvinzliker, from kvennsligr and kvennligr. Akin to lig.",
       "folkets": true
     },
     {
       "word": "känd",
-      "translation": "famous",
+      "translation": "known",
       "count": 1,
       "forms": [
         "känt"
@@ -1357,7 +1415,7 @@
         "lagliga"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "lig, from lǫgligr. Cognate with löglegur.",
       "folkets": true
     },
     {
@@ -1368,7 +1426,7 @@
         "legal"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "legalis.",
       "folkets": true
     },
     {
@@ -1438,15 +1496,26 @@
       "folkets": false
     },
     {
-      "word": "missnärd",
-      "translation": "malnourished",
+      "word": "missnöj",
+      "translation": "dissatisfaction",
       "count": 1,
       "forms": [
-        "missnärd"
+        "missnöj"
       ],
       "cognate": "",
       "etymology": "",
       "folkets": false
+    },
+    {
+      "word": "missnöjd",
+      "translation": "dissatisfied",
+      "count": 1,
+      "forms": [
+        "missnöjd"
+      ],
+      "cognate": "",
+      "etymology": "nöjd",
+      "folkets": true
     },
     {
       "word": "motsvarande",
@@ -1482,6 +1551,17 @@
       "folkets": true
     },
     {
+      "word": "namn",
+      "translation": "name",
+      "count": 1,
+      "forms": [
+        "namn-"
+      ],
+      "cognate": "name",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "natos",
       "translation": "NATO",
       "count": 1,
@@ -1497,7 +1577,7 @@
       "translation": "nervous",
       "count": 1,
       "forms": [
-        "nervös"
+        "nervösa"
       ],
       "cognate": "nervous",
       "etymology": "",
@@ -1526,14 +1606,25 @@
       "folkets": true
     },
     {
+      "word": "om-",
+      "translation": "if-",
+      "count": 1,
+      "forms": [
+        "om-"
+      ],
+      "cognate": "",
+      "etymology": "From om.",
+      "folkets": false
+    },
+    {
       "word": "ordentlig",
       "translation": "properly",
       "count": 1,
       "forms": [
         "ordentlig"
       ],
-      "cognate": "",
-      "etymology": "",
+      "cognate": "row",
+      "etymology": "From ordentlich, from ordenlich (cognate with ordenlīcho), from orden, from ordō, from *ordō.",
       "folkets": true
     },
     {
@@ -1680,17 +1771,6 @@
       "folkets": true
     },
     {
-      "word": "rysk",
-      "translation": "Russian",
-      "count": 1,
-      "forms": [
-        "ryska"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "rätt",
       "translation": "right",
       "count": 1,
@@ -1709,7 +1789,7 @@
         "röda"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From røþer, from rauðr, from *raudaz, from *h₁rowdʰós < *h₁rewdʰ-.",
       "folkets": true
     },
     {
@@ -1731,7 +1811,7 @@
         "rörlig"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "lig",
       "folkets": true
     },
     {
@@ -1766,17 +1846,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
-    },
-    {
-      "word": "skild",
-      "translation": "divorced",
-      "count": 1,
-      "forms": [
-        "skilda"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
     },
     {
       "word": "skriftlig",
@@ -1821,6 +1890,17 @@
       "cognate": "",
       "etymology": "From slūt.",
       "folkets": true
+    },
+    {
+      "word": "slutsatsen-",
+      "translation": "the conclusion-",
+      "count": 1,
+      "forms": [
+        "slutsatsen-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "snar",
@@ -1907,7 +1987,7 @@
         "säkerhetspolitiska"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "politisk.",
       "folkets": false
     },
     {
@@ -1997,17 +2077,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
-    },
-    {
-      "word": "tyrannisk",
-      "translation": "tyrannical",
-      "count": 1,
-      "forms": [
-        "tyrannisk"
-      ],
-      "cognate": "tyrannical",
-      "etymology": "",
-      "folkets": false
     },
     {
       "word": "tänkbar",
@@ -2131,6 +2200,17 @@
       "folkets": true
     },
     {
+      "word": "vice",
+      "translation": "deputy",
+      "count": 1,
+      "forms": [
+        "vice"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "vice-presidentkandidat",
       "translation": "vice presidential candidate",
       "count": 1,
@@ -2164,15 +2244,15 @@
       "folkets": true
     },
     {
-      "word": "väljande",
-      "translation": "choosing",
+      "word": "väldig",
+      "translation": "very",
       "count": 1,
       "forms": [
-        "väljande"
+        "väldigt"
       ],
       "cognate": "",
-      "etymology": "",
-      "folkets": false
+      "etymology": "weldich, whence also vældig and veldig (which are usually used in a different way from the Swedish word). See the related gewaltig for more.",
+      "folkets": true
     },
     {
       "word": "välkomn",
@@ -2212,7 +2292,7 @@
     {
       "word": "i",
       "translation": "i",
-      "count": 136,
+      "count": 131,
       "forms": [
         "i"
       ],
@@ -2223,7 +2303,7 @@
     {
       "word": "på",
       "translation": "on",
-      "count": 89,
+      "count": 92,
       "forms": [
         "på"
       ],
@@ -2232,9 +2312,21 @@
       "folkets": true
     },
     {
+      "word": "till",
+      "translation": "to",
+      "count": 68,
+      "forms": [
+        "till",
+        "till-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "om",
       "translation": "if",
-      "count": 66,
+      "count": 65,
       "forms": [
         "om"
       ],
@@ -2243,20 +2335,9 @@
       "folkets": true
     },
     {
-      "word": "till",
-      "translation": "to",
-      "count": 66,
-      "forms": [
-        "till"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "för",
       "translation": "for",
-      "count": 64,
+      "count": 62,
       "forms": [
         "för"
       ],
@@ -2322,7 +2403,7 @@
     {
       "word": "under",
       "translation": "under",
-      "count": 9,
+      "count": 10,
       "forms": [
         "under"
       ],
@@ -2333,31 +2414,9 @@
     {
       "word": "inom",
       "translation": "within",
-      "count": 8,
+      "count": 9,
       "forms": [
         "inom"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "över",
-      "translation": "over",
-      "count": 6,
-      "forms": [
-        "över"
-      ],
-      "cognate": "",
-      "etymology": "From ivir, yvir, ø̄wer, from Runic Swedish ufiR, from yfir, from *ubiri, from *upéri, from *upér, from *upo.",
-      "folkets": true
-    },
-    {
-      "word": "efter",
-      "translation": "after",
-      "count": 5,
-      "forms": [
-        "efter"
       ],
       "cognate": "",
       "etymology": "",
@@ -2386,22 +2445,33 @@
       "folkets": true
     },
     {
-      "word": "ur",
-      "translation": "out",
+      "word": "över",
+      "translation": "over",
+      "count": 5,
+      "forms": [
+        "över"
+      ],
+      "cognate": "",
+      "etymology": "From ivir, yvir, ø̄wer, from Runic Swedish ufiR, from yfir, from *ubiri, from *upéri, from *upér, from *upo.",
+      "folkets": true
+    },
+    {
+      "word": "efter",
+      "translation": "after",
       "count": 4,
       "forms": [
-        "ur"
+        "efter"
       ],
       "cognate": "",
       "etymology": "",
       "folkets": true
     },
     {
-      "word": "framför",
-      "translation": "in front",
-      "count": 3,
+      "word": "ur",
+      "translation": "out",
+      "count": 4,
       "forms": [
-        "framför"
+        "ur"
       ],
       "cognate": "",
       "etymology": "",
@@ -2430,6 +2500,17 @@
       "folkets": true
     },
     {
+      "word": "framför",
+      "translation": "in front",
+      "count": 2,
+      "forms": [
+        "framför"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "hos",
       "translation": "at",
       "count": 2,
@@ -2449,6 +2530,17 @@
       ],
       "cognate": "",
       "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "som",
+      "translation": "which",
+      "count": 2,
+      "forms": [
+        "som"
+      ],
+      "cognate": "",
+      "etymology": "From som or sum, in Runic inscriptions also ''sim'', same as sem, from sem. Also related to the prefix sam- and suffix -sam. Still in the Poetic Edda, the Icelandic ''sem'' is only used as a comparative particle, e.g. Há",
       "folkets": true
     },
     {
@@ -2482,6 +2574,17 @@
       ],
       "cognate": "",
       "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "emot",
+      "translation": "against",
+      "count": 1,
+      "forms": [
+        "emot"
+      ],
+      "cognate": "",
+      "etymology": "From i mot, equivalent to mot.",
       "folkets": true
     },
     {
@@ -2573,6 +2676,17 @@
       "folkets": true
     },
     {
+      "word": "än",
+      "translation": "than",
+      "count": 1,
+      "forms": [
+        "än"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "å",
       "translation": "Oh",
       "count": 1,
@@ -2599,7 +2713,7 @@
     {
       "word": "här",
       "translation": "here",
-      "count": 113,
+      "count": 118,
       "forms": [
         "här"
       ],
@@ -2610,12 +2724,23 @@
     {
       "word": "så",
       "translation": "so",
-      "count": 51,
+      "count": 66,
       "forms": [
         "så"
       ],
       "cognate": "sow",
       "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "ju",
+      "translation": "right",
+      "count": 54,
+      "forms": [
+        "ju"
+      ],
+      "cognate": "",
+      "etymology": "From iū, io. Compare jo, jo, ja (adverb) / je (conjunction).",
       "folkets": true
     },
     {
@@ -2630,20 +2755,9 @@
       "folkets": true
     },
     {
-      "word": "ju",
-      "translation": "right",
-      "count": 40,
-      "forms": [
-        "ju"
-      ],
-      "cognate": "",
-      "etymology": "From iū, io. Compare jo, jo, ja (adverb) / je (conjunction).",
-      "folkets": true
-    },
-    {
       "word": "där",
       "translation": "there",
-      "count": 30,
+      "count": 31,
       "forms": [
         "där"
       ],
@@ -2652,20 +2766,9 @@
       "folkets": true
     },
     {
-      "word": "också",
-      "translation": "too",
-      "count": 30,
-      "forms": [
-        "också"
-      ],
-      "cognate": "",
-      "etymology": "Corresponding to och / ock + så, from ok svā, from ok and svá. Compare også.",
-      "folkets": true
-    },
-    {
       "word": "mycket",
       "translation": "a lot",
-      "count": 27,
+      "count": 28,
       "forms": [
         "mer",
         "mest",
@@ -2676,20 +2779,20 @@
       "folkets": true
     },
     {
-      "word": "hur",
-      "translation": "how",
-      "count": 23,
+      "word": "också",
+      "translation": "too",
+      "count": 28,
       "forms": [
-        "hur"
+        "också"
       ],
       "cognate": "",
-      "etymology": "Shortened form of huru, from hwaru, from neuter dative of *hwar",
+      "etymology": "Corresponding to och / ock + så, from ok svā, from ok and svá. Compare også.",
       "folkets": true
     },
     {
       "word": "just",
       "translation": "exactly",
-      "count": 23,
+      "count": 24,
       "forms": [
         "just"
       ],
@@ -2700,7 +2803,7 @@
     {
       "word": "då",
       "translation": "then",
-      "count": 21,
+      "count": 22,
       "forms": [
         "då"
       ],
@@ -2709,9 +2812,20 @@
       "folkets": true
     },
     {
+      "word": "hur",
+      "translation": "how",
+      "count": 22,
+      "forms": [
+        "hur"
+      ],
+      "cognate": "",
+      "etymology": "Shortened form of huru, from hwaru, from neuter dative of *hwar",
+      "folkets": true
+    },
+    {
       "word": "sen",
       "translation": "since",
-      "count": 19,
+      "count": 18,
       "forms": [
         "sen"
       ],
@@ -2722,7 +2836,7 @@
     {
       "word": "väldig",
       "translation": "very",
-      "count": 15,
+      "count": 17,
       "forms": [
         "väldigt"
       ],
@@ -2731,9 +2845,20 @@
       "folkets": true
     },
     {
+      "word": "helt",
+      "translation": "completely",
+      "count": 13,
+      "forms": [
+        "helt"
+      ],
+      "cognate": "whole",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "upp",
       "translation": "up",
-      "count": 14,
+      "count": 13,
       "forms": [
         "upp"
       ],
@@ -2742,20 +2867,9 @@
       "folkets": true
     },
     {
-      "word": "bara",
-      "translation": "just",
-      "count": 13,
-      "forms": [
-        "bara"
-      ],
-      "cognate": "barely",
-      "etymology": "From bara, from *bara, from *barr, from *bazaz. Compare bara.",
-      "folkets": true
-    },
-    {
       "word": "alltså",
       "translation": "thus",
-      "count": 11,
+      "count": 12,
       "forms": [
         "alltså"
       ],
@@ -2764,14 +2878,14 @@
       "folkets": true
     },
     {
-      "word": "helt",
-      "translation": "completely",
-      "count": 11,
+      "word": "bara",
+      "translation": "just",
+      "count": 12,
       "forms": [
-        "helt"
+        "bara"
       ],
-      "cognate": "whole",
-      "etymology": "",
+      "cognate": "barely",
+      "etymology": "From bara, from *bara, from *barr, from *bazaz. Compare bara.",
       "folkets": true
     },
     {
@@ -2786,6 +2900,29 @@
       "folkets": true
     },
     {
+      "word": "kanske",
+      "translation": "maybe",
+      "count": 9,
+      "forms": [
+        "kanske"
+      ],
+      "cognate": "mayhap",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "lite",
+      "translation": "little",
+      "count": 9,
+      "forms": [
+        "lite",
+        "minst"
+      ],
+      "cognate": "",
+      "etymology": "Contraction of litet, neuter of liten. Compare mycket, with similar formation.",
+      "folkets": true
+    },
+    {
       "word": "ut",
       "translation": "out",
       "count": 9,
@@ -2794,6 +2931,17 @@
       ],
       "cognate": "",
       "etymology": "From út, from *ūt.",
+      "folkets": true
+    },
+    {
+      "word": "in",
+      "translation": "in",
+      "count": 8,
+      "forms": [
+        "in"
+      ],
+      "cognate": "",
+      "etymology": "",
       "folkets": true
     },
     {
@@ -2808,43 +2956,9 @@
       "folkets": true
     },
     {
-      "word": "kanske",
-      "translation": "maybe",
-      "count": 8,
-      "forms": [
-        "kanske"
-      ],
-      "cognate": "mayhap",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "lite",
-      "translation": "little",
-      "count": 8,
-      "forms": [
-        "lite",
-        "minst"
-      ],
-      "cognate": "",
-      "etymology": "Contraction of litet, neuter of liten. Compare mycket, with similar formation.",
-      "folkets": true
-    },
-    {
-      "word": "in",
-      "translation": "in",
-      "count": 7,
-      "forms": [
-        "in"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "precis",
-      "translation": "precisely",
-      "count": 7,
+      "translation": "exactly",
+      "count": 8,
       "forms": [
         "precis"
       ],
@@ -2864,14 +2978,14 @@
       "folkets": true
     },
     {
-      "word": "även",
-      "translation": "also",
+      "word": "igen",
+      "translation": "again",
       "count": 6,
       "forms": [
-        "även"
+        "igen"
       ],
-      "cognate": "even",
-      "etymology": "From even, effen, from evan, from *ebn, from *ebnaz, cognate with even, even. Compare effen. See also jämn.",
+      "cognate": "again",
+      "etymology": "",
       "folkets": true
     },
     {
@@ -2909,14 +3023,14 @@
       "folkets": true
     },
     {
-      "word": "igen",
-      "translation": "again",
+      "word": "hittills",
+      "translation": "so far",
       "count": 5,
       "forms": [
-        "igen"
+        "hittills"
       ],
-      "cognate": "again",
-      "etymology": "",
+      "cognate": "",
+      "etymology": "tills",
       "folkets": true
     },
     {
@@ -2931,14 +3045,47 @@
       "folkets": true
     },
     {
-      "word": "hittills",
-      "translation": "so far",
-      "count": 4,
+      "word": "ändå",
+      "translation": "nevertheless",
+      "count": 5,
       "forms": [
-        "hittills"
+        "ändå"
       ],
       "cognate": "",
-      "etymology": "tills",
+      "etymology": "From då. Compare endå, enda, endda, enda.",
+      "folkets": true
+    },
+    {
+      "word": "även",
+      "translation": "also",
+      "count": 5,
+      "forms": [
+        "även"
+      ],
+      "cognate": "even",
+      "etymology": "From even, effen, from evan, from *ebn, from *ebnaz, cognate with even, even. Compare effen. See also jämn.",
+      "folkets": true
+    },
+    {
+      "word": "över",
+      "translation": "over",
+      "count": 5,
+      "forms": [
+        "över"
+      ],
+      "cognate": "",
+      "etymology": "From ivir, yvir, ø̄wer, from Runic Swedish ufiR, from yfir, from *ubiri, from *upéri, from *upér, from *upo.",
+      "folkets": true
+    },
+    {
+      "word": "när",
+      "translation": "when",
+      "count": 4,
+      "forms": [
+        "när"
+      ],
+      "cognate": "",
+      "etymology": "From nær, from *nēhwiz, comparative of *nēhw. Ultimately from *h₂neḱ-.",
       "folkets": true
     },
     {
@@ -2953,6 +3100,28 @@
       "folkets": true
     },
     {
+      "word": "sedan",
+      "translation": "ago",
+      "count": 4,
+      "forms": [
+        "sedan"
+      ],
+      "cognate": "",
+      "etymology": "From siþan, from síðan. See Norwegian siden. Cognate with siþþan.",
+      "folkets": true
+    },
+    {
+      "word": "varför",
+      "translation": "why",
+      "count": 4,
+      "forms": [
+        "varför"
+      ],
+      "cognate": "wherefore",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "vidare",
       "translation": "further",
       "count": 4,
@@ -2961,17 +3130,6 @@
       ],
       "cognate": "",
       "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "över",
-      "translation": "over",
-      "count": 4,
-      "forms": [
-        "över"
-      ],
-      "cognate": "",
-      "etymology": "From ivir, yvir, ø̄wer, from Runic Swedish ufiR, from yfir, from *ubiri, from *upéri, from *upér, from *upo.",
       "folkets": true
     },
     {
@@ -3041,17 +3199,6 @@
       "folkets": true
     },
     {
-      "word": "ginnar",
-      "translation": "gives",
-      "count": 3,
-      "forms": [
-        "ginnar"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "heller",
       "translation": "either",
       "count": 3,
@@ -3085,14 +3232,14 @@
       "folkets": true
     },
     {
-      "word": "när",
-      "translation": "when",
+      "word": "nåt",
+      "translation": "something",
       "count": 3,
       "forms": [
-        "när"
+        "nåt"
       ],
       "cognate": "",
-      "etymology": "From nær, from *nēhwiz, comparative of *nēhw. Ultimately from *h₂neḱ-.",
+      "etymology": "From not, nut, from *hnōjaną, from *kneh₂-. Cognate with not, not, not, nót and Nut.not",
       "folkets": true
     },
     {
@@ -3118,28 +3265,6 @@
       "folkets": true
     },
     {
-      "word": "ute",
-      "translation": "out",
-      "count": 3,
-      "forms": [
-        "ute"
-      ],
-      "cognate": "",
-      "etymology": "From ūte, from úti.",
-      "folkets": true
-    },
-    {
-      "word": "varför",
-      "translation": "why",
-      "count": 3,
-      "forms": [
-        "varför"
-      ],
-      "cognate": "wherefore",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "verkligen",
       "translation": "really",
       "count": 3,
@@ -3148,17 +3273,6 @@
       ],
       "cognate": "",
       "etymology": "en",
-      "folkets": true
-    },
-    {
-      "word": "ändå",
-      "translation": "nevertheless",
-      "count": 3,
-      "forms": [
-        "ändå"
-      ],
-      "cognate": "",
-      "etymology": "From då. Compare endå, enda, endda, enda.",
       "folkets": true
     },
     {
@@ -3184,17 +3298,6 @@
       "folkets": true
     },
     {
-      "word": "bort",
-      "translation": "away",
-      "count": 2,
-      "forms": [
-        "bort"
-      ],
-      "cognate": "",
-      "etymology": "From burt, brott, braut. See bryta for more.",
-      "folkets": true
-    },
-    {
       "word": "definitiv",
       "translation": "definitely",
       "count": 2,
@@ -3203,17 +3306,6 @@
       ],
       "cognate": "",
       "etymology": "From definitivus.",
-      "folkets": true
-    },
-    {
-      "word": "emot",
-      "translation": "against",
-      "count": 2,
-      "forms": [
-        "emot"
-      ],
-      "cognate": "",
-      "etymology": "From i mot, equivalent to mot.",
       "folkets": true
     },
     {
@@ -3228,11 +3320,23 @@
       "folkets": true
     },
     {
+      "word": "fram",
+      "translation": "forward",
+      "count": 2,
+      "forms": [
+        "fram"
+      ],
+      "cognate": "",
+      "etymology": "From fram, from *fram.",
+      "folkets": true
+    },
+    {
       "word": "framåt",
       "translation": "forward",
       "count": 2,
       "forms": [
-        "framåt"
+        "framåt",
+        "framåt-"
       ],
       "cognate": "",
       "etymology": "From åt, also written as separate words, attested as such (''fram åt'') in the 1541 Swedish Bible translation (Ezekiel 1:12).",
@@ -3247,6 +3351,28 @@
       ],
       "cognate": "",
       "etymology": "From fyrster, from fyrstr, from *furistaz.",
+      "folkets": true
+    },
+    {
+      "word": "ginnar",
+      "translation": "gives",
+      "count": 2,
+      "forms": [
+        "ginnar"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "idag",
+      "translation": "today",
+      "count": 2,
+      "forms": [
+        "idag"
+      ],
+      "cognate": "",
+      "etymology": "i dag.",
       "folkets": true
     },
     {
@@ -3338,17 +3464,6 @@
       "folkets": true
     },
     {
-      "word": "sedan",
-      "translation": "ago",
-      "count": 2,
-      "forms": [
-        "sedan"
-      ],
-      "cognate": "",
-      "etymology": "From siþan, from síðan. See Norwegian siden. Cognate with siþþan.",
-      "folkets": true
-    },
-    {
       "word": "som",
       "translation": "which",
       "count": 2,
@@ -3357,6 +3472,17 @@
       ],
       "cognate": "",
       "etymology": "From som or sum, in Runic inscriptions also ''sim'', same as sem, from sem. Also related to the prefix sam- and suffix -sam. Still in the Poetic Edda, the Icelandic ''sem'' is only used as a comparative particle, e.g. Há",
+      "folkets": true
+    },
+    {
+      "word": "särskilt",
+      "translation": "especially",
+      "count": 2,
+      "forms": [
+        "särskilt"
+      ],
+      "cognate": "",
+      "etymology": "",
       "folkets": true
     },
     {
@@ -3371,14 +3497,14 @@
       "folkets": true
     },
     {
-      "word": "uppskattningsvis",
-      "translation": "estimated",
+      "word": "ute",
+      "translation": "out",
       "count": 2,
       "forms": [
-        "uppskattningsvis"
+        "ute"
       ],
       "cognate": "",
-      "etymology": "vis",
+      "etymology": "From ūte, from úti.",
       "folkets": true
     },
     {
@@ -3389,17 +3515,6 @@
         "vart"
       ],
       "cognate": "var",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "vara",
-      "translation": "be",
-      "count": 2,
-      "forms": [
-        "var"
-      ],
-      "cognate": "are",
       "etymology": "",
       "folkets": true
     },
@@ -3514,6 +3629,17 @@
       "folkets": false
     },
     {
+      "word": "bort",
+      "translation": "away",
+      "count": 1,
+      "forms": [
+        "bort"
+      ],
+      "cognate": "",
+      "etymology": "From burt, brott, braut. See bryta for more.",
+      "folkets": true
+    },
+    {
       "word": "delvis",
       "translation": "partially",
       "count": 1,
@@ -3569,6 +3695,17 @@
       "folkets": true
     },
     {
+      "word": "egentligen",
+      "translation": "actually",
+      "count": 1,
+      "forms": [
+        "egentligen"
+      ],
+      "cognate": "",
+      "etymology": "en",
+      "folkets": true
+    },
+    {
       "word": "ekonomisk",
       "translation": "economic",
       "count": 1,
@@ -3577,6 +3714,17 @@
       ],
       "cognate": "economic",
       "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "emot",
+      "translation": "against",
+      "count": 1,
+      "forms": [
+        "emot"
+      ],
+      "cognate": "",
+      "etymology": "From i mot, equivalent to mot.",
       "folkets": true
     },
     {
@@ -3591,6 +3739,17 @@
       "folkets": true
     },
     {
+      "word": "eventuell",
+      "translation": "possibly",
+      "count": 1,
+      "forms": [
+        "eventuellt"
+      ],
+      "cognate": "eventual",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "exakt",
       "translation": "exactly",
       "count": 1,
@@ -3599,6 +3758,17 @@
       ],
       "cognate": "exactly",
       "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "facit",
+      "translation": "conclusion",
+      "count": 1,
+      "forms": [
+        "facit"
+      ],
+      "cognate": "",
+      "etymology": "facit.",
       "folkets": true
     },
     {
@@ -3624,14 +3794,14 @@
       "folkets": true
     },
     {
-      "word": "fram",
-      "translation": "forward",
+      "word": "framförallt",
+      "translation": "above all",
       "count": 1,
       "forms": [
-        "fram"
+        "framförallt"
       ],
       "cognate": "",
-      "etymology": "From fram, from *fram.",
+      "etymology": "",
       "folkets": true
     },
     {
@@ -3712,17 +3882,6 @@
       "folkets": true
     },
     {
-      "word": "horribel",
-      "translation": "horrible",
-      "count": 1,
-      "forms": [
-        "horribelt"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "häromda",
       "translation": "around here",
       "count": 1,
@@ -3756,14 +3915,14 @@
       "folkets": true
     },
     {
-      "word": "idag",
-      "translation": "today",
+      "word": "igång",
+      "translation": "started",
       "count": 1,
       "forms": [
-        "idag"
+        "igång"
       ],
       "cognate": "",
-      "etymology": "i dag.",
+      "etymology": "gång, also written as separate words",
       "folkets": true
     },
     {
@@ -3789,17 +3948,6 @@
       "folkets": true
     },
     {
-      "word": "innom",
-      "translation": "drop by",
-      "count": 1,
-      "forms": [
-        "innom"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "kort",
       "translation": "cards",
       "count": 1,
@@ -3808,6 +3956,17 @@
       ],
       "cognate": "short",
       "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "lika",
+      "translation": "equally",
+      "count": 1,
+      "forms": [
+        "lika"
+      ],
+      "cognate": "",
+      "etymology": "From líka, from *līkāną, *galīkāną.",
       "folkets": true
     },
     {
@@ -3899,6 +4058,17 @@
       "folkets": true
     },
     {
+      "word": "nämligen",
+      "translation": "namely",
+      "count": 1,
+      "forms": [
+        "nämligen"
+      ],
+      "cognate": "namely",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "närmyckat",
       "translation": "almost",
       "count": 1,
@@ -3932,17 +4102,6 @@
       "folkets": true
     },
     {
-      "word": "nåt",
-      "translation": "something",
-      "count": 1,
-      "forms": [
-        "nåt"
-      ],
-      "cognate": "",
-      "etymology": "From not, nut, from *hnōjaną, from *kneh₂-. Cognate with not, not, not, nót and Nut.not",
-      "folkets": true
-    },
-    {
       "word": "okej",
       "translation": "okay",
       "count": 1,
@@ -3952,6 +4111,17 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
+    },
+    {
+      "word": "om-",
+      "translation": "if-",
+      "count": 1,
+      "forms": [
+        "om-"
+      ],
+      "cognate": "",
+      "etymology": "From om.",
+      "folkets": false
     },
     {
       "word": "omedelbar",
@@ -3987,13 +4157,13 @@
       "folkets": true
     },
     {
-      "word": "politisk",
-      "translation": "political",
+      "word": "personligen",
+      "translation": "personally",
       "count": 1,
       "forms": [
-        "politiskt"
+        "personligen"
       ],
-      "cognate": "political",
+      "cognate": "personally",
       "etymology": "",
       "folkets": true
     },
@@ -4006,6 +4176,17 @@
       ],
       "cognate": "right",
       "etymology": "From rakr, related to rekja. Compare right.",
+      "folkets": true
+    },
+    {
+      "word": "redo",
+      "translation": "ready",
+      "count": 1,
+      "forms": [
+        "redo"
+      ],
+      "cognate": "",
+      "etymology": "From rēþo, probably from rēde, reide. Cognate with rede, reiður.",
       "folkets": true
     },
     {
@@ -4064,6 +4245,17 @@
       "folkets": true
     },
     {
+      "word": "säker",
+      "translation": "safe",
+      "count": 1,
+      "forms": [
+        "säkert"
+      ],
+      "cognate": "secure",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "säkerhetspolitisk",
       "translation": "security policy",
       "count": 1,
@@ -4071,7 +4263,7 @@
         "säkerhetspolitiskt"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "politisk.",
       "folkets": false
     },
     {
@@ -4163,6 +4355,17 @@
       "folkets": true
     },
     {
+      "word": "tydlig",
+      "translation": "clear",
+      "count": 1,
+      "forms": [
+        "tydligt"
+      ],
+      "cognate": "",
+      "etymology": "lig",
+      "folkets": true
+    },
+    {
       "word": "tydligen",
       "translation": "apparently",
       "count": 1,
@@ -4185,6 +4388,17 @@
       "folkets": true
     },
     {
+      "word": "uppskattningsvis",
+      "translation": "estimated",
+      "count": 1,
+      "forms": [
+        "uppskattningsvis"
+      ],
+      "cognate": "",
+      "etymology": "vis",
+      "folkets": true
+    },
+    {
       "word": "utomlands",
       "translation": "abroad",
       "count": 1,
@@ -4193,6 +4407,17 @@
       ],
       "cognate": "",
       "etymology": "From útanlands, equivalent to lands.",
+      "folkets": true
+    },
+    {
+      "word": "vara",
+      "translation": "be",
+      "count": 1,
+      "forms": [
+        "var"
+      ],
+      "cognate": "are",
+      "etymology": "",
       "folkets": true
     },
     {
@@ -4233,7 +4458,7 @@
     {
       "word": "vara",
       "translation": "be",
-      "count": 198,
+      "count": 203,
       "forms": [
         "var",
         "vara",
@@ -4248,7 +4473,7 @@
     {
       "word": "ha",
       "translation": "ha",
-      "count": 101,
+      "count": 99,
       "forms": [
         "ha",
         "hade",
@@ -4261,7 +4486,7 @@
     {
       "word": "skola",
       "translation": "school",
-      "count": 69,
+      "count": 70,
       "forms": [
         "ska",
         "skulle"
@@ -4273,7 +4498,7 @@
     {
       "word": "kunna",
       "translation": "be able to",
-      "count": 45,
+      "count": 48,
       "forms": [
         "kan",
         "kunde",
@@ -4287,7 +4512,7 @@
     {
       "word": "komma",
       "translation": "come",
-      "count": 21,
+      "count": 22,
       "forms": [
         "kommer"
       ],
@@ -4298,7 +4523,7 @@
     {
       "word": "få",
       "translation": "few",
-      "count": 13,
+      "count": 14,
       "forms": [
         "fick",
         "få",
@@ -4320,6 +4545,18 @@
       "folkets": true
     },
     {
+      "word": "behöva",
+      "translation": "need",
+      "count": 5,
+      "forms": [
+        "behöva",
+        "behöver"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "måste",
       "translation": "must",
       "count": 5,
@@ -4331,12 +4568,12 @@
       "folkets": true
     },
     {
-      "word": "behöva",
-      "translation": "need",
+      "word": "böra",
+      "translation": "should",
       "count": 4,
       "forms": [
-        "behöva",
-        "behöver"
+        "borde",
+        "bör"
       ],
       "cognate": "",
       "etymology": "",
@@ -4345,34 +4582,12 @@
     {
       "word": "bli",
       "translation": "become",
-      "count": 3,
+      "count": 2,
       "forms": [
         "bli"
       ],
       "cognate": "",
       "etymology": "bliva, from bliva, from blîven, from bilīvan, from *bilīban, from *bilībaną. varda completely in the present tense, and partly in the past tense.",
-      "folkets": true
-    },
-    {
-      "word": "böra",
-      "translation": "should",
-      "count": 3,
-      "forms": [
-        "borde"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "se",
-      "translation": "look",
-      "count": 1,
-      "forms": [
-        "såg"
-      ],
-      "cognate": "see",
-      "etymology": "",
       "folkets": true
     },
     {
@@ -4391,7 +4606,7 @@
     {
       "word": "och",
       "translation": "and",
-      "count": 146,
+      "count": 154,
       "forms": [
         "och"
       ],
@@ -4424,7 +4639,7 @@
     {
       "word": "utan",
       "translation": "without",
-      "count": 5,
+      "count": 6,
       "forms": [
         "utan"
       ],
@@ -4435,7 +4650,7 @@
     {
       "word": "både",
       "translation": "both",
-      "count": 4,
+      "count": 5,
       "forms": [
         "både"
       ],
@@ -4457,7 +4672,7 @@
     {
       "word": "så",
       "translation": "so",
-      "count": 2,
+      "count": 3,
       "forms": [
         "så"
       ],
@@ -4477,22 +4692,22 @@
       "folkets": true
     },
     {
-      "word": "tack",
-      "translation": "thank you",
+      "word": "joe",
+      "translation": "joe",
       "count": 1,
       "forms": [
-        "tack"
+        "joe"
       ],
-      "cognate": "ta",
+      "cognate": "",
       "etymology": "",
-      "folkets": true
+      "folkets": false
     }
   ],
   "DET": [
     {
       "word": "en",
       "translation": "one",
-      "count": 233,
+      "count": 236,
       "forms": [
         "de",
         "den",
@@ -4507,7 +4722,7 @@
     {
       "word": "någon",
       "translation": "someone",
-      "count": 13,
+      "count": 16,
       "forms": [
         "någon",
         "något",
@@ -4568,7 +4783,7 @@
     {
       "word": "nån",
       "translation": "somebody",
-      "count": 4,
+      "count": 3,
       "forms": [
         "nån"
       ],
@@ -4656,17 +4871,6 @@
       "folkets": true
     },
     {
-      "word": "oj",
-      "translation": "oops",
-      "count": 1,
-      "forms": [
-        "oj"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "ti",
       "translation": "ten",
       "count": 1,
@@ -4682,7 +4886,7 @@
     {
       "word": "trump",
       "translation": "trump",
-      "count": 31,
+      "count": 32,
       "forms": [
         "trump"
       ],
@@ -4693,7 +4897,7 @@
     {
       "word": "krig",
       "translation": "war",
-      "count": 25,
+      "count": 24,
       "forms": [
         "krig",
         "kriget",
@@ -4701,6 +4905,18 @@
       ],
       "cognate": "",
       "etymology": "krîch. Unlike and krig, the Swedish word has neutrum gender like kríggj.",
+      "folkets": true
+    },
+    {
+      "word": "demokrat",
+      "translation": "Democrat",
+      "count": 14,
+      "forms": [
+        "demokrater",
+        "demokraterna"
+      ],
+      "cognate": "democrat",
+      "etymology": "",
       "folkets": true
     },
     {
@@ -4720,24 +4936,12 @@
     {
       "word": "val",
       "translation": "choices",
-      "count": 13,
+      "count": 12,
       "forms": [
         "val",
         "valet"
       ],
       "cognate": "whale",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "demokrat",
-      "translation": "Democrat",
-      "count": 12,
-      "forms": [
-        "demokrater",
-        "demokraterna"
-      ],
-      "cognate": "democrat",
       "etymology": "",
       "folkets": true
     },
@@ -4754,15 +4958,27 @@
       "folkets": true
     },
     {
-      "word": "kandidat",
-      "translation": "candidate",
+      "word": "president",
+      "translation": "president",
       "count": 10,
       "forms": [
-        "kandidat",
-        "kandidater",
-        "kandidaterna"
+        "president",
+        "presidenten",
+        "presidenter"
       ],
-      "cognate": "candidate",
+      "cognate": "president",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "sätt",
+      "translation": "manner",
+      "count": 10,
+      "forms": [
+        "sätt",
+        "sättet"
+      ],
+      "cognate": "",
       "etymology": "",
       "folkets": true
     },
@@ -4789,6 +5005,43 @@
       ],
       "cognate": "",
       "etymology": "From Bild, from bilde, from biladi, bilidi. beläte.",
+      "folkets": true
+    },
+    {
+      "word": "exempel",
+      "translation": "example",
+      "count": 9,
+      "forms": [
+        "exempel"
+      ],
+      "cognate": "example",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "kandidat",
+      "translation": "candidate",
+      "count": 9,
+      "forms": [
+        "kandidat",
+        "kandidater",
+        "kandidaterna"
+      ],
+      "cognate": "candidate",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "land",
+      "translation": "country",
+      "count": 9,
+      "forms": [
+        "landet",
+        "länder",
+        "länderna"
+      ],
+      "cognate": "land",
+      "etymology": "",
       "folkets": true
     },
     {
@@ -4829,56 +5082,6 @@
       "folkets": true
     },
     {
-      "word": "president",
-      "translation": "president",
-      "count": 9,
-      "forms": [
-        "president",
-        "presidenten",
-        "presidenter"
-      ],
-      "cognate": "president",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "sätt",
-      "translation": "manner",
-      "count": 9,
-      "forms": [
-        "sätt",
-        "sättet"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "dag",
-      "translation": "day",
-      "count": 8,
-      "forms": [
-        "dag",
-        "dagar",
-        "dagarna",
-        "dagen"
-      ],
-      "cognate": "day",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "exempel",
-      "translation": "example",
-      "count": 8,
-      "forms": [
-        "exempel"
-      ],
-      "cognate": "example",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "kvinna",
       "translation": "woman",
       "count": 8,
@@ -4891,19 +5094,6 @@
       "folkets": true
     },
     {
-      "word": "land",
-      "translation": "country",
-      "count": 8,
-      "forms": [
-        "landet",
-        "länder",
-        "länderna"
-      ],
-      "cognate": "land",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "nation",
       "translation": "nation",
       "count": 8,
@@ -4911,6 +5101,19 @@
         "nationen"
       ],
       "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "tid",
+      "translation": "time",
+      "count": 8,
+      "forms": [
+        "tid",
+        "tiden",
+        "tider"
+      ],
+      "cognate": "time",
       "etymology": "",
       "folkets": true
     },
@@ -4951,19 +5154,6 @@
       "folkets": true
     },
     {
-      "word": "tid",
-      "translation": "time",
-      "count": 7,
-      "forms": [
-        "tid",
-        "tiden",
-        "tider"
-      ],
-      "cognate": "time",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "budskap",
       "translation": "message",
       "count": 6,
@@ -4986,54 +5176,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
-    },
-    {
-      "word": "gång",
-      "translation": "once",
-      "count": 6,
-      "forms": [
-        "gång",
-        "gången",
-        "gånger"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "läge",
-      "translation": "mode",
-      "count": 6,
-      "forms": [
-        "läge",
-        "läget"
-      ],
-      "cognate": "",
-      "etymology": "Related to ligga and lägga, like German Lage.",
-      "folkets": true
-    },
-    {
-      "word": "man",
-      "translation": "man",
-      "count": 6,
-      "forms": [
-        "man",
-        "män"
-      ],
-      "cognate": "man",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "rad",
-      "translation": "line",
-      "count": 6,
-      "forms": [
-        "rad"
-      ],
-      "cognate": "row",
-      "etymology": "From rǫð, from *radō.",
-      "folkets": true
     },
     {
       "word": "relation",
@@ -5059,28 +5201,17 @@
       "folkets": false
     },
     {
-      "word": "år",
-      "translation": "year",
-      "count": 6,
-      "forms": [
-        "år",
-        "åren",
-        "året"
-      ],
-      "cognate": "year",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "del",
-      "translation": "part",
+      "word": "dag",
+      "translation": "day",
       "count": 5,
       "forms": [
-        "del",
-        "delen"
+        "dag",
+        "dagar",
+        "dagarna",
+        "dagen"
       ],
-      "cognate": "",
-      "etymology": "From del, from dēl, deil, from dēl.",
+      "cognate": "day",
+      "etymology": "",
       "folkets": true
     },
     {
@@ -5095,6 +5226,19 @@
       "folkets": true
     },
     {
+      "word": "gång",
+      "translation": "once",
+      "count": 5,
+      "forms": [
+        "gång",
+        "gången",
+        "gånger"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "hus",
       "translation": "house",
       "count": 5,
@@ -5104,6 +5248,18 @@
       ],
       "cognate": "house",
       "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "läge",
+      "translation": "mode",
+      "count": 5,
+      "forms": [
+        "läge",
+        "läget"
+      ],
+      "cognate": "",
+      "etymology": "Related to ligga and lägga, like German Lage.",
       "folkets": true
     },
     {
@@ -5156,17 +5312,15 @@
       "folkets": true
     },
     {
-      "word": "slutsats",
-      "translation": "conclusion",
+      "word": "rad",
+      "translation": "line",
       "count": 5,
       "forms": [
-        "slutsatsen",
-        "slutsatser",
-        "slutsatserna"
+        "rad"
       ],
-      "cognate": "",
-      "etymology": "From sats. Cognate with slutsats, sluttsats, sluttsats, Schlusssatz, Schluss-Satz.",
-      "folkets": false
+      "cognate": "row",
+      "etymology": "From rǫð, from *radō.",
+      "folkets": true
     },
     {
       "word": "tidsram",
@@ -5190,6 +5344,19 @@
       "cognate": "",
       "etymology": "vila",
       "folkets": false
+    },
+    {
+      "word": "år",
+      "translation": "year",
+      "count": 5,
+      "forms": [
+        "år",
+        "åren",
+        "året"
+      ],
+      "cognate": "year",
+      "etymology": "",
+      "folkets": true
     },
     {
       "word": "administration",
@@ -5238,6 +5405,18 @@
       "folkets": false
     },
     {
+      "word": "man",
+      "translation": "man",
+      "count": 4,
+      "forms": [
+        "man",
+        "män"
+      ],
+      "cognate": "man",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "match",
       "translation": "match",
       "count": 4,
@@ -5248,6 +5427,18 @@
       ],
       "cognate": "match",
       "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "mätning",
+      "translation": "measurement",
+      "count": 4,
+      "forms": [
+        "mätningar",
+        "mätningarna"
+      ],
+      "cognate": "",
+      "etymology": "ning",
       "folkets": true
     },
     {
@@ -5264,6 +5455,17 @@
       "folkets": true
     },
     {
+      "word": "obama",
+      "translation": "obama",
+      "count": 4,
+      "forms": [
+        "obama"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "punktslista",
       "translation": "bullet list",
       "count": 4,
@@ -5276,14 +5478,16 @@
       "folkets": false
     },
     {
-      "word": "strategerna",
-      "translation": "the strategists",
+      "word": "slutsats",
+      "translation": "conclusion",
       "count": 4,
       "forms": [
-        "strategerna"
+        "slutsatsen",
+        "slutsatser",
+        "slutsatserna"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From sats. Cognate with slutsats, sluttsats, sluttsats, Schlusssatz, Schluss-Satz.",
       "folkets": false
     },
     {
@@ -5345,14 +5549,14 @@
       "folkets": false
     },
     {
-      "word": "demonstration",
-      "translation": "demonstration",
+      "word": "del",
+      "translation": "part",
       "count": 3,
       "forms": [
-        "demonstrationen"
+        "del"
       ],
-      "cognate": "demonstration",
-      "etymology": "",
+      "cognate": "",
+      "etymology": "From del, from dēl, deil, from dēl.",
       "folkets": true
     },
     {
@@ -5364,17 +5568,6 @@
         "diskussionen"
       ],
       "cognate": "discourse",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "entusiasm",
-      "translation": "enthusiasm",
-      "count": 3,
-      "forms": [
-        "entusiasm"
-      ],
-      "cognate": "enthusiasm",
       "etymology": "",
       "folkets": true
     },
@@ -5470,27 +5663,15 @@
       "folkets": true
     },
     {
-      "word": "mätning",
-      "translation": "measurement",
+      "word": "missnöje",
+      "translation": "dissatisfaction",
       "count": 3,
       "forms": [
-        "mätningar",
-        "mätningarna"
-      ],
-      "cognate": "",
-      "etymology": "ning",
-      "folkets": true
-    },
-    {
-      "word": "obama",
-      "translation": "obama",
-      "count": 3,
-      "forms": [
-        "obama"
+        "missnöje"
       ],
       "cognate": "",
       "etymology": "",
-      "folkets": false
+      "folkets": true
     },
     {
       "word": "par",
@@ -5500,6 +5681,17 @@
         "par"
       ],
       "cognate": "pair",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "person",
+      "translation": "person",
+      "count": 3,
+      "forms": [
+        "personer"
+      ],
+      "cognate": "person",
       "etymology": "",
       "folkets": true
     },
@@ -5550,6 +5742,29 @@
       "folkets": true
     },
     {
+      "word": "strateg",
+      "translation": "strategist",
+      "count": 3,
+      "forms": [
+        "strateger",
+        "strategerna"
+      ],
+      "cognate": "strategian",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "strategerna",
+      "translation": "the strategists",
+      "count": 3,
+      "forms": [
+        "strategerna"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "tillfälle",
       "translation": "occasion",
       "count": 3,
@@ -5567,8 +5782,8 @@
       "forms": [
         "timmar"
       ],
-      "cognate": "",
-      "etymology": "",
+      "cognate": "time",
+      "etymology": "From time, from tími, from *tīmô, from *tī-, from *dī-.",
       "folkets": true
     },
     {
@@ -5605,6 +5820,17 @@
       "cognate": "way",
       "etymology": "",
       "folkets": true
+    },
+    {
+      "word": "åsting",
+      "translation": "oozing",
+      "count": 3,
+      "forms": [
+        "åsting"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "analyser",
@@ -5674,6 +5900,18 @@
       "folkets": true
     },
     {
+      "word": "demokraterna",
+      "translation": "the democrats",
+      "count": 2,
+      "forms": [
+        "demokraterna",
+        "demokraterna-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "demonstranterna",
       "translation": "the protesters",
       "count": 2,
@@ -5685,38 +5923,37 @@
       "folkets": false
     },
     {
-      "word": "eftervalsanalys",
-      "translation": "post-election analysis",
+      "word": "demonstration",
+      "translation": "demonstration",
       "count": 2,
       "forms": [
-        "eftervalsanalysen"
+        "demonstrationen"
       ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "flygplats",
-      "translation": "airport",
-      "count": 2,
-      "forms": [
-        "flygplatser",
-        "flygplatserna"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "fotbolls-vm",
-      "translation": "soccer world cup",
-      "count": 2,
-      "forms": [
-        "fotbolls-vm"
-      ],
-      "cognate": "",
+      "cognate": "demonstration",
       "etymology": "",
       "folkets": true
+    },
+    {
+      "word": "eftervalsanalysen",
+      "translation": "the post-election analysis",
+      "count": 2,
+      "forms": [
+        "eftervalsanalysen-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "fotbollsvm",
+      "translation": "football championship",
+      "count": 2,
+      "forms": [
+        "fotbollsvm"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "fält",
@@ -5774,6 +6011,17 @@
       "folkets": true
     },
     {
+      "word": "iran-kriget",
+      "translation": "the iran war",
+      "count": 2,
+      "forms": [
+        "iran-kriget"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "kamera",
       "translation": "camera",
       "count": 2,
@@ -5802,28 +6050,6 @@
       "count": 2,
       "forms": [
         "kristendman"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "kristenman",
-      "translation": "Christian man",
-      "count": 2,
-      "forms": [
-        "kristenman"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "kriteri",
-      "translation": "criterion",
-      "count": 2,
-      "forms": [
-        "kriterierna"
       ],
       "cognate": "",
       "etymology": "",
@@ -5890,7 +6116,7 @@
       "translation": "laying",
       "count": 2,
       "forms": [
-        "läggning"
+        "läggning-"
       ],
       "cognate": "",
       "etymology": "",
@@ -5913,6 +6139,17 @@
       "count": 2,
       "forms": [
         "mail"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "man-",
+      "translation": "man-",
+      "count": 2,
+      "forms": [
+        "man-"
       ],
       "cognate": "",
       "etymology": "",
@@ -5942,17 +6179,6 @@
       "folkets": false
     },
     {
-      "word": "missnöje",
-      "translation": "dissatisfaction",
-      "count": 2,
-      "forms": [
-        "missnöje"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "mottugg",
       "translation": "counter bite",
       "count": 2,
@@ -5979,20 +6205,10 @@
       "translation": "diversity",
       "count": 2,
       "forms": [
-        "mångfald"
+        "mångfald",
+        "mångfald-"
       ],
       "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "namn",
-      "translation": "name",
-      "count": 2,
-      "forms": [
-        "namn"
-      ],
-      "cognate": "name",
       "etymology": "",
       "folkets": true
     },
@@ -6054,17 +6270,6 @@
       "folkets": true
     },
     {
-      "word": "person",
-      "translation": "person",
-      "count": 2,
-      "forms": [
-        "personer"
-      ],
-      "cognate": "person",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "presidentkandidat",
       "translation": "presidential candidate",
       "count": 2,
@@ -6073,18 +6278,17 @@
         "presidentkandidater"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "kandidat.",
       "folkets": false
     },
     {
-      "word": "protest",
-      "translation": "protest",
+      "word": "process",
+      "translation": "process",
       "count": 2,
       "forms": [
-        "protest",
-        "protester"
+        "process"
       ],
-      "cognate": "protest",
+      "cognate": "process",
       "etymology": "",
       "folkets": true
     },
@@ -6164,7 +6368,7 @@
         "skämt"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From skæmt, from skæmta, whence also modern skämta. Cognate with skæmt, skjemt and skjemt.",
       "folkets": true
     },
     {
@@ -6177,6 +6381,17 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
+    },
+    {
+      "word": "sora",
+      "translation": "sora",
+      "count": 2,
+      "forms": [
+        "sora"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "spekulation",
@@ -6201,17 +6416,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
-    },
-    {
-      "word": "strateg",
-      "translation": "strategist",
-      "count": 2,
-      "forms": [
-        "strateger"
-      ],
-      "cognate": "strategian",
-      "etymology": "",
-      "folkets": false
     },
     {
       "word": "svensk",
@@ -6246,6 +6450,17 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
+    },
+    {
+      "word": "tack",
+      "translation": "thank you",
+      "count": 2,
+      "forms": [
+        "tack"
+      ],
+      "cognate": "ta",
+      "etymology": "",
+      "folkets": true
     },
     {
       "word": "tonläge",
@@ -6314,6 +6529,17 @@
       "folkets": true
     },
     {
+      "word": "uppträdande",
+      "translation": "performance",
+      "count": 2,
+      "forms": [
+        "uppträdande"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "urval",
       "translation": "selection",
       "count": 2,
@@ -6338,7 +6564,7 @@
     },
     {
       "word": "utpressningssituation",
-      "translation": "extortion situation",
+      "translation": "blackmail situation",
       "count": 2,
       "forms": [
         "utpressningssituation"
@@ -6382,22 +6608,22 @@
       "folkets": true
     },
     {
-      "word": "öst",
-      "translation": "east",
-      "count": 2,
-      "forms": [
-        "östen"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "2000-tal",
       "translation": "2000s",
       "count": 1,
       "forms": [
         "2000-talet"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "2024-",
+      "translation": "2024-",
+      "count": 1,
+      "forms": [
+        "2024-"
       ],
       "cognate": "",
       "etymology": "",
@@ -6426,22 +6652,11 @@
       "folkets": false
     },
     {
-      "word": "aktie",
-      "translation": "share",
+      "word": "aktieosartikel",
+      "translation": "stock article",
       "count": 1,
       "forms": [
-        "aktie"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "aktiosartikel",
-      "translation": "stock item",
-      "count": 1,
-      "forms": [
-        "aktiosartikeln"
+        "aktieosartikeln"
       ],
       "cognate": "",
       "etymology": "",
@@ -6679,22 +6894,22 @@
       "folkets": false
     },
     {
-      "word": "biden",
-      "translation": "biden",
+      "word": "biden-regering",
+      "translation": "biden government",
       "count": 1,
       "forms": [
-        "biden"
+        "biden-regeringen"
       ],
       "cognate": "",
       "etymology": "",
       "folkets": false
     },
     {
-      "word": "biden-regering",
-      "translation": "biden government",
+      "word": "bidens",
+      "translation": "biden's",
       "count": 1,
       "forms": [
-        "biden-regeringen"
+        "bidens"
       ],
       "cognate": "",
       "etymology": "",
@@ -6756,6 +6971,17 @@
       "folkets": true
     },
     {
+      "word": "buttigieg",
+      "translation": "buttigieg",
+      "count": 1,
+      "forms": [
+        "buttigieg"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "bäring",
       "translation": "bearing",
       "count": 1,
@@ -6778,6 +7004,17 @@
       "folkets": false
     },
     {
+      "word": "clinton-",
+      "translation": "clinton-",
+      "count": 1,
+      "forms": [
+        "clinton-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "cocktail-part",
       "translation": "cocktail party",
       "count": 1,
@@ -6789,22 +7026,33 @@
       "folkets": false
     },
     {
-      "word": "cocktailpart",
+      "word": "cocktailparti",
       "translation": "cocktail party",
       "count": 1,
       "forms": [
-        "cocktailparten"
+        "cocktailpartin"
       ],
       "cognate": "",
       "etymology": "",
       "folkets": false
     },
     {
-      "word": "cpac-",
+      "word": "cpac",
       "translation": "cpac",
       "count": 1,
       "forms": [
-        "cpac-"
+        "cpac"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "dag-",
+      "translation": "day-",
+      "count": 1,
+      "forms": [
+        "dag-"
       ],
       "cognate": "",
       "etymology": "",
@@ -6831,17 +7079,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
-    },
-    {
-      "word": "danni",
-      "translation": "danni",
-      "count": 1,
-      "forms": [
-        "danni"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
     },
     {
       "word": "datum",
@@ -6877,33 +7114,11 @@
       "folkets": false
     },
     {
-      "word": "dem-",
-      "translation": "them-",
-      "count": 1,
-      "forms": [
-        "dem-"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "demokrater",
       "translation": "democrats",
       "count": 1,
       "forms": [
         "demokratern"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "demokraterna",
-      "translation": "the democrats",
-      "count": 1,
-      "forms": [
-        "demokraterna"
       ],
       "cognate": "",
       "etymology": "",
@@ -6930,6 +7145,28 @@
       "cognate": "demonstrator",
       "etymology": "",
       "folkets": true
+    },
+    {
+      "word": "demonstrationen",
+      "translation": "the demonstration",
+      "count": 1,
+      "forms": [
+        "demonstrationen-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "devans",
+      "translation": "theirs",
+      "count": 1,
+      "forms": [
+        "devans"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "donald",
@@ -6987,6 +7224,17 @@
       "folkets": true
     },
     {
+      "word": "egentligen-",
+      "translation": "actually-",
+      "count": 1,
+      "forms": [
+        "egentligen-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "elektor",
       "translation": "elector",
       "count": 1,
@@ -6994,7 +7242,7 @@
         "elektorer"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "elector.",
       "folkets": false
     },
     {
@@ -7020,22 +7268,33 @@
       "folkets": true
     },
     {
-      "word": "engagemta",
-      "translation": "engaged",
+      "word": "engagerade-",
+      "translation": "engaged-",
       "count": 1,
       "forms": [
-        "engagemta"
+        "engagerade-"
       ],
       "cognate": "",
       "etymology": "",
       "folkets": false
     },
     {
-      "word": "epsteinfilerna",
+      "word": "entusjasm",
+      "translation": "enthusiasm",
+      "count": 1,
+      "forms": [
+        "entusjasm"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "epstein-filerna",
       "translation": "the epstein files",
       "count": 1,
       "forms": [
-        "epsteinfilerna"
+        "epstein-filerna"
       ],
       "cognate": "",
       "etymology": "",
@@ -7073,17 +7332,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
-    },
-    {
-      "word": "facit",
-      "translation": "conclusion",
-      "count": 1,
-      "forms": [
-        "facit"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
     },
     {
       "word": "fakebröst",
@@ -7229,6 +7477,28 @@
       "folkets": true
     },
     {
+      "word": "flygplats",
+      "translation": "airport",
+      "count": 1,
+      "forms": [
+        "flygplatserna"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "flygplatser",
+      "translation": "airports",
+      "count": 1,
+      "forms": [
+        "flygplatser-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "flygvapen",
       "translation": "air force",
       "count": 1,
@@ -7238,6 +7508,17 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
+    },
+    {
+      "word": "form",
+      "translation": "form",
+      "count": 1,
+      "forms": [
+        "form"
+      ],
+      "cognate": "form",
+      "etymology": "",
+      "folkets": true
     },
     {
       "word": "format",
@@ -7268,20 +7549,20 @@
       "forms": [
         "fort"
       ],
-      "cognate": "",
-      "etymology": "",
+      "cognate": "away",
+      "etymology": "Attested since 1609 according to ''Nationalencyklopedins Ordbok'', from fôrt, which is used adverbially (forts) with the same meaning in Low German, from fort, from forth. Related to för, före and forsla.",
       "folkets": true
     },
     {
-      "word": "fotbollsv",
-      "translation": "soccer v",
+      "word": "fotbolls-vm",
+      "translation": "soccer world cup",
       "count": 1,
       "forms": [
-        "fotbollsven"
+        "fotbolls-vm"
       ],
       "cognate": "",
       "etymology": "",
-      "folkets": false
+      "folkets": true
     },
     {
       "word": "foto",
@@ -7311,17 +7592,6 @@
       "count": 1,
       "forms": [
         "fox"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "fram-",
-      "translation": "forward",
-      "count": 1,
-      "forms": [
-        "fram-"
       ],
       "cognate": "",
       "etymology": "",
@@ -7372,11 +7642,22 @@
       "folkets": true
     },
     {
-      "word": "färd-",
-      "translation": "travel",
+      "word": "fungerara",
+      "translation": "function",
       "count": 1,
       "forms": [
-        "färd-"
+        "fungerar-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "funkaa",
+      "translation": "it works",
+      "count": 1,
+      "forms": [
+        "funka-"
       ],
       "cognate": "",
       "etymology": "",
@@ -7392,17 +7673,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
-    },
-    {
-      "word": "föd",
-      "translation": "birth",
-      "count": 1,
-      "forms": [
-        "föder"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
     },
     {
       "word": "följdfråga",
@@ -7471,11 +7741,11 @@
       "folkets": true
     },
     {
-      "word": "gasarkrige",
-      "translation": "gas war",
+      "word": "gaza-kriget",
+      "translation": "the gaza war",
       "count": 1,
       "forms": [
-        "gasarkriget"
+        "gaza-kriget"
       ],
       "cognate": "",
       "etymology": "",
@@ -7491,6 +7761,17 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
+    },
+    {
+      "word": "ginnar",
+      "translation": "gives",
+      "count": 1,
+      "forms": [
+        "ginnar"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "glastak",
@@ -7555,7 +7836,7 @@
         "helgens"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "helgr.",
       "folkets": true
     },
     {
@@ -7568,6 +7849,17 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
+    },
+    {
+      "word": "heterosexuell",
+      "translation": "heterosexual",
+      "count": 1,
+      "forms": [
+        "heterosexuell-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
     },
     {
       "word": "historia",
@@ -7614,15 +7906,26 @@
       "folkets": false
     },
     {
-      "word": "homosexualitet",
+      "word": "homosexuellitet",
       "translation": "homosexuality",
       "count": 1,
       "forms": [
-        "homosexualitet"
+        "homosexuellitet"
       ],
-      "cognate": "homosexuality",
+      "cognate": "",
       "etymology": "",
       "folkets": false
+    },
+    {
+      "word": "honom",
+      "translation": "him",
+      "count": 1,
+      "forms": [
+        "honom-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
     },
     {
       "word": "hormostund",
@@ -7713,15 +8016,15 @@
       "folkets": false
     },
     {
-      "word": "igen",
-      "translation": "again",
+      "word": "ice-utvisning",
+      "translation": "ice expulsion",
       "count": 1,
       "forms": [
-        "igen-"
+        "ice-utvisningarna"
       ],
-      "cognate": "again",
+      "cognate": "",
       "etymology": "",
-      "folkets": true
+      "folkets": false
     },
     {
       "word": "ilja",
@@ -7729,17 +8032,6 @@
       "count": 1,
       "forms": [
         "iljan"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "impeachment-process",
-      "translation": "impeachment process",
-      "count": 1,
-      "forms": [
-        "impeachment-process"
       ],
       "cognate": "",
       "etymology": "",
@@ -7856,17 +8148,6 @@
       "folkets": false
     },
     {
-      "word": "iran-kriget",
-      "translation": "the iran war",
-      "count": 1,
-      "forms": [
-        "iran-kriget"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "iran-misiler",
       "translation": "iran missiles",
       "count": 1,
@@ -7900,17 +8181,6 @@
       "folkets": false
     },
     {
-      "word": "irankrig",
-      "translation": "Iran war",
-      "count": 1,
-      "forms": [
-        "irankriget"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "jättedarga",
       "translation": "very bad",
       "count": 1,
@@ -7922,11 +8192,11 @@
       "folkets": false
     },
     {
-      "word": "kamalen",
-      "translation": "the kamal",
+      "word": "kandidater",
+      "translation": "candidates",
       "count": 1,
       "forms": [
-        "kamala"
+        "kandidater-"
       ],
       "cognate": "",
       "etymology": "",
@@ -7964,17 +8234,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
-    },
-    {
-      "word": "kindust",
-      "translation": "kind dust",
-      "count": 1,
-      "forms": [
-        "kindusterna"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
     },
     {
       "word": "kings",
@@ -8120,6 +8379,61 @@
       "folkets": false
     },
     {
+      "word": "kristn",
+      "translation": "Christian",
+      "count": 1,
+      "forms": [
+        "kristn-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "kristn-",
+      "translation": "christian",
+      "count": 1,
+      "forms": [
+        "kristn-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "kristna",
+      "translation": "Christians",
+      "count": 1,
+      "forms": [
+        "kristn-"
+      ],
+      "cognate": "",
+      "etymology": "kristna or a",
+      "folkets": false
+    },
+    {
+      "word": "kriteri",
+      "translation": "criterion",
+      "count": 1,
+      "forms": [
+        "kriterierna"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "kriterierna-",
+      "translation": "the criteria-",
+      "count": 1,
+      "forms": [
+        "kriterierna-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "kronprinsessa",
       "translation": "crown princess",
       "count": 1,
@@ -8175,17 +8489,6 @@
       "folkets": true
     },
     {
-      "word": "landet",
-      "translation": "the country",
-      "count": 1,
-      "forms": [
-        "landet-"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "ledare",
       "translation": "leader",
       "count": 1,
@@ -8230,15 +8533,15 @@
       "folkets": true
     },
     {
-      "word": "lyssnare-",
-      "translation": "listener-",
+      "word": "lyssnare",
+      "translation": "listener",
       "count": 1,
       "forms": [
-        "lyssnare-"
+        "lyssnare"
       ],
       "cognate": "",
-      "etymology": "",
-      "folkets": false
+      "etymology": "-are",
+      "folkets": true
     },
     {
       "word": "lyssnarna",
@@ -8252,15 +8555,15 @@
       "folkets": false
     },
     {
-      "word": "låt",
-      "translation": "song",
+      "word": "läge-",
+      "translation": "mode-",
       "count": 1,
       "forms": [
-        "låt"
+        "läge-"
       ],
       "cognate": "",
       "etymology": "",
-      "folkets": true
+      "folkets": false
     },
     {
       "word": "majoritet",
@@ -8285,15 +8588,26 @@
       "folkets": false
     },
     {
-      "word": "mandatperiod-",
-      "translation": "term of office-",
+      "word": "mammdani",
+      "translation": "mammdani",
       "count": 1,
       "forms": [
-        "mandatperiod-"
+        "mammdani"
       ],
       "cognate": "",
       "etymology": "",
       "folkets": false
+    },
+    {
+      "word": "mandatperiod",
+      "translation": "term of office",
+      "count": 1,
+      "forms": [
+        "mandatperiod"
+      ],
+      "cognate": "",
+      "etymology": "period",
+      "folkets": true
     },
     {
       "word": "manus",
@@ -8340,17 +8654,6 @@
       "folkets": false
     },
     {
-      "word": "me",
-      "translation": "me",
-      "count": 1,
-      "forms": [
-        "mena"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "medelåldersman",
       "translation": "middle aged man",
       "count": 1,
@@ -8382,6 +8685,17 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
+    },
+    {
+      "word": "mena",
+      "translation": "mean",
+      "count": 1,
+      "forms": [
+        "mena"
+      ],
+      "cognate": "",
+      "etymology": "From mena, from mēnen, meinen (compare meina, mene), from mēnian, from *mainijaną, from *mein-.",
+      "folkets": true
     },
     {
       "word": "migrant",
@@ -8494,17 +8808,6 @@
       "folkets": false
     },
     {
-      "word": "mitt",
-      "translation": "mine",
-      "count": 1,
-      "forms": [
-        "mitten"
-      ],
-      "cognate": "mid",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "mix",
       "translation": "mix",
       "count": 1,
@@ -8571,15 +8874,26 @@
       "folkets": true
     },
     {
-      "word": "mörkreta",
-      "translation": "darken",
+      "word": "mörker",
+      "translation": "darkness",
       "count": 1,
       "forms": [
-        "mörkret-"
+        "mörkret"
       ],
       "cognate": "",
       "etymology": "",
-      "folkets": false
+      "folkets": true
+    },
+    {
+      "word": "namn",
+      "translation": "name",
+      "count": 1,
+      "forms": [
+        "namn"
+      ],
+      "cognate": "name",
+      "etymology": "",
+      "folkets": true
     },
     {
       "word": "nato-allierad",
@@ -8714,17 +9028,6 @@
       "folkets": true
     },
     {
-      "word": "nånting",
-      "translation": "something",
-      "count": 1,
-      "forms": [
-        "nånting"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "o'rubbe",
       "translation": "o'rubbe",
       "count": 1,
@@ -8824,15 +9127,26 @@
       "folkets": false
     },
     {
-      "word": "oppositionen-",
-      "translation": "the opposition-",
+      "word": "oma",
+      "translation": "own",
       "count": 1,
       "forms": [
-        "oppositionen-"
+        "om-"
       ],
       "cognate": "",
       "etymology": "",
       "folkets": false
+    },
+    {
+      "word": "opposition",
+      "translation": "opposition",
+      "count": 1,
+      "forms": [
+        "oppositionen"
+      ],
+      "cognate": "opposition",
+      "etymology": "",
+      "folkets": true
     },
     {
       "word": "oppositionsparti",
@@ -8927,18 +9241,18 @@
       "translation": "parade demonstration",
       "count": 1,
       "forms": [
-        "parademonstration"
+        "parademonstrationen"
       ],
       "cognate": "",
       "etymology": "",
       "folkets": false
     },
     {
-      "word": "partiet",
-      "translation": "the party",
+      "word": "partieta",
+      "translation": "partial",
       "count": 1,
       "forms": [
-        "partiet"
+        "partiet-"
       ],
       "cognate": "",
       "etymology": "",
@@ -8954,17 +9268,6 @@
       "cognate": "pass",
       "etymology": "",
       "folkets": true
-    },
-    {
-      "word": "passdelenktion",
-      "translation": "passport deletion",
-      "count": 1,
-      "forms": [
-        "passdelenktionen"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
     },
     {
       "word": "pengar",
@@ -9121,17 +9424,6 @@
       "folkets": true
     },
     {
-      "word": "process",
-      "translation": "process",
-      "count": 1,
-      "forms": [
-        "process"
-      ],
-      "cognate": "process",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "producent",
       "translation": "producer",
       "count": 1,
@@ -9143,11 +9435,33 @@
       "folkets": true
     },
     {
+      "word": "protest",
+      "translation": "protest",
+      "count": 1,
+      "forms": [
+        "protester"
+      ],
+      "cognate": "protest",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "protesta",
       "translation": "protest",
       "count": 1,
       "forms": [
         "protesta"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "public",
+      "translation": "public",
+      "count": 1,
+      "forms": [
+        "public"
       ],
       "cognate": "",
       "etymology": "",
@@ -9176,15 +9490,15 @@
       "folkets": false
     },
     {
-      "word": "radio",
-      "translation": "radio",
+      "word": "rad-",
+      "translation": "row-",
       "count": 1,
       "forms": [
-        "radio"
+        "rad-"
       ],
-      "cognate": "radio",
+      "cognate": "",
       "etymology": "",
-      "folkets": true
+      "folkets": false
     },
     {
       "word": "rannkrige",
@@ -9220,15 +9534,15 @@
       "folkets": true
     },
     {
-      "word": "regime-",
-      "translation": "regime-",
+      "word": "regim",
+      "translation": "regime",
       "count": 1,
       "forms": [
-        "regime-"
+        "regimen"
       ],
       "cognate": "",
-      "etymology": "",
-      "folkets": false
+      "etymology": "régime.",
+      "folkets": true
     },
     {
       "word": "regissgivingsskifte",
@@ -9262,6 +9576,17 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
+    },
+    {
+      "word": "resonerade-",
+      "translation": "reasoned-",
+      "count": 1,
+      "forms": [
+        "resonerade-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "revolutionsgördet",
@@ -9306,6 +9631,17 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
+    },
+    {
+      "word": "rysk",
+      "translation": "Russian",
+      "count": 1,
+      "forms": [
+        "ryska"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
     },
     {
       "word": "ryssland",
@@ -9385,17 +9721,6 @@
       "folkets": true
     },
     {
-      "word": "service",
-      "translation": "service",
-      "count": 1,
-      "forms": [
-        "service"
-      ],
-      "cognate": "service",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "skede",
       "translation": "stage",
       "count": 1,
@@ -9429,15 +9754,15 @@
       "folkets": false
     },
     {
-      "word": "skyltara",
-      "translation": "signs",
+      "word": "skylt",
+      "translation": "sign",
       "count": 1,
       "forms": [
-        "skyltar-"
+        "skyltar"
       ],
       "cognate": "",
       "etymology": "",
-      "folkets": false
+      "folkets": true
     },
     {
       "word": "skärg",
@@ -9583,22 +9908,22 @@
       "folkets": true
     },
     {
+      "word": "startarkrig",
+      "translation": "starting war",
+      "count": 1,
+      "forms": [
+        "startarkrig"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "startfält",
       "translation": "starting field",
       "count": 1,
       "forms": [
         "startfält"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "stena",
-      "translation": "stone",
-      "count": 1,
-      "forms": [
-        "stena"
       ],
       "cognate": "",
       "etymology": "",
@@ -9656,7 +9981,7 @@
         "ställe"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From stellen, from stellian. Cf Stelle.",
       "folkets": true
     },
     {
@@ -9682,6 +10007,28 @@
       "folkets": false
     },
     {
+      "word": "supportra",
+      "translation": "support",
+      "count": 1,
+      "forms": [
+        "supportrar"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "svar",
+      "translation": "answer",
+      "count": 1,
+      "forms": [
+        "svar"
+      ],
+      "cognate": "answer",
+      "etymology": "From svar.",
+      "folkets": true
+    },
+    {
       "word": "svenstid",
       "translation": "bachelor party",
       "count": 1,
@@ -9700,17 +10047,6 @@
         "syftet"
       ],
       "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "symbol",
-      "translation": "symbol",
-      "count": 1,
-      "forms": [
-        "symboler"
-      ],
-      "cognate": "symbol",
       "etymology": "",
       "folkets": true
     },
@@ -9779,17 +10115,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
-    },
-    {
-      "word": "tack",
-      "translation": "thank you",
-      "count": 1,
-      "forms": [
-        "tack"
-      ],
-      "cognate": "ta",
-      "etymology": "",
-      "folkets": true
     },
     {
       "word": "taktik",
@@ -9869,6 +10194,17 @@
       "folkets": true
     },
     {
+      "word": "tid-",
+      "translation": "time-",
+      "count": 1,
+      "forms": [
+        "tid-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "tidning",
       "translation": "newspaper",
       "count": 1,
@@ -9885,17 +10221,6 @@
       "count": 1,
       "forms": [
         "tidsrahmen"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "till-",
-      "translation": "to-",
-      "count": 1,
-      "forms": [
-        "till-"
       ],
       "cognate": "",
       "etymology": "",
@@ -10001,15 +10326,15 @@
       "folkets": true
     },
     {
-      "word": "ukraina-",
-      "translation": "ukraine",
+      "word": "ukraina",
+      "translation": "Ukraine",
       "count": 1,
       "forms": [
-        "ukraina-"
+        "ukraina"
       ],
       "cognate": "",
       "etymology": "",
-      "folkets": false
+      "folkets": true
     },
     {
       "word": "ultimatum",
@@ -10056,17 +10381,6 @@
       "folkets": true
     },
     {
-      "word": "uppträdande",
-      "translation": "performance",
-      "count": 1,
-      "forms": [
-        "uppträdande"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "usa",
       "translation": "usa",
       "count": 1,
@@ -10100,6 +10414,17 @@
       "folkets": false
     },
     {
+      "word": "utdesservering",
+      "translation": "outdoor dining",
+      "count": 1,
+      "forms": [
+        "utdesservering"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "utdrag",
       "translation": "extract",
       "count": 1,
@@ -10109,17 +10434,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
-    },
-    {
-      "word": "utreservering",
-      "translation": "reservation",
-      "count": 1,
-      "forms": [
-        "utreservering"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
     },
     {
       "word": "utrymme",
@@ -10153,6 +10467,28 @@
       "cognate": "watch",
       "etymology": "",
       "folkets": true
+    },
+    {
+      "word": "val-",
+      "translation": "election",
+      "count": 1,
+      "forms": [
+        "val-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "valet-",
+      "translation": "the choice-",
+      "count": 1,
+      "forms": [
+        "valet-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "valförlust",
@@ -10210,22 +10546,22 @@
       "folkets": true
     },
     {
-      "word": "vice-president",
-      "translation": "vice president",
+      "word": "vice-presidentkandidat",
+      "translation": "vice presidential candidate",
       "count": 1,
       "forms": [
-        "vice-president"
+        "vice-presidentkandidat"
       ],
       "cognate": "",
       "etymology": "",
       "folkets": false
     },
     {
-      "word": "vice-presidentkandidat",
-      "translation": "vice presidential candidate",
+      "word": "vidare-",
+      "translation": "further-",
       "count": 1,
       "forms": [
-        "vice-presidentkandidat"
+        "vidare-"
       ],
       "cognate": "",
       "etymology": "",
@@ -10287,11 +10623,33 @@
       "folkets": false
     },
     {
+      "word": "välj",
+      "translation": "choose",
+      "count": 1,
+      "forms": [
+        "väljerna"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "väljagrupp",
       "translation": "constituency",
       "count": 1,
       "forms": [
         "väljagrupper"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "väljarna-",
+      "translation": "the voters-",
+      "count": 1,
+      "forms": [
+        "väljarna-"
       ],
       "cognate": "",
       "etymology": "",
@@ -10331,17 +10689,6 @@
       "folkets": true
     },
     {
-      "word": "väst",
-      "translation": "west",
-      "count": 1,
-      "forms": [
-        "väst"
-      ],
-      "cognate": "vest",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "våld",
       "translation": "violence",
       "count": 1,
@@ -10375,11 +10722,11 @@
       "folkets": false
     },
     {
-      "word": "ägisutvisning",
-      "translation": "ownership expulsion",
+      "word": "åren",
+      "translation": "the years",
       "count": 1,
       "forms": [
-        "ägisutvisningarna"
+        "åren-"
       ],
       "cognate": "",
       "etymology": "",
@@ -10395,28 +10742,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
-    },
-    {
-      "word": "åst",
-      "translation": "eat",
-      "count": 1,
-      "forms": [
-        "åsten"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "åsten",
-      "translation": "the ash",
-      "count": 1,
-      "forms": [
-        "åsten"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
     },
     {
       "word": "återig",
@@ -10441,6 +10766,28 @@
       "folkets": false
     },
     {
+      "word": "öst",
+      "translation": "east",
+      "count": 1,
+      "forms": [
+        "östen"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "östernas",
+      "translation": "of the East",
+      "count": 1,
+      "forms": [
+        "östernas"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "överhuvudtaget",
       "translation": "at all",
       "count": 1,
@@ -10456,7 +10803,7 @@
     {
       "word": "inte",
       "translation": "not",
-      "count": 77,
+      "count": 81,
       "forms": [
         "inte"
       ],
@@ -10467,7 +10814,7 @@
     {
       "word": "att",
       "translation": "that",
-      "count": 73,
+      "count": 78,
       "forms": [
         "att"
       ],
@@ -10480,7 +10827,7 @@
     {
       "word": "den",
       "translation": "it",
-      "count": 277,
+      "count": 281,
       "forms": [
         "den",
         "dess",
@@ -10493,7 +10840,7 @@
     {
       "word": "som",
       "translation": "which",
-      "count": 101,
+      "count": 106,
       "forms": [
         "som"
       ],
@@ -10504,7 +10851,7 @@
     {
       "word": "han",
       "translation": "he",
-      "count": 68,
+      "count": 65,
       "forms": [
         "han",
         "hans",
@@ -10517,7 +10864,7 @@
     {
       "word": "jag",
       "translation": "i",
-      "count": 63,
+      "count": 62,
       "forms": [
         "jag",
         "mig",
@@ -10531,7 +10878,7 @@
     {
       "word": "vi",
       "translation": "we",
-      "count": 63,
+      "count": 62,
       "forms": [
         "oss",
         "vi",
@@ -10557,7 +10904,7 @@
     {
       "word": "man",
       "translation": "man",
-      "count": 43,
+      "count": 45,
       "forms": [
         "en",
         "man"
@@ -10569,7 +10916,7 @@
     {
       "word": "sig",
       "translation": "themselves",
-      "count": 36,
+      "count": 35,
       "forms": [
         "sig",
         "sin",
@@ -10583,9 +10930,21 @@
     {
       "word": "vad",
       "translation": "what",
-      "count": 31,
+      "count": 30,
       "forms": [
         "vad"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "hon",
+      "translation": "she",
+      "count": 22,
+      "forms": [
+        "hennes",
+        "hon"
       ],
       "cognate": "",
       "etymology": "",
@@ -10604,21 +10963,9 @@
       "folkets": true
     },
     {
-      "word": "hon",
-      "translation": "she",
-      "count": 21,
-      "forms": [
-        "hennes",
-        "hon"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "ni",
       "translation": "you",
-      "count": 12,
+      "count": 10,
       "forms": [
         "ni"
       ],
@@ -10663,18 +11010,6 @@
       "folkets": true
     },
     {
-      "word": "all",
-      "translation": "all",
-      "count": 4,
-      "forms": [
-        "alla",
-        "allt"
-      ],
-      "cognate": "",
-      "etymology": "From alder, from allr, from *allaz, from *h₂el-.",
-      "folkets": true
-    },
-    {
       "word": "en",
       "translation": "one",
       "count": 4,
@@ -10684,6 +11019,17 @@
       ],
       "cognate": "an",
       "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "nåt",
+      "translation": "something",
+      "count": 4,
+      "forms": [
+        "nåt"
+      ],
+      "cognate": "",
+      "etymology": "From not, nut, from *hnōjaną, from *kneh₂-. Cognate with not, not, not, nót and Nut.not",
       "folkets": true
     },
     {
@@ -10698,25 +11044,38 @@
       "folkets": true
     },
     {
-      "word": "många",
-      "translation": "many",
-      "count": 3,
+      "word": "vilken",
+      "translation": "which one",
+      "count": 4,
       "forms": [
-        "många"
+        "vilka",
+        "vilket"
       ],
-      "cognate": "many",
+      "cognate": "",
       "etymology": "",
       "folkets": true
     },
     {
-      "word": "nåt",
-      "translation": "something",
+      "word": "all",
+      "translation": "all",
       "count": 3,
       "forms": [
-        "nåt"
+        "alla",
+        "allt"
       ],
       "cognate": "",
-      "etymology": "From not, nut, from *hnōjaną, from *kneh₂-. Cognate with not, not, not, nót and Nut.not",
+      "etymology": "From alder, from allr, from *allaz, from *h₂el-.",
+      "folkets": true
+    },
+    {
+      "word": "mången",
+      "translation": "the lot",
+      "count": 3,
+      "forms": [
+        "många"
+      ],
+      "cognate": "",
+      "etymology": "",
       "folkets": true
     },
     {
@@ -10729,18 +11088,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
-    },
-    {
-      "word": "vilken",
-      "translation": "which one",
-      "count": 3,
-      "forms": [
-        "vilka",
-        "vilket"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
     },
     {
       "word": "trump",
@@ -10761,6 +11108,17 @@
         "vart"
       ],
       "cognate": "var",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "vara",
+      "translation": "be",
+      "count": 2,
+      "forms": [
+        "var"
+      ],
+      "cognate": "are",
       "etymology": "",
       "folkets": true
     },
@@ -10793,8 +11151,8 @@
       "forms": [
         "fler"
       ],
-      "cognate": "",
-      "etymology": "",
+      "cognate": "full",
+      "etymology": "From flere, flæster, from fleiri, from *flaizô, derived from *pleh₁-. Cognate, among others, with fleiri, flestr, plūs and πλέως, πλεῖστος.",
       "folkets": true
     },
     {
@@ -10842,13 +11200,13 @@
       "folkets": true
     },
     {
-      "word": "mången",
-      "translation": "the lot",
+      "word": "många",
+      "translation": "many",
       "count": 1,
       "forms": [
         "många"
       ],
-      "cognate": "",
+      "cognate": "many",
       "etymology": "",
       "folkets": true
     },
@@ -10864,11 +11222,11 @@
       "folkets": false
     },
     {
-      "word": "nån",
-      "translation": "somebody",
+      "word": "samtlig",
+      "translation": "all",
       "count": 1,
       "forms": [
-        "nån"
+        "samtliga"
       ],
       "cognate": "",
       "etymology": "",
@@ -10886,17 +11244,6 @@
       "folkets": false
     },
     {
-      "word": "vara",
-      "translation": "be",
-      "count": 1,
-      "forms": [
-        "var"
-      ],
-      "cognate": "are",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "varandra",
       "translation": "each other",
       "count": 1,
@@ -10912,7 +11259,7 @@
     {
       "word": "usa",
       "translation": "usa",
-      "count": 46,
+      "count": 47,
       "forms": [
         "usa"
       ],
@@ -10923,23 +11270,12 @@
     {
       "word": "simon",
       "translation": "simon",
-      "count": 22,
+      "count": 20,
       "forms": [
         "simon",
         "simons"
       ],
       "cognate": "simeon",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "trump",
-      "translation": "trump",
-      "count": 16,
-      "forms": [
-        "trump"
-      ],
-      "cognate": "",
       "etymology": "",
       "folkets": false
     },
@@ -10953,6 +11289,17 @@
       "cognate": "nato",
       "etymology": "",
       "folkets": true
+    },
+    {
+      "word": "trump",
+      "translation": "trump",
+      "count": 15,
+      "forms": [
+        "trump"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "iran",
@@ -10971,6 +11318,17 @@
       "count": 7,
       "forms": [
         "kristi"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "gina",
+      "translation": "gina",
+      "count": 6,
+      "forms": [
+        "gina"
       ],
       "cognate": "",
       "etymology": "",
@@ -11012,7 +11370,7 @@
     {
       "word": "clinton",
       "translation": "clinton",
-      "count": 4,
+      "count": 5,
       "forms": [
         "clinton"
       ],
@@ -11065,11 +11423,12 @@
       "folkets": false
     },
     {
-      "word": "buttigieg",
-      "translation": "buttigieg",
+      "word": "dalla",
+      "translation": "dalla",
       "count": 3,
       "forms": [
-        "buttigieg"
+        "dalla",
+        "dallas"
       ],
       "cognate": "",
       "etymology": "",
@@ -11085,17 +11444,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
-    },
-    {
-      "word": "gina",
-      "translation": "gina",
-      "count": 3,
-      "forms": [
-        "gina"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
     },
     {
       "word": "harris",
@@ -11120,17 +11468,6 @@
       "folkets": false
     },
     {
-      "word": "obama",
-      "translation": "obama",
-      "count": 3,
-      "forms": [
-        "obama"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "paul",
       "translation": "paul",
       "count": 3,
@@ -11147,18 +11484,6 @@
       "count": 3,
       "forms": [
         "storbritannien"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "sverige",
-      "translation": "Sweden",
-      "count": 3,
-      "forms": [
-        "sverige",
-        "sveriges"
       ],
       "cognate": "",
       "etymology": "",
@@ -11198,22 +11523,22 @@
       "folkets": false
     },
     {
-      "word": "buttigiegs",
-      "translation": "buttigieg's",
+      "word": "buttigieg",
+      "translation": "buttigieg",
       "count": 2,
       "forms": [
-        "buttigiegs"
+        "buttigieg"
       ],
       "cognate": "",
       "etymology": "",
       "folkets": false
     },
     {
-      "word": "dalla",
-      "translation": "dalla",
+      "word": "camilla",
+      "translation": "camila",
       "count": 2,
       "forms": [
-        "dallas"
+        "camilla"
       ],
       "cognate": "",
       "etymology": "",
@@ -11226,8 +11551,8 @@
       "forms": [
         "fort"
       ],
-      "cognate": "",
-      "etymology": "",
+      "cognate": "away",
+      "etymology": "Attested since 1609 according to ''Nationalencyklopedins Ordbok'', from fôrt, which is used adverbially (forts) with the same meaning in Low German, from fort, from forth. Related to för, före and forsla.",
       "folkets": true
     },
     {
@@ -11286,17 +11611,6 @@
       "folkets": true
     },
     {
-      "word": "jena",
-      "translation": "those",
-      "count": 2,
-      "forms": [
-        "jena"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "mark",
       "translation": "ground",
       "count": 2,
@@ -11330,11 +11644,34 @@
       "folkets": false
     },
     {
+      "word": "obama",
+      "translation": "obama",
+      "count": 2,
+      "forms": [
+        "obama"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "sankt",
       "translation": "holy",
       "count": 2,
       "forms": [
         "sankt"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "sverige",
+      "translation": "Sweden",
+      "count": 2,
+      "forms": [
+        "sverige",
+        "sveriges"
       ],
       "cognate": "",
       "etymology": "",
@@ -11418,6 +11755,28 @@
       "folkets": false
     },
     {
+      "word": "buttigiegs",
+      "translation": "buttigieg's",
+      "count": 1,
+      "forms": [
+        "buttigiegs"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "buttigiegs-",
+      "translation": "buttigiegs",
+      "count": 1,
+      "forms": [
+        "buttigiegs-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "caroline",
       "translation": "caroline",
       "count": 1,
@@ -11440,28 +11799,6 @@
       "folkets": false
     },
     {
-      "word": "d",
-      "translation": "d",
-      "count": 1,
-      "forms": [
-        "d"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "ear",
-      "translation": "ear",
-      "count": 1,
-      "forms": [
-        "ears"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "fn",
       "translation": "fn",
       "count": 1,
@@ -11473,11 +11810,11 @@
       "folkets": true
     },
     {
-      "word": "hampshire",
+      "word": "hampshire-",
       "translation": "hampshire",
       "count": 1,
       "forms": [
-        "hampshire"
+        "hampshire-"
       ],
       "cognate": "",
       "etymology": "",
@@ -11583,11 +11920,22 @@
       "folkets": true
     },
     {
-      "word": "jadey",
-      "translation": "jadey",
+      "word": "jay",
+      "translation": "yay",
       "count": 1,
       "forms": [
-        "jadey"
+        "jay"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "jena",
+      "translation": "those",
+      "count": 1,
+      "forms": [
+        "jena"
       ],
       "cognate": "",
       "etymology": "",
@@ -11599,28 +11947,6 @@
       "count": 1,
       "forms": [
         "jersey"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "jiven",
-      "translation": "the jive",
-      "count": 1,
-      "forms": [
-        "jiven"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "joe",
-      "translation": "joe",
-      "count": 1,
-      "forms": [
-        "joe"
       ],
       "cognate": "",
       "etymology": "",
@@ -11704,6 +12030,17 @@
       "folkets": false
     },
     {
+      "word": "mammdani",
+      "translation": "mammdani",
+      "count": 1,
+      "forms": [
+        "mammdani"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "matsson",
       "translation": "matson",
       "count": 1,
@@ -11715,11 +12052,11 @@
       "folkets": false
     },
     {
-      "word": "minneapolis-",
+      "word": "minneapolis",
       "translation": "minneapolis",
       "count": 1,
       "forms": [
-        "minneapolis-"
+        "minneapolis"
       ],
       "cognate": "",
       "etymology": "",
@@ -11792,33 +12129,22 @@
       "folkets": false
     },
     {
+      "word": "nu-",
+      "translation": "now-",
+      "count": 1,
+      "forms": [
+        "nu-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "omar",
       "translation": "omar",
       "count": 1,
       "forms": [
         "omar"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "public",
-      "translation": "public",
-      "count": 1,
-      "forms": [
-        "public"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "ramman",
-      "translation": "the frame",
-      "count": 1,
-      "forms": [
-        "ramman"
       ],
       "cognate": "",
       "etymology": "",
@@ -11858,11 +12184,11 @@
       "folkets": false
     },
     {
-      "word": "sanders-",
-      "translation": "sanders-",
+      "word": "sanders",
+      "translation": "Sanders",
       "count": 1,
       "forms": [
-        "sanders-"
+        "sanders"
       ],
       "cognate": "",
       "etymology": "",
@@ -11913,6 +12239,17 @@
       "folkets": true
     },
     {
+      "word": "simon-",
+      "translation": "simon-",
+      "count": 1,
+      "forms": [
+        "simon-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "spanien",
       "translation": "Spain",
       "count": 1,
@@ -11929,6 +12266,17 @@
       "count": 1,
       "forms": [
         "springsteen"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "steno",
+      "translation": "steno",
+      "count": 1,
+      "forms": [
+        "steno"
       ],
       "cognate": "",
       "etymology": "",
@@ -11968,17 +12316,6 @@
       "folkets": false
     },
     {
-      "word": "vance",
-      "translation": "vance",
-      "count": 1,
-      "forms": [
-        "vance"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "viktor",
       "translation": "Victor",
       "count": 1,
@@ -12010,48 +12347,13 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
-    },
-    {
-      "word": "åj",
-      "translation": "oh",
-      "count": 1,
-      "forms": [
-        "åj"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "åstein",
-      "translation": "ridge stone",
-      "count": 1,
-      "forms": [
-        "åstein"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    }
-  ],
-  "PUNCT": [
-    {
-      "word": "oj",
-      "translation": "oops",
-      "count": 1,
-      "forms": [
-        "oj"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
     }
   ],
   "SCONJ": [
     {
       "word": "att",
       "translation": "that",
-      "count": 123,
+      "count": 126,
       "forms": [
         "att"
       ],
@@ -12062,7 +12364,7 @@
     {
       "word": "som",
       "translation": "which",
-      "count": 28,
+      "count": 26,
       "forms": [
         "som"
       ],
@@ -12073,7 +12375,7 @@
     {
       "word": "om",
       "translation": "if",
-      "count": 26,
+      "count": 25,
       "forms": [
         "om"
       ],
@@ -12095,7 +12397,7 @@
     {
       "word": "än",
       "translation": "than",
-      "count": 6,
+      "count": 5,
       "forms": [
         "än"
       ],
@@ -12166,7 +12468,7 @@
     {
       "word": "ha",
       "translation": "ha",
-      "count": 35,
+      "count": 37,
       "forms": [
         "ha",
         "hade",
@@ -12180,7 +12482,7 @@
     {
       "word": "bli",
       "translation": "become",
-      "count": 31,
+      "count": 30,
       "forms": [
         "blev",
         "bli",
@@ -12192,23 +12494,9 @@
       "folkets": true
     },
     {
-      "word": "vara",
-      "translation": "be",
-      "count": 30,
-      "forms": [
-        "var",
-        "vara",
-        "varit",
-        "är"
-      ],
-      "cognate": "are",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "göra",
       "translation": "do",
-      "count": 26,
+      "count": 27,
       "forms": [
         "gjorde",
         "gjort",
@@ -12221,6 +12509,34 @@
       "folkets": true
     },
     {
+      "word": "vara",
+      "translation": "be",
+      "count": 27,
+      "forms": [
+        "var",
+        "vara",
+        "varit",
+        "är"
+      ],
+      "cognate": "are",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "se",
+      "translation": "look",
+      "count": 26,
+      "forms": [
+        "se",
+        "ser",
+        "sett",
+        "såg"
+      ],
+      "cognate": "see",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "finnas",
       "translation": "exist",
       "count": 25,
@@ -12230,20 +12546,6 @@
       ],
       "cognate": "",
       "etymology": "From finnas, from finnask. Cognate with finnes and finnast.",
-      "folkets": true
-    },
-    {
-      "word": "se",
-      "translation": "look",
-      "count": 24,
-      "forms": [
-        "se",
-        "ser",
-        "sett",
-        "såg"
-      ],
-      "cognate": "see",
-      "etymology": "",
       "folkets": true
     },
     {
@@ -12274,23 +12576,9 @@
       "folkets": true
     },
     {
-      "word": "komma",
-      "translation": "come",
-      "count": 18,
-      "forms": [
-        "kom",
-        "komma",
-        "kommer",
-        "kommit"
-      ],
-      "cognate": "",
-      "etymology": "From koma, from koma, from *kwemaną, from *gʷem-. orgasm is probably a come.",
-      "folkets": true
-    },
-    {
       "word": "prata",
       "translation": "talk",
-      "count": 17,
+      "count": 18,
       "forms": [
         "prata",
         "pratade",
@@ -12300,6 +12588,20 @@
       ],
       "cognate": "prate",
       "etymology": "From praten, probably of sv origin. Compare prate and prattle, práta.",
+      "folkets": true
+    },
+    {
+      "word": "komma",
+      "translation": "come",
+      "count": 17,
+      "forms": [
+        "kom",
+        "komma",
+        "kommer",
+        "kommit"
+      ],
+      "cognate": "",
+      "etymology": "From koma, from koma, from *kwemaną, from *gʷem-. orgasm is probably a come.",
       "folkets": true
     },
     {
@@ -12319,7 +12621,7 @@
     {
       "word": "få",
       "translation": "few",
-      "count": 15,
+      "count": 14,
       "forms": [
         "fick",
         "få",
@@ -12356,22 +12658,9 @@
       "folkets": true
     },
     {
-      "word": "ställa",
-      "translation": "ask",
-      "count": 11,
-      "forms": [
-        "ställa",
-        "ställde",
-        "ställer"
-      ],
-      "cognate": "",
-      "etymology": "From stælla, from stellen, from stellian, from *stalljan.",
-      "folkets": true
-    },
-    {
       "word": "börja",
       "translation": "begin",
-      "count": 10,
+      "count": 11,
       "forms": [
         "börja",
         "började",
@@ -12383,9 +12672,22 @@
       "folkets": true
     },
     {
+      "word": "ställa",
+      "translation": "ask",
+      "count": 10,
+      "forms": [
+        "ställa",
+        "ställde",
+        "ställer"
+      ],
+      "cognate": "",
+      "etymology": "From stælla, from stellen, from stellian, from *stalljan.",
+      "folkets": true
+    },
+    {
       "word": "dra",
       "translation": "drag",
-      "count": 7,
+      "count": 8,
       "forms": [
         "dra",
         "drar",
@@ -12423,14 +12725,40 @@
       "folkets": true
     },
     {
-      "word": "behöva",
-      "translation": "need",
-      "count": 6,
+      "word": "spela",
+      "translation": "play",
+      "count": 7,
       "forms": [
-        "behöver",
-        "behövs"
+        "spela",
+        "spelar",
+        "spelat"
       ],
       "cognate": "",
+      "etymology": "From spila, borrowed from spillen, from spilōn, from *spilōn. Equivalent to a.",
+      "folkets": true
+    },
+    {
+      "word": "tycka",
+      "translation": "think",
+      "count": 7,
+      "forms": [
+        "tycka",
+        "tycker"
+      ],
+      "cognate": "",
+      "etymology": "From þykkia, þykia, from þykkja, from *þunkijaną.",
+      "folkets": true
+    },
+    {
+      "word": "tänka",
+      "translation": "think",
+      "count": 7,
+      "forms": [
+        "tänker",
+        "tänkt",
+        "tänkte"
+      ],
+      "cognate": "think",
       "etymology": "",
       "folkets": true
     },
@@ -12446,42 +12774,6 @@
       "folkets": true
     },
     {
-      "word": "spela",
-      "translation": "play",
-      "count": 6,
-      "forms": [
-        "spela",
-        "spelar",
-        "spelat"
-      ],
-      "cognate": "",
-      "etymology": "From spila, borrowed from spillen, from spilōn, from *spilōn. Equivalent to a.",
-      "folkets": true
-    },
-    {
-      "word": "tycka",
-      "translation": "think",
-      "count": 6,
-      "forms": [
-        "tycker"
-      ],
-      "cognate": "",
-      "etymology": "From þykkia, þykia, from þykkja, from *þunkijaną.",
-      "folkets": true
-    },
-    {
-      "word": "tänka",
-      "translation": "think",
-      "count": 6,
-      "forms": [
-        "tänker",
-        "tänkte"
-      ],
-      "cognate": "think",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "veta",
       "translation": "know",
       "count": 6,
@@ -12491,6 +12783,18 @@
       ],
       "cognate": "see",
       "etymology": "From vita, from vita, from *witaną, ultimately from *weyd-.",
+      "folkets": true
+    },
+    {
+      "word": "behöva",
+      "translation": "need",
+      "count": 5,
+      "forms": [
+        "behöver",
+        "behövs"
+      ],
+      "cognate": "",
+      "etymology": "",
       "folkets": true
     },
     {
@@ -12505,6 +12809,18 @@
       ],
       "cognate": "",
       "etymology": "From berætta, from berichten, in correspondence to rätta (verb) and rätt (verb and noun), equivalent to -a or rätta. Cognate with berette, berette, berichten, berechten, bericht, berig, berichten, Bericht and beriichten.",
+      "folkets": true
+    },
+    {
+      "word": "hända",
+      "translation": "happen",
+      "count": 5,
+      "forms": [
+        "hända",
+        "händer"
+      ],
+      "cognate": "",
+      "etymology": "From hænda, from henda, from *handijaną.",
       "folkets": true
     },
     {
@@ -12553,7 +12869,7 @@
         "verkar"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From värkia, from verka, from *werką, from *wérǵom. Compare werken and wirken.",
       "folkets": true
     },
     {
@@ -12570,19 +12886,6 @@
       "folkets": true
     },
     {
-      "word": "ge",
-      "translation": "give",
-      "count": 4,
-      "forms": [
-        "gav",
-        "ge",
-        "gett"
-      ],
-      "cognate": "give",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "hota",
       "translation": "threaten",
       "count": 4,
@@ -12595,15 +12898,15 @@
       "folkets": true
     },
     {
-      "word": "hända",
-      "translation": "happen",
+      "word": "sitta",
+      "translation": "sit",
       "count": 4,
       "forms": [
-        "hända",
-        "händer"
+        "satt",
+        "sitter"
       ],
-      "cognate": "",
-      "etymology": "From hænda, from henda, from *handijaną.",
+      "cognate": "sit",
+      "etymology": "",
       "folkets": true
     },
     {
@@ -12615,7 +12918,7 @@
         "stoppar"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From stoppa, from stoppen, from *stoppon, from *stoppōn.",
       "folkets": true
     },
     {
@@ -12631,19 +12934,6 @@
       "folkets": true
     },
     {
-      "word": "fungera",
-      "translation": "function",
-      "count": 3,
-      "forms": [
-        "fungera",
-        "fungerar",
-        "fungerat"
-      ],
-      "cognate": "",
-      "etymology": "From fungieren, from fungor,0250.html fungera from *bʰewg-. Cognate with fungere, fungere, fungera, fungere, fungeren, function, fungible, fungovat, fungovať, fungere, fungir, fonctionner.",
-      "folkets": true
-    },
-    {
       "word": "förlora",
       "translation": "lose",
       "count": 3,
@@ -12652,7 +12942,7 @@
         "förlorade"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From vorloren (verloren), the past participle of vorlêsen, from farliosan, from *fraleusan, from *fraleusaną. förlisa. Compare verloor.",
       "folkets": true
     },
     {
@@ -12668,15 +12958,15 @@
       "folkets": true
     },
     {
-      "word": "förändra",
-      "translation": "change",
+      "word": "ge",
+      "translation": "give",
       "count": 3,
       "forms": [
-        "förändrat",
-        "förändrats"
+        "gav",
+        "ge"
       ],
-      "cognate": "",
-      "etymology": "verändern, equivalent to ändra. Compare forandre.",
+      "cognate": "give",
+      "etymology": "",
       "folkets": true
     },
     {
@@ -12779,19 +13069,7 @@
         "röstar"
       ],
       "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "sitta",
-      "translation": "sit",
-      "count": 3,
-      "forms": [
-        "satt",
-        "sitter"
-      ],
-      "cognate": "sit",
-      "etymology": "",
+      "etymology": "a",
       "folkets": true
     },
     {
@@ -12803,7 +13081,7 @@
         "slutade"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "slūta, from sluten, from slūten, from *slūtan.",
       "folkets": true
     },
     {
@@ -12841,6 +13119,18 @@
       "folkets": true
     },
     {
+      "word": "vänta",
+      "translation": "wait",
+      "count": 3,
+      "forms": [
+        "vänta",
+        "väntar"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "överväga",
       "translation": "consider",
       "count": 3,
@@ -12869,10 +13159,11 @@
       "translation": "finish",
       "count": 2,
       "forms": [
-        "avsluta"
+        "avsluta",
+        "avslutar"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From sluta. Compare to avslutta and afslutte",
       "folkets": true
     },
     {
@@ -12945,15 +13236,15 @@
       "folkets": true
     },
     {
-      "word": "fråga",
-      "translation": "question",
+      "word": "fungera",
+      "translation": "function",
       "count": 2,
       "forms": [
-        "fråga",
-        "frågat"
+        "fungera",
+        "fungerat"
       ],
-      "cognate": "frain",
-      "etymology": "From vrāge (Frage), from *frāgu, from *frēgō. Compare frain. Displaced native spörja, spörsmål.",
+      "cognate": "",
+      "etymology": "From fungieren, from fungor,0250.html fungera from *bʰewg-. Cognate with fungere, fungere, fungera, fungere, fungeren, function, fungible, fungovat, fungovať, fungere, fungir, fonctionner.",
       "folkets": true
     },
     {
@@ -12968,6 +13259,17 @@
       "folkets": true
     },
     {
+      "word": "förändra",
+      "translation": "change",
+      "count": 2,
+      "forms": [
+        "förändrats"
+      ],
+      "cognate": "",
+      "etymology": "verändern, equivalent to ändra. Compare forandre.",
+      "folkets": true
+    },
+    {
       "word": "gilla",
       "translation": "like",
       "count": 2,
@@ -12975,7 +13277,7 @@
         "gillar"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From gilda, from gilda. Compare gilda and gildr.",
       "folkets": true
     },
     {
@@ -13013,8 +13315,19 @@
       "folkets": true
     },
     {
+      "word": "kommer",
+      "translation": "is coming",
+      "count": 2,
+      "forms": [
+        "kommer"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "känd",
-      "translation": "famous",
+      "translation": "known",
       "count": 2,
       "forms": [
         "känd",
@@ -13023,6 +13336,17 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
+    },
+    {
+      "word": "kändes",
+      "translation": "felt",
+      "count": 2,
+      "forms": [
+        "kändes"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "känna",
@@ -13070,18 +13394,6 @@
       "folkets": true
     },
     {
-      "word": "misslycka",
-      "translation": "failure",
-      "count": 2,
-      "forms": [
-        "misslyckades",
-        "misslyckats"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "omvärdera",
       "translation": "reevaluate",
       "count": 2,
@@ -13103,40 +13415,6 @@
       "cognate": "plan",
       "etymology": "",
       "folkets": true
-    },
-    {
-      "word": "resonera",
-      "translation": "reason",
-      "count": 2,
-      "forms": [
-        "resonerade",
-        "resonerat"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "sa",
-      "translation": "said",
-      "count": 2,
-      "forms": [
-        "sa"
-      ],
-      "cognate": "sa",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "saa",
-      "translation": "see",
-      "count": 2,
-      "forms": [
-        "sa"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
     },
     {
       "word": "sakna",
@@ -13179,17 +13457,6 @@
       "forms": [
         "snackade",
         "snackas"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "starta",
-      "translation": "start",
-      "count": 2,
-      "forms": [
-        "startat"
       ],
       "cognate": "",
       "etymology": "",
@@ -13293,7 +13560,7 @@
         "anklagar"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "klaga",
       "folkets": true
     },
     {
@@ -13315,7 +13582,7 @@
         "anses"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From anse, from ansen. Equivalent to se.",
       "folkets": true
     },
     {
@@ -13370,7 +13637,7 @@
         "bekräftat"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From bekreften or bekräften (rare, more often bekräftigen), from bekreften. Equivalent of -a. The synonym bekräftiga went out of use during the 17th century. Cognate with bekræfte, bekrefte and bekrefte, bekrefta.",
       "folkets": true
     },
     {
@@ -13440,6 +13707,28 @@
       "folkets": true
     },
     {
+      "word": "bli-",
+      "translation": "be-",
+      "count": 1,
+      "forms": [
+        "bli-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "bott",
+      "translation": "lived",
+      "count": 1,
+      "forms": [
+        "bott"
+      ],
+      "cognate": "bot",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "bredd",
       "translation": "width",
       "count": 1,
@@ -13458,7 +13747,7 @@
         "bryta"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From bryta, from brjóta, from *breutaną, from *bʰrewd-.",
       "folkets": true
     },
     {
@@ -13471,28 +13760,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
-    },
-    {
-      "word": "börjar如果",
-      "translation": "begins if",
-      "count": 1,
-      "forms": [
-        "börjar如果"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "constitutea",
-      "translation": "constitute",
-      "count": 1,
-      "forms": [
-        "constitutes"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
     },
     {
       "word": "destratera",
@@ -13524,7 +13791,7 @@
         "dykt"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From dūken *ducken, from *dūkan *dukkan, from *dūkan.",
       "folkets": true
     },
     {
@@ -13543,22 +13810,22 @@
       "translation": "engage",
       "count": 1,
       "forms": [
-        "engagerar"
+        "engagera"
       ],
       "cognate": "",
       "etymology": "",
       "folkets": true
     },
     {
-      "word": "ersätta",
-      "translation": "replace",
+      "word": "erhjärta",
+      "translation": "heart",
       "count": 1,
       "forms": [
-        "ersättas"
+        "erhjärtas"
       ],
       "cognate": "",
       "etymology": "",
-      "folkets": true
+      "folkets": false
     },
     {
       "word": "finansiera",
@@ -13594,14 +13861,14 @@
       "folkets": true
     },
     {
-      "word": "funka",
-      "translation": "work",
+      "word": "fråga",
+      "translation": "question",
       "count": 1,
       "forms": [
-        "funka"
+        "frågat"
       ],
-      "cognate": "",
-      "etymology": "",
+      "cognate": "frain",
+      "etymology": "From vrāge (Frage), from *frāgu, from *frēgō. Compare frain. Displaced native spörja, spörsmål.",
       "folkets": true
     },
     {
@@ -13693,17 +13960,6 @@
       "folkets": true
     },
     {
-      "word": "förmedla",
-      "translation": "convey",
-      "count": 1,
-      "forms": [
-        "förmedlar"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "försöka",
       "translation": "try",
       "count": 1,
@@ -13711,7 +13967,7 @@
         "försöka"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "söka or a",
       "folkets": true
     },
     {
@@ -13720,17 +13976,6 @@
       "count": 1,
       "forms": [
         "getar"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "ginna",
-      "translation": "become",
-      "count": 1,
-      "forms": [
-        "ginnade"
       ],
       "cognate": "",
       "etymology": "",
@@ -13766,7 +14011,7 @@
         "glömma"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "gløma, from gleyma. Cognate with glemme, gløyma, gloyma.",
       "folkets": true
     },
     {
@@ -13836,6 +14081,17 @@
       "folkets": true
     },
     {
+      "word": "himla",
+      "translation": "heaven",
+      "count": 1,
+      "forms": [
+        "himla"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "håll",
       "translation": "hold",
       "count": 1,
@@ -13902,15 +14158,15 @@
       "folkets": true
     },
     {
-      "word": "joe",
-      "translation": "joe",
+      "word": "kalla",
+      "translation": "cold",
       "count": 1,
       "forms": [
-        "joe"
+        "kalla"
       ],
-      "cognate": "",
+      "cognate": "call",
       "etymology": "",
-      "folkets": false
+      "folkets": true
     },
     {
       "word": "kandidera",
@@ -13935,17 +14191,6 @@
       "folkets": true
     },
     {
-      "word": "kom",
-      "translation": "come on",
-      "count": 1,
-      "forms": [
-        "kom"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "kommentera",
       "translation": "comment",
       "count": 1,
@@ -13955,17 +14200,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
-    },
-    {
-      "word": "kommer",
-      "translation": "is coming",
-      "count": 1,
-      "forms": [
-        "kommer"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
     },
     {
       "word": "koncentrera",
@@ -14034,28 +14268,6 @@
       "folkets": true
     },
     {
-      "word": "kändes",
-      "translation": "felt",
-      "count": 1,
-      "forms": [
-        "kändes"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
-      "word": "kännas",
-      "translation": "feel",
-      "count": 1,
-      "forms": [
-        "känns"
-      ],
-      "cognate": "",
-      "etymology": "Passive of känna. Literally, \"to be felt.\"",
-      "folkets": true
-    },
-    {
       "word": "köpa",
       "translation": "buy",
       "count": 1,
@@ -14100,6 +14312,17 @@
       "folkets": true
     },
     {
+      "word": "låt",
+      "translation": "song",
+      "count": 1,
+      "forms": [
+        "låt"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "lösbröst",
       "translation": "loose breast",
       "count": 1,
@@ -14109,6 +14332,17 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
+    },
+    {
+      "word": "medla",
+      "translation": "mediate",
+      "count": 1,
+      "forms": [
+        "medla"
+      ],
+      "cognate": "mediate",
+      "etymology": "",
+      "folkets": true
     },
     {
       "word": "mejla",
@@ -14144,6 +14378,28 @@
       "folkets": true
     },
     {
+      "word": "misslycka",
+      "translation": "failure",
+      "count": 1,
+      "forms": [
+        "misslyckades"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "misslyckats",
+      "translation": "failed",
+      "count": 1,
+      "forms": [
+        "misslyckats"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "missnöja",
       "translation": "dissatisfaction",
       "count": 1,
@@ -14153,17 +14409,6 @@
       "cognate": "",
       "etymology": "",
       "folkets": false
-    },
-    {
-      "word": "märka",
-      "translation": "label",
-      "count": 1,
-      "forms": [
-        "märks"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
     },
     {
       "word": "noems",
@@ -14228,7 +14473,7 @@
         "posera"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "poser.",
       "folkets": true
     },
     {
@@ -14241,6 +14486,17 @@
       "cognate": "present",
       "etymology": "",
       "folkets": true
+    },
+    {
+      "word": "protesta",
+      "translation": "protest",
+      "count": 1,
+      "forms": [
+        "protestar"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "protestera",
@@ -14287,6 +14543,17 @@
       "folkets": true
     },
     {
+      "word": "resonera",
+      "translation": "reason",
+      "count": 1,
+      "forms": [
+        "resonerat"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "resultera",
       "translation": "result",
       "count": 1,
@@ -14299,7 +14566,7 @@
     },
     {
       "word": "ringa",
-      "translation": "ring",
+      "translation": "call",
       "count": 1,
       "forms": [
         "ringde"
@@ -14320,15 +14587,26 @@
       "folkets": true
     },
     {
-      "word": "röra",
-      "translation": "stir",
+      "word": "sa",
+      "translation": "said",
       "count": 1,
       "forms": [
-        "rör"
+        "sa"
+      ],
+      "cognate": "sa",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "saa",
+      "translation": "see",
+      "count": 1,
+      "forms": [
+        "sa"
       ],
       "cognate": "",
-      "etymology": "From røra, from hrœra, from *hrōzijaną.",
-      "folkets": true
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "say",
@@ -14408,6 +14686,17 @@
       "folkets": true
     },
     {
+      "word": "starta",
+      "translation": "start",
+      "count": 1,
+      "forms": [
+        "startat"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
       "word": "stänga",
       "translation": "close",
       "count": 1,
@@ -14430,17 +14719,6 @@
       "folkets": true
     },
     {
-      "word": "supporta",
-      "translation": "support",
-      "count": 1,
-      "forms": [
-        "supportade"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": false
-    },
-    {
       "word": "syfta",
       "translation": "aim",
       "count": 1,
@@ -14461,6 +14739,17 @@
       "cognate": "",
       "etymology": "",
       "folkets": true
+    },
+    {
+      "word": "säger-",
+      "translation": "says-",
+      "count": 1,
+      "forms": [
+        "säger-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
     },
     {
       "word": "säkerhetspröva",
@@ -14490,17 +14779,6 @@
       "count": 1,
       "forms": [
         "testa"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
-      "word": "tillstå",
-      "translation": "confess",
-      "count": 1,
-      "forms": [
-        "tillstår"
       ],
       "cognate": "",
       "etymology": "",
@@ -14562,6 +14840,17 @@
       "folkets": true
     },
     {
+      "word": "upp-",
+      "translation": "up-",
+      "count": 1,
+      "forms": [
+        "upp-"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
       "word": "uppleva",
       "translation": "experience",
       "count": 1,
@@ -14573,15 +14862,15 @@
       "folkets": true
     },
     {
-      "word": "upprör",
-      "translation": "uproar",
+      "word": "uppröra",
+      "translation": "upset",
       "count": 1,
       "forms": [
-        "upprörd"
+        "upprörde"
       ],
       "cognate": "",
       "etymology": "",
-      "folkets": false
+      "folkets": true
     },
     {
       "word": "utgå",
@@ -14613,7 +14902,7 @@
         "utplåna"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "plåna, literally to (wipe) out from a slate",
       "folkets": true
     },
     {
@@ -14727,25 +15016,14 @@
       "folkets": true
     },
     {
-      "word": "vänta",
-      "translation": "wait",
-      "count": 1,
-      "forms": [
-        "väntar"
-      ],
-      "cognate": "",
-      "etymology": "",
-      "folkets": true
-    },
-    {
       "word": "ägna",
       "translation": "devote",
       "count": 1,
       "forms": [
         "ägnat"
       ],
-      "cognate": "",
-      "etymology": "",
+      "cognate": "own",
+      "etymology": "From eigna, related to eiginn. Related to äga and egen. Also compare eignen, own.",
       "folkets": true
     },
     {
@@ -14753,7 +15031,7 @@
       "translation": "return",
       "count": 1,
       "forms": [
-        "återkom"
+        "återkommer"
       ],
       "cognate": "",
       "etymology": "komma",
