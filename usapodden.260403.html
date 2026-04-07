@@ -93,6 +93,7 @@
             body.reading-mode .speed-label,
             body.reading-mode .speed-btn { display: none; }
             .jump-btn { background: #fff3cd; color: #7a5c00; border: 1px solid #ffc107; padding: 4px 10px; border-radius: 12px; font-size: 0.7rem; cursor: pointer; font-weight: bold; }
+            .reset-btn { background: #fce4e4; color: #7a0000; border: 1px solid #e57373; padding: 4px 10px; border-radius: 12px; font-size: 0.7rem; cursor: pointer; font-weight: bold; }
             .status-badge { font-size: 0.7rem; margin-left: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; }
             .sv-word { cursor: pointer; color: #1565c0; }
             .sv-word .wikt-arrow { font-size: 0.55em; vertical-align: super; opacity: 0.6; }
@@ -139,6 +140,7 @@
                     <button id="modeReading" class="mode-opt" onclick="setMode('reading')" title="Scroll through source and translation &#x2014; no audio">Reading<span class="mode-prog" id="prog-reading"></span></button>
                 </div>
                 <button id="jump-btn" class="jump-btn" style="display:none" onclick="jumpToLast()">&#x21A9; Resume</button>
+                <button id="reset-btn" class="reset-btn" style="display:none" onclick="resetProgress()">&#x2715; Reset</button>
             </div>
         </div>
         
@@ -302,7 +304,22 @@
             function updateJumpBtn() {
                 if (!epKey) return;
                 const saved = parseFloat(localStorage.getItem('audioPos_' + epKey) || '0');
+                const hasProgress = saved > 5 || parseFloat(localStorage.getItem('readPct_' + epKey) || '0') > 0;
                 document.getElementById('jump-btn').style.display = (mode !== 'reading' && saved > 5) ? '' : 'none';
+                document.getElementById('reset-btn').style.display = hasProgress ? '' : 'none';
+            }
+
+            function resetProgress() {
+                if (!epKey) return;
+                ['audioPos_', 'audioPct_', 'readScroll_', 'readPct_', 'epMode_'].forEach(function(k) {
+                    localStorage.removeItem(k + epKey);
+                });
+                audio.currentTime = 0;
+                audio.pause();
+                document.getElementById('prog-orig').textContent = '';
+                document.getElementById('prog-bilingual').textContent = '';
+                document.getElementById('prog-reading').textContent = '';
+                updateJumpBtn();
             }
 
             function jumpToLast() {
