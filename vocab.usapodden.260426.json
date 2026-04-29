@@ -1,0 +1,161 @@
+{
+  "ADP": [
+    {
+      "word": "med",
+      "translation": "with",
+      "count": 1,
+      "forms": [
+        "med"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "på",
+      "translation": "on",
+      "count": 1,
+      "forms": [
+        "på"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    }
+  ],
+  "ADV": [
+    {
+      "word": "tillbaka",
+      "translation": "back",
+      "count": 1,
+      "forms": [
+        "tillbaka"
+      ],
+      "cognate": "",
+      "etymology": "From til baka, from til + baka, genitive plural of baker, equivalent to baks, according to SAOB online the alternative forms with -s are however not hence this fact, but rather from the genitive singular. Cognate with ti",
+      "folkets": true
+    }
+  ],
+  "AUX": [
+    {
+      "word": "vara",
+      "translation": "be",
+      "count": 1,
+      "forms": [
+        "är"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    }
+  ],
+  "CCONJ": [
+    {
+      "word": "och",
+      "translation": "and",
+      "count": 1,
+      "forms": [
+        "och"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    }
+  ],
+  "NOUN": [
+    {
+      "word": "avsnitt",
+      "translation": "section",
+      "count": 1,
+      "forms": [
+        "avsnitt"
+      ],
+      "cognate": "",
+      "etymology": "From snitt.",
+      "folkets": true
+    },
+    {
+      "word": "onsdag",
+      "translation": "Wednesday",
+      "count": 1,
+      "forms": [
+        "onsdag"
+      ],
+      "cognate": "wednesday",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "ordinarie",
+      "translation": "ordinary",
+      "count": 1,
+      "forms": [
+        "ordinarie"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    }
+  ],
+  "PRON": [
+    {
+      "word": "jag",
+      "translation": "i",
+      "count": 1,
+      "forms": [
+        "jag"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    },
+    {
+      "word": "vi",
+      "translation": "we",
+      "count": 1,
+      "forms": [
+        "vi"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": true
+    }
+  ],
+  "PROPN": [
+    {
+      "word": "sara",
+      "translation": "sarah",
+      "count": 1,
+      "forms": [
+        "sara"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    },
+    {
+      "word": "stenholm",
+      "translation": "Stenholm",
+      "count": 1,
+      "forms": [
+        "stenholm"
+      ],
+      "cognate": "",
+      "etymology": "",
+      "folkets": false
+    }
+  ],
+  "VERB": [
+    {
+      "word": "heta",
+      "translation": "hot",
+      "count": 1,
+      "forms": [
+        "heter"
+      ],
+      "cognate": "",
+      "etymology": "From heta, from heita, from *haitaną.",
+      "folkets": true
+    }
+  ]
+}
