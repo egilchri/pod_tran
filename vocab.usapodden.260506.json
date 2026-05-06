@@ -82,7 +82,7 @@
     },
     {
       "word": "många",
-      "translation": "",
+      "translation": "many",
       "count": 12,
       "forms": [
         "många"
@@ -362,7 +362,7 @@
     },
     {
       "word": "mycket",
-      "translation": "",
+      "translation": "a lot",
       "count": 4,
       "forms": [
         "mer",
@@ -374,7 +374,7 @@
     },
     {
       "word": "stark",
-      "translation": "",
+      "translation": "strong",
       "count": 4,
       "forms": [
         "starka",
@@ -1488,7 +1488,7 @@
     },
     {
       "word": "mången",
-      "translation": "",
+      "translation": "the lot",
       "count": 1,
       "forms": [
         "flesta"
@@ -1499,7 +1499,7 @@
     },
     {
       "word": "möjlig",
-      "translation": "",
+      "translation": "possible",
       "count": 1,
       "forms": [
         "möjliga"
@@ -1873,7 +1873,7 @@
     },
     {
       "word": "smaklös",
-      "translation": "",
+      "translation": "tasteless",
       "count": 1,
       "forms": [
         "smaklöst"
@@ -1884,7 +1884,7 @@
     },
     {
       "word": "social",
-      "translation": "",
+      "translation": "social",
       "count": 1,
       "forms": [
         "social"
@@ -1895,7 +1895,7 @@
     },
     {
       "word": "spittrad",
-      "translation": "",
+      "translation": "splattered",
       "count": 1,
       "forms": [
         "spittrade"
@@ -1906,7 +1906,7 @@
     },
     {
       "word": "spänd",
-      "translation": "",
+      "translation": "tense",
       "count": 1,
       "forms": [
         "spända"
@@ -2469,7 +2469,7 @@
     },
     {
       "word": "som",
-      "translation": "",
+      "translation": "which",
       "count": 3,
       "forms": [
         "som"
@@ -2790,7 +2790,7 @@
     },
     {
       "word": "mycket",
-      "translation": "",
+      "translation": "a lot",
       "count": 13,
       "forms": [
         "mer",
@@ -2992,7 +2992,7 @@
     },
     {
       "word": "snabb",
-      "translation": "",
+      "translation": "fast",
       "count": 5,
       "forms": [
         "snabbt"
@@ -3355,7 +3355,7 @@
     },
     {
       "word": "som",
-      "translation": "",
+      "translation": "which",
       "count": 2,
       "forms": [
         "som"
@@ -3960,7 +3960,7 @@
     },
     {
       "word": "märklig",
-      "translation": "",
+      "translation": "strange",
       "count": 1,
       "forms": [
         "märkligt"
@@ -3971,7 +3971,7 @@
     },
     {
       "word": "möjligen",
-      "translation": "",
+      "translation": "possibly",
       "count": 1,
       "forms": [
         "möjligen"
@@ -4422,7 +4422,7 @@
     },
     {
       "word": "måste",
-      "translation": "",
+      "translation": "must",
       "count": 10,
       "forms": [
         "måste"
@@ -4568,7 +4568,7 @@
     },
     {
       "word": "som",
-      "translation": "",
+      "translation": "which",
       "count": 1,
       "forms": [
         "som"
@@ -4938,7 +4938,7 @@
     },
     {
       "word": "soldat",
-      "translation": "",
+      "translation": "soldier",
       "count": 11,
       "forms": [
         "soldater"
@@ -5108,7 +5108,7 @@
     },
     {
       "word": "möjlighet",
-      "translation": "",
+      "translation": "opportunity",
       "count": 6,
       "forms": [
         "möjlighet",
@@ -5651,7 +5651,7 @@
     },
     {
       "word": "möte",
-      "translation": "",
+      "translation": "meeting",
       "count": 3,
       "forms": [
         "möte",
@@ -6413,7 +6413,7 @@
     },
     {
       "word": "mängd",
-      "translation": "",
+      "translation": "quantity",
       "count": 2,
       "forms": [
         "mängd",
@@ -6425,7 +6425,7 @@
     },
     {
       "word": "månad",
-      "translation": "",
+      "translation": "month",
       "count": 2,
       "forms": [
         "månad",
@@ -6437,7 +6437,7 @@
     },
     {
       "word": "neddragning",
-      "translation": "",
+      "translation": "drawdown",
       "count": 2,
       "forms": [
         "neddragningar",
@@ -6660,7 +6660,7 @@
     },
     {
       "word": "soldater",
-      "translation": "",
+      "translation": "soldiers",
       "count": 2,
       "forms": [
         "soldater-"
@@ -6671,7 +6671,7 @@
     },
     {
       "word": "sort",
-      "translation": "",
+      "translation": "variety",
       "count": 2,
       "forms": [
         "sorts"
@@ -9557,7 +9557,7 @@
     },
     {
       "word": "mäla",
-      "translation": "",
+      "translation": "measure",
       "count": 1,
       "forms": [
         "mäla"
@@ -9568,7 +9568,7 @@
     },
     {
       "word": "mål",
-      "translation": "",
+      "translation": "goal",
       "count": 1,
       "forms": [
         "målet"
@@ -9579,7 +9579,7 @@
     },
     {
       "word": "mån.",
-      "translation": "",
+      "translation": "Mon.",
       "count": 1,
       "forms": [
         "mån."
@@ -9590,7 +9590,7 @@
     },
     {
       "word": "mångfaldsarbete",
-      "translation": "",
+      "translation": "diversity work",
       "count": 1,
       "forms": [
         "mångfaldsarbete"
@@ -9601,7 +9601,7 @@
     },
     {
       "word": "mångfaldsatsning",
-      "translation": "",
+      "translation": "diversity investment",
       "count": 1,
       "forms": [
         "mångfaldsatsningar"
@@ -9612,7 +9612,7 @@
     },
     {
       "word": "mönster",
-      "translation": "",
+      "translation": "pattern",
       "count": 1,
       "forms": [
         "mönstret"
@@ -9623,7 +9623,7 @@
     },
     {
       "word": "möte-",
-      "translation": "",
+      "translation": "meeting-",
       "count": 1,
       "forms": [
         "möte-"
@@ -9634,7 +9634,7 @@
     },
     {
       "word": "nato-kollektiv",
-      "translation": "",
+      "translation": "nato collective",
       "count": 1,
       "forms": [
         "nato-kollektivet"
@@ -9645,7 +9645,7 @@
     },
     {
       "word": "nato-länd",
-      "translation": "",
+      "translation": "nato country",
       "count": 1,
       "forms": [
         "nato-länder"
@@ -10443,7 +10443,7 @@
         "röret"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "From rør, from reyrr.",
       "folkets": true
     },
     {
@@ -10487,7 +10487,7 @@
         "samband"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "band",
       "folkets": true
     },
     {
@@ -10575,7 +10575,7 @@
         "skiljelinje"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "linje",
       "folkets": false
     },
     {
@@ -10646,7 +10646,7 @@
     },
     {
       "word": "snabbta",
-      "translation": "",
+      "translation": "fast",
       "count": 1,
       "forms": [
         "snabbt-"
@@ -10657,7 +10657,7 @@
     },
     {
       "word": "social",
-      "translation": "",
+      "translation": "social",
       "count": 1,
       "forms": [
         "social"
@@ -10668,7 +10668,7 @@
     },
     {
       "word": "sommar",
-      "translation": "",
+      "translation": "summer",
       "count": 1,
       "forms": [
         "sommar"
@@ -10679,7 +10679,7 @@
     },
     {
       "word": "son",
-      "translation": "",
+      "translation": "son",
       "count": 1,
       "forms": [
         "son"
@@ -10690,7 +10690,7 @@
     },
     {
       "word": "spel",
-      "translation": "",
+      "translation": "games",
       "count": 1,
       "forms": [
         "spel"
@@ -10701,7 +10701,7 @@
     },
     {
       "word": "stamm",
-      "translation": "",
+      "translation": "stem",
       "count": 1,
       "forms": [
         "stammar"
@@ -10718,7 +10718,7 @@
         "storlek"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "lek",
       "folkets": true
     },
     {
@@ -11719,7 +11719,7 @@
         "övervikt"
       ],
       "cognate": "",
-      "etymology": "",
+      "etymology": "vikt",
       "folkets": true
     }
   ],
@@ -11748,7 +11748,7 @@
     },
     {
       "word": "nato-",
-      "translation": "",
+      "translation": "nato",
       "count": 1,
       "forms": [
         "nato-"
@@ -11773,7 +11773,7 @@
     },
     {
       "word": "som",
-      "translation": "",
+      "translation": "which",
       "count": 114,
       "forms": [
         "som"
@@ -11968,7 +11968,7 @@
     },
     {
       "word": "mången",
-      "translation": "",
+      "translation": "the lot",
       "count": 2,
       "forms": [
         "många"
@@ -12101,7 +12101,7 @@
     },
     {
       "word": "många",
-      "translation": "",
+      "translation": "many",
       "count": 1,
       "forms": [
         "många"
@@ -12325,7 +12325,7 @@
     },
     {
       "word": "spanien",
-      "translation": "",
+      "translation": "Spain",
       "count": 5,
       "forms": [
         "spanien"
@@ -12369,7 +12369,7 @@
     },
     {
       "word": "nato",
-      "translation": "",
+      "translation": "NATO",
       "count": 4,
       "forms": [
         "nato"
@@ -13173,7 +13173,7 @@
     },
     {
       "word": "stenholm",
-      "translation": "",
+      "translation": "Stenholm",
       "count": 1,
       "forms": [
         "stenholm"
@@ -13184,7 +13184,7 @@
     },
     {
       "word": "steve",
-      "translation": "",
+      "translation": "steve",
       "count": 1,
       "forms": [
         "steve"
@@ -13386,7 +13386,7 @@
     },
     {
       "word": "som",
-      "translation": "",
+      "translation": "which",
       "count": 49,
       "forms": [
         "som"
@@ -14597,7 +14597,7 @@
     },
     {
       "word": "snabb",
-      "translation": "",
+      "translation": "fast",
       "count": 2,
       "forms": [
         "snabba"
@@ -14608,7 +14608,7 @@
     },
     {
       "word": "spekulera",
-      "translation": "",
+      "translation": "speculate",
       "count": 2,
       "forms": [
         "spekulera",
@@ -14620,7 +14620,7 @@
     },
     {
       "word": "spela",
-      "translation": "",
+      "translation": "play",
       "count": 2,
       "forms": [
         "spelade",
@@ -14632,7 +14632,7 @@
     },
     {
       "word": "stanna",
-      "translation": "",
+      "translation": "stay",
       "count": 2,
       "forms": [
         "stannade"
@@ -15727,7 +15727,7 @@
     },
     {
       "word": "måla",
-      "translation": "",
+      "translation": "paint",
       "count": 1,
       "forms": [
         "målas"
@@ -15738,7 +15738,7 @@
     },
     {
       "word": "möta",
-      "translation": "",
+      "translation": "meet",
       "count": 1,
       "forms": [
         "mött"
@@ -15980,7 +15980,7 @@
     },
     {
       "word": "slåss",
-      "translation": "",
+      "translation": "fight",
       "count": 1,
       "forms": [
         "slåss"
@@ -15991,7 +15991,7 @@
     },
     {
       "word": "snann",
-      "translation": "",
+      "translation": "true",
       "count": 1,
       "forms": [
         "snann"
@@ -16002,7 +16002,7 @@
     },
     {
       "word": "splittra",
-      "translation": "",
+      "translation": "split up",
       "count": 1,
       "forms": [
         "splittrar"
@@ -16013,7 +16013,7 @@
     },
     {
       "word": "steppa",
-      "translation": "",
+      "translation": "steppe",
       "count": 1,
       "forms": [
         "steppa"
